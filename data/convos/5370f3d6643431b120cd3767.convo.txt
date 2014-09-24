@@ -1,0 +1,323 @@
+idRef {
+  id: "5370f3d6643431b120cd3767"
+}
+ui_name: "a3-scrapyard-bullion"
+nodes {
+  idRef {
+    id: "5370f43c643431b120cd376d"
+  }
+  index: 0
+  text: "{{GM}}You spot Bullion, in the middle of a teleconference on a jury-rigged vidscreen.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5370f44a643431b120cd3770"
+  }
+  index: 1
+  text: "\342\200\246 those supplies we asked for?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5370f4b9643431b120cd3783"
+  }
+  index: 2
+  text: "You will have whatever you need. Just keep on bleeding Redding."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "5370f4af643431b120cd3780"
+  }
+}
+nodes {
+  idRef {
+    id: "5370f4c5643431b120cd3786"
+  }
+  index: 3
+  text: "I gotta ask, why is Tir helping us? We ain\342\200\231t exactly known for our warm feelings towards dandelion-eaters."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5370f4cf643431b120cd3789"
+  }
+  index: 4
+  text: "Your kind creates chaos, which aids our cause. \n\nTir is not greedy. The elves will drive south, claiming Sacramento and San Francisco. \n\nYou will not be welcome within Tir territory, but you can keep your guns and continue terrorizing areas further south."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "5370f4af643431b120cd3780"
+  }
+}
+nodes {
+  idRef {
+    id: "5370f4de643431b120cd378c"
+  }
+  index: 5
+  text: "Works for me. Make sure them keebs stay out of my way, though."
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5370f543643431b120cd37ad"
+  }
+  index: 6
+  text: "What the?!\n\nWe got company. I\342\200\231ll ring you back after we dust these fools."
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Order Actor to Face Direction"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "5370f49e643431b120cd377f"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "FacingDirection"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "5370f56b643431b120cd37b0"
+  }
+  index: 7
+  text: "If you survive. Farewell."
+  branches {
+    responseText: "{{GM}}Wait for Elorn to speak.{{/GM}}"
+    conditions {
+      ops {
+        functionName: "Evaluate If Actor is Inside Region"
+        args {
+          call_value {
+            functionName: "All Actors With Tag"
+            args {
+              call_value {
+                functionName: "Tag From String"
+                args {
+                  string_value: "isElorn"
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "AllOrAny"
+                }
+                args {
+                  int_value: 1
+                }
+              }
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "AreOrAreNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Region)"
+            args {
+              string_value: "53666daf3662362409007fa5"
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 8
+  }
+  branches {
+    responseText: ""
+    conditions {
+      ops {
+        functionName: "Evaluate If Actor is Inside Region"
+        args {
+          call_value {
+            functionName: "All Actors With Tag"
+            args {
+              call_value {
+                functionName: "Tag From String"
+                args {
+                  string_value: "isElorn"
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "AllOrAny"
+                }
+                args {
+                  int_value: 1
+                }
+              }
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "AreOrAreNot"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Region)"
+            args {
+              string_value: "53666daf3662362409007fa5"
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 10
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "5370f4af643431b120cd3780"
+  }
+}
+nodes {
+  idRef {
+    id: "5370f5b5643431b120cd37c9"
+  }
+  index: 8
+  text: "I\342\200\231ve got you cornered now, Claude. "
+  branches {
+    responseText: ""
+    nextNodeIndex: 9
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "5370f5cb643431b120cd37cc"
+  }
+  index: 9
+  text: "I should have just shot you when I had the chance, instead of waiting to put on a show. I\342\200\231ll never make that mistake again."
+  branches {
+    responseText: ""
+    nextNodeIndex: 10
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53782fd8366236101d004ace"
+  }
+  index: 10
+  text: ""
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Trigger: Run Alternate Trigger"
+      args {
+        call_value {
+          functionName: "Get Map Item (Trigger)"
+          args {
+            string_value: "53782ee8366236101d004a99"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WaitOrNot"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+}
+roots {
+  nextNodeIndex: 0
+}

@@ -1,0 +1,65 @@
+idRef {
+  id: "53714553643431882a039832"
+}
+ui_name: "a3-end-horatio"
+nodes {
+  idRef {
+    id: "5371456b643431882a039838"
+  }
+  index: 0
+  text: "Incredible!\n\n{{GM}}For once, Horatio seems deeply impressed by something.{{/GM}}\n\nThis dragon\342\200\231s going to be big, right? Like, seriously huge!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "talkedToHoratio"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "numPeopleTalkedTo"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "53714581643431882a03983b"
+  }
+  index: 1
+  text: "And I\342\200\231m here on the ground floor. Probably the first person in thousands of years to lay eyes on this great dragon! \n\nI\342\200\231m going to enjoy this, before everyone else discovers her."
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  nextNodeIndex: 0
+}

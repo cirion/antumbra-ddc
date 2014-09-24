@@ -1,0 +1,8 @@
+id: "a3-trivid_recorder"
+type: ItemType_QuestItem
+uirep {
+  name: "Trivid Recorder"
+  description: "This old but serviceable piece of equipment would be perfect for shooting a low-budget trideo."
+}
+credentials: 0
+sorting_group: "Quest"

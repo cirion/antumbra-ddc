@@ -1,0 +1,191 @@
+idRef {
+  id: "5370004636623674080076b9"
+}
+ui_name: "a3-five-Ganger"
+nodes {
+  idRef {
+    id: "5370005236623674080076bf"
+  }
+  index: 0
+  text: "Yeah?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5370009536623674080076c9"
+  }
+  index: 1
+  text: ""
+  branches {
+    responseText: "{{CC}}Etiquette: Gang{{/CC}} Hoi, chummer, I got an easy score all lined up for you."
+    conditions {
+      ops {
+        functionName: "Compare Actor Skill"
+        args {
+          call_value {
+            functionName: "Triggering Actor"
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "BaseOrCurrent"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "ActorSkills"
+            }
+            args {
+              int_value: 15
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+        args {
+          int_value: 0
+        }
+      }
+    }
+    nextNodeIndex: 2
+  }
+  branches {
+    responseText: "{{CC}}\302\245250{{/CC}} You look like a capable man. Can you move a vehicle for me?"
+    nextNodeIndex: 3
+  }
+  branches {
+    responseText: "Don\'t mind me, I was just leaving."
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5370011136623674080076d1"
+  }
+  index: 2
+  text: "Wiz, $(l.guy). Thanks for the tip. "
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "moveVanPendingState"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "537001c436623674080076d3"
+  }
+  index: 3
+  text: "Heh... my pleasure, boss. Easiest money I\'ve made all day."
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "moveVanPendingState"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+    ops {
+      functionName: "Remove Nuyen"
+      args {
+        int_value: 250
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "5370007536623674080076c2"
+  }
+  index: 4
+  text: "Frag it, someone stole the gear I had stashed here!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "talkedToGanger"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  nextNodeIndex: 0
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 4
+}

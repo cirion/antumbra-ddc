@@ -1,0 +1,1134 @@
+idRef {
+  id: "51fb225636623648150066ca"
+}
+ui_name: "A1_EXT_Carver_1"
+nodes {
+  idRef {
+    id: "51fb22bb36623648150066d0"
+  }
+  index: 0
+  text: "Are you $(l.name)?"
+  branches {
+    responseText: "In the flesh."
+    actions {
+      ops {
+        functionName: "Set Variable (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "RepliedToCarter"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 1
+  }
+  branches {
+    responseText: "Maybe, maybe not. Who wants to know?"
+    actions {
+      ops {
+        functionName: "Set Variable (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "RepliedToCarter"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 16
+  }
+  branches {
+    responseText: "{{GM}}Remain silent.{{/GM}}"
+    nextNodeIndex: 17
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "No Effect"
+    }
+    ops {
+      functionName: "Set Animation State Of Actor To Animation Modifier"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "AnimationState"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Triggering Actor"
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (AnimationModifiers)"
+          args {
+            string_value: "talking"
+          }
+          args {
+            string_value: "talking"
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "51fb245836623648150066e0"
+  }
+  index: 1
+  text: "We\342\200\231ve got a job to do. It\342\200\231s a delivery run of sorts. Should be even easier than your standard extraction, huh?\n\nClub Antumbra is still busy with its opening-night crowd, so this will be your best chance to slip in unnoticed. \n\nOr shoot up the joint, if you want. I could care less.\n\nJust make sure that this box gets delivered to Kali\'s office on the third floor. "
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "51fb248a36623648150066e3"
+  }
+  index: 2
+  text: "Are we clear?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537155926434319d338e4e70"
+  }
+  index: 3
+  text: ""
+  branches {
+    responseText: "I\'ll need an advance."
+    conditions {
+      ops {
+        functionName: "Compare Actor Skill"
+        args {
+          call_value {
+            functionName: "Triggering Actor"
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "BaseOrCurrent"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "ActorSkills"
+            }
+            args {
+              int_value: 17
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          int_value: 0
+        }
+      }
+    }
+    actions {
+      ops {
+        functionName: "Set Variable (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "RepliedToCarter"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 4
+    onlyOnce: true
+    idRef {
+      id: "5205ad10366236601b0039d5"
+    }
+  }
+  branches {
+    responseText: "What\'s in the package?"
+    actions {
+      ops {
+        functionName: "Set Variable (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "RepliedToCarter"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 7
+    onlyOnce: true
+    idRef {
+      id: "51fb39ce36623648150068b2"
+    }
+  }
+  branches {
+    responseText: "What\'s the scene like inside?"
+    actions {
+      ops {
+        functionName: "Set Variable (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "RepliedToCarter"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 11
+    onlyOnce: true
+    idRef {
+      id: "51fb399f36623648150068ab"
+    }
+  }
+  branches {
+    responseText: "Who do you work for?"
+    actions {
+      ops {
+        functionName: "Set Variable (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "RepliedToCarter"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 12
+    onlyOnce: true
+    idRef {
+      id: "51fb39c936623648150068b1"
+    }
+  }
+  branches {
+    responseText: "I\'ve got it."
+    nextNodeIndex: 13
+  }
+  branches {
+    responseText: "This job stinks."
+    nextNodeIndex: 14
+  }
+  branches {
+    responseText: "{{GM}}Remain silent.{{/GM}}"
+    nextNodeIndex: 15
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5371559c6434319d338e4e82"
+  }
+  index: 4
+  text: "Frag you! What for?"
+  branches {
+    responseText: "I may need to hire some more runners."
+    nextNodeIndex: 5
+  }
+  branches {
+    responseText: "Never mind."
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "51f7429764343188990041a8"
+          }
+          args {
+            string_value: "CarverOpinion"
+          }
+        }
+      }
+      args {
+        int_value: -1
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "5371559c6434319d338e4e85"
+  }
+  index: 5
+  text: "What for? It\342\200\231s the simplest job on the planet! A blind beagle could do it without help!\n\nFine... this is coming out of your final payment, though!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "51f7429764343188990041a8"
+          }
+          args {
+            string_value: "CarverAdvanced"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Add Nuyen"
+      args {
+        int_value: 500
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "5371559c6434319d338e4e8b"
+  }
+  index: 6
+  text: "Good! That\342\200\231s why I asked for you. Stealthy $(l.race) like you should get the job done cheap and neat."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537155a26434319d338e4ea6"
+  }
+  index: 7
+  text: "{{GM}}Mr. Johnson grunts in frustration.{{/GM}}\n\nI thought you were a professional. Is this your first run?\n\nWhat did I get myself into?"
+  branches {
+    responseText: "What should I tell the guards if they stop me?"
+    nextNodeIndex: 8
+  }
+  branches {
+    responseText: "A dangerous package should pay a premium."
+    nextNodeIndex: 9
+  }
+  branches {
+    responseText: "Never mind."
+    nextNodeIndex: 10
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "51f7429764343188990041a8"
+          }
+          args {
+            string_value: "CarverOpinion"
+          }
+        }
+      }
+      args {
+        int_value: 0
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "537155a26434319d338e4ea9"
+  }
+  index: 8
+  text: "Say it\342\200\231s a case of medical supplies. Or a gift for Kali.\n\nOr you could just shoot them in the face before they stop you.\n\nYou\342\200\231re the runner. Only I need to care about what\342\200\231s in the box. Only you need to care about how you deliver it."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537155a26434319d338e4eaf"
+  }
+  index: 9
+  text: "I suppose that\342\200\231s true. And, if it were dangerous, why would I tell you? You\342\200\231ll do the job for what I offered. No more."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "51f7429764343188990041a8"
+          }
+          args {
+            string_value: "CarverOpinion"
+          }
+        }
+      }
+      args {
+        int_value: -1
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "537155a26434319d338e4eb5"
+  }
+  index: 10
+  text: "Glad that\'s taken care of."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537155a86434319d338e4ec1"
+  }
+  index: 11
+  text: "I\342\200\231m keeping my distance. A man like me shouldn\342\200\231t show his face in there.\n\nIt sounds like quite a party, though. All sorts of trash has been coming in and out. You\342\200\231ll fit right in on the dance floor.\n\nIf we\342\200\231re lucky, they will have pulled security from the upstairs office to help cover the main floor. It might make things easier for you."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537155ad6434319d338e4ecd"
+  }
+  index: 12
+  text: "Interested parties."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537155b26434319d338e4ed6"
+  }
+  index: 13
+  text: "Pleasure doing business with you. I\'ll be here with your payment when you\'re done."
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "51f7429764343188990041a8"
+          }
+          args {
+            string_value: "CarverOpinion"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+    ops {
+      functionName: "Add Item to Actor"
+      args {
+        call_value {
+          functionName: "Get Map Item (Item)"
+          args {
+            string_value: "Carver\'s Un-Identified Package"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "51fb1ee436623648150066c6"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "51f9e6da366236e41800492e"
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "537155b66434319d338e4edc"
+  }
+  index: 14
+  text: "If you didn\342\200\231t like the stench, you shouldn\342\200\231t have become a runner.\n\nNow go do your job!"
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "51f7429764343188990041a8"
+          }
+          args {
+            string_value: "CarverOpinion"
+          }
+        }
+      }
+      args {
+        int_value: -1
+      }
+    }
+    ops {
+      functionName: "Add Item to Actor"
+      args {
+        call_value {
+          functionName: "Get Map Item (Item)"
+          args {
+            string_value: "Carver\'s Un-Identified Package"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "No Effect"
+    }
+    ops {
+      functionName: "Set Animation State Of Actor To Animation Modifier"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "AnimationState"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Triggering Actor"
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (AnimationModifiers)"
+          args {
+            string_value: "poised"
+          }
+          args {
+            string_value: "poised"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "51fb1ee436623648150066c6"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "51f9e6da366236e41800492e"
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "537155b96434319d338e4ee2"
+  }
+  index: 15
+  text: "You\'re a creepy $(l.guy), you know that?\n\nAs long as you get the job done, you can be as strange as you want."
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add Item to Actor"
+      args {
+        call_value {
+          functionName: "Get Map Item (Item)"
+          args {
+            string_value: "Carver\'s Un-Identified Package"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "51fb1ee436623648150066c6"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "51f9e6da366236e41800492e"
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "51fb24f336623648150066e7"
+  }
+  index: 16
+  text: "Cute. Very cute."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "51fb24c136623648150066e5"
+  }
+  index: 17
+  text: "... Right."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5202f59b3662365410003a4e"
+  }
+  index: 18
+  text: "Well? What\'s the word?"
+  branches {
+    responseText: "It\'s done."
+    conditions {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (int)"
+            args {
+              string_value: "51f7429764343188990041a8"
+            }
+            args {
+              string_value: "CarverOpinion"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 3
+            }
+          }
+        }
+        args {
+          int_value: 0
+        }
+      }
+    }
+    nextNodeIndex: 19
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: "It\'s done."
+    conditions {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (int)"
+            args {
+              string_value: "51f7429764343188990041a8"
+            }
+            args {
+              string_value: "CarverOpinion"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 4
+            }
+          }
+        }
+        args {
+          int_value: 0
+        }
+      }
+    }
+    nextNodeIndex: 20
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: "{{GM}}Remain silent.{{/GM}}"
+    nextNodeIndex: 21
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5204463436623608130003c3"
+  }
+  index: 19
+  text: "Good $(l.guy)! I\'ll deposit your fee into your account."
+  branches {
+    responseText: ""
+    nextNodeIndex: 21
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "520445fe36623608130003be"
+  }
+  index: 20
+  text: "I may not like you, but I can respect someone who gets the job done. My organization may have some more challenging runs for you in the future. Don\342\200\231t get yourself shot before then."
+  branches {
+    responseText: ""
+    nextNodeIndex: 21
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5204462836623608130003c1"
+  }
+  index: 21
+  text: "You seem efficient. Maybe I can trust you a bit more.\n\nYou\342\200\231ve done Aztechnology a good service tonight. That\342\200\231s right, you\342\200\231re playing with the big boys now.\n\nYou might be hearing from me or Morgan Tooms soon. Pick up the call. It will be worth your while.\n"
+  branches {
+    responseText: ""
+    nextNodeIndex: 22
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5204468a36623608130003c6"
+  }
+  index: 22
+  text: "Take care of yourself, $(l.name). A valuable asset like you shouldn\'t go to waste."
+  branches {
+    responseText: ""
+    nextNodeIndex: 23
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "520446b036623608130003c9"
+  }
+  index: 23
+  text: ""
+  actions {
+    ops {
+      functionName: "End Story With Epilogue"
+      args {
+        string_value: "carver"
+      }
+    }
+  }
+}
+roots {
+  responseText: ""
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "51f7429764343188990041a8"
+          }
+          args {
+            string_value: "A1_Bool_KilledBoss"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  nextNodeIndex: 0
+  onlyOnce: true
+  idRef {
+    id: "5204470e3662360813000468"
+  }
+}
+roots {
+  responseText: ""
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "51f7429764343188990041a8"
+          }
+          args {
+            string_value: "A1_Bool_KilledBoss"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  nextNodeIndex: 18
+}

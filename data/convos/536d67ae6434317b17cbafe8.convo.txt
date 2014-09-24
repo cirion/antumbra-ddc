@@ -1,0 +1,33 @@
+idRef {
+  id: "536d67ae6434317b17cbafe8"
+}
+ui_name: "a3-five-Dorbi_3"
+nodes {
+  idRef {
+    id: "536d67c36434317b17cbafee"
+  }
+  index: 0
+  text: "Uh\342\200\246 boss, I think we\342\200\231re in trouble here!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536d60fe6434317b17cbaec8"
+  }
+}
+nodes {
+  idRef {
+    id: "536d67ca6434317b17cbaff1"
+  }
+  index: 1
+  text: "Not for long, babe. I just radioed for reinforcements. Hang tight."
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536d60af6434317b17cbaec7"
+  }
+}
+roots {
+  nextNodeIndex: 0
+}

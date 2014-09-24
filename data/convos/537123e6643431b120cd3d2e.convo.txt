@@ -1,0 +1,723 @@
+idRef {
+  id: "537123e6643431b120cd3d2e"
+}
+ui_name: "a3-dam-tabitha"
+nodes {
+  idRef {
+    id: "537123eb643431b120cd3d34"
+  }
+  index: 0
+  text: "It\342\200\231s so beautiful.\n\n{{GM}}This handsome woman has been staring impassively at the lake.{{/GM}}\n\nHow can there be such peacefulness, so close to such sorrow?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "metTabitha"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "53712408643431b120cd3d37"
+  }
+  index: 1
+  text: "I have seen much here, but I understand little.\n\n{{GM}}She motions you to come closer.{{/GM}}\n\nTell me, why were those men hurting that elf?"
+  branches {
+    responseText: "They\342\200\231re cruel sadists."
+    nextNodeIndex: 2
+  }
+  branches {
+    responseText: "They\342\200\231re scared of elves."
+    nextNodeIndex: 3
+  }
+  branches {
+    responseText: "They wanted to solve a problem."
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53712445643431b120cd3d46"
+  }
+  index: 2
+  text: "I\342\200\231m sorry, but that concept is so foreign to me. \n\nI\342\200\231ve known many, many cruel men in my life, but I will never understand why they would choose to inflict pain on others."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53712442643431b120cd3d43"
+  }
+  index: 3
+  text: "Then they must be ignorant, correct? Surely if they knew more elves, they would see that they need not fear them?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53712425643431b120cd3d3c"
+  }
+  index: 4
+  text: "I wonder if they realized that, whatever problem they thought they were solving, they would be creating many more."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53712429643431b120cd3d3f"
+  }
+  index: 5
+  text: "I\342\200\231ve heard frightened whispers of an invasion by Tir Tairngire. What does this mean?"
+  branches {
+    responseText: "It means that elves may conquer humans."
+    nextNodeIndex: 6
+  }
+  branches {
+    responseText: "It means that many will die in a coming war."
+    nextNodeIndex: 7
+  }
+  branches {
+    responseText: "It means widespread destruction."
+    nextNodeIndex: 8
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53712490643431b120cd3d5b"
+  }
+  index: 6
+  text: "So in San Francisco, humans oppress elves, and in Tir Tairngire, elves oppress humans? \n\nHow disappointing."
+  branches {
+    responseText: ""
+    nextNodeIndex: 9
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5371248b643431b120cd3d57"
+  }
+  index: 7
+  text: "I see\342\200\246 yes, that makes sense. \n\nNo matter who wins, countless individuals from every metatype will perish."
+  branches {
+    responseText: ""
+    nextNodeIndex: 9
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53712483643431b120cd3d50"
+  }
+  index: 8
+  text: "I had thought that the elves of Tir Tairngire would care for nature. However, such an invasion would surely cause a great deal of harm."
+  branches {
+    responseText: ""
+    nextNodeIndex: 9
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53712487643431b120cd3d53"
+  }
+  index: 9
+  text: "I am curious\342\200\246 how do the metahumans fare in these lands?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 10
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5371286d643431882a0394bd"
+  }
+  index: 10
+  text: ""
+  branches {
+    responseText: "Elorn, do you want to handle this?"
+    conditions {
+      ops {
+        functionName: "Evaluate If Actor is Inside Region"
+        args {
+          call_value {
+            functionName: "All Actors With Tag"
+            args {
+              call_value {
+                functionName: "Tag From String"
+                args {
+                  string_value: "isElorn"
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "AllOrAny"
+                }
+                args {
+                  int_value: 1
+                }
+              }
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "AreOrAreNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Region)"
+            args {
+              string_value: "5366874d3662362409008236"
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Compare Actor Team"
+        args {
+          call_value {
+            functionName: "Get Map Item (Actor)"
+            args {
+              string_value: "5373e940643431b8017c3d58"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (string)"
+            args {
+              string_value: "FactionList"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (SceneDimension)"
+            args {
+              string_value: "Default"
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 11
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "5371285d643431882a039492"
+    }
+  }
+  branches {
+    responseText: "What do you think, Dorbi?"
+    conditions {
+      ops {
+        functionName: "Evaluate If Actor is Inside Region"
+        args {
+          call_value {
+            functionName: "All Actors With Tag"
+            args {
+              call_value {
+                functionName: "Tag From String"
+                args {
+                  string_value: "isDorbi"
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "AllOrAny"
+                }
+                args {
+                  int_value: 1
+                }
+              }
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "AreOrAreNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Region)"
+            args {
+              string_value: "5366874d3662362409008236"
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 12
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "53712860643431882a039493"
+    }
+  }
+  branches {
+    responseText: "Metahumans face a lot of discrimination."
+    nextNodeIndex: 13
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "They need to learn to give as good as they get."
+    nextNodeIndex: 13
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "They have it as bad as everyone else."
+    nextNodeIndex: 13
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53712875643431882a0394c4"
+  }
+  index: 11
+  text: "Redding isn\342\200\231t the worst, but it\342\200\231s pretty bad. \n\nMany parents ostracize their children when they manifest metahuman traits. \n\nDiscrimination is widespread, too. It can be really hard to find a good job if you\342\200\231re not a human."
+  branches {
+    responseText: ""
+    nextNodeIndex: 10
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "537128a5643431882a0394d1"
+  }
+  index: 12
+  text: "We dwarves and elves have the best of it. Humans are content to call us names, but think we\342\200\231re pretty good workers at what we do. \n\nOrcs and trolls have it really tough, though. It\342\200\231s no wonder that so many of them end up as shadowrunners or in gangs, since the human world has little use for them."
+  branches {
+    responseText: ""
+    nextNodeIndex: 10
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "537128d0643431882a0394d8"
+  }
+  index: 13
+  text: "That\342\200\231s very unfortunate. How sad. I wish I could help them.\n\nThank you for answering my questions."
+  branches {
+    responseText: ""
+    nextNodeIndex: 15
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5371291f643431882a0394db"
+  }
+  index: 14
+  text: "I am pleased to see you again."
+  branches {
+    responseText: ""
+    nextNodeIndex: 15
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5371292f643431882a0394de"
+  }
+  index: 15
+  text: "Can I do anything to help you?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 16
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5371295f643431882a0394e7"
+  }
+  index: 16
+  text: ""
+  branches {
+    responseText: "How did you get from Colma to here?"
+    conditions {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (int)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Global_MissionState_Colma"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+        args {
+          int_value: 1
+        }
+      }
+    }
+    nextNodeIndex: 17
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "5371293f643431882a0394e3"
+    }
+  }
+  branches {
+    responseText: "What are you doing here?"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Global_Met_Tabitha"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 18
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "5371298f643431882a0394f9"
+    }
+  }
+  branches {
+    responseText: "Did you see a group of men running past here?"
+    nextNodeIndex: 19
+    onlyOnce: true
+    idRef {
+      id: "537129da643431882a03950d"
+    }
+  }
+  branches {
+    responseText: "What do you think about our chances here in CalFree?"
+    nextNodeIndex: 20
+    onlyOnce: true
+    idRef {
+      id: "538ca9f9643431965539d303"
+    }
+  }
+  branches {
+    responseText: "Can you help us return to Redding?"
+    nextNodeIndex: 22
+  }
+  branches {
+    responseText: "I don\342\200\231t need anything right now."
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53712965643431882a0394ed"
+  }
+  index: 17
+  text: "Oh, it is a short distance as the crow flies. It takes you much longer since you need to travel on the roads and cross so many checkpoints."
+  branches {
+    responseText: ""
+    nextNodeIndex: 16
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537129a4643431882a0394fb"
+  }
+  index: 18
+  text: "I have been searching for my sister. She disappeared in Germany many years ago. \n\nI haven\342\200\231t been able to find her after many years of searching there, and so I have traveled abroad in hopes of locating her."
+  branches {
+    responseText: ""
+    nextNodeIndex: 16
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Global_Met_Tabitha"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "537129db643431882a03950f"
+  }
+  index: 19
+  text: "Yes, they passed this way. Their leader ordered the dam destroyed, and they detonated it behind them. \n\nSuch devastation! While the dam is not natural, its razing would do nothing to restore harmony."
+  branches {
+    responseText: ""
+    nextNodeIndex: 16
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "538ca8ed643431965539d2de"
+  }
+  index: 20
+  text: "They certainly appear hopeless. However, the impossibility of the task should not deter you from your struggle.\n\nI believe that we all have an obligation to do what we can to change things for the better, even if it is impossible. No: especially if it is impossible."
+  branches {
+    responseText: ""
+    nextNodeIndex: 21
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "538ca93f643431965539d2e1"
+  }
+  index: 21
+  text: "The day may come when darkness surrounds you, death presses in, and you can see no escape. Even then, do not give in to despair.\n\nDeclare your intention to live. Tear down the very walls that surround you. Death may still find you, but you might persuade it to show mercy on that day."
+  branches {
+    responseText: ""
+    nextNodeIndex: 16
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53712a48643431882a039527"
+  }
+  index: 22
+  text: "Yes, this is within my power. Accept this as my thanks for the enlightenment you have provided."
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "tabithaCastingState"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+roots {
+  conditions {
+    ops {
+      functionName: "Invert Bool"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "metTabitha"
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Play Music"
+      args {
+        call_value {
+          functionName: "Get Map Item (Music)"
+          args {
+            string_value: "Berlin_Set9"
+          }
+          args {
+            string_value: "Berlin-Set9-Legwork"
+          }
+        }
+      }
+      args {
+        float_value: 1
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  nextNodeIndex: 0
+}
+roots {
+  responseText: ""
+  actions {
+    ops {
+      functionName: "Play Music"
+      args {
+        call_value {
+          functionName: "Get Map Item (Music)"
+          args {
+            string_value: "Berlin_Set9"
+          }
+          args {
+            string_value: "Berlin-Set9-Legwork"
+          }
+        }
+      }
+      args {
+        float_value: 1
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  nextNodeIndex: 14
+}

@@ -1,0 +1,310 @@
+idRef {
+  id: "53714ea1643431882a039b0a"
+}
+ui_name: "a3-end-kali"
+nodes {
+  idRef {
+    id: "53714eab643431882a039b10"
+  }
+  index: 0
+  text: "Do I know how to pick a winner or what? I knew that I\342\200\231d chosen the right person to lead the defense against Tir Tairngire, and you didn\342\200\231t disappoint me."
+  branches {
+    responseText: "I had a lot of help."
+    nextNodeIndex: 1
+  }
+  branches {
+    responseText: "It was nothing."
+    nextNodeIndex: 2
+  }
+  branches {
+    responseText: "No thanks to you."
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "talkedToKali"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "numPeopleTalkedTo"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "53714eeb643431882a039b1a"
+  }
+  index: 1
+  text: "True, but you were responsible for selecting and guiding most of the help. Their actions do you credit."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714eee643431882a039b1d"
+  }
+  index: 2
+  text: "Ha! I\342\200\231d be amazed to see what it looks like when you actually try."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714ef1643431882a039b20"
+  }
+  index: 3
+  text: "Well, don\342\200\231t forget that I was the one who provided your facilities, seed capital, and lieutenants. Your point is well taken, though."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714ef4643431882a039b23"
+  }
+  index: 4
+  text: "I finally secured a full army from the Japanese megacorps, and even an elite detail of marines from Colonel Saito\342\200\231s regular army. \n\nWe marched here as soon as we heard that the invasion was starting, only to be turned back by Hestaby once we arrived."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714f3e643431882a039b2a"
+  }
+  index: 5
+  text: "Colonel Saito is furious! I think he was hoping to repeat his San Francisco ploy - take the excuse of defending against a Tir Tairngire incursion to move his troops into position, then continue the occupation indefinitely. \n\nHestaby is shutting him down before he can even start, though."
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714f51643431882a039b2d"
+  }
+  index: 6
+  text: "The megacorps seem relieved by the outcome. A Tir invasion would have been disastrous for their operations. Now they get to maintain the profitable status quo, and they didn\342\200\231t need to incur direct costs associated with fighting the invasion. They can write off their donations to you as in-kind deductions on a depreciating basis. \n\nKnowing them, they\342\200\231ll try to sign trade agreements with Hestaby and open up new markets in dragon-related goods."
+  branches {
+    responseText: "{{GM}}Wait for her to continue.{{/GM}}"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Global_WorkForCorps"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 7
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: "{{GM}}Wait for her to continue.{{/GM}}"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Global_WorkForPeople"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 8
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: "{{GM}}Wait for her to continue.{{/GM}}"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Global_WorkForSelf"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 9
+    hideIfUnavailable: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714f7d643431882a039b30"
+  }
+  index: 7
+  text: "You\342\200\231ve been a loyal ally and a true friend to my superiors and myself throughout this long process. \n\nWe\342\200\231ll never forget the debt we owe you. Corporate work is the most lucrative on the planet, and you\342\200\231ll be able to write your own ticket for the rest of your life."
+  branches {
+    responseText: ""
+    nextNodeIndex: 10
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714f8e643431882a039b35"
+  }
+  index: 8
+  text: "From your first meeting with Norton, you\342\200\231ve shown an admirable devotion to the well-being of all people in CalFree. \n\nI\342\200\231ve heard of your fame from San Francisco to Los Angeles to Pueblo, and now that the battle is over, even more will arrive. I don\342\200\231t think there\342\200\231s a more popular $(l.man) in the entire state."
+  branches {
+    responseText: ""
+    nextNodeIndex: 10
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714f92643431882a039b38"
+  }
+  index: 9
+  text: "You\342\200\231ve made no secret of your mercenary aims. I respect that; you performed a valuable service, and we\342\200\231ve paid you for your results. \n\nYou seem to be attracting even more followers thanks to your outspoken independence, though. I can\342\200\231t say I blame them. Next to the rapaciousness of San Francisco and the apathy of Sacramento, your independence seems incredibly attractive."
+  branches {
+    responseText: ""
+    nextNodeIndex: 10
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714f97643431882a039b3b"
+  }
+  index: 10
+  text: "I\342\200\231d love to stay and chat, but it\342\200\231s vital that I speak with Hestaby and determine what her presence means for Antumbra Enterprises. \n\nPlease finish chatting with whoever you need to speak with, then come join us, and we\342\200\231ll find out what your future holds."
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  nextNodeIndex: 0
+}

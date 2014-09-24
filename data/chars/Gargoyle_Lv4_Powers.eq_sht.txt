@@ -1,0 +1,10 @@
+unique_id: "Gargoyle_Lv4_Powers"
+equipment {
+  prefab_name: "Berlin_Gargoyle Death Cloud Medium"
+}
+equipment {
+  prefab_name: "Berlin_Gargoyle Mid Melee"
+}
+equipment {
+  prefab_name: "Berlin_Gargoyle Mid Noxious Breath"
+}

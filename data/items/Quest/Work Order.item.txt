@@ -1,0 +1,8 @@
+id: "Work Order"
+type: ItemType_QuestItem
+uirep {
+  name: "Work Order"
+  description: "Grants you authorization to access the Antumbra backstage, pursuant to your maintenance duties."
+}
+credentials: 0
+sorting_group: "Quest"

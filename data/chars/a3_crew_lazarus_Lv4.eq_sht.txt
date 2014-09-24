@@ -1,0 +1,19 @@
+unique_id: "a3_crew_lazarus_Lv4"
+equipment {
+  prefab_name: "Lazarus Petrify"
+}
+equipment {
+  prefab_name: "Lazarus Flame Breath"
+}
+equipment {
+  prefab_name: "Lazarus Fireball"
+}
+equipment {
+  prefab_name: "Dog Chomp"
+}
+equipment {
+  prefab_name: "Dog_Treat_Power"
+}
+equipment {
+  prefab_name: "Dog_Treat_Health"
+}

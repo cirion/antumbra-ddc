@@ -1,0 +1,73 @@
+idRef {
+  id: "537100b7643431b120cd3a3d"
+}
+ui_name: "a3-eclipse-Kali_1"
+nodes {
+  idRef {
+    id: "537100c3643431b120cd3a43"
+  }
+  index: 0
+  text: "$(l.name)? I\342\200\231m so relieved you\342\200\231re here!\n\nI presume Hailey filled you in on the situation. A decker, a very good one, has infiltrated and taken over my local matrix network. \n\nThey\342\200\231re feeding Saito false data that makes it seem like we\342\200\231re collaborating with the Council of Princes in Tir Tairngire."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537100dc643431b120cd3a46"
+  }
+  index: 1
+  text: "Now that Saito knows you\342\200\231re here, he\342\200\231ll be sending in the entire army. We\342\200\231ll need to work fast to get the proof we need of your innocence. \n\nI\342\200\231ll back you up. For Antumbra!"
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Trigger: Run Alternate Trigger"
+      args {
+        call_value {
+          functionName: "Get Map Item (Trigger)"
+          args {
+            string_value: "537535c06434316b13333654"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WaitOrNot"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+}
+roots {
+  nextNodeIndex: 0
+}

@@ -1,0 +1,174 @@
+idRef {
+  id: "536d3830643431740d169c85"
+}
+ui_name: "a3-banter-3_Norton_Dorbi"
+nodes {
+  idRef {
+    id: "536d3838643431740d169c8b"
+  }
+  index: 0
+  text: "Hey, Norton, I have a question for you\342\200\246"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d3841643431740d169c8e"
+  }
+  index: 1
+  text: "Yes, dear child? What wisdom can we share with you?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d386a643431740d169c91"
+  }
+  index: 2
+  text: "So, I\342\200\231ve heard a lot of people talk about \342\200\234Norton\342\200\231s Army\342\200\235. And I think that sounds like the most amazing thing ever! \n\nAn entire group of armed, dangerous people, who are NAMED AFTER YOU and obey your every whim\342\200\246 I want one of those! \n\nHow should I go about getting \342\200\234Dorbi\342\200\231s Army\342\200\235?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d388a643431740d169c94"
+  }
+  index: 3
+  text: "Ah, yes! In truth, we consider Norton\342\200\231s Army the least impressive of our imperial trappings. It arrived rather late in our reign. \n"
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d38c0643431740d169c97"
+  }
+  index: 4
+  text: "Like our forebears, we have long made it a practice to issue imperial proclamations, to promenade our persons in view of our subjects, and to issue completely authentic currency under our own image.\n\nAfter several years of this practice, our face was well-known throughout the entire state. And so, when that foul oppressor Colonel Saito arrived and began his vile campaign of oppression, the people naturally turned to their beloved emperor for succor."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d38d6643431740d169c9a"
+  }
+  index: 5
+  text: "Oh, interesting! Why was that?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d38e5643431740d169c9d"
+  }
+  index: 6
+  text: "Because they had complete faith in our abilities, of course! All good citizens of CalFree love their Emperor, and would give their lives to safeguard our person!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d38f5643431740d169ca0"
+  }
+  index: 7
+  text: "Of course\342\200\246\n\n{{GM}}Dorbi leans towards you and addresses you in a conspiratorial whisper.{{/GM}}\n\nYou\342\200\231ve known this guy for longer than me. How did he REALLY collect followers?"
+  branches {
+    responseText: "Norton may be demented, but he has a good heart. People recognize that, and want to help him succeed."
+    nextNodeIndex: 8
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "California has always been filled with crazy people, and Norton is a natural king of the crazies."
+    nextNodeIndex: 8
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "Folks here are so desperate, they will turn to literally anyone who promises them a better life."
+    nextNodeIndex: 8
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "I haven\342\200\231t the faintest idea."
+    nextNodeIndex: 8
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d392b643431740d169ca6"
+  }
+  index: 8
+  text: "While we did not ask for an army, we have been greatly encouraged by their loyalty and effectiveness. \n\nGranted, there was some\342\200\246 unpleasantness a few months ago, due to a traitorous troll in our midst, but on the whole our army has helped uphold our goals of a free, independent California wherein all persons are welcomed regardless of their metatype."
+  branches {
+    responseText: ""
+    nextNodeIndex: 9
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d394e643431740d169cae"
+  }
+  index: 9
+  text: "Fascinating\342\200\246 \n\nI always thought that I would need to collect power, and then could begin to accomplish my goals. But it sounds like you have been completely focused on your goals from the beginning, and have only received your power as a result of those goals."
+  branches {
+    responseText: ""
+    nextNodeIndex: 10
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d396c643431740d169cb1"
+  }
+  index: 10
+  text: "Indeed! We could not have said it better ourselves."
+  branches {
+    responseText: ""
+    nextNodeIndex: 11
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d3981643431740d169cb4"
+  }
+  index: 11
+  text: "I guess I have a lot to think about. Maybe I should focus on my sparkling personality and wild schemes now, and worry about building an army of minions later. Thanks, Norton!"
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+roots {
+  nextNodeIndex: 0
+}

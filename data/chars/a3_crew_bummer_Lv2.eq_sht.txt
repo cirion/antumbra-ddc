@@ -1,0 +1,13 @@
+unique_id: "a3_crew_bummer_Lv2"
+equipment {
+  prefab_name: "Chomp"
+}
+equipment {
+  prefab_name: "Dog_Treat_Health"
+}
+equipment {
+  prefab_name: "Bummer Pack Tactics"
+}
+equipment {
+  prefab_name: "Dog_Treat_Health"
+}

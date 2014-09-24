@@ -1,0 +1,47 @@
+idRef {
+  id: "536d4fd16434317b17cbac81"
+}
+ui_name: "a3-crypt-Tophet_1"
+nodes {
+  idRef {
+    id: "536d4fea6434317b17cbac87"
+  }
+  index: 0
+  text: "I SEE MY EMBERS FAILED TO FINISH THE JOB. MY PATRON WAS MOST DISPLEASED.\n\nI SHALL NOT DISAPPOINT HIM AGAIN.\n\nONCE THIS DOOR HAS BEEN DESTROYED, I WILL COMPLETE MY DESTRUCTION OF NORTON\'S ARMY."
+  branches {
+    responseText: "Why are you doing this?"
+    nextNodeIndex: 1
+  }
+  branches {
+    responseText: "Time to die, fiend!"
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "tophetHostileState"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "536d50076434317b17cbac8c"
+  }
+  index: 1
+  text: "YOU DO NOT DESERVE ANSWERS. ONLY DEATH."
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  nextNodeIndex: 0
+}

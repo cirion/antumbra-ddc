@@ -1,0 +1,8 @@
+id: "a3-pu_saito_records"
+type: ItemType_QuestItem
+uirep {
+  name: "Contact List"
+  description: "This thumb drive appears to hold an unencrypted list of names and addresses. It may be of interest to particular deckers."
+}
+credentials: 0
+sorting_group: "Quest"

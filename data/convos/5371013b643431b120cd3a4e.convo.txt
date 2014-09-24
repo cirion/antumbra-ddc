@@ -1,0 +1,85 @@
+idRef {
+  id: "5371013b643431b120cd3a4e"
+}
+ui_name: "a3-eclipse-Kali_2"
+nodes {
+  idRef {
+    id: "5371018b643431b120cd3a58"
+  }
+  index: 0
+  text: "You got them! Excellent! I knew I could rely on you.\n\nI\342\200\231ll go ahead and forward these to Saito immediately."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537101a3643431b120cd3a5b"
+  }
+  index: 1
+  text: "Wait\342\200\246 what\342\200\231s this? An access log... \n\nOh, drek. It looks like the attack came from inside Tir Tairngire territory! \n\nJust like I feared, they were trying to turn their enemies against one another."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537101b8643431b120cd3a5e"
+  }
+  index: 2
+  text: "DREK! They\342\200\231re still in the system! \n\nTir\'s hackers know that the charade is over, and just told their commandos to launch an attack on San Francisco. \n\nYou\342\200\231ve got to get moving now! The corp executives are meeting in the conference suite of the old Aztechnology Pyramid. I\342\200\231ll try and contain the Tir agents inside Eclipse.\n\nSaito is no fool. His soldiers should help your escape. Now leave, quickly!"
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Trigger: Run Alternate Trigger"
+      args {
+        call_value {
+          functionName: "Get Map Item (Trigger)"
+          args {
+            string_value: "53751f896434316b1333363f"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WaitOrNot"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+}
+roots {
+  nextNodeIndex: 0
+}

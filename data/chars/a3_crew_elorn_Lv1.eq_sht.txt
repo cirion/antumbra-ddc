@@ -1,0 +1,22 @@
+unique_id: "a3_crew_elorn_Lv1"
+equipment {
+  prefab_name: "Sh 2 Mossberg CMDT"
+}
+equipment {
+  prefab_name: "Pi 1 Fichetti Security 500"
+}
+equipment {
+  prefab_name: "Grenade 2 (Frag)"
+}
+equipment {
+  prefab_name: "Grenade (Phosphorus)"
+}
+equipment {
+  prefab_name: "HealthPack_med"
+}
+equipment {
+  prefab_name: "HealthPack_med"
+}
+equipment {
+  prefab_name: "SamuraiTrenchcoat"
+}

@@ -1,0 +1,22 @@
+unique_id: "a3_crew_dorbi_Lv2"
+equipment {
+  prefab_name: "DorbiCoat"
+}
+equipment {
+  prefab_name: "HealthPack_med"
+}
+equipment {
+  prefab_name: "Spell Flamethrower 2"
+}
+equipment {
+  prefab_name: "Spell Fireball 1"
+}
+equipment {
+  prefab_name: "Heat Wave"
+}
+equipment {
+  prefab_name: "Pyro 2"
+}
+equipment {
+  prefab_name: "Spell Firebolt 2"
+}

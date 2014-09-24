@@ -1,0 +1,94 @@
+idRef {
+  id: "537133ce643431882a0396bd"
+}
+ui_name: "a3-finale_dam-hans_1"
+nodes {
+  idRef {
+    id: "537133e7643431882a0396c3"
+  }
+  index: 0
+  text: "I\342\200\231ll tell you what I see: a woman who doesn\342\200\231t know her place. \n\nYou aren\342\200\231t wanted here, Tabitha. This conflict does not concern you."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536c5c82366236d41e0027ac"
+  }
+}
+nodes {
+  idRef {
+    id: "537134a8643431882a0396c6"
+  }
+  index: 1
+  text: "I should have known you were involved in this. Were you Tophet\342\200\231s \342\200\234patron\342\200\235?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536c5c82366236d41e0027ab"
+  }
+}
+nodes {
+  idRef {
+    id: "537134bb643431882a0396c9"
+  }
+  index: 2
+  text: "Tophet was a valuable tool. \n\nA fool, and a source of danger, but more for my enemies than myself. I make it a point to find and use such tools whenever and wherever I can. \n\nI do not enjoy being deprived of my tools."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536c5c82366236d41e0027ac"
+  }
+}
+nodes {
+  idRef {
+    id: "537134d0643431882a0396cc"
+  }
+  index: 3
+  text: "And I do not enjoy being deprived of my sister. \n\nWhere is she? You must know something. \n\nHave you hidden her? Have you hurt her?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536c5c82366236d41e0027ab"
+  }
+}
+nodes {
+  idRef {
+    id: "537134e4643431882a0396cf"
+  }
+  index: 4
+  text: "I haven\342\200\231t the faintest idea what you\342\200\231re talking about.\n\n{{GM}}A faint sneer briefly plays at the corner of Hans\342\200\231s face.{{/GM}}  \n\nAll I know is that you\342\200\231ve overstepped your bounds. You\342\200\231re surrounded by my army, in the middle of what will soon be my lands. I suggest you leave before the situation gets any worse."
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536c5c82366236d41e0027ac"
+  }
+  actions {
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "hansArriving"
+          }
+        }
+      }
+      args {
+        int_value: 2
+      }
+    }
+  }
+}
+roots {
+  nextNodeIndex: 0
+}

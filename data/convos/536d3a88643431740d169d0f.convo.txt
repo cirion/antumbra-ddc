@@ -1,0 +1,133 @@
+idRef {
+  id: "536d3a88643431740d169d0f"
+}
+ui_name: "a3-banter-3_Norton_Elorn"
+nodes {
+  idRef {
+    id: "536d3a8a643431740d169d15"
+  }
+  index: 0
+  text: "I just don\342\200\231t understand you, Norton."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d3a98643431740d169d18"
+  }
+  index: 1
+  text: "We have heard this complaint innumerable times! Regrettably, our majesty is so overwhelming as to eclipse the comprehension of many of our subjects. \n\nNevertheless, we feel it is our duty to illuminate all who wish to understand our essence."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d3aad643431740d169d1b"
+  }
+  index: 2
+  text: "Most of the people following $(l.name) are killers. I know that I am. There are some hard-core mercs, psychopathic mages, homicidal riggers. \n\nAnd then, there\342\200\231s you. I have hardly ever seen you lift a finger against another person. Why?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d3ac2643431740d169d1e"
+  }
+  index: 3
+  text: "A wise question! Destruction is not in our nature. \n\nRemember, we hold complete dominion over all of CalFree, including all of her denizens. What kind of monarch would kill their own subjects? \n\nEven those who struggle against us are merely misguided citizens, to be pitied rather than feared."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d3ada643431740d169d21"
+  }
+  index: 4
+  text: "As the ruler of this land, our duty is to enhance, to raise up, to strengthen those around us with our words, our deeds, our magic. We seek always to improve that around us, not diminish it."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d3ae8643431740d169d24"
+  }
+  index: 5
+  text: "And yet, the people you\342\200\231re \342\200\234raising up\342\200\235 inevitably kill their enemies."
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d3af6643431740d169d27"
+  }
+  index: 6
+  text: "My dear boy, you mustn\342\200\231t forget the primacy of free will! \n\nWe have unparalleled power, but are neither omnipotent nor omniscient. What our comrades do with their enhancements is entirely their responsibility."
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d3b18643431740d169d2a"
+  }
+  index: 7
+  text: "It always pleases us when conflicts are resolved amicably, with no need for violence. We recognize that this is not always possible, but like to think that over time, the example we set will encourage more of our potential foes to instead become allies."
+  branches {
+    responseText: ""
+    nextNodeIndex: 8
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d3b2c643431740d169d2d"
+  }
+  index: 8
+  text: "That\342\200\231s a beautiful sentiment, if perhaps misguided. \n\nWhere exactly does that leave me, though? Do you hate me for not following the path of peace?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 9
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d3b40643431740d169d30"
+  }
+  index: 9
+  text: "The mere fact that you ask this question shows that you have a good heart. You may follow in the tradition of Cincinnatus, who fulfilled his duty to Rome, and then immediately returned to a life of peace. \n\nContinue to question, Elorn. Your uncertainty will keep you from straying too far from the path of rightness."
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+roots {
+  nextNodeIndex: 0
+}

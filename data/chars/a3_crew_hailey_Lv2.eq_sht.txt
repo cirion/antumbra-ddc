@@ -1,0 +1,43 @@
+unique_id: "a3_crew_hailey_Lv2"
+equipment {
+  prefab_name: "DeckerFab"
+}
+equipment {
+  prefab_name: "DroneRepairKit_med"
+}
+equipment {
+  prefab_name: "DroneRepairKit_med"
+}
+equipment {
+  prefab_name: "HealthPack_med"
+}
+equipment {
+  prefab_name: "CyberdeckKraftwerk1"
+}
+equipment {
+  prefab_name: "ESP Assassin"
+}
+equipment {
+  prefab_name: "PR NPC Decker Medic 2"
+}
+equipment {
+  prefab_name: "PR NPC Decker Killer 2"
+}
+equipment {
+  prefab_name: "PR NPC Decker Blaster 2"
+}
+equipment {
+  prefab_name: "DroneAttackB_Strato9"
+}
+equipment {
+  prefab_name: "HealthPack_med"
+}
+equipment {
+  prefab_name: "Grenade (Smoke)"
+}
+equipment {
+  prefab_name: "DroneSupportB_RoboDoc"
+}
+equipment {
+  prefab_name: "ESP Shield"
+}

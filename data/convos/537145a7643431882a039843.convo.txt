@@ -1,0 +1,140 @@
+idRef {
+  id: "537145a7643431882a039843"
+}
+ui_name: "a3-end-amelia"
+nodes {
+  idRef {
+    id: "537145b2643431882a039849"
+  }
+  index: 0
+  text: "Well, will you lookit that? A giant flappin\342\200\231 dragon! I guess I\342\200\231ve seen everything now."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "talkedToAmelia"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "numPeopleTalkedTo"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "537145bd643431882a03984c"
+  }
+  index: 1
+  text: "Bit of a shame about the war, though. I thought it was going to make me rich! \n\nNow I\342\200\231ve got an enormous arsenal of firepower, and no customers."
+  branches {
+    responseText: "You could try selling them to Hestaby."
+    nextNodeIndex: 2
+  }
+  branches {
+    responseText: "Cheer up. Maybe Aztlan will invade CalFree again."
+    nextNodeIndex: 3
+  }
+  branches {
+    responseText: "The metal must be worth something."
+    nextNodeIndex: 4
+  }
+  branches {
+    responseText: "I might buy some off of you."
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714612643431882a039861"
+  }
+  index: 2
+  text: "Nah. I heard what she said. A dragon like that isn\342\200\231t going to arm her followers, and it\342\200\231s not like she needs any weapons of her own. \n\nHeck, I\342\200\231m pretty sure she can\342\200\231t even operate the triggers on my biggest guns."
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5371460e643431882a03985d"
+  }
+  index: 3
+  text: "Yeah! You\342\200\231re right. \n\nThere\342\200\231s always gonna be a war. If not that, then maybe Saito will march on Sacramento, or I can always try to inflame tensions with Pueblo. \n\nThis is just a setback, not a defeat."
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714608643431882a039859"
+  }
+  index: 4
+  text: "What, like beating them into plowshares? I never understood that expression. \n\nGuns and butter aren\342\200\231t fungible. I paid too high a premium to turn these into scrap."
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537145f2643431882a039852"
+  }
+  index: 5
+  text: "Yeah? Like, several hundred thousand Ares Predators? I hope you have deep pockets."
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537145f5643431882a039855"
+  }
+  index: 6
+  text: "Well, looks like I\342\200\231ll be moving on soon. It\342\200\231s been a pleasure, $(l.name). Thanks for saving CalFree and all that jazz. Next time, though, try not to cut so deeply into my profit margin."
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  nextNodeIndex: 0
+}

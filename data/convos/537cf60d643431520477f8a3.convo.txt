@@ -1,0 +1,430 @@
+idRef {
+  id: "537cf60d643431520477f8a3"
+}
+ui_name: "a3-finale_cave-spelunker"
+nodes {
+  idRef {
+    id: "537cf61a643431520477f8a9"
+  }
+  index: 0
+  text: "{{GM}}You reach for the rope, and are startled when the seemingly-dead corpse begins to stir.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "537cf5b9643431520477f8a1"
+  }
+}
+nodes {
+  idRef {
+    id: "537cf63e643431520477f8ac"
+  }
+  index: 1
+  text: "I\'m not... quite dead yet... drek..."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537cf64a643431520477f8af"
+  }
+  index: 2
+  text: ""
+  branches {
+    responseText: "What happened to you?"
+    nextNodeIndex: 3
+    onlyOnce: true
+    idRef {
+      id: "537cf6c2643431520477f8c2"
+    }
+  }
+  branches {
+    responseText: "Did you see a woman run past here?"
+    nextNodeIndex: 4
+    onlyOnce: true
+    idRef {
+      id: "537cf6c5643431520477f8c3"
+    }
+  }
+  branches {
+    responseText: "Can I have that rope?"
+    nextNodeIndex: 6
+  }
+  branches {
+    responseText: "Time to put you out of your misery."
+    nextNodeIndex: 18
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537cf6e0643431520477f8cb"
+  }
+  index: 3
+  text: "Tir Tairngire happened, that\'s what.\n\n{{GM}}He coughs raggedly, spewing up blood. He doesn\'t seem to have much longer.{{/GM}}\n\nI was on my... way back up, and one of those... bastards shot me. He didn\'t even think I... was worth finishing off, just left me to... crawl away and die... alone down here."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537cf890643431520477f8cf"
+  }
+  index: 4
+  text: "Yeah, I did.\n\n{{GM}}A momentary look of peace settles on his face.{{/GM}}\n\nShe knelt beside me... and told me not to worry. She said that my wounds... were mortal, but she would... give me a gift. And, somehow, she did.\n\nI\'m still... dying, but I don\'t feel the... pain any more."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537cf8da643431520477f8d2"
+  }
+  index: 5
+  text: "I hope she can do... that trick on herself. She seemed like she... was in awful pain herself. \n\nBut she somehow managed to... go down that pit. I\'m not... sure how, that fall would kill anyone..."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537cf952643431520477f8d8"
+  }
+  index: 6
+  text: "What, so you can chase after... that poor woman? How do I know you won\'t... harm her?\n\n{{GM}}He reaches out and grasps the coils, bringing them in closer to his chest.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537cf983643431520477f8db"
+  }
+  index: 7
+  text: "I\'ll tell you what... we\'ll riddle for it. You might be a killer... but at least that way I\'ll know you\'re not... a brute.\n\nWe walk into a room... The room holds three pedestals... Each holds an artifact from the Fourth World... A mighty sword that can slice through anything... A tome of ancient arcane knowledge... And a rod that can summon a powerful earth elemental.\n\nI grab the sword and say... \"On this day you will meet your death!\" What do you grab... to stop me?"
+  branches {
+    responseText: "I grab the book."
+    nextNodeIndex: 8
+  }
+  branches {
+    responseText: "I grab the rod."
+    nextNodeIndex: 10
+  }
+  branches {
+    responseText: "{{CC}}Etiquette: Shadowrunner{{/CC}} You seem like a man who knows his job. Well, I have a job to do as well. Please help me do my job."
+    conditions {
+      ops {
+        functionName: "Compare Actor Skill"
+        args {
+          call_value {
+            functionName: "Get Map Item (Player)"
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "BaseOrCurrent"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "ActorSkills"
+            }
+            args {
+              int_value: 17
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+        args {
+          int_value: 0
+        }
+      }
+    }
+    nextNodeIndex: 15
+  }
+  branches {
+    responseText: "{{CC}}Charisma: 6{{/CC}} Look, this is ridiculous. Look into my eyes. You must know that I am trustworthy."
+    conditions {
+      ops {
+        functionName: "Compare Actor Attribute"
+        args {
+          call_value {
+            functionName: "Triggering Actor"
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "BaseOrCurrent"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "ActorAttributes"
+            }
+            args {
+              int_value: 3
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 3
+            }
+          }
+        }
+        args {
+          int_value: 6
+        }
+      }
+    }
+    nextNodeIndex: 16
+  }
+  branches {
+    responseText: "I don\'t have time for this. {{GM}}Attack.{{/GM}}"
+    nextNodeIndex: 18
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537cfbed643431520477f92b"
+  }
+  index: 8
+  text: "No.\n\n{{GM}}He shakes his head sadly.{{/GM}}\n\nIf you are unfamiliar... with resolving conflict peacefully, how can you... resort to anything but violence?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 9
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537cfc1d643431520477f92e"
+  }
+  index: 9
+  text: "My time is over, but I have... a friend who will stop you from... following her. She must... live, no matter what."
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "spelunkerConvoState"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "537cfd12643431520477f958"
+  }
+  index: 10
+  text: "Yes! The earth elemental can... absorb the blows of the sword, dulling its... force...\n\nI hope that my... trust in you is not... misplaced. Two more riddles remain..."
+  branches {
+    responseText: ""
+    nextNodeIndex: 11
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53851aff6434312404d12f85"
+  }
+  index: 11
+  text: "Now, imagine that we... explore an ancient Egyptian tomb... I find an ancient scroll of papyrus... and claim that it shows the way into a hidden vault...\n\nYou wish to claim the treasure for yourself... how do you accomplish this?"
+  branches {
+    responseText: "I threaten to cut up the scroll unless you share the secret."
+    nextNodeIndex: 12
+  }
+  branches {
+    responseText: "I try to imprison you within the rock."
+    nextNodeIndex: 8
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "I don\'t have time for this. {{GM}}Attack.{{/GM}}"
+    nextNodeIndex: 18
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53851de96434312404d12fc4"
+  }
+  index: 12
+  text: "Yes! The blade can... cut through the paper... there is no stopping it..."
+  branches {
+    responseText: ""
+    nextNodeIndex: 13
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53862ddf643431570bac7d71"
+  }
+  index: 13
+  text: "Finally... I have taken control of an orbital satellite... and will cast a meteor down upon the earth... Renraku asks you to stop me... how do you do so?"
+  branches {
+    responseText: "I build a titanium cutter to slice the meteor in half."
+    nextNodeIndex: 8
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "I look for blueprints that cover the layout of the satellite."
+    nextNodeIndex: 14
+  }
+  branches {
+    responseText: "I\'ve played along for too long. {{GM}}Attack.{{/GM}}"
+    nextNodeIndex: 18
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53862f09643431570bac7d7f"
+  }
+  index: 14
+  text: "Yes.\n\n{{GM}}He chuckles softly to himself, then collapses into a fit of coughing.{{/GM}}\n\nRo sham bo..."
+  branches {
+    responseText: ""
+    nextNodeIndex: 17
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537cfbbb643431520477f925"
+  }
+  index: 15
+  text: "Yes, you... do have that look about you. You\'ll finish... the job, whether I help... you or not."
+  branches {
+    responseText: ""
+    nextNodeIndex: 17
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537cfb65643431520477f8fe"
+  }
+  index: 16
+  text: "I.... can\'t believe this, but somehow... I do believe you."
+  branches {
+    responseText: ""
+    nextNodeIndex: 17
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537cfb86643431520477f901"
+  }
+  index: 17
+  text: "Take this rope with my blessing. And if you... see that woman, please tell her... that I love her."
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "spelunkerConvoState"
+          }
+        }
+      }
+      args {
+        int_value: 2
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "537cf912643431520477f8d6"
+  }
+  index: 18
+  text: "I didn\'t spend a lifetime in the dirt without finding a few friends. I will be avenged!"
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "spelunkerConvoState"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+roots {
+  nextNodeIndex: 0
+}

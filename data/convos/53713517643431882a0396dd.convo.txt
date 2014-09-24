@@ -1,0 +1,65 @@
+idRef {
+  id: "53713517643431882a0396dd"
+}
+ui_name: "a3-finale_dam-tabitha_4"
+nodes {
+  idRef {
+    id: "53713524643431882a0396e3"
+  }
+  index: 0
+  text: "Ungh! \n\n$(l.name)... please, I\342\200\246 I feel wrong."
+  branches {
+    responseText: "What happened here?"
+    nextNodeIndex: 1
+  }
+  branches {
+    responseText: "What do you need?"
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "If you can\342\200\231t help, get out of the way!"
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53713544643431882a0396ea"
+  }
+  index: 1
+  text: "I\342\200\246 this body\342\200\246 I\342\200\231m too weak..."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5371355b643431882a0396ec"
+  }
+  index: 2
+  text: "Keep him away\342\200\246 I must flee\342\200\246\n\nPlease, buy me some time. I beg of you. Help me live\342\200\246"
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "hansArriving"
+          }
+        }
+      }
+      args {
+        int_value: 3
+      }
+    }
+  }
+}
+roots {
+  nextNodeIndex: 0
+}

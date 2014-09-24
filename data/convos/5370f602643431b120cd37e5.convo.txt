@@ -1,0 +1,332 @@
+idRef {
+  id: "5370f602643431b120cd37e5"
+}
+ui_name: "a3-scrapyard-rick"
+nodes {
+  idRef {
+    id: "5370f608643431b120cd37eb"
+  }
+  index: 0
+  text: "We caught some other Humanis types trying to come in. Fried \342\200\230em from the air. \n\nDear God I love my drones!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5370f61b643431b120cd37ee"
+  }
+  index: 1
+  text: "What\342\200\231s the situation here?"
+  branches {
+    responseText: "We wiped them all out, except for Claude."
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5370f638643431b120cd37f1"
+  }
+  index: 2
+  text: "Blast it. He must have escaped in the crossfire. \n\nTypical NC, doesn\342\200\231t think twice about killing, but will abandon his comrades to save his own life."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5370f647643431b120cd37f4"
+  }
+  index: 3
+  text: "Still, you done good. Best as I could have hoped for, really. \n\nWe didn\342\200\231t just clear out the water gangs in the area, but we also dealt a blow to the NC. \n\nWho knows what they were plotting, but hopefully now we\342\200\231ll never have to find out."
+  branches {
+    responseText: ""
+    conditions {
+      ops {
+        functionName: "Evaluate If Actor is Inside Region"
+        args {
+          call_value {
+            functionName: "All Actors With Tag"
+            args {
+              call_value {
+                functionName: "Tag From String"
+                args {
+                  string_value: "isDorbi"
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "AllOrAny"
+                }
+                args {
+                  int_value: 1
+                }
+              }
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "AreOrAreNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Region)"
+            args {
+              string_value: "53666daf3662362409007fa5"
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 4
+  }
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5370f673643431b120cd37f8"
+  }
+  index: 4
+  text: "Hm\342\200\246 assuming nobody restarts the water jacking gang.\n\nWe don\342\200\231t need to worry about you any more, right, Dorbi?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5370f691643431b120cd37fb"
+  }
+  index: 5
+  text: "Huh? \n\nOh\342\200\246. yeah. Right. Yeah, I\342\200\231ll be good. \n\nFor a given definition of \342\200\234good.\342\200\235"
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "5370f6b4643431b120cd3800"
+  }
+  index: 6
+  text: "Sorry, I shouldn\'t be joking. You don\342\200\231t have to worry about me. \n\nJust give me a bed to sleep in and regular meals, and I\342\200\231ll give all the firepower you need."
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "5370f6ab643431b120cd37fe"
+  }
+  index: 7
+  text: "I\342\200\231ll let the other Rangers know how you helped us out. We can help make sure the roads are safe for the convoys. \n\nSo, now that water can move safely through the region again, where would you like it to flow? "
+  branches {
+    responseText: "My base is the one thing standing between Tir and CalFree. We\342\200\231ll need every drop of water if we\342\200\231re going to have a chance against them."
+    nextNodeIndex: 8
+  }
+  branches {
+    responseText: "The farmers here are suffering. Just make sure they get their allotment, and none of the gangs or agri-corps mess with them."
+    nextNodeIndex: 9
+  }
+  branches {
+    responseText: "Try to make sure the water is allocated fairly. We\342\200\231ll take whatever water the area can spare."
+    nextNodeIndex: 10
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5370f6fb643431b120cd380d"
+  }
+  index: 8
+  text: "Understood. If you fall, so will we all. \n\nWe\342\200\231ll make sure all the tankers moving in your direction arrive safely. You\342\200\231ll be one of the best-equipped outfits in the region."
+  branches {
+    responseText: ""
+    nextNodeIndex: 11
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Global_Supplies"
+          }
+        }
+      }
+      args {
+        int_value: 2
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "5370f6f9643431b120cd380b"
+  }
+  index: 9
+  text: "That\342\200\231s awfully decent of you, $(l.name)! \n\nWell, I certainly won\342\200\231t argue with you. I\342\200\231ll be sure to let everyone know who\342\200\231s responsible for saving their crops.\n\nDon\342\200\231t be surprised if some grateful followers start straggling into that camp of yours."
+  branches {
+    responseText: ""
+    nextNodeIndex: 11
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Global_Manpower"
+          }
+        }
+      }
+      args {
+        int_value: 2
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "5370f6f7643431b120cd3809"
+  }
+  index: 10
+  text: "Yeah, that seems like the wisest approach. \n\nI\342\200\231ll make sure you get your fair share of resources. I\342\200\231m certain that the folks around here will appreciate your generosity."
+  branches {
+    responseText: ""
+    nextNodeIndex: 11
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Global_Manpower"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Global_Supplies"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "5370f709643431b120cd3810"
+  }
+  index: 11
+  text: "Okay, the stink here is starting to grate. How about I give you a lift back to camp?"
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Trigger: Run Alternate Trigger"
+      args {
+        call_value {
+          functionName: "Get Map Item (Trigger)"
+          args {
+            string_value: "5370f881643431b120cd38e3"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WaitOrNot"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+}
+roots {
+  nextNodeIndex: 0
+}

@@ -1,0 +1,677 @@
+idRef {
+  id: "5223b276366236680e003bed"
+}
+ui_name: "A2S05-Omphalos"
+nodes {
+  idRef {
+    id: "5223b299366236680e003bf3"
+  }
+  index: 0
+  text: "{{GM}}You spot an elf staring intently at the stage, bobbing her head to the music. She flashes a brilliant smile upon noticing you.{{/GM}}\n\nYou must be $(l.name), right? Kali was talking about you earlier today. You\342\200\231re quite notorious, you know that?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5223b2bd366236680e003bf6"
+  }
+  index: 1
+  text: "Do you want anything?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53724e446434311639fc5267"
+  }
+  index: 2
+  text: ""
+  branches {
+    responseText: "Who are you?"
+    nextNodeIndex: 3
+    onlyOnce: true
+    idRef {
+      id: "5223e279366236680e00440e"
+    }
+  }
+  branches {
+    responseText: "What do you think of Kali?"
+    nextNodeIndex: 4
+    onlyOnce: true
+    idRef {
+      id: "5223dc00366236680e004201"
+    }
+  }
+  branches {
+    responseText: "Can I record a track?"
+    conditions {
+      ops {
+        functionName: "Get Dependent Story Variable (bool)"
+        args {
+          call_value {
+            functionName: "Get Previous Story Variable (bool)"
+            args {
+              string_value: "51f7429764343188990041a8"
+            }
+            args {
+              string_value: "A1_Bool_SidedWithKali"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "KnowAboutRecording"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 6
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "5234ff063662364c1d002678"
+    }
+  }
+  branches {
+    responseText: "Can I record a track?"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Dependent Story Variable (bool)"
+            args {
+              call_value {
+                functionName: "Get Previous Story Variable (bool)"
+                args {
+                  string_value: "51f7429764343188990041a8"
+                }
+                args {
+                  string_value: "A1_Bool_SidedWithKali"
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "bool"
+                }
+                args {
+                  int_value: 0
+                }
+              }
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "KnowAboutRecording"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 8
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "5223b399366236680e003c11"
+    }
+  }
+  branches {
+    responseText: "What do you think of my demo so far?"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "RecordingRemix"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Variable (int)"
+            args {
+              string_value: "RecordingQuestStage"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          int_value: 1
+        }
+      }
+    }
+    nextNodeIndex: 9
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "5223e327366236680e004455"
+    }
+  }
+  branches {
+    responseText: "Nope."
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53724e496434311639fc5270"
+  }
+  index: 3
+  text: "I was born Idril Nellas, but I go by DJ Omphalos these days. I specialize in thrumming music, and have played most styles and clubs at some point in my career. I\'ve also helped several people record demo tracks and launch their own careers."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "KnowAboutRecording"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "53724e4e6434311639fc527f"
+  }
+  index: 4
+  text: "Oh, she\342\200\231s fantastic. I\342\200\231m so glad that she came to San Francisco, her talents were wasted in Seattle. She\342\200\231s not just a terrific performer, but she\342\200\231s one of the few artists who can relate really well to people outside of our culture. That\342\200\231s proven to be extremely useful here in the city."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53724e4e6434311639fc5282"
+  }
+  index: 5
+  text: "Ever since martial law was imposed, most clubs have been dying a slow death, but Kali has quickly found the right palms to grease, the right favors to collect, and the right compliments to pay Saito. It\342\200\231s making her very rich, but it\342\200\231s also giving us the first decent venue we\342\200\231ve enjoyed here in years."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+}
+nodes {
+  idRef {
+    id: "53724e546434311639fc528e"
+  }
+  index: 6
+  text: "Sure thing! Kali was mentioning that she owed you a favor from Seattle."
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53724e546434311639fc5291"
+  }
+  index: 7
+  text: "Here\342\200\231s a blank recording deck. Find Kali below and see if she can free up some studio space for you. Good luck!"
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add Item to Actor"
+      args {
+        call_value {
+          functionName: "Get Map Item (Item)"
+          args {
+            string_value: "Demo Deck"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Player)"
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Goal Status"
+      args {
+        call_value {
+          functionName: "Get Map Item (Goal)"
+          args {
+            string_value: "Record a demo"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "GoalStatus"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Waypoint on Actor"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "PrimaryOrSecondary"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "5223a317366236680e003a06"
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "53724e596434311639fc529a"
+  }
+  index: 8
+  text: "Yeah, I guess so. Apparently the people you\342\200\231re with have told Kali to cooperate with you in all things. This probably wasn\342\200\231t what they were thinking of, though."
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53724e606434311639fc52af"
+  }
+  index: 9
+  text: "{{GM}}DJ Omphalos plugs your deck into a nearby sound system and cranks it up, ignoring the annoyed glances from nearby partiers.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 10
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53724e606434311639fc52b2"
+  }
+  index: 10
+  text: "Not bad! Have you done this before?\n\nThere\342\200\231s nothing wrong with this, and I think you could release it and do rather well. If you\342\200\231d like, though, I\342\200\231d be happy to remix it for you. It might sound a bit fresher that way, and, frankly, a lot of my fans will buy anything that I remix. What do you say?"
+  branches {
+    responseText: "Sure, go for it."
+    nextNodeIndex: 11
+  }
+  branches {
+    responseText: "No, I\342\200\231ll keep my mix."
+    nextNodeIndex: 13
+  }
+}
+nodes {
+  idRef {
+    id: "53724e606434311639fc52b5"
+  }
+  index: 11
+  text: "{{GM}}DJ Omphalos opens up a mixing program and sets to work. She collects samples, loops them, distorts them, pulls apart your track elements and rearranges them. When she finishes, no new elements have been added, but it sounds like an entirely different song.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 12
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53724e606434311639fc52b8"
+  }
+  index: 12
+  text: "That was fun! I hope it turns out well. No need to worry about royalties, but if this one does well I\342\200\231d like you to collaborate on one of my next tracks, okay?"
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "5215664d3662365c180018bf"
+          }
+          args {
+            string_value: "A2_DemoQuality"
+          }
+        }
+      }
+      args {
+        int_value: 500
+      }
+    }
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "RecordingRemix"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "53724e606434311639fc52bb"
+  }
+  index: 13
+  text: "{{GM}}Omphalos shrugs.{{/GM}} \n\nSuit yourself."
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  responseText: ""
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "TalkedToOmphalos"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "TalkedToOmphalos"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  nextNodeIndex: 0
+}
+roots {
+  responseText: ""
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "TalkedToOmphalos"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  nextNodeIndex: 1
+  auxiliaryLink: true
+}

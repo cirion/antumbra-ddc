@@ -1,0 +1,310 @@
+idRef {
+  id: "536d3b6e643431740d169d48"
+}
+ui_name: "a3-banter-4_Norton"
+nodes {
+  idRef {
+    id: "536d3b74643431740d169d4e"
+  }
+  index: 0
+  text: "$(l.name)! Might we take another moment of your time?"
+  branches {
+    responseText: "Of course, Norton."
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "Oh no, what is it this time?"
+    nextNodeIndex: 1
+  }
+  branches {
+    responseText: "Absolutely not."
+    nextNodeIndex: 18
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d3b93643431740d169d53"
+  }
+  index: 1
+  text: "We are preparing an imperial proclamation to declare this coming Friday $(l.name) Day, a national holiday wherein all our subjects will celebrate your actions in defending California. \n\nWe wish to add biographical details to our missive, so let us first ask: where were you born?"
+  branches {
+    responseText: "I come from Seattle."
+    nextNodeIndex: 2
+  }
+  branches {
+    responseText: "I\342\200\231m a Californian."
+    nextNodeIndex: 3
+  }
+  branches {
+    responseText: "I hail from Denver."
+    nextNodeIndex: 4
+  }
+  branches {
+    responseText: "I\342\200\231m originally from Europe."
+    nextNodeIndex: 5
+  }
+  branches {
+    responseText: "I came here from far away."
+    nextNodeIndex: 6
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "I\342\200\231m actually not sure where I was born."
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d3c16643431740d169d6b"
+  }
+  index: 2
+  text: "Indeed? You must have found quite an improvement in our weather since arriving here."
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d3c19643431740d169d6e"
+  }
+  index: 3
+  text: "How marvelous! It warms our heart to think that one of California\342\200\231s own children will save her in her hour of need."
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d3c1c643431740d169d71"
+  }
+  index: 4
+  text: "Such a fascinating place. We regularly send encouraging missives to our UCAS citizens within that city."
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d3c21643431740d169d74"
+  }
+  index: 5
+  text: "You have traveled quite far! We wish to walk that land one day. It holds so much history and class that our own young empire quite lacks."
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d3bf8643431740d169d60"
+  }
+  index: 6
+  text: "How mysterious! Our readers will doubtless be drawn by their curiosity."
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d3c04643431740d169d63"
+  }
+  index: 7
+  text: "How did you come to acquire your impressive array of skills?"
+  branches {
+    responseText: "I learned them from my parents."
+    nextNodeIndex: 8
+  }
+  branches {
+    responseText: "I picked them up on the streets."
+    nextNodeIndex: 9
+  }
+  branches {
+    responseText: "I has talented teachers."
+    nextNodeIndex: 10
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d3cab643431740d169d8d"
+  }
+  index: 8
+  text: "Ah, so this is a family affair, then. \n\nDoubtless you will one day pass your training down to children of your own, thus establishing a glorious dynasty."
+  branches {
+    responseText: ""
+    nextNodeIndex: 11
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d3ca6643431740d169d89"
+  }
+  index: 9
+  text: "Yes, when placed in a dangerous environment, one must quickly learn to respond to threats, or else face lethal consequences."
+  branches {
+    responseText: ""
+    nextNodeIndex: 11
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d3c9e643431740d169d82"
+  }
+  index: 10
+  text: "We have no doubt that you have made them proud!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 11
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d3ca2643431740d169d85"
+  }
+  index: 11
+  text: "And why did you decide to become a shadowrunner?"
+  branches {
+    responseText: "It\342\200\231s a good way to make money."
+    nextNodeIndex: 12
+  }
+  branches {
+    responseText: "It lets me kill people without consequences."
+    nextNodeIndex: 13
+  }
+  branches {
+    responseText: "To make the world a better place."
+    nextNodeIndex: 14
+  }
+  branches {
+    responseText: "It keeps things exciting."
+    nextNodeIndex: 15
+  }
+  branches {
+    responseText: "I didn\342\200\231t have any other choice."
+    nextNodeIndex: 16
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d3d37643431740d169da9"
+  }
+  index: 12
+  text: "Truly. Of course, money does not have intrinsic value; you must value the items and pleasures you can acquire with that money."
+  branches {
+    responseText: ""
+    nextNodeIndex: 17
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d3d32643431740d169da5"
+  }
+  index: 13
+  text: "How alarming! But we suppose such practice will prove helpful in the coming struggle."
+  branches {
+    responseText: ""
+    nextNodeIndex: 17
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d3d2d643431740d169da1"
+  }
+  index: 14
+  text: "That sounds incredibly noble of you, $(l.name). Well done! Such an attitude is extremely rare among your brethren. "
+  branches {
+    responseText: ""
+    nextNodeIndex: 17
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d3d28643431740d169d9d"
+  }
+  index: 15
+  text: "Even as our ancestors might have become pirates or adventurers, so we find shadowrunning a romantic, thrilling vocation."
+  branches {
+    responseText: ""
+    nextNodeIndex: 17
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d3d18643431740d169d96"
+  }
+  index: 16
+  text: "And so the very fates of the universe conspired against you, thrusting you into a position where you could fulfil your destiny! How intriguing."
+  branches {
+    responseText: ""
+    nextNodeIndex: 17
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d3d1c643431740d169d99"
+  }
+  index: 17
+  text: "We thank you for your patience. Rest assured that we shall convey this information with the utmost respect due your station. Do not forget that you, too can enjoy $(l.name) day: be certain to celebrate it with your friends!"
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d3b9e643431740d169d58"
+  }
+  index: 18
+  text: "Alas! We shall need to leave this page in your history book blank for the time being. We will trust in your judgment, and trouble you no further. "
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+roots {
+  nextNodeIndex: 0
+}

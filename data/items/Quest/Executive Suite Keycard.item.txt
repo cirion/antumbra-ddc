@@ -1,0 +1,8 @@
+id: "Executive Suite Keycard"
+type: ItemType_QuestItem
+uirep {
+  name: "Executive Suite Keycard"
+  description: "This should grant you entry to Kali\'s innermost sanctum."
+}
+credentials: 0
+sorting_group: "Quest"

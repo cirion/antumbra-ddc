@@ -1,0 +1,251 @@
+idRef {
+  id: "537148a6643431882a03994c"
+}
+ui_name: "a3-end-hailey"
+nodes {
+  idRef {
+    id: "537148b2643431882a039952"
+  }
+  index: 0
+  text: "We did it! \n\n{{GM}}Hailey rushes towards you, wrapping her arms around your shoulders and burying her head in your chest.{{/GM}} \n\nI was so worried, but you saw us through to the end!"
+  branches {
+    responseText: "You helped too, you know."
+    nextNodeIndex: 1
+  }
+  branches {
+    responseText: "Hey, saving the day: it\342\200\231s what I do."
+    nextNodeIndex: 2
+  }
+  branches {
+    responseText: "Yes, yes, that\342\200\231s enough."
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "talkedToHailey"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "numPeopleTalkedTo"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "537148c5643431882a039955"
+  }
+  index: 1
+  text: "Oh, all of us played our parts. The grunts, the support staff, even techy geeks like me. \n\nBut you\342\200\231re the one who brought us all here and taught us to work together."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537148da643431882a03995a"
+  }
+  index: 2
+  text: "And you\342\200\231re the best at it! At least three times, by my count. I\342\200\231d say you\342\200\231ve earned a rest."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537148de643431882a03995d"
+  }
+  index: 3
+  text: "{{GM}}She releases her embrace and grins cheekily at you.{{/GM}} \n\nSo you\342\200\231ll gladly stare down zombies, immortal fire elementals, and the entire Tir Tairngire army, but are scared of hugs. Good to know!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537148e1643431882a039960"
+  }
+  index: 4
+  text: "Everyone\342\200\231s been talking about that dragon. I still can\342\200\231t believe that she\342\200\231s just\342\200\246 here, you know? \n\nLike, the first thing a shadowrunner learns is to never make a deal with a dragon. But she\342\200\246 it seems like she\342\200\231s just trustworthy?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714993643431882a039970"
+  }
+  index: 5
+  text: ""
+  branches {
+    responseText: "Have you heard her speak?"
+    nextNodeIndex: 6
+    onlyOnce: true
+    idRef {
+      id: "537149a8643431882a039986"
+    }
+  }
+  branches {
+    responseText: "Are you going back to San Francisco?"
+    nextNodeIndex: 7
+    onlyOnce: true
+    idRef {
+      id: "537149bb643431882a039989"
+    }
+  }
+  branches {
+    responseText: "Now that it\342\200\231s over, what are your thoughts on this run?"
+    nextNodeIndex: 11
+    onlyOnce: true
+    idRef {
+      id: "53895c27366236380a006eb6"
+    }
+  }
+  branches {
+    responseText: "Take care, Hailey."
+    nextNodeIndex: 13
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714998643431882a039977"
+  }
+  index: 6
+  text: "Not after that initial order to Tir, no. \n\nI know a bunch of other people have been getting messages from her, though. I think it might be related to your essence? Magical types seem to be way more excited about her than people like me who are filled with chrome. \n\nI dunno. It\342\200\231s interesting!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537149b2643431882a039988"
+  }
+  index: 7
+  text: "Yeah, soon. \n\nI kinda want to get a trivid of me with Hestaby first, though. Would you mind taking our picture?"
+  branches {
+    responseText: "Sure."
+    nextNodeIndex: 8
+  }
+  branches {
+    responseText: "Not now."
+    nextNodeIndex: 9
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537149d0643431882a03998d"
+  }
+  index: 8
+  text: "Thanks, $(l.name)! You\342\200\231re the best!\n\n{{GM}}Hailey strikes a pose next to Hestaby, who tactfully ignores her posturing. After capturing several appropriately dramatic shots, you return Hailey\342\200\231s gear to her.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 9
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537149e5643431882a03998f"
+  }
+  index: 9
+  text: "Anyways, this has been fun and all, but really makes me miss The City. \n\nThere just aren\342\200\231t that many jack points out here, and I haven\342\200\231t felt all that useful. I\342\200\231ve become one of Kali\342\200\231s most valuable deckers, so I want to keep on practicing my skills and getting more famous."
+  branches {
+    responseText: ""
+    nextNodeIndex: 10
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714a02643431882a039996"
+  }
+  index: 10
+  text: "You should definitely look me up the next time you\342\200\231re in town! Kali has been really successful in carving out more territory from Saito\342\200\231s grasp, and it\342\200\231s actually possible to relax and enjoy yourself again. \n\nIf you ever need anything from there, just let me know - I can be your local connection!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714a28643431882a0399b4"
+  }
+  index: 11
+  text: "Wow\342\200\246 it was crazy! Hella scary, and really sad. \n\nI\342\200\231m still kinda shocked that it turned out as well as it did. It felt like we were all doomed for a while there."
+  branches {
+    responseText: ""
+    nextNodeIndex: 12
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714a59643431882a0399b7"
+  }
+  index: 12
+  text: "The most important thing, though, is that you made the world a better place. \n\nI\342\200\231m not just saying that: there\342\200\231s way fewer anti-metahuman supremacists running around, Colonel Saito has backed down, and, oh yeah, there\342\200\231s that little war that you helped stop, saving millions of lives. \n\nYou\342\200\231re incredible, $(l.name)! I\342\200\231m so glad that I got to help you out. This will be the most important shadowrun of my entire life."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714a6d643431882a0399bb"
+  }
+  index: 13
+  text: "You too, $(l.name)! \n\nI\342\200\231ll let you chat with the others here. Don\342\200\231t forget to ping me the next time you visit San Francisco!"
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  nextNodeIndex: 0
+}

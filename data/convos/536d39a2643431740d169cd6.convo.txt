@@ -1,0 +1,133 @@
+idRef {
+  id: "536d39a2643431740d169cd6"
+}
+ui_name: "a3-banter-3_Dorbi_Elorn"
+nodes {
+  idRef {
+    id: "536d39af643431740d169cdc"
+  }
+  index: 0
+  text: "How many people do you think you\342\200\231ve killed, Dorbi?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d39ba643431740d169cdf"
+  }
+  index: 1
+  text: "You mean today? Let\342\200\231s see\342\200\246 I always try to fit in at least two murders before breakfast\342\200\246"
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d39cd643431740d169ce2"
+  }
+  index: 2
+  text: "I\342\200\231m serious, Dorbi. \n\nYou ran with the gangs for several years, and must have killed a lot of people. Doesn\342\200\231t that bother you?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d39e4643431740d169ce5"
+  }
+  index: 3
+  text: "Not as much as you might think. I mean\342\200\246 I think everyone needs to have a code. And then you need to operate by that code. \n\nMy code tells me that people who are shooting at us deserve to die. So, when someone unloads an uzi at me, and I burn them to a crisp, it isn\342\200\231t my fault. It\342\200\231s what the code demands."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d39f4643431740d169ce8"
+  }
+  index: 4
+  text: "What, so you\342\200\231re just some mindless automaton, killing without a sense of conscience? "
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d3a05643431740d169ceb"
+  }
+  index: 5
+  text: "Not at all. I\342\200\231m the one who writes the code, and it reflects my values. My code says that family is important, and I\342\200\231ll do anything to keep my folks safe. Someone else\342\200\231s code might only care about themself. \n\nBut, when you\342\200\231re in the heat of a firefight, you don\342\200\231t have time to evaluate ethical implications every single time you squeeze a trigger. You trust to the decisions you made when things were calm, and just execute them."
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d3a20643431740d169cee"
+  }
+  index: 6
+  text: "And what about afterwards? Do you review your actions and feel any remorse?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d3a30643431740d169cf1"
+  }
+  index: 7
+  text: "Why would I?\n\n We live in a tough world, Elorn. If I let myself feel bothered every time something didn\342\200\231t go exactly right, I\342\200\231d be depressed constantly. \n\nLighten up! You need to focus on the fun things in life, not let the negative stuff bother you. Find pleasure where you can."
+  branches {
+    responseText: ""
+    nextNodeIndex: 8
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d3a50643431740d169cf4"
+  }
+  index: 8
+  text: "You certainly seem happier than me. I don\342\200\231t think I can find a switch labeled \342\200\234Feelings\342\200\235 and just turn it off, though. Maybe one day..."
+  branches {
+    responseText: ""
+    nextNodeIndex: 9
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d3a5e643431740d169cf7"
+  }
+  index: 9
+  text: "For better or worse, it does get easier with time. You\342\200\231ll see. You just need more practice killing things!"
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+roots {
+  nextNodeIndex: 0
+}

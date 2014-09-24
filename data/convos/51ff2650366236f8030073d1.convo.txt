@@ -1,0 +1,242 @@
+idRef {
+  id: "51ff2650366236f8030073d1"
+}
+ui_name: "A1_Office_Carver_Call_1"
+nodes {
+  idRef {
+    id: "51ff2662366236f8030073d7"
+  }
+  index: 0
+  text: "I couldn\'t help noticing a silhouette appearing in the window. Figured I\'d give you a ring and see if everything\'s okay.\n\n{{GM}}You recognize the oily sound of \"Mr. Johnson\" across the comm. He must have performed thorough reconnaissance to know which desk number to call.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "51ff2732366236f8030073dc"
+  }
+  index: 1
+  text: "Do you need any assistance?"
+  branches {
+    responseText: "Is it true that you handed me a box full of weaponized nanites?"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "51f7429764343188990041a8"
+            }
+            args {
+              string_value: "A1_Bool_KnowAboutNanites"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 2
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "520af7ae366236f4100017c6"
+    }
+  }
+  branches {
+    responseText: "Looks like I have a locked door up ahead."
+    nextNodeIndex: 11
+  }
+  branches {
+    responseText: "Everything\'s good, boss."
+    nextNodeIndex: 12
+  }
+  branches {
+    responseText: "{{GM}}Disconnect the comm.{{/GM}}"
+    nextNodeIndex: -1
+  }
+}
+nodes {
+  idRef {
+    id: "51ff2776366236f8030073e1"
+  }
+  index: 2
+  text: "{{GM}}The comm goes silent for so long that you start to think Mr. Johnson has disconnected.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "51ff279e366236f8030073e4"
+  }
+  index: 3
+  text: "Well.\n\nNow I need to decide whether it\342\200\231s worth my time to kill you."
+  branches {
+    responseText: "Tell me what\342\200\231s really going on."
+    nextNodeIndex: 4
+  }
+  branches {
+    responseText: "You think you can take me, little man?"
+    nextNodeIndex: 10
+  }
+}
+nodes {
+  idRef {
+    id: "51ff27c3366236f8030073e8"
+  }
+  index: 4
+  text: "Fine."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "51ff27cc366236f8030073eb"
+  }
+  index: 5
+  text: "While Kali likes to pretend that she started Antumbra by herself, she had help. Mitsuhama bought the land, paid for construction, and gets a piece of all the action.\n\nWhat they didn\342\200\231t realize, though, was that they hit the jackpot. A new Site of Power has emerged in the tunnels below Antumbra, and those morons are too busy making drekky music to notice it."
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "51ff2844366236f8030073f0"
+  }
+  index: 6
+  text: "My organization wants the Site, and we need to get it without alerting Mitsuhama to what they have. Hence that box, which will make them drop this property faster than you can blink."
+  branches {
+    responseText: "So what now?"
+    nextNodeIndex: 7
+  }
+  branches {
+    responseText: "What does this mean for me?"
+    nextNodeIndex: 7
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "51ff2880366236f8030073fa"
+  }
+  index: 7
+  text: "You were hired to do a job, and I still expect you to do it. If you back out of your contract, I\342\200\231ll see that you never work in Seattle again.\n\nBut... if it\342\200\231s nuyen you want, we can work something out."
+  branches {
+    responseText: ""
+    nextNodeIndex: 8
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "51ff28b3366236f8030073fe"
+  }
+  index: 8
+  text: "I\'ll monitor your progress and check in after you drop off that parcel. You may end up playing a larger role in all of this, thanks to your nosiness."
+  branches {
+    responseText: ""
+    nextNodeIndex: 9
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "51ff28d5366236f803007402"
+  }
+  index: 9
+  text: "Now scram before I change my mind and bring in a more reliable runner!"
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "51f7429764343188990041a8"
+          }
+          args {
+            string_value: "A1_Bool_ToldCarverAboutNanites"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "51ff27d2366236f8030073ed"
+  }
+  index: 10
+  text: "\342\200\246 maybe not. I\342\200\231ll try and be clearer."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "51ff2a2f366236f803007411"
+  }
+  index: 11
+  text: "I don\'t suppose you thought to bring a cutting torch, did you? Of course not. Runners always forget the cutting torch.\n\nLet\'s see... if I were you, I\'d check the desk drawers. One of the employees might have left a keycard behind.\n\nNow get to it! Time\'s wasting, and I only pay for results."
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "51ff2a0f366236f80300740f"
+  }
+  index: 12
+  text: "Then get to it!"
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}

@@ -1,0 +1,762 @@
+idRef {
+  id: "536d4962643431740d169def"
+}
+ui_name: "a3-colma-Tabitha"
+nodes {
+  idRef {
+    id: "537296fa64343195016cddac"
+  }
+  index: 0
+  text: ""
+  branches {
+    responseText: ""
+    conditions {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Variable (int)"
+            args {
+              string_value: "DeadVictims"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+        args {
+          int_value: 1
+        }
+      }
+    }
+    nextNodeIndex: 1
+  }
+  branches {
+    responseText: ""
+    nextNodeIndex: 12
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "talkTabithaState"
+          }
+        }
+      }
+      args {
+        int_value: 3
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "537298de64343195016cdde0"
+  }
+  index: 1
+  text: "Alas! I am certain that you did what you could, but many of Norton\'s loyal soldiers have perished while defending the graveyard. Few will remain to aid your cause."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5372992d64343195016cde03"
+  }
+  index: 2
+  text: "However, the evil has chased their children into this mausoleum.\n\nWill you save them?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "TabithaLeaving"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "5372992d64343195016cde06"
+  }
+  index: 3
+  text: ""
+  branches {
+    responseText: "Can you open the door?"
+    nextNodeIndex: 4
+    onlyOnce: true
+    idRef {
+      id: "5379392836623698150063bc"
+    }
+  }
+  branches {
+    responseText: "Who is \342\200\234the evil\342\200\235?"
+    nextNodeIndex: 5
+    onlyOnce: true
+    idRef {
+      id: "5379392d36623698150063bd"
+    }
+  }
+  branches {
+    responseText: "Do you make a habit of hanging out in graveyards?"
+    nextNodeIndex: 6
+    onlyOnce: true
+    idRef {
+      id: "53924c64643431c922f5eba7"
+    }
+  }
+  branches {
+    responseText: "{{CC}}Etiquette: Academic{{/CC}} That looks like a Byzantine seal. Can you help me depress the opening?"
+    conditions {
+      ops {
+        functionName: "Compare Actor Skill"
+        args {
+          call_value {
+            functionName: "Triggering Actor"
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "BaseOrCurrent"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "ActorSkills"
+            }
+            args {
+              int_value: 19
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+        args {
+          int_value: 0
+        }
+      }
+    }
+    nextNodeIndex: 9
+  }
+  branches {
+    responseText: "{{CC}}Spellcasting: 6{{/CC}} We should be able to open this if we both channel through the seal."
+    conditions {
+      ops {
+        functionName: "Compare Actor Skill"
+        args {
+          call_value {
+            functionName: "Triggering Actor"
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "BaseOrCurrent"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "ActorSkills"
+            }
+            args {
+              int_value: 3
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 3
+            }
+          }
+        }
+        args {
+          int_value: 5
+        }
+      }
+    }
+    nextNodeIndex: 11
+  }
+  branches {
+    responseText: "I\342\200\231ll try and find a way to open that door."
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5372992d64343195016cde09"
+  }
+  index: 4
+  text: "{{GM}}She stares at you with unblinking eyes.{{/GM}}\n\nThis is a test of your abilities, $(l.name). Will you prove yourself capable?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5372992d64343195016cde0f"
+  }
+  index: 5
+  text: "A great and powerful being of pure flame. It calls itself Tophet. All freed spirits are wild, but this one has bound itself to a greater being in exchange for even more power.\n\nSuch a bargain is despicable, and will result in great suffering."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "538caa60643431965539d3d2"
+  }
+  index: 6
+  text: "Many find graveyards to be frightening places. Such people fear death, and wish to avoid all reminders of death. \n\nBy doing so, they become slaves to their fear, and death holds more power over them than it would if they welcomed their passing."
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "538caaad643431965539d3d5"
+  }
+  index: 7
+  text: "You would do well to remember this. Death comes for us all. Some of us, however, have learned to hold conversations with death rather than merely denying it. One can bargain, one can barter, one can even sometimes trick it.\n\nDo not fear death. What is the worst that could happen? You might exchange this world for the next."
+  branches {
+    responseText: ""
+    nextNodeIndex: 8
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "538cab66643431965539d3d8"
+  }
+  index: 8
+  text: "You have the look of a $(l.man) who has developed a habit of avoiding death. One day, it will become unavoidable. On that day, you must face your death directly.\n\nOnly then can you discover what lies on the other side."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5372992d64343195016cde15"
+  }
+  index: 9
+  text: "{{GM}}Tabitha nods silently, then leans toward the door. Working in unison, you both press hidden latches beneath the stone, and it smoothly slides aside.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 10
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5372992d64343195016cde18"
+  }
+  index: 10
+  text: "Our paths must separate for now. I believe we will meet again in the future. My best wishes go with you."
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "CatacombOpen"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "5372992d64343195016cde1b"
+  }
+  index: 11
+  text: "{{GM}}Tabitha nods silently, then closes her eyes as she begins casting. You add your energy to the door from the other side, and after a moment it slides open.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 10
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5372993864343195016cde21"
+  }
+  index: 12
+  text: "Well done. Most of Norton\'s soldiers have survived this fight, and will live on to support you."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Global_Manpower"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "536d49ac643431740d169df6"
+  }
+  index: 13
+  text: "Beware! Great evil lurks within."
+  branches {
+    responseText: ""
+    nextNodeIndex: 14
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536d49dc643431740d169e00"
+  }
+  index: 14
+  text: ""
+  branches {
+    responseText: "What kind of evil?"
+    nextNodeIndex: 15
+    onlyOnce: true
+    idRef {
+      id: "536d49c6643431740d169dfc"
+    }
+  }
+  branches {
+    responseText: "How did you get from Redding to here?"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Global_Met_Tabitha"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 16
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "536d49fd643431740d169e13"
+    }
+  }
+  branches {
+    responseText: "What are you doing here?"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Global_Met_Tabitha"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 17
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "537937ee36623698150062e9"
+    }
+  }
+  branches {
+    responseText: "Thanks for the warning."
+    nextNodeIndex: 18
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "Get lost!"
+    nextNodeIndex: 18
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536d49e2643431740d169e06"
+  }
+  index: 15
+  text: "The air here is\342\200\246 thin. It\342\200\231s very easy for creatures to cross over from the other side.\n\nThe dead have lain at rest for many years, but some being has arrived to whip them into a frenzy. You must tread carefully."
+  branches {
+    responseText: ""
+    nextNodeIndex: 14
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536d4a1e643431740d169e15"
+  }
+  index: 16
+  text: "Oh, it is a short distance as the crow flies. It takes you much longer since you need to travel on the roads and cross so many checkpoints."
+  branches {
+    responseText: ""
+    nextNodeIndex: 14
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536d4a4d643431740d169e28"
+  }
+  index: 17
+  text: "I have been searching for my sister. She disappeared in Germany many years ago. I haven\342\200\231t been able to find her after many years of searching there, and so I have traveled abroad in hopes of locating her."
+  branches {
+    responseText: ""
+    nextNodeIndex: 14
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536d4a68643431740d169e40"
+  }
+  index: 18
+  text: "Some of the poor creatures who lived here before survive still. I hope that you can rescue them before it is too late."
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "TalkedToTabitha"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Global_Met_Tabitha"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Goal Status"
+      args {
+        call_value {
+          functionName: "Get Map Item (Goal)"
+          args {
+            string_value: "Rescue the Metahumans"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "GoalStatus"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+roots {
+  responseText: ""
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "TalkedToTabitha"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Play Music"
+      args {
+        call_value {
+          functionName: "Get Map Item (Music)"
+          args {
+            string_value: "Berlin_Set9"
+          }
+          args {
+            string_value: "Berlin-Set9-Legwork"
+          }
+        }
+      }
+      args {
+        float_value: 1
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  nextNodeIndex: 0
+}
+roots {
+  responseText: ""
+  actions {
+    ops {
+      functionName: "Play Music"
+      args {
+        call_value {
+          functionName: "Get Map Item (Music)"
+          args {
+            string_value: "Berlin_Set9"
+          }
+          args {
+            string_value: "Berlin-Set9-Legwork"
+          }
+        }
+      }
+      args {
+        float_value: 1
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  nextNodeIndex: 13
+}

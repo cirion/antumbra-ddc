@@ -1,0 +1,37 @@
+idRef {
+  id: "5371337e643431882a039691"
+}
+ui_name: "a3-finale_dam-tabitha_3"
+nodes {
+  idRef {
+    id: "53713387643431882a039697"
+  }
+  index: 0
+  text: "I trust you feel better? I wish that I could do more to help those who have fallen here."
+  branches {
+    responseText: "How did you do that?"
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "Can you join our side?"
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "What are you trying to accomplish here?"
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537133b2643431882a0396a1"
+  }
+  index: 1
+  text: "Well, you see\342\200\246"
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  nextNodeIndex: 0
+}

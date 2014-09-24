@@ -1,0 +1,8 @@
+id: "a3-paydata-native_californians"
+type: ItemType_QuestItem
+uirep {
+  name: "Native Californian Paydata File"
+  description: "This appears to be a shipping manifest listing the armaments received by the Native Californians from Tir Tairngire sometime last week."
+}
+credentials: 0
+sorting_group: "Quest"

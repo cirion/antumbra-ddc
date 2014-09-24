@@ -1,0 +1,119 @@
+idRef {
+  id: "536706d53662362409008487"
+}
+ui_name: "a3-intro-Norton_1"
+nodes {
+  idRef {
+    id: "536706e3366236240900848d"
+  }
+  index: 0
+  text: "Dear $(l.name)! We are delighted to have found you! We come bearing most urgent news from our friends in San Francisco."
+  branches {
+    responseText: "It\342\200\231s good to see you again, Emperor Norton."
+    nextNodeIndex: 1
+  }
+  branches {
+    responseText: "By Dunkelzahn, why do you insist on following me?"
+    nextNodeIndex: 2
+  }
+  branches {
+    responseText: "Do I know you?"
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536707823662362409008497"
+  }
+  index: 1
+  text: "And you as well! We had feared that our enemies might have slain you before my timely arrival."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536707f936623624090084a9"
+  }
+  index: 2
+  text: "Why? Because the fate of the realm depends on the swift action of good $(l.race_plural) such as yourself!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5367070d3662362409008492"
+  }
+  index: 3
+  text: "We should think that you do! Surely our fame has preceded us? Out of an abundance of caution, allow us to reintroduce ourself: We are Norton, Emperor of UCAS and Protector of Aztlan, and the guardian of CalFree in her hour of greatest need."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536707bd366236240900849e"
+  }
+  index: 4
+  text: ""
+  branches {
+    responseText: "What aid do you require?"
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "What news do you bear?"
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "Slot off, I\342\200\231m busy."
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5367081136623624090084b3"
+  }
+  index: 5
+  text: "War is coming, $(l.name)! A confrontation so violent that it will make that incident with Shavarus look like a promenade! Kali has sent me to\342\200\246."
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "nortonConvo1Done"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+roots {
+  nextNodeIndex: 0
+}

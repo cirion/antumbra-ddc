@@ -1,0 +1,166 @@
+idRef {
+  id: "537102e2643431b120cd3a81"
+}
+ui_name: "a3-megacorps-hailey"
+nodes {
+  idRef {
+    id: "53710657643431b120cd3b0d"
+  }
+  index: 0
+  text: "That was hella fun! \n\nI\342\200\231m really glad to be on a real shadowrun again. Most of my jobs lately have just been, \342\200\234Deck into here, steal this paydata, blah blah blah\342\200\235. \n\nThere\342\200\231s nothing quite like running through corridors, dodging bullets, and training my drones on real-life hostiles!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53710670643431b120cd3b10"
+  }
+  index: 1
+  text: "Do you think I\342\200\231d look good in a pink mohawk? I kind of want to grow out a pink mohawk now."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5371067a643431b120cd3b13"
+  }
+  index: 2
+  text: "Anyways, I caught that whole thing on trideo! Everything from the fight on the pier through the cool-looking battle in Eclipse and the race through the Pyramid. It\342\200\231s all in high-def, and I\342\200\231m gonna add a kickin\342\200\231 soundtrack, too. "
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53710697643431b120cd3b16"
+  }
+  index: 3
+  text: "I think I\342\200\231m gonna call it\342\200\246 \342\200\234San Francisco Frenzy\342\200\235. Or maybe \342\200\234Tir Fear\342\200\235. Or how about \342\200\234The Saito Shuffle\342\200\235? Anyways\342\200\246 what do you think I should do with it?"
+  branches {
+    responseText: "Spread it all across the matrix for everyone to see."
+    nextNodeIndex: 4
+  }
+  branches {
+    responseText: "Let\342\200\231s blackmail Saito and the corps. Tell them we\342\200\231ll release it unless they support us."
+    nextNodeIndex: 5
+  }
+  branches {
+    responseText: "How about we sell it to the highest bidder?"
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537106ae643431b120cd3b1b"
+  }
+  index: 4
+  text: "Yeah, good thinking! That way everyone will hear about you and your operation, and see that you\342\200\231re the only game in town when it comes to stopping Tir. \n\nI think you\342\200\231ll get a lot of recruits out of this. Plus, let\342\200\231s face it, it\342\200\231ll just be hilarious to see the reactions it gets."
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Global_Manpower"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "537106bd643431b120cd3b1e"
+  }
+  index: 5
+  text: "Ooooh\342\200\246 that\342\200\231s cold! I like it! \n\nI have a couple of shell accounts I can use to get the message across without it being traced back to us. I\342\200\231ll make sure that they start shipping us the good weapon."
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Global_Supplies"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "537106c8643431b120cd3b21"
+  }
+  index: 6
+  text: "That\342\200\231s pretty mercenary of you! I shouldn\342\200\231t complain, though, that\342\200\231s the line of work we\342\200\231ve all chosen. Okay, cool. I\342\200\231ll set up an auction tonight, the credits should be waiting at your terminal by the time you get back to Redding."
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Global_HaileySellingTrideoState"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "537106eb643431b120cd3b24"
+  }
+  index: 7
+  text: "Oh, I\'m also gonna need to record a director\'s commentary track once we\'re back in Redding. This just gets more and more fun!"
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  nextNodeIndex: 0
+}

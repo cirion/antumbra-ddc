@@ -1,0 +1,109 @@
+idRef {
+  id: "536d67246434317b17cbafc3"
+}
+ui_name: "a3-five-Dorbi_2"
+nodes {
+  idRef {
+    id: "536d672d6434317b17cbafc9"
+  }
+  index: 0
+  text: "Well, well, well. What do you have here, Dorbi?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536d60af6434317b17cbaec7"
+  }
+}
+nodes {
+  idRef {
+    id: "536d673c6434317b17cbafcc"
+  }
+  index: 1
+  text: "Many, many gallons of water. As in: water, the source of all life.\n\nBut that\342\200\231s not all. Thought you might be interested in hearing what this $(l.man) has to say."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536d60fe6434317b17cbaec8"
+  }
+}
+nodes {
+  idRef {
+    id: "536d675e6434317b17cbafcf"
+  }
+  index: 2
+  text: "Lay it on me."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536d60af6434317b17cbaec7"
+  }
+}
+nodes {
+  idRef {
+    id: "536d676a6434317b17cbafd2"
+  }
+  index: 3
+  text: "Surprise, surprise! You\342\200\231re on candid camera!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536d5ffa6434317b17cbaec5"
+  }
+}
+nodes {
+  idRef {
+    id: "536d67766434317b17cbafd5"
+  }
+  index: 4
+  text: "What the?!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536d60af6434317b17cbaec7"
+  }
+}
+nodes {
+  idRef {
+    id: "536d677f6434317b17cbafd8"
+  }
+  index: 5
+  text: "Destroy him, my robots!"
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536d5ffa6434317b17cbaec5"
+  }
+  actions {
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "rickAttackState"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+roots {
+  nextNodeIndex: 0
+}

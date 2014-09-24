@@ -1,0 +1,8 @@
+id: "a3-paydata-megacorps"
+type: ItemType_QuestItem
+uirep {
+  name: "Megacorp Paydata File"
+  description: "This file contains the minutes of a boardroom meeting discussing an unannounced joint venture between Mitsuhama, Renraku and Fuchi, with the goal of blocking Aztechnology from re-entering the San Francisco market."
+}
+credentials: 0
+sorting_group: "Quest"

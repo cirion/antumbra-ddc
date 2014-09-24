@@ -1,0 +1,8 @@
+id: "Carver\'s Un-Identified Package"
+type: ItemType_QuestItem
+uirep {
+  name: "Johnson\'s Package"
+  description: "A small, tightly-wrapped parcel. It feels like there\'s a metal container under the brown wrapping paper."
+}
+credentials: 0
+sorting_group: "Quest"

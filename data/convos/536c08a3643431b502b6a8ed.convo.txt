@@ -1,0 +1,726 @@
+idRef {
+  id: "536c08a3643431b502b6a8ed"
+}
+ui_name: "a3-redding-Amelia"
+nodes {
+  idRef {
+    id: "536c09c0643431b502b6a8f4"
+  }
+  index: 0
+  text: "What can I get you?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536c09c8643431b502b6a8f7"
+  }
+  index: 1
+  text: ""
+  branches {
+    responseText: "What brings you out here?"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Redding_Convo_Amelia_WhyHere"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (int)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Global_numMissionsCompleted"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+        args {
+          int_value: 0
+        }
+      }
+    }
+    nextNodeIndex: 2
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "536c0a81643431b502b6a914"
+    }
+  }
+  branches {
+    responseText: "Where do you get your supply from?"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Redding_Convo_Amelia_WhereSupplied"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (int)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Global_numMissionsCompleted"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+        args {
+          int_value: 1
+        }
+      }
+    }
+    nextNodeIndex: 3
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "536c0abc643431b502b6a921"
+    }
+  }
+  branches {
+    responseText: "Do you believe these rumors of war?"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Redding_Convo_Amelia_BelieveRumors"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 4
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "536c0b11643431b502b6a926"
+    }
+  }
+  branches {
+    responseText: "It looks like you have more gear than before."
+    conditions {
+      ops {
+        functionName: "Invert Bool"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Redding_Convo_Amelia_Upgrades"
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "sawAmeliaGear"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (Actor)"
+        args {
+          call_value {
+            functionName: "Triggering Target Actor"
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Actor)"
+            args {
+              string_value: "536e8bf336623684180063cc"
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 9
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "53862f9c643431570bac7dee"
+    }
+  }
+  branches {
+    responseText: "Let me see what you have."
+    nextNodeIndex: 11
+  }
+  branches {
+    responseText: "{{GM}}Leave.{{/GM}}"
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536c0a94643431b502b6a916"
+  }
+  index: 2
+  text: "Opportunity, my friend! If you want to get rich, you need to go where the action is. Between your little camp here, and the vast army of blood-hungry elves to the north, there will be plenty of action for the foreseeable future.\n\nSure, there\342\200\231s not as much stuff out here as in San Francisco. But the way I see it, that\342\200\231s a good thing! If anyone wants high-quality guns and ammo, I\342\200\231m literally the only game in town."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Redding_Convo_Amelia_WhyHere"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "536c0ae8643431b502b6a923"
+  }
+  index: 3
+  text: "It\342\200\231s not easy, I can tell you that. My San Francisco locations receive supplies from Seattle that are smuggled onto the coast. This far inland, we need to either hire runners to escort them over the Coast Range, or else cut deals with the local water gangs to bring in materiel from Pueblo."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Redding_Convo_Amelia_WhereSupplied"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "536c0b20643431b502b6a928"
+  }
+  index: 4
+  text: "Honey, war isn\342\200\231t a rumor, it\342\200\231s a certainty. \n\nTir has dropped so much dough into its armaments that it can\342\200\231t afford not to go to war. They\342\200\231re still sore over getting driven back from Redding in 2037, and have spent the past sixteen years plotting how to reclaim that territory. They\342\200\231ll be sweeping in with overwhelming force. \n\nCome to think of it, it won\342\200\231t be a war at all. It\342\200\231ll be a slaughter."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Redding_Convo_Amelia_BelieveRumors"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "536c0b5f643431b502b6a92d"
+  }
+  index: 5
+  text: ""
+  branches {
+    responseText: "Uh, then why are you on *this* side of the border?"
+    nextNodeIndex: 6
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "536c0b67643431b502b6a930"
+    }
+  }
+  branches {
+    responseText: "So you think that we\342\200\231re going to lose?"
+    nextNodeIndex: 7
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536c0b6b643431b502b6a936"
+  }
+  index: 6
+  text: "Well, the elves don\342\200\231t need any more guns. Like I just said, they already have plenty!\n"
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536c0b80643431b502b6a93a"
+  }
+  index: 7
+  text: "In the short term, absolutely! \n\nLook, even if Kali could somehow convince the megacorps and Saito and Sacramento to all join forces together, it would still be no match for a concerted assault from Tir. In reality, all of those players are looking out for their own interests and don\342\200\231t trust the others, so none of them are likely to commit any resources until it\342\200\231s too late."
+  branches {
+    responseText: ""
+    nextNodeIndex: 8
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536c0b9d643431b502b6a93d"
+  }
+  index: 8
+  text: "In the long run, though, you may have a chance. Don\342\200\231t forget, Tir successfully invaded before, and guerillas like you managed to drive them back. An insurgency is nasty, brutal, soul-destroying work, but it can get the job done.\n\nResistance lasts for years, though, which will mean enormous profits for me. You see how this works? Tir\342\200\231s fighting for a cause, you\342\200\231re fighting for survival, and I\342\200\231m collecting the benefit.\n"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53862fe8643431570bac7df0"
+  }
+  index: 9
+  text: "Not just more: higher quality, too!\n\nI\'d like to claim all the credit, but really, it\'s a result of your own hard work. Your missions have resulted in more supplies flowing into Redding. The big dealers now know that your cell here isn\'t just a flash in the pan: you\'re a serious military organization, with the resources to pay for the good stuff."
+  branches {
+    responseText: ""
+    nextNodeIndex: 10
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "538630b7643431570bac7e23"
+  }
+  index: 10
+  text: "As a result, the other merchants and I can offer a wider selection of useful gear. The really important part, though, is that your entire army is getting equipped at the same time. When Tir finally does invade, you\'ll be really glad that your grunts are carrying better equipment. Makes it easier for them to stay alive and do more damage!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536c0bcb643431b502b6a963"
+  }
+  index: 11
+  text: "Not bad, huh?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Open Store Screen From Actor"
+      args {
+        call_value {
+          functionName: "Triggering Target Actor"
+        }
+      }
+    }
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "sawAmeliaGear"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "536c09f1643431b502b6a8fc"
+  }
+  index: 12
+  text: ""
+  branches {
+    responseText: ""
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "a2_beatGame"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 13
+  }
+  branches {
+    responseText: ""
+    nextNodeIndex: 15
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Redding_Convo_Amelia_Met"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "536c0a31643431b502b6a8ff"
+  }
+  index: 13
+  text: "Well, well! If it isn\342\200\231t $(l.name)! I\342\200\231d heard rumors that you had drifted out east. It\342\200\231s always good to see one of my customers still alive, no doubt thanks to my excellent armor. Welcome to my new emporium!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 14
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536c0a36643431b502b6a902"
+  }
+  index: 14
+  text: "I\342\200\231ve just opened this new store as our first location outside of San Francisco. Amelia\342\200\231s Armaments is a name you can trust: trust my armor to stop a bullet, and trust my bullets to pierce the other $(l.guy)\342\200\231s armor. What can I get you?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536c0a61643431b502b6a911"
+  }
+  index: 15
+  text: "Hello, and welcome to Amelia\342\200\231s Emporium!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 14
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Redding_Convo_Amelia_Met"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  nextNodeIndex: 0
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 12
+}

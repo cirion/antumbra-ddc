@@ -1,0 +1,185 @@
+idRef {
+  id: "536d11f66434312f05639ac2"
+}
+ui_name: "a3-banter-1_Hailey_Elorn"
+nodes {
+  idRef {
+    id: "536d120b6434312f05639ac8"
+  }
+  index: 0
+  text: "You know, Elorn, you kind of remind me of an elf I once knew, named Tarne. Do you happen to know them?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d127e6434312f05639ad0"
+  }
+  index: 1
+  text: "{{GM}}Sigh.{{/GM}} \n\nNo, Hailey, I do not know anyone named Tarne. \n\nYou do realize that there are millions of elves, right? We don\342\200\231t all come from one single family, or live in a single country, or gather in the same secret club. "
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d12a06434312f05639ad3"
+  }
+  index: 2
+  text: "Of course I know that, silly! You just resemble each other, that\342\200\231s all. \n\nWhere do you come from, if you don\342\200\231t mind me asking?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d12b66434312f05639ad6"
+  }
+  index: 3
+  text: "I don\342\200\231t come *from* anywhere, really. Everyone seems convinced that I must have infiltrated California from Tir Tairngire, but I was born and raised here, same as you. California is my home, and the only home I\342\200\231ve known."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d12cc6434312f05639ad9"
+  }
+  index: 4
+  text: "Well, duh! I knew that from your accent. What city, though?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d12dc6434312f05639adc"
+  }
+  index: 5
+  text: "Ugh\342\200\246 Hailey, we have much more important things to do than play Twenty Questions with each other."
+  branches {
+    responseText: "Come on, Elorn. I\342\200\231m curious, too. Where are you from?"
+    nextNodeIndex: 6
+  }
+  branches {
+    responseText: "Stop chatting, guys. Let\342\200\231s move on."
+    nextNodeIndex: 12
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d13296434312f05639ae6"
+  }
+  index: 6
+  text: "\342\200\246. Redding."
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d13416434312f05639ae9"
+  }
+  index: 7
+  text: "Oh, cool! I don\342\200\231t know the Central Valley too well - I\342\200\231ve always been a city girl - but now that I\342\200\231m a real runner, I need to learn more about areas like that. \n\nSo! What\342\200\231s the most important thing I should know about Redding?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 8
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d13a16434312f05639aec"
+  }
+  index: 8
+  text: "Well\342\200\246 we\342\200\231re an independent place, and proud to be self-reliant. \n\nNot that we\342\200\231ve had much choice. Sacramento has abandoned us, San Francisco doesn\342\200\231t know that we exist, and Tir Tairngire wants to conquer us. \n\nFolks tend to be leery of strangers, especially if they\342\200\231re talking about how some other power can \342\200\234help us out.\342\200\235"
+  branches {
+    responseText: ""
+    nextNodeIndex: 9
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d13be6434312f05639aef"
+  }
+  index: 9
+  text: "That said, we\342\200\231re happy to provide a safe haven for those who need it. If you\342\200\231re running AWAY from some other power, Redding can be an excellent place to lie low for a while. We don\342\200\231t pry, we don\342\200\231t ask questions, we don\342\200\231t judge."
+  branches {
+    responseText: ""
+    nextNodeIndex: 10
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d13d16434312f05639af2"
+  }
+  index: 10
+  text: "That\342\200\231s super-useful information! Thanks, Elorn! "
+  branches {
+    responseText: ""
+    nextNodeIndex: 11
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d13de6434312f05639af5"
+  }
+  index: 11
+  text: "You\342\200\231re welcome. Now please, let\342\200\231s get moving."
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d13016434312f05639ae1"
+  }
+  index: 12
+  text: "Thanks, $(l.name)."
+  branches {
+    responseText: ""
+    nextNodeIndex: 13
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d13146434312f05639ae4"
+  }
+  index: 13
+  text: "Okay, fine. We\342\200\231ll continue this back at base camp, Elorn!"
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+roots {
+  nextNodeIndex: 0
+}

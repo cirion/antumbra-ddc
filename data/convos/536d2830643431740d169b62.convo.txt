@@ -1,0 +1,198 @@
+idRef {
+  id: "536d2830643431740d169b62"
+}
+ui_name: "a3-banter-3_Norton_Hailey"
+nodes {
+  idRef {
+    id: "536d283d643431740d169b68"
+  }
+  index: 0
+  text: "Pardon me, young lady, might we steal a moment of your time?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d2848643431740d169b6b"
+  }
+  index: 1
+  text: "Sure, Norton, anything for you! What\342\200\231s up?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d2859643431740d169b6e"
+  }
+  index: 2
+  text: "We fear that this\342\200\246 confounded device\342\200\246 persists in thwarting us. \n\nWe wish to issue another imperial edict to our empire, but it merely beeps at us! Beeps constantly! And displays this cryptic message: PC Load Letter. Have you any idea what the matter is?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d2875643431740d169b71"
+  }
+  index: 3
+  text: "Oh, geez, Norton, how old is that thing?!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d2885643431740d169b74"
+  }
+  index: 4
+  text: "Why, this is a valued imperial relic! We received this from the Norton before us, who received it from the Norton before him, and so on. \n\nIt has been a crucial part of our infrastructure for decades!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d2895643431740d169b77"
+  }
+  index: 5
+  text: "Yeah, but has it ever worked?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d28aa643431740d169b7a"
+  }
+  index: 6
+  text: "Hrmph. Now that you mention it, no, we have never seen it do anything but beep."
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d2943643431740d169b7d"
+  }
+  index: 7
+  text: "That\342\200\231s a fax machine, Norton. Those haven\342\200\231t been part of the global matrix since\342\200\246 well, ever. \n\nI\342\200\231m pretty sure that there isn\342\200\231t another machine on the planet that can receive your message, let alone that can reach your \342\200\234followers.\342\200\235"
+  branches {
+    responseText: ""
+    nextNodeIndex: 8
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d2956643431740d169b80"
+  }
+  index: 8
+  text: "Here, use this. This is last year\342\200\231s OmniBroadcast model. It\342\200\231s lightweight, portable, solar-powered, and hella useful. \n\nJust speak your messages into the end here, and then press the button next to how you want the edict to go out."
+  branches {
+    responseText: ""
+    nextNodeIndex: 9
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d2962643431740d169b83"
+  }
+  index: 9
+  text: "How fascinating! \342\200\234Shortwave radio\342\200\235... \342\200\234Orbital broadcast\342\200\235... \342\200\234Matrix worm\342\200\235... \342\200\234Billboards\342\200\235... \342\200\234All\342\200\235... ah! We do like the sound of \342\200\234All\342\200\235. \n\nAll right, if you will excuse us, we have an urgent message to broadcast."
+  branches {
+    responseText: ""
+    nextNodeIndex: 10
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d2985643431740d169b86"
+  }
+  index: 10
+  text: "Ahem: \342\200\234Oyez, oyez, oyez! Be it known to all and sundry that upon this May in the Year of Our Lord 2053, we, Norton, Emperor of UCAS and Protector of Aztlan, do hereby declare and proclaim that beets are an abomination unto our selves and this land. From this day forth, none shall consume any beets, nor engage in the production or sale of beets, nor permit any consumption of existing beets within their premises.\342\200\235"
+  branches {
+    responseText: ""
+    nextNodeIndex: 11
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d2999643431740d169b89"
+  }
+  index: 11
+  text: "\342\200\234Any violation of our imperial decree in the Manner of Beets shall result in a fine of not less than one hundred nuyen, to be paid into our imperial coffers for the upkeep of our imperial self and our endeavors.\342\200\235"
+  branches {
+    responseText: ""
+    nextNodeIndex: 12
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d29a8643431740d169b8c"
+  }
+  index: 12
+  text: "And then I just press this button here\342\200\246 ah, marvellous! \n\nOur thanks, Hailey. In recognition of your loyal and steadfast service, we hereby appoint you our Mistress of Communications."
+  branches {
+    responseText: ""
+    nextNodeIndex: 13
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d29bb643431740d169b8f"
+  }
+  index: 13
+  text: "Aww, that\342\200\231s sweet of you, Norton! But that makes me sound like a madame or something. Can I pick my own title? How about, uh, Viceroy of Technology?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 14
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d29d2643431740d169b92"
+  }
+  index: 14
+  text: "Done! Now, with that matter out of the way, let us press onward towards victory!"
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+roots {
+  nextNodeIndex: 0
+}

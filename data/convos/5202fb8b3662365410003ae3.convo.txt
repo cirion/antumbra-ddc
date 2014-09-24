@@ -1,0 +1,339 @@
+idRef {
+  id: "5202fb8b3662365410003ae3"
+}
+ui_name: "A1_Office_Carver_Call2"
+nodes {
+  idRef {
+    id: "5202fb993662365410003ae9"
+  }
+  index: 0
+  text: "{{GM}}You slip the package into a desk drawer before answering the comm.{{/GM}}\n\nI noticed the alarm went off. Is everything OK?"
+  branches {
+    responseText: "I took care of it."
+    nextNodeIndex: 1
+  }
+  branches {
+    responseText: "It\'s been a pain, just like everything else on this mission."
+    nextNodeIndex: 7
+  }
+  branches {
+    responseText: "{{GM}}Remain silent.{{/GM}}"
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "5202591436623654100039db"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Remove Item from Actor"
+      args {
+        call_value {
+          functionName: "Get Map Item (Item)"
+          args {
+            string_value: "Carver\'s Un-Identified Package"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Player)"
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "5204490236623608130004f8"
+  }
+  index: 1
+  text: "That\'s my $(l.guy)! I knew you could handle it."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "51f7429764343188990041a8"
+          }
+          args {
+            string_value: "CarverOpinion"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "5204492236623608130004fb"
+  }
+  index: 2
+  text: "Listen, there\'s been a slight change in plans. I do appreciate you finishing the job, but Kali just called up every Lone Star in Everett. They\'ll arrive any minute now.\n\nThere should be an elevator back there which will take you to the basement. My employers have reason to believe that it\'s\342\200\246 well, don\'t worry about that for now. Just be aware that you may encounter some dangerous beasts down there. Bring along some extra firepower."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "520449563662360813000500"
+  }
+  index: 3
+  text: "You didn\'t sign up for this, but I\'ll tell you what: if you can take care of any creatures down there, I\'ll double your pay for the job. That seems fair, right?"
+  branches {
+    responseText: "Always happy to take another job."
+    nextNodeIndex: 4
+  }
+  branches {
+    responseText: "Do I have a choice?"
+    nextNodeIndex: 6
+  }
+  branches {
+    responseText: "{{GM}}Remain silent.{{/GM}}"
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5204496e3662360813000505"
+  }
+  index: 4
+  text: "Glad to hear it."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "51f7429764343188990041a8"
+          }
+          args {
+            string_value: "CarverOpinion"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "520449783662360813000508"
+  }
+  index: 5
+  text: "Now scoot along before the heat arrives."
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "5202591436623654100039db"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Goal Status"
+      args {
+        call_value {
+          functionName: "Get Map Item (Goal)"
+          args {
+            string_value: "Reach Kali\'s Office"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "GoalStatus"
+          }
+          args {
+            int_value: 2
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Goal Status"
+      args {
+        call_value {
+          functionName: "Get Map Item (Goal)"
+          args {
+            string_value: "Take the elevator down to the basement"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "GoalStatus"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Clear Waypoint from Prop"
+      args {
+        call_value {
+          functionName: "Get Map Item (Prop)"
+          args {
+            string_value: "520311ae3662365410003d01"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Waypoint on Prop"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "PrimaryOrSecondary"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Prop)"
+          args {
+            string_value: "5202591436623654100039db"
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "5204498a366236081300050a"
+  }
+  index: 6
+  text: "Since you put it that way: yes, you do. Stay and die, or continue working for me and get paid. It\'s really up to you."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5204492d36623608130004fd"
+  }
+  index: 7
+  text: "What, are you going to start crying now?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "51f7429764343188990041a8"
+          }
+          args {
+            string_value: "CarverOpinion"
+          }
+        }
+      }
+      args {
+        int_value: -1
+      }
+    }
+  }
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}

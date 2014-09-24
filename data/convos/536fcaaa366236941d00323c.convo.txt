@@ -1,0 +1,237 @@
+idRef {
+  id: "536fcaaa366236941d00323c"
+}
+ui_name: "a3-five-Rick_2"
+nodes {
+  idRef {
+    id: "536fcab4366236941d003242"
+  }
+  index: 0
+  text: "Nicely done, $(l.name)! \n\nI recognized those faces. Now that they\342\200\231re gone, your southern flank should be much more secure."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536d5ffa6434317b17cbaec5"
+  }
+}
+nodes {
+  idRef {
+    id: "536fd8d8366236941d003245"
+  }
+  index: 1
+  text: "Or maybe not. It sounded like those drekheads allied with the Native Californians. \n\nOur gangs are just smalltime, but if the NC turns against you, you could be in for some serious trouble."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536d60fe6434317b17cbaec8"
+  }
+}
+nodes {
+  idRef {
+    id: "536fd8ed366236941d003248"
+  }
+  index: 2
+  text: ""
+  branches {
+    responseText: "Who are you, exactly?"
+    nextNodeIndex: 3
+    onlyOnce: true
+    idRef {
+      id: "536fd947366236941d003262"
+    }
+  }
+  branches {
+    responseText: "What can you tell me about the Native Californians?"
+    nextNodeIndex: 5
+    onlyOnce: true
+    idRef {
+      id: "5377de89366236840d001cdc"
+    }
+  }
+  branches {
+    responseText: "Got any suggestions for what to do next?"
+    nextNodeIndex: 7
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536fd8f3366236941d00324b"
+  }
+  index: 3
+  text: "Oh, I guess we haven\342\200\231t been properly introduced! I\342\200\231m Dorbi! I\342\200\231m a water ganger\342\200\246 \n\nWell, as of five minutes ago, I\342\200\231m apparently an ex-ganger. \n\nI\342\200\231m looking for new employment opportunities, if you\342\200\231re interested."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536d60fe6434317b17cbaec8"
+  }
+}
+nodes {
+  idRef {
+    id: "536fd929366236941d003255"
+  }
+  index: 4
+  text: "Sorry if I set you on fire earlier. It\342\200\231s just this thing I do. I\342\200\231m really good at it. \n\nNo need to worry, though. As long as you\342\200\231re fighting the Native Californians, I\342\200\231ll be fighting by your side."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536d60fe6434317b17cbaec8"
+  }
+}
+nodes {
+  idRef {
+    id: "536fd953366236941d003264"
+  }
+  index: 5
+  text: "They\342\200\231re humans who think they\342\200\231re better than everyone else, and they want to make the world a purer place for their kind. Imagine Shavarus if he was a human and had even fewer scruples."
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536d60fe6434317b17cbaec8"
+  }
+}
+nodes {
+  idRef {
+    id: "536fd963366236941d003267"
+  }
+  index: 6
+  text: "At least Shavarus had a certain level of bravery. The Native Californians are the most despicable cowards I\342\200\231ve ever met. \n\n{{GM}}A grim expression has settled over Rick\342\200\231s face.{{/GM}}\n\nThey use IEDs to blow up Ranger vehicles, sabotage water pipelines, poison the soil in metahuman farmsteads. This may be one of our only chances to actually meet them in fair combat."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536d5ffa6434317b17cbaec5"
+  }
+}
+nodes {
+  idRef {
+    id: "536fd99e366236941d00327f"
+  }
+  index: 7
+  text: "I recognized that one chatty Native dipstick\342\200\246 Claude Bullion, I think. Pretty sure he\342\200\231s based out of Redding. \n\nHe ran off to the east, we should chase after him."
+  branches {
+    responseText: ""
+    nextNodeIndex: 8
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536d60fe6434317b17cbaec8"
+  }
+}
+nodes {
+  idRef {
+    id: "536fd9b3366236941d003282"
+  }
+  index: 8
+  text: "There\342\200\231s an abandoned scrapyard there. If I was vermin going to ground, I\342\200\231d hole up in there. \n\nHeck, that might even be where their regional base is. It would be  fantastic if you could shut them down once and for all."
+  branches {
+    responseText: ""
+    nextNodeIndex: 9
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536d5ffa6434317b17cbaec5"
+  }
+}
+nodes {
+  idRef {
+    id: "536fde61366236941d0032e8"
+  }
+  index: 9
+  text: "Oh, before I forget: here, take this. This is half the nuyen I\'ve collected on tolls in this stretch of The 5 over the past month. You\'ve done the work to keep it safe, and are entitled to your share."
+  branches {
+    responseText: ""
+    nextNodeIndex: 10
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536d5ffa6434317b17cbaec5"
+  }
+  actions {
+    ops {
+      functionName: "Add Nuyen"
+      args {
+        int_value: 1000
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "536fde97366236941d0032f0"
+  }
+  index: 10
+  text: "I\342\200\231ll see if I can get some other Rangers on the horn and cover the escape routes from here. \n\nYou take Dorbi and flush them out of there, or take them out yourself if you can."
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536d5ffa6434317b17cbaec5"
+  }
+  actions {
+    ops {
+      functionName: "Trigger: Run Alternate Trigger"
+      args {
+        call_value {
+          functionName: "Get Map Item (Trigger)"
+          args {
+            string_value: "536fc96a366236941d00322f"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WaitOrNot"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+}
+roots {
+  nextNodeIndex: 0
+}

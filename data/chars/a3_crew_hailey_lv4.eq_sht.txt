@@ -1,0 +1,52 @@
+unique_id: "a3_crew_hailey_Lv4"
+equipment {
+  prefab_name: "DeckerFab"
+}
+equipment {
+  prefab_name: "ESP Assassin"
+}
+equipment {
+  prefab_name: "PR Medic 2"
+}
+equipment {
+  prefab_name: "Grenade (Smoke)"
+}
+equipment {
+  prefab_name: "DroneRepairKit_hi"
+}
+equipment {
+  prefab_name: "DroneRepairKit_hi"
+}
+equipment {
+  prefab_name: "HealthPack_hi"
+}
+equipment {
+  prefab_name: "HealthPack_hi"
+}
+equipment {
+  prefab_name: "CyberdeckVirtuaX"
+}
+equipment {
+  prefab_name: "DroneAttackA_SteelLynx"
+}
+equipment {
+  prefab_name: "DroneSupportA_Sundowner"
+}
+equipment {
+  prefab_name: "Pi 2 Ares Predator (Smartlink)"
+}
+equipment {
+  prefab_name: "PR Killer 3"
+}
+equipment {
+  prefab_name: "PR Blaster 3"
+}
+equipment {
+  prefab_name: "PR Erosion 2"
+}
+equipment {
+  prefab_name: "PR Supression 1"
+}
+equipment {
+  prefab_name: "ESP Shield"
+}

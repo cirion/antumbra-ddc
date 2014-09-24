@@ -1,0 +1,192 @@
+idRef {
+  id: "536d1aca643431740d1699a3"
+}
+ui_name: "a3-banter-2_Dorbi"
+nodes {
+  idRef {
+    id: "536d1add643431740d1699a9"
+  }
+  index: 0
+  text: "Hey, boss, got a question for you."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d1ae1643431740d1699ac"
+  }
+  index: 1
+  text: "That big fire elemental thing that seems to be following you\342\200\246 what do you know about it?"
+  branches {
+    responseText: "Not as much as I should, and that worries me."
+    nextNodeIndex: 2
+  }
+  branches {
+    responseText: "I know that it\342\200\231s big, and it\342\200\231s a fire spirit, and that\342\200\231s enough."
+    nextNodeIndex: 3
+  }
+  branches {
+    responseText: "I know that its days are numbered."
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d1afe643431740d1699b1"
+  }
+  index: 2
+  text: "Blast\342\200\246. I was hoping you could give me some insight."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d1b01643431740d1699b4"
+  }
+  index: 3
+  text: "Yeah, it is very impressive, isn\342\200\231t it?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d1b05643431740d1699b7"
+  }
+  index: 4
+  text: "Are you sure you need to destroy it?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d1b08643431740d1699ba"
+  }
+  index: 5
+  text: "I understand that freed spirits are very dangerous, but I kind of feel like people are getting too hung up on the whole \342\200\234fire elemental\342\200\235 aspect. \n\nI mean, it isn\342\200\231t like fire is inherently any more or less evil than any other element, right? "
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d1b55643431740d1699c1"
+  }
+  index: 6
+  text: "I shouldn\342\200\231t take it personally, but so much of my identity is tied up in my skill with fire. And I\342\200\231m really good at it, and I really enjoy it! \n\nSo it bothers me when people assume that since I\342\200\231m good at making fire I must somehow be evil or something."
+  branches {
+    responseText: "Well, I for one am glad to have your fire on my side during a fight."
+    nextNodeIndex: 7
+  }
+  branches {
+    responseText: "You have to admit, fire can be less predictable and more destructive than other elements."
+    nextNodeIndex: 8
+  }
+  branches {
+    responseText: "Power is power. You could summon abomination spirits, and as long as you got results, I wouldn\342\200\231t care."
+    nextNodeIndex: 9
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d1c41643431740d1699c6"
+  }
+  index: 7
+  text: "Thanks! Yeah, I think we complement each other well. And, really, fire makes everything better. Can\342\200\231t ever have too much fire!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 10
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d1c46643431740d1699c9"
+  }
+  index: 8
+  text: "No, fire is more TRANSFORMATIVE than other elements.\n\nWater will make something wet, but after it dries, it\342\200\231s usually the same. Air might push it around, and earth might surround it, but fire truly CHANGES things."
+  branches {
+    responseText: ""
+    nextNodeIndex: 10
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d1c4a643431740d1699cc"
+  }
+  index: 9
+  text: "Uh\342\200\246 thanks? I\342\200\231m not sure if I appreciate being lumped in with those creeps, but I\342\200\231ll take it as a compliment."
+  branches {
+    responseText: ""
+    nextNodeIndex: 10
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d1c4f643431740d1699cf"
+  }
+  index: 10
+  text: "People think that fire is just something that destroys. It isn\342\200\231t! \n\nFire provides light when you\342\200\231re trapped deep underground. Fire provides warmth when you\342\200\231re freezing in the snow. Fire clears away the underbrush and allows trees to grow tall and strong. "
+  branches {
+    responseText: ""
+    nextNodeIndex: 11
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d1ca0643431740d1699d6"
+  }
+  index: 11
+  text: "And, yeah, sometimes fire incinerates a group of howling mercenaries who were trying to kill you. But even when it\342\200\231s taking a life, fire can be saving your own."
+  branches {
+    responseText: ""
+    nextNodeIndex: 12
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d1cb2643431740d1699d9"
+  }
+  index: 12
+  text: "Anyways. I figure you\342\200\231ll probably need to destroy that fire spirit sooner or later, and please don\342\200\231t let any of this dissuade you. \n\nJust remember that ALL freed spirits are dangerous. Don\342\200\231t develop an irrational fear of flame based on one bad experience."
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+roots {
+  nextNodeIndex: 0
+}

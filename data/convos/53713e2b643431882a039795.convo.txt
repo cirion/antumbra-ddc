@@ -1,0 +1,97 @@
+idRef {
+  id: "53713e2b643431882a039795"
+}
+ui_name: "a3-finale_cave-banter_elorn"
+nodes {
+  idRef {
+    id: "53713e2f643431882a03979b"
+  }
+  index: 0
+  text: "Well, I should have expected that it would end like this. \n\nCut off from my home, hunted like a wild animal by my so-called kin. "
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53713e53643431882a0397a3"
+  }
+  index: 1
+  text: "Still, we\342\200\231ve had a good run. \n\nHave you been keeping track of how many you\342\200\231ve killed? I\342\200\231ve managed to bring down at least a dozen just since we ran in here."
+  branches {
+    responseText: "Thanks for remaining by my side."
+    nextNodeIndex: 2
+  }
+  branches {
+    responseText: "You\342\200\231ve been a useful ally."
+    nextNodeIndex: 3
+  }
+  branches {
+    responseText: "There\342\200\231s plenty more left to kill."
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53713e9c643431882a0397b3"
+  }
+  index: 2
+  text: "And thank you for allowing me here. A lesser $(l.man) would have worried that I was a Tir spy. \n\nYour trust means the world to me."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53713e93643431882a0397ad"
+  }
+  index: 3
+  text: "I feel like I\342\200\231ve always had more to prove than anyone else. Thanks for giving me the opportunity to show my worth."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53713e8e643431882a0397a8"
+  }
+  index: 4
+  text: "Then it\342\200\231s a good thing I have plenty more bullets left."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53713e92643431882a0397ab"
+  }
+  index: 5
+  text: "In the big picture, though, my death may be a good thing. I want everyone to know how many CalFree elves fought and died resisting Tir Tairngire\342\200\231s invasion. \n\nI never thought of myself as a martyr, but perhaps I can be a message: we elves care every bit as deeply for this land as the humans do, and we can be trusted to do what\342\200\231s right."
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53713ed7643431882a0397b8"
+  }
+  index: 6
+  text: "That was\342\200\246 too sentimental, wasn\342\200\231t it? \n\nNever mind. I\342\200\231ll fight Tir until my dying breath, and hope that our sacrifice does not go unnoticed."
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  nextNodeIndex: 0
+}

@@ -1,0 +1,206 @@
+idRef {
+  id: "5371029e643431b120cd3a71"
+}
+ui_name: "a3-megacorps-ceo"
+nodes {
+  idRef {
+    id: "5371047b643431b120cd3aa3"
+  }
+  index: 0
+  text: "{{GM}}Several ashen-faced executives have gathered in this conference room. They have been staring in fear at a face on the video monitor, but break into broad grins when they see you burst into the room.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53710489643431b120cd3aa6"
+  }
+  index: 1
+  text: "We\342\200\231re alive! See, I told you Kali and her team would pull through!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53710493643431b120cd3aa9"
+  }
+  index: 2
+  text: "In this instance, yes.\n\n{{GM}}The face on the vidscreen fixes you with a cold stare.{{/GM}}\n\nMiracles rarely happen twice. Do not expect another."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "537548ff6434316b13333684"
+  }
+}
+nodes {
+  idRef {
+    id: "537104af643431b120cd3aac"
+  }
+  index: 3
+  text: "{{GM}}The image disappears, replaced with static.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "537bcf6d64343129595f82dd"
+  }
+  actions {
+    ops {
+      functionName: "Delete Prop"
+      args {
+        call_value {
+          functionName: "Get Map Item (Prop)"
+          args {
+            string_value: "537bce9664343129595f82a4"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Play Music"
+      args {
+        call_value {
+          functionName: "Get Map Item (Music)"
+          args {
+            string_value: "Berlin_Club"
+          }
+          args {
+            string_value: "Berlin-Club02"
+          }
+        }
+      }
+      args {
+        float_value: 1
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "537104ca643431b120cd3aaf"
+  }
+  index: 4
+  text: ""
+  branches {
+    responseText: "Who was that?"
+    nextNodeIndex: 5
+    onlyOnce: true
+    idRef {
+      id: "537104e0643431b120cd3abe"
+    }
+  }
+  branches {
+    responseText: "I hope you\'re okay."
+    nextNodeIndex: 6
+  }
+  branches {
+    responseText: "Looks like I\342\200\231ve saved the day yet again."
+    nextNodeIndex: 7
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537104d6643431b120cd3ab4"
+  }
+  index: 5
+  text: "Someone from the Tir Tairngire Council of Princes. He was warning us not to resist when they launch their invasion of CalFree."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53710510643431b120cd3ac4"
+  }
+  index: 6
+  text: "Just shaken up, but we\342\200\231ll survive, thanks to you."
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537104fe643431b120cd3ac0"
+  }
+  index: 7
+  text: "We need to finish voting on our resolutions, but I think you can rest assured that we\342\200\231ll be backing your project. \n\nI\342\200\231ve received word that Kali has arrived on the premises. You should debrief her on the situation."
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Trigger: Run Alternate Trigger"
+      args {
+        call_value {
+          functionName: "Get Map Item (Trigger)"
+          args {
+            string_value: "53710625643431b120cd3ade"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WaitOrNot"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+}
+roots {
+  nextNodeIndex: 0
+}

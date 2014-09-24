@@ -1,0 +1,28 @@
+idRef {
+  id: "5201a5a73662368c16004dd4"
+}
+ui_name: "A1_Cave_Book"
+nodes {
+  idRef {
+    id: "5201a5b33662368c16004dda"
+  }
+  index: 0
+  text: "{{GM}}A book lies open on the pedestal. Most of the words have faded, but a fragment remains, which appears to be a riddle of some sort.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5201a5eb3662368c16004ddd"
+  }
+  index: 1
+  text: "{{GM}}First came Nobilis, most graceful and wise.\nSoon followed wee folk, proud and stout and brave.\nGreen skins arrived next, angry their war cries.\nIngentis stomped in and brutal blows gave.\nLast of all came man, but do not despair.\nWhen all others leave, they will still be there.{{/GM}}"
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}

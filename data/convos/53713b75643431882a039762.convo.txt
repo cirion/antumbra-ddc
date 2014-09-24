@@ -1,0 +1,131 @@
+idRef {
+  id: "53713b75643431882a039762"
+}
+ui_name: "a3-finale_cave-banter_dorbi"
+nodes {
+  idRef {
+    id: "53713b89643431882a039768"
+  }
+  index: 0
+  text: "Man, did you see that back there? That was AWESOME!"
+  branches {
+    responseText: "Are you touched in the head?"
+    nextNodeIndex: 1
+  }
+  branches {
+    responseText: "The way Hans hurt that poor woman?"
+    nextNodeIndex: 2
+  }
+  branches {
+    responseText: "What was awesome?"
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53713bd0643431882a03977a"
+  }
+  index: 1
+  text: "Hey, just because we\342\200\231re in deep drek doesn\342\200\231t mean I can\342\200\231t appreciate it when something really cool happens."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53713bcd643431882a039777"
+  }
+  index: 2
+  text: "No, before that!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53713bb8643431882a039772"
+  }
+  index: 3
+  text: "That fight with Tophet. It was so cool! Nothing we did could hurt it AT ALL! \n\nJust imagine\342\200\246 if I can someday tap into that kind of power, I\342\200\231d be unstoppable!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53713bcb643431882a039775"
+  }
+  index: 4
+  text: "And then, the way that woman just, like\342\200\246 snuffed him out\342\200\246 \n\nShe could only do that because he was originally from another plane. But I\342\200\231m a natural-born dwarf, ain\342\200\231t nobody gonna snuff me out! I could be a prettier, friendlier, unstoppable version of Tophet."
+  branches {
+    responseText: "That\342\200\231s a terrifying thought."
+    nextNodeIndex: 5
+  }
+  branches {
+    responseText: "Nothing could stand against us!"
+    nextNodeIndex: 6
+  }
+  branches {
+    responseText: "Just remember who your friends are."
+    nextNodeIndex: 7
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53713c08643431882a039785"
+  }
+  index: 5
+  text: "Yes, exactly! I\342\200\231d want all my enemies quaking in their boots. They wouldn\342\200\231t dare lift a finger against the almighty Queen Dorbi!\n\n{{GM}}She flashes you a mischievous smile, revealing her sardonic intent.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 8
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53713c22643431882a039792"
+  }
+  index: 6
+  text: "Yup! With my limitless control over the boundless power of untamed flame, and your\342\200\246 uh\342\200\246 whatever it is you do, we\342\200\231d make a great team!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 8
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53713c18643431882a03978a"
+  }
+  index: 7
+  text: "Oh, don\342\200\231t worry! You\342\200\231re the last person I\342\200\231d set on fire."
+  branches {
+    responseText: ""
+    nextNodeIndex: 8
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53713c1c643431882a03978d"
+  }
+  index: 8
+  text: "Heh\342\200\246 thanks for indulging me. I know that we probably won\342\200\231t survive this fight, and I\342\200\231ll never be able to achieve the kind of mastery I want. But I have to dream and believe that there\342\200\231s a bright future ahead. Now, let\342\200\231s try and make it happen!"
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  nextNodeIndex: 0
+}

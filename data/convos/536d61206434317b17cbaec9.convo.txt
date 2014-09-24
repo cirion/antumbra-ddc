@@ -1,0 +1,100 @@
+idRef {
+  id: "536d61206434317b17cbaec9"
+}
+ui_name: "a3-five-Rick_1"
+nodes {
+  idRef {
+    id: "536d612a6434317b17cbaecf"
+  }
+  index: 0
+  text: "{{GM}}Your commlink buzzes urgently.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536d61a36434317b17cbaee4"
+  }
+  actions {
+    ops {
+      functionName: "Play Sound"
+      args {
+        call_value {
+          functionName: "Get Map Item (Sound)"
+          args {
+            string_value: "ambient_office"
+          }
+          args {
+            string_value: "Phone"
+          }
+        }
+      }
+      args {
+        float_value: 1
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "536d61476434317b17cbaed2"
+  }
+  index: 1
+  text: "All right, listen up. I\342\200\231ve got maybe a half-dozen bogeys heading in your direction. Standard waterjacking trash. \n\nIf they\342\200\231re jacked up, they might open with gunfire, in which case you should do what you need to survive.\n"
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536d61516434317b17cbaed5"
+  }
+  index: 2
+  text: "With luck, though, you\342\200\231ll get one of the reasonable ones. Try to engage them in conversation and get their superiors involved. \n\nOnce we see the gang leaders in the field, I\342\200\231ll send my drones in and we\342\200\231ll take them out."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536d61636434317b17cbaed8"
+  }
+  index: 3
+  text: "We don\342\200\231t know what kind of tech they have, so maintain radio silence from now on. Rick out."
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Send Event After Delay"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Dorbi Arrives"
+          }
+        }
+      }
+      args {
+        float_value: 1
+      }
+    }
+  }
+}
+roots {
+  nextNodeIndex: 0
+}

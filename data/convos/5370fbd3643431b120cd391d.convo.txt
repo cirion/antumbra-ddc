@@ -1,0 +1,485 @@
+idRef {
+  id: "5370fbd3643431b120cd391d"
+}
+ui_name: "a3-embarcadero-hailey"
+nodes {
+  idRef {
+    id: "5370fbd9643431b120cd3923"
+  }
+  index: 0
+  text: "I heard gunshots! Are you okay?"
+  branches {
+    responseText: "I\342\200\231m fine."
+    nextNodeIndex: 1
+  }
+  branches {
+    responseText: "A little banged up, but I\342\200\231ll survive."
+    nextNodeIndex: 2
+  }
+  branches {
+    responseText: "None of your business."
+    nextNodeIndex: 3
+  }
+  branches {
+    responseText: "Do I know you?"
+    conditions {
+      ops {
+        functionName: "Invert Bool"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "a2_beatGame"
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 4
+    hideIfUnavailable: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5370fc60643431b120cd3930"
+  }
+  index: 1
+  text: "Phew, I\342\200\231m glad to hear it! \n\nKali would have KILLED me if you\342\200\231d gotten damaged!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5370fc78643431b120cd3938"
+  }
+  index: 2
+  text: "Just like old times, eh? That\342\200\231s what we shadowrunners do! Survive from people shooting at us all the time!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5370fc7d643431b120cd393c"
+  }
+  index: 3
+  text: "Aw, c\342\200\231mon, grumpypuss! Getting shot at is a hella strong compliment. \n\nAt least, that\342\200\231s what I tell myself."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5370fc40643431b120cd3929"
+  }
+  index: 4
+  text: "It\342\200\231s Hailey, silly! \n\nDidn\342\200\231t Kali mention me? I\342\200\231m, like, her star decker! \n\nAnd an honest-to-goodness shadowrunner in my own right, too. I swear!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5370fc5b643431b120cd392c"
+  }
+  index: 5
+  text: ""
+  branches {
+    responseText: "{{GM}}Wait for Hailey to finish scanning the scene.{{/GM}}"
+    conditions {
+      ops {
+        functionName: "Evaluate If Actor is Inside Region"
+        args {
+          call_value {
+            functionName: "All Actors With Tag"
+            args {
+              call_value {
+                functionName: "Tag From String"
+                args {
+                  string_value: "isNorton"
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "AllOrAny"
+                }
+                args {
+                  int_value: 1
+                }
+              }
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "AreOrAreNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Region)"
+            args {
+              string_value: "537c169e36623648170074e6"
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 6
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: "{{GM}}Wait for Hailey to finish speaking.{{/GM}}"
+    conditions {
+      ops {
+        functionName: "Evaluate If Actor is Inside Region"
+        args {
+          call_value {
+            functionName: "All Actors With Tag"
+            args {
+              call_value {
+                functionName: "Tag From String"
+                args {
+                  string_value: "isNorton"
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "AllOrAny"
+                }
+                args {
+                  int_value: 1
+                }
+              }
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "AreOrAreNot"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Region)"
+            args {
+              string_value: "537c169e36623648170074e6"
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 9
+    hideIfUnavailable: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5370fce5643431b120cd3941"
+  }
+  index: 6
+  text: "And look, you brought the Emperor with you! \n\nHi, Norton!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5370fcf4643431b120cd3944"
+  }
+  index: 7
+  text: "Our dearest Hailey, we are charmed as always to be in your presence.\n\n{{GM}}Norton gives a deep and florid bow.{{/GM}}\n\nWe wish that this reunion would occur under more auspicious circumstances!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 8
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "5370fd09643431b120cd3947"
+  }
+  index: 8
+  text: "I know! \n\nIt seems like we never see each other any more, and when we do get together, it\342\200\231s because people are trying to kill us."
+  branches {
+    responseText: ""
+    nextNodeIndex: 9
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5370fd40643431b120cd394a"
+  }
+  index: 9
+  text: "As you can see, something\342\200\231s gone wrong. Saito and Kali usually stay out of each others\342\200\231 business, but someone just convinced Saito that the two of you are in league with Tir Tairngire. \n\nHe believes that you\342\200\231re trying to gather all the soldiers and weapons you can up in Redding, then hand them over to Tir as soon as they invade."
+  branches {
+    responseText: ""
+    nextNodeIndex: 10
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5370fdf5643431b120cd396f"
+  }
+  index: 10
+  text: "The \342\200\234proof\342\200\235 is bogus, of course, but it\342\200\231s really convincing. Someone has doctored surveillance footage of you and Kali, splicing in some Tir faces, to make it seem like you\342\200\231re plotting."
+  branches {
+    responseText: "Impressive!"
+    nextNodeIndex: 11
+  }
+  branches {
+    responseText: "That sounds bad."
+    nextNodeIndex: 12
+  }
+  branches {
+    responseText: "What do you suggest we do?"
+    nextNodeIndex: 13
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5370fdff643431b120cd3972"
+  }
+  index: 11
+  text: "Oh, I agree! From a technical perspective, I\342\200\231m amazed that they could pull it together."
+  branches {
+    responseText: ""
+    nextNodeIndex: 13
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5370fe3b643431b120cd397a"
+  }
+  index: 12
+  text: "Yuuuuuuuuuuup. "
+  branches {
+    responseText: ""
+    nextNodeIndex: 13
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5370fe24643431b120cd3976"
+  }
+  index: 13
+  text: "Kali keeps complete copies of her surveillance records on site in Eclipse. Someone must have jacked in and stolen them to create the fakes. \n\nWe\342\200\231ll need to recover the originals to prove your innocence."
+  branches {
+    responseText: ""
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "a2_killedShavarus"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 14
+  }
+  branches {
+    responseText: ""
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "a2_savedShavarus"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 15
+  }
+  branches {
+    responseText: ""
+    nextNodeIndex: 16
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5370feb5643431b120cd39b7"
+  }
+  index: 14
+  text: "I think Saito actually was leaning towards supporting you, since you managed to take out Shavarus. But he\342\200\231s gotten SO paranoid about the whole Tir thing, he won\342\200\231t give you the benefit of the doubt."
+  branches {
+    responseText: ""
+    nextNodeIndex: 16
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5370fee8643431b120cd39be"
+  }
+  index: 15
+  text: "Problem is, Saito isn\342\200\231t going to give you a chance to do that. \n\nHe knows you were responsible for letting Shavarus escape, so as far as he\342\200\231s concerned, you\342\200\231ve already declared war on San Francisco."
+  branches {
+    responseText: ""
+    nextNodeIndex: 16
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5370fe61643431b120cd3985"
+  }
+  index: 16
+  text: "As of ten minutes ago, Saito\342\200\231s troops placed Eclipse under martial law. Kali\342\200\231s barricaded herself in the top floor, but all the patrons and employees are under arrest. \n\nWe\342\200\231ll have to fight our way through the marines to clear your name. Let\342\200\231s get moving!"
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Trigger: Run Alternate Trigger"
+      args {
+        call_value {
+          functionName: "Get Map Item (Trigger)"
+          args {
+            string_value: "5374fe856434316b13333620"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WaitOrNot"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+}
+roots {
+  nextNodeIndex: 0
+}

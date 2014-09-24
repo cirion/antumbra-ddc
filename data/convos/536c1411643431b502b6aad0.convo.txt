@@ -1,0 +1,749 @@
+idRef {
+  id: "536c1411643431b502b6aad0"
+}
+ui_name: "a3-redding-Hrafna"
+nodes {
+  idRef {
+    id: "536c1486643431b502b6aad7"
+  }
+  index: 0
+  text: "I knew you couldn\342\200\231t stay away! What\342\200\231ll it be today, boss?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536c14a0643431b502b6aada"
+  }
+  index: 1
+  text: ""
+  branches {
+    responseText: "If I\342\200\231m your boss, why are you charging me?"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Redding_Convo_Hrafna_WhyCharging"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (int)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Global_numMissionsCompleted"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+        args {
+          int_value: 0
+        }
+      }
+    }
+    nextNodeIndex: 2
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "536c1542643431b502b6aaf9"
+    }
+  }
+  branches {
+    responseText: "What\342\200\231s your story?"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Redding_Convo_Hrafna_WhatStory"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (int)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Global_numMissionsCompleted"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+        args {
+          int_value: 1
+        }
+      }
+    }
+    nextNodeIndex: 4
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "536c154e643431b502b6aafa"
+    }
+  }
+  branches {
+    responseText: "Got any leads on jobs in the area?"
+    conditions {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (int)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Global_MissionState_Dam"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          int_value: 0
+        }
+      }
+    }
+    nextNodeIndex: 11
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "536c167b643431b502b6ab41"
+    }
+  }
+  branches {
+    responseText: "Be honest: just how good is your gear?"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Redding_Convo_Hrafna_HowGoodGear"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 17
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "536c174b643431b502b6ab9d"
+    }
+  }
+  branches {
+    responseText: "Let\342\200\231s see what you\342\200\231ve got."
+    nextNodeIndex: 18
+  }
+  branches {
+    responseText: "Good-bye."
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536c1506643431b502b6aae8"
+  }
+  index: 2
+  text: "Well, if it was just me, I\342\200\231d gladly give it to you. Since you\342\200\231re the one who\342\200\231s supposedly going to save our skins from those dastardly elves, et cetera, et cetera.\n\nThing is, though, I\342\200\231ve got suppliers to worry about. And employees of my own. If I don\342\200\231t make money, I can\342\200\231t pay them. I don\342\200\231t pay them, next week I have no more supplies. The week after that, Tir invades and we\342\200\231re standing here with our pants down."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Redding_Convo_Hrafna_WhyCharging"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "536c152c643431b502b6aaeb"
+  }
+  index: 3
+  text: "War is a terrible thing, but capitalism doesn\342\200\231t stop when it approaches. Everybody does their part. \n\nYes, you\342\200\231ll be doing more than the rest of us, but you still need to feed the machine."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536c1584643431b502b6aafc"
+  }
+  index: 4
+  text: "Wow\342\200\246 are you recording this? Am I on Truly Trideo?\n\nLet\342\200\231s see\342\200\246 I grew up outside of Sacto. Mom worked for the agri-corps, never met my dad. I was a late bloomer, she near had a heart attack when I went trog.\n"
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Redding_Convo_Hrafna_WhatStory"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "536c15a6643431b502b6aaff"
+  }
+  index: 5
+  text: "She was a good soul, though, didn\342\200\231t hold it against me. I started manifesting around that time, talking with invisible spirits and whatnot, and she figured I might have better things to do in life than jab at the ground with a pointed stick. So, she sent me off to Chico to study with a local shaman."
+  branches {
+    responseText: "That was generous of her."
+    nextNodeIndex: 6
+  }
+  branches {
+    responseText: "I bet you couldn\342\200\231t wait to get out of town."
+    nextNodeIndex: 9
+  }
+  branches {
+    responseText: "She moved you CLOSER to the front line? Not too smart."
+    nextNodeIndex: 10
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536c15c0643431b502b6ab04"
+  }
+  index: 6
+  text: "Yeah, she\342\200\231d never caught a break in life, figured it was time for one of her progeny to make it."
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536c15cc643431b502b6ab07"
+  }
+  index: 7
+  text: "Anyways, I\342\200\231m definitely the best shaman in my family, but that ain\342\200\231t saying much. No matter how hard I practiced, I just couldn\342\200\231t reliably cast the most important spells. I didn\342\200\231t even bother trying to get a job in corp security or as a shadowrunner. I wouldn\342\200\231t survive a single month of combat.\n\nBut, I wasn\342\200\231t about to go back to farming. I know the theory behind magic, and I REALLY know the business, so I decided to open a shop. There are some good sites of power near Redding, so this was an ideal spot for me to set up a store."
+  branches {
+    responseText: ""
+    nextNodeIndex: 8
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536c1612643431b502b6ab14"
+  }
+  index: 8
+  text: "As soon as I saw your crew moving into town, I said to myself, \342\200\234Self, these folks are going to need a lot of magic, and you are going to sell it to them.\342\200\235 So I\342\200\231m moving my operation over here for as long as you guys stick around. Don\342\200\231t make a liar out of me: go ahead and buy something!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536c15cf643431b502b6ab09"
+  }
+  index: 9
+  text: "Well, yeah, but Chico\342\200\231s even more small-town than Sacto. You never know how good home is until you\342\200\231ve lost it."
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536c15d3643431b502b6ab0c"
+  }
+  index: 10
+  text: "Oh, this would have been, let\342\200\231s see, maybe \342\200\23046. Tir was safely back over the border then, and we didn\342\200\231t expect them to return. At least, our so-called experts in the capital said we were safe."
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536c165c643431b502b6ab40"
+  }
+  index: 11
+  text: "Hm\342\200\246 not a job, exactly, but there\'s a problem that could use your attention.\n\nYou\342\200\231ll be shocked to learn this, but I\342\200\231m an orc. Lots of folks in Redding are metas: trogs, dwarves, even a lot of elves, oddly enough. Everyone tends to get along pretty well. We keep our heads down and mind our own business."
+  branches {
+    responseText: ""
+    nextNodeIndex: 12
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Global_MissionState_Dam"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "536c1683643431b502b6ab44"
+  }
+  index: 12
+  text: "Now that Tir\342\200\231s threatening to invade, though, the mood is getting ugly. A group of hard-core racists calling themselves Native Californians have started terrorizing local elves: throwing rocks through the windows of their stores, beating them on the streets. Last week they even burned a house to the ground, with three little kids inside. Human scum.\n\nIf I was you, I\342\200\231d try to nip their spree before it gets even worse. They\342\200\231ll be turning against us trogs next, and you won\342\200\231t be able to use Redding as a base if we\342\200\231re all fighting each other. "
+  branches {
+    responseText: "That\342\200\231s awful! I\342\200\231ll do what I can to stop them."
+    nextNodeIndex: 13
+  }
+  branches {
+    responseText: "I\342\200\231ll make sure nobody commits violence in Redding without my permission."
+    nextNodeIndex: 15
+  }
+  branches {
+    responseText: "I don\342\200\231t have time to deal with this."
+    nextNodeIndex: 16
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536c16be643431b502b6ab49"
+  }
+  index: 13
+  text: "I really appreciate that. You\342\200\231ll be making a lot of friends locally if you do. Not just us metas, either: almost all the humans detest those bastards."
+  branches {
+    responseText: ""
+    nextNodeIndex: 14
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536c16c2643431b502b6ab4c"
+  }
+  index: 14
+  text: "One of my customers saw what looked like a camp out by Shasta Dam. They might be gathering over there. Please check it out."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Global_MissionState_Dam"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+    ops {
+      functionName: "Set Goal Status"
+      args {
+        call_value {
+          functionName: "Get Map Item (Goal)"
+          args {
+            string_value: "Investigate the Native Californians at Shasta Dam"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "GoalStatus"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "536c16c7643431b502b6ab4f"
+  }
+  index: 15
+  text: "Like it or not, you\342\200\231re the law in Redding now. Time to crack some skulls."
+  branches {
+    responseText: ""
+    nextNodeIndex: 14
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536c16ce643431b502b6ab52"
+  }
+  index: 16
+  text: "Well, I hope you can make time. This is the sort of problem that can stab you in the back."
+  branches {
+    responseText: ""
+    nextNodeIndex: 14
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536c174e643431b502b6ab9f"
+  }
+  index: 17
+  text: "The best you\342\200\231ll find in town, that\342\200\231s for sure! I mean, I can\342\200\231t compete against the merchants in Pueblo or Tir. The materials in those \342\200\234traditional\342\200\235 areas are way more potent. \n\nStill, my stuff will hold up just fine against Tir Tairngire\'s assault, if that\342\200\231s what you\342\200\231re wondering."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Redding_Convo_Hrafna_HowGoodGear"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "536c177e643431b502b6abed"
+  }
+  index: 18
+  text: "Anything else?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Open Store Screen From Actor"
+      args {
+        call_value {
+          functionName: "Triggering Target Actor"
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "536c14ba643431b502b6aadf"
+  }
+  index: 19
+  text: "Pssst\342\200\246 hey, boss-$(l.man)! You looking for some magic gear?\n\nI got spells, I got fetishes, I got whatever you need, right here!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Redding_Convo_Hrafna_Met"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+roots {
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Redding_Convo_Hrafna_Met"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  nextNodeIndex: 0
+}
+roots {
+  responseText: ""
+  conditions {
+    ops {
+      functionName: "No Condition"
+    }
+  }
+  nextNodeIndex: 19
+}

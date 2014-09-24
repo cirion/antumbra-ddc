@@ -1,0 +1,8 @@
+id: "VIP Pass"
+type: ItemType_QuestItem
+uirep {
+  name: "VIP Pass"
+  description: "A ticket that lets you bypass the line, good tonight only."
+}
+credentials: 0
+sorting_group: "Quest"

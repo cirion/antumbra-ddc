@@ -1,0 +1,8 @@
+id: "a3-scrapyard-pickled_fetus_tray"
+type: ItemType_QuestItem
+uirep {
+  name: "Pickled Fetus Tray"
+  description: "An art project or a science project gone alarmingly wrong, this tray holds a staggering variety of painstakingly hand-selected mammal fetuses."
+}
+credentials: 0
+sorting_group: "Quest"

@@ -1,0 +1,83 @@
+idRef {
+  id: "53713f1b643431882a0397ce"
+}
+ui_name: "a3-finale_cave-hans"
+nodes {
+  idRef {
+    id: "53713f2c643431882a0397d4"
+  }
+  index: 0
+  text: "I am impressed that you still stand. \n\nHowever, this is the end. The Council of Princes will not be mocked. \n\nMake your peace with one another. The time has come to die."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53713f46643431882a0397d7"
+  }
+  index: 1
+  text: "No."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "537684326434316a34fc4631"
+  }
+  actions {
+    ops {
+      functionName: "Add Camera Point of Interest (Actors)"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "537684326434316a34fc4631"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        float_value: 0
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "53713f50643431882a0397da"
+  }
+  index: 2
+  text: "No!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "537684326434316a34fc4631"
+  }
+}
+nodes {
+  idRef {
+    id: "53713f55643431882a0397dd"
+  }
+  index: 3
+  text: "THERE SHALL BE NO MORE DEATH TODAY!"
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "537684326434316a34fc4631"
+  }
+}
+roots {
+  nextNodeIndex: 0
+}

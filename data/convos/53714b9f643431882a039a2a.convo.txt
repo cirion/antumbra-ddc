@@ -1,0 +1,210 @@
+idRef {
+  id: "53714b9f643431882a039a2a"
+}
+ui_name: "a3-end-dorbi"
+nodes {
+  idRef {
+    id: "53714ba4643431882a039a30"
+  }
+  index: 0
+  text: "{{GM}}Dorbi gazes at the dragon\342\200\231s form in wide-eyed wonder.{{/GM}}\n\nShe\342\200\231s\342\200\246 so beautiful. It\342\200\231s not like any of the storybooks or trideos I\342\200\231ve seen. So big, and with such power\342\200\246"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "talkedToDorbi"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "numPeopleTalkedTo"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "53714bc5643431882a039a38"
+  }
+  index: 1
+  text: "{{GM}}She snaps out of her reverie and turns to face you, a wide grin blossoming over her face.{{/GM}} \n\nYou did it! You did\342\200\246 well, everything! \n\nYou helped save Redding, defended the Dam, held off damn near an entire army\342\200\246 and, oh yeah, defied Tir\342\200\231s Council of Princes and rescued a real-life dragon! \n\nI never would have thought that the $(l.man) I nearly waterjacked on The 5 would rebalance the power structures in CalFree."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714bde643431882a039a3b"
+  }
+  index: 2
+  text: "And she\342\200\246 well, I think she might be what I\342\200\231ve been looking for. Dragons are the most powerful magical creatures in the world, and they\342\200\231re pretty famous for breathing fire. \n\nIf I ask nicely, do you think she could teach me some tips? Maybe even give me better control over the fire inside me?"
+  branches {
+    responseText: "She doesn\342\200\231t seem like the violent, fire-breathing type of dragon."
+    nextNodeIndex: 3
+  }
+  branches {
+    responseText: "I think she\342\200\231ll gladly help you tame your talent."
+    nextNodeIndex: 4
+  }
+  branches {
+    responseText: "Hestaby can probably make you more powerful than you could imagine."
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714bf9643431882a039a40"
+  }
+  index: 3
+  text: "No\342\200\246 more of the peace-and-harmony type. Which I didn\342\200\231t think was a possible type of dragon. \n\nOh well, I guess I learned something new today."
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714bfd643431882a039a43"
+  }
+  index: 4
+  text: "Yeah. She\342\200\231s, like, millions of years old, right? I imagine lots of wisdom comes with those years. \n\nHell, if I can just stop accidentally stop setting my companions on fire, I\342\200\231ll be happy enough."
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714c01643431882a039a46"
+  }
+  index: 5
+  text: "Heh heh\342\200\246 yeah, I think you\342\200\231re right. Dragons aren\342\200\231t eager to share their knowledge with humans, but this one seems\342\200\246 different. \n\nPlus, I figure she owes us for helping her out of a jam. If I have a dragon\342\200\231s power at my disposal, nobody will dare stand against me!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714c05643431882a039a49"
+  }
+  index: 6
+  text: "And, after I\342\200\231m done with this here dragon, what do you think comes next?"
+  branches {
+    responseText: "You could try to find your friends on the road."
+    nextNodeIndex: 7
+  }
+  branches {
+    responseText: "Why not settle down in Redding?"
+    nextNodeIndex: 8
+  }
+  branches {
+    responseText: "You\342\200\231d make an excellent Shadowrunner."
+    nextNodeIndex: 9
+  }
+  branches {
+    responseText: "I see you becoming a super-villain somewhere."
+    nextNodeIndex: 10
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714c8b643431882a039a53"
+  }
+  index: 7
+  text: "Yeah. I haven\342\200\231t seen the gang in a long time. I\342\200\231ve picked up a lot of skills watching you in action, and I think I might be ready to start up a gang of my own. \n\nOh, don\342\200\231t look so worried! We\342\200\231ll stay off your turf, I\342\200\231m not stupid. But there\342\200\231s lots of Native Californians to jack, and Saito\342\200\231s troops to harass\342\200\246 lots of loot out there for the taking."
+  branches {
+    responseText: ""
+    nextNodeIndex: 11
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714c8f643431882a039a56"
+  }
+  index: 8
+  text: "Hm, I\342\200\231m not really the type for settling down. \n\nBut maybe I can take a few years off. Make sure that my parents are comfortable, practice my skills, learn from the dragon. \n\nWe dwarves are long-lived, I have plenty of adventuring years ahead to me."
+  branches {
+    responseText: ""
+    nextNodeIndex: 11
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714c92643431882a039a59"
+  }
+  index: 9
+  text: "You think so? I guess I never really thought about going off on my own like that. \n\nMaybe you\342\200\231re right, though. My skills are certainly in high demand, and with a job like this on my resume, I can imagine the Johnsons lining up to recruit me. \342\200\234Oh, no big deal\342\200\246 I just helped defeat Tir Tairngire, and by the way, Hestaby owes me a favor.\342\200\235 \n\nHeh\342\200\246 yeah, I can see that."
+  branches {
+    responseText: ""
+    nextNodeIndex: 11
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714c96643431882a039a5c"
+  }
+  index: 10
+  text: "{{GM}}Dorbi throws back her head and laughs heartily.{{/GM}} \n\nOh, come on! Just because I enjoy setting people on fire and dabbling in the forbidden arts doesn\342\200\231t automatically make me a villain! Maybe a\342\200\246 well, not a super-hero, but a super-antihero. \n\nThough, I do love the idea of gathering minions and building a secluded underground fortress\342\200\246"
+  branches {
+    responseText: ""
+    nextNodeIndex: 11
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714ce3643431882a039a5f"
+  }
+  index: 11
+  text: "{{GM}}Dorbi drops into a wide, ironic curtsey.{{/GM}} \n\nWell, my liege, if you\342\200\231ll excuse me I\342\200\231m about to make a deal with a dragon. Until we meet again!"
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  nextNodeIndex: 0
+}

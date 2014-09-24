@@ -1,0 +1,147 @@
+idRef {
+  id: "53712a98643431882a03956b"
+}
+ui_name: "a3-invaded_redding-radio"
+nodes {
+  idRef {
+    id: "53712aab643431882a039571"
+  }
+  index: 0
+  text: "{{GM}}The mike is still hot. The Native Californians had increased the transmitter to maximum power, and are probably broadcasting to millions of listeners. What do you want to say?{{/GM}}"
+  branches {
+    responseText: "We are a beacon for metahumanity\342\200\246"
+    nextNodeIndex: 1
+  }
+  branches {
+    responseText: "Let this be a lesson to all my enemies\342\200\246"
+    nextNodeIndex: 2
+  }
+  branches {
+    responseText: "We all need to stick together\342\200\246"
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53712b40643431882a039589"
+  }
+  index: 1
+  text: "\342\200\246 and we welcome all allies to join us. \n\nYes, we\342\200\231ll be fighting the elves of Tir Tairngire, but ALL elves will be accepted here in Redding. Along with all dwarves, orcs, trolls, and humans. \n\nIt\342\200\231s people like you who will make this movement succeed, and we need your help.\n"
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Global_Manpower"
+          }
+        }
+      }
+      args {
+        int_value: 2
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "53712b37643431882a039583"
+  }
+  index: 2
+  text: "\342\200\246 anyone who messes with me will be killed. \n\nIf you try to invade my turf, I\342\200\231ll shoot you down. If you lay a hand on any of my cargo, or try to interfere with my shipments, I have an ENTIRE ARMY that will hunt you down. \n\nWe aren\342\200\231t kidding around here: the entire future of Northern CalFree relies on us, and any action taken against us will be answered in kind."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Global_Manpower"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Global_Supplies"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "53712b0b643431882a03957e"
+  }
+  index: 3
+  text: "\342\200\246. and everyone needs to do their part. The Native Californians claimed to oppose Tir Tairngire, but their actions here today have helped Tir immeasurably. \n\nIf you want to keep your homes safe, and see that your children grow up free, you\342\200\231ll need to help us repair the damage. We\342\200\231ll take your donations, your spare weapons, your labor and your valor. \n\nHelp us save you.\n"
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Global_Supplies"
+          }
+        }
+      }
+      args {
+        int_value: 2
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "53712b12643431882a039581"
+  }
+  index: 4
+  text: ""
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  nextNodeIndex: 0
+}

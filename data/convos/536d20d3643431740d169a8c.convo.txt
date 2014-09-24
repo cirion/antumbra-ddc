@@ -1,0 +1,227 @@
+idRef {
+  id: "536d20d3643431740d169a8c"
+}
+ui_name: "a3-banter-2_Hailey"
+nodes {
+  idRef {
+    id: "536d20e2643431740d169a92"
+  }
+  index: 0
+  text: "Hey, $(l.name), hold still for a moment! Okay, smile\342\200\246 say \342\200\234cheese\342\200\235... yay!\n\n{{GM}}Hailey snaps a picture of your startled face with her portable camera.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+  actions {
+    ops {
+      functionName: "Play Sound"
+      args {
+        call_value {
+          functionName: "Get Map Item (Sound)"
+          args {
+            string_value: "weapons"
+          }
+          args {
+            string_value: "RevolverReload"
+          }
+        }
+      }
+      args {
+        float_value: 1
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "536d2354643431740d169a95"
+  }
+  index: 1
+  text: "All right! This is going up on the net as soon as we get back."
+  branches {
+    responseText: "Why did you do that?"
+    nextNodeIndex: 2
+  }
+  branches {
+    responseText: "Don\342\200\231t you dare share it!"
+    nextNodeIndex: 3
+  }
+  branches {
+    responseText: "I might want to touch that up before it goes public."
+    nextNodeIndex: 4
+  }
+  branches {
+    responseText: "Fine, do whatever you want."
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d23ac643431740d169aa3"
+  }
+  index: 2
+  text: "Hey, it\342\200\231s important to document what we\342\200\231re doing! \n\nI love seeing shots of you in action\342\200\246 in the middle of a battlefield, during a brief respite before bad guys resume trying to kill you\342\200\246 this is the sort of picture that\342\200\231ll be in the history books one day."
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d23b0643431740d169aa7"
+  }
+  index: 3
+  text: "Come on, we can\342\200\231t leave your fans unsatisfied!\n\n{{GM}}She smiles impishly at you.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d23b6643431740d169aab"
+  }
+  index: 4
+  text: "Oh, don\342\200\231t worry. I\342\200\231ll make sure you look real good."
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d23a1643431740d169a9c"
+  }
+  index: 5
+  text: "Hooray! There\342\200\231s gonna be a lot of happy people in front of their vidscreens tonight."
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d23a5643431740d169a9f"
+  }
+  index: 6
+  text: "If I\342\200\231ve learned one thing while working for Kali, it\342\200\231s that marketing is key. \n\nIt doesn\342\200\231t really matter how righteous your cause is, how prepared you are, how confident you are in victory. If nobody else knows what you\342\200\231re doing, none of it matters."
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d2443643431740d169ab0"
+  }
+  index: 7
+  text: "This whole \342\200\234save the world\342\200\235 thing that you have going on - I love that! I really do! But it\342\200\231s not gonna work if you keep on acting like a shadowrunner. \n\nBeing all glum, sticking to the dark, doing the job and then heading out of town\342\200\246 you can\342\200\231t beat Tir on your own, and you can\342\200\231t get an army if you push people away."
+  branches {
+    responseText: ""
+    nextNodeIndex: 8
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d246f643431740d169ab3"
+  }
+  index: 8
+  text: "Pictures like this, and Dalmin\342\200\231s blog and Kali\342\200\231s viral videos and Norton\342\200\231s insane podcasts\342\200\246 they\342\200\231re all ways for people to get to know the real you, or at least the image you choose to project. \n\nThe better the image, the more people will join you, and the more people join you, the closer the image comes to reality. Acting like it\342\200\231s real will make it real."
+  branches {
+    responseText: "You\342\200\231re full of drek."
+    nextNodeIndex: 9
+  }
+  branches {
+    responseText: "I hope I get royalties from all that fanfic."
+    nextNodeIndex: 10
+  }
+  branches {
+    responseText: "I didn\342\200\231t realize people cared so much."
+    nextNodeIndex: 11
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d24a7643431740d169ab8"
+  }
+  index: 9
+  text: "Oh, no doubt! But we need to make sure that the drek smells as sweet as possible. \n\nYou\342\200\231re fooling yourself if you think that Saito doesn\342\200\231t have a PR team, and that Tir isn\342\200\231t making propaganda of their own. We need to play the same game as them."
+  branches {
+    responseText: ""
+    nextNodeIndex: 12
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d24ab643431740d169abb"
+  }
+  index: 10
+  text: "What, the eternal adoration of your devoted groupies isn\342\200\231t enough? \n\nFINE! I\342\200\231ll talk with Kali about it. I\342\200\231m sure she\342\200\231ll be delighted to monetize a new revenue stream."
+  branches {
+    responseText: ""
+    nextNodeIndex: 12
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d24b0643431740d169abe"
+  }
+  index: 11
+  text: "Of course we do, silly! I mean, you\342\200\231re always focused on the danger right in front of you, so it\342\200\231s understandable that you don\342\200\231t notice the support of the people behind you. We\342\200\231ve got your back."
+  branches {
+    responseText: ""
+    nextNodeIndex: 12
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d24b4643431740d169ac1"
+  }
+  index: 12
+  text: "Well, don\342\200\231t let me keep you.\n\n{{GM}}Hailey reloads the camera, a look of proud satisfaction on her face.{{/GM}}  \n\nLet\342\200\231s get some more shots of you in action, $(l.sir)!"
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+roots {
+  nextNodeIndex: 0
+}

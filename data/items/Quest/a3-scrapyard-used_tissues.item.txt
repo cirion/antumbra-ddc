@@ -1,0 +1,8 @@
+id: "a3-scrapyard-used_tissues"
+type: ItemType_QuestItem
+uirep {
+  name: "Suitcase of Used Tissues"
+  description: "Someone has crammed an entire lifetime\'s worth of used tissues into this tightly-packed case, smeared with every type of bodily fluid known to man."
+}
+credentials: 0
+sorting_group: "Quest"

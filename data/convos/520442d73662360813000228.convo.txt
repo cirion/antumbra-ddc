@@ -1,0 +1,38 @@
+idRef {
+  id: "520442d73662360813000228"
+}
+ui_name: "A1_Cave_TurmEntrance"
+nodes {
+  idRef {
+    id: "520442e4366236081300022e"
+  }
+  index: 0
+  text: "{{GM}}Turm stops abruptly, her rigid face collapsing into a frown.{{/GM}}\n\nHoi, $(l.name). I think we should be careful here."
+  branches {
+    responseText: "Why do you say that?"
+    nextNodeIndex: 1
+  }
+  branches {
+    responseText: "Scared of the dark, Turm?"
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "{{GM}}Remain silent.{{/GM}}"
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5204430f3662360813000233"
+  }
+  index: 1
+  text: "It\'s\342\200\246 strange. You see those tracks? Dozens of critters heading in. None coming back out. I don\'t know what happened to them, but I want to make sure we walk out alive."
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}

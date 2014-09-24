@@ -1,0 +1,8 @@
+id: "a3-scrapyard-top_lifter_piece"
+type: ItemType_QuestItem
+uirep {
+  name: "Top Lifter Control Board"
+  description: "Someone threw out a perfectly good logic board for a top lifter! This model is hot-swappable, and could be used to easily replace any similar damaged board."
+}
+credentials: 0
+sorting_group: "Quest"

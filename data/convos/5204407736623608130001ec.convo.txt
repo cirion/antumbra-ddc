@@ -1,0 +1,93 @@
+idRef {
+  id: "5204407736623608130001ec"
+}
+ui_name: "A1_Cave_DalminEntranceChat"
+nodes {
+  idRef {
+    id: "520440ad36623608130001f2"
+  }
+  index: 0
+  text: "{{GM}}Dalmin lets out a gasp of excitement as you step into the subbasement.{{/GM}}\n\nMy spirits! Can you feel that, $(l.name)?"
+  branches {
+    responseText: "What do you sense, Dalmin?"
+    nextNodeIndex: 1
+  }
+  branches {
+    responseText: "All I feel right now is a sense of impatience. Get to the point, dwarf."
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "{{CC}}Magic 3{{/CC}} Yes. There must be a leyline here. I\'ve never sensed one so strong, though."
+    conditions {
+      ops {
+        functionName: "Compare Actor Attribute"
+        args {
+          call_value {
+            functionName: "Get Map Item (Player)"
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "BaseOrCurrent"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "ActorAttributes"
+            }
+            args {
+              int_value: 7
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 3
+            }
+          }
+        }
+        args {
+          int_value: 3
+        }
+      }
+    }
+    nextNodeIndex: 1
+    hideIfUnavailable: true
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "{{GM}}Remain silent.{{/GM}}"
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5204412c36623608130001fa"
+  }
+  index: 1
+  text: "This entire place is filled with magic. It\'s\342\200\246 it\'s thrumming through my entire body!\n\nWe\'d better step carefully. I have no idea how they were able to hide something this big from the surfacers, but sites like this tend to attract all sorts of magical creatures. They\'ve even been known to make mundane creatures magical. \n\nAll I\'m saying is, keep your eyes wide open.\n"
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}

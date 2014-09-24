@@ -1,0 +1,115 @@
+idRef {
+  id: "53712c3f643431882a0395cc"
+}
+ui_name: "a3-finale_dam-tophet"
+nodes {
+  idRef {
+    id: "53712c58643431882a0395d2"
+  }
+  index: 0
+  text: "FOOL. \n\nFOOL. \n\nFOOL."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53712c63643431882a0395d5"
+  }
+  index: 1
+  text: "YOU PLAY WITH FIRE, AND INVOKE MY WRATH. YOUR TIME IS ENDED."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53712c6e643431882a0395d8"
+  }
+  index: 2
+  text: ""
+  branches {
+    responseText: "Why is a freed spirit working with the elves?"
+    nextNodeIndex: 3
+    onlyOnce: true
+    idRef {
+      id: "53712f1a643431882a039607"
+    }
+  }
+  branches {
+    responseText: "What do you hope will happen after you win?"
+    nextNodeIndex: 4
+    onlyOnce: true
+    idRef {
+      id: "53712f23643431882a039608"
+    }
+  }
+  branches {
+    responseText: "Your reign of terror ends here."
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "Time to douse the fire."
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "I\342\200\231m scarier than a flame could ever be!"
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53712f04643431882a0395f5"
+  }
+  index: 3
+  text: "HE PROMISED ME VENGEANCE. \n\nYOU TOOK WHAT WAS MINE. \n\nI WILL DESTROY YOU, AND ALL YOU HAVE WORKED SO HARD TO CREATE."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53712f2b643431882a03960a"
+  }
+  index: 4
+  text: "MY SITE OF POWER HAS BEEN STOLEN, BUT OTHERS REMAIN. I WILL FIND A NEW CENTER TO CONTROL. \n\nI WILL WAX IN POWER, AND ONE DAY I SHALL RAIN MY FLAMES DOWN UPON ALL MORTALS"
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53712c9e643431882a0395df"
+  }
+  index: 5
+  text: "MY PATRON IS NEAR, AND MY POWER IS LIMITLESS. \n\nYOU ARE DOOMED. \n\nDOOMED. \n\nDOOMED."
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53712cbf643431882a0395e2"
+  }
+  index: 6
+  text: "YOU WILL DIE. \n\nYOU CANNOT STOP IT. DO NOT RESIST. \n\nYOU WILL DIE. \n\nYOU WILL ALL DIE."
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  nextNodeIndex: 0
+}

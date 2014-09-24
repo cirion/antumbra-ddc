@@ -1,0 +1,762 @@
+idRef {
+  id: "536d52db6434317b17cbacc8"
+}
+ui_name: "a3-crypt-Orion"
+nodes {
+  idRef {
+    id: "5388fa54643431654a5d12dd"
+  }
+  index: 0
+  text: "$(l.name)! This is a very welcome sight!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5388fa5d643431654a5d12e9"
+  }
+  index: 1
+  text: "You must be $(l.name). Norton told us to expect you."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5388fadb643431654a5d12ef"
+  }
+  index: 2
+  text: "I am very glad to see you here. I had begun to think that hope had been lost for the remnants of Norton\'s Army."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5388fae8643431654a5d1345"
+  }
+  index: 3
+  text: ""
+  branches {
+    responseText: "Orion! I thought you were dead!"
+    conditions {
+      ops {
+        functionName: "Get Dependent Story Variable (bool)"
+        args {
+          call_value {
+            functionName: "Get Previous Story Variable (bool)"
+            args {
+              string_value: "5215664d3662365c180018bf"
+            }
+            args {
+              string_value: "A2_OrionDied"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 4
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "536d56666434317b17cbad30"
+    }
+  }
+  branches {
+    responseText: "Look, I brought your superior to see you!"
+    conditions {
+      ops {
+        functionName: "Evaluate If Actor is Inside Region"
+        args {
+          call_value {
+            functionName: "All Actors With Tag"
+            args {
+              call_value {
+                functionName: "Get Map Item (SenseTagList)"
+                args {
+                  string_value: "isNorton"
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "AllOrAny"
+                }
+                args {
+                  int_value: 1
+                }
+              }
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "AreOrAreNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Region)"
+            args {
+              string_value: "53665e9a3662362409007c0d"
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 5
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "536d53c66434317b17cbace3"
+    }
+  }
+  branches {
+    responseText: "Do you recognize this scamp?"
+    conditions {
+      ops {
+        functionName: "Evaluate If Actor is Inside Region"
+        args {
+          call_value {
+            functionName: "All Actors With Tag"
+            args {
+              call_value {
+                functionName: "Get Map Item (SenseTagList)"
+                args {
+                  string_value: "isHailey"
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "AllOrAny"
+                }
+                args {
+                  int_value: 1
+                }
+              }
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "AreOrAreNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Region)"
+            args {
+              string_value: "53665e9a3662362409007c0d"
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 7
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "537903fa3662369815005f08"
+    }
+  }
+  branches {
+    responseText: "Are the children safe?"
+    nextNodeIndex: 10
+    onlyOnce: true
+    idRef {
+      id: "536d57336434317b17cbad5f"
+    }
+  }
+  branches {
+    responseText: "What were you doing before Tophet appeared?"
+    nextNodeIndex: 13
+    onlyOnce: true
+    idRef {
+      id: "536d5a8f6434317b17cbad9f"
+    }
+  }
+  branches {
+    responseText: "I need the remnants of Norton\'s Army to join me for the battle in Redding."
+    nextNodeIndex: 17
+  }
+  branches {
+    responseText: "Can Norton\'s Army help secure our supply lines between the coast and the Central Valley?"
+    nextNodeIndex: 18
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "No Effect"
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "5388fae8643431654a5d135d"
+  }
+  index: 4
+  text: "Yes, that last run was\342\200\246 rather painful. Fortunately, a kind orc came across my corpse, and had the strength of will to drag it to safety. It\342\200\231s been a long recuperation, but I feel well enough to walk again."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5388fae8643431654a5d1348"
+  }
+  index: 5
+  text: "Orion, we are very pleased to see you once again! You have our gratitude for watching over our flock during our sojourn in Redding."
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "5388fae8643431654a5d134b"
+  }
+  index: 6
+  text: "Of course, Norton. This has proven a wonderful opportunity for me to put my theories about metahuman cooperatives into practice. I believe Norton\'s Army has become even more formidable than before, but it would not have been possible without the groundwork you have provided."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5388fae8643431654a5d1351"
+  }
+  index: 7
+  text: "Ah, Hailey, how good to see you again. How is life in the city treating you now?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 8
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5388fae8643431654a5d1354"
+  }
+  index: 8
+  text: "Pretty good for me, but not so well for our old friends, I\'m afraid. Saito keeps accelerating his purges. At this rate, the city will be a human-exclusive zone by next year."
+  branches {
+    responseText: ""
+    nextNodeIndex: 9
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "5388fae8643431654a5d1357"
+  }
+  index: 9
+  text: "I see.\n\n{{GM}}Orion nods gravely.{{/GM}}\n\nWhile this will doubtless cause pain, it should also serve to accelerate the consolidation of metahumans opposed to the Colonel. His day of reckoning is fast approaching, and he will find few friends to stand with him once our own campaign begins."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5388fae8643431654a5d1363"
+  }
+  index: 10
+  text: ""
+  branches {
+    responseText: ""
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "RescuedChildrenInTime"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 11
+  }
+  branches {
+    responseText: ""
+    nextNodeIndex: 12
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5388fae8643431654a5d1366"
+  }
+  index: 11
+  text: "I am not a praying orc, but I could almost be one now. I thought for certain that they were doomed, as were we all. \n\nAnd then, you arrived just in time to save them. You are directly responsible for the continued lives of two dozen young metahumans, who will surely hold you in esteem for the remainder of their days.\n"
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5388fae8643431654a5d136c"
+  }
+  index: 12
+  text: "{{GM}}His face clouds.{{/GM}}\n\nYes, but at great cost. Tophet\342\200\231s forces broke through, and nearly all of our leadership died protecting them. It will take us years, at the least, to recover from that loss of knowledge.\n"
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5388fae8643431654a5d1372"
+  }
+  index: 13
+  text: ""
+  branches {
+    responseText: ""
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "a2_killedShavarus"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 14
+  }
+  branches {
+    responseText: ""
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "a2_savedShavarus"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 15
+  }
+  branches {
+    responseText: ""
+    nextNodeIndex: 16
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5388fae8643431654a5d1375"
+  }
+  index: 14
+  text: "After you killed Shavarus, most of his splinter group rejoined Norton\'s Army. Their support has been welcome, although we have kept a wary eye on their loyalty.\n\nI joined forces with Norton shortly after you left, and have begun to lead the army during the Emperor\342\200\231s absence, instructing them to hone their minds as well as their aim."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5388fae8643431654a5d137b"
+  }
+  index: 15
+  text: "We lost several of our recruits to Shavarus after his plot failed. Lately, though, he has grown even more extreme, and has begun purging non-Trolls from his ranks. We gladly accept his castoffs, and work hard to bring them back into the fold.\n\nI\342\200\231ve helped lead Norton\342\200\231s Army during the Emperor\342\200\231s absence, instructing them to hone their minds as well as their aim."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5388fae8643431654a5d1381"
+  }
+  index: 16
+  text: "After the chaos from the Shavarus affair subsided, I joined forces with Norton. He has a far more optimistic view of humanity\'s potential than I do, but we share a common vision of supporting metahumanity and opposing Colonel Saito.\n\nSince he departed to find you in the Central Valley, I have taken over day-to-day management of his army, instructing the recruits to fight as fully conscious beings and not as crude warriors."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5388fae8643431654a5d1387"
+  }
+  index: 17
+  text: "Friend, after your actions today, I would support you in nearly any endeavor."
+  branches {
+    responseText: ""
+    nextNodeIndex: 19
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Global_Manpower"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "5388fae8643431654a5d138d"
+  }
+  index: 18
+  text: "Certainly. I\'ll send a small force to observe the events in Redding, and keep the bulk of our forces here to mitigate interference from Saito or any other adversaries."
+  branches {
+    responseText: ""
+    nextNodeIndex: 19
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Global_Supplies"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "5388fae8643431654a5d1390"
+  }
+  index: 19
+  text: "The invasion of Tir could be a moment of great potential. The forces of humanity are already weakened in this state. \n\nOnce the elves of Tir cross the border, they will sweep away all within their path, driving Saito back into the sea and pounding the weaklings of Sacramento into the ground.\n\n"
+  branches {
+    responseText: ""
+    nextNodeIndex: 20
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5388fae8643431654a5d1393"
+  }
+  index: 20
+  text: "And yet, their short-term triumph would damage our long-term prospects. Without the potent threat of Saito to unite us, we would quickly begin to fight amongst ourselves. Orc against elf, troll against dwarf.\n\nSo, while it offends me to think that I will be fighting alongside the megacorps, I will gladly do so for the sake of history. The great revolution is coming, but it will come from within CalFree, not from the north."
+  branches {
+    responseText: ""
+    nextNodeIndex: 21
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5388fae8643431654a5d1396"
+  }
+  index: 21
+  text: "Farewell, $(l.name). Our forces will join you in Redding shortly. You must play the part that you are destined to play."
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Trigger: Run Alternate Trigger"
+      args {
+        call_value {
+          functionName: "Get Map Item (Trigger)"
+          args {
+            string_value: "537910ff3662369815005fa9"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WaitOrNot"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+}
+roots {
+  responseText: ""
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "a2_beatGame"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  nextNodeIndex: 0
+  onlyOnce: true
+  idRef {
+    id: "536d53a16434317b17cbacd4"
+  }
+}
+roots {
+  responseText: ""
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "a2_beatGame"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  nextNodeIndex: 1
+  onlyOnce: true
+  idRef {
+    id: "536d53ae6434317b17cbace2"
+  }
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 2
+}
+roots {
+  nextNodeIndex: -1
+  onlyOnce: true
+  idRef {
+    id: "536d536d6434317b17cbaccf"
+  }
+}

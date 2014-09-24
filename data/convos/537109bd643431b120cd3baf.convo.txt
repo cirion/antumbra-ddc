@@ -1,0 +1,847 @@
+idRef {
+  id: "537109bd643431b120cd3baf"
+}
+ui_name: "a3-dam-bullion"
+nodes {
+  idRef {
+    id: "537109fc643431b120cd3bb5"
+  }
+  index: 0
+  text: "Well, well\342\200\246 look who we have here! The so-called savior of CalFree!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53710a38643431b120cd3bbd"
+  }
+  index: 1
+  text: ""
+  branches {
+    responseText: "Did you crawl over here after I kicked you out of your garbage home?"
+    conditions {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (int)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Global_MissionState_Five"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+        args {
+          int_value: 1
+        }
+      }
+    }
+    nextNodeIndex: 2
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "53710a96643431b120cd3bc6"
+    }
+  }
+  branches {
+    responseText: "{{GM}}Let Dorbi speak.{{/GM}}"
+    conditions {
+      ops {
+        functionName: "Evaluate If Actor is Inside Region"
+        args {
+          call_value {
+            functionName: "All Actors With Tag"
+            args {
+              call_value {
+                functionName: "Tag From String"
+                args {
+                  string_value: "isDorbi"
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "AllOrAny"
+                }
+                args {
+                  int_value: 1
+                }
+              }
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "AreOrAreNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Region)"
+            args {
+              string_value: "5366874d3662362409008236"
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 3
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "53710a98643431b120cd3bc7"
+    }
+  }
+  branches {
+    responseText: "What are you doing here?"
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53710a44643431b120cd3bc3"
+  }
+  index: 2
+  text: "Thanks for wiping out those waterjackers for me. Now my boys won\342\200\231t have any competition when we expand to control the 5."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53710ab4643431b120cd3bc9"
+  }
+  index: 3
+  text: "You fragging piece of slime! Those were good folks. \n\nWell, maybe not \342\200\234good,\342\200\235 but next to you they were saints. I\342\200\231ll kill you for what you did!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "53710ad2643431b120cd3bd9"
+  }
+  index: 4
+  text: "I\342\200\231ve noticed that you\342\200\231re letting filthy keebs roam around freely in Redding. That\342\200\231s a mistake, hoss. \n\nDo you think they\342\200\231ll just stand idly by when them pointy-ears come swarming down from Tir? They\342\200\231ll light the way for the invaders, and stab you in the back."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53710af1643431b120cd3bdc"
+  }
+  index: 5
+  text: "Are you as stupid as you are cruel?\n\n{{GM}}The elf has been bound tightly and made to kneel on the pavement. His clothing is torn and he\342\200\231s bleeding profusely, but he remains defiant.{{/GM}}\n\nWe elves will be the first ones up against the wall when Tir breaks through! Nobody will fight them harder than us to resist them."
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "53710b23643431b120cd3bdf"
+  }
+  index: 6
+  text: "See what I mean?\n\n{{GM}}Without looking, Claude casually slams the elf\342\200\231s head into the pavement.{{/GM}}\n\nTreacherous, deceitful little vermin. If you had the guts, you\342\200\231d take care of them yourself."
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53710b43643431b120cd3be2"
+  }
+  index: 7
+  text: ""
+  branches {
+    responseText: "{{CC}}Etiquette: Street{{/CC}} These elves are no threat. Folks who have nothing need to stick together."
+    conditions {
+      ops {
+        functionName: "Compare Actor Skill"
+        args {
+          call_value {
+            functionName: "Get Map Item (Player)"
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "BaseOrCurrent"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "ActorSkills"
+            }
+            args {
+              int_value: 18
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+        args {
+          int_value: 0
+        }
+      }
+    }
+    nextNodeIndex: 8
+    onlyOnce: true
+    idRef {
+      id: "537110d6643431b120cd3c08"
+    }
+  }
+  branches {
+    responseText: "I suppose you want to \342\200\234take care\342\200\235 of elves like me, too?"
+    conditions {
+      ops {
+        functionName: "Compare Actor Race"
+        args {
+          call_value {
+            functionName: "Triggering Actor"
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Race"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 10
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "537ac31f366236b005001629"
+    }
+  }
+  branches {
+    responseText: "Are you also opposed to $(s.race_plural) like me, too?"
+    conditions {
+      ops {
+        functionName: "Compare Actor Race"
+        args {
+          call_value {
+            functionName: "Triggering Actor"
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Race"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Compare Actor Race"
+        args {
+          call_value {
+            functionName: "Triggering Actor"
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Race"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 11
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "537ac323366236b00500162a"
+    }
+  }
+  branches {
+    responseText: "Good point. We humans need to stick together."
+    conditions {
+      ops {
+        functionName: "Compare Actor Race"
+        args {
+          call_value {
+            functionName: "Triggering Actor"
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Race"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 12
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "537ac328366236b00500162b"
+    }
+  }
+  branches {
+    responseText: "Let him go immediately!"
+    nextNodeIndex: 18
+  }
+  branches {
+    responseText: "If he\342\200\231s a traitor, we\342\200\231ll need to question him first and see what he knows."
+    nextNodeIndex: 19
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537110bf643431b120cd3bff"
+  }
+  index: 8
+  text: "No! Otherwise, how will people know we\342\200\231re better than the elves?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 9
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "538397fa3662368413000545"
+  }
+  index: 9
+  text: "{{GM}}Despite Claude\'s words, a few of the more sheepish-looking Native Californians seem to heed your words, and quietly wander off.{{/GM}}"
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Trigger: Run Alternate Trigger"
+      args {
+        call_value {
+          functionName: "Get Map Item (Trigger)"
+          args {
+            string_value: "538398173662368413000587"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WaitOrNot"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "cowardsExiting"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "53711180643431b120cd3c1b"
+  }
+  index: 10
+  text: "Damn right. There\342\200\231s no point in negotiating with someone like you. You\342\200\231re obviously just a stalking horse for Tir, testing CalFree\342\200\231s resolve before the invasion."
+  branches {
+    responseText: ""
+    nextNodeIndex: 20
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5371119c643431b120cd3c1f"
+  }
+  index: 11
+  text: "One thing at a time. Your kind are an abomination, but not nearly as big a threat as the elves."
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53711318643431b120cd3c41"
+  }
+  index: 12
+  text: "I\342\200\231m glad you see the light. Come, let\342\200\231s purge the weak together. Only by becoming pure can we stand against Tir. \n\n{{GM}}He tosses you his pistol.{{/GM}} \n\nCome, show us you\342\200\231re on our side."
+  branches {
+    responseText: "{{GM}}Shoot the elf.{{/GM}}"
+    nextNodeIndex: 13
+  }
+  branches {
+    responseText: "{{GM}}Shoot the Native Californian.{{/GM}}"
+    nextNodeIndex: 16
+  }
+  branches {
+    responseText: "{{GM}}Toss the gun aside.{{/GM}}"
+    nextNodeIndex: 17
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5371136e643431b120cd3c46"
+  }
+  index: 13
+  text: "Argh!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 14
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+  actions {
+    ops {
+      functionName: "Kill Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "5373e940643431b8017c3d58"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DeathMethod"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Play Sound"
+      args {
+        call_value {
+          functionName: "Get Map Item (Sound)"
+          args {
+            string_value: "weapons"
+          }
+          args {
+            string_value: "Pistol"
+          }
+        }
+      }
+      args {
+        float_value: 1
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "537116be643431b120cd3c49"
+  }
+  index: 14
+  text: "I didn\342\200\231t think you\342\200\231d have the guts to do it. \n\nI\342\200\231m impressed."
+  branches {
+    responseText: ""
+    nextNodeIndex: 15
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537116cc643431b120cd3c4c"
+  }
+  index: 15
+  text: "This doesn\342\200\231t change anything, though. I already know that your organization is packed with elf-lovers. Redding won\342\200\231t be safe until your entire group is wiped out.\n\n{{GM}}Many of the other Native Californians look impressed at your actions, though, and quietly begin to disperse.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 20
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5371172b643431b120cd3c54"
+  }
+  index: 16
+  text: "Argh!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 18
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Play Sound"
+      args {
+        call_value {
+          functionName: "Get Map Item (Sound)"
+          args {
+            string_value: "weapons"
+          }
+          args {
+            string_value: "Pistol"
+          }
+        }
+      }
+      args {
+        float_value: 1
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Cause Damage"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "536c5969366236d41e0027a9"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        int_value: 10
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "HPOrAP"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Cause Damage"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "537ce992643431520477f89d"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        int_value: 10
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "HPOrAP"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "53711729643431b120cd3c52"
+  }
+  index: 17
+  text: "Just as I thought. You\342\200\231re a coward and an elf-loving sycophant."
+  branches {
+    responseText: ""
+    nextNodeIndex: 20
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5371115a643431b120cd3c15"
+  }
+  index: 18
+  text: "You want a fight, eh? Lucky thing we came prepared!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 20
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53711133643431b120cd3c10"
+  }
+  index: 19
+  text: "This is our prize, and we\342\200\231re not about to let it go without a fight!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 20
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53711141643431b120cd3c13"
+  }
+  index: 20
+  text: "Since you\342\200\231re out here, this is a prime time to take over that fine base of yours.\n\nMen, keep these heroes busy! I\342\200\231m going to stir up some mischief."
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "bullionTalkState"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "538399d536623684130006c5"
+  }
+  index: 21
+  text: "{{GM}}Claude glares at you, perturbed at the erosion of his hold over the mob.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  conditions {
+    ops {
+      functionName: "Invert Bool"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "cowardsExiting"
+          }
+        }
+      }
+    }
+  }
+  nextNodeIndex: 0
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 21
+}

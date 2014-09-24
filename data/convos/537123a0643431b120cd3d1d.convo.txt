@@ -1,0 +1,27 @@
+idRef {
+  id: "537123a0643431b120cd3d1d"
+}
+ui_name: "a3-dam-elorn_2"
+nodes {
+  idRef {
+    id: "537123a6643431b120cd3d23"
+  }
+  index: 0
+  text: "I heard them talking before you arrived. It sounds like Claude Bullion has been looking for a way to get into your base and take control of your military transmitter antennae."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537123b0643431b120cd3d26"
+  }
+  index: 1
+  text: "He\342\200\231s convinced that, if he can get on the air and spew his racist propaganda for long enough, he\342\200\231ll persuade local humans to rise up and slaughter the elves. \n\nHe\342\200\231s probably wrong - the people in Redding are good folks - but why take the risk? We should hurry and stop him."
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  nextNodeIndex: 0
+}

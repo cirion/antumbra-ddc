@@ -1,0 +1,53 @@
+prefab_name: "Seattle:Spirit/SpiritFire"
+character_sheet_id: "a3_badguy_ember_Lv1"
+equipment_sheet_id: "Spirit Fire F1 Gear"
+character_mod {
+  stats {
+    body: 0
+    quickness: 0
+    strength: 0
+    charisma: 0
+    intelligence: 0
+    willpower: 0
+    essence: 0
+    hp: 0
+    ap: 0
+    armor: 0
+    morale: 0
+    discipline: 0
+    awareness: 0
+    perception: 0
+    authority: 0
+    protect_tether_range: 0
+    move_speed: 0
+    is_fearless: 1
+  }
+  skills {
+    ranged_combat: 0
+    close_combat: 0
+    dodge: 0
+  }
+  specializations {
+    rifle: 0
+    edged: 0
+    unarmed: 0
+  }
+  archetypeName: "Guard - Seek And Destroy"
+  vulnerabilities {
+    heal: VulnerabilityLevel_Immune
+    fire: VulnerabilityLevel_Immune
+  }
+}
+team_id: "Gangers"
+char_name: "Fire Elemental"
+GeneralTags: "isEmber"
+pc_spawn_number: -1
+hiring_type: HiringType_None
+disable_pickups: false
+portrait {
+  filename: ""
+}
+karma: 20
+hiring_cost_override: 1000
+scale_character_sheet: true
+has_fist: false

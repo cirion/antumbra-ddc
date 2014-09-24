@@ -1,0 +1,675 @@
+idRef {
+  id: "53726eca6434311639fc6770"
+}
+ui_name: "a3-scrapyard-toxic_spirit"
+nodes {
+  idRef {
+    id: "53726eda6434311639fc6777"
+  }
+  index: 0
+  text: "YOU CREATURES CONTINUE TO OFFEND ME.\n\n{{GM}}The toxic spirit coughs, belching up a miasma of foul fumes.{{/GM}}\n\nWHAT MUST I DO TO MAKE YOU LEAVE?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53726f2b6434311639fc677a"
+  }
+  index: 1
+  text: ""
+  branches {
+    responseText: "If you could lift that crate to the east out of the way, I\'ll gladly move on and leave you alone."
+    nextNodeIndex: 2
+    onlyOnce: true
+    idRef {
+      id: "53726f526434311639fc6785"
+    }
+  }
+  branches {
+    responseText: "{{CC}}Disgusting objects{{/CC}} I bring you the three disgusting items that you requested, foul spirit."
+    conditions {
+      ops {
+        functionName: "Evaluate If Actor Has Item"
+        args {
+          call_value {
+            functionName: "Specific Actor"
+            args {
+              call_value {
+                functionName: "Triggering Actor"
+              }
+            }
+            args {
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "HasOrHasNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Item)"
+            args {
+              string_value: "a3-scrapyard-slug_parfait"
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Evaluate If Actor Has Item"
+        args {
+          call_value {
+            functionName: "Specific Actor"
+            args {
+              call_value {
+                functionName: "Triggering Actor"
+              }
+            }
+            args {
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "HasOrHasNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Item)"
+            args {
+              string_value: "a3-scrapyard-used_tissues"
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Evaluate If Actor Has Item"
+        args {
+          call_value {
+            functionName: "Specific Actor"
+            args {
+              call_value {
+                functionName: "Triggering Actor"
+              }
+            }
+            args {
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "HasOrHasNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Item)"
+            args {
+              string_value: "a3-scrapyard-pickled_fetus_tray"
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 3
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: "{{CC}}Etiquette: Socialite{{/CC}} My WORD, I simply cannot fathom the disgraceful state of this establishment! I wish to speak with your manager immediately!"
+    conditions {
+      ops {
+        functionName: "Compare Actor Skill"
+        args {
+          call_value {
+            functionName: "Triggering Actor"
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "BaseOrCurrent"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "ActorSkills"
+            }
+            args {
+              int_value: 16
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+        args {
+          int_value: 0
+        }
+      }
+    }
+    nextNodeIndex: 8
+    onlyOnce: true
+    idRef {
+      id: "5372789a64343195016cdc03"
+    }
+  }
+  branches {
+    responseText: "Goodbye."
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5372778f64343195016cdbf3"
+  }
+  index: 2
+  text: "THOSE WHO CAME BEFORE TOOK MY PRECIOUS FILTH. BRING ME THREE SUITABLY DISGUSTING TREASURES, AND I WILL AID YOU ON YOUR WAY."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Goal Status"
+      args {
+        call_value {
+          functionName: "Get Map Item (Goal)"
+          args {
+            string_value: "Find three disgusting items for the toxic spirit."
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "GoalStatus"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "537286dc64343195016cdc39"
+  }
+  index: 3
+  text: "YES. THESE WILL DO.\n\nTHERE IS ONE MORE REQUIREMENT. YOU MUST SURRENDER HALF OF YOUR HEALTH TO ME."
+  branches {
+    responseText: "{{CC}}Spirit Control: 3{{/CC}} I urge you to reconsider. Leave me all my strength, so that I might confront your enemies."
+    conditions {
+      ops {
+        functionName: "Compare Actor Specialization"
+        args {
+          call_value {
+            functionName: "Triggering Actor"
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "BaseOrCurrent"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "ActorSpecializations"
+            }
+            args {
+              int_value: 7
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 3
+            }
+          }
+        }
+        args {
+          int_value: 3
+        }
+      }
+    }
+    nextNodeIndex: 4
+  }
+  branches {
+    responseText: "All right."
+    nextNodeIndex: 6
+  }
+  branches {
+    responseText: "I refuse."
+    nextNodeIndex: 7
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5372873d64343195016cdc3c"
+  }
+  index: 4
+  text: "VERY WELL."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537287fc64343195016cdc64"
+  }
+  index: 5
+  text: "GO, NOW, AND TROUBLE ME NO FURTHER."
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "crateQuest"
+          }
+        }
+      }
+      args {
+        int_value: 2
+      }
+    }
+    ops {
+      functionName: "Set Goal Status"
+      args {
+        call_value {
+          functionName: "Get Map Item (Goal)"
+          args {
+            string_value: "Find three disgusting items for the toxic spirit."
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "GoalStatus"
+          }
+          args {
+            int_value: 2
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "5372880d64343195016cdc66"
+  }
+  index: 6
+  text: "THE PRICE IS PAID."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Cause Damage"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Arithmetic (int)"
+          args {
+            call_value {
+              functionName: "Convert (float) to (int)"
+              args {
+                call_value {
+                  functionName: "Arithmetic (float)"
+                  args {
+                    call_value {
+                      functionName: "Get Actor Health Percentage"
+                      args {
+                        call_value {
+                          functionName: "Triggering Actor"
+                        }
+                      }
+                    }
+                  }
+                  args {
+                    call_value {
+                      functionName: "Get Preset Value (int)"
+                      args {
+                        string_value: "Arithmetic Ops"
+                      }
+                      args {
+                        int_value: 2
+                      }
+                    }
+                  }
+                  args {
+                    call_value {
+                      functionName: "Convert (int) to (float)"
+                      args {
+                        call_value {
+                          functionName: "Get Actor Attribute"
+                          args {
+                            call_value {
+                              functionName: "Triggering Actor"
+                            }
+                          }
+                          args {
+                            call_value {
+                              functionName: "Get Preset Value (int)"
+                              args {
+                                string_value: "BaseOrCurrent"
+                              }
+                              args {
+                                int_value: 1
+                              }
+                            }
+                          }
+                          args {
+                            call_value {
+                              functionName: "Get Preset Value (int)"
+                              args {
+                                string_value: "ActorAttributes"
+                              }
+                              args {
+                                int_value: 8
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "Arithmetic Ops"
+              }
+              args {
+                int_value: 3
+              }
+            }
+          }
+          args {
+            int_value: 2
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "HPOrAP"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Play Sound"
+      args {
+        call_value {
+          functionName: "Get Map Item (Sound)"
+          args {
+            string_value: "creatures"
+          }
+          args {
+            string_value: "CP_Chomp"
+          }
+        }
+      }
+      args {
+        float_value: 1
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Cause Damage"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "HPOrAP"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "537287a364343195016cdc40"
+  }
+  index: 7
+  text: "THEN I REFUSE TO AID YOU."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5372783f64343195016cdc00"
+  }
+  index: 8
+  text: "DO YOU SEEK TO ANGER ME? THIS IS MY DOMAIN! DO NOT TEST MY PATIENCE!"
+  branches {
+    responseText: "{{CC}}Etiquette: Socialite{{/CC}} Hmph! I do not care for your attitude, mister! One more peep out of you and I will be forced to write a sternly-worded letter to the editor of Ugly Furnishings Unlimited."
+    nextNodeIndex: 9
+  }
+  branches {
+    responseText: "Um... no, never mind."
+    nextNodeIndex: 10
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5372793d64343195016cdc05"
+  }
+  index: 9
+  text: "ENOUGH! YOU WILL PAY FOR YOUR INSOLENCE, $++(l.race)!"
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "crateQuest"
+          }
+        }
+      }
+      args {
+        int_value: 2
+      }
+    }
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "angeredSpirit"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "5372795464343195016cdc07"
+  }
+  index: 10
+  text: "WELL?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53726f2d6434311639fc677c"
+  }
+  index: 11
+  text: "YOU PERSIST IN PESTERING ME. WHY?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  nextNodeIndex: 0
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 11
+}

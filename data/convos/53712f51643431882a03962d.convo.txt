@@ -1,0 +1,109 @@
+idRef {
+  id: "53712f51643431882a03962d"
+}
+ui_name: "a3-finale_dam-tabitha_1"
+nodes {
+  idRef {
+    id: "53712fa1643431882a039633"
+  }
+  index: 0
+  text: "Stop!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53712fad643431882a039636"
+  }
+  index: 1
+  text: "DO NOT INTERFERE, LEST YOU SHARE THE SAME FATE."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536c5c82366236d41e0027ad"
+  }
+}
+nodes {
+  idRef {
+    id: "53712fbd643431882a039639"
+  }
+  index: 2
+  text: "This destruction\342\200\246 this madness\342\200\246 you have to end it!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53712fc1643431882a03963c"
+  }
+  index: 3
+  text: "Such senseless hate serves no purpose. It must end."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53712fcd643431882a03963f"
+  }
+  index: 4
+  text: "AND WHO ARE YOU TO END IT? "
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536c5c82366236d41e0027ad"
+  }
+}
+nodes {
+  idRef {
+    id: "53712fd7643431882a039642"
+  }
+  index: 5
+  text: "{{GM}}Instead of answering, Tabitha kneels by the body of $(scene.deadPCName). Bowing her head, she places her hands on their chest. Her lips do not move, but her voice reverberates inside your head.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5371301b643431882a039645"
+  }
+  index: 6
+  text: "* Body, heal. Mind, calm. Spirit, come. *"
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "tabithaHealing"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+roots {
+  nextNodeIndex: 0
+}

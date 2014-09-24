@@ -1,0 +1,8 @@
+id: "a3-scrapyard-slug_parfait"
+type: ItemType_QuestItem
+uirep {
+  name: "Slug Parfait"
+  description: "Some misguided alum from Santa Cruz created an enormous creamy dessert stacked with layers of still-wriggling banana slugs. A wiser person chose to discard it."
+}
+credentials: 0
+sorting_group: "Quest"

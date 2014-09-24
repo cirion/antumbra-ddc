@@ -1,0 +1,131 @@
+idRef {
+  id: "5371470e643431882a0398b4"
+}
+ui_name: "a3-end-selene"
+nodes {
+  idRef {
+    id: "53714714643431882a0398ba"
+  }
+  index: 0
+  text: "Can you hear her? All of us in Redding heard the edict she delivered to Tir, and we rejoiced at our improbable salvation. \n\nSince then, she has spoken with many of us individually, describing her goals for this area."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "talkedToSelene"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "numPeopleTalkedTo"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "5371473d643431882a0398c2"
+  }
+  index: 1
+  text: ""
+  branches {
+    responseText: "And what are those goals?"
+    nextNodeIndex: 2
+    onlyOnce: true
+    idRef {
+      id: "5384b2dd643431616b8564b7"
+    }
+  }
+  branches {
+    responseText: "What will you do next?"
+    nextNodeIndex: 3
+    onlyOnce: true
+    idRef {
+      id: "5384b2e0643431616b8564b8"
+    }
+  }
+  branches {
+    responseText: "Thank you for your service."
+    nextNodeIndex: 4
+  }
+  branches {
+    responseText: "I\342\200\231ll leave you to it."
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714741643431882a0398c8"
+  }
+  index: 2
+  text: "She has wandered far, and seen much that pained her. The destruction of the environment, the mistreatment of metahumans, the carnage of war.\n\nShe wishes to do what she can to blunt the hatred between people, and to begin repairing the damage done to the land."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714759643431882a0398d5"
+  }
+  index: 3
+  text: "Many have been called to join her in Mount Shasta. My place remains in Redding, though. \n\nI\342\200\231ve heard from Rick and several other California Rangers, and we\342\200\231re planning to move the headquarters for the Rangers from Sacramento up to Redding. \n\nSacramento is hopelessly corrupt, and in the shadows of the dragon\342\200\231s wings, Redding will be the safest place in CalFree."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714784643431882a0398d9"
+  }
+  index: 4
+  text: "Oh, it has been a pleasure working for you, $(l.sir)! At first I thought it would be boring to stack boxes and take inventory all day long. You\342\200\231ve built something really remarkable in Redding, though. If it lasts, I want to remain by your side, and help turn it into the best city in CalFree."
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714790643431882a0398db"
+  }
+  index: 5
+  text: "Thank you for saving us, $(l.sir), and congratulations!"
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  nextNodeIndex: 0
+}

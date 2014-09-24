@@ -1,0 +1,201 @@
+idRef {
+  id: "537147a2643431882a0398ef"
+}
+ui_name: "a3-end-tomas"
+nodes {
+  idRef {
+    id: "537147a6643431882a0398f5"
+  }
+  index: 0
+  text: "Way to go, $(l.name)! \n\n{{GM}}Tomas embraces you, enthusiastically pounding your back.{{/GM}} \n\nI can\342\200\231t believe you did it!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "talkedToTomas"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "numPeopleTalkedTo"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "537147c5643431882a0398fd"
+  }
+  index: 1
+  text: "Things looked really bad for a while there. I was convinced that every single one of us was going to die. \n\nJust thinking about that\342\200\246 all of the widows and orphans I\342\200\231d be responsible for creating\342\200\246"
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537147d0643431882a039900"
+  }
+  index: 2
+  text: "But, somehow, you and that big dragon there did the impossible. How did you know about her, anyways? Did you plan this all along?"
+  branches {
+    responseText: "I\342\200\231m as surprised as you."
+    nextNodeIndex: 3
+  }
+  branches {
+    responseText: "I had a feeling someone would save the day."
+    nextNodeIndex: 4
+  }
+  branches {
+    responseText: "Yes. This was all part of the plan."
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537147ec643431882a039905"
+  }
+  index: 3
+  text: "It\342\200\231s more fun that way, right? Like unwrapping a present that you didn\342\200\231t expect."
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537147f3643431882a039908"
+  }
+  index: 4
+  text: "You must be an optimistic $(l.man). I saw only clouds and darkness. You somehow expected that ray of light."
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537147f8643431882a03990b"
+  }
+  index: 5
+  text: "Well then, you must be just as supernatural as that big lizard over there!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537147fb643431882a03990e"
+  }
+  index: 6
+  text: "Anyways, I should get back to town. I just wanted to see that creature for myself."
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714841643431882a039915"
+  }
+  index: 7
+  text: ""
+  branches {
+    responseText: "What\342\200\231s the damage like in Redding?"
+    nextNodeIndex: 8
+    onlyOnce: true
+    idRef {
+      id: "5384c1a1643431946fc66a67"
+    }
+  }
+  branches {
+    responseText: "Do you have plans for the future?"
+    nextNodeIndex: 9
+    onlyOnce: true
+    idRef {
+      id: "5384c1a4643431946fc66a68"
+    }
+  }
+  branches {
+    responseText: "Goodbye."
+    nextNodeIndex: 10
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714857643431882a03991a"
+  }
+  index: 8
+  text: "Amazingly, it\342\200\231s mostly intact. You were able to draw most of their advance forces to the dam, and their elite commandos all chased you down into the caves here.\n\nWe caught some long-range mortar fire, and lost good soldiers, but the dragon ended the fighting before their main force could breach our perimeter. "
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5371485f643431882a039926"
+  }
+  index: 9
+  text: "It sounds like we won\342\200\231t need this army much longer. Under Hestaby\342\200\231s protection, we should be free from territorial aggression, whether by Tir or CalFree.\n\nI\342\200\231ll muster out the troops over the next few days, make sure everyone\342\200\231s paid and taken care of. I\342\200\231ll also need to contact the next of kin for those who didn\342\200\231t make it. \n\nAfter that\342\200\246 well, if you\342\200\231ll still have me, I\342\200\231ll happily support whatever projects you might have in mind for Redding."
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714867643431882a03992a"
+  }
+  index: 10
+  text: "{{GM}}Tomas firmly shakes your hand.{{/GM}} \n\nIt\342\200\231s been a pleasure."
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  nextNodeIndex: 0
+}

@@ -1,0 +1,133 @@
+idRef {
+  id: "536d0fa76434312f05639a82"
+}
+ui_name: "a3-banter-1_Norton_Hailey"
+nodes {
+  idRef {
+    id: "536d0fbf6434312f05639a88"
+  }
+  index: 0
+  text: "Hey, Norton! How does it feel to be the king?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d0fc26434312f05639a8b"
+  }
+  index: 1
+  text: "Emperor, our dear miss. One mustn\342\200\231t forget proper titles, it is the sign of a well-bred young lady!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d103b6434312f05639a95"
+  }
+  index: 2
+  text: "Heh\342\200\246 I\342\200\231m pretty sure that\342\200\231s the first time anyone has called me a lady, let alone well-bred. Thanks!\n\nSo: same question, new title. Do you like being emperor?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d111e6434312f05639a98"
+  }
+  index: 3
+  text: "Truly, it is not a matter of enjoyment, but rather one of duty. \n\nDoes the sun like warming the earth? Does the rain enjoy wetting the soil? \n\nWe rule because we must: it is our nature, not our desire."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d112f6434312f05639a9b"
+  }
+  index: 4
+  text: "Aw, c\342\200\231mon! You can\342\200\231t be serious ALL the time. \n\nDon\342\200\231t you get some pleasure out of it? I mean, there\342\200\231s only one Emperor, and that\342\200\231s you!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d11406434312f05639a9e"
+  }
+  index: 5
+  text: "Do not misunderstand us: we certainly enjoy the fruits of human kindness as much as any man or woman. \n\nIt warms our heart to hear our loyal subjects hail us when we promenade on the streets of San Francisco. And we have received many a bowl of nourishing soup on a cold night, in recognition of our excellence as Emperor."
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d117c6434312f05639aa1"
+  }
+  index: 6
+  text: "Nonetheless, the crown weighs heavily upon our brow. We carry an immense burden, as our responsibility for the California Free State, United Canadian and American States, and Aztlan leaves us no time for simple pleasures. \n\nIt is what Joseph Heller would call a Catch-22: we have the power to fulfill any desire, yet if we ever tried to use that power, we would prove unworthy of it."
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d119c6434312f05639aa4"
+  }
+  index: 7
+  text: "So keep this in mind, dear Hailey. We know you may envy us our great station, but be assured that it would bring you little pleasure if you one day found yourself the Empress."
+  branches {
+    responseText: ""
+    nextNodeIndex: 8
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d11ad6434312f05639aa7"
+  }
+  index: 8
+  text: "Oh! I wasn\342\200\231t suggesting that I succeed you or anything! I just\342\200\246 I really am glad that we have you around, Emperor. Thanks for being you."
+  branches {
+    responseText: ""
+    nextNodeIndex: 9
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d11ba6434312f05639aaa"
+  }
+  index: 9
+  text: "How could I ever be anything else, my dear? Now, onward! $+(l.sir) $(l.name) has much further to go, and we mustn\342\200\231t keep $(l.him) waiting!"
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+roots {
+  nextNodeIndex: 0
+}

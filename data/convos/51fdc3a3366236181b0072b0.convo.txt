@@ -1,0 +1,469 @@
+idRef {
+  id: "51fdc3a3366236181b0072b0"
+}
+ui_name: "A1_Club_Turm_1"
+nodes {
+  idRef {
+    id: "51fdc3b7366236181b0072b6"
+  }
+  index: 0
+  text: "{{GM}}You spot Turm, another hungry young runner who has started making a name for herself. Recognition flickers across her eyes and she bellows out a greeting.{{/GM}}\n\nHoi $(l.name)! Here to watch the breeders?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "Spoke_Turm_Once"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "51fdc4ee366236181b0072ca"
+  }
+  index: 1
+  text: "{{GM}}Turm lets out a bellow, clearly enjoying herself. Judging from the bottles littering her table, she has already drunk enough to kill any lesser species.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5371552f6434319d338e4d45"
+  }
+  index: 2
+  text: ""
+  branches {
+    responseText: "What are you doing here?"
+    nextNodeIndex: 3
+    onlyOnce: true
+    idRef {
+      id: "51fdc5df366236181b0072db"
+    }
+  }
+  branches {
+    responseText: "What do you think of this place?"
+    nextNodeIndex: 4
+    onlyOnce: true
+    idRef {
+      id: "51fdcb04366236181b00741f"
+    }
+  }
+  branches {
+    responseText: "Have you been upstairs yet?"
+    nextNodeIndex: 5
+    onlyOnce: true
+    idRef {
+      id: "51fdc7d2366236181b00734f"
+    }
+  }
+  branches {
+    responseText: "Want to join me on a run?"
+    conditions {
+      ops {
+        functionName: "Compare Actor Team"
+        args {
+          call_value {
+            functionName: "Get Map Item (Actor)"
+            args {
+              string_value: "51fd55843662367c090072d4"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (string)"
+            args {
+              string_value: "FactionList"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (SceneDimension)"
+            args {
+              string_value: "Default"
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 6
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "51fdc7d8366236181b007350"
+    }
+  }
+  branches {
+    responseText: "Want to join me on a run?"
+    conditions {
+      ops {
+        functionName: "Compare Actor Team"
+        args {
+          call_value {
+            functionName: "Get Map Item (Actor)"
+            args {
+              string_value: "51fd55843662367c090072d4"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (string)"
+            args {
+              string_value: "FactionList"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (SceneDimension)"
+            args {
+              string_value: "Default"
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 11
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: "Take care, Turm."
+    nextNodeIndex: -1
+  }
+  branches {
+    responseText: "{{GM}}Leave.{{/GM}}"
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537155366434319d338e4d4e"
+  }
+  index: 3
+  text: "Eh, trying to make rent. Figured they could use some extra muscle for their grand opening. No luck so far. They just bring down more guns from upstairs."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5371553c6434319d338e4d5a"
+  }
+  index: 4
+  text: "My pa would call it a target-rich environment. Too bad security\342\200\231s so tight.\n\nI don\342\200\231t know who fronted Kali the dough to open this joint, but it\342\200\231s gotta have megacorp backing. You don\342\200\231t find these pros in Everett."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537155426434319d338e4d66"
+  }
+  index: 5
+  text: "You kidding? I\342\200\231d get shot on sight. No way a troll like me could pass for talent.\n\nThey sure put on a bright front here, all smiles and dances, but if you start prowling through the offices they\342\200\231ll drop you quicker than Kali\342\200\231s next single."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537155486434319d338e4d7e"
+  }
+  index: 6
+  text: "Ugh... with HIM?! No way!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537155486434319d338e4d81"
+  }
+  index: 7
+  text: "Oh, come on. I said I was sorry!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 8
+  }
+  sourceInSceneRef {
+    id: "51fd55843662367c090072d4"
+  }
+}
+nodes {
+  idRef {
+    id: "537155486434319d338e4d84"
+  }
+  index: 8
+  text: "They put labels on those rooms for a reason! No way I\342\200\231ll let some dwarf pervert watch my back."
+  branches {
+    responseText: ""
+    nextNodeIndex: 9
+  }
+}
+nodes {
+  idRef {
+    id: "537155486434319d338e4d87"
+  }
+  index: 9
+  text: "I told you, I was drunk, and..."
+  branches {
+    responseText: ""
+    nextNodeIndex: 10
+  }
+  sourceInSceneRef {
+    id: "51fd55843662367c090072d4"
+  }
+}
+nodes {
+  idRef {
+    id: "537155486434319d338e4d8a"
+  }
+  index: 10
+  text: "Sorry, $(l.name). Lose him and we\'ll talk."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+}
+nodes {
+  idRef {
+    id: "5371554d6434319d338e4da2"
+  }
+  index: 11
+  text: "Well... I\'m already here, aren\'t I? Don\'t have anything else going on tonight, and you look like you could use a street samurai by your side. Tell you what: I\'ll give you a discount. \302\245500 for the night."
+  branches {
+    responseText: "{{CC}}\302\245500{{/CC}} Here you go."
+    conditions {
+      ops {
+        functionName: "Evaluate Nuyen"
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 3
+            }
+          }
+        }
+        args {
+          int_value: 500
+        }
+      }
+    }
+    nextNodeIndex: 12
+  }
+  branches {
+    responseText: "I can\'t afford that."
+    nextNodeIndex: 13
+  }
+  branches {
+    responseText: "No."
+    nextNodeIndex: 14
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5371554d6434319d338e4da5"
+  }
+  index: 12
+  text: "All right. Lead on, chummer!"
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "51f7429764343188990041a8"
+          }
+          args {
+            string_value: "TurmJoined"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "51f7429764343188990041a8"
+          }
+          args {
+            string_value: "RecruitedHelp"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Remove Nuyen"
+      args {
+        int_value: 500
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "5371554d6434319d338e4da8"
+  }
+  index: 13
+  text: "Sorry, chummer. A troll\'s gotta have standards."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5371554d6434319d338e4dae"
+  }
+  index: 14
+  text: "Well, then."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  responseText: ""
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "Spoke_Turm_Once"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  nextNodeIndex: 0
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 1
+  auxiliaryLink: true
+}

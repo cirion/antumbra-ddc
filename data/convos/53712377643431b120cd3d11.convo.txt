@@ -1,0 +1,15 @@
+idRef {
+  id: "53712377643431b120cd3d11"
+}
+ui_name: "a3-dam-elorn_1"
+nodes {
+  idRef {
+    id: "5371237e643431b120cd3d17"
+  }
+  index: 0
+  text: "Thanks for the assistance. I thought I was a goner there. \n\nNow, let\342\200\231s take these creeps out!"
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  nextNodeIndex: 0
+}

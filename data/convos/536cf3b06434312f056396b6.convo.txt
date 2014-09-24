@@ -1,0 +1,974 @@
+idRef {
+  id: "536cf3b06434312f056396b6"
+}
+ui_name: "a3-redding-Dorbi"
+nodes {
+  idRef {
+    id: "536cf4166434312f056396bd"
+  }
+  index: 0
+  text: "Do you need something?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536cf46a6434312f056396c0"
+  }
+  index: 1
+  text: ""
+  branches {
+    responseText: "How did you join the water gangs?"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Redding_Convo_Dorbi_HowJoinedGangs"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 2
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "536cf61b6434312f056396f2"
+    }
+  }
+  branches {
+    responseText: "Are you worried about the imminent invasion?"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Redding_Convo_Dorbi_Worried"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (int)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Global_numMissionsCompleted"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+        args {
+          int_value: 1
+        }
+      }
+    }
+    nextNodeIndex: 10
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "536cf97a6434312f0563976c"
+    }
+  }
+  branches {
+    responseText: "Got any plans for the future?"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Redding_Convo_Dorbi_Plans"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (int)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Global_numMissionsCompleted"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+        args {
+          int_value: 2
+        }
+      }
+    }
+    nextNodeIndex: 12
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "536cf9806434312f0563976d"
+    }
+  }
+  branches {
+    responseText: "I\342\200\231m leaving."
+    nextNodeIndex: 13
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "talkedToDorbi"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "536cf62a6434312f056396f4"
+  }
+  index: 2
+  text: "Well, I\342\200\231m not, like, ideologically attached to the cause of stealing water, if that\342\200\231s what you\342\200\231re asking. \n\nYou gotta understand, kids growing up here don\342\200\231t exactly get the same kind of options that your friends in the cities do. We can try to grow crops in irradiated soil, we can join a gang, or we can leave. That\342\200\231s about it."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Redding_Convo_Dorbi_HowJoinedGangs"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "536cf6536434312f056396f7"
+  }
+  index: 3
+  text: "I kind of wanted to be a shadowrunner like you, but my family in Chico made sure I got a SIN early on. Then they got sick, and I didn\342\200\231t want to just leave them on their own. \n\nI wasn\342\200\231t about to waste my life as a farmer, so I took a job that let me stay close to home, earn decent nuyen, and set annoying people on fire."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536cf6726434312f056396fa"
+  }
+  index: 4
+  text: ""
+  branches {
+    responseText: ""
+    conditions {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Variable (int)"
+            args {
+              string_value: "dorbiGangFollowUps"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+        args {
+          int_value: 2
+        }
+      }
+    }
+    nextNodeIndex: 1
+    hideIfUnavailable: true
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "When did you start getting second thoughts?"
+    nextNodeIndex: 5
+    onlyOnce: true
+    idRef {
+      id: "536cf6be6434312f05639712"
+    }
+  }
+  branches {
+    responseText: "Did most of your friends join the gangs?"
+    nextNodeIndex: 7
+    onlyOnce: true
+    idRef {
+      id: "536cf6c06434312f05639713"
+    }
+  }
+  branches {
+    responseText: "How are your parents doing now?"
+    nextNodeIndex: 8
+    onlyOnce: true
+    idRef {
+      id: "536cf6c26434312f05639714"
+    }
+  }
+  branches {
+    responseText: "Actually, I wanted to ask you something else\342\200\246"
+    nextNodeIndex: 9
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536cf6d46434312f05639717"
+  }
+  index: 5
+  text: "Uh\342\200\246 when they joined up with the Native Californians, honestly. I did NOT see that coming. And as you could tell, I was NOT happy. \n\nUp until then, it was fine. I mean, sure, sometimes I was involved in some pretty dark stuff, but I try to keep to my own code of conduct: Only hurt people who deserve it. \n\nMy leaders respected that, or at least they knew they would need to respect it if they wanted my help, so we got along fine."
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "dorbiGangFollowUps"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "536cf70c6434312f0563971a"
+  }
+  index: 6
+  text: "The Native Californian alliance changed everything, though. I\342\200\231ll never work for anyone who mistreats me or my family. \n\nI don\342\200\231t care how many guns or how much nuyen they have, those pieces of drek are living on borrowed time."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536cf8266434312f0563972d"
+  }
+  index: 7
+  text: "I convinced a bunch of my buds from school to join the waterjackers. Some of them washed out, no pun intended, and the really good ones headed east, closer to the snowpack. I\342\200\231m one of the few who stuck around near home.\n\nThe ones who didn\342\200\231t join the gangs are\342\200\246 mostly dead now. Usually over stupid stuff, like mouthing off to some Native Californians with a missile launcher, or trying to stow away on a corp jet. I miss \342\200\230em. But I learned long ago not to dwell\342\200\246 it won\342\200\231t bring them back."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "dorbiGangFollowUps"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "536cf8626434312f05639731"
+  }
+  index: 8
+  text: "Not well. I keep hoping that I can pull off one big score that will let me get them out of their drekky home and into some quiet, safe place where they can die in peace. \n\nOtherwise, it\342\200\231ll be a race between disease, hunger, and Tir to see what kills them first."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "dorbiGangFollowUps"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "536cf88f6434312f05639735"
+  }
+  index: 9
+  text: "Yes?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536cf8ac6434312f05639762"
+  }
+  index: 10
+  text: "I guess? I mean, it sounds scary and everything. It\342\200\231s a bit hard for me to focus on something that\342\200\231s so far out in the future, though. \n\nThere\342\200\231s plenty of stuff that can kill me RIGHT NOW, I don\342\200\231t have too many worries to spare for something that might kill me next month."
+  branches {
+    responseText: ""
+    nextNodeIndex: 11
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Redding_Convo_Dorbi_Worried"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "536cf8f26434312f05639765"
+  }
+  index: 11
+  text: "That said, I don\342\200\231t like what I\342\200\231ve heard about Tir. They\342\200\231re not quite as bad as the Native Californians, but it seems like the same sort of thing: they\342\200\231re building an elf-only nation, and kicking all of us non-elves out of it. \n\nSo, yeah, I\342\200\231ll gladly toss a fireball or two in their direction."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536cf91c6434312f05639769"
+  }
+  index: 12
+  text: "{{GM}}She shrugs.{{/GM}}\n\nYour organization is paying, so I\342\200\231ll be sticking around here for the time being. After that, who knows? \n\nI might track down some of my old buddies who went east. Or maybe I\342\200\231ll put down some roots here. I\342\200\231ve started building a reputation in these parts, so that might be worth fostering."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Redding_Convo_Dorbi_Plans"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "536cfa0b6434312f0563976f"
+  }
+  index: 13
+  text: ""
+  branches {
+    responseText: ""
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Redding_Convo_Dorbi_Goodbye"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 14
+  }
+  branches {
+    responseText: ""
+    nextNodeIndex: 15
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536cfa256434312f05639772"
+  }
+  index: 14
+  text: "I\342\200\231ll try not to burn the house down. Kidding!"
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Redding_Convo_Dorbi_Goodbye"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Order Actor to Face Direction"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "536b0cf7366236e0040077d2"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "FacingDirection"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Send Event After Delay"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Barrel Explode Loop"
+          }
+        }
+      }
+      args {
+        float_value: 5
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "536cfa4b6434312f05639775"
+  }
+  index: 15
+  text: "See ya!"
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Send Event After Delay"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Barrel Explode Loop"
+          }
+        }
+      }
+      args {
+        float_value: 5
+      }
+    }
+    ops {
+      functionName: "Order Actor to Face Direction"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "536b0cf7366236e0040077d2"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "FacingDirection"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "536cf4706434312f056396c6"
+  }
+  index: 16
+  text: "Fwoosh! Hahahaha!\n\nAh, $(l.name)! Pretty nice setup you have here. I must say, I approve of your target range. It really helps me stay in shape."
+  branches {
+    responseText: ""
+    nextNodeIndex: 17
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Redding_Convo_Dorbi_Met"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "536cf4aa6434312f056396c9"
+  }
+  index: 17
+  text: ""
+  branches {
+    responseText: "And just how much is this practice costing me?"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "dorbiMentionedPractice"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 18
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "536cf5186434312f056396ce"
+    }
+  }
+  branches {
+    responseText: "You seem to really be enjoying yourself."
+    nextNodeIndex: 19
+    onlyOnce: true
+    idRef {
+      id: "536cf5a96434312f056396dc"
+    }
+  }
+  branches {
+    responseText: "I do hope that you always make sure the range is clear."
+    nextNodeIndex: 21
+  }
+  branches {
+    responseText: "Well, when you put it like that\342\200\246 fire away!"
+    nextNodeIndex: 22
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536cf5216434312f056396d0"
+  }
+  index: 18
+  text: ""
+  branches {
+    responseText: "Oh, no more than your shooters. Less, even, since I don\342\200\231t need any bullets for my ammunition. Although this kind of work DOES make me hungry\342\200\246 and I\342\200\231ve been helping myself to the offerings of your fine kitchen.\n\n{{GM}}Dorbi flashes you an enormous, satisfied grin.{{/GM}}"
+    nextNodeIndex: 17
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536cf5ae6434312f056396de"
+  }
+  index: 19
+  text: "Heh\342\200\246 well, regardless of what your mother might have taught you, playing with matches is a LOT of fun."
+  branches {
+    responseText: ""
+    nextNodeIndex: 20
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536cf5b56434312f056396e1"
+  }
+  index: 20
+  text: "Oh, don\342\200\231t look so worried! I\342\200\231m very careful. In fact, regularly practicing flame magic is by far the safest thing someone can do. \n\nJust think about it: would you rather have a mage by your side who casts fireball twenty times a day, or one who casts it once a month? Practice makes perfect!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 17
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536cf5dd6434312f056396e5"
+  }
+  index: 21
+  text: "I certainly do! And, even if I didn\342\200\231t before, I will now!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536cf5ff6434312f056396ef"
+  }
+  index: 22
+  text: "I knew you\342\200\231d see it my way!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Redding_Convo_Dorbi_Met"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  nextNodeIndex: 0
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 16
+}

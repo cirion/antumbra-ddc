@@ -1,0 +1,15 @@
+idRef {
+  id: "532f0ce0366236840d003d6f"
+}
+ui_name: "A3-Scratchpad-Tester"
+nodes {
+  idRef {
+    id: "532f0cee366236840d003d75"
+  }
+  index: 0
+  text: "Hey! This just gives you a chance to look at my mug!"
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  nextNodeIndex: 0
+}

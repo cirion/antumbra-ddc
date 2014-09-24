@@ -1,0 +1,481 @@
+idRef {
+  id: "536d1ce4643431740d1699ff"
+}
+ui_name: "a3-banter-2_Elorn"
+nodes {
+  idRef {
+    id: "536d1ceb643431740d169a05"
+  }
+  index: 0
+  text: "We seem to be safe for the moment. Do you have a minute to chat?"
+  branches {
+    responseText: "What\342\200\231s on your mind, Elorn?"
+    nextNodeIndex: 1
+  }
+  branches {
+    responseText: "Is this important?"
+    nextNodeIndex: 2
+  }
+  branches {
+    responseText: "No. Let\342\200\231s keep moving."
+    nextNodeIndex: 17
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d1d27643431740d169a0c"
+  }
+  index: 1
+  text: "If we\342\200\231re going to keep traveling together, I\342\200\231d like to get a better understanding of your intentions in California."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d1d2b643431740d169a0f"
+  }
+  index: 2
+  text: "Well\342\200\246 it\342\200\231s not directly critical for this mission, but it\342\200\231s important to me."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d1d2e643431740d169a12"
+  }
+  index: 3
+  text: "You seem happy enough having someone like me on the team, but you\342\200\231re clearly raising an army that\342\200\231s going to be killing a massive number of elves.\n\nLet me be blunt: what\342\200\231s your opinion of elves? "
+  branches {
+    responseText: "Being an elf myself, I don\342\200\231t think about it much."
+    conditions {
+      ops {
+        functionName: "Compare Actor Race"
+        args {
+          call_value {
+            functionName: "Triggering Actor"
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Race"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 4
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: "Well, we\342\200\231re the best there is, Elorn! Go team Elf!"
+    conditions {
+      ops {
+        functionName: "Compare Actor Race"
+        args {
+          call_value {
+            functionName: "Triggering Actor"
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Race"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 5
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: "Ugh\342\200\246 I\342\200\231ve been surrounded by elves my entire life. I\342\200\231m a bit sick of it."
+    conditions {
+      ops {
+        functionName: "Compare Actor Race"
+        args {
+          call_value {
+            functionName: "Triggering Actor"
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Race"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 6
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: "Probably the same as your opinion about about $(s.race_plural). They\342\200\231re different, but not intrinsically better or worse."
+    conditions {
+      ops {
+        functionName: "Compare Actor Race"
+        args {
+          call_value {
+            functionName: "Triggering Actor"
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Race"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 7
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: "I admire them, maybe even envy them a little. "
+    conditions {
+      ops {
+        functionName: "Compare Actor Race"
+        args {
+          call_value {
+            functionName: "Triggering Actor"
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Race"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 8
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: "They seem dangerous. It isn\342\200\231t coincidental that elves lead many corps and independent states."
+    conditions {
+      ops {
+        functionName: "Compare Actor Race"
+        args {
+          call_value {
+            functionName: "Triggering Actor"
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Race"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 9
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: "There are good elves and bad elves, so I\342\200\231ll help the good and help kill the bad."
+    nextNodeIndex: 10
+    hideIfUnavailable: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d1de6643431740d169a1e"
+  }
+  index: 4
+  text: "Really? You don\342\200\231t feel any sense of kinship towards those you kill? \n\nI feel a little envious that you can be so cavalier. "
+  branches {
+    responseText: ""
+    nextNodeIndex: 11
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d1e0e643431740d169a29"
+  }
+  index: 5
+  text: "Well, far be it from me to argue with you. \n\n{{GM}}Elorn laughs.{{/GM}}\n\nI wish I shared your esteem in our metatype."
+  branches {
+    responseText: ""
+    nextNodeIndex: 11
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d1e13643431740d169a2d"
+  }
+  index: 6
+  text: "I think I understand. Familiarity breeds contempt, after all."
+  branches {
+    responseText: ""
+    nextNodeIndex: 11
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d1e1a643431740d169a31"
+  }
+  index: 7
+  text: "How very open-minded of you. I doubt that this is a common opinion, even among $(l.race_plural)."
+  branches {
+    responseText: ""
+    nextNodeIndex: 11
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d1e20643431740d169a35"
+  }
+  index: 8
+  text: "Really? That\342\200\231s\342\200\246 unusual. I don\342\200\231t hear that often from $(l.race_plural)."
+  branches {
+    responseText: ""
+    nextNodeIndex: 11
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d1e27643431740d169a39"
+  }
+  index: 9
+  text: "Yes\342\200\246 we elves are behind a grand conspiracy to rule the world. I\342\200\231ve heard that said many times."
+  branches {
+    responseText: ""
+    nextNodeIndex: 11
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d1dec643431740d169a21"
+  }
+  index: 10
+  text: "Can\342\200\231t say I disagree with that."
+  branches {
+    responseText: ""
+    nextNodeIndex: 11
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d1e01643431740d169a24"
+  }
+  index: 11
+  text: "In all honesty, I feel a bit nervous about joining an organization like yours. I\342\200\231ve noticed that people often welcome elves when we can be of help, but quickly turn against us when our usefulness is at an end. \n\nIn addition to your personal opinions, I also need to worry about your lieutenants and subordinates who will carry out your policy."
+  branches {
+    responseText: ""
+    nextNodeIndex: 12
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d1f06643431740d169a3e"
+  }
+  index: 12
+  text: "Not to mention that many people will surely believe that I\342\200\231m a sleeper agent for Tir Tairngire. \n\nIf I\342\200\231m lucky they\342\200\231ll deny me access to critical information. If I\342\200\231m unlucky, I\342\200\231ll probably fall asleep some night and not wake up the next day."
+  branches {
+    responseText: "I run a tight ship. Nobody will harm you without my say-so."
+    nextNodeIndex: 13
+  }
+  branches {
+    responseText: "Then I guess you\342\200\231d better try extra-hard to stay on our good side."
+    nextNodeIndex: 14
+  }
+  branches {
+    responseText: "Be assured that you\342\200\231ll be safe in my employ."
+    nextNodeIndex: 15
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d1f44643431740d169a41"
+  }
+  index: 13
+  text: "That\342\200\231s\342\200\246 vaguely encouraging, I suppose. \n\nIf you ever turn against me, please try and stab me in front and not the back, all right?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 16
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d1f97643431740d169a4e"
+  }
+  index: 14
+  text: "Yeah. Or clear out as soon as possible."
+  branches {
+    responseText: ""
+    nextNodeIndex: 16
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d1f60643431740d169a46"
+  }
+  index: 15
+  text: "You know, I think I believe you. Thanks."
+  branches {
+    responseText: ""
+    nextNodeIndex: 16
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d1f64643431740d169a49"
+  }
+  index: 16
+  text: "I guess we should focus on getting back to base in one piece before worrying about anything else. Talk with you later, $(l.name)."
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d1d11643431740d169a0a"
+  }
+  index: 17
+  text: "As you wish."
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+roots {
+  nextNodeIndex: 0
+}

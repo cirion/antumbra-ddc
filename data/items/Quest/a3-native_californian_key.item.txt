@@ -1,0 +1,8 @@
+id: "a3-native_californian_key"
+type: ItemType_QuestItem
+uirep {
+  name: "Native Californian Key"
+  description: "The Native Californians always bring locks along on their raids to trap victims inside their homes. This key will allow you to open or close such a lock."
+}
+credentials: 0
+sorting_group: "Quest"

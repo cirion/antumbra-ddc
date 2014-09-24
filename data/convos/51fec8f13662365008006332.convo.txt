@@ -1,0 +1,422 @@
+idRef {
+  id: "51fec8f13662365008006332"
+}
+ui_name: "A1_Club_Manager"
+nodes {
+  idRef {
+    id: "51fec8fa3662365008006338"
+  }
+  index: 0
+  text: "May I help you with something?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537154f96434319d338e4c7c"
+  }
+  index: 1
+  text: ""
+  branches {
+    responseText: "Can you get me upstairs?"
+    nextNodeIndex: 2
+    onlyOnce: true
+    idRef {
+      id: "51fec9af366236500800634b"
+    }
+  }
+  branches {
+    responseText: "The... gentleman over there said I should speak with you about employment."
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "JobRecommendation"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 3
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "5208740d366236301d0026e0"
+    }
+  }
+  branches {
+    responseText: "{{GM}}Leave.{{/GM}}"
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537154fd6434319d338e4c85"
+  }
+  index: 2
+  text: "I\'m sorry $(l.sir), but that\'s simply impossible. The office is closed to visitors this time of night. Stay down here and enjoy yourself!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537155026434319d338e4c9a"
+  }
+  index: 3
+  text: "{{GM}}She looks in the direction you are pointing.{{/GM}}\n\nOh... right. Thank you for calming him down. He\342\200\231s been very unpleasant to my servers all evening.\n\nUnfortunately, I\342\200\231m fully staffed up at the moment. That is... unless you are interested in helping with sound? One of our engineers failed to show up tonight."
+  branches {
+    responseText: "Wiz, I\342\200\231d love to break into the industry."
+    nextNodeIndex: 4
+  }
+  branches {
+    responseText: "Great, I\342\200\231ve always wanted to be a bootlicker."
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537155026434319d338e4c9d"
+  }
+  index: 4
+  text: "{{GM}}She attempts to suppress a smile.{{/GM}} \n\nYou may be disappointed. There isn\342\200\231t much of a career path from tech to talent. Still, it can be a good chance to meet people."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537155026434319d338e4ca0"
+  }
+  index: 5
+  text: "Here\342\200\231s your uniform. The initial setup has been done, just keep an eye on the stage and be ready to fix any problems."
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add Item to Actor"
+      args {
+        call_value {
+          functionName: "Get Map Item (Item)"
+          args {
+            string_value: "Maintenance"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "51fd31953662367007001a2b"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Remove Item from Actor by Item Type"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "ItemType"
+          }
+          args {
+            int_value: 18
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "51fd3d463662367c090072c2"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "537155026434319d338e4ca3"
+  }
+  index: 6
+  text: "Oh, it\342\200\231s not so bad. Most of the time nobody will notice you\342\200\231re even there."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "51feca5d366236500800635d"
+  }
+  index: 7
+  text: "How\342\200\231s everything looking?"
+  branches {
+    responseText: "Great!"
+    nextNodeIndex: 8
+  }
+  branches {
+    responseText: "The music sucks."
+    nextNodeIndex: 9
+  }
+  branches {
+    responseText: "There\342\200\231s a glitch in the sound system. I\342\200\231ll need to go backstage to fix it."
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "SabotagedSound"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 10
+    hideIfUnavailable: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "51feca763662365008006362"
+  }
+  index: 8
+  text: "Glad to hear it. Now, if you don\342\200\231t mind, I\342\200\231m a bit busy."
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "51feca833662365008006364"
+  }
+  index: 9
+  text: "On certain nights I\'d be inclined to agree with you. But as long as people can hear it, there\342\200\231s nothing to worry about. Excuse me."
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "51feca9d3662365008006366"
+  }
+  index: 10
+  text: "{{GM}}She sighs softly, resigned in the knowledge that something always goes wrong on opening night.{{/GM}} \n\nKali won\342\200\231t be happy with this. Better fix it soon. Here, take these papers over to the door guard. And hurry!"
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add Item to Actor"
+      args {
+        call_value {
+          functionName: "Get Map Item (Item)"
+          args {
+            string_value: "Work Order"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "51fd3c863662367c090072c1"
+          }
+        }
+      }
+    }
+  }
+}
+roots {
+  responseText: ""
+  conditions {
+    ops {
+      functionName: "Evaluate If Actor Has Item"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "HasOrHasNot"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Item)"
+          args {
+            string_value: "Maintenance"
+          }
+        }
+      }
+    }
+  }
+  nextNodeIndex: 0
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 7
+}

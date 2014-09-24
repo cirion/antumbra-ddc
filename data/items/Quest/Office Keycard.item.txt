@@ -1,0 +1,8 @@
+id: "Office Keycard"
+type: ItemType_QuestItem
+uirep {
+  name: "Office Keycard"
+  description: "Grants access to common areas in the Antumbra offices."
+}
+credentials: 0
+sorting_group: "Quest"

@@ -1,0 +1,7 @@
+unique_id: "a3_badguy_Lv1_ember"
+equipment {
+  prefab_name: "SP Fire Arrow"
+}
+equipment {
+  prefab_name: "SP Spell Flamethrower 1"
+}

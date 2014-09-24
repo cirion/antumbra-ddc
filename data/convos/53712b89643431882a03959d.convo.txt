@@ -1,0 +1,97 @@
+idRef {
+  id: "53712b89643431882a03959d"
+}
+ui_name: "a3-invaded_redding-selene"
+nodes {
+  idRef {
+    id: "53712b9a643431882a0395a3"
+  }
+  index: 0
+  text: "Great speech, $(l.sir)! "
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "53838f6c366236841300047c"
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "53712bda643431882a0395ad"
+  }
+  index: 1
+  text: "That should persuade a lot more metahumans to come out and join us. We\342\200\231ll need every body we can get on the front line."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53712bdc643431882a0395af"
+  }
+  index: 2
+  text: "After hearing those eloquent threats, everyone will think twice before attacking any of your shipments. \n\nThat should help ensure that more of your supplies actually reach here, which will definitely make me happy."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53712bdd643431882a0395b1"
+  }
+  index: 3
+  text: "Everyone likes a hero, and wants to be on the side of a winner. You\342\200\231ll probably be getting some more recruits and donations in the near future. \n\nLike you said, we need everything we can get!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53712bef643431882a0395b6"
+  }
+  index: 4
+  text: "What a mess. It\342\200\231ll take days to clean this all up.\n\n{{GM}}Selene shakes her head in amazement.{{/GM}}\n\nWell, I\342\200\231ll get to it now. See you later!"
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  nextNodeIndex: 0
+}

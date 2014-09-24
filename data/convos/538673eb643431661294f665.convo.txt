@@ -1,0 +1,102 @@
+idRef {
+  id: "538673eb643431661294f665"
+}
+ui_name: "a3-intro-Cirion"
+nodes {
+  idRef {
+    id: "538673f2643431661294f66b"
+  }
+  index: 0
+  text: "Welcome, and thank you for playing Antumbra 3: Corona!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53867403643431661294f66e"
+  }
+  index: 1
+  text: "I couldn\'t help noticing that you seem to have imported a very powerful character. That\'s fine, but you should be aware that the content in this game will probably be too easy for you. \n\nThis mod was balanced for characters with a karma of around 85. You can get that by choosing to create a new character in this game, or by creating a new character in Antumbra or Antumbra 2: Eclipse and then importing that."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "538674a2643431661294f671"
+  }
+  index: 2
+  text: "As a bonus, the actions you take in the first two games will influence how the world sees you in this third game.\n\nSo, what do you say? Would you like to quit so you can create a new character?"
+  branches {
+    responseText: "Sure, I\'ll do that."
+    nextNodeIndex: 3
+  }
+  branches {
+    responseText: "Nah, I like being uber-powerful."
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53867527643431661294f677"
+  }
+  index: 3
+  text: "Sounds good, I\'ll just show you the credits and then you will be on your way!"
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "End Story With Epilogue"
+      args {
+        string_value: "early"
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "53867506643431661294f675"
+  }
+  index: 4
+  text: "Fair enough! Enjoy the game!"
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Kill Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "5386772c643431661294f685"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DeathMethod"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+}
+roots {
+  nextNodeIndex: 0
+}

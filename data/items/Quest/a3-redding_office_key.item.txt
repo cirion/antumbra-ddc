@@ -1,0 +1,8 @@
+id: "a3-redding_office_key"
+type: ItemType_QuestItem
+uirep {
+  name: "Office Key"
+  description: "You have recovered the key to your office."
+}
+credentials: 0
+sorting_group: "Quest"

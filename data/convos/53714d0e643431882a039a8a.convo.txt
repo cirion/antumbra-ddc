@@ -1,0 +1,234 @@
+idRef {
+  id: "53714d0e643431882a039a8a"
+}
+ui_name: "a3-end-elorn"
+nodes {
+  idRef {
+    id: "53714d14643431882a039a90"
+  }
+  index: 0
+  text: "I never, ever, ever would have thought that this mission would end this way.\n\nI mean, a dragon? Here? That\342\200\231s crazy enough. \n\nAnd that dragon actually STOPS the fighting, instead of devouring everyone in its path? Now I\342\200\231ve seen it all. There\342\200\231s nothing left to be surprised by."
+  branches {
+    responseText: "You should be more optimistic! Sometimes things turn out for the best."
+    nextNodeIndex: 1
+  }
+  branches {
+    responseText: "I\342\200\231m getting whiplash from all the disasters and recoveries we\342\200\231ve had."
+    nextNodeIndex: 2
+  }
+  branches {
+    responseText: "And it showed up just when I was about to kill Hans, too."
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "talkedToElorn"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "numPeopleTalkedTo"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "53714d77643431882a039a9a"
+  }
+  index: 1
+  text: "You\342\200\231re right. I\342\200\231ve seen enough awful things in life, I tend to just assume that it\342\200\231s the natural way of things. \n\nBut there are forces that oppose entropy, and we should recognize and support them."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714d7a643431882a039a9d"
+  }
+  index: 2
+  text: "Yes, it\342\200\231s been pretty wild! \n\nI think that says a lot about your resilience and your choice of companions, though. No matter what life throws at you, you\342\200\231ve managed to bounce back, time and time again."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714d7e643431882a039aa0"
+  }
+  index: 3
+  text: "Ha! I almost think you would have, too. You certainly had enough reason to."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714d81643431882a039aa3"
+  }
+  index: 4
+  text: "Anyways. This is hard for me, but I wanted to thank you for all that you\342\200\231ve done. From the day you rescued me from the Native Californians, through all the missions you\342\200\231ve run, and your role in defending my city, you\342\200\231ve been the best ally I could have hoped for. \n\nThanks for being you, and doing what you do."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714dfc643431882a039abb"
+  }
+  index: 5
+  text: ""
+  branches {
+    responseText: "How\342\200\231s your family doing?"
+    nextNodeIndex: 6
+    onlyOnce: true
+    idRef {
+      id: "5384c247643431946fc66ad8"
+    }
+  }
+  branches {
+    responseText: "Will you stay in Redding?"
+    nextNodeIndex: 8
+    onlyOnce: true
+    idRef {
+      id: "5384c249643431946fc66ad9"
+    }
+  }
+  branches {
+    responseText: "What do you think about Hestaby?"
+    nextNodeIndex: 10
+    onlyOnce: true
+    idRef {
+      id: "5384c24d643431946fc66ada"
+    }
+  }
+  branches {
+    responseText: "Goodbye, Elorn."
+    nextNodeIndex: 12
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714e03643431882a039ac1"
+  }
+  index: 6
+  text: "I sent my parents out of the city a few days ago. \n\nDad was rather upset about it\342\200\246 he kept talking about how many Tir soldiers he\342\200\231d killed last time, and that we\342\200\231d all mess up without him around to give us pointers. He finally relented when I told him that we needed him to plan for a guerilla campaign closer to Chico."
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714e1b643431882a039ac4"
+  }
+  index: 7
+  text: "My sisters were holding the perimeter close to the dam. One was wounded, but they all survived, thanks be. \n\nWe\342\200\231re all happy to be alive, and will hopefully reunite next week."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714e35643431882a039ad4"
+  }
+  index: 8
+  text: "I think so, yes\342\200\246 \n\nIt feels a bit strange. I\342\200\231ve always thought of myself as one of Redding\342\200\231s defenders, the last line of resistance when Tir invades. \n\nNow that the invasion is indefinitely postponed, I don\342\200\231t seem to have much of a purpose any longer."
+  branches {
+    responseText: ""
+    nextNodeIndex: 9
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714e47643431882a039ad7"
+  }
+  index: 9
+  text: "That said, I\342\200\231m sure I can find work as a guard, or maybe even as a shadowrunner. We\342\200\231ll see where the future takes us."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714e62643431882a039adb"
+  }
+  index: 10
+  text: "Well, what I think about her shouldn\342\200\231t matter much. It\342\200\231s more what she thinks about me. \n\nLet\342\200\231s face it, a dragon can affect an elf infinitely more than an elf can affect a dragon."
+  branches {
+    responseText: ""
+    nextNodeIndex: 11
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714e74643431882a039ade"
+  }
+  index: 11
+  text: "That said, I\342\200\231m stunned and delighted that she\342\200\231s here. For my entire life, I\342\200\231ve been afraid of Tir invading us, destroying our home and killing my family. \n\nAnd now, from out of nowhere, we have a bulwark, one of the most powerful beings on the planet who, for some inexplicable reason, has decided to protect us. It\342\200\231s remarkable."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714e94643431882a039ae2"
+  }
+  index: 12
+  text: "{{GM}}Elorn clasps your forearm and stares earnestly into your eyes.{{/GM}} \n\nFare well, $(l.name). Know that you\342\200\231ll always be welcome in Redding, wherever your travels may take you."
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  nextNodeIndex: 0
+}

@@ -1,0 +1,135 @@
+idRef {
+  id: "53714662643431882a03987b"
+}
+ui_name: "a3-end-hrafna"
+nodes {
+  idRef {
+    id: "53714668643431882a039881"
+  }
+  index: 0
+  text: "This is incredible! Just\342\200\246 amazing."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "talkedToHrafna"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "numPeopleTalkedTo"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "53714682643431882a039889"
+  }
+  index: 1
+  text: "She\342\200\231s so beautiful. And I can already tell that she\342\200\231s kind, and wise, and powerful. She\342\200\231s what I\342\200\231ve been looking for all my life."
+  branches {
+    responseText: "She certainly saved the day here."
+    nextNodeIndex: 2
+  }
+  branches {
+    responseText: "Hey, I\342\200\231m the one who rescued your city!"
+    nextNodeIndex: 3
+  }
+  branches {
+    responseText: "I think she might be controlling your mind."
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537146a0643431882a03988e"
+  }
+  index: 2
+  text: "I heard! And she did it without even lifting a claw. Remarkable."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537146a4643431882a039891"
+  }
+  index: 3
+  text: "Oh, I\342\200\231m certainly grateful for you! \n\nIt\342\200\231s just that you\342\200\231re not, you know\342\200\246 a dragon."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537146a7643431882a039894"
+  }
+  index: 4
+  text: "I doubt that! Someone as wonderful as her wouldn\342\200\231t need to stoop to mind control."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537146aa643431882a039897"
+  }
+  index: 5
+  text: "We have you to thank for this. From what I understand, you were the one who saved her life when she was vulnerable, in her human form. \n\nIf it wasn\342\200\231t for your timely actions, she would have perished, and all of us with her."
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537146f4643431882a03989e"
+  }
+  index: 6
+  text: "Now, if you\342\200\231ll excuse me, I wish to commune with the great dragon. \n\nI have finally found the purpose in my life: I will serve her and fulfill her mission, bringing harmony to Shasta and, eventually, the world."
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  nextNodeIndex: 0
+}

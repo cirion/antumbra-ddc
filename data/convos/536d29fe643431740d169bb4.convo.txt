@@ -1,0 +1,260 @@
+idRef {
+  id: "536d29fe643431740d169bb4"
+}
+ui_name: "a3-banter-3_Hailey_Elorn"
+nodes {
+  idRef {
+    id: "536d2a09643431740d169bba"
+  }
+  index: 0
+  text: "Hey, uh, Hailey\342\200\246 I wanted to get your advice about something."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d2a18643431740d169bbd"
+  }
+  index: 1
+  text: "No problem, Elorn! Hey, can I call you El?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d2a25643431740d169bc0"
+  }
+  index: 2
+  text: "No. \n\nSo, anyways\342\200\246 I\342\200\231ve been thinking about what to do after the Tir invasion is over. I\342\200\231ve always been a pretty good shooter, but I\342\200\231ve hardly ever left Redding. \n\nI was thinking of maybe becoming a shadowrunner. I know you recently started running yourself; what do you think of it so far?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d2a43643431740d169bc3"
+  }
+  index: 3
+  text: "Oh, my gosh! It is SO MUCH FUN! \n\nMy favorite part is when I get to feel like the smartest person in the room, since I just cracked a node full of black IC and hacked some autoturrets to support my team. \n\nBut even when I\342\200\231m getting shot at, it\342\200\231s just, like, really exciting! "
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d2a5f643431740d169bc6"
+  }
+  index: 4
+  text: "And there\342\200\231s the fact that you get paid for it. It\342\200\231s not even really having the money, you know? It\342\200\231s, like, this constant affirmation that you\342\200\231re really good at what you do. Johnson wouldn\342\200\231t be paying you this much if you weren\342\200\231t worth it. So, that feels great, too!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d2a70643431740d169bc9"
+  }
+  index: 5
+  text: "What made you decide to get into it?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d3314643431740d169bdb"
+  }
+  index: 6
+  text: "I\342\200\231d been thinking about it for a while, but it was this $(l.guy) who convinced me to make a career at it. \n\n{{GM}}She flashes you a warm grin.{{/GM}} \n\nKali was really impressed with the way $(l.he) handled the dangerous situations $(l.he) was always stumbling into."
+  branches {
+    responseText: "I\342\200\231m sure you would have gotten into this business anyways."
+    nextNodeIndex: 7
+  }
+  branches {
+    responseText: "Hailey\342\200\231s being modest, she was born to be a runner."
+    nextNodeIndex: 8
+  }
+  branches {
+    responseText: "And for some reason you keep on following me around."
+    nextNodeIndex: 9
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d333c643431740d169be0"
+  }
+  index: 7
+  text: "I\342\200\231m not sure if that\342\200\231s true, $(l.name). Dreams are one thing, but watching your example made it seem a lot more real to me."
+  branches {
+    responseText: ""
+    nextNodeIndex: 10
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d3340643431740d169be3"
+  }
+  index: 8
+  text: "Aw, that\342\200\231s sweet! I was really nervous at first, but once I had gone on a couple of runs with someone more experienced, it did start feeling really natural."
+  branches {
+    responseText: ""
+    nextNodeIndex: 10
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d3353643431740d169be6"
+  }
+  index: 9
+  text: "That\342\200\231s because you keep on needing me, you goofus!\n\n{{GM}}Hailey sticks her tongue out at you.{{/GM}} "
+  branches {
+    responseText: ""
+    nextNodeIndex: 10
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d3358643431740d169be9"
+  }
+  index: 10
+  text: "That\342\200\231s not how most runners start, though. Many turn to it because they can\342\200\231t do anything else without a SIN, or because they want to travel the world, or because it\342\200\231s a socially acceptable way of killing people. \n\nFor me, though, it\342\200\231s been about the excitement, and always having fresh, fun new challenges to solve."
+  branches {
+    responseText: ""
+    nextNodeIndex: 11
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d33df643431740d169bf0"
+  }
+  index: 11
+  text: "You do make it sound really appealing. It can\342\200\231t all be positive, though."
+  branches {
+    responseText: ""
+    nextNodeIndex: 12
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d33ee643431740d169bf3"
+  }
+  index: 12
+  text: "Nooooo, I guess not. \n\nIf you want to keep getting hired, you need to be reliable. That can mean checking your conscience at the door. You need to figure out up front if you\342\200\231ll be able to go through with the mission, because once you take the contract, you can\342\200\231t welsh, even if it means doing something distasteful."
+  branches {
+    responseText: ""
+    nextNodeIndex: 13
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d3414643431740d169bf6"
+  }
+  index: 13
+  text: "Really? What\342\200\231s the worst thing you\342\200\231ve ever had to do?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 14
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d3425643431740d169bf9"
+  }
+  index: 14
+  text: "I don\342\200\231t like to think about it much, but\342\200\246 well, almost everyone I\342\200\231ve ever killed has a family, you know? When I fry an enemy decker, I\342\200\231m probably killing a father, or at least a son or brother. That can be kind of rough to dwell on. "
+  branches {
+    responseText: ""
+    nextNodeIndex: 15
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d3444643431740d169bfc"
+  }
+  index: 15
+  text: "The single worst thing I\342\200\231ve ever done was probably break decryption on a private node in The City. I didn\342\200\231t find out until later that it was a datastore for Norton\342\200\231s Army. \n\nSaito got his hands on the personnel records, then arrested and executed all the leaders in the city. Now they\342\200\231ve had to flee The City entirely, and are just operating out of Colma and Orkland."
+  branches {
+    responseText: ""
+    nextNodeIndex: 16
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d3469643431740d169bff"
+  }
+  index: 16
+  text: "That\342\200\231s awful. But I\342\200\231m glad to hear that you recognize how bad it is. A lot of people wouldn\342\200\231t give a second thought to what happened after the job was done, especially not if it only affected a group of poor metahumans."
+  branches {
+    responseText: ""
+    nextNodeIndex: 17
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d347e643431740d169c02"
+  }
+  index: 17
+  text: "Yeah\342\200\246 well, they\342\200\231re my friends, you know? I used to think I could keep my personal life and my shadowrunning life separate. \n\nIt just doesn\342\200\231t work that way, though. The decisions I make affect the entire world, and can help or hurt the people I love. So, I need to be more careful than ever about the choices I make in my job."
+  branches {
+    responseText: ""
+    nextNodeIndex: 18
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d34a2643431740d169c05"
+  }
+  index: 18
+  text: "That\342\200\231s very wise. Thank you, Hailey. You\342\200\231ve given me a lot to think about."
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+roots {
+  nextNodeIndex: 0
+}

@@ -1,0 +1,198 @@
+idRef {
+  id: "536d34b5643431740d169c33"
+}
+ui_name: "a3-banter-3_Hailey_Dorbi"
+nodes {
+  idRef {
+    id: "536d34c9643431740d169c39"
+  }
+  index: 0
+  text: "Drek!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d34d9643431740d169c3c"
+  }
+  index: 1
+  text: "Hey, what\342\200\231s wrong?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d34e5643431740d169c3f"
+  }
+  index: 2
+  text: "Oh, I just remembered that tomorrow is my mom\342\200\231s birthday, and I haven\342\200\231t gotten her anything yet. \n\nEvery year I promise that I\342\200\231ll plan ahead, and each year I forget!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d34f8643431740d169c42"
+  }
+  index: 3
+  text: "We should go shopping for something after we\342\200\231re done with this mission! "
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d3505643431740d169c45"
+  }
+  index: 4
+  text: "That\342\200\231s nice of you, but\342\200\246"
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d3513643431740d169c48"
+  }
+  index: 5
+  text: "No, no, it\342\200\231s settled! We\342\200\231ll find your mom the BEST BIRTHDAY PRESENT EVER! \n\nWhat kind of stuff does she like?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d3520643431740d169c4b"
+  }
+  index: 6
+  text: "Well\342\200\246 she likes candles, and dogs, and classic trideos. Honestly, though, I think she\342\200\231ll just be happy to see me again."
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d3533643431740d169c4e"
+  }
+  index: 7
+  text: "Hm\342\200\246 you know, I saw the cutest little candle-holder at a stall back in Eclipse. It\342\200\231s shaped like Benji, and glows when the candle is lit. It would be perfect! \n\nBut\342\200\246 well, this probably isn\342\200\231t the best time to go shopping there."
+  branches {
+    responseText: ""
+    nextNodeIndex: 8
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d354d643431740d169c51"
+  }
+  index: 8
+  text: "No, but that does sound great. Maybe I\342\200\231ll pick it up for next year. \n\nWell, we can try to find something closer to Redding. That way we don\342\200\231t need to worry about breakage, either."
+  branches {
+    responseText: ""
+    nextNodeIndex: 9
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d3561643431740d169c54"
+  }
+  index: 9
+  text: "Heh, yeah. I guess porcelain doesn\342\200\231t travel well through war zones.\n\nIt\342\200\231s really sweet that you still buy gifts for your parents. Now I feel guilty, I hardly ever remember to even message my folks on their birthdays."
+  branches {
+    responseText: ""
+    nextNodeIndex: 10
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d3579643431740d169c57"
+  }
+  index: 10
+  text: "Do you not get along well?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 11
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d3588643431740d169c5a"
+  }
+  index: 11
+  text: "Well, they\'re good people. They still treat me like a kid, though. They think that my shadowrunning career is just a \342\200\234phase,\342\200\235 and that I need to stop hanging out with \"dangerous people.\342\200\235 Meaning metahumans, though they never actually come out and say it.\n\nI think they\342\200\231re great people, but we always end up arguing when we get together, so we don\342\200\231t see each other that much any more."
+  branches {
+    responseText: ""
+    nextNodeIndex: 12
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d37c9643431740d169c5d"
+  }
+  index: 12
+  text: "Well, you don\342\200\231t have to tell them everything. \n\nI used to fight with my parents all the time, then I realized that selective reporting can smooth things over really well. Like, they don\342\200\231t NEED to know that I joined a waterjacking gang. It won\342\200\231t make their life any better to learn that, and I don\342\200\231t need their help to stay in it. \n\nIgnorance can be bliss."
+  branches {
+    responseText: ""
+    nextNodeIndex: 13
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d37f2643431740d169c60"
+  }
+  index: 13
+  text: "Wow. How have I gotten this far in life without realizing that lying to my parents is a viable strategy?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 14
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d3802643431740d169c63"
+  }
+  index: 14
+  text: "Oh, honey, deception can be WONDERFUL. Give it a try!\n\nDon\342\200\231t forget the gifts, though. Presents are still important. I\342\200\231m holding you to that promise to go shopping after we return to base!"
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+roots {
+  nextNodeIndex: 0
+}

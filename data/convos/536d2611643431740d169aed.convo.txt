@@ -1,0 +1,209 @@
+idRef {
+  id: "536d2611643431740d169aed"
+}
+ui_name: "a3-banter-2_Norton"
+nodes {
+  idRef {
+    id: "536d261c643431740d169af3"
+  }
+  index: 0
+  text: "$+(l.sir)! Might I have a moment of your time?"
+  branches {
+    responseText: "What is it, Norton?"
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "Is this important?"
+    nextNodeIndex: 1
+  }
+  branches {
+    responseText: "No."
+    nextNodeIndex: 11
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d2658643431740d169afb"
+  }
+  index: 1
+  text: "As an experienced elder statesman, we feel we have much valuable advice to offer you as you transition into a position of greater responsibility. \n\nMen and women look to you for guidance, and the success or failure of your venture will depend greatly on your leadership ability."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d2674643431740d169b01"
+  }
+  index: 2
+  text: "Never forget the most important aspect: complete and utter confidence in yourself and your own abilities. If you do not believe your word to be law, why should anyone else? In all that you say and do, let your conviction shine through."
+  branches {
+    responseText: "Got it."
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "You definitely have that covered."
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "Yeah, whatever."
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d2699643431740d169b06"
+  }
+  index: 3
+  text: "Secondly, surround yourself with persons of significant skills and unquestioned character. Even as we have benefited from our association, so you may draw great utility from the men and women you attract to your side.\n\nBut do not forget that such association is a two-way street! The precepts of feudalism demand that you grant your followers protection, even as they grant you their service. Remember, we all have our role to play in the Great Chain of Being."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d26c1643431740d169b0d"
+  }
+  index: 4
+  text: "And, last but not least, do not forget to enjoy the fruits of leadership! What aspects of rule do you most look forward to?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d26df643431740d169b14"
+  }
+  index: 5
+  text: ""
+  branches {
+    responseText: "I\342\200\231m looking forward to minting my own currency."
+    nextNodeIndex: 6
+    onlyOnce: true
+    idRef {
+      id: "536d26f5643431740d169b1c"
+    }
+  }
+  branches {
+    responseText: "I can\342\200\231t wait to name buildings after myself."
+    nextNodeIndex: 7
+    onlyOnce: true
+    idRef {
+      id: "536d271f643431740d169b28"
+    }
+  }
+  branches {
+    responseText: "I\342\200\231ll need to design a flag and uniforms sooner or later\342\200\246"
+    nextNodeIndex: 8
+    onlyOnce: true
+    idRef {
+      id: "536d2722643431740d169b29"
+    }
+  }
+  branches {
+    responseText: "I want to decide who lives and who dies."
+    nextNodeIndex: 9
+    onlyOnce: true
+    idRef {
+      id: "536d2725643431740d169b2a"
+    }
+  }
+  branches {
+    responseText: "I can\342\200\231t think of anything else I\342\200\231d want to do."
+    nextNodeIndex: 10
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536d26ec643431740d169b1b"
+  }
+  index: 6
+  text: "Ah, that is truly a pleasure close to our own heart!  Emperor Norton banknotes have circulated for nearly two centuries now, and our spirits are cheered whenever we have cause to look upon our visage. \n\nYou will know your reign is secure when your scrip is accepted by all you patronize. In the near future, you will be able to end the tiresome practice of paying nuyen for equipment that you so badly need yourself!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d2767643431740d169b2c"
+  }
+  index: 7
+  text: "Indeed, that will be a glorious day! We imagine that, before the year is out, Old City Hall will be known at The $(l.name) Palace. And once your public works department has developed, countless roads and canals will be named in your honor as well! \n\nWhat a bounteous world your children will grow up in, filled with joyful reminders of their beloved parent."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d27a4643431740d169b30"
+  }
+  index: 8
+  text: "Oh, such colors you shall have! \n\nIt is always a difficult decision to make. Will you display skulls and crossbones, to strike fear into the hearts of your enemies? Or a palette of pleasing hues, welcoming immigrants into your realm? Or aattractive colors that will lure your foes into a false sense of security? \n\nThe possibilities are endless!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d27c9643431740d169b34"
+  }
+  index: 9
+  text: "Such responsibilities can weigh heavily upon us, but as the ultimate arbiter of fates within our land, this task will be of crucial importance. \n\nWill you be a beacon of justice and fairness? Or capriciously follow your whims? \n\nWe will watch your career with great curiosity."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d27ea643431740d169b38"
+  }
+  index: 10
+  text: "Never fear! We have no doubt that you will enjoy a long and prosperous reign, secured in our constant tutelage. Excelsior!"
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d2631643431740d169af8"
+  }
+  index: 11
+  text: "How unfortunate! But understandable, you bear a great weight upon your shoulders. \n\nVery well, we shall refrain from speech and devote ourselves to action."
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+roots {
+  nextNodeIndex: 0
+}

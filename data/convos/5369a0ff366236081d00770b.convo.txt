@@ -1,0 +1,1111 @@
+idRef {
+  id: "5369a0ff366236081d00770b"
+}
+ui_name: "a3-intro-Norton_2"
+nodes {
+  idRef {
+    id: "5369a10b366236081d007711"
+  }
+  index: 0
+  text: "Finely done, $(l.name)! We knew our trust in you was well-founded."
+  branches {
+    responseText: "This brings back memories of our fight in Colma."
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "a2_beatGame"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 1
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: ""
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "a2_beatGame"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 2
+    hideIfUnavailable: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5369a608366236081d007723"
+  }
+  index: 1
+  text: "We expected no less valor from our $(story.LordLady) of the Mission. Would that all our subjects comported themselves so well!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5369a5f6366236081d00771e"
+  }
+  index: 2
+  text: ""
+  branches {
+    responseText: "You did rather well yourself, Emperor."
+    nextNodeIndex: 3
+  }
+  branches {
+    responseText: "With our talents combined, we make a formidable team."
+    nextNodeIndex: 4
+  }
+  branches {
+    responseText: "It was mostly thanks to the dogs, really."
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5369a620366236081d00772c"
+  }
+  index: 3
+  text: "We thank you for your kind words. In truth, we detest any sort of violence, but recognize that circumstances sometimes dictate a direct intervention. We pride ourself on identifying worthy allies and then doing our utmost to support them."
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5369a660366236081d00772f"
+  }
+  index: 4
+  text: "As it should be! The strongest force contains many constituent parts, each supporting and enhancing one another."
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5369a674366236081d007732"
+  }
+  index: 5
+  text: "Ah, yes. We do have to wonder where Bummer and Lazarus picked up their fearsome disposition. They certainly did not learn it from us!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5369a68a366236081d007735"
+  }
+  index: 6
+  text: "Now, before that frightful spirit interrupted us, we were about to discuss important matters of state with you."
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5369a69a366236081d007738"
+  }
+  index: 7
+  text: "We have traveled this state for many weeks, and have been alarmed to discover that its great borders have been much curtailed. Of course, Pueblo has long held the southern and eastern reaches, but a grave threat now presses down from the north. The elves of Tir Tairngire, who aided Shavarus in his plot against San Francisco, are mobilizing to invade and conquer the state."
+  branches {
+    responseText: ""
+    nextNodeIndex: 8
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5369a6ab366236081d007742"
+  }
+  index: 8
+  text: "California cannot hope to stand against such an assault. The wealth of San Francisco and Los Angeles have been lost, and the so-called leaders in Sacramento cannot even maintain the land they claim to control, let alone defend it from outsiders. The Free State is doomed, $(l.name), and only our imperial leadership can possibly save it."
+  branches {
+    responseText: ""
+    nextNodeIndex: 9
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5369a6b7366236081d007745"
+  }
+  index: 9
+  text: "Kali has recognized this need, and sent envoys to try and locate you. You have demonstrated an ability to prevail against overwhelming odds, and may be able to buy California the time it needs. Will you come to our aid?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 10
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5369a6c1366236081d007748"
+  }
+  index: 10
+  text: ""
+  branches {
+    responseText: "I\342\200\231m confused. Who exactly is in charge here?"
+    nextNodeIndex: 11
+    onlyOnce: true
+    idRef {
+      id: "536b0c80366236e0040076ea"
+    }
+  }
+  branches {
+    responseText: "What is Kali doing these days?"
+    nextNodeIndex: 12
+    onlyOnce: true
+    idRef {
+      id: "536b0c85366236e0040076eb"
+    }
+  }
+  branches {
+    responseText: "Why should I care if Tir invades?"
+    nextNodeIndex: 17
+    onlyOnce: true
+    idRef {
+      id: "536b0c8b366236e0040076ec"
+    }
+  }
+  branches {
+    responseText: "What do you need me to do?"
+    nextNodeIndex: 22
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5369a6d5366236081d00774b"
+  }
+  index: 11
+  text: "Of course, as Emperor of UCAS and Protector of Aztlan, we are the supreme ruler of these lands. We have delegated responsibility over daily decisions, however, so we may apply our attention more directly to those areas requiring our wisdom. Kali, like many other enlightened residents of San Francisco, pay us our due respect, and we are only too happy to support her in our imperial endeavors."
+  branches {
+    responseText: ""
+    nextNodeIndex: 10
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5369a70f366236081d007755"
+  }
+  index: 12
+  text: ""
+  branches {
+    responseText: ""
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "a2_beatGame"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 13
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: ""
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "a2_killedShavarus"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 15
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: ""
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "a2_savedShavarus"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 16
+    hideIfUnavailable: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5369a725366236081d00775a"
+  }
+  index: 13
+  text: "You probably do not know her, but Kali is a significant new force in California. She arrived recently from Seattle, and has been steadily growing her entertainment empire under the watchful eye of Colonel Saito."
+  branches {
+    responseText: ""
+    nextNodeIndex: 14
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5369a737366236081d00775d"
+  }
+  index: 14
+  text: "While Sacramento no longer has any control over San Francisco, the fates of the city and state are still bound to one another. Kali sees more clearly than Saito, the governor, or any of the megacorps, and understands that an invasion by Tir would be disastrous to the people and economy of this state. She\342\200\231s doing all she can to convince greater powers to intervene, and in the meantime, she is searching for any opportunity to thwart Tir\342\200\231s ambitions."
+  branches {
+    responseText: ""
+    nextNodeIndex: 10
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5369a762366236081d007775"
+  }
+  index: 15
+  text: "After you disposed of that traitorous Shavarus, Colonel Saito had his hands full trying to rebuild the aqueducts into San Francisco. Kali and her allies at Mitsuhama managed to secure a lucrative contract for much of the work, and have been expanding their operations into the California Free State as they work to reconnect the city with Hetch Hetchy."
+  branches {
+    responseText: ""
+    nextNodeIndex: 14
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5369a795366236081d00777e"
+  }
+  index: 16
+  text: "Colonel Saito flew into a frenzy after Shavarus escaped, and loosened his grip on San Francisco\342\200\231s society while directing the hunt into the California Free State. Kali took advantage of the opportunity to expand operations, and Antumbra Enterprises has become the largest private landholder in the city."
+  branches {
+    responseText: ""
+    nextNodeIndex: 14
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5369a7b2366236081d007783"
+  }
+  index: 17
+  text: "We would not presume that you hold any strong affection for our great state; the bonds of citizenship have sadly loosened in these turbulent times. Nonetheless, even in the absence of patriotism, self-interest should provide a fine motivation."
+  branches {
+    responseText: ""
+    nextNodeIndex: 18
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5369a7c0366236081d007786"
+  }
+  index: 18
+  text: "Tir Tairngire forbids any megacorps from operating within their territories. The Council of Princes tightly controls all activities within the realm. They may not issue SINs, but make no mistake: life in Tir is even more controlled than the strictest arcology. Police states may be content to peer into your hard drives, but the enforcers of Tir will peer into your mind."
+  branches {
+    responseText: ""
+    conditions {
+      ops {
+        functionName: "Compare Actor Race"
+        args {
+          call_value {
+            functionName: "Get Map Item (Player)"
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Race"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 19
+  }
+  branches {
+    responseText: ""
+    conditions {
+      ops {
+        functionName: "Compare Actor Race"
+        args {
+          call_value {
+            functionName: "Get Map Item (Player)"
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Race"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 21
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5369a809366236081d00778a"
+  }
+  index: 19
+  text: "It will likely be even worse for you, $(l.name). The elves of Tir will see you as a traitor to their race, and expose you to torture, death, or \342\200\234re-education.\342\200\235"
+  branches {
+    responseText: ""
+    nextNodeIndex: 20
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5369a812366236081d00778d"
+  }
+  index: 20
+  text: "And do not presume that you can simply run from this. Your face is known to all Tir as the one who thwarted Shavarus\342\200\231s ambitions, and they will not hesitate to send assassins after you until the day you die. California loves you as a savior, and only by keeping California alive can you hope to retain her protection.\n"
+  branches {
+    responseText: ""
+    nextNodeIndex: 10
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5369a821366236081d007790"
+  }
+  index: 21
+  text: "Of course, as a lowly $(l.race), you\342\200\231ll be at the bottom of the food chain. Most elves have been on the receiving end of discrimination, but they do not hesitate to turn the tables once they are in power. You will be banished at best, possibly tortured or killed."
+  branches {
+    responseText: ""
+    nextNodeIndex: 20
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5369a871366236081d00779a"
+  }
+  index: 22
+  text: "Shadowrunners are often tasked with destroying something. We need you to do the opposite: create a force that can shield our state against the storm that\342\200\231s fast approaching."
+  branches {
+    responseText: "That sounds like a noble goal, but not a possible one."
+    nextNodeIndex: 23
+  }
+  branches {
+    responseText: "Oh, so the two of us will face off against a million elves with machine guns? Great!"
+    nextNodeIndex: 24
+  }
+  branches {
+    responseText: "You\342\200\231re even crazier than I thought, old man."
+    nextNodeIndex: 25
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5369a8ac366236081d00779f"
+  }
+  index: 23
+  text: "Dear child, we have seen more impossible things accomplished in our lifetime than you could ever imagine. Fear not! The task, while immense, may not be so great as you fear."
+  branches {
+    responseText: ""
+    nextNodeIndex: 26
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5369a914366236081d0077a1"
+  }
+  index: 24
+  text: "We assure you, you will find many more loyal people to join your side. And we are not so foolish as to propose a head-on assault against mighty Tir Tairngire."
+  branches {
+    responseText: ""
+    nextNodeIndex: 26
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5369a94a366236081d0077a3"
+  }
+  index: 25
+  text: "{{GM}}Norton cackles with glee.{{/GM}} \n\nThat is precisely what we wish them to believe! Our plan shall rely on a combination of secrecy, discipline, planning, and cunning."
+  branches {
+    responseText: ""
+    nextNodeIndex: 26
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5369a984366236081d0077a6"
+  }
+  index: 26
+  text: "You will be forming a guerilla force, one that can move lightly, strike quickly, and harry the elves.\n\nIf we were to field an army, Tir would unleash their magic against us. But by remaining hidden, you will be able to cut their supply lines, disrupt their communications, and distract their attention.\n\nIn the worst case scenario, if the invasion proceeds, you will help lead the insurgents continuing the struggle against Tir."
+  branches {
+    responseText: ""
+    nextNodeIndex: 27
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5369a99f366236081d0077af"
+  }
+  index: 27
+  text: "We do not mean to imply that this will be easy. It is a dangerous task, and will require many resources. Kali will provide you with a foundation: a hideout in Redding, some starting funds, equipment and contacts. From there, you will be responsible for charting the course of your group. You must decide who to recruit, what allies to accept, where to acquire additional armaments, how aggressively to act."
+  branches {
+    responseText: ""
+    nextNodeIndex: 28
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5369a9aa366236081d0077b2"
+  }
+  index: 28
+  text: "The mission is difficult, but you have proven your mettle time and again. Can we count on you in this, our hour of greatest need?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 29
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5369aab1366236081d0077c9"
+  }
+  index: 29
+  text: ""
+  branches {
+    responseText: "{{CC}} Intelligence: 3{{/CC}} You\342\200\231re not telling me everything. I\342\200\231m not the only one you\342\200\231ve contacted, right?"
+    conditions {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Actor Attribute"
+            args {
+              call_value {
+                functionName: "Get Map Item (Player)"
+                args {
+                  int_value: 0
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "BaseOrCurrent"
+                }
+                args {
+                  int_value: 1
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "ActorAttributes"
+                }
+                args {
+                  int_value: 4
+                }
+              }
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 3
+            }
+          }
+        }
+        args {
+          int_value: 3
+        }
+      }
+    }
+    nextNodeIndex: 30
+    onlyOnce: true
+    idRef {
+      id: "536b0cc2366236e004007763"
+    }
+  }
+  branches {
+    responseText: "What\342\200\231s in it for me?"
+    nextNodeIndex: 32
+    onlyOnce: true
+    idRef {
+      id: "536b0cc6366236e004007764"
+    }
+  }
+  branches {
+    responseText: "Tell Kali I\342\200\231ll be glad to work by her side."
+    nextNodeIndex: 34
+  }
+  branches {
+    responseText: "Tell Kali I\342\200\231ll help oppose Tir, but I\342\200\231m doing it for the entire state, not just her."
+    nextNodeIndex: 35
+  }
+  branches {
+    responseText: "Tell Kali I don\342\200\231t need her help. If I\342\200\231m starting a movement, it\342\200\231s for my own benefit."
+    nextNodeIndex: 36
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5369aab9366236081d0077cd"
+  }
+  index: 30
+  text: "Well\342\200\246 in truth, you are the only person with whom we have personally spoken. However, we know that Kali has cast a wide net and is seeking to recruit all the assistance she can muster. If all goes well, an entire network of cells will be active near the California-Tir border, each working independently to slow down Tir\342\200\231s advances."
+  branches {
+    responseText: ""
+    nextNodeIndex: 31
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5369aab9366236081d0077d0"
+  }
+  index: 31
+  text: "However, we have all agreed that you hold our best hope for victory. You have not only proven formidable at combat, but also canny at navigating the factions and alliances splitting San Francisco. Such skills will provide necessary leadership for the task ahead.\n"
+  branches {
+    responseText: ""
+    nextNodeIndex: 29
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5369aaea366236081d0077de"
+  }
+  index: 32
+  text: "Your survival, of course. We cannot and will not threaten you, but know that a Tir victory will ensure your death.\n"
+  branches {
+    responseText: ""
+    nextNodeIndex: 33
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5369aaf0366236081d0077e1"
+  }
+  index: 33
+  text: "Beyond that, Kali has grown into a powerful woman, and collects more powerful allies as Antumbra Enterprises continues to expand. Should we persevere in defending California, the state will owe her, and you, a great debt. You could ask for almost anything you might desire: an executive position at Mitsuhama, an enormous quantity of nuyen, even your own independent fiefdom. \n\nAs you have no doubt observed, proving your worth to powerful patrons motivates them to keep you safe and happy. \n"
+  branches {
+    responseText: ""
+    nextNodeIndex: 29
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5369ab1c366236081d0077fa"
+  }
+  index: 34
+  text: "Excellent! I shall notify her people immediately. She will be delighted to know that you are on our team."
+  branches {
+    responseText: ""
+    actions {
+      ops {
+        functionName: "Set Variable (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Global_WorkForCorps"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 37
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Global_WorkForCorps"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Variable (string)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (string)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Redding_Synopsis"
+          }
+        }
+      }
+      args {
+        string_value: "Within a week, Kali\342\200\231s supply shipments have begun arriving: new and used rifles, computers, radios, all the tools necessary for a successful guerilla operation. Nothing on the planet is as wealthy as a megacorp, and you are now leading a very small sub-subsidiary of one. \n\nIt\342\200\231s a small start, but an encouraging one. After the new arrivals are put to work, you step into your hideout, already planning your next move\342\200\246"
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "5369abb8366236081d007861"
+  }
+  index: 35
+  text: "Ah, a $(l.man) after my own heart! We wish there were more $(l.race_plural) like you in this world: working for the betterment of their fellows, and not merely their own enrichment.\n"
+  branches {
+    responseText: ""
+    nextNodeIndex: 37
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Global_WorkForPeople"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Variable (string)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (string)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Redding_Synopsis"
+          }
+        }
+      }
+      args {
+        string_value: "Word quietly spreads of a paramilitary resistance group organizing in Redding. Before long, citizens from throughout the Central Valley are heading north, trickling into your base and adding themselves to your cause.\n\nIt\342\200\231s a small start, but an encouraging one. After the new arrivals are put to work, you step into your hideout, already planning your next move\342\200\246"
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "5369abe6366236081d007864"
+  }
+  index: 36
+  text: "She will be\342\200\246 disappointed. But as long as you share a common enemy, she will continue to support you."
+  branches {
+    responseText: ""
+    nextNodeIndex: 37
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Global_WorkForSelf"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Variable (string)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (string)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Redding_Synopsis"
+          }
+        }
+      }
+      args {
+        string_value: "Fed up with the machinations of states and megacorps, you make known your protest, founding an independent microstate in the hotly contested Redding area. Fellow dissidents flock to your banner, ready to fight against Tir, Sacramento, Aztechnology, or anyone else infringing your territory.\n\nIt\342\200\231s a small start, but an encouraging one. After the new arrivals are put to work, you step into your hideout, already planning your next move\342\200\246"
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "5369ac03366236081d007867"
+  }
+  index: 37
+  text: "Now, come! We have selected a fine base in the nearby city of Redding. It lies close to the border with Tir, and will be a perfect location for the tasks ahead. Excelsior!"
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Goal Status"
+      args {
+        call_value {
+          functionName: "Get Map Item (Goal)"
+          args {
+            string_value: "Travel to Redding"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "GoalStatus"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Waypoint on Prop"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "PrimaryOrSecondary"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Prop)"
+          args {
+            string_value: "5369ad10366236081d0078db"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "CanExitScene"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+roots {
+  nextNodeIndex: 0
+}

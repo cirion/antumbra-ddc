@@ -1,0 +1,43 @@
+idRef {
+  id: "5370faba643431b120cd3905"
+}
+ui_name: "a3-embarcadero-johnson"
+nodes {
+  idRef {
+    id: "5370fb11643431b120cd390b"
+  }
+  index: 0
+  text: "$(l.name)! I\342\200\231m glad to see you made it!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "johnsonState"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "5370fb27643431b120cd390e"
+  }
+  index: 1
+  text: "Kali has scheduled a meeting of the top corp executives in the old Aztechnology building. Hop on in and I\342\200\231ll drive you over."
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  nextNodeIndex: 0
+}

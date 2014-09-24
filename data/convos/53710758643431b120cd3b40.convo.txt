@@ -1,0 +1,413 @@
+idRef {
+  id: "53710758643431b120cd3b40"
+}
+ui_name: "a3-megacorps-kali"
+nodes {
+  idRef {
+    id: "5371075e643431b120cd3b46"
+  }
+  index: 0
+  text: "Looks you got the last of them. Corp sec just pulled in, late as usual. \n\nFurthermore, I just heard from Saito-san\342\200\231s aide-de-camp. He\342\200\231s impressed by how decisively you routed the Tir agents from the city. \n\nHe\342\200\231ll never admit that he made a mistake in attacking you, but he\342\200\231s offering his support, which is as close as we\342\200\231re likely to get."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5371078d643431b120cd3b4e"
+  }
+  index: 1
+  text: ""
+  branches {
+    responseText: "Norton, what\'s your opinion on Saito?"
+    conditions {
+      ops {
+        functionName: "Evaluate If Actor is Inside Region"
+        args {
+          call_value {
+            functionName: "All Actors With Tag"
+            args {
+              call_value {
+                functionName: "Tag From String"
+                args {
+                  string_value: "isNorton"
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "AllOrAny"
+                }
+                args {
+                  int_value: 1
+                }
+              }
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "AreOrAreNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Region)"
+            args {
+              string_value: "537545766434316b1333367d"
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 2
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "537c376b36623648170077d1"
+    }
+  }
+  branches {
+    responseText: "Do you think we should accept his support, Dorbi?"
+    conditions {
+      ops {
+        functionName: "Evaluate If Actor is Inside Region"
+        args {
+          call_value {
+            functionName: "All Actors With Tag"
+            args {
+              call_value {
+                functionName: "Tag From String"
+                args {
+                  string_value: "isDorbi"
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "AllOrAny"
+                }
+                args {
+                  int_value: 1
+                }
+              }
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "AreOrAreNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Region)"
+            args {
+              string_value: "537545766434316b1333367d"
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 3
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "537c376e36623648170077d2"
+    }
+  }
+  branches {
+    responseText: "Elorn, you look like you have something to say."
+    conditions {
+      ops {
+        functionName: "Evaluate If Actor is Inside Region"
+        args {
+          call_value {
+            functionName: "All Actors With Tag"
+            args {
+              call_value {
+                functionName: "Tag From String"
+                args {
+                  string_value: "isElorn"
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "AllOrAny"
+                }
+                args {
+                  int_value: 1
+                }
+              }
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "AreOrAreNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Region)"
+            args {
+              string_value: "537545766434316b1333367d"
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 4
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "537c377136623648170077d3"
+    }
+  }
+  branches {
+    responseText: "I see..."
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537107a7643431b120cd3b55"
+  }
+  index: 2
+  text: "That scoundrel! He continues to oppose our sovereignty in this fair city. \n\nHis resources would do much to support your mission, but we fear they may come at an unbearable price. That man\342\200\231s ambition knows no bounds."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "53710801643431b120cd3b71"
+  }
+  index: 3
+  text: "Don\342\200\231t get me wrong, I\342\200\231m no fan of Saito. That said, he\342\200\231s packing more military-grade firepower than anyone else between Tir and Aztlan. \n\nSometimes you gotta deal with the devil if you want to stay alive."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "53710807643431b120cd3b75"
+  }
+  index: 4
+  text: "Saito is barely better than the Native Californians. In fact, he might be worse, since he has an entire army backing him. \n\nYeah, he\342\200\231ll happily slaughter Tir elves, but once you let him into the Central Valley, he\342\200\231ll never leave."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "53710864643431b120cd3b79"
+  }
+  index: 5
+  text: "Well, what should I tell him?"
+  branches {
+    responseText: "We need every soldier we can get, and can\342\200\231t be picky about the source. Just make it clear that they\342\200\231ll be under my command."
+    nextNodeIndex: 6
+  }
+  branches {
+    responseText: "Saito\342\200\231s been milking this city for years and must have a nice stash by now. We can\342\200\231t be publicly associated with him, but we\342\200\231ll accept his clandestine support."
+    nextNodeIndex: 7
+  }
+  branches {
+    responseText: "Tell him off, then tell everyone we told him off. If we accept thugs like him, we\342\200\231re worse than Tir."
+    nextNodeIndex: 8
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537108a7643431b120cd3b7f"
+  }
+  index: 6
+  text: "Very wise. He can spare the men, and they\342\200\231ll be invaluable in training our forces."
+  branches {
+    responseText: ""
+    nextNodeIndex: 9
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Global_Manpower"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "537108a8643431b120cd3b81"
+  }
+  index: 7
+  text: "A clever move. \n\nHe\342\200\231ll be happy to wield more influence in the area, and it keeps our hands clean while avoiding the stigma of associating with him. \n\nWe should start seeing some funds and gear from him shortly."
+  branches {
+    responseText: ""
+    nextNodeIndex: 9
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Global_Supplies"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "537108ab643431b120cd3b83"
+  }
+  index: 8
+  text: "That won\342\200\231t make Saito happy. \n\nIt\342\200\231ll make a lot of other people happy, though, especially the metahumans in the Bay Area. That kind of stance might drive some fresh recruits in your direction."
+  branches {
+    responseText: ""
+    nextNodeIndex: 9
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Global_Manpower"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "537108d8643431b120cd3b88"
+  }
+  index: 9
+  text: "Now, if you\342\200\231ll excuse me, I have an empire to rebuild. We\342\200\231ll speak later. Safe travels, $(l.name)."
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Trigger: Run Alternate Trigger"
+      args {
+        call_value {
+          functionName: "Get Map Item (Trigger)"
+          args {
+            string_value: "5375567a6434316b133336b7"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WaitOrNot"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+}
+roots {
+  nextNodeIndex: 0
+}

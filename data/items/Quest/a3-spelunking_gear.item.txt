@@ -1,0 +1,8 @@
+id: "a3-spelunking_gear"
+type: ItemType_QuestItem
+uirep {
+  name: "Spelunking gear"
+  description: "A set of long, strong ropes, along with harnesses and descenders."
+}
+credentials: 0
+sorting_group: "Quest"

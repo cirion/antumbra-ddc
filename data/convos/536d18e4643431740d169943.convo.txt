@@ -1,0 +1,278 @@
+idRef {
+  id: "536d18e4643431740d169943"
+}
+ui_name: "a3-banter-1_Dorbi_Elorn"
+nodes {
+  idRef {
+    id: "536d18ed643431740d169949"
+  }
+  index: 0
+  text: "All right! Go Team Metahuman!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d18f7643431740d16994c"
+  }
+  index: 1
+  text: "Uh\342\200\246 what are you talking about?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d190f643431740d16994f"
+  }
+  index: 2
+  text: "Oh, you know! It\342\200\231s nice to be with a meta-majority group for once."
+  branches {
+    responseText: "Uh, guys, I\342\200\231m right here."
+    conditions {
+      ops {
+        functionName: "Compare Actor Race"
+        args {
+          call_value {
+            functionName: "Triggering Actor"
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Race"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 3
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: "I\342\200\231ve been looking forward to it, too."
+    conditions {
+      ops {
+        functionName: "Compare Actor Race"
+        args {
+          call_value {
+            functionName: "Triggering Actor"
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Race"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 4
+  }
+  branches {
+    responseText: "There\342\200\231s nothing wrong with humans, you know."
+    nextNodeIndex: 5
+  }
+  branches {
+    responseText: "Pipe down!"
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d1971643431740d169955"
+  }
+  index: 3
+  text: "Oh, you don\342\200\231t count! I mean\342\200\246 yeah, you\342\200\231re human, but you\342\200\231re cool enough that I consider you one of us. \n\nAnd you\342\200\231re not so uptight that you constantly surround yourself with other humans."
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d1977643431740d169958"
+  }
+  index: 4
+  text: "Exactly! With so many metas together, how can something awesome NOT happen?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d197c643431740d16995b"
+  }
+  index: 5
+  text: "Oh, I didn\342\200\231t mean that in a negative way. But there are so many humans around here, it can be relaxing to not have them be the center of attention for once."
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d19b6643431740d16995e"
+  }
+  index: 6
+  text: "Hey, let the lady speak!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d19c5643431740d169961"
+  }
+  index: 7
+  text: "I have to admit, I don\342\200\231t really think about human versus meta all that often. \n\nIn NorCalFree, I\342\200\231m used to elf versus non-elf. People seem to be afraid that I\342\200\231m part of a Tir Tairngire fifth column, whether they\342\200\231re human, dwarf, ork or troll."
+  branches {
+    responseText: ""
+    nextNodeIndex: 8
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d19f0643431740d169969"
+  }
+  index: 8
+  text: "Is that all because of the 2036 invasion?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 9
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d19fe643431740d16996c"
+  }
+  index: 9
+  text: "Yeah. Most people were alive when that went down, and they\342\200\231re terrified at the thought of another invasion. Tir left long ago, but locals are convinced that the elves are plotting some long-running scheme to collapse CalFree."
+  branches {
+    responseText: ""
+    nextNodeIndex: 10
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d1a21643431740d16996f"
+  }
+  index: 10
+  text: "What\342\200\231s crazy is that, any time I meet an elf from Tir, they treat me even worse than humans here do. They think I\342\200\231m a race-traitor, and genetically inferior to second-generation elves up north. Humans wish I would just \342\200\234go back to Tir,\342\200\235 and Tir wants nothing to do with me."
+  branches {
+    responseText: ""
+    nextNodeIndex: 11
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d1a35643431740d169972"
+  }
+  index: 11
+  text: "Yikes\342\200\246 I\342\200\231m sorry, Elorn. That really sucks."
+  branches {
+    responseText: ""
+    nextNodeIndex: 12
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d1a46643431740d169975"
+  }
+  index: 12
+  text: "Eh. Yeah, it does, but I\342\200\231m used to it. \n\nNow that I think about it, maybe I should spend more time hanging out with metas like you. I don\342\200\231t think I have as much baggage with dwarves and orks as I do with elves."
+  branches {
+    responseText: ""
+    nextNodeIndex: 13
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d1a58643431740d169978"
+  }
+  index: 13
+  text: "You should! Ring me if you ever want to check out Halferville together. It\342\200\231s almost all dwarves, but they\'re really friendly to anyone who isn\342\200\231t with Saito. They could always use a talented guard like you, and might be able to teach you some new tricks."
+  branches {
+    responseText: ""
+    nextNodeIndex: 14
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d1a8a643431740d16997b"
+  }
+  index: 14
+  text: "Ugh\342\200\246 I don\342\200\231t think I could stand living underground for long. But, thanks for the offer. I really should try to get away from Redding more often."
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+roots {
+  nextNodeIndex: 0
+}

@@ -1,0 +1,8 @@
+id: "Hurlg"
+type: ItemType_QuestItem
+uirep {
+  name: "Hurlg"
+  description: "A powerful drink with the consistency of porridge. "
+}
+credentials: 0
+sorting_group: "Quest"

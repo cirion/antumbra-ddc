@@ -1,0 +1,10 @@
+unique_id: "Gargoyle_Lv2_Powers"
+equipment {
+  prefab_name: "Berlin_Gargoyle Low Noxious Breath"
+}
+equipment {
+  prefab_name: "Berlin_Gargoyle Low Melee"
+}
+equipment {
+  prefab_name: "Berlin_Gargoyle Death Cloud Low"
+}

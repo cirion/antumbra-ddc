@@ -1,0 +1,490 @@
+idRef {
+  id: "536d68cc6434317b17cbb030"
+}
+ui_name: "a3-five-Dorbi_5"
+nodes {
+  idRef {
+    id: "536d68d36434317b17cbb036"
+  }
+  index: 0
+  text: "Stop! I\342\200\246 I yield!\n\nI\342\200\231m no threat to you any more. You\342\200\231ve taken my best lieutenant, and my foot soldiers are decimated. \n\nJust let me live, and I\342\200\231ll never bother you again."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536d60af6434317b17cbaec7"
+  }
+}
+nodes {
+  idRef {
+    id: "536d68e26434317b17cbb039"
+  }
+  index: 1
+  text: "You bastard! Why on earth would you ally with those creeps?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536d60fe6434317b17cbaec8"
+  }
+}
+nodes {
+  idRef {
+    id: "536d68f26434317b17cbb03c"
+  }
+  index: 2
+  text: "You have to see the bigger picture, Dorbi. \n\nWe\342\200\231re just small time. The Native Californians have powerful friends, who are giving them all the weapons they want. \n\nWe had to play ball, or they would have wiped us out."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536d60af6434317b17cbaec7"
+  }
+}
+nodes {
+  idRef {
+    id: "536d69076434317b17cbb03f"
+  }
+  index: 3
+  text: "So you sold out all your metahuman friends? After we saved your life countless times? You make me sick!\n\n{{GM}}Dorbi angrily spits at the ground.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536d60fe6434317b17cbaec8"
+  }
+  actions {
+    ops {
+      functionName: "Play Sound"
+      args {
+        call_value {
+          functionName: "Get Map Item (Sound)"
+          args {
+            string_value: "bugs"
+          }
+          args {
+            string_value: "Bug_Spirit-VenomSpit"
+          }
+        }
+      }
+      args {
+        float_value: 0.5
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "536d696f6434317b17cbb042"
+  }
+  index: 4
+  text: "You\342\200\231re right! You\342\200\231re right! Oh, what have I done\342\200\246\n\nIf you spare me, I\342\200\231ll tell everyone about what the NCs have been up to. They\342\200\231ll lose all credibility, and will look to you for stability."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536d60af6434317b17cbaec7"
+  }
+}
+nodes {
+  idRef {
+    id: "536d69856434317b17cbb045"
+  }
+  index: 5
+  text: "It\342\200\231s up to you. \n\n{{GM}}Dorbi shrugs.{{/GM}}\n\nPersonally, I would just execute him. That would delight Sacramento, and ensure that he doesn\342\200\231t keep on jacking your supplies. It\342\200\231s your call, though."
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536d60fe6434317b17cbaec8"
+  }
+}
+nodes {
+  idRef {
+    id: "536d69b26434317b17cbb048"
+  }
+  index: 6
+  text: ""
+  branches {
+    responseText: "Norton, do you have any counsel to offer?"
+    conditions {
+      ops {
+        functionName: "Evaluate If Actor is Inside Region"
+        args {
+          call_value {
+            functionName: "All Actors With Tag"
+            args {
+              call_value {
+                functionName: "Tag From String"
+                args {
+                  string_value: "isNorton"
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "AllOrAny"
+                }
+                args {
+                  int_value: 1
+                }
+              }
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "AreOrAreNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Region)"
+            args {
+              string_value: "536582ae3662368c1b004e92"
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 7
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "536d69ce6434317b17cbb050"
+    }
+  }
+  branches {
+    responseText: "Elorn, you must have an opinion about this."
+    conditions {
+      ops {
+        functionName: "Evaluate If Actor is Inside Region"
+        args {
+          call_value {
+            functionName: "All Actors With Tag"
+            args {
+              call_value {
+                functionName: "Tag From String"
+                args {
+                  string_value: "isElorn"
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "AllOrAny"
+                }
+                args {
+                  int_value: 1
+                }
+              }
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "AreOrAreNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Region)"
+            args {
+              string_value: "536582ae3662368c1b004e92"
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 8
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "536d6a136434317b17cbb066"
+    }
+  }
+  branches {
+    responseText: "What do you think, Hailey?"
+    conditions {
+      ops {
+        functionName: "Evaluate If Actor is Inside Region"
+        args {
+          call_value {
+            functionName: "All Actors With Tag"
+            args {
+              call_value {
+                functionName: "Tag From String"
+                args {
+                  string_value: "isHailey"
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "AllOrAny"
+                }
+                args {
+                  int_value: 1
+                }
+              }
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "AreOrAreNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Region)"
+            args {
+              string_value: "536582ae3662368c1b004e92"
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 9
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "536d6a106434317b17cbb065"
+    }
+  }
+  branches {
+    responseText: "I\342\200\231m letting him go. He\'d better spread the word about the Native Californians\342\200\231 plans."
+    nextNodeIndex: 10
+  }
+  branches {
+    responseText: "I can\342\200\231t risk letting him live. It\342\200\231s over."
+    actions {
+      ops {
+        functionName: "Add To Variable (int)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (int)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Global_Supplies"
+            }
+          }
+        }
+        args {
+          int_value: 1
+        }
+      }
+      ops {
+        functionName: "Trigger: Run Alternate Trigger"
+        args {
+          call_value {
+            functionName: "Get Map Item (Trigger)"
+            args {
+              string_value: "536fc83b366236941d00320e"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "WithOrWithout"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "WaitOrNot"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "WithOrWithout"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536d69cc6434317b17cbb04f"
+  }
+  index: 7
+  text: "Alas\342\200\246 must we always be faced with such horrid choices? To kill or to save a defeated foe? \n\nIf we were in your shoes, we would counsel the path of mercy. Show that you are superior to these men by rising above them."
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d69e76434317b17cbb05e"
+  }
+  index: 8
+  text: "Any man who joins with the Native Californians has a sick moral code to begin with. You can\342\200\231t trust him to keep his word. \n\nIt isn\342\200\231t pleasant, but you know what has to be done."
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d6a086434317b17cbb062"
+  }
+  index: 9
+  text: "Geez\342\200\246 what an awful situation! No, don\342\200\231t look at me, I have no idea what to do here. \n\nWarn me if you\342\200\231re going to shoot him, though, I do NOT want to see that."
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d6a406434317b17cbb068"
+  }
+  index: 10
+  text: "Oh, thank you! Thank you! Don\342\200\231t worry, I\342\200\231ll make sure everyone knows how bad those guys are. Now, if you\342\200\231ll excuse me..."
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Global_Manpower"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+    ops {
+      functionName: "Trigger: Run Alternate Trigger"
+      args {
+        call_value {
+          functionName: "Get Map Item (Trigger)"
+          args {
+            string_value: "536fad2f366236941d003097"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WaitOrNot"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+}
+roots {
+  nextNodeIndex: 0
+}

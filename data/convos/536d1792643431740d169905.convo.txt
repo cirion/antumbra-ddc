@@ -1,0 +1,146 @@
+idRef {
+  id: "536d1792643431740d169905"
+}
+ui_name: "a3-banter-1_Norton_Elorn"
+nodes {
+  idRef {
+    id: "536d17a0643431740d16990b"
+  }
+  index: 0
+  text: "May we beg a moment of your time, Sir Elorn?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d17ac643431740d16990e"
+  }
+  index: 1
+  text: "Um\342\200\246 yes?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d17af643431740d169911"
+  }
+  index: 2
+  text: "How fare your comrades in the Central Valley? We regret that we have not paid as much attention to this region as we ought. San Francisco has consumed far too much of our time of late."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d17ce643431740d169914"
+  }
+  index: 3
+  text: "Well, that right there is the problem, Norton. Nobody gives any drek about little towns like ours, except as spots on a map that can be claimed for the glory of their empires. \n\nSacramento holds the political power, San Francisco the economic power, and Tir Tairngire the military. Against them, places like Redding are nothing."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d17e5643431740d169917"
+  }
+  index: 4
+  text: "So, how do we fare? Much better than we have any right to, I guess. Nobody gives us anything, and they\342\200\231d love to take away the little we already have. \n\nWe\342\200\231ve learned to keep our heads down, and hope that people like you will forget that we exist."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d17fc643431740d16991a"
+  }
+  index: 5
+  text: "People like us? We assure you, Elorn, all cities in California are cherished subjects of our empire!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d181e643431740d16991d"
+  }
+  index: 6
+  text: "Whatever you say. I must admit that I never lie awake at night worrying about what will happen when Emperor Norton invades our city."
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d182e643431740d169920"
+  }
+  index: 7
+  text: "Nor should you! For you are already fortunate citizens under our rule. \n\nAnd rest assured, we shall do all in our power to keep you safe."
+  branches {
+    responseText: ""
+    nextNodeIndex: 8
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d1844643431740d169923"
+  }
+  index: 8
+  text: "That\342\200\231s a fine offer. But what exactly is in your power? \n\nI mean no disrespect, but where are your armies? Where are your drones? Will you bring infrastructure, logistics, training? \n\nWhat, exactly, do you DO?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 9
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+nodes {
+  idRef {
+    id: "536d185c643431740d169926"
+  }
+  index: 9
+  text: "Do?\n\n{{GM}}Norton laughs heartily.{{/GM}}\n\nOur dear Elorn, it is not what we do, it is who we ARE! We embody California, in all her strengths and contradictions. \n\nAs long as we remain hale, so shall our beloved nation. And as long as our nation remains strong, so shall we. Do you understand?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 10
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d188a643431740d169929"
+  }
+  index: 10
+  text: "I wish I did, Norton. I really wish I did.\n\n{{GM}}Elorn sighs glumly.{{/GM}}\n\nI would give anything to have the depths of your beliefs."
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+}
+roots {
+  nextNodeIndex: 0
+}

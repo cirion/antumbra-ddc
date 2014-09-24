@@ -1,0 +1,430 @@
+idRef {
+  id: "536fe001366236941d003311"
+}
+ui_name: "a3-five-Stuffer_Shack"
+nodes {
+  idRef {
+    id: "536fe00d366236941d003317"
+  }
+  index: 0
+  text: "Welcome to Stuffer Shack! May I take your order?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536fe023366236941d00331a"
+  }
+  index: 1
+  text: ""
+  branches {
+    responseText: "{{CC}}\302\24510{{/CC}} I\'d like some Soylent Red."
+    nextNodeIndex: 2
+    onlyOnce: true
+    idRef {
+      id: "536fe3c1366236941d003321"
+    }
+  }
+  branches {
+    responseText: "{{CC}}\302\2455{{/CC}} I\'ll take a Krillburger."
+    nextNodeIndex: 3
+    onlyOnce: true
+    idRef {
+      id: "536fe3c4366236941d003322"
+    }
+  }
+  branches {
+    responseText: "{{CC}}\302\2453{{/CC}} Give me a Wunderbar."
+    nextNodeIndex: 4
+    onlyOnce: true
+    idRef {
+      id: "536fe3c6366236941d003323"
+    }
+  }
+  branches {
+    responseText: "{{CC}}\302\2452{{/CC}} I\'ll just have a Soykaff."
+    nextNodeIndex: 5
+    onlyOnce: true
+    idRef {
+      id: "536fe3c9366236941d003324"
+    }
+  }
+  branches {
+    responseText: "Well, what DO you have?!"
+    conditions {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Variable (int)"
+            args {
+              string_value: "stufferShackQueries"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 3
+            }
+          }
+        }
+        args {
+          int_value: 4
+        }
+      }
+    }
+    nextNodeIndex: 6
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "536fe481366236941d003341"
+    }
+  }
+  branches {
+    responseText: "Can you move that van blocking the entrance to the scrapyard?"
+    nextNodeIndex: 7
+  }
+  branches {
+    responseText: "{{GM}}Leave.{{/GM}}"
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536fe026366236941d00331d"
+  }
+  index: 2
+  text: "I\'m sorry, we\'re out of Soylent Red."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "stufferShackQueries"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "536fe419366236941d003336"
+  }
+  index: 3
+  text: "Sorry, we\'re fresh out of Krillburgers."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "stufferShackQueries"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "536fe429366236941d00333a"
+  }
+  index: 4
+  text: "Sure, one second... actually, no, sorry, looks like we\'ve sold all our Wunderbars."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "stufferShackQueries"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "536fe448366236941d00333e"
+  }
+  index: 5
+  text: "I apologize, $(l.sir), but our Soykaff machine is broken."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "stufferShackQueries"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "536fe483366236941d003343"
+  }
+  index: 6
+  text: "Um... an unaccountably cheery disposition?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536fe4a7366236941d003347"
+  }
+  index: 7
+  text: "Oh, that\'s our delivery van. Sorry, I\'m not authorized to leave the Shack, let alone operate company fleet vehicles without the designated permits."
+  branches {
+    responseText: "{{CC}}Etiquette: Corporate{{/CC}} Son, if you want to start climbing the corporate ladder, you\'ll need to start showing initiative and demonstrating value to your superiors!"
+    conditions {
+      ops {
+        functionName: "Compare Actor Skill"
+        args {
+          call_value {
+            functionName: "Get Map Item (Player)"
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "BaseOrCurrent"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "ActorSkills"
+            }
+            args {
+              int_value: 13
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+        args {
+          int_value: 0
+        }
+      }
+    }
+    nextNodeIndex: 8
+  }
+  branches {
+    responseText: "{{CC}}Etiquette: Street{{/CC}} Hey, man, I just need to get some clothes out of there. You\'re a wageslave, you should know how hard we have it."
+    conditions {
+      ops {
+        functionName: "Compare Actor Skill"
+        args {
+          call_value {
+            functionName: "Get Map Item (Player)"
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "BaseOrCurrent"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "ActorSkills"
+            }
+            args {
+              int_value: 18
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+        args {
+          int_value: 0
+        }
+      }
+    }
+    nextNodeIndex: 9
+  }
+  branches {
+    responseText: "Please, you gotta help me out here!"
+    nextNodeIndex: 10
+    onlyOnce: true
+    idRef {
+      id: "536fe692366236941d00334c"
+    }
+  }
+  branches {
+    responseText: "Listen up, if you don\'t move that van in FIVE SECONDS, I\'ll implant my fist in the back of your skull!"
+    nextNodeIndex: 11
+    onlyOnce: true
+    idRef {
+      id: "536fe69c366236941d00334e"
+    }
+  }
+  branches {
+    responseText: "Fine, never mind."
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536ffc99366236941d003358"
+  }
+  index: 8
+  text: "Yeah... yeah! That\'s right!\n\nHow am I ever gonna make Deputy Assistant Manager if I keep manning this counter like a sucker? I\'ll show them that I\'ve got the Stuffer Shack Spirit!"
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "moveVanPendingState"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "536ffc55366236941d003356"
+  }
+  index: 9
+  text: "All right, all right. Please don\'t make a scene. Just get out of here."
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "moveVanPendingState"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "536ffb93366236941d003352"
+  }
+  index: 10
+  text: "See, I\'d really like to help you, but... okay, that\'s a lie. I couldn\'t care less. Next!"
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536ffb81366236941d003350"
+  }
+  index: 11
+  text: "Pfft, whatever, $(l.man). I\'ve got health insurance."
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  nextNodeIndex: 0
+}

@@ -1,0 +1,25 @@
+unique_id: "a3_crew_norton_lv1"
+equipment {
+  prefab_name: "norton_clothes"
+}
+equipment {
+  prefab_name: "Spell Haste 2"
+}
+equipment {
+  prefab_name: "HealthPack_med"
+}
+equipment {
+  prefab_name: "Air Barrier 4"
+}
+equipment {
+  prefab_name: "Spell Aim 2"
+}
+equipment {
+  prefab_name: "Bound Nature Spirit 3"
+}
+equipment {
+  prefab_name: "Bound Air Spirit 2"
+}
+equipment {
+  prefab_name: "Spell Heal Wound"
+}

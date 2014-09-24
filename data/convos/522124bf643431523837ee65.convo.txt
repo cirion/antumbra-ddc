@@ -1,0 +1,923 @@
+idRef {
+  id: "522124bf643431523837ee65"
+}
+ui_name: "A2S04-OpeningConflict"
+nodes {
+  idRef {
+    id: "522124d8643431523837ee6b"
+  }
+  index: 0
+  text: "Clear the streets, you vermin!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  sourceInSceneRef {
+    id: "52212513643431523837ee71"
+  }
+}
+nodes {
+  idRef {
+    id: "5221279f643431523837ee7d"
+  }
+  index: 1
+  text: "Yeah? Who\342\200\231s going to make us?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  sourceInSceneRef {
+    id: "522126b9643431523837ee73"
+  }
+}
+nodes {
+  idRef {
+    id: "522127b0643431523837ee80"
+  }
+  index: 2
+  text: "These are our streets! We were born here, raised here, sold our first rocks here, got laid here!\n\nWe ain\342\200\231t going anywhere, so slot off!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  sourceInSceneRef {
+    id: "522126b9643431523837ee73"
+  }
+}
+nodes {
+  idRef {
+    id: "522127c3643431523837ee83"
+  }
+  index: 3
+  text: "I\342\200\231m warning you! This city is under martial law, and you are in violation of a curfew order. Disperse immediately or I will be forced to open fire!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+  sourceInSceneRef {
+    id: "52212513643431523837ee71"
+  }
+}
+nodes {
+  idRef {
+    id: "522127e2643431523837ee86"
+  }
+  index: 4
+  text: "Curfew? Are you mental? The fragging sun has barely gone down!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "522126b9643431523837ee73"
+  }
+}
+nodes {
+  idRef {
+    id: "522128c8643431523837eeff"
+  }
+  index: 5
+  text: "{{GM}}The mood between the gangers and the marines is growing more heated every moment.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53724c126434311639fc4da3"
+  }
+  index: 6
+  text: ""
+  branches {
+    responseText: ""
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "5215664d3662365c180018bf"
+            }
+            args {
+              string_value: "A2_HaileyDied"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "5215664d3662365c180018bf"
+            }
+            args {
+              string_value: "A2_HiredHailey_Part1"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 7
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "522128ed643431523837ef10"
+    }
+  }
+  branches {
+    responseText: ""
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "5215664d3662365c180018bf"
+            }
+            args {
+              string_value: "A2_OrionDied"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "5215664d3662365c180018bf"
+            }
+            args {
+              string_value: "A2_HiredOrion_Part1"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 12
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "5221290f643431523837ef28"
+    }
+  }
+  branches {
+    responseText: "Why do they need to leave?"
+    conditions {
+      ops {
+        functionName: "Compare Actor Race"
+        args {
+          call_value {
+            functionName: "Get Map Item (Player)"
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Race"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 13
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "5221296a643431523837ef2d"
+    }
+  }
+  branches {
+    responseText: "Why do they need to leave?"
+    conditions {
+      ops {
+        functionName: "Compare Actor Race"
+        args {
+          call_value {
+            functionName: "Get Map Item (Player)"
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Race"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 15
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "5222595a36623658070039fe"
+    }
+  }
+  branches {
+    responseText: "Where do you expect them to go?"
+    nextNodeIndex: 17
+    onlyOnce: true
+    idRef {
+      id: "52212a0b643431523837ef3a"
+    }
+  }
+  branches {
+    responseText: "What will happen if they don\342\200\231t disperse?"
+    nextNodeIndex: 19
+    onlyOnce: true
+    idRef {
+      id: "52212a43643431523837ef46"
+    }
+  }
+  branches {
+    responseText: "{{CC}}Etiquette: Security{{/CC}} You marines need to take it down a notch. Defuse tensions. Retreat and wait for backup before the shooting starts."
+    conditions {
+      ops {
+        functionName: "Compare Actor Skill"
+        args {
+          call_value {
+            functionName: "Triggering Actor"
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "BaseOrCurrent"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "ActorSkills"
+            }
+            args {
+              int_value: 14
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+        args {
+          int_value: 0
+        }
+      }
+    }
+    nextNodeIndex: 23
+    onlyOnce: true
+    idRef {
+      id: "522c2edb3662361c1b000ea7"
+    }
+  }
+  branches {
+    responseText: "{{CC}}Etiquette: Gang{{/CC}} Chill, chummers. This battle isn\342\200\231t worth fighting."
+    conditions {
+      ops {
+        functionName: "Compare Actor Skill"
+        args {
+          call_value {
+            functionName: "Triggering Actor"
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "BaseOrCurrent"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "ActorSkills"
+            }
+            args {
+              int_value: 15
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+        args {
+          int_value: 0
+        }
+      }
+    }
+    nextNodeIndex: 25
+    onlyOnce: true
+    idRef {
+      id: "522172373662365c160035b0"
+    }
+  }
+  branches {
+    responseText: "Do what the marine says: disperse."
+    nextNodeIndex: 27
+  }
+  branches {
+    responseText: "Go away, marines. They\342\200\231re not moving."
+    nextNodeIndex: 28
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53724c1a6434311639fc4db8"
+  }
+  index: 7
+  text: "Voire? What\'s going on?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 8
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "522124b0643431523837ee64"
+  }
+}
+nodes {
+  idRef {
+    id: "53724c1a6434311639fc4dbb"
+  }
+  index: 8
+  text: "Hai... Hailey? What are you doing here?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 9
+  }
+  sourceInSceneRef {
+    id: "522126b9643431523837ee73"
+  }
+}
+nodes {
+  idRef {
+    id: "53724c1a6434311639fc4dbe"
+  }
+  index: 9
+  text: "Watching my friend commit suicide by cop, from the looks of it."
+  branches {
+    responseText: ""
+    nextNodeIndex: 10
+  }
+  sourceInSceneRef {
+    id: "522124b0643431523837ee64"
+  }
+}
+nodes {
+  idRef {
+    id: "53724c1a6434311639fc4dc1"
+  }
+  index: 10
+  text: "It isn\342\200\231t like that! We\342\200\231re sick of getting pushed around, Hailey. We need to make a stand! Otherwise, they\342\200\231ll just keep shuffling us along, until one day they sweep us out of the city altogether!\n\nYou\342\200\231re human. You don\342\200\231t know what it\342\200\231s like to live with this every day."
+  branches {
+    responseText: ""
+    nextNodeIndex: 11
+  }
+  sourceInSceneRef {
+    id: "522126b9643431523837ee73"
+  }
+}
+nodes {
+  idRef {
+    id: "53724c1a6434311639fc4dc4"
+  }
+  index: 11
+  text: "You\342\200\231re right, I don\342\200\231t know what it\342\200\231s like. But I know what it\342\200\231s like to live, and I want you to keep living, Voire."
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "522124b0643431523837ee64"
+  }
+}
+nodes {
+  idRef {
+    id: "53724c206434311639fc4dd0"
+  }
+  index: 12
+  text: "{{GM}}Orion addresses you quietly.{{/GM}} \n\nLook at them, $(l.name). They\342\200\231re frightened. All of them. Everyone knows that the cataclysm is coming, but nobody is prepared for it. We may be witnessing the first stones shaking loose the avalanche that is to come."
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "522124b0643431523837ee64"
+  }
+}
+nodes {
+  idRef {
+    id: "53724c596434311639fc4dfb"
+  }
+  index: 13
+  text: "To keep proper citizens like yourself safe! I can\342\200\231t believe how ungrateful you lot are for the protection of Saito-san. If he didn\342\200\231t keep the metahumans in line, Frisco would be another disaster like Seattle."
+  branches {
+    responseText: ""
+    nextNodeIndex: 14
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "52212513643431523837ee71"
+  }
+}
+nodes {
+  idRef {
+    id: "53724c596434311639fc4dfe"
+  }
+  index: 14
+  text: "Geez! You moron, nobody calls it Frisco! You\342\200\231ll never be a part of this city, stop trying to pretend like you own it!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+    auxiliaryLink: true
+  }
+  sourceInSceneRef {
+    id: "5222324e366236501300116a"
+  }
+}
+nodes {
+  idRef {
+    id: "53724c636434311639fc4e0d"
+  }
+  index: 15
+  text: "Because $(l.race_plural) like you are endangering this city! Everybody knows that when groups of metahumans congregate, violence always results. Saito-san needs to keep you lot under control, otherwise Frisco will turn into another disaster like Seattle."
+  branches {
+    responseText: ""
+    nextNodeIndex: 16
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "52212513643431523837ee71"
+  }
+}
+nodes {
+  idRef {
+    id: "53724c636434311639fc4e10"
+  }
+  index: 16
+  text: "Geez! You moron, nobody calls it Frisco! You\342\200\231ll never be a part of this city, stop trying to pretend like you own it!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "522126b9643431523837ee73"
+  }
+}
+nodes {
+  idRef {
+    id: "53724c736434311639fc4e1f"
+  }
+  index: 17
+  text: "The gutter, probably? Or the cemetery? "
+  branches {
+    responseText: ""
+    nextNodeIndex: 18
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "522126b9643431523837ee73"
+  }
+}
+nodes {
+  idRef {
+    id: "53724c736434311639fc4e22"
+  }
+  index: 18
+  text: "{{GM}}The marine wearily rubs his eyes.{{/GM}} \n\nGo back to those awful squats you vermin occupy. "
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+    auxiliaryLink: true
+  }
+  sourceInSceneRef {
+    id: "52212513643431523837ee71"
+  }
+}
+nodes {
+  idRef {
+    id: "53724c796434311639fc4e37"
+  }
+  index: 19
+  text: "I am authorized to use any and every force at my disposal to ensure that the streets are safe. "
+  branches {
+    responseText: ""
+    nextNodeIndex: 20
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "52212513643431523837ee71"
+  }
+}
+nodes {
+  idRef {
+    id: "53724c796434311639fc4e3a"
+  }
+  index: 20
+  text: "So, you\342\200\231ll shoot us, then?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 21
+  }
+  sourceInSceneRef {
+    id: "522126b9643431523837ee73"
+  }
+}
+nodes {
+  idRef {
+    id: "53724c796434311639fc4e3d"
+  }
+  index: 21
+  text: "If you threaten the lives of my men, then yes, I will be forced to shoot you."
+  branches {
+    responseText: ""
+    nextNodeIndex: 22
+  }
+  sourceInSceneRef {
+    id: "52212513643431523837ee71"
+  }
+}
+nodes {
+  idRef {
+    id: "53724c796434311639fc4e40"
+  }
+  index: 22
+  text: "For every ork or troll you slay, I\342\200\231ll kill two of your men. For every elf you murder, I\342\200\231ll kill four marines."
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+    auxiliaryLink: true
+  }
+  sourceInSceneRef {
+    id: "522126b9643431523837ee73"
+  }
+}
+nodes {
+  idRef {
+    id: "53724c826434311639fc4e4c"
+  }
+  index: 23
+  text: "Negative! We hold the line!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 24
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "52212513643431523837ee71"
+  }
+}
+nodes {
+  idRef {
+    id: "53724c826434311639fc4e4f"
+  }
+  index: 24
+  text: "{{GM}}Despite the captain\342\200\231s commands, you notice that some of the more grizzled marines apparently agree with you. They slip quietly away while he rails against the gang.{{/GM}}"
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "52212513643431523837ee71"
+  }
+  actions {
+    ops {
+      functionName: "Send Event"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Security Dispersing"
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "53724c896434311639fc4e58"
+  }
+  index: 25
+  text: "If this isn\342\200\231t, than nothing is! Stay strong, chummers! We can do it!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 26
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "522126b9643431523837ee73"
+  }
+}
+nodes {
+  idRef {
+    id: "53724c896434311639fc4e5b"
+  }
+  index: 26
+  text: "{{GM}}Despite Voire\342\200\231s pleas, some of his followers appear reluctant. They sheepishly walk away, leaving him with a smaller group than before.{{/GM}}"
+  sourceInSceneRef {
+    id: "522126b9643431523837ee73"
+  }
+  actions {
+    ops {
+      functionName: "Send Event"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Gangers Dispersing"
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "53724c8c6434311639fc4e61"
+  }
+  index: 27
+  text: "Frag you, $(l.guy)! Nobody will push us around any more!"
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Send Event"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Sided with Security"
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "53724c906434311639fc4e6a"
+  }
+  index: 28
+  text: "Negative!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 29
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "52212513643431523837ee71"
+  }
+}
+nodes {
+  idRef {
+    id: "53724c906434311639fc4e6d"
+  }
+  index: 29
+  text: "This is it, chummers! CHARGE!"
+  sourceInSceneRef {
+    id: "522126b9643431523837ee73"
+  }
+  actions {
+    ops {
+      functionName: "Send Event"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Sided with Gangers"
+          }
+        }
+      }
+    }
+  }
+}
+roots {
+  responseText: ""
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "ArgumentStarted"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "ArgumentStarted"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  nextNodeIndex: 0
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 5
+  auxiliaryLink: true
+}

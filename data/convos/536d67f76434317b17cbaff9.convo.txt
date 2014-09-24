@@ -1,0 +1,184 @@
+idRef {
+  id: "536d67f76434317b17cbaff9"
+}
+ui_name: "a3-five-Dorbi_4"
+nodes {
+  idRef {
+    id: "536d67fd6434317b17cbafff"
+  }
+  index: 0
+  text: "Here comes the cavalry!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536d60ab6434317b17cbaec6"
+  }
+}
+nodes {
+  idRef {
+    id: "536d68066434317b17cbb002"
+  }
+  index: 1
+  text: "What. \n\nThe. \n\nFrag."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536d60fe6434317b17cbaec8"
+  }
+}
+nodes {
+  idRef {
+    id: "536d68136434317b17cbb005"
+  }
+  index: 2
+  text: "Dorbi, meet our new partners. The Native Californians are here to save the day."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536d60af6434317b17cbaec7"
+  }
+}
+nodes {
+  idRef {
+    id: "536d68166434317b17cbb008"
+  }
+  index: 3
+  text: "Well, well. There\342\200\231s a feisty little stuntie. It\342\200\231s so cute that your daddy lets you play with the big boys."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536d60ab6434317b17cbaec6"
+  }
+}
+nodes {
+  idRef {
+    id: "536d681b6434317b17cbb00b"
+  }
+  index: 4
+  text: "WHAT did you call me?!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536d60fe6434317b17cbaec8"
+  }
+}
+nodes {
+  idRef {
+    id: "536d681f6434317b17cbb00e"
+  }
+  index: 5
+  text: "Stuntie. Or do you prefer halfer? You\342\200\231re half-height, are you half-witted as well?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536d60ab6434317b17cbaec6"
+  }
+}
+nodes {
+  idRef {
+    id: "536d685f6434317b17cbb011"
+  }
+  index: 6
+  text: "\342\200\246."
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536d60fe6434317b17cbaec8"
+  }
+}
+nodes {
+  idRef {
+    id: "536d68646434317b17cbb014"
+  }
+  index: 7
+  text: "That\342\200\231s IT. I\342\200\231m not about to start working with you racist scum, and if my gang\342\200\231s joining you, I\342\200\231m leaving them."
+  branches {
+    responseText: ""
+    nextNodeIndex: 8
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536d60fe6434317b17cbaec8"
+  }
+}
+nodes {
+  idRef {
+    id: "536d68696434317b17cbb017"
+  }
+  index: 8
+  text: "I never thought you\342\200\231d go soft, Dorbi. Well, it\342\200\231s your funeral. "
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536d60af6434317b17cbaec7"
+  }
+  actions {
+    ops {
+      functionName: "Trigger: Run Alternate Trigger"
+      args {
+        call_value {
+          functionName: "Get Map Item (Trigger)"
+          args {
+            string_value: "536fc5b5366236941d00316c"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WaitOrNot"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+}
+roots {
+  nextNodeIndex: 0
+}

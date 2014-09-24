@@ -1,0 +1,172 @@
+idRef {
+  id: "536d1611643431740d1698bd"
+}
+ui_name: "a3-banter-1_Hailey_Dorbi"
+nodes {
+  idRef {
+    id: "536d161f643431740d1698c3"
+  }
+  index: 0
+  text: "Hee hee\342\200\246"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d162e643431740d1698c6"
+  }
+  index: 1
+  text: "Yes, Hailey? Is something amusing?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d163d643431740d1698c9"
+  }
+  index: 2
+  text: "Oh\342\200\246 I was just remembering a funny cat trideo I saw yesterday. It kept crawling into boxes that were way too small for it and\342\200\246 oh, it\342\200\231s hard to explain. \n\nI can send it to you, you should watch it!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d165d643431740d1698cc"
+  }
+  index: 3
+  text: "Aw, that\342\200\231s sweet, but I\342\200\231m afraid I try to stay away from tri-vids. Technology and magic not mixing and all that."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d1670643431740d1698cf"
+  }
+  index: 4
+  text: "I\342\200\231ve actually been meaning to ask you about that! \n\nI know that you\342\200\231re, like, this super-powerful awesome sorceress or whatever, and can\342\200\231t go around stuffing your bod full of chrome like I do. But it doesn\342\200\231t hurt your essence to type on a computer or stare at a flatscreen, right? So why would you deny yourself the tech that you can use?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d168b643431740d1698d2"
+  }
+  index: 5
+  text: "Well, it\342\200\231s all a continuum, right? Yeah, it\342\200\231s the implants that directly steal my essence, but the more time I spend using and thinking about computers, the less time I\342\200\231m practicing my art. \n\nIt distracts me from the astral world, and makes me less, as you say, super-powerful."
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d16a1643431740d1698d5"
+  }
+  index: 6
+  text: "And besides, it would just bother me to think that I\342\200\231m missing out. \n\nI\342\200\231m well aware that my experience of that funny cat video can only be a pale reflection of your experience. When you\342\200\231re plugged in with your datajack, you\342\200\231re getting stimsense impressions of the cat\342\200\231s furriness, its scent, and can see it from all directions."
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d16f9643431740d1698d8"
+  }
+  index: 7
+  text: "But when I watch it on the tri-vid set, I only see with my mundane eyes. It bugs me to think that I\342\200\231m not getting the best, and I\342\200\231d rather take nothing at all than the worst."
+  branches {
+    responseText: ""
+    nextNodeIndex: 8
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d1712643431740d1698db"
+  }
+  index: 8
+  text: "I think I understand! \n\nIt\342\200\231s like, after I got my Fuchi cyberdeck, I\342\200\231d never be able to go back to using the Sony model instead. It\342\200\231s way too frustrating to use a crappy deck after you\342\200\231ve experienced a better one."
+  branches {
+    responseText: ""
+    nextNodeIndex: 9
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d172b643431740d1698de"
+  }
+  index: 9
+  text: "Well, except that if you\342\200\231re like every other decker I know, you\342\200\231d rather connect to the matrix with two tin cans and a piece of string than not connect at all. And I think I\342\200\231ll survive just fine without any cat vids."
+  branches {
+    responseText: ""
+    nextNodeIndex: 10
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d1746643431740d1698e1"
+  }
+  index: 10
+  text: "But this one was really, REALLY good! Hm\342\200\246 "
+  branches {
+    responseText: ""
+    nextNodeIndex: 11
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d1757643431740d1698e4"
+  }
+  index: 11
+  text: "Well, there\342\200\231s no other alternative: we\342\200\231ll need to get a cat, and train it to climb into boxes."
+  branches {
+    responseText: ""
+    nextNodeIndex: 12
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
+}
+nodes {
+  idRef {
+    id: "536d1768643431740d1698e7"
+  }
+  index: 12
+  text: "Ha! Yes, Hailey, that\342\200\231s the only logical choice available."
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+roots {
+  nextNodeIndex: 0
+}

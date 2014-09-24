@@ -1,0 +1,93 @@
+idRef {
+  id: "536d50946434317b17cbac95"
+}
+ui_name: "a3-crypt-Tophet_2"
+nodes {
+  idRef {
+    id: "536d509b6434317b17cbac9b"
+  }
+  index: 0
+  text: "YOU ARE STRONGER THAN I EXPECTED, LITTLE MORTAL."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536d50b56434317b17cbac9e"
+  }
+  index: 1
+  text: ""
+  branches {
+    responseText: "Why did you try to kill me?"
+    nextNodeIndex: 2
+    onlyOnce: true
+    idRef {
+      id: "536d51216434317b17cbacb6"
+    }
+  }
+  branches {
+    responseText: "Who is your patron?"
+    nextNodeIndex: 4
+    onlyOnce: true
+    idRef {
+      id: "536d511e6434317b17cbacb5"
+    }
+  }
+  branches {
+    responseText: "It\342\200\231s finished."
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536d50c16434317b17cbaca3"
+  }
+  index: 2
+  text: "I COULD HAVE ACQUIRED BOUNDLESS STRENGTH. I LOCATED A SITE OF POWER, THE ONLY ONE NOT YET CLAIMED BY OTHERS.\n \nAND THEN YOUR ALLIES STOLE IT FROM ME! FROM DEEP BELOW ANTUMBRA, YOU DEFEATED MY GUARDIAN AND GAVE IT TO PETTY MEN IN SUITS, DEVOURING MAGIC POWER THAT THEY DO NOT DESERVE.\n"
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537914513662369815006045"
+  }
+  index: 3
+  text: "I COULD NOT RETURN TO THE ASTRAL PLANE. I THOUGHT I WAS LOST. AND THEN MY ALLY RESCUED ME."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536d50c96434317b17cbacaf"
+  }
+  index: 4
+  text: "THE GOLDEN ONE. THE PRINCE OF PRINCES. THE GREATEST. \n\nDO YOU UNDERSTAND? DO YOU KNOW FEAR?\n"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536d50ce6434317b17cbacb3"
+  }
+  index: 5
+  text: "NO. THE FLAME IS NOT YET EXTINGUISHED.\n\nWE SHALL MEET AGAIN. TWICE YOU HAVE BESTED ME. OUR THIRD MEETING SHALL BE YOUR DOOM."
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  nextNodeIndex: 0
+}

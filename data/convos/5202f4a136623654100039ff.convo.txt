@@ -1,0 +1,89 @@
+idRef {
+  id: "5202f4a136623654100039ff"
+}
+ui_name: "A1_EXT_Kali"
+nodes {
+  idRef {
+    id: "5202f4b43662365410003a06"
+  }
+  index: 0
+  text: "{{GM}}Kali breaks off a conversation with her assistant and turns to face you.{{/GM}}\n\nYou made it out in one piece! What did you find?"
+  branches {
+    responseText: "All sorts of awakened creatures, and even a spirit of some sort."
+    nextNodeIndex: 1
+  }
+  branches {
+    responseText: "Lady, you built your palace on top of a death trap. I\'m lucky to have escaped."
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5204482f36623608130004ba"
+  }
+  index: 1
+  text: "You don\'t say! That sounds dangerous. Well, I\'m glad that you made it out in one piece."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5204483836623608130004bd"
+  }
+  index: 2
+  text: "I must admit, I feel just a little out of my depth here. I know melodies and moods, but magic? Never go near the stuff when I can help it.\n\nI think I\'ll ring up Mr. Santo. He\'s been very helpful in putting together the assets for this place, and he has connections that will be very interested in such a powerful site under our doorstep."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5204484a36623608130004c0"
+  }
+  index: 3
+  text: "I\'ll transfer a reward into your account - you\'ve certainly earned it.\n\nI\'ll even do you one better and tell Mr. Santo what you\'ve accomplished here. A discovery like this will open many opportunities for an ambitious runner like you. Expect to hear from him soon."
+  branches {
+    responseText: "{{GM}}Leave.{{/GM}}"
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5204485336623608130004c3"
+  }
+  index: 4
+  text: ""
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "End Story With Epilogue"
+      args {
+        string_value: "kali"
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "520448a236623608130004d3"
+  }
+  index: 5
+  text: "I assure you, I thoroughly vetted this location before closing on the property. Whatever\'s going on down there must have happened very suddenly and very recently."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}

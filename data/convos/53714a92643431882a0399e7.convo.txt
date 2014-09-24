@@ -1,0 +1,159 @@
+idRef {
+  id: "53714a92643431882a0399e7"
+}
+ui_name: "a3-end-norton"
+nodes {
+  idRef {
+    id: "53714a9b643431882a0399ed"
+  }
+  index: 0
+  text: "Hail, $(l.name)! "
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "talkedToNorton"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "numPeopleTalkedTo"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "53714ac0643431882a0399f5"
+  }
+  index: 1
+  text: "When we first recruited you to our cause in defending California against Tir aggression, we had hoped that your skills as a shadowrunner would prove adequate for the task. \n\nIn truth, we have learned, you were better suited for this mission than we dared to dream."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714ace643431882a0399f8"
+  }
+  index: 2
+  text: "Any shadowrunner can deal death. You are one of the rare few who can bestow life. \n\nYour actions have saved an entire generation from suffering the horrors of another war, and perhaps broken the cycle of oppression and revenge that has so badly harmed relations between humans and metahumans."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714ae0643431882a0399fb"
+  }
+  index: 3
+  text: "And so, by the power invested in us by ourselves, we hereby raise your station and grant you the honors you are due. \n\nKneel, $+(story.LordLady) $(l.name).... and rise, $(scene.CountCountess) $(l.name) of Redding!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714b1d643431882a0399fe"
+  }
+  index: 4
+  text: "We hereby grant to you and to your progeny, unto perpetuity, sovereignty over the city of Redding, which your actions have saved on this May 28th, in the Year of Our Lord 2053. \n\nRule her with wisdom and strength, that she may grow and prosper under your benevolence."
+  branches {
+    responseText: "I thank my Emperor for this gracious gift."
+    nextNodeIndex: 5
+  }
+  branches {
+    responseText: "I\342\200\231ll put the city to good use."
+    nextNodeIndex: 6
+  }
+  branches {
+    responseText: "Thank you, but I cannot accept."
+    nextNodeIndex: 7
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714b55643431882a039a0e"
+  }
+  index: 5
+  text: "And so the Great Chain continues. \n\nWe trust - nay, we know - that you will uphold your part in the Chain, and show your subjects the ideal to which they may strive."
+  branches {
+    responseText: ""
+    nextNodeIndex: 8
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714b4f643431882a039a0a"
+  }
+  index: 6
+  text: "Of this we have no doubt. \n\nWhile she may be small, she will play an enormously important role in the years to come."
+  branches {
+    responseText: ""
+    nextNodeIndex: 8
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714b46643431882a039a03"
+  }
+  index: 7
+  text: "Nonsense! We speak not of what may be, but merely what is. \n\nYour actions have rescued the city, and she is a prize and a responsibility to you."
+  branches {
+    responseText: ""
+    nextNodeIndex: 8
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53714b4a643431882a039a06"
+  }
+  index: 8
+  text: "We may contact you from time to time as new crises arrive that require our action. Know, however, that we now consider you a peer, and worthy of overseeing our interests in this region. \n\nGo forth, and may all the people praise your name!"
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  nextNodeIndex: 0
+}

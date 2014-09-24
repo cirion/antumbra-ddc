@@ -1,0 +1,30 @@
+idRef {
+  id: "5204447b366236081300027c"
+}
+ui_name: "A1_Cave_CarverArrival"
+nodes {
+  idRef {
+    id: "520444873662360813000282"
+  }
+  index: 0
+  text: "How dare you!\n\nDid you think I wouldn\'t learn about your betrayal? I have that entire building bugged from beams to rafters!\n\nI\'ll teach you to cross a Johnson! You\'ll die down here, with this\342\200\246 thing and all the creatures!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "520444913662360813000285"
+  }
+  index: 1
+  text: "Yesssss\342\200\246 more fodder for my maw! Come and sate my hunger!"
+  sourceInSceneRef {
+    id: "520ade5f3662366c1f00012b"
+  }
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}

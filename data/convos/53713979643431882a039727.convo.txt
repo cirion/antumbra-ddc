@@ -1,0 +1,101 @@
+idRef {
+  id: "53713979643431882a039727"
+}
+ui_name: "a3-finale_cave-banter_hailey"
+nodes {
+  idRef {
+    id: "53713984643431882a03972d"
+  }
+  index: 0
+  text: "Ugh\342\200\246 why did we have to end up underground? \n\nIt\342\200\231s hella creepy down here. It feels so\342\200\246 final. "
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537139b4643431882a039732"
+  }
+  index: 1
+  text: ""
+  branches {
+    responseText: "Are you scared about what\342\200\231ll happen here?"
+    nextNodeIndex: 2
+    onlyOnce: true
+    idRef {
+      id: "537139d6643431882a03973e"
+    }
+  }
+  branches {
+    responseText: "Cheer up, it isn\342\200\231t so bad."
+    nextNodeIndex: 3
+  }
+  branches {
+    responseText: "It will certainly end here, in one way or another."
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537139be643431882a039739"
+  }
+  index: 2
+  text: "Yeah. I mean\342\200\246 we\342\200\231re gonna die, right? \n\nYou don\342\200\231t have to try and protect me. I know what\342\200\231s going on."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537139ed643431882a039740"
+  }
+  index: 3
+  text: "{{GM}}She cocks her head at you in bemusement.{{/GM}} \n\nI have a hard time imagining what would be worse. I guess being here alone."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53713a0d643431882a039743"
+  }
+  index: 4
+  text: "Yeah, but I think I know which way it\342\200\231ll be."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53713a12643431882a039746"
+  }
+  index: 5
+  text: "I always imagined that I\342\200\231d go out fighting black IC. Seated in a comfy chair, surrounded by empty cans of soykaf, brain fried to a crisp but with a smile on my face. \n\nNot, you know, buried under miles of rock with worms eating my flesh."
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53713b2d643431882a03974c"
+  }
+  index: 6
+  text: "{{GM}}She shudders.{{/GM}} \n\nI\342\200\231m sorry. I shouldn\342\200\231t be bringing you down, too. Let\342\200\231s get it over with."
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  nextNodeIndex: 0
+}

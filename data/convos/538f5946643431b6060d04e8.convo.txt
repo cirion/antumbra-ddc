@@ -1,0 +1,43 @@
+idRef {
+  id: "538f5946643431b6060d04e8"
+}
+ui_name: "a3-finale_dam-marine"
+nodes {
+  idRef {
+    id: "538f594b643431b6060d04ee"
+  }
+  index: 0
+  text: "Colonel Saito sends his regards."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "marineArrivalState"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "538f5953643431b6060d04f1"
+  }
+  index: 1
+  text: "The main force of his army is still a day\'s march away, but he sent us ahead to help you hold the line.\n\nWe\'re all going to die, but at least we can make Tir pay for this land with a torrent of elven blood. CHARGE!"
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  nextNodeIndex: 0
+}

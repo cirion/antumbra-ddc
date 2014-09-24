@@ -1,0 +1,139 @@
+idRef {
+  id: "5370ff79643431b120cd39f7"
+}
+ui_name: "a3-eclipse-omphalos"
+nodes {
+  idRef {
+    id: "5370ffba643431b120cd3a01"
+  }
+  index: 0
+  text: "Thank you so much for rescuing me! Is there anything I can do to repay you?"
+  branches {
+    responseText: "I could use a performer back in Redding."
+    nextNodeIndex: 1
+  }
+  branches {
+    responseText: "Got any cash?"
+    nextNodeIndex: 2
+  }
+  branches {
+    responseText: "No, get out of here."
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "No, I\342\200\231m just glad you\342\200\231re safe."
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5371000f643431b120cd3a06"
+  }
+  index: 1
+  text: "Say no more! I\342\200\231ll gladly help out. \n\nI\342\200\231ll catch the next shuttle out to the Central Valley. I can\342\200\231t wait to work with you!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Global_RecruitedOmphalos"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "53710075643431b120cd3a18"
+  }
+  index: 2
+  text: "Just my per diem, but you\342\200\231re welcome to it!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add Nuyen"
+      args {
+        int_value: 200
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "53710066643431b120cd3a13"
+  }
+  index: 3
+  text: "Thanks again, you\342\200\231re the best!"
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "omphalosLeaveState"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "537507086434316b13333630"
+          }
+        }
+      }
+    }
+  }
+}
+roots {
+  nextNodeIndex: 0
+}

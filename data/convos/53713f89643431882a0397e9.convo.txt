@@ -1,0 +1,151 @@
+idRef {
+  id: "53713f89643431882a0397e9"
+}
+ui_name: "a3-finale_cave-hestaby_1"
+nodes {
+  idRef {
+    id: "53713fde643431882a0397ef"
+  }
+  index: 0
+  text: "How\342\200\246 are you\342\200\246"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "537684326434316a34fc4630"
+  }
+}
+nodes {
+  idRef {
+    id: "53713fe1643431882a0397f2"
+  }
+  index: 1
+  text: "ENOUGH. \n\n{{GM}}The telepathic words of the great dragon reverberate through your skull.{{/GM}} \n\nYOU HAVE WROUGHT TOO MUCH DESTRUCTION ALREADY."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5371446e643431882a0397fc"
+  }
+  index: 2
+  text: "YOU FIGHT FOR THAT WHICH IS NOT YOURS. YOU, WHO HAVE MORE THAN ANYONE ELSE. \n\nYOUR GREED KNOWS NO BOUNDS, AND CANNOT BE SATED."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5371447b643431882a0397ff"
+  }
+  index: 3
+  text: "BUT IT IS NOT ENOUGH FOR YOU TO OWN EVERYTHING. \n\nYOU CRUSH THOSE AROUND YOU, INFLICT PAIN, MAKE ENEMIES AND BRING THEM TO RUIN."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5371448a643431882a039802"
+  }
+  index: 4
+  text: "I\342\200\231m sure we can come to some arrangement\342\200\246"
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "537684326434316a34fc4630"
+  }
+}
+nodes {
+  idRef {
+    id: "53714493643431882a039805"
+  }
+  index: 5
+  text: "THESE ARE MY TERMS. \n\nRETURN TO YOUR COUNCIL OF PRINCES, AND GIVE THEM THIS MESSAGE: THIS LAND IS UNDER *MY* PROTECTION. \n\nTHEIR ARMIES ARE NOT TO SET FOOT ON MOUNT SHASTA OR ANY POINTS SOUTH."
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537144a8643431882a039808"
+  }
+  index: 6
+  text: "{{GM}}The great dragon\342\200\231s eye swivels in your direction.{{/GM}} \n\n$++(l.name), YOU SPEAK FOR THE PEOPLE OF CALIFORNIA. \n\nONE DAY YOUR NATION WILL RISE AGAIN. WHEN THAT HAPPENS, YOU WILL NOT SEEK VENGEANCE ON TIR. YOUR ARMIES WILL NOT STEP ANY FARTHER NORTH THAN THE CITY OF REDDING."
+  branches {
+    responseText: "Yes."
+    nextNodeIndex: 7
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "Agreed."
+    nextNodeIndex: 7
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "It will be as you say."
+    nextNodeIndex: 7
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "As you command."
+    nextNodeIndex: 7
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537144da643431882a03980e"
+  }
+  index: 7
+  text: "{{GM}}Her gaze returns to Hans.{{/GM}} \n\nTAKE YOUR SURVIVORS AND GO.\n\nREMEMBER THAT, ON THIS DAY, I GAVE YOU YOUR LIFE. "
+  branches {
+    responseText: ""
+    nextNodeIndex: 8
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5371451c643431882a039816"
+  }
+  index: 8
+  text: "As you command.\n\n{{GM}}Hans bows deeply, hesitates for a moment, then carefully chooses his words.{{/GM}} \n\nI trust that we will meet again, and under more auspicious circumstances."
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "537684326434316a34fc4630"
+  }
+  actions {
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "endgameTalkState"
+          }
+        }
+      }
+      args {
+        int_value: 2
+      }
+    }
+  }
+}
+roots {
+  nextNodeIndex: 0
+}

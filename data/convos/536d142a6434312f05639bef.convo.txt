@@ -1,0 +1,185 @@
+idRef {
+  id: "536d142a6434312f05639bef"
+}
+ui_name: "a3-banter-1_Norton_Dorbi"
+nodes {
+  idRef {
+    id: "536d14386434312f05639bf5"
+  }
+  index: 0
+  text: "Ouch!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d14456434312f05639bf8"
+  }
+  index: 1
+  text: "What is it? \n\nAre we under attack?! \n\nAlarum! Alarum!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d14566434312f05639bfb"
+  }
+  index: 2
+  text: "No! Sorry, I didn\342\200\231t mean to blurt out like that. Just had a little accident.\n\nWhen we\342\200\231re between fights, I like to keep practicing my magic by playing with fire. Usually just a little bit, passing from hand to hand to keep in shape. But my mind was wandering, and I, um, accidentally may have turned it into a fireball.\n"
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d14686434312f05639bfe"
+  }
+  index: 3
+  text: "We realize that you are trying to reassure us, but your words have quite the opposite effect. \n\nDo you mean to tell us that we need not only look for attacks from without, but the possibility of a fireball engulfing us from within our ranks?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d14796434312f05639c01"
+  }
+  index: 4
+  text: "Not at all! I have it under control."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d14866434312f05639c04"
+  }
+  index: 5
+  text: "Except when you don\342\200\231t."
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d14936434312f05639c07"
+  }
+  index: 6
+  text: "\342\200\246 Yes."
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d14a26434312f05639c0a"
+  }
+  index: 7
+  text: "Dorbi, we have great respect for your prowess. We can sense your attunement to the astral world, and believe you have great potential for developing your skills. \n\nHowever, we must urge you to seek out a mentor to help tame your abilities."
+  branches {
+    responseText: ""
+    nextNodeIndex: 8
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d14b66434312f05639c0d"
+  }
+  index: 8
+  text: "Let me guess, you\342\200\231re volunteering yourself?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 9
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d14c36434312f05639c10"
+  }
+  index: 9
+  text: "Alas, our political duties leave us no time for the rigors of teaching. And we fear that our shamanistic talents would prove only tangentially useful to your more arcane focus.\n\nAlthough, that does raise an interesting prospect. Have you considered seeking out a totem? Many have found both solace and power in the instruction offered by a guide from the spirit realm."
+  branches {
+    responseText: ""
+    nextNodeIndex: 10
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d14e36434312f05639c13"
+  }
+  index: 10
+  text: "Ha! Well, for me, that would kind of defeat the point. \n\nYou see, I\342\200\231ve always been drawn to magic because of the independence it allows. People can take away my home, my guns, my friends. But even if I\342\200\231m tied up in a dungeon somewhere, I\342\200\231ll be able to call on my inner power to see me safely out."
+  branches {
+    responseText: ""
+    nextNodeIndex: 11
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d14fa6434312f05639c16"
+  }
+  index: 11
+  text: "I don\342\200\231t deny that totems are powerful. They can be friendly, but really, they\342\200\231re just another master, someone you need to keep happy and satisfied. \n\nThat\342\200\231s not for me! I just like setting things on fire!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 12
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+nodes {
+  idRef {
+    id: "536d151f6434312f05639c1a"
+  }
+  index: 12
+  text: "\342\200\246 Indeed. And, as your singed coat reveals, you have quite a talent for it."
+  branches {
+    responseText: ""
+    nextNodeIndex: 13
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
+}
+nodes {
+  idRef {
+    id: "536d15306434312f05639c1d"
+  }
+  index: 13
+  text: "Okay, I take your point. I\342\200\231ll be more careful next time. "
+  nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
+}
+roots {
+  nextNodeIndex: 0
+}

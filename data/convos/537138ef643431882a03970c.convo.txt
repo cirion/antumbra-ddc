@@ -1,0 +1,37 @@
+idRef {
+  id: "537138ef643431882a03970c"
+}
+ui_name: "a3-finale_cave-banter_norton_1"
+nodes {
+  idRef {
+    id: "5371391c643431882a039712"
+  }
+  index: 0
+  text: "A most ignominious end! \n\nIt looks like, despite our best efforts, we shall perish deep within the earth. Tir Tairngire shall win the day, and the state of California shall lose her freedom."
+  branches {
+    responseText: "There\342\200\231s still hope."
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "We\342\200\231ll make sure it costs them."
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "A death\342\200\231s a death, it doesn\342\200\231t matter how we die."
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53713941643431882a039717"
+  }
+  index: 1
+  text: "While we may be doomed, we can at least choose the manner of our passing. \n\nLet us claim our place in history, and let the world know that California did not pass lightly! \n\nFor freedom! For empire! Forward!"
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  nextNodeIndex: 0
+}

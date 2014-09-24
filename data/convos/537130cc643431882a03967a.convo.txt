@@ -1,0 +1,61 @@
+idRef {
+  id: "537130cc643431882a03967a"
+}
+ui_name: "a3-finale_dam-tabitha_2"
+nodes {
+  idRef {
+    id: "537130d8643431882a039680"
+  }
+  index: 0
+  text: "YOU SEEK TO DENY ME MY PRIZE? YOU WILL BURN."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536c5c82366236d41e0027ad"
+  }
+}
+nodes {
+  idRef {
+    id: "537130e3643431882a039683"
+  }
+  index: 1
+  text: "No. You are wrong, Tophet.\n\n{{GM}}She shakes her head sadly.{{/GM}}  \n\nYou were never meant to be here. You have experienced only sorrow upon this plane, and multiply that sorrow everywhere you go. \n\nI will return you. It\342\200\231s time to go home."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537130fd643431882a039686"
+  }
+  index: 2
+  text: "NO! I WAS PROMISED! I WAS PROMISED! HE SAID\342\200\246."
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536c5c82366236d41e0027ad"
+  }
+  actions {
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "tabithaBanishing"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+roots {
+  nextNodeIndex: 0
+}

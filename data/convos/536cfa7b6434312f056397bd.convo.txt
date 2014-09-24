@@ -1,0 +1,577 @@
+idRef {
+  id: "536cfa7b6434312f056397bd"
+}
+ui_name: "a3-redding-Elorn"
+nodes {
+  idRef {
+    id: "536cfa876434312f056397c3"
+  }
+  index: 0
+  text: "Yeah? Do you need something?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536cfa966434312f056397c6"
+  }
+  index: 1
+  text: ""
+  branches {
+    responseText: "I\342\200\231m glad to see you survived that hostage situation."
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Redding_Convo_Elorn_Hostage"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 2
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "536cfaed6434312f056397cd"
+    }
+  }
+  branches {
+    responseText: "Do you know anything about the Tir invasion?"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Redding_Convo_Elorn_TirInvasion"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (int)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Global_numMissionsCompleted"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+        args {
+          int_value: 2
+        }
+      }
+    }
+    nextNodeIndex: 3
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "536cfb666434312f056397df"
+    }
+  }
+  branches {
+    responseText: "What can you tell me about Redding?"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Redding_Convo_Elorn_Redding"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (int)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Global_numMissionsCompleted"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+        args {
+          int_value: 1
+        }
+      }
+    }
+    nextNodeIndex: 8
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "536cfca76434312f056397ff"
+    }
+  }
+  branches {
+    responseText: "What kind of training do you have?"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Redding_Convo_Elorn_Training"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 11
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "536cfca46434312f056397fe"
+    }
+  }
+  branches {
+    responseText: "Take care."
+    nextNodeIndex: 14
+  }
+  branches {
+    responseText: "{{GM}}Leave.{{/GM}}"
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "talkedToElorn"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "536cfafe6434312f056397cf"
+  }
+  index: 2
+  text: "I don\342\200\231t think I ever thanked you for that. So\342\200\246 thanks.\n\n{{GM}}Elorn shuffles awkwardly for a moment before meeting your eyes.{{/GM}}\n\nCompared to the war you\342\200\231re facing, it would have been easy to ignore the fate of a couple of elves. It means a lot to us that you care for those living under your protection, and not just killing your enemies."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Redding_Convo_Elorn_Hostage"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "536cfb4c6434312f056397de"
+  }
+  index: 3
+  text: "What? Just because I\342\200\231m an elf, you assume that I\342\200\231m intimately familiar with enemy troop movements?"
+  branches {
+    responseText: "You\342\200\231re more local than me, maybe you\342\200\231ve seen something."
+    nextNodeIndex: 4
+  }
+  branches {
+    responseText: "An infiltrator might have let something slip around you."
+    nextNodeIndex: 5
+  }
+  branches {
+    responseText: "Well, do you have any relatives in Tir?"
+    nextNodeIndex: 7
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Redding_Convo_Elorn_TirInvasion"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "536cfbae6434312f056397e4"
+  }
+  index: 4
+  text: "Well, I don\342\200\231t make a habit of crossing the DMZ into enemy territory, so\342\200\246 no, I haven\342\200\231t seen anything that might help you."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536cfbc66434312f056397e8"
+  }
+  index: 5
+  text: "Oh, sure. because as soon as a Tir Tairngire elf sees a CalFree elf, he can\342\200\231t WAIT to blab about all of his secret plans."
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536cfbd66434312f056397eb"
+  }
+  index: 6
+  text: "Let me explain to you how this works: Tir elves HATE elves like me. We\342\200\231re seen as lesser creatures, traitors to our kind. \n\nIf there ARE any  infiltrators around - and I\342\200\231m not suggesting there are - you can probably identify them by how strongly they\342\200\231re avoiding me."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536cfbef6434312f056397ef"
+  }
+  index: 7
+  text: "No! Why do people assume that we\342\200\231re all one big happy family? Not all elves have elf parents, and not all elf parents have elf kids. \n\nMy relatives are all CalFree, and if any of them crossed the border, they probably wouldn\342\200\231t make it back out alive."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536cfc1b6434312f056397f3"
+  }
+  index: 8
+  text: "It\342\200\231s already started changing since you arrived here. It tends to be both sleepy and on edge at the same time, if that makes sense\342\200\246 we\342\200\231ve been fought over and abandoned, and try not to worry about it too much. "
+  branches {
+    responseText: ""
+    nextNodeIndex: 9
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Redding_Convo_Elorn_Redding"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "536cfc426434312f056397f6"
+  }
+  index: 9
+  text: "These days, there\342\200\231s more of a sense of purpose. Everyone knows that a war is coming, and we\342\200\231ll be the first casualties. \n\nSo we don\342\200\231t have much choice: we have to train ourselves, arm ourselves, and prepare for what\342\200\231s coming."
+  branches {
+    responseText: ""
+    nextNodeIndex: 10
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536cfc646434312f056397f9"
+  }
+  index: 10
+  text: "We would probably have just formed a militia, but now that you\342\200\231re setting up here with your out-of-town friends, it seems like our best chance for survival is to work together. After that, who knows what will happen?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536cfc806434312f056397fd"
+  }
+  index: 11
+  text: "My dad was a leader of the local insurgency after Tir Tairngire invaded back in \342\200\23036. He helped make sure that me and my sisters would grow up in freedom, and he did it by shooting bullets into the back of elven heads."
+  branches {
+    responseText: ""
+    nextNodeIndex: 12
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Redding_Convo_Elorn_Training"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "536cfd066434312f05639802"
+  }
+  index: 12
+  text: "Ever since we were old enough to hold a pistol, he\342\200\231s trained us in marksmanship. We\342\200\231ve always known that Tir was coming back one day, and all of us would need to be ready to fight them. I\342\200\231ve drilled at the target range almost every day for most of my life."
+  branches {
+    responseText: ""
+    nextNodeIndex: 13
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536cfd1a6434312f05639805"
+  }
+  index: 13
+  text: "That said, I don\342\200\231t really have much experience shooting actual, living people. At most I\342\200\231ll occasionally need to take down a hellhound or cockatrice. \n\nThat fight at the dam was the closest exposure to death I\342\200\231ve experienced.  I don\342\200\231t think I\342\200\231m quite used to it yet\342\200\246 but I\342\200\231ll need to be if we\342\200\231re going to win against Tir."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536cfd5f6434312f05639809"
+  }
+  index: 14
+  text: "Thanks. You, too."
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  nextNodeIndex: 0
+}

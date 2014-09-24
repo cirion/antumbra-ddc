@@ -1,0 +1,1117 @@
+minX: -4
+minZ: -27
+numX: 25
+numZ: 47
+props {
+  name: "barrens_building_01base01"
+  gridPoint {
+    x: 10
+    y: 0
+    z: 4
+  }
+  orientation: ORIENTATION_S
+}
+props {
+  name: "barrens_building_01baseBevelBack01"
+  gridPoint {
+    x: 10
+    y: 0
+    z: -2
+  }
+  orientation: ORIENTATION_S
+}
+props {
+  name: "barrens_building_01baseDoor01"
+  gridPoint {
+    x: 10
+    y: 0
+    z: 1
+  }
+  orientation: ORIENTATION_S
+}
+props {
+  name: "barrens_building_01baseFrontCorner01"
+  gridPoint {
+    x: 8
+    y: 0
+    z: 7
+  }
+  orientation: ORIENTATION_S
+}
+props {
+  name: "barrens_building_01base01"
+  gridPoint {
+    x: 5
+    y: 0
+    z: 9
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "51f87e703662360c0f00484f"
+  }
+}
+props {
+  name: "barrens_building_01base01"
+  gridPoint {
+    x: 2
+    y: 0
+    z: 9
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "51f87e743662360c0f004850"
+  }
+}
+props {
+  name: "barrens_building_01baseBevelBack01"
+  gridPoint {
+    x: -1
+    y: 0
+    z: 9
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "51f87e863662360c0f004853"
+  }
+}
+props {
+  name: "barrens_building_01edge01"
+  gridPoint {
+    x: 10
+    y: 3
+    z: 4
+  }
+  orientation: ORIENTATION_S
+}
+props {
+  name: "barrens_building_01edge05"
+  gridPoint {
+    x: 5
+    y: 3
+    z: 9
+  }
+  orientation: ORIENTATION_E
+}
+props {
+  name: "barrens_building_01edgeCorner02"
+  gridPoint {
+    x: 8
+    y: 3
+    z: 7
+  }
+  orientation: ORIENTATION_S
+}
+props {
+  name: "barrens_building_01edgeCorner02"
+  gridPoint {
+    x: 8
+    y: 6
+    z: 7
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f87ee23662360c0f004854"
+  }
+}
+props {
+  name: "barrens_building_01edgeCorner02"
+  gridPoint {
+    x: 8
+    y: 6
+    z: 7
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f87ee63662360c0f004855"
+  }
+}
+props {
+  name: "barrens_building_01edge05"
+  gridPoint {
+    x: 5
+    y: 6
+    z: 9
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "51f87f093662360c0f004856"
+  }
+}
+props {
+  name: "barrens_building_01edge05"
+  gridPoint {
+    x: 5
+    y: 6
+    z: 9
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "51f87f0b3662360c0f004857"
+  }
+}
+props {
+  name: "barrens_building_01edge05"
+  gridPoint {
+    x: 2
+    y: 6
+    z: 9
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "51f87f263662360c0f004858"
+  }
+}
+props {
+  name: "barrens_building_01edge05"
+  gridPoint {
+    x: 2
+    y: 6
+    z: 9
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "51f87f2c3662360c0f004859"
+  }
+}
+props {
+  name: "barrens_building_01edge05"
+  gridPoint {
+    x: 2
+    y: 3
+    z: 9
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "51f87f2f3662360c0f00485a"
+  }
+}
+props {
+  name: "barrens_building_01edge01"
+  gridPoint {
+    x: 10
+    y: 3
+    z: 1
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f87f453662360c0f00485b"
+  }
+}
+props {
+  name: "barrens_building_01edge03"
+  gridPoint {
+    x: 10
+    y: 6
+    z: 4
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f87f483662360c0f00485c"
+  }
+}
+props {
+  name: "barrens_building_01edge03"
+  gridPoint {
+    x: 10
+    y: 6
+    z: 1
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f87f583662360c0f00485d"
+  }
+}
+props {
+  name: "barrens_building_01edge03"
+  gridPoint {
+    x: 10
+    y: 6
+    z: -2
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f87f5b3662360c0f00485e"
+  }
+}
+props {
+  name: "barrens_building_01edge03"
+  gridPoint {
+    x: 10
+    y: 3
+    z: -2
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f87f623662360c0f00485f"
+  }
+}
+props {
+  name: "barrens_building_01edge04"
+  gridPoint {
+    x: -1
+    y: 3
+    z: 9
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "51f87f843662360c0f004860"
+  }
+}
+props {
+  name: "barrens_building_01edge04"
+  gridPoint {
+    x: -1
+    y: 6
+    z: 9
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "51f87f8b3662360c0f004861"
+  }
+}
+props {
+  name: "barrens_building_01edge04"
+  gridPoint {
+    x: -1
+    y: 6
+    z: 9
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "51f87f8d3662360c0f004862"
+  }
+}
+props {
+  name: "barrens_building_01edge06"
+  gridPoint {
+    x: 10
+    y: 6
+    z: 4
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f87fb33662360c0f004863"
+  }
+}
+props {
+  name: "barrens_building_01edge06"
+  gridPoint {
+    x: 10
+    y: 6
+    z: -2
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f87fbc3662360c0f004864"
+  }
+}
+props {
+  name: "barrens_building_01edge02"
+  gridPoint {
+    x: 10
+    y: 6
+    z: 1
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f87fc13662360c0f004865"
+  }
+}
+props {
+  name: "pikePlace_building_02roofCorner"
+  gridPoint {
+    x: 8
+    y: 10
+    z: 7
+  }
+  orientation: ORIENTATION_S
+}
+props {
+  name: "pikePlace_building_02roofFrontSide01"
+  gridPoint {
+    x: 5
+    y: 10
+    z: 7
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f8805f3662360c0f004866"
+  }
+}
+props {
+  name: "pikePlace_building_02roofFrontSide01"
+  gridPoint {
+    x: 0
+    y: 10
+    z: 7
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f880d83662360c0f004867"
+  }
+}
+props {
+  name: "pikePlace_building_02roofCenter01"
+  gridPoint {
+    x: 7
+    y: 10
+    z: 4
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f881013662360c0f004868"
+  }
+}
+props {
+  name: "pikePlace_building_02roofCenter01"
+  gridPoint {
+    x: 4
+    y: 10
+    z: 4
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f881053662360c0f004869"
+  }
+}
+props {
+  name: "pikePlace_building_02roofCenter01"
+  gridPoint {
+    x: 1
+    y: 10
+    z: 4
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f881063662360c0f00486a"
+  }
+}
+props {
+  name: "pikePlace_building_02roofCenter01"
+  gridPoint {
+    x: 1
+    y: 10
+    z: 1
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f881083662360c0f00486b"
+  }
+}
+props {
+  name: "pikePlace_building_02roofCenter01"
+  gridPoint {
+    x: 4
+    y: 10
+    z: 1
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f8810a3662360c0f00486c"
+  }
+}
+props {
+  name: "pikePlace_building_02roofCenter01"
+  gridPoint {
+    x: 7
+    y: 10
+    z: 1
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f8810c3662360c0f00486d"
+  }
+}
+props {
+  name: "pikePlace_building_02roofFrontSide01"
+  gridPoint {
+    x: 2
+    y: 10
+    z: 7
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f8810e3662360c0f00486e"
+  }
+}
+props {
+  name: "pikePlace_building_02roofFrontSide01"
+  gridPoint {
+    x: 8
+    y: 10
+    z: 4
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "51f881123662360c0f00486f"
+  }
+}
+props {
+  name: "pikePlace_building_02roofFrontSide01"
+  gridPoint {
+    x: 8
+    y: 10
+    z: 1
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "51f8811c3662360c0f004870"
+  }
+}
+props {
+  name: "pikePlace_building_02roofFrontCorner"
+  gridPoint {
+    x: 8
+    y: 10
+    z: -2
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f881253662360c0f004872"
+  }
+}
+props {
+  name: "pikePlace_building_02roofFrontCorner"
+  gridPoint {
+    x: -2
+    y: 10
+    z: 7
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "51f8812c3662360c0f004873"
+  }
+}
+props {
+  name: "pikePlace_building_02roofSideBack"
+  gridPoint {
+    x: -2
+    y: 10
+    z: 4
+  }
+  orientation: ORIENTATION_E
+}
+props {
+  name: "pikePlace_building_02roofSideBack"
+  gridPoint {
+    x: -2
+    y: 10
+    z: 1
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "51f8816b3662360c0f004875"
+  }
+}
+props {
+  name: "pikePlace_building_02roofSideBack"
+  gridPoint {
+    x: -1
+    y: 10
+    z: -2
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f8816f3662360c0f004876"
+  }
+}
+props {
+  name: "pikePlace_building_02roofSideBack"
+  gridPoint {
+    x: 5
+    y: 10
+    z: -2
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f881723662360c0f004877"
+  }
+}
+props {
+  name: "pikePlace_building_02roofSideBack"
+  gridPoint {
+    x: 2
+    y: 10
+    z: -2
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f881733662360c0f004878"
+  }
+}
+props {
+  name: "pikePlace_building_02roofBackCorner01"
+  gridPoint {
+    x: -2
+    y: 10
+    z: -2
+  }
+  orientation: ORIENTATION_S
+}
+props {
+  name: "pikePlace_building_02corner04"
+  gridPoint {
+    x: 4
+    y: 10
+    z: 4
+  }
+  orientation: ORIENTATION_S
+}
+props {
+  name: "pikePlace_building_02edge02"
+  gridPoint {
+    x: 6
+    y: 11
+    z: 3
+  }
+  orientation: ORIENTATION_S
+}
+props {
+  name: "pikePlace_building_02roofCorner"
+  gridPoint {
+    x: 8
+    y: 10
+    z: 7
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f882fc366236fc22002cd7"
+  }
+}
+props {
+  name: "pikePlace_building_02roofCorner"
+  gridPoint {
+    x: 4
+    y: 15
+    z: 4
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f88302366236fc22002cd8"
+  }
+}
+props {
+  name: "barrens_building_01edge02"
+  gridPoint {
+    x: 6
+    y: 11
+    z: 1
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f883d2366236fc22002cd9"
+  }
+}
+props {
+  name: "barrens_building_01edge02"
+  gridPoint {
+    x: 1
+    y: 11
+    z: 6
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "51f883f5366236fc22002cda"
+  }
+}
+props {
+  name: "pikePlace_building_02roofFrontSide01"
+  gridPoint {
+    x: 5
+    y: 16
+    z: 3
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "51f88400366236fc22002cdb"
+  }
+}
+props {
+  name: "pikePlace_building_02roofBackCorner01"
+  gridPoint {
+    x: -1
+    y: 13
+    z: -1
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f88416366236fc22002cdc"
+  }
+}
+props {
+  name: "pikePlace_building_02roofFrontCorner"
+  gridPoint {
+    x: 0
+    y: 14
+    z: 3
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "51f88443366236fc22002cdd"
+  }
+}
+props {
+  name: "pikePlace_building_02roofFrontCorner"
+  gridPoint {
+    x: 3
+    y: 14
+    z: 0
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f88455366236fc22002cde"
+  }
+}
+props {
+  name: "barrens_building_01edge02"
+  gridPoint {
+    x: 6
+    y: 10
+    z: 1
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f88467366236fc22002cdf"
+  }
+}
+props {
+  name: "barrens_building_01edge02"
+  gridPoint {
+    x: 1
+    y: 10
+    z: 6
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "51f8846b366236fc22002ce0"
+  }
+}
+props {
+  name: "barrens_ground_sidewalkCorner"
+  gridPoint {
+    x: 11
+    y: 0
+    z: 10
+  }
+  orientation: ORIENTATION_S
+}
+props {
+  name: "barrens_ground_sidewalk01"
+  gridPoint {
+    x: 11
+    y: 0
+    z: 7
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f88536366236fc22002ce1"
+  }
+}
+props {
+  name: "barrens_ground_sidewalk01"
+  gridPoint {
+    x: 11
+    y: 0
+    z: -2
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f8853b366236fc22002ce4"
+  }
+}
+props {
+  name: "barrens_ground_sidewalk01"
+  gridPoint {
+    x: 8
+    y: 0
+    z: 10
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f8853d366236fc22002ce5"
+  }
+}
+props {
+  name: "barrens_ground_sidewalk01"
+  gridPoint {
+    x: 2
+    y: 0
+    z: 10
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f88540366236fc22002ce7"
+  }
+}
+props {
+  name: "barrens_ground_sidewalk01"
+  gridPoint {
+    x: -1
+    y: 0
+    z: 10
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f88541366236fc22002ce8"
+  }
+}
+props {
+  name: "barrens_ground_sidewalk01"
+  gridPoint {
+    x: 11
+    y: 0
+    z: 1
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f88544366236fc22002ce9"
+  }
+}
+props {
+  name: "barrens_ground_sidewalk01"
+  gridPoint {
+    x: 5
+    y: 0
+    z: 10
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f88550366236fc22002cea"
+  }
+}
+props {
+  name: "barrens_ground_sidewalk01"
+  gridPoint {
+    x: 11
+    y: 0
+    z: -5
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f8855b366236fc22002ceb"
+  }
+}
+props {
+  name: "barrens_ground_sidewalk03"
+  gridPoint {
+    x: 8
+    y: 0
+    z: -5
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f8855d366236fc22002cec"
+  }
+}
+props {
+  name: "barrens_ground_sidewalk03"
+  gridPoint {
+    x: 11
+    y: 0
+    z: 4
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f88561366236fc22002ced"
+  }
+}
+props {
+  name: "barrens_ground_sidewalk02"
+  gridPoint {
+    x: -4
+    y: 0
+    z: 10
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f8856b366236fc22002cee"
+  }
+}
+props {
+  name: "barrens_ground_sidewalk02"
+  gridPoint {
+    x: -4
+    y: 0
+    z: 7
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f8856d366236fc22002cef"
+  }
+}
+props {
+  name: "barrens_ground_crosswalkCornerTop"
+  gridPoint {
+    x: 14
+    y: 0
+    z: 10
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "51f8857c366236fc22002cf0"
+  }
+}
+props {
+  name: "barrens_ground_crosswalkCornerTop"
+  gridPoint {
+    x: 11
+    y: 0
+    z: 13
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "51f88583366236fc22002cf1"
+  }
+}
+props {
+  name: "barrens_ground_crosswalkCornerTop"
+  gridPoint {
+    x: 11
+    y: 0
+    z: 16
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "51f8858a366236fc22002cf2"
+  }
+}
+props {
+  name: "barrens_ground_crosswalkCornerTop"
+  gridPoint {
+    x: 17
+    y: 0
+    z: 10
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "51f8858d366236fc22002cf4"
+  }
+}
+props {
+  name: "barrens_ground_cobblestone"
+  gridPoint {
+    x: 14
+    y: 0
+    z: 13
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f88592366236fc22002cf7"
+  }
+}
+props {
+  name: "barrens_ground_cobblestone"
+  gridPoint {
+    x: 17
+    y: 0
+    z: 13
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f88594366236fc22002cf8"
+  }
+}
+props {
+  name: "barrens_ground_cobblestone"
+  gridPoint {
+    x: 14
+    y: 0
+    z: 16
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f88597366236fc22002cfb"
+  }
+}
+props {
+  name: "barrens_ground_cobblestone"
+  gridPoint {
+    x: 17
+    y: 0
+    z: 16
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f8859b366236fc22002cfe"
+  }
+}
+props {
+  name: "barrens_ground_twoLaneDouble01"
+  gridPoint {
+    x: 14
+    y: 0
+    z: 4
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "51f885a6366236fc22002d01"
+  }
+}
+props {
+  name: "barrens_ground_twoLaneDouble01"
+  gridPoint {
+    x: 14
+    y: 0
+    z: -2
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "51f885a9366236fc22002d02"
+  }
+}
+props {
+  name: "barrens_ground_twoLaneDouble01"
+  gridPoint {
+    x: 14
+    y: 0
+    z: -5
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "51f885ab366236fc22002d03"
+  }
+}
+props {
+  name: "barrens_ground_twoLaneDouble01"
+  gridPoint {
+    x: 5
+    y: 0
+    z: 13
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f885ae366236fc22002d04"
+  }
+}
+props {
+  name: "barrens_ground_twoLaneDouble01"
+  gridPoint {
+    x: -1
+    y: 0
+    z: 13
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f885b3366236fc22002d05"
+  }
+}
+props {
+  name: "barrens_ground_twoLaneDouble01"
+  gridPoint {
+    x: -4
+    y: 0
+    z: 13
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "51f885b4366236fc22002d06"
+  }
+}
+props {
+  name: "barrens_signs_billboard09"
+  gridPoint {
+    x: 1
+    y: 11
+    z: 8
+  }
+  orientation: ORIENTATION_E
+}
+props {
+  name: "barrens_signs_sign29"
+  gridPoint {
+    x: 9
+    y: 3
+    z: 10
+  }
+  orientation: ORIENTATION_W
+}
+props {
+  name: "barrens_signs_sign48"
+  gridPoint {
+    x: 3
+    y: 0
+    z: -27
+  }
+  orientation: ORIENTATION_N
+}
+props {
+  name: "pikePlace_wallDecoration_genericGrafitti06"
+  gridPoint {
+    x: 11.2
+    y: 4
+    z: -1
+  }
+  orientation: ORIENTATION_S
+}
+props {
+  name: "secretLab_tech_largeWallMonitor03"
+  gridPoint {
+    x: 10
+    y: 0
+    z: 6
+  }
+  orientation: ORIENTATION_S
+}
+props {
+  name: "pikePlace_buildingOrnament_techPanel01"
+  gridPoint {
+    x: 0
+    y: -3
+    z: -24
+  }
+  orientation: ORIENTATION_S
+}
+props {
+  name: "pikePlace_buildingOrnament_wallPipe01"
+  gridPoint {
+    x: 8
+    y: 10
+    z: 2
+  }
+  orientation: ORIENTATION_S
+}
+props {
+  name: "pikePlace_wallDecoration_genericGrafitti01"
+  gridPoint {
+    x: 11
+    y: 0
+    z: -1
+  }
+  orientation: ORIENTATION_S
+}
+props {
+  name: "pikePlace_street_overheadWalkwayPillar01"
+  gridPoint {
+    x: 10
+    y: 12
+    z: 9
+  }
+  orientation: ORIENTATION_S
+}
+props {
+  name: "pikePlace_street_overheadWalkway01"
+  gridPoint {
+    x: 3
+    y: 0
+    z: 10
+  }
+  orientation: ORIENTATION_S
+}
+props {
+  name: "pikePlace_vehicle_weaponsVan01"
+  gridPoint {
+    x: 14
+    y: 0
+    z: -1
+  }
+  orientation: ORIENTATION_S
+}
+props {
+  name: "pikePlace_street_displayTech02"
+  gridPoint {
+    x: 7
+    y: 0
+    z: 10
+  }
+  orientation: ORIENTATION_S
+}

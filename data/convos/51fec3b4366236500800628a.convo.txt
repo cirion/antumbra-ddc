@@ -1,0 +1,343 @@
+idRef {
+  id: "51fec3b4366236500800628a"
+}
+ui_name: "A1_Club_Terminal"
+nodes {
+  idRef {
+    id: "51fec3da3662365008006293"
+  }
+  index: 0
+  text: "Welcome to Antumbra! How may I virtually assist you today?"
+  branches {
+    responseText: "{{GM}}Check building amenities.{{/GM}}"
+    nextNodeIndex: 1
+  }
+  branches {
+    responseText: "{{GM}}Look at the music schedule.{{/GM}}"
+    nextNodeIndex: 2
+  }
+  branches {
+    responseText: "{{GM}}Get more information on Kali.{{/GM}}"
+    nextNodeIndex: 3
+  }
+  branches {
+    responseText: "{{CC}}Decking 2{{/CC}} {{GM}}Hack into the talent database.{{/GM}}"
+    conditions {
+      ops {
+        functionName: "Compare Actor Skill"
+        args {
+          call_value {
+            functionName: "Triggering Actor"
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "BaseOrCurrent"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "ActorSkills"
+            }
+            args {
+              int_value: 5
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 3
+            }
+          }
+        }
+        args {
+          int_value: 2
+        }
+      }
+    }
+    nextNodeIndex: 4
+  }
+  branches {
+    responseText: "{{GM}}Log off.{{/GM}}"
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "51fec45d3662365008006299"
+  }
+  index: 1
+  text: "As the Sprawl\342\200\231s newest club, Antumbra features the latest state-of-the-art comforts for Seattle\342\200\231s finest denizens. Kali\342\200\231s extensive industry contacts ensure that the hottest acts will always appear in Antumbra. Our bars are stocked with the most delicious beverages, including artisinal brands of Ta\303\251ngel\303\251. Be sure not to miss our dining room, where Seattle\342\200\231s finest chefs prepare meat from real animals!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 0
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "51fec48736623650080062a6"
+  }
+  index: 2
+  text: "{{GM}}Tonight{{/GM}} Rasputin\342\200\231s Clowns, Brainhammer, DJ Leporid.\n{{GM}}Tomorrow{{/GM}} Horatio and the Boys, Purple Monkey Dishwasher, Timmy\342\200\231s House of Sprinkles.\n{{GM}}Upcoming{{/GM}} Kali, DJ Omphalos, DJ Jaaaaake, The Rat King, Total Commitment. "
+  branches {
+    responseText: ""
+    nextNodeIndex: 0
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "51fec4ad36623650080062ab"
+  }
+  index: 3
+  text: "Once hailed as the next Maria Mercurial, Kali used her money and fame to launch her own music label, quickly becoming one of the most respected players in the industry. As someone who has lived the creative life, Kali has proven unusually adept at recruiting new talent, successfully luring many artists to join her. Antumbra marks the first step in what\342\200\231s certain to be an exciting expansion into live entertainment and real estate."
+  branches {
+    responseText: ""
+    nextNodeIndex: 0
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "51fec4ce36623650080062af"
+  }
+  index: 4
+  text: "{{GM}}As is often the case with creative types, Antumbra hasn\342\200\231t bothered applying the latest patches to their matrix LAN. You quickly gain access to the database.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "51fec50036623650080062b2"
+  }
+  index: 5
+  text: "What would you like to do?"
+  branches {
+    responseText: "{{GM}}Inspect the musician contracts.{{/GM}}"
+    nextNodeIndex: 6
+  }
+  branches {
+    responseText: "{{GM}}Check the visitor list.{{/GM}}"
+    nextNodeIndex: 7
+  }
+  branches {
+    responseText: "{{GM}}Upload yourself into the database.{{/GM}}"
+    nextNodeIndex: 8
+  }
+  branches {
+    responseText: "{{GM}}Log off.{{/GM}}"
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "51fec52336623650080062b8"
+  }
+  index: 6
+  text: "{{GM}}It looks like Kali is focusing on hot new acts, offering large signing bonuses but small royalties. If even a few of these make it big, she\342\200\231ll be rich. Well, richer.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+}
+nodes {
+  idRef {
+    id: "51fec53d36623650080062c4"
+  }
+  index: 7
+  text: "{{GM}}Kali doesn\342\200\231t have any appointments tonight. Earlier today, she met with The Rat King and Deconsecrated. Tomorrow afternoon she\342\200\231s scheduled to see Kisses With Saliva and Friendless. {{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "51fec55b36623650080062c6"
+  }
+  index: 8
+  text: "{{GM}}You upload your name and photo. What genre do you want to list?{{/GM}}"
+  branches {
+    responseText: "Chromatic"
+    nextNodeIndex: 9
+  }
+  branches {
+    responseText: "Coruscat"
+    nextNodeIndex: 9
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "Glitch Punk"
+    nextNodeIndex: 9
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "Neo Jazz"
+    nextNodeIndex: 9
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "Piobaireachd"
+    nextNodeIndex: 9
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "Thrumming"
+    nextNodeIndex: 10
+  }
+  branches {
+    responseText: "Toxic House"
+    nextNodeIndex: 9
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "51fec5a536623650080062cf"
+  }
+  index: 9
+  text: "{{GM}}You save your profile and sign off.{{/GM}} "
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "51f7429764343188990041a8"
+          }
+          args {
+            string_value: "A1_Bool_FakeMusician"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "51f7429764343188990041a8"
+          }
+          args {
+            string_value: "A1_Bool_FakePopularMusician"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "51fec61036623650080062ff"
+  }
+  index: 10
+  text: "{{GM}}You save your profile and sign off.{{/GM}} "
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "51f7429764343188990041a8"
+          }
+          args {
+            string_value: "A1_Bool_FakeMusician"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "51f7429764343188990041a8"
+          }
+          args {
+            string_value: "A1_Bool_FakePopularMusician"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}

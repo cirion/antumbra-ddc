@@ -1,0 +1,55 @@
+idRef {
+  id: "53866a4d643431661294f5ae"
+}
+ui_name: "a3-finale_dam-shavarus"
+nodes {
+  idRef {
+    id: "53866aa1643431661294f5b8"
+  }
+  index: 0
+  text: "Are you surprised to see me again?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53866aaa643431661294f5bb"
+  }
+  index: 1
+  text: "The last time we met, I swore that I would kill you. I do not take my promises lightly.\n\nNot to you, and certainly not to my followers."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53866ace643431661294f5be"
+  }
+  index: 2
+  text: "I was a fool to ever trust in Tir Tairngire\'s support. Now I\'ll be able to destroy them and you in a single blow.\n\nFarewell, $(l.name). I will take pleasure in gutting you."
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "shavarusArrivalState"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+roots {
+  nextNodeIndex: 0
+}
