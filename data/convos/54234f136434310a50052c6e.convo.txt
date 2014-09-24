@@ -1,0 +1,87 @@
+idRef {
+  id: "54234f136434310a50052c6e"
+}
+ui_name: "A2_Epilogue_EM"
+nodes {
+  idRef {
+    id: "54234c1c6434310a50052b31"
+  }
+  index: 0
+  text: "{{GM}}San Francisco, long known as a center of tolerance and fraternity, has erupted into open revolt. The rogue troll Shavarus, thwarted in his attempt to destroy the city, reinvents himself as a demagogue, urging rebellion throughout the city and the surrounding Bay Area.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "54234c8e6434310a50052b34"
+  }
+  index: 1
+  text: "{{GM}}Saito\'s already notorious paranoia increases yet further as he begins to see plots and schemes in every gathering of metahumans. Civil war appears inevitable. The only question remaining is which side will strike first.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "54234c9a6434310a50052b37"
+  }
+  index: 2
+  text: "{{GM}}However, news quietly spreads of a runner whose quick actions and wise decisions helped prevent an even worse fate. By dealing with the devil at the last moment, the runner saved the life of the city and all those living within it.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "54234ca86434310a50052b3a"
+  }
+  index: 3
+  text: "{{GM}}Who was this runner? The orks and dwarves of the city speak warmly of an ally, one who stood by their side even when the odds looked grim, someone who was willing to risk their own safety on behalf of the disenfranchised.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "54234cbc6434310a50052b3d"
+  }
+  index: 4
+  text: "{{GM}}In a time when few individuals of any race dared to question Saito, this shadowrunner proved that resistance was not merely possible, but laudable.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "54234cd46434310a50052b40"
+  }
+  index: 5
+  text: "{{GM}}Word of the runner spreads from San Francisco to CalFree and beyond. The world\'s most powerful megacorporations and militaries had seemed helpless to prevent a terrorist strike at the heart of their empire, but this runner succeeded where they failed, acting swiftly and decisively.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "54234ced6434310a50052b43"
+  }
+  index: 6
+  text: "{{GM}}Their fame continued to spread as countless corps and other groups sought them. Fame does not suit one who runs in the shadows, though, and so the shadowrunner ran, and ran, and ran...{{/GM}}"
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  nextNodeIndex: 0
+}

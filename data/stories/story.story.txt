@@ -1,4 +1,577 @@
-id: "Antumbra 3 - Corona"
+id: "Antumbra Saga"
+variables {
+  name: "CarverOpinion"
+  typeName: "int"
+  defaultValue {
+    int_value: 0
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "CarverOpinion"
+    }
+  }
+}
+variables {
+  name: "CarverAdvanced"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "CarverAdvanced"
+    }
+  }
+}
+variables {
+  name: "DalminJoined"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "DalminJoined"
+    }
+  }
+}
+variables {
+  name: "RecruitedHelp"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "RecruitedHelp"
+    }
+  }
+}
+variables {
+  name: "TurmJoined"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "TurmJoined"
+    }
+  }
+}
+variables {
+  name: "A1_Bool_KnowAboutNanites"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A1_Bool_KnowAboutNanites"
+    }
+  }
+}
+variables {
+  name: "A1_Bool_FakeMusician"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A1_Bool_FakeMusician"
+    }
+  }
+}
+variables {
+  name: "A1_Bool_FakePopularMusician"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A1_Bool_FakePopularMusician"
+    }
+  }
+}
+variables {
+  name: "A1_Bool_ToldCarverAboutNanites"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A1_Bool_ToldCarverAboutNanites"
+    }
+  }
+}
+variables {
+  name: "A1_Bool_KilledBoss"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A1_Bool_KilledBoss"
+    }
+  }
+}
+variables {
+  name: "A1_Bool_KilledCarver"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A1_Bool_KilledCarver"
+    }
+  }
+}
+variables {
+  name: "A1_Bool_SidedWithKali"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A1_Bool_SidedWithKali"
+    }
+  }
+}
+variables {
+  name: "A1_Bool_Won"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A1_Bool_Won"
+    }
+  }
+}
+variables {
+  name: "A1_Bool_DalminDied"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A1_Bool_DalminDied"
+    }
+  }
+}
+variables {
+  name: "A1_Bool_TurmDied"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A1_Bool_TurmDied"
+    }
+  }
+}
+variables {
+  name: "A2_AztechnologyHostile"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_AztechnologyHostile"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_BummerDead"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_BummerDead"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_DalminDied"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_DalminDied"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_DemoQuality"
+  typeName: "int"
+  defaultValue {
+    int_value: 0
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_DemoQuality"
+      typeName: "int"
+    }
+  }
+}
+variables {
+  name: "A2_Finale_HelpFromNorton"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_Finale_HelpFromNorton"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_Finale_HelpFromSaito"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_Finale_HelpFromSaito"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_Finale_ShavarusDies"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_Finale_ShavarusDies"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_Finale_ShavarusLives"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_Finale_ShavarusLives"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_FinishedDemo"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_FinishedDemo"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_FoundTarne"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_FoundTarne"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_HaileyDied"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_HaileyDied"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_HiredDalmin"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_HiredDalmin"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_HiredDalmin_Part1"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_HiredDalmin_Part1"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_HiredDalmin_Part2"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_HiredDalmin_Part2"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_HiredDalmin_Part3"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_HiredDalmin_Part3"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_HiredHailey"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_HiredHailey"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_HiredHailey_Part1"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_HiredHailey_Part1"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_HiredHailey_Part2"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_HiredHailey_Part2"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_HiredHailey_Part3"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_HiredHailey_Part3"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_HiredOrion"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_HiredOrion"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_HiredOrion_Part1"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_HiredOrion_Part1"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_HiredOrion_Part2"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_HiredOrion_Part2"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_HiredOrion_Part3"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_HiredOrion_Part3"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_LazarusDead"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_LazarusDead"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_Mission_SidedWithGangers"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_Mission_SidedWithGangers"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_Mission_SidedWithMarines"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_Mission_SidedWithMarines"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_OrionDied"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_OrionDied"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_RecordingGenre"
+  typeName: "string"
+  defaultValue {
+    string_value: ""
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_RecordingGenre"
+      typeName: "string"
+    }
+  }
+}
+variables {
+  name: "A2_ShavarusAgree"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_ShavarusAgree"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_ShavarusDisagree"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_ShavarusDisagree"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_SlowComputer"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_SlowComputer"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_UploadedCredentials"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_UploadedCredentials"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_VoireCaptured"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_VoireCaptured"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_VoireDied"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_VoireDied"
+      typeName: "bool"
+    }
+  }
+}
 variables {
   name: "a1_beatGame"
   typeName: "bool"
@@ -1356,11 +1929,11 @@ variables {
   }
 }
 description: "War looms over CalFree as the mighty armies of Tir Tairngire poise to invade. The dysfunctional state is unable to protect itself, and it falls to you to rally the defense. You will take on a leadership role, recruiting allies from the Bay Area and Central Valley as you struggle to cobble together some means of resisting the onslaught.\n\nThis is the third entry in the Antumbra campaign trilogy, and continues the story several months after the conclusion of Eclipse. You will need Dragonfall, Antumbra, and Eclipse installed in order to play Corona. You can either import a character from Eclipse or start a new one. If you choose to import a character, the story in Corona will be updated to reflect the choices you made in the first two games."
-startScene: "Intro"
-allowCharacterImport: true
+startScene: "Antumbra Exterior Night"
+allowCharacterImport: false
 allowImportedEquipment: true
 allowCharacterGen: true
-storyKarmaLevel: 85
+storyKarmaLevel: 42
 resalePercent: 75
 upgradeToThreeApLevel: -1
 upgradeToFourApLevel: -1
@@ -2681,6 +3254,405 @@ character_roster {
     }
     hiring_cost: 6
     content_pack_source: "518d7672643431b03f0041aa"
+  }
+  roster_entries {
+    reference_id: "berlinrunner_lv2_alnur"
+    hiring_conditions {
+    }
+    hiring_cost: 2
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "berlinrunner_lv2_luckystrike"
+    hiring_conditions {
+    }
+    hiring_cost: 2
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "berlinrunner_lv2_nixie"
+    hiring_conditions {
+    }
+    hiring_cost: 2
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "berlinrunner_lv2_okano"
+    hiring_conditions {
+    }
+    hiring_cost: 2
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "berlinrunner_lv2_pummelo"
+    hiring_conditions {
+    }
+    hiring_cost: 2
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "berlinrunner_lv3_alnur"
+    hiring_conditions {
+    }
+    hiring_cost: 3
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "berlinrunner_lv3_luckystrike"
+    hiring_conditions {
+    }
+    hiring_cost: 3
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "berlinrunner_lv3_nixie"
+    hiring_conditions {
+    }
+    hiring_cost: 3
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "berlinrunner_lv3_okano"
+    hiring_conditions {
+    }
+    hiring_cost: 3
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "berlinrunner_lv3_pummelo"
+    hiring_conditions {
+    }
+    hiring_cost: 3
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "berlinrunner_lv4_alnur"
+    hiring_conditions {
+    }
+    hiring_cost: 4
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "berlinrunner_lv4_luckystrike"
+    hiring_conditions {
+    }
+    hiring_cost: 4
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "berlinrunner_lv4_nixie"
+    hiring_conditions {
+    }
+    hiring_cost: 4
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "berlinrunner_lv4_okano"
+    hiring_conditions {
+    }
+    hiring_cost: 4
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "berlinrunner_lv4_pummelo"
+    hiring_conditions {
+    }
+    hiring_cost: 4
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "berlinrunner_lv5_alnur"
+    hiring_conditions {
+    }
+    hiring_cost: 5
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "berlinrunner_lv5_luckystrike"
+    hiring_conditions {
+    }
+    hiring_cost: 5
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "berlinrunner_lv5_nixie"
+    hiring_conditions {
+    }
+    hiring_cost: 5
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "berlinrunner_lv5_okano"
+    hiring_conditions {
+    }
+    hiring_cost: 5
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "berlinrunner_lv5_pummelo"
+    hiring_conditions {
+    }
+    hiring_cost: 5
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "berlinrunner_lv6_alnur"
+    hiring_conditions {
+    }
+    hiring_cost: 6
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "berlinrunner_lv6_luckystrike"
+    hiring_conditions {
+    }
+    hiring_cost: 6
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "berlinrunner_lv6_nixie"
+    hiring_conditions {
+    }
+    hiring_cost: 6
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "berlinrunner_lv6_okano"
+    hiring_conditions {
+    }
+    hiring_cost: 6
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "berlinrunner_lv6_pummelo"
+    hiring_conditions {
+    }
+    hiring_cost: 6
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "crew_lv1_blitz"
+    hiring_conditions {
+    }
+    hiring_cost: 2
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "crew_lv1_dietrich"
+    hiring_conditions {
+    }
+    hiring_cost: 1
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "crew_lv1_eiger"
+    hiring_conditions {
+    }
+    hiring_cost: 1
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "crew_lv1_glory"
+    hiring_conditions {
+    }
+    hiring_cost: 1
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "crew_lv1_monika"
+    hiring_conditions {
+    }
+    hiring_cost: 1
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "crew_lv2_blitz"
+    hiring_conditions {
+    }
+    hiring_cost: 2
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "crew_lv2_blitz_withdrone"
+    hiring_conditions {
+    }
+    hiring_cost: 2
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "crew_lv2_dietrich"
+    hiring_conditions {
+    }
+    hiring_cost: 2
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "crew_lv2_eiger"
+    hiring_conditions {
+    }
+    hiring_cost: 2
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "crew_lv2_glory"
+    hiring_conditions {
+    }
+    hiring_cost: 2
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "crew_lv3_blitz"
+    hiring_conditions {
+    }
+    hiring_cost: 3
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "crew_lv3_blitz_withdrone"
+    hiring_conditions {
+    }
+    hiring_cost: 3
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "crew_lv3_dietrich"
+    hiring_conditions {
+    }
+    hiring_cost: 3
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "crew_lv3_eiger"
+    hiring_conditions {
+    }
+    hiring_cost: 3
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "crew_lv3_glory"
+    hiring_conditions {
+    }
+    hiring_cost: 3
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "crew_lv4_blitz"
+    hiring_conditions {
+    }
+    hiring_cost: 4
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "crew_lv4_blitz_withdrone"
+    hiring_conditions {
+    }
+    hiring_cost: 4
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "crew_lv4_dietrich"
+    hiring_conditions {
+    }
+    hiring_cost: 4
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "crew_lv4_eiger"
+    hiring_conditions {
+    }
+    hiring_cost: 4
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "crew_lv4_glory"
+    hiring_conditions {
+    }
+    hiring_cost: 4
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "crew_lv5_blitz"
+    hiring_conditions {
+    }
+    hiring_cost: 5
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "crew_lv5_blitz_withdrone"
+    hiring_conditions {
+    }
+    hiring_cost: 5
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "crew_lv5_dietrich"
+    hiring_conditions {
+    }
+    hiring_cost: 5
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "crew_lv5_eiger"
+    hiring_conditions {
+    }
+    hiring_cost: 5
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "crew_lv5_glory"
+    hiring_conditions {
+    }
+    hiring_cost: 5
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "crew_lv6_apexdrone"
+    hiring_conditions {
+    }
+    hiring_cost: 6
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "crew_lv6_blitz"
+    hiring_conditions {
+    }
+    hiring_cost: 6
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "crew_lv6_blitz_withdrone"
+    hiring_conditions {
+    }
+    hiring_cost: 6
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "crew_lv6_dietrich"
+    hiring_conditions {
+    }
+    hiring_cost: 6
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "crew_lv6_eiger"
+    hiring_conditions {
+    }
+    hiring_cost: 6
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "crew_lv6_glory"
+    hiring_conditions {
+    }
+    hiring_cost: 6
+    content_pack_source: "53472c8f3234370824006c6a"
+  }
+  roster_entries {
+    reference_id: "story_dante"
+    hiring_conditions {
+    }
+    hiring_cost: 6
+    content_pack_source: "53472c8f3234370824006c6a"
   }
   roster_entries {
     reference_id: "a3_crew_bummer_lv1"

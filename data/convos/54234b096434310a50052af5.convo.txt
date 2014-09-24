@@ -1,0 +1,63 @@
+idRef {
+  id: "54234b096434310a50052af5"
+}
+ui_name: "A1_Epilogue_Carver"
+nodes {
+  idRef {
+    id: "54234b2b6434310a50052afb"
+  }
+  index: 0
+  text: "{{GM}}In fewer than twelve hours, word spreads of a massive nanite infestation in the flashy new club Antumbra. Angry residents of Everett riot, burning the entire block to contain the threat.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "54234b356434310a50052afe"
+  }
+  index: 1
+  text: "{{GM}}By the end of the day, Kali has fled in disgrace; once among Seattle\'s wealthiest residents, she now owes millions of nuyen to her dangerous business partners. The consortium sells the now-worthless property at a severe discount.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "54234b626434310a50052b01"
+  }
+  index: 2
+  text: "{{GM}}It is snapped up with surprising speed by a shell company backed by Aztechnology. Suspicious onlookers immediately begin speculating about a major play being made for influence in the Seattle Sprawl.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "54234b6b6434310a50052b04"
+  }
+  index: 3
+  text: "{{GM}}Rumors spread of a shadowrunner seen exiting Antumbra shortly before it began disintegrating. Some people curse the runner, wondering who would risk the lives of millions to earn a few credits. Most people simply nod in understanding.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "54234b886434310a50052b07"
+  }
+  index: 4
+  text: "{{GM}}Those who run in the shadows bring darkness wherever they go. All you can hope for is to have the best runner on your side. From now on, those who want the toughest jobs done will look for you.{{/GM}}"
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  nextNodeIndex: 0
+}

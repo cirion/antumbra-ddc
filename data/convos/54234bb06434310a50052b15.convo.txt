@@ -1,0 +1,39 @@
+idRef {
+  id: "54234bb06434310a50052b15"
+}
+ui_name: "A1_Epilogue_Kali"
+nodes {
+  idRef {
+    id: "54234bb46434310a50052b1b"
+  }
+  index: 0
+  text: "{{GM}}Antumbra closes \"for repairs\" the day after it opened. Irate partiers complain before making the long trek south to the glitzy clubs of downtown Seattle. When Kali re-opens it a week later, the leisure class is stunned by its matchless decor and entertainment. Before long Antumbra becomes the essential place to see and be seen.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "54234bd96434310a50052b1e"
+  }
+  index: 1
+  text: "{{GM}}Local conspiracy theorists persist in wondering what \"repairs\" were done, and try to link the club to a Mitsuhama skyscraper starting construction next door. No connection is ever proven, and the speculators remain grasping at straws.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "54234be66434310a50052b21"
+  }
+  index: 2
+  text: "{{GM}}Those few in the know, however, tell another story: the story of a runner who broke a contract and saved thousands of lives. A runner sure to be despised by all the Mr. Johnsons of Seattle, but who has earned the undying gratitude of powerful allies. This runner ran into the shadows and brought the light.{{/GM}}"
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  nextNodeIndex: 0
+}

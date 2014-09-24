@@ -1,8 +1,8 @@
 project_id: "531d26a736623648180018bf"
-project_name: "Antumbra 3 - Corona"
-project_version: "1.0.0"
+project_name: "Antumbra Saga"
+project_version: "0.0.1"
 author_name: "Cirion"
-synopsis: "Antumbra 3 - Corona"
+synopsis: "Antumbra Saga"
 has_story: true
 read_only: false
 preview_image: "preview"
@@ -17,7 +17,7 @@ content_pack_dependencies {
   package_id: "51c3790e643431ec22169899"
   package_version: "1"
   package_name: "Berlin"
-  package_description: ""
+  package_description: "Berlin Area Environments and Tilesets"
 }
 content_pack_dependencies {
   package_id: "518d7672643431b03f0041aa"
@@ -26,26 +26,14 @@ content_pack_dependencies {
   package_description: "Seattle Area Environments and Tilesets"
 }
 content_pack_dependencies {
-  package_id: "51f7429764343188990041a8"
-  package_version: "1.2.5"
-  package_name: "Antumbra"
-  package_description: "Antumbra"
-}
-content_pack_dependencies {
   package_id: "518d7674643431b03f0041ab"
   package_version: "1"
   package_name: "DeadMansSwitch"
   package_description: "The Dead Man\'s Switch"
 }
 content_pack_dependencies {
-  package_id: "5215664d3662365c180018bf"
-  package_version: "1.0.5"
-  package_name: "Antumbra 2 - Eclipse"
-  package_description: "Antumbra 2 - Eclipse"
-}
-content_pack_dependencies {
-  package_id: "5205366a623331a806002d13"
-  package_version: "1.0"
-  package_name: "berlin_campaign"
-  package_description: "Shadowrun: Dragonfall"
+  package_id: "53472c8f3234370824006c6a"
+  package_version: "1"
+  package_name: "DragonfallExtended"
+  package_description: "Shadowrun: Dragonfall - Director\'s Cut"
 }

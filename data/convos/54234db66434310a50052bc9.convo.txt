@@ -1,0 +1,87 @@
+idRef {
+  id: "54234db66434310a50052bc9"
+}
+ui_name: "A2_Epilogue_DS"
+nodes {
+  idRef {
+    id: "54234c1c6434310a50052b31"
+  }
+  index: 0
+  text: "{{GM}}San Francisco, already a city on edge, appears to have fallen over the brink. Shavarus\'s plot managed to significantly cripple the city\'s water system, slowing the influx to the merest trickle.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "54234c8e6434310a50052b34"
+  }
+  index: 1
+  text: "{{GM}}As might have been expected, the megacorps and Saito claim the limited resources for themselves. The vast masses of unwanted metahumans suffer loudly, eventually fleeing the city or dying of thirst.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "54234c9a6434310a50052b37"
+  }
+  index: 2
+  text: "{{GM}}Nonetheless, the actions of a runner helped keep the disaster from turning into a catastrophe. By interrupting Shavarus before the ritual was fully complete, the runner ensured that the city would continue to survive, and, hopefully, would one day rise again.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "54234ca86434310a50052b3a"
+  }
+  index: 3
+  text: "{{GM}}Who was this runner? Most witnesses describe someone who cared for the order of the city, who made the difficult choices to protect her safety.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "54234cbc6434310a50052b3d"
+  }
+  index: 4
+  text: "{{GM}}Metahumans might curse a perceived loyalty to Saito, but most residents understand that upholding a state of order, even a corrupt order, is better than encouraging a descent into chaos.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "54234cd46434310a50052b40"
+  }
+  index: 5
+  text: "{{GM}}Word of the runner spreads from San Francisco to CalFree and beyond. The world\'s most powerful megacorporations and militaries had seemed helpless to prevent a terrorist strike at the heart of their empire, but this runner succeeded where they failed, acting swiftly and decisively.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "54234ced6434310a50052b43"
+  }
+  index: 6
+  text: "{{GM}}Their fame continued to spread as countless corps and other groups sought them. Fame does not suit one who runs in the shadows, though, and so the shadowrunner ran, and ran, and ran...{{/GM}}"
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  nextNodeIndex: 0
+}
