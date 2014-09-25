@@ -285,9 +285,47 @@ triggers {
   }
   actions {
     ops {
-      functionName: "End Story With Epilogue"
+      functionName: "Start Conversation Between Actors"
       args {
-        string_value: "es"
+        call_value {
+          functionName: "Get Map Item (Conversation)"
+          args {
+            string_value: "54234e8a6434310a50052c1c"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "5424669a643431de749d2c47"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "5424669a643431de749d2c47"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Camera Post Process Effect"
+      args {
+        int_value: 1
       }
     }
   }
@@ -872,6 +910,19 @@ triggers {
           }
           args {
             int_value: 3
+          }
+        }
+      }
+      args {
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
           }
         }
       }
@@ -2937,6 +2988,19 @@ triggers {
           }
         }
       }
+      args {
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
     }
     ops {
       functionName: "Kill Actor"
@@ -2972,6 +3036,19 @@ triggers {
           }
           args {
             int_value: 3
+          }
+        }
+      }
+      args {
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
           }
         }
       }
@@ -3013,6 +3090,19 @@ triggers {
           }
         }
       }
+      args {
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
     }
     ops {
       functionName: "Kill Actor"
@@ -3051,11 +3141,93 @@ triggers {
           }
         }
       }
+      args {
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
     }
   }
   isActive: true
   idRef {
     id: "523dd362366236bc140013aa"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Next Scene"
+  events {
+    ops {
+      functionName: "On Conversation Complete"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "NextScene"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Set Camera Post Process Effect"
+      args {
+        int_value: 0
+      }
+    }
+    ops {
+      functionName: "Open Scene"
+      args {
+        call_value {
+          functionName: "Get Map Item (Scene)"
+          args {
+            string_value: "Intro"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "5424661b643431de749d2c45"
   }
   elseActions {
   }
@@ -3081,6 +3253,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -3104,6 +3277,51 @@ regions {
   default_music: "Seattle-Bar03"
   loop_combat_music: true
   loop_default_music: true
+}
+regions {
+  name: "Epilogue Camera"
+  position {
+    x: -32
+    y: 58
+    width: 13
+    height: 14
+  }
+  enabledAtStart: true
+  is_camera_region: true
+  idRef {
+    id: "5424666c643431de749d2c46"
+  }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_closet: false
+  is_teleporter_region: false
+  directional_light_dir {
+    x: -0.5
+    y: -1
+    z: -0.75
+  }
+  directional_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambient_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambience_template: ""
+  combat_music: ""
+  default_music: ""
+  loop_combat_music: true
+  loop_default_music: false
 }
 characters {
   name: "system_spawner_playerSpawner"
@@ -5740,6 +5958,68 @@ characters {
     is_prop_character: true
   }
 }
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -26
+    y: 0
+    z: 64
+  }
+  orientation: ORIENTATION_S
+  displayName: "Narrator"
+  idRef {
+    id: "5424669a643431de749d2c47"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Objects/InvisibleActor"
+    character_sheet_id: "AGChemie_Cyberzombie_Lv1"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: -6
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        dodge: 0
+      }
+      specializations {
+        rifle: 0
+        edged: 0
+        unarmed: 0
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Shadowrunners"
+    char_name: " "
+    pc_spawn_number: -1
+    ai_ignores: true
+    portrait {
+      filename: "generic_static_blank"
+    }
+    karma: 174
+  }
+}
 variables {
   bool_value: false
   variableref_value {
@@ -5762,6 +6042,14 @@ variables {
     scope: TsVariableScope_Scene
     name: "genre"
     typeName: "string"
+  }
+}
+variables {
+  bool_value: false
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "NextScene"
+    typeName: "bool"
   }
 }
 mapEvents: "End Game"
@@ -5847,5 +6135,8 @@ use_hiring_cost_warning: true
 hiring_average_cost: 99999
 override_hiring_average_cost: true
 show_equip_screen_on_scene_load: false
+is_persistant: false
+is_persistant_has_value: false
 can_move_outside_camera_regions: true
 can_start_before_triggers: true
+can_use_team_advancement: false
