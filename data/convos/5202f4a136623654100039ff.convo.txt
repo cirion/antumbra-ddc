@@ -14,9 +14,33 @@ nodes {
   }
   branches {
     responseText: "Lady, you built your palace on top of a death trap. I\'m lucky to have escaped."
-    nextNodeIndex: 5
+    nextNodeIndex: 4
   }
   nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "StartEpilogue"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
 }
 nodes {
   idRef {
@@ -48,33 +72,13 @@ nodes {
   }
   index: 3
   text: "I\'ll transfer a reward into your account - you\'ve certainly earned it.\n\nI\'ll even do you one better and tell Mr. Santo what you\'ve accomplished here. A discovery like this will open many opportunities for an ambitious runner like you. Expect to hear from him soon."
-  branches {
-    responseText: "{{GM}}Leave.{{/GM}}"
-    nextNodeIndex: 4
-  }
   nodeType: ConversationNodeType_Simple
-}
-nodes {
-  idRef {
-    id: "5204485336623608130004c3"
-  }
-  index: 4
-  text: ""
-  nodeType: ConversationNodeType_Simple
-  actions {
-    ops {
-      functionName: "End Story With Epilogue"
-      args {
-        string_value: "kali"
-      }
-    }
-  }
 }
 nodes {
   idRef {
     id: "520448a236623608130004d3"
   }
-  index: 5
+  index: 4
   text: "I assure you, I thoroughly vetted this location before closing on the property. Whatever\'s going on down there must have happened very suddenly and very recently."
   branches {
     responseText: ""

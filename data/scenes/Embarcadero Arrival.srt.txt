@@ -104,6 +104,19 @@ triggers {
           }
         }
       }
+      args {
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
     }
     ops {
       functionName: "Set Region Enabled"
@@ -295,6 +308,19 @@ triggers {
           }
         }
       }
+      args {
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
     }
   }
   isActive: true
@@ -330,6 +356,19 @@ triggers {
           }
         }
       }
+      args {
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
     }
     ops {
       functionName: "Kill Actor"
@@ -356,6 +395,19 @@ triggers {
           }
           args {
             int_value: 3
+          }
+        }
+      }
+      args {
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
           }
         }
       }
@@ -633,6 +685,19 @@ triggers {
           }
         }
       }
+      args {
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
     }
     ops {
       functionName: "Kill Actor"
@@ -659,6 +724,19 @@ triggers {
           }
           args {
             int_value: 3
+          }
+        }
+      }
+      args {
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
           }
         }
       }
@@ -1494,6 +1572,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.45
@@ -1538,6 +1617,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -1582,6 +1662,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -1626,6 +1707,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -1670,6 +1752,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -2094,7 +2177,7 @@ mapName: "Embarcadero Arrival"
 parentStory: ""
 scene_title: "Embarcadero"
 scene_subtitle: ""
-scene_synopsis: "Business in Seattle has grown slow lately. A shadowrunner needs to go where the jobs are, so you head south to San Francisco, following rumors of a broad and covert struggle between Mitsuhama and Aztechnology.\n\nMoney\342\200\231s gotten a little tight, so you skimped on airfare and hitched a ride on a cargo ship headed from Seattle to the Port of Oakland. Once in the Bay, you bribe the operator of a smaller vessel and make your way to the old piers of San Francisco.\n\nThe city is foggy today, and far quieter than you would have thought. Not what you expected from a notoriously lively place. You are surprised to see a familiar face waiting when you disembark..."
+scene_synopsis: "Months pass, and your business in Seattle gradually shrinks. A shadowrunner needs to go where the jobs are, so you head south to San Francisco, following rumors of a broad and covert struggle between Mitsuhama and Aztechnology.\n\nMoney\342\200\231s gotten a little tight, so you skimp on airfare and hitch a ride on a cargo ship headed from Seattle to the Port of Oakland. Once in the Bay, you bribe the operator of a smaller vessel and make your way to the old piers of San Francisco.\n\nThe city is foggy today, and far quieter than you would have thought. Not what you expected from a notoriously lively place. You are surprised to see a familiar face waiting when you disembark..."
 scene_image: "scene1_embarcadero"
 scene_continue_button_skip: false
 scene_restore_runner_health: true
@@ -2145,8 +2228,6 @@ team_affiliations {
 scene_dimensions {
   dimension_name: "Default"
 }
-character_roster {
-}
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {
   prereq_description: ""
@@ -2162,5 +2243,8 @@ use_hiring_cost_warning: true
 hiring_average_cost: 99999
 override_hiring_average_cost: true
 show_equip_screen_on_scene_load: false
-can_move_outside_camera_regions: true
-can_start_before_triggers: true
+is_persistant: false
+is_persistant_has_value: false
+can_move_outside_camera_regions: false
+can_start_before_triggers: false
+can_use_team_advancement: false

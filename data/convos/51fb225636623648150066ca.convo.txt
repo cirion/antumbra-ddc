@@ -1016,6 +1016,30 @@ nodes {
     nextNodeIndex: 22
   }
   nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "StartEpilogue"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
 }
 nodes {
   idRef {
@@ -1023,26 +1047,7 @@ nodes {
   }
   index: 22
   text: "Take care of yourself, $(l.name). A valuable asset like you shouldn\'t go to waste."
-  branches {
-    responseText: ""
-    nextNodeIndex: 23
-  }
   nodeType: ConversationNodeType_Simple
-}
-nodes {
-  idRef {
-    id: "520446b036623608130003c9"
-  }
-  index: 23
-  text: ""
-  actions {
-    ops {
-      functionName: "End Story With Epilogue"
-      args {
-        string_value: "carver"
-      }
-    }
-  }
 }
 roots {
   responseText: ""
@@ -1114,6 +1119,30 @@ roots {
           }
           args {
             int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "StartEpilogue"
           }
         }
       }
