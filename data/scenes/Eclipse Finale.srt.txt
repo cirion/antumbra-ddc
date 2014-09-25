@@ -412,9 +412,47 @@ triggers {
   }
   actions {
     ops {
-      functionName: "End Story With Epilogue"
+      functionName: "Start Conversation Between Actors"
       args {
-        string_value: "em"
+        call_value {
+          functionName: "Get Map Item (Conversation)"
+          args {
+            string_value: "54234f136434310a50052c6e"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "5424669a643431de749d2c47"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "5424669a643431de749d2c47"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Camera Post Process Effect"
+      args {
+        int_value: 1
       }
     }
   }
@@ -501,9 +539,47 @@ triggers {
   }
   actions {
     ops {
-      functionName: "End Story With Epilogue"
+      functionName: "Start Conversation Between Actors"
       args {
-        string_value: "eb"
+        call_value {
+          functionName: "Get Map Item (Conversation)"
+          args {
+            string_value: "54234e096434310a50052bec"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "5424669a643431de749d2c47"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "5424669a643431de749d2c47"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Camera Post Process Effect"
+      args {
+        int_value: 1
       }
     }
   }
@@ -590,9 +666,47 @@ triggers {
   }
   actions {
     ops {
-      functionName: "End Story With Epilogue"
+      functionName: "Start Conversation Between Actors"
       args {
-        string_value: "ds"
+        call_value {
+          functionName: "Get Map Item (Conversation)"
+          args {
+            string_value: "54234db66434310a50052bc9"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "5424669a643431de749d2c47"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "5424669a643431de749d2c47"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Camera Post Process Effect"
+      args {
+        int_value: 1
       }
     }
   }
@@ -679,9 +793,47 @@ triggers {
   }
   actions {
     ops {
-      functionName: "End Story With Epilogue"
+      functionName: "Start Conversation Between Actors"
       args {
-        string_value: "dm"
+        call_value {
+          functionName: "Get Map Item (Conversation)"
+          args {
+            string_value: "54234d446434310a50052b84"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "5424669a643431de749d2c47"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "5424669a643431de749d2c47"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Camera Post Process Effect"
+      args {
+        int_value: 1
       }
     }
   }
@@ -768,9 +920,47 @@ triggers {
   }
   actions {
     ops {
-      functionName: "End Story With Epilogue"
+      functionName: "Start Conversation Between Actors"
       args {
-        string_value: "db"
+        call_value {
+          functionName: "Get Map Item (Conversation)"
+          args {
+            string_value: "54234c0e6434310a50052b2b"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "5424669a643431de749d2c47"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "5424669a643431de749d2c47"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Camera Post Process Effect"
+      args {
+        int_value: 1
       }
     }
   }
