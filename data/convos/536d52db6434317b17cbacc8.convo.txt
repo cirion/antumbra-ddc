@@ -50,12 +50,12 @@ nodes {
     responseText: "Orion! I thought you were dead!"
     conditions {
       ops {
-        functionName: "Get Dependent Story Variable (bool)"
+        functionName: "Comparison (bool)"
         args {
           call_value {
-            functionName: "Get Previous Story Variable (bool)"
+            functionName: "Get Story Variable (bool)"
             args {
-              string_value: "5215664d3662365c180018bf"
+              string_value: "531d26a736623648180018bf"
             }
             args {
               string_value: "A2_OrionDied"
@@ -66,10 +66,21 @@ nodes {
           call_value {
             functionName: "Get Preset Value (int)"
             args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
               string_value: "bool"
             }
             args {
-              int_value: 0
+              int_value: 1
             }
           }
         }

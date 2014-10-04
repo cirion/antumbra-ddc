@@ -15,28 +15,12 @@ nodes {
         functionName: "Comparison (bool)"
         args {
           call_value {
-            functionName: "Get Dependent Story Variable (bool)"
+            functionName: "Get Story Variable (bool)"
             args {
-              call_value {
-                functionName: "Get Previous Story Variable (bool)"
-                args {
-                  string_value: "51f7429764343188990041a8"
-                }
-                args {
-                  string_value: "TurmJoined"
-                }
-              }
+              string_value: "531d26a736623648180018bf"
             }
             args {
-              call_value {
-                functionName: "Get Preset Value (int)"
-                args {
-                  string_value: "bool"
-                }
-                args {
-                  int_value: 0
-                }
-              }
+              string_value: "TurmJoined"
             }
           }
         }
@@ -74,28 +58,12 @@ nodes {
         functionName: "Comparison (bool)"
         args {
           call_value {
-            functionName: "Get Dependent Story Variable (bool)"
+            functionName: "Get Story Variable (bool)"
             args {
-              call_value {
-                functionName: "Get Previous Story Variable (bool)"
-                args {
-                  string_value: "51f7429764343188990041a8"
-                }
-                args {
-                  string_value: "TurmJoined"
-                }
-              }
+              string_value: "531d26a736623648180018bf"
             }
             args {
-              call_value {
-                functionName: "Get Preset Value (int)"
-                args {
-                  string_value: "bool"
-                }
-                args {
-                  int_value: 0
-                }
-              }
+              string_value: "TurmJoined"
             }
           }
         }
@@ -191,28 +159,12 @@ nodes {
         functionName: "Comparison (bool)"
         args {
           call_value {
-            functionName: "Get Dependent Story Variable (bool)"
+            functionName: "Get Story Variable (bool)"
             args {
-              call_value {
-                functionName: "Get Previous Story Variable (bool)"
-                args {
-                  string_value: "51f7429764343188990041a8"
-                }
-                args {
-                  string_value: "TurmJoined"
-                }
-              }
+              string_value: "531d26a736623648180018bf"
             }
             args {
-              call_value {
-                functionName: "Get Preset Value (int)"
-                args {
-                  string_value: "bool"
-                }
-                args {
-                  int_value: 0
-                }
-              }
+              string_value: "TurmJoined"
             }
           }
         }

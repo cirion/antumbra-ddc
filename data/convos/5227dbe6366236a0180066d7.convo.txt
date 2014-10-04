@@ -15,28 +15,12 @@ nodes {
         functionName: "Comparison (bool)"
         args {
           call_value {
-            functionName: "Get Dependent Story Variable (bool)"
+            functionName: "Get Story Variable (bool)"
             args {
-              call_value {
-                functionName: "Get Previous Story Variable (bool)"
-                args {
-                  string_value: "51f7429764343188990041a8"
-                }
-                args {
-                  string_value: "A1_Bool_SidedWithKali"
-                }
-              }
+              string_value: "531d26a736623648180018bf"
             }
             args {
-              call_value {
-                functionName: "Get Preset Value (int)"
-                args {
-                  string_value: "bool"
-                }
-                args {
-                  int_value: 0
-                }
-              }
+              string_value: "A1_Bool_SidedWithKali"
             }
           }
         }
@@ -69,6 +53,44 @@ nodes {
   }
   branches {
     responseText: "I didn\342\200\231t expect you to sound so upbeat."
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "A1_Bool_SidedWithKali"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+    }
     nextNodeIndex: 13
     hideIfUnavailable: true
   }
