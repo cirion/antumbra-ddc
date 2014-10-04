@@ -1,224 +1,4 @@
 triggers {
-  name: "Check Cheats"
-  events {
-    ops {
-      functionName: "On Map Start"
-    }
-  }
-  conditions {
-    ops {
-      functionName: "OR"
-      args {
-        call_value {
-          functionName: "Comparison (bool)"
-          args {
-            call_value {
-              functionName: "Get Dependent Story Variable (bool)"
-              args {
-                call_value {
-                  functionName: "Get Previous Story Variable (bool)"
-                  args {
-                    string_value: "51f7429764343188990041a8"
-                  }
-                  args {
-                    string_value: "A1_Bool_KilledBoss"
-                  }
-                }
-              }
-              args {
-                call_value {
-                  functionName: "Get Preset Value (int)"
-                  args {
-                    string_value: "bool"
-                  }
-                  args {
-                    int_value: 0
-                  }
-                }
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "IsOrIsNot"
-              }
-              args {
-                int_value: 1
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "bool"
-              }
-              args {
-                int_value: 1
-              }
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "bool"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-    }
-  }
-  actions {
-    ops {
-      functionName: "Kill Actor"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Get Map Item (Actor)"
-              args {
-                string_value: "521bf9c23662362419001ad7"
-              }
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "DeathMethod"
-          }
-          args {
-            int_value: 3
-          }
-        }
-      }
-      args {
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "WithOrWithout"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Set Region Enabled"
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "EnableOrDisable"
-          }
-          args {
-            int_value: 1
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (Region)"
-          args {
-            string_value: "5233d5dd366236181b003732"
-          }
-        }
-      }
-    }
-  }
-  isActive: true
-  idRef {
-    id: "521bfd093662362419001b20"
-  }
-  elseActions {
-    ops {
-      functionName: "Set Actor In Passive Mode"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Get Map Item (Actor)"
-              args {
-                string_value: "521bf9c23662362419001ad7"
-              }
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "IsOrIsNot"
-          }
-          args {
-            int_value: 1
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Order Actor to Move To (Actor)"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Get Map Item (Actor)"
-              args {
-                string_value: "521bf9c23662362419001ad7"
-              }
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (Player)"
-          args {
-            int_value: 0
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "FacingDirection"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "End Current Actor Turn"
-    }
-  }
-  is_oneshot: true
-}
-triggers {
   name: "ReconcileHistory"
   events {
     ops {
@@ -252,6 +32,42 @@ triggers {
                 int_value: 0
               }
             }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "A1_Bool_SidedWithKali"
           }
         }
       }
@@ -543,83 +359,6 @@ triggers {
   is_oneshot: true
 }
 triggers {
-  name: "Check New Character"
-  events {
-    ops {
-      functionName: "On Map Start"
-    }
-  }
-  conditions {
-    ops {
-      functionName: "Comparison (bool)"
-      args {
-        call_value {
-          functionName: "Get Dependent Story Variable (bool)"
-          args {
-            call_value {
-              functionName: "Get Previous Story Variable (bool)"
-              args {
-                string_value: "51f7429764343188990041a8"
-              }
-              args {
-                string_value: "A1_Bool_KilledBoss"
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "bool"
-              }
-              args {
-                int_value: 0
-              }
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "IsOrIsNot"
-          }
-          args {
-            int_value: 1
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "bool"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-    }
-  }
-  actions {
-    ops {
-      functionName: "Add Nuyen"
-      args {
-        int_value: 1500
-      }
-    }
-  }
-  isActive: true
-  idRef {
-    id: "521e2a98643431a9f264f5ee"
-  }
-  elseActions {
-  }
-  is_oneshot: true
-}
-triggers {
   name: "Starting Allowance"
   events {
     ops {
@@ -745,91 +484,6 @@ triggers {
   isActive: true
   idRef {
     id: "521f71183662361c1b0079d7"
-  }
-  elseActions {
-  }
-  is_oneshot: true
-}
-triggers {
-  name: "Cirion Chat Start"
-  events {
-    ops {
-      functionName: "On Region Enter"
-      args {
-        call_value {
-          functionName: "Get Map Item (Region)"
-          args {
-            string_value: "5233d5dd366236181b003732"
-          }
-        }
-      }
-    }
-  }
-  conditions {
-  }
-  actions {
-    ops {
-      functionName: "Start Conversation"
-      args {
-        call_value {
-          functionName: "Get Map Item (Conversation)"
-          args {
-            string_value: "521bfc123662362419001ade"
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (Actor)"
-          args {
-            string_value: "521bf9c23662362419001ad7"
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "WithOrWithout"
-          }
-          args {
-            int_value: 1
-          }
-        }
-      }
-    }
-  }
-  isActive: true
-  idRef {
-    id: "5233d638366236181b003733"
-  }
-  elseActions {
-  }
-  is_oneshot: true
-}
-triggers {
-  name: "End Game"
-  events {
-    ops {
-      functionName: "Get Map Item (Event)"
-      args {
-        string_value: "End Game"
-      }
-    }
-  }
-  conditions {
-  }
-  actions {
-    ops {
-      functionName: "End Story With Epilogue"
-      args {
-        string_value: "epilogue_1"
-      }
-    }
-  }
-  isActive: true
-  idRef {
-    id: "5233e2e5366236181b0037f3"
   }
   elseActions {
   }
@@ -1802,57 +1456,6 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -12
-    y: 0
-    z: -21
-  }
-  orientation: ORIENTATION_E
-  displayName: "Cirion"
-  idRef {
-    id: "521bf9c23662362419001ad7"
-  }
-  lod: 0
-  character_instance {
-    prefab_name: "Matrix/SpiritESPShield"
-    character_sheet_id: "BaseCivilian"
-    character_mod {
-      stats {
-        body: 0
-        quickness: 0
-        strength: 0
-        charisma: 0
-        intelligence: 0
-        willpower: 0
-        essence: 0
-        hp: 0
-        ap: 0
-        morale: 24
-        discipline: 0
-        awareness: 24
-        perception: 0
-        authority: 0
-        protect_tether_range: 5
-        move_speed: 6
-      }
-      skills {
-      }
-      specializations {
-      }
-      archetypeName: "Non-Combatant"
-    }
-    team_id: "Civilians"
-    char_name: "Cirion"
-    pc_spawn_number: -1
-    portrait {
-      filename: "generic_esp_shield"
-    }
-    karma: 6
-    is_prop_character: false
-  }
-}
-characters {
-  name: "chars_icon_playerIcon"
-  gridPoint {
     x: -22
     y: 0
     z: -42
@@ -2227,6 +1830,8 @@ team_affiliations {
 }
 scene_dimensions {
   dimension_name: "Default"
+}
+character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {

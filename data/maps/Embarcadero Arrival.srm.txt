@@ -77606,6 +77606,13 @@ props {
   idRef {
     id: "5224e073366236a409008299"
   }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+    interaction_info_text: ""
+  }
   lod: 0
 }
 props {
@@ -78824,7 +78831,7 @@ props {
   name: "pikePlace_wallDecoration_genericGrafitti03"
   gridPoint {
     x: -4
-    y: -1.3877788e-16
+    y: -1.3877788e-016
     z: 18.9
   }
   orientation: ORIENTATION_S
