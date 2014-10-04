@@ -76943,6 +76943,29 @@ props {
   lod: 0
 }
 props {
+  name: "custom_vehicles_taxi"
+  gridPoint {
+    x: -26
+    y: 0
+    z: -27
+  }
+  orientation: ORIENTATION_W
+  displayName: "Taxi"
+  idRef {
+    id: "521c03733662360c11001ad9"
+  }
+  interactionRoot {
+    isEnabled: false
+    interactionRadius: 1
+    transitionPoint {
+      scene_name: "Eclipse 1"
+      confirmation_text: "Are you ready to travel to Eclipse?"
+    }
+    interaction_info_text: "Transport"
+  }
+  lod: 0
+}
+props {
   name: "barrens_street_taxiKiosk"
   gridPoint {
     x: -29
@@ -77067,7 +77090,7 @@ props {
 props {
   name: "docks_clutter_salvageCrate"
   gridPoint {
-    x: -58
+    x: -59
     y: 0
     z: -1
   }
@@ -77200,12 +77223,12 @@ props {
     summonPoint {
       hasCharacter: true
       summon_icon: ""
-      max_summon_force: 4
+      max_summon_force: 3
     }
   }
   lod: 0
   character_instance {
-    prefab_name: "Seattle:Spirit/SpiritWater"
+    prefab_name: "Spirit/SpiritWater"
     character_sheet_id: "Spirit Water"
     equipment_sheet_id: "Spirit Water F6 Gear"
     character_mod {
@@ -77263,10 +77286,8 @@ props {
       }
       archetypeName: "Player"
       attitude: AttitudeAggressive
-      vulnerabilities {
-      }
     }
-    char_name: "Water Spirit"
+    char_name: "Water Elemental"
     portrait {
       filename: "Generic_Spirit_Water"
     }
@@ -77605,6 +77626,12 @@ props {
   displayName: "Security Console"
   idRef {
     id: "5224e073366236a409008299"
+  }
+  interactionRoot {
+    isEnabled: false
+    interactionRadius: 1
+    interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Debug Menu"
   }
   lod: 0
 }
@@ -81364,7 +81391,7 @@ props {
 props {
   name: "tenements_clutter_woodenCrates"
   gridPoint {
-    x: -43
+    x: -51
     y: 0
     z: 44
   }
@@ -85963,6 +85990,23 @@ props {
   }
   idRef {
     id: "5235e053366236881d000785"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_lowmist"
+  gridPoint {
+    x: -1
+    y: 0
+    z: 51
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopLowMistBank"
+  }
+  idRef {
+    id: "5235e053366236881d000786"
   }
   lod: 0
 }
@@ -95268,9 +95312,9 @@ props {
 props {
   name: "vfx_fx_lowmist"
   gridPoint {
-    x: -69
+    x: -61
     y: 0
-    z: 11
+    z: 15
   }
   orientation: ORIENTATION_S
   properties {
@@ -111135,216 +111179,22 @@ props {
   }
 }
 props {
-  name: "custom_vehicles_taxi"
+  name: "barrens_vehicle_wingoMotorcycle01"
   gridPoint {
-    x: 2
+    x: -43
     y: 0
-    z: -7
-  }
-  orientation: ORIENTATION_N
-  displayName: "Taxi"
-  idRef {
-    id: "5374f63e6434316b133335f7"
-  }
-  interactionRoot {
-    isEnabled: true
-    interactionRadius: 1
-    dummyInteraciton {
-    }
-  }
-  lod: 0
-}
-props {
-  name: "haven_vehicle_sleekStepVan01"
-  gridPoint {
-    x: -30
-    y: 0
-    z: 59
-  }
-  orientation: ORIENTATION_E
-  displayName: "Escape Van"
-  idRef {
-    id: "5374fdf66434316b1333361c"
-  }
-  interactionRoot {
-    isEnabled: true
-    interactionRadius: 1
-    prerequisites {
-      ops {
-        functionName: "Comparison (int)"
-        args {
-          call_value {
-            functionName: "Get Variable (int)"
-            args {
-              string_value: "johnsonState"
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Preset Value (int)"
-            args {
-              string_value: "Comparison Ops"
-            }
-            args {
-              int_value: 0
-            }
-          }
-        }
-        args {
-          int_value: 3
-        }
-      }
-      ops {
-        functionName: "Compare Actor Team"
-        args {
-          call_value {
-            functionName: "Get Map Item (Actor)"
-            args {
-              string_value: "5374f4e86434316b133335ec"
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Preset Value (int)"
-            args {
-              string_value: "IsOrIsNot"
-            }
-            args {
-              int_value: 1
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Preset Value (string)"
-            args {
-              string_value: "FactionList"
-            }
-            args {
-              int_value: 0
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Map Item (SceneDimension)"
-            args {
-              string_value: "Default"
-            }
-          }
-        }
-      }
-    }
-    transitionPoint {
-      scene_name: "Eclipse"
-      confirmation_text: "This armored van looks like it could survive the marines\' attack. Do you want to continue to Eclipse?"
-    }
-  }
-  lod: 0
-}
-props {
-  name: "pikePlace_vehicle_lonestarVan"
-  gridPoint {
-    x: 6
-    y: 0
-    z: 2
+    z: 53
   }
   orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "vfx_fx_lowmist"
-  gridPoint {
-    x: -1
-    y: 0
-    z: 51
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "EnvironmentLoopLowMistBank"
-  }
-  idRef {
-    id: "537c21b53662364817007586"
-  }
-  lod: 0
-}
-props {
-  name: "tempbad_leyline_light"
-  gridPoint {
-    x: -45
-    y: 0
-    z: 44
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "leyline_fx_on_tile"
-    string_value: "LeyLineLow"
-  }
-  properties {
-    property_id: "leyline_sfx_on_tile"
-    string_value: "StandOnLeylineFar"
-  }
-  properties {
-    property_id: "leyline_fx_on_visible"
-    string_value: "LeyLineTileLow"
-  }
-  lod: 0
-}
-props {
-  name: "tempbad_leyline_light"
-  gridPoint {
-    x: -75
-    y: 0
-    z: 7
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "leyline_fx_on_tile"
-    string_value: "LeyLineLow"
-  }
-  properties {
-    property_id: "leyline_sfx_on_tile"
-    string_value: "StandOnLeylineFar"
-  }
-  properties {
-    property_id: "leyline_fx_on_visible"
-    string_value: "LeyLineTileLow"
-  }
   lod: 0
 }
 props {
   name: "barrens_vehicle_headTurnerMotorcycle01"
   gridPoint {
-    x: -39
+    x: -44
     y: 0
-    z: 46
-  }
-  orientation: ORIENTATION_E
-  lod: 0
-}
-props {
-  name: "mitte_street_trashcan01"
-  gridPoint {
-    x: -41
-    y: 0
-    z: 42
+    z: 56
   }
   orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "tenements_clutter_woodenCrates"
-  gridPoint {
-    x: -52
-    y: 0
-    z: 44
-  }
-  orientation: ORIENTATION_E
-  idRef {
-    id: "538f432164343136026f6487"
-  }
   lod: 0
 }

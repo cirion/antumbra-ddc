@@ -2972,7 +2972,7 @@ worldMapLocation {
     y: 0
   }
 }
-mapName: "Eclipse 1"
+mapName: "Eclipse Peace"
 parentStory: ""
 scene_title: "Eclipse"
 scene_subtitle: ""

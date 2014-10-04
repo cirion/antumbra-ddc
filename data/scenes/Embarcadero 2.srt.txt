@@ -92,12 +92,12 @@ triggers {
   }
   conditions {
     ops {
-      functionName: "Get Dependent Story Variable (bool)"
+      functionName: "Comparison (bool)"
       args {
         call_value {
-          functionName: "Get Previous Story Variable (bool)"
+          functionName: "Get Story Variable (bool)"
           args {
-            string_value: "51f7429764343188990041a8"
+            string_value: "531d26a736623648180018bf"
           }
           args {
             string_value: "A1_Bool_TurmDied"
@@ -108,10 +108,21 @@ triggers {
         call_value {
           functionName: "Get Preset Value (int)"
           args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
             string_value: "bool"
           }
           args {
-            int_value: 0
+            int_value: 1
           }
         }
       }
@@ -143,6 +154,22 @@ triggers {
           }
           args {
             int_value: 3
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Nothing Selected"
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
           }
         }
       }
@@ -2187,6 +2214,17 @@ triggers {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
     }
     ops {
       functionName: "Activate Actor Spawner"
@@ -2195,6 +2233,17 @@ triggers {
           functionName: "Get Map Item (Actor Reference)"
           args {
             string_value: "5224f09e3662367010002285"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
           }
         }
       }
@@ -2378,6 +2427,19 @@ triggers {
           }
         }
       }
+      args {
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
     }
     ops {
       functionName: "Delete Prop"
@@ -2400,6 +2462,17 @@ triggers {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
     }
     ops {
       functionName: "Activate Actor Spawner"
@@ -2408,6 +2481,17 @@ triggers {
           functionName: "Get Map Item (Actor Reference)"
           args {
             string_value: "5224f10b3662367010002288"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
           }
         }
       }
@@ -6194,6 +6278,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -6238,6 +6323,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -6282,6 +6368,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -6326,6 +6413,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -6370,6 +6458,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -6414,6 +6503,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -6458,6 +6548,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -6502,6 +6593,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -8665,7 +8757,7 @@ worldMapLocation {
     y: 0
   }
 }
-mapName: "Embarcadero Arrival"
+mapName: "Embarcadero Arrival Eclipse"
 parentStory: ""
 scene_title: "The Embarcadero"
 scene_subtitle: ""
@@ -8737,5 +8829,8 @@ use_hiring_cost_warning: true
 hiring_average_cost: 99999
 override_hiring_average_cost: true
 show_equip_screen_on_scene_load: false
+is_persistant: false
+is_persistant_has_value: false
 can_move_outside_camera_regions: true
 can_start_before_triggers: true
+can_use_team_advancement: false

@@ -56,6 +56,19 @@ triggers {
           }
         }
       }
+      args {
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
     }
     ops {
       functionName: "Enable/Disable Interactable Object"
@@ -142,6 +155,17 @@ triggers {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
     }
     ops {
       functionName: "Activate Actor Spawner"
@@ -150,6 +174,17 @@ triggers {
           functionName: "Get Map Item (Actor Reference)"
           args {
             string_value: "53699d4d366236081d0076af"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
           }
         }
       }
@@ -386,6 +421,17 @@ triggers {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
     }
     ops {
       functionName: "Add Camera Point of Interest (Actors)"
@@ -540,6 +586,19 @@ triggers {
           functionName: "Get Preset Value (int)"
           args {
             string_value: "DeathMethod"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
           }
           args {
             int_value: 0
@@ -819,28 +878,12 @@ triggers {
       }
       args {
         call_value {
-          functionName: "Get Dependent Story Variable (bool)"
+          functionName: "Get Story Variable (bool)"
           args {
-            call_value {
-              functionName: "Get Previous Story Variable (bool)"
-              args {
-                string_value: "5215664d3662365c180018bf"
-              }
-              args {
-                string_value: "A2_FinishedDemo"
-              }
-            }
+            string_value: "531d26a736623648180018bf"
           }
           args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "bool"
-              }
-              args {
-                int_value: 0
-              }
-            }
+            string_value: "A2_FinishedDemo"
           }
         }
       }
@@ -860,28 +903,12 @@ triggers {
       }
       args {
         call_value {
-          functionName: "Get Dependent Story Variable (bool)"
+          functionName: "Get Story Variable (bool)"
           args {
-            call_value {
-              functionName: "Get Previous Story Variable (bool)"
-              args {
-                string_value: "5215664d3662365c180018bf"
-              }
-              args {
-                string_value: "A2_Finale_ShavarusDies"
-              }
-            }
+            string_value: "531d26a736623648180018bf"
           }
           args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "bool"
-              }
-              args {
-                int_value: 0
-              }
-            }
+            string_value: "A2_Finale_ShavarusDies"
           }
         }
       }
@@ -901,28 +928,12 @@ triggers {
       }
       args {
         call_value {
-          functionName: "Get Dependent Story Variable (bool)"
+          functionName: "Get Story Variable (bool)"
           args {
-            call_value {
-              functionName: "Get Previous Story Variable (bool)"
-              args {
-                string_value: "5215664d3662365c180018bf"
-              }
-              args {
-                string_value: "A2_Finale_ShavarusLives"
-              }
-            }
+            string_value: "531d26a736623648180018bf"
           }
           args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "bool"
-              }
-              args {
-                int_value: 0
-              }
-            }
+            string_value: "A2_Finale_ShavarusLives"
           }
         }
       }
@@ -942,19 +953,12 @@ triggers {
       }
       args {
         call_value {
-          functionName: "Get Dependent Story Variable (string)"
+          functionName: "Get Story Variable (string)"
           args {
-            call_value {
-              functionName: "Get Previous Story Variable (string)"
-              args {
-                string_value: "5215664d3662365c180018bf"
-              }
-              args {
-                string_value: "A2_RecordingGenre"
-              }
-            }
+            string_value: "531d26a736623648180018bf"
           }
           args {
+            string_value: "A2_RecordingGenre"
           }
         }
       }
@@ -974,69 +978,12 @@ triggers {
       }
       args {
         call_value {
-          functionName: "Get Dependent Story Variable (bool)"
-          args {
-            call_value {
-              functionName: "Get Previous Story Variable (bool)"
-              args {
-                string_value: "51f7429764343188990041a8"
-              }
-              args {
-                string_value: "A1_Bool_KilledBoss"
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "bool"
-              }
-              args {
-                int_value: 0
-              }
-            }
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Set Variable (bool)"
-      args {
-        call_value {
           functionName: "Get Story Variable (bool)"
           args {
             string_value: "531d26a736623648180018bf"
           }
           args {
-            string_value: "a1_helpedKali"
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Dependent Story Variable (bool)"
-          args {
-            call_value {
-              functionName: "Get Previous Story Variable (bool)"
-              args {
-                string_value: "51f7429764343188990041a8"
-              }
-              args {
-                string_value: "A1_Bool_SidedWithKali"
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "bool"
-              }
-              args {
-                int_value: 0
-              }
-            }
+            string_value: "A1_Bool_KilledBoss"
           }
         }
       }
@@ -1081,6 +1028,31 @@ triggers {
           }
           args {
             int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "a1_helpedKali"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "A1_Bool_SidedWithKali"
           }
         }
       }
@@ -2996,6 +2968,19 @@ triggers {
           }
         }
       }
+      args {
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
     }
   }
   isActive: true
@@ -3103,6 +3088,17 @@ triggers {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
     }
     ops {
       functionName: "Display Text over Actor"
@@ -3179,6 +3175,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.6
@@ -3223,6 +3220,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -3267,6 +3265,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -4159,5 +4158,8 @@ use_hiring_cost_warning: false
 hiring_average_cost: 99999
 override_hiring_average_cost: true
 show_equip_screen_on_scene_load: false
+is_persistant: false
+is_persistant_has_value: false
 can_move_outside_camera_regions: false
 can_start_before_triggers: false
+can_use_team_advancement: false

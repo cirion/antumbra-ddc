@@ -3385,7 +3385,7 @@ worldMapLocation {
     y: 0
   }
 }
-mapName: "Aztechnology"
+mapName: "Aztechnology Eclipse"
 parentStory: ""
 scene_title: "Aztechnology: Inner Offices"
 scene_subtitle: ""

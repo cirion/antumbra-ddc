@@ -1724,7 +1724,7 @@ worldMapLocation {
     y: 0
   }
 }
-mapName: "Embarcadero Arrival"
+mapName: "Embarcadero Arrival Eclipse"
 parentStory: ""
 scene_title: "Embarcadero"
 scene_subtitle: ""
