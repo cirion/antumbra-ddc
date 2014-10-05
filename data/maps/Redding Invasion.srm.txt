@@ -5807,7 +5807,7 @@ props {
     isEnabled: true
     interactionRadius: 1
     pickupItem {
-      itemName: "AR 1 AK98"
+      itemName: "Berlin_AR 1 AK98"
       destroyOnPickup: false
     }
     interaction_info_text: "Loot Rack"

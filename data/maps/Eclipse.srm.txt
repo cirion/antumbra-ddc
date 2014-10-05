@@ -5052,7 +5052,7 @@ props {
     isEnabled: true
     interactionRadius: 1
     pickupItem {
-      itemName: "SMG 1 Beretta Model 70"
+      itemName: "Berlin_SMG 1 Beretta Model 70"
       destroyOnPickup: false
     }
     interaction_info_text: "Loot Rack"
