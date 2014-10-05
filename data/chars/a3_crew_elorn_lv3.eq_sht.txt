@@ -1,9 +1,9 @@
 unique_id: "a3_crew_elorn_Lv3"
 equipment {
-  prefab_name: "Sh 2 Mossberg CMDT"
+  prefab_name: "Berlin_Sh 2 Mossberg CMDT"
 }
 equipment {
-  prefab_name: "SMG 2 Ingram Smartgun"
+  prefab_name: "Berlin_SMG 2 Ingram Smartgun"
 }
 equipment {
   prefab_name: "Grenade 2 (Frag)"

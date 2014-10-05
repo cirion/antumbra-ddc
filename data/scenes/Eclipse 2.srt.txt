@@ -10623,7 +10623,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/OrkMale"
+    prefab_name: "Seattle:Core/OrkMale"
     character_sheet_id: "BaseCivilian"
     character_mod {
       stats {
@@ -10656,15 +10656,14 @@ characters {
       specializations {
         rifle: 3
       }
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "AdeptStreetMonk"
     }
     equipment {
       prefab_name: "HealthPack_med"
-    }
-    equipment {
-      prefab_name: "AR 2 HK G12A3z"
     }
     equipment {
       prefab_name: "HealthPack_med"
@@ -10677,6 +10676,9 @@ characters {
     }
     equipment {
       prefab_name: "Grenade 2 (Flash)"
+    }
+    equipment {
+      prefab_name: "Berlin_AR 2 HK G12A3z"
     }
     team_id: "Civilians"
     char_name: "Orion"

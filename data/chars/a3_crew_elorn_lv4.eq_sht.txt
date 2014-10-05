@@ -1,6 +1,6 @@
 unique_id: "a3_crew_elorn_Lv4"
 equipment {
-  prefab_name: "Sh 2 Remington 990"
+  prefab_name: "Berlin_Sh 2 Remington 990"
 }
 equipment {
   prefab_name: "Grenade 2 (Frag)"
@@ -18,5 +18,5 @@ equipment {
   prefab_name: "HealthPack_hi"
 }
 equipment {
-  prefab_name: "SMG 2 Colt TZ-110"
+  prefab_name: "Berlin_SMG 2 Colt TZ-110"
 }

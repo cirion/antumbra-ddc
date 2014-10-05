@@ -11509,6 +11509,8 @@ characters {
       }
       archetypeName: "Guard - Protect"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "DeckerFab"
@@ -11577,7 +11579,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/OrkMale"
+    prefab_name: "Seattle:Core/OrkMale"
     character_sheet_id: "BaseCivilian"
     character_mod {
       stats {
@@ -11610,12 +11612,11 @@ characters {
       specializations {
         rifle: 3
       }
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "AdeptStreetMonk"
-    }
-    equipment {
-      prefab_name: "AR 1 Semopal vz88v"
     }
     equipment {
       prefab_name: "HealthPack_med"
@@ -11625,6 +11626,9 @@ characters {
     }
     equipment {
       prefab_name: "Grenade 1 (Flash)"
+    }
+    equipment {
+      prefab_name: "Berlin_AR 1 Semopal vz88v"
     }
     team_id: "Gangers"
     char_name: "Orion"

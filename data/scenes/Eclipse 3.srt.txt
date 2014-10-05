@@ -2469,7 +2469,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/OrkMale"
+    prefab_name: "Seattle:Core/OrkMale"
     character_sheet_id: "BaseCivilian"
     character_mod {
       stats {
@@ -2502,6 +2502,8 @@ characters {
       specializations {
         rifle: 4
       }
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "AdeptStreetMonk"
@@ -2525,7 +2527,7 @@ characters {
       prefab_name: "Sword 1 Machete"
     }
     equipment {
-      prefab_name: "AR 2 HK G12A3z (Smartlink)"
+      prefab_name: "Berlin_AR 2 HK G12A3z (Smartlink)"
     }
     team_id: "Civilians"
     char_name: "Orion"

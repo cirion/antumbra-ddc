@@ -4064,16 +4064,18 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Standard/TrollFemaleDetective"
+    prefab_name: "Seattle:Standard/TrollFemaleDetective"
     character_sheet_id: "Lvl1_Merc_Troll_Brute"
-    equipment_sheet_id: "Lonestar_Shotgun_Low"
     character_mod {
       stats {
         body: 2
         quickness: 1
         hp: 0
         morale: 24
+        discipline: 0
         awareness: 19
+        perception: 0
+        authority: 0
         protect_tether_range: 5
         move_speed: 0
       }
@@ -4084,6 +4086,8 @@ characters {
       specializations {
         shotgun: 2
         edged: 1
+      }
+      vulnerabilities {
       }
     }
     equipment {
@@ -4097,6 +4101,12 @@ characters {
     }
     equipment {
       prefab_name: "Grenade 1 (Frag)"
+    }
+    equipment {
+      prefab_name: "Berlin_Sh 1 Benelli Raffaello"
+    }
+    equipment {
+      prefab_name: "Grenade 1 (Flash)"
     }
     team_id: "Gangers"
     char_name: "Turm"

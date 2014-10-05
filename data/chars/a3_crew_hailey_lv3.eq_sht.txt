@@ -45,5 +45,5 @@ equipment {
   prefab_name: "DroneSupportB_RoboDoc"
 }
 equipment {
-  prefab_name: "Pi 1 Ceska Black Scorpion (Smartlink)"
+  prefab_name: "Berlin_Pi 1 Ceska Black Scorpion (Smartlink)"
 }
