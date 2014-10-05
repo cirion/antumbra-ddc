@@ -2141,8 +2141,9 @@ props {
     interactionRadius: 1
     transitionPoint {
       scene_name: "Antumbra Interior Opening Night"
-      confirmation_text: "Enter the club?"
+      confirmation_text: "Are you ready to head inside?"
     }
+    interaction_info_text: "Enter the Club"
   }
   lod: 0
 }

@@ -5758,6 +5758,7 @@ props {
     isEnabled: true
     interactionRadius: 1
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Access Stash"
   }
   lod: 0
 }
@@ -5943,6 +5944,7 @@ props {
     isEnabled: true
     interactionRadius: 1
     interactionIcon: InteractionIcon_Matrix
+    interaction_info_text: "Use Terminal"
   }
   lod: 0
 }

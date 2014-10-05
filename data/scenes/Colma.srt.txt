@@ -275,6 +275,17 @@ triggers {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
     }
     ops {
       functionName: "Delete Prop"
@@ -539,6 +550,19 @@ triggers {
           }
           args {
             int_value: 3
+          }
+        }
+      }
+      args {
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
           }
         }
       }
@@ -2643,6 +2667,17 @@ triggers {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
     }
     ops {
       functionName: "Enable/Disable Interactable Object"
@@ -3751,6 +3786,17 @@ triggers {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
     }
     ops {
       functionName: "Trigger: Run Alternate Trigger"
@@ -3855,6 +3901,17 @@ triggers {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
     }
     ops {
       functionName: "Trigger: Run Alternate Trigger"
@@ -3956,6 +4013,17 @@ triggers {
           functionName: "Get Map Item (Actor Reference)"
           args {
             string_value: "537a68ab6434313b4381eb40"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
           }
         }
       }
@@ -12324,6 +12392,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -12368,6 +12437,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -12412,6 +12482,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -12456,6 +12527,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -12500,6 +12572,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -12544,6 +12617,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -14208,6 +14282,7 @@ characters {
     isEnabled: true
     interactionRadius: 1
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Rescue Hostage"
   }
   lod: 0
   character_instance {
@@ -14302,6 +14377,7 @@ characters {
     isEnabled: true
     interactionRadius: 1
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Rescue Hostage"
   }
   lod: 0
   character_instance {
@@ -14396,6 +14472,7 @@ characters {
     isEnabled: true
     interactionRadius: 1
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Rescue Hostage"
   }
   lod: 0
   character_instance {
@@ -14490,6 +14567,7 @@ characters {
     isEnabled: true
     interactionRadius: 1
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Rescue Hostage"
   }
   lod: 0
   character_instance {
@@ -17418,5 +17496,8 @@ use_hiring_cost_warning: false
 hiring_average_cost: 99999
 override_hiring_average_cost: true
 show_equip_screen_on_scene_load: false
+is_persistant: false
+is_persistant_has_value: false
 can_move_outside_camera_regions: false
 can_start_before_triggers: false
+can_use_team_advancement: false

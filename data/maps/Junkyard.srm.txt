@@ -9035,7 +9035,8 @@ props {
         }
       }
     }
-    interactionIcon: InteractionIcon_Generic
+    interactionIcon: InteractionIcon_Inspect
+    interaction_info_text: "Inspect"
   }
   lod: 0
 }
@@ -9338,6 +9339,7 @@ props {
       }
     }
     interactionIcon: InteractionIcon_Inspect
+    interaction_info_text: "Inspect"
   }
   lod: 0
 }
@@ -9683,6 +9685,7 @@ props {
       }
     }
     interactionIcon: InteractionIcon_Inspect
+    interaction_info_text: "Inspect"
   }
   lod: 0
 }
@@ -11561,6 +11564,7 @@ props {
       }
     }
     interactionIcon: InteractionIcon_Inspect
+    interaction_info_text: "Inspect"
   }
   lod: 0
 }
@@ -11645,6 +11649,7 @@ props {
       state_change_hacked_sound: ""
       state_change_hacked_sound_volume: 1
     }
+    interaction_info_text: "Hack Node"
   }
   lod: 0
 }
@@ -11707,6 +11712,7 @@ props {
       state_change_hacked_sound: ""
       state_change_hacked_sound_volume: 1
     }
+    interaction_info_text: "Hack Node"
   }
   lod: 0
 }
@@ -11761,6 +11767,7 @@ props {
     matrixSpawnPoint {
       dimension: "Matrix"
     }
+    interaction_info_text: "Jack Out"
   }
   lod: 0
 }

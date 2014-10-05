@@ -4670,6 +4670,7 @@ props {
       scene_name: "ShastaCaverns"
       confirmation_text: "The way is narrow. There will be no turning back. Do you wish to proceed into the cave?"
     }
+    interaction_info_text: "Enter Caves"
   }
   lod: 0
 }
@@ -10485,6 +10486,7 @@ props {
       state_change_hacked_sound: ""
       state_change_hacked_sound_volume: 1
     }
+    interaction_info_text: "Hack Node"
   }
   lod: 0
 }
@@ -10546,6 +10548,7 @@ props {
       state_change_hacked_sound: ""
       state_change_hacked_sound_volume: 1
     }
+    interaction_info_text: "Hack Node"
   }
   lod: 0
 }
@@ -10607,6 +10610,7 @@ props {
       state_change_hacked_sound: ""
       state_change_hacked_sound_volume: 1
     }
+    interaction_info_text: "Hack Node"
   }
   lod: 0
 }
@@ -10631,6 +10635,7 @@ props {
     matrixSpawnPoint {
       dimension: "Matrix"
     }
+    interaction_info_text: "Jack Out"
   }
   lod: 0
 }

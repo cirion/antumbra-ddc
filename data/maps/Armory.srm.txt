@@ -17552,6 +17552,7 @@ props {
     isEnabled: true
     interactionRadius: 1
     interactionIcon: InteractionIcon_ItemPickup
+    interaction_info_text: "Loot Cabinet"
   }
   lod: 0
 }
@@ -17590,6 +17591,7 @@ props {
     isEnabled: false
     interactionRadius: 1
     interactionIcon: InteractionIcon_ItemPickup
+    interaction_info_text: "Loot Cabinet"
   }
   lod: 0
 }
@@ -17632,6 +17634,7 @@ props {
       LANIdentifier: "522a102d643431e91364f615"
       LANEquipment: ""
     }
+    interaction_info_text: ""
   }
   lod: 0
 }
@@ -18384,6 +18387,7 @@ props {
     isEnabled: true
     interactionRadius: 1
     interactionIcon: InteractionIcon_ItemPickup
+    interaction_info_text: "Loot Cabinet"
   }
   lod: 0
 }
@@ -19555,6 +19559,7 @@ props {
     isEnabled: false
     interactionRadius: 1
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Smash Crystal"
   }
   lod: 0
 }
@@ -19587,6 +19592,7 @@ props {
     isEnabled: false
     interactionRadius: 1
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Smash Crystal"
   }
   lod: 0
 }
@@ -19606,6 +19612,7 @@ props {
     isEnabled: false
     interactionRadius: 1
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Smash Crystal"
   }
   lod: 0
 }
@@ -19625,6 +19632,7 @@ props {
     isEnabled: false
     interactionRadius: 1
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Smash Crystal"
   }
   lod: 0
 }
@@ -20843,6 +20851,7 @@ props {
     isEnabled: true
     interactionRadius: 1
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Override Bridge Security"
   }
   lod: 0
 }
@@ -21230,6 +21239,7 @@ props {
       itemName: "Aztechnology Files"
       destroyOnPickup: true
     }
+    interaction_info_text: "Take Paydata"
   }
   lod: 0
 }
@@ -21280,6 +21290,7 @@ props {
     matrixSpawnPoint {
       dimension: "Shavarus Covert Network"
     }
+    interaction_info_text: "Jack Out"
   }
   lod: 0
 }
@@ -21975,8 +21986,23 @@ props {
       }
     }
     matrixNode {
-      hackingObjectID: "522a3557643431e91364f657"
+      hacking_objects: "522a3557643431e91364f657"
+      prerequisites_control_state: false
+      constant_matrix_fx: "matrixcontrolnode"
+      state_change_offline_fx: ""
+      state_change_offline_sound: ""
+      state_change_offline_sound_volume: 1
+      state_change_hackable_fx: "MatrixControlNodeHacked"
+      state_change_hackable_sound: "MatrixNodeHackReady"
+      state_change_hackable_sound_volume: 1
+      state_change_locked_fx: ""
+      state_change_locked_sound: ""
+      state_change_locked_sound_volume: 1
+      state_change_hacked_fx: ""
+      state_change_hacked_sound: ""
+      state_change_hacked_sound_volume: 1
     }
+    interaction_info_text: "Hack Node"
   }
   lod: 0
 }
@@ -22023,8 +22049,23 @@ props {
       }
     }
     matrixNode {
-      hackingObjectID: "5226b2b4366236d016001370"
+      hacking_objects: "5226b2b4366236d016001370"
+      prerequisites_control_state: false
+      constant_matrix_fx: "matrixcontrolnode"
+      state_change_offline_fx: ""
+      state_change_offline_sound: ""
+      state_change_offline_sound_volume: 1
+      state_change_hackable_fx: "MatrixControlNodeHacked"
+      state_change_hackable_sound: "MatrixNodeHackReady"
+      state_change_hackable_sound_volume: 1
+      state_change_locked_fx: ""
+      state_change_locked_sound: ""
+      state_change_locked_sound_volume: 1
+      state_change_hacked_fx: ""
+      state_change_hacked_sound: ""
+      state_change_hacked_sound_volume: 1
     }
+    interaction_info_text: "Hack Node"
   }
   lod: 0
 }
@@ -22071,8 +22112,23 @@ props {
       }
     }
     matrixNode {
-      hackingObjectID: "52256b82366236d419003ae1"
+      hacking_objects: "52256b82366236d419003ae1"
+      prerequisites_control_state: false
+      constant_matrix_fx: "matrixcontrolnode"
+      state_change_offline_fx: ""
+      state_change_offline_sound: ""
+      state_change_offline_sound_volume: 1
+      state_change_hackable_fx: "MatrixControlNodeHacked"
+      state_change_hackable_sound: "MatrixNodeHackReady"
+      state_change_hackable_sound_volume: 1
+      state_change_locked_fx: ""
+      state_change_locked_sound: ""
+      state_change_locked_sound_volume: 1
+      state_change_hacked_fx: ""
+      state_change_hacked_sound: ""
+      state_change_hacked_sound_volume: 1
     }
+    interaction_info_text: "Hack Node"
   }
   lod: 0
 }
@@ -22119,8 +22175,22 @@ props {
       }
     }
     matrixNode {
-      hackingObjectID: "522a3481643431e91364f64f"
+      prerequisites_control_state: false
+      constant_matrix_fx: "matrixcontrolnode"
+      state_change_offline_fx: ""
+      state_change_offline_sound: ""
+      state_change_offline_sound_volume: 1
+      state_change_hackable_fx: "MatrixControlNodeHacked"
+      state_change_hackable_sound: "MatrixNodeHackReady"
+      state_change_hackable_sound_volume: 1
+      state_change_locked_fx: ""
+      state_change_locked_sound: ""
+      state_change_locked_sound_volume: 1
+      state_change_hacked_fx: ""
+      state_change_hacked_sound: ""
+      state_change_hacked_sound_volume: 1
     }
+    interaction_info_text: "Hack Node"
   }
   lod: 0
 }

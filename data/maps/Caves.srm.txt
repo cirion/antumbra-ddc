@@ -5380,6 +5380,7 @@ props {
       scene_name: "Antumbra Exterior Morning"
       confirmation_text: "This tunnel appears to head upwards. Do you want to follow it?"
     }
+    interaction_info_text: "Exit"
   }
   lod: 0
 }
@@ -16347,6 +16348,7 @@ props {
     isEnabled: true
     interactionRadius: 1
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Rotate Statue"
   }
   lod: 0
 }
@@ -16367,6 +16369,7 @@ props {
     isEnabled: true
     interactionRadius: 1
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Rotate Statue"
   }
   lod: 0
 }
@@ -16387,6 +16390,7 @@ props {
     isEnabled: true
     interactionRadius: 1
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Rotate Statue"
   }
   lod: 0
 }
@@ -16407,6 +16411,7 @@ props {
     isEnabled: true
     interactionRadius: 1
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Rotate Statue"
   }
   lod: 0
 }
@@ -16479,6 +16484,7 @@ props {
     isEnabled: true
     interactionRadius: 1
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Rotate Statue"
   }
   lod: 0
 }
@@ -16499,6 +16505,7 @@ props {
     isEnabled: true
     interactionRadius: 1
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Rotate Statue"
   }
   lod: 0
 }
@@ -16519,6 +16526,7 @@ props {
     isEnabled: true
     interactionRadius: 1
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Rotate Statue"
   }
   lod: 0
 }
@@ -16539,6 +16547,7 @@ props {
     isEnabled: true
     interactionRadius: 1
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Rotate Statue"
   }
   lod: 0
 }
@@ -16789,6 +16798,7 @@ props {
     isEnabled: true
     interactionRadius: 1
     interactionIcon: InteractionIcon_Inspect
+    interaction_info_text: "Read Book"
   }
   lod: 0
 }
@@ -16847,6 +16857,7 @@ props {
     isEnabled: true
     interactionRadius: 1
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Push Pillar"
   }
   lod: 0
 }
@@ -16866,6 +16877,7 @@ props {
     isEnabled: true
     interactionRadius: 1
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Push Pillar"
   }
   lod: 0
 }
@@ -16885,6 +16897,7 @@ props {
     isEnabled: true
     interactionRadius: 1
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Push Pillar"
   }
   lod: 0
 }
@@ -16904,6 +16917,7 @@ props {
     isEnabled: true
     interactionRadius: 1
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Push Pillar"
   }
   lod: 0
 }

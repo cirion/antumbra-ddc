@@ -4,13 +4,28 @@ idRef {
 ui_name: "A1_Cave_BossChatPreBattle"
 nodes {
   idRef {
-    id: "520443523662360813000249"
+    id: "54308bb03931395809007c14"
   }
   index: 0
-  text: "Yessssss\342\200\246 come closer to me, that I may sap your energies."
+  text: "WE HAVE NO TIME FOR THIS. DISPOSE OF THEM."
   branches {
     responseText: ""
     nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "54308b263931395809007be7"
+  }
+}
+nodes {
+  idRef {
+    id: "520443523662360813000249"
+  }
+  index: 1
+  text: "Yessssss\342\200\246 come closer to me, mortals, that I may sap your energies."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
   }
   nodeType: ConversationNodeType_Simple
 }
@@ -18,19 +33,19 @@ nodes {
   idRef {
     id: "52044365366236081300024c"
   }
-  index: 1
-  text: "{{GM}}The spirit before you flickers through a variety of shapes before settling on one that seems pleasing to itself.{{/GM}}\n\nAnd so you approach, more moths to the flame. Enter my light and be consumed!"
+  index: 2
+  text: "{{GM}}The spirit before you flickers through a variety of shapes before settling on one that seems pleasing to itself.{{/GM}}\n\nAnd so you approach, more moths to our flame. Enter my light and be consumed!"
   branches {
     responseText: "Greetings, spirit. We need not fight. I merely wish to make this place safe once more."
-    nextNodeIndex: 2
+    nextNodeIndex: 3
   }
   branches {
     responseText: "More vermin to destroy!"
-    nextNodeIndex: 4
+    nextNodeIndex: 5
   }
   branches {
     responseText: "{{GM}}Attack.{{/GM}}"
-    nextNodeIndex: 3
+    nextNodeIndex: 4
     auxiliaryLink: true
   }
   branches {
@@ -81,18 +96,18 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 5
+    nextNodeIndex: 6
   }
 }
 nodes {
   idRef {
     id: "520443943662360813000252"
   }
-  index: 2
+  index: 3
   text: "Safe? It is perfectly safe right now. All who fight do so at my bidding, for my pleasure."
   branches {
     responseText: ""
-    nextNodeIndex: 3
+    nextNodeIndex: 4
   }
   nodeType: ConversationNodeType_Simple
 }
@@ -100,7 +115,7 @@ nodes {
   idRef {
     id: "5204439e3662360813000255"
   }
-  index: 3
+  index: 4
   text: "You shall join with me, either with your will intact or as a jerking marionette. Come, dance with me!"
   nodeType: ConversationNodeType_Simple
   actions {
@@ -206,6 +221,17 @@ nodes {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
     }
     ops {
       functionName: "Activate Actor Spawner"
@@ -214,6 +240,17 @@ nodes {
           functionName: "Get Map Item (Actor Reference)"
           args {
             string_value: "520fc187366236f417004937"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
           }
         }
       }
@@ -228,6 +265,17 @@ nodes {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
     }
     ops {
       functionName: "Activate Actor Spawner"
@@ -236,6 +284,17 @@ nodes {
           functionName: "Get Map Item (Actor Reference)"
           args {
             string_value: "520fc199366236f417004939"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
           }
         }
       }
@@ -364,17 +423,68 @@ nodes {
     ops {
       functionName: "End Current Team Round"
     }
+    ops {
+      functionName: "Kill Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "54308b263931395809007be7"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DeathMethod"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "FacingDirection"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
   }
 }
 nodes {
   idRef {
     id: "520443b03662360813000257"
   }
-  index: 4
+  index: 5
   text: "{{GM}}Hissss.{{/GM}} You will not find me such easy prey."
   branches {
     responseText: ""
-    nextNodeIndex: 3
+    nextNodeIndex: 4
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
@@ -383,11 +493,11 @@ nodes {
   idRef {
     id: "520443f2366236081300025f"
   }
-  index: 5
+  index: 6
   text: "Indeed, it is as you say. I felt this Site emerge from deep within the earth, and moved to claim dominion over it. I am the fountainhead, I am the gatekeeper, I am the king. This domain is mine, and all within it shall bow before me."
   branches {
     responseText: ""
-    nextNodeIndex: 3
+    nextNodeIndex: 4
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple

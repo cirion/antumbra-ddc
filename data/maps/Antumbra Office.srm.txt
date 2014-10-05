@@ -464,6 +464,7 @@ props {
     isEnabled: false
     interactionRadius: 1
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Answer Phone"
   }
   lod: 0
 }
@@ -4647,7 +4648,8 @@ props {
         }
       }
     }
-    interactionIcon: InteractionIcon_Generic
+    interactionIcon: InteractionIcon_Matrix
+    interaction_info_text: "Access Terminal"
   }
   lod: 0
 }
@@ -6253,6 +6255,7 @@ props {
     isEnabled: false
     interactionRadius: 1
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Answer Phone"
   }
   lod: 0
 }
@@ -8312,6 +8315,7 @@ props {
       scene_name: "Caves"
       confirmation_text: "Are you ready to descend to the basement?"
     }
+    interaction_info_text: "Elevator"
   }
   lod: 0
 }
@@ -9094,6 +9098,7 @@ props {
     isEnabled: true
     interactionRadius: 1
     interactionIcon: InteractionIcon_Inspect
+    interaction_info_text: "Search Desk"
   }
   lod: 0
 }
@@ -10205,6 +10210,7 @@ props {
     isEnabled: true
     interactionRadius: 1
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Loot Safe"
   }
   lod: 0
 }

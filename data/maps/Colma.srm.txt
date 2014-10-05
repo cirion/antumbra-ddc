@@ -7765,6 +7765,7 @@ props {
       }
     }
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Disturb Grave"
   }
   lod: 0
 }
@@ -10151,6 +10152,7 @@ props {
       }
     }
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Disturb Grave"
   }
   lod: 0
 }
@@ -10200,6 +10202,7 @@ props {
       inspectText: "NORTON I\nEMPEROR\nOF THE UNITED STATES\nAND\nPROTECTOR OF MEXICO\n\nJOSHUA A. NORTON\n1819-1880"
       disableAfterInteracting: false
     }
+    interaction_info_text: ""
   }
   lod: 0
 }
@@ -10298,6 +10301,7 @@ props {
       }
     }
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Disturb Grave"
   }
   lod: 0
 }
@@ -19600,6 +19604,7 @@ props {
       }
     }
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Touch Stump"
   }
   lod: 0
 }
@@ -20323,6 +20328,7 @@ props {
       scene_name: "Crypt"
       confirmation_text: "The chilly silence of the grave awaits. Are you ready to descend?"
     }
+    interaction_info_text: "Enter Catacombs"
   }
   lod: 0
 }
@@ -71418,6 +71424,7 @@ props {
       itemName: "a3-pu_saito_records"
       destroyOnPickup: true
     }
+    interaction_info_text: "Take PDA"
   }
   lod: 0
 }

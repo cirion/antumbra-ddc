@@ -13778,6 +13778,7 @@ props {
       }
     }
     interactionIcon: InteractionIcon_Warp
+    interaction_info_text: "Climb Down"
   }
   lod: 0
 }
@@ -13918,6 +13919,7 @@ props {
       }
     }
     interactionIcon: InteractionIcon_ItemPickup
+    interaction_info_text: "Take Rope"
   }
   lod: 0
 }

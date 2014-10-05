@@ -5815,8 +5815,9 @@ props {
     interactionRadius: 1
     transitionPoint {
       scene_name: "Armory"
-      confirmation_text: "Are you ready to enter the armory? There\'s no turning back from here."
+      confirmation_text: "Are you ready to head inside? There\'s no turning back from here."
     }
+    interaction_info_text: "Enter Armory"
   }
   lod: 0
 }
@@ -22375,6 +22376,7 @@ props {
     isEnabled: false
     interactionRadius: 1
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Access Gate Control"
   }
   lod: 0
 }
@@ -22623,6 +22625,7 @@ props {
       scene_name: "Eclipse 2"
       confirmation_text: "Are you ready to report back to Mr. Johnson in Eclipse?"
     }
+    interaction_info_text: "Enter Taxi"
   }
   lod: 0
 }
@@ -22676,6 +22679,7 @@ props {
     isEnabled: false
     interactionRadius: 1
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Search Trash"
   }
   lod: 0
 }
@@ -69005,6 +69009,7 @@ props {
     isEnabled: false
     interactionRadius: 1
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Access Gate Control"
   }
   lod: 0
 }

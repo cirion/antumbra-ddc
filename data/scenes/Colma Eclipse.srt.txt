@@ -205,6 +205,17 @@ triggers {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
     }
   }
   isActive: true
@@ -1133,6 +1144,19 @@ triggers {
           }
         }
       }
+      args {
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
     }
   }
   isActive: true
@@ -1240,6 +1264,17 @@ triggers {
           functionName: "Get Map Item (Actor Reference)"
           args {
             string_value: "5224a853366236a409007eb7"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
           }
         }
       }
@@ -5334,6 +5369,19 @@ triggers {
           }
         }
       }
+      args {
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
     }
   }
   isActive: true
@@ -8012,6 +8060,19 @@ triggers {
           }
         }
       }
+      args {
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
     }
   }
   isActive: true
@@ -8042,6 +8103,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -8086,6 +8148,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -8130,6 +8193,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -8174,6 +8238,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -8218,6 +8283,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -8262,6 +8328,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -8306,6 +8373,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -8350,6 +8418,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -8394,6 +8463,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -8782,7 +8852,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Creature/CreatureHellhound"
+    prefab_name: "Seattle:Creature/CreatureHellhound"
     character_sheet_id: "Hellhound (normal)"
     equipment_sheet_id: "Hellhound Critter Powers"
     character_mod {
@@ -8800,8 +8870,10 @@ characters {
         armor: 0
         force: 0
         morale: -1
+        discipline: 0
         awareness: 0
         perception: 0
+        authority: 0
         protect_tether_range: 0
         move_speed: 0
       }
@@ -8838,12 +8910,17 @@ characters {
       }
       archetypeName: "Guard - Hunt And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "Civilians"
     char_name: "Bummer"
     GeneralTags: "norton"
     pc_spawn_number: -1
     hiring_type: HiringType_None
+    portrait {
+      filename: "npc_dog_dante"
+    }
     karma: 45
     hiring_cost_override: 1000
   }
@@ -8862,7 +8939,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Creature/CreatureHellhound"
+    prefab_name: "Seattle:Creature/CreatureHellhound"
     character_sheet_id: "Hellhound (normal)"
     equipment_sheet_id: "Hellhound Critter Powers"
     character_mod {
@@ -8880,8 +8957,10 @@ characters {
         armor: 0
         force: 0
         morale: -1
+        discipline: 0
         awareness: 0
         perception: 0
+        authority: 0
         protect_tether_range: 0
         move_speed: 0
       }
@@ -8918,12 +8997,17 @@ characters {
       }
       archetypeName: "Guard - Hunt And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "Civilians"
     char_name: "Lazarus"
     GeneralTags: "norton"
     pc_spawn_number: -1
     hiring_type: HiringType_None
+    portrait {
+      filename: "npc_dog_dantecombat"
+    }
     karma: 45
     hiring_cost_override: 1000
   }
@@ -12513,5 +12597,8 @@ use_hiring_cost_warning: true
 hiring_average_cost: 99999
 override_hiring_average_cost: true
 show_equip_screen_on_scene_load: false
+is_persistant: false
+is_persistant_has_value: false
 can_move_outside_camera_regions: true
 can_start_before_triggers: true
+can_use_team_advancement: false

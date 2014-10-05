@@ -402,7 +402,7 @@ props {
     z: 24
   }
   orientation: ORIENTATION_E
-  displayName: "Door Lobby to Dance"
+  displayName: "Door Dance to Lobby"
   idRef {
     id: "51fd65743662362c23007347"
   }
@@ -6872,6 +6872,7 @@ props {
       inspectText: ""
       disableAfterInteracting: false
     }
+    interaction_info_text: "Inspect Sound System"
   }
   lod: 0
 }
@@ -8410,6 +8411,7 @@ props {
     isEnabled: true
     interactionRadius: 1
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Access Terminal"
   }
   lod: 0
 }
@@ -8593,6 +8595,7 @@ props {
       itemName: "Office Keycard"
       destroyOnPickup: true
     }
+    interaction_info_text: "Take Keycard"
   }
   lod: 0
 }

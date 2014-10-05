@@ -3489,6 +3489,7 @@ props {
     isEnabled: true
     interactionRadius: 1
     interactionIcon: InteractionIcon_Warp
+    interaction_info_text: "Stairs"
   }
   lod: 0
 }
@@ -4450,6 +4451,7 @@ props {
       scene_name: "Aztechnology"
       confirmation_text: "Are you ready to travel to the Aztechnology Pyramid?"
     }
+    interaction_info_text: "Exit"
   }
   lod: 0
 }
@@ -5084,6 +5086,7 @@ props {
     isEnabled: true
     interactionRadius: 1
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Open Stash"
   }
   lod: 0
 }
@@ -6151,6 +6154,7 @@ props {
     isEnabled: true
     interactionRadius: 1
     interactionIcon: InteractionIcon_Warp
+    interaction_info_text: "Elevator"
   }
   lod: 0
 }
@@ -6493,6 +6497,7 @@ props {
     isEnabled: true
     interactionRadius: 1
     interactionIcon: InteractionIcon_Warp
+    interaction_info_text: "Stairs"
   }
   lod: 0
 }
@@ -14168,6 +14173,7 @@ props {
     isEnabled: true
     interactionRadius: 1
     interactionIcon: InteractionIcon_Warp
+    interaction_info_text: "Elevator"
   }
   lod: 0
 }
@@ -18091,6 +18097,7 @@ props {
     isEnabled: false
     interactionRadius: 1
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Enter Bedroom"
   }
   lod: 0
 }
@@ -18266,6 +18273,7 @@ props {
     isEnabled: false
     interactionRadius: 1
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Access Terminal"
   }
   lod: 0
 }

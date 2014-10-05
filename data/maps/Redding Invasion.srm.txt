@@ -1499,6 +1499,7 @@ props {
       scene_name: "Redding Old City Hall"
       confirmation_text: "The city hall is trashed, and it will take at least a day before Selene can make it habitable again. Do you want to find a hotel until then?"
     }
+    interaction_info_text: "Exit"
   }
   lod: 0
 }
@@ -5809,6 +5810,7 @@ props {
       itemName: "AR 1 AK98"
       destroyOnPickup: false
     }
+    interaction_info_text: "Loot Rack"
   }
   lod: 0
 }
@@ -6070,6 +6072,7 @@ props {
       }
     }
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Secure Broadcast Station"
   }
   lod: 0
 }
@@ -7231,6 +7234,7 @@ props {
     matrixSpawnPoint {
       dimension: "Matrix"
     }
+    interaction_info_text: "Jack Out"
   }
   lod: 0
 }
@@ -7293,6 +7297,7 @@ props {
       state_change_hacked_sound: ""
       state_change_hacked_sound_volume: 1
     }
+    interaction_info_text: "Hack Node"
   }
   lod: 0
 }
@@ -7354,6 +7359,7 @@ props {
       state_change_hacked_sound: ""
       state_change_hacked_sound_volume: 1
     }
+    interaction_info_text: "Hack Node"
   }
   lod: 0
 }
@@ -7415,6 +7421,7 @@ props {
       state_change_hacked_sound: ""
       state_change_hacked_sound_volume: 1
     }
+    interaction_info_text: "Hack Node"
   }
   lod: 0
 }
@@ -7476,6 +7483,7 @@ props {
       state_change_hacked_sound: ""
       state_change_hacked_sound_volume: 1
     }
+    interaction_info_text: "Hack Node"
   }
   lod: 0
 }
@@ -18094,6 +18102,7 @@ props {
       itemName: "Grenade (Smoke)"
       destroyOnPickup: false
     }
+    interaction_info_text: "Loot Arsenal"
   }
   lod: 0
 }

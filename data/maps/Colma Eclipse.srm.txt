@@ -20237,6 +20237,7 @@ props {
       scene_name: "Embarcadero 2"
       confirmation_text: "Are you ready to pursue Shavarus?"
     }
+    interaction_info_text: "Enter Car"
   }
   lod: 0
 }

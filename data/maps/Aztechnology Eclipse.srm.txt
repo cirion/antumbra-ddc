@@ -2910,6 +2910,7 @@ props {
       scene_name: "Aztechnology 2"
       confirmation_text: "Are you ready to ascend to the offices?"
     }
+    interaction_info_text: "Elevator"
   }
   lod: 0
 }
@@ -18002,6 +18003,7 @@ props {
       scene_name: "Aztechnology 3"
       confirmation_text: "Crossing this threshold will raise any security alarms that have not already been activated. Are you ready to proceed?"
     }
+    interaction_info_text: "Elevator"
   }
   lod: 0
 }
@@ -18105,6 +18107,7 @@ props {
       scene_name: "The Mission 1"
       confirmation_text: "Are you ready to leave the Aztechnology Pyramid?"
     }
+    interaction_info_text: "Elevator"
   }
   lod: 0
 }
@@ -18210,6 +18213,7 @@ props {
       itemName: "A2S03-Keycard"
       destroyOnPickup: true
     }
+    interaction_info_text: "Take Keycard"
   }
   lod: 0
 }
@@ -27253,6 +27257,7 @@ props {
     matrixSpawnPoint {
       dimension: "Aztechnology Local Network"
     }
+    interaction_info_text: "Jack Out"
   }
   lod: 0
 }
@@ -35416,8 +35421,23 @@ props {
       }
     }
     matrixNode {
-      hackingObjectID: "522943ce366236f01900121a"
+      hacking_objects: "522943ce366236f01900121a"
+      prerequisites_control_state: false
+      constant_matrix_fx: "matrixcontrolnode"
+      state_change_offline_fx: ""
+      state_change_offline_sound: ""
+      state_change_offline_sound_volume: 1
+      state_change_hackable_fx: "MatrixControlNodeHacked"
+      state_change_hackable_sound: "MatrixNodeHackReady"
+      state_change_hackable_sound_volume: 1
+      state_change_locked_fx: ""
+      state_change_locked_sound: ""
+      state_change_locked_sound_volume: 1
+      state_change_hacked_fx: ""
+      state_change_hacked_sound: ""
+      state_change_hacked_sound_volume: 1
     }
+    interaction_info_text: "Hack Node"
   }
   lod: 0
 }
@@ -35464,8 +35484,23 @@ props {
       }
     }
     matrixNode {
-      hackingObjectID: "522932d4366236f019000ff3"
+      hacking_objects: "522932d4366236f019000ff3"
+      prerequisites_control_state: false
+      constant_matrix_fx: "matrixcontrolnode"
+      state_change_offline_fx: ""
+      state_change_offline_sound: ""
+      state_change_offline_sound_volume: 1
+      state_change_hackable_fx: "MatrixControlNodeHacked"
+      state_change_hackable_sound: "MatrixNodeHackReady"
+      state_change_hackable_sound_volume: 1
+      state_change_locked_fx: ""
+      state_change_locked_sound: ""
+      state_change_locked_sound_volume: 1
+      state_change_hacked_fx: ""
+      state_change_hacked_sound: ""
+      state_change_hacked_sound_volume: 1
     }
+    interaction_info_text: "Hack Node"
   }
   lod: 0
 }
@@ -36801,6 +36836,7 @@ props {
     matrixSpawnPoint {
       dimension: "Aztechnology Secure Network"
     }
+    interaction_info_text: "Jack Out"
   }
   lod: 0
 }
@@ -38089,8 +38125,22 @@ props {
       }
     }
     matrixNode {
-      hackingObjectID: "522b92f5366236ec1f002c5f"
+      prerequisites_control_state: false
+      constant_matrix_fx: "matrixcontrolnode"
+      state_change_offline_fx: ""
+      state_change_offline_sound: ""
+      state_change_offline_sound_volume: 1
+      state_change_hackable_fx: "MatrixControlNodeHacked"
+      state_change_hackable_sound: "MatrixNodeHackReady"
+      state_change_hackable_sound_volume: 1
+      state_change_locked_fx: ""
+      state_change_locked_sound: ""
+      state_change_locked_sound_volume: 1
+      state_change_hacked_fx: ""
+      state_change_hacked_sound: ""
+      state_change_hacked_sound_volume: 1
     }
+    interaction_info_text: "Hack Node"
   }
   lod: 0
 }
@@ -38160,8 +38210,22 @@ props {
       }
     }
     matrixNode {
-      hackingObjectID: "522b92f5366236ec1f002c5b"
+      prerequisites_control_state: false
+      constant_matrix_fx: "matrixcontrolnode"
+      state_change_offline_fx: ""
+      state_change_offline_sound: ""
+      state_change_offline_sound_volume: 1
+      state_change_hackable_fx: "MatrixControlNodeHacked"
+      state_change_hackable_sound: "MatrixNodeHackReady"
+      state_change_hackable_sound_volume: 1
+      state_change_locked_fx: ""
+      state_change_locked_sound: ""
+      state_change_locked_sound_volume: 1
+      state_change_hacked_fx: ""
+      state_change_hacked_sound: ""
+      state_change_hacked_sound_volume: 1
     }
+    interaction_info_text: "Hack Node"
   }
   lod: 0
 }

@@ -72,6 +72,19 @@ triggers {
           }
         }
       }
+      args {
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
     }
   }
   isActive: true
@@ -104,6 +117,19 @@ triggers {
           }
           args {
             int_value: 3
+          }
+        }
+      }
+      args {
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
           }
         }
       }
@@ -268,6 +294,19 @@ triggers {
           }
         }
       }
+      args {
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
     }
   }
   is_oneshot: true
@@ -426,6 +465,19 @@ triggers {
           }
           args {
             int_value: 3
+          }
+        }
+      }
+      args {
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
           }
         }
       }
@@ -769,6 +821,17 @@ triggers {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
     }
     ops {
       functionName: "Add To Variable (int)"
@@ -898,6 +961,17 @@ triggers {
           functionName: "Get Map Item (Actor Reference)"
           args {
             string_value: "5226a299366236d0160012f6"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
           }
         }
       }
@@ -1033,6 +1107,17 @@ triggers {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
     }
     ops {
       functionName: "Add To Variable (int)"
@@ -1162,6 +1247,17 @@ triggers {
           functionName: "Get Map Item (Actor Reference)"
           args {
             string_value: "5226a2a4366236d0160012f8"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
           }
         }
       }
@@ -1916,6 +2012,17 @@ triggers {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
     }
     ops {
       functionName: "Play Sound"
@@ -2217,6 +2324,17 @@ triggers {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
     }
     ops {
       functionName: "Play Sound"
@@ -2404,6 +2522,17 @@ triggers {
           }
           args {
             int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
           }
         }
       }
@@ -9399,6 +9528,17 @@ triggers {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
     }
     ops {
       functionName: "Activate Actor Spawner"
@@ -9407,6 +9547,17 @@ triggers {
           functionName: "Get Map Item (Actor Reference)"
           args {
             string_value: "522a14b4643431e91364f634"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
           }
         }
       }
@@ -9717,6 +9868,17 @@ triggers {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
     }
     ops {
       functionName: "Activate Actor Spawner"
@@ -9725,6 +9887,17 @@ triggers {
           functionName: "Get Map Item (Actor Reference)"
           args {
             string_value: "522a2267643431e91364f638"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
           }
         }
       }
@@ -9774,6 +9947,17 @@ triggers {
           functionName: "Get Map Item (Actor Reference)"
           args {
             string_value: "522a2296643431e91364f63a"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
           }
         }
       }
@@ -10204,6 +10388,17 @@ triggers {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
     }
     ops {
       functionName: "Activate Actor Spawner"
@@ -10212,6 +10407,17 @@ triggers {
           functionName: "Get Map Item (Actor Reference)"
           args {
             string_value: "522a23e6643431e91364f643"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
           }
         }
       }
@@ -11899,6 +12105,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -11943,6 +12150,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -11987,6 +12195,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -12031,6 +12240,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -12075,6 +12285,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -12119,6 +12330,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -12163,6 +12375,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -12207,6 +12420,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -12251,6 +12465,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -12295,6 +12510,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -12339,6 +12555,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -12383,6 +12600,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -12427,6 +12645,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -12471,6 +12690,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -12515,6 +12735,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -12559,6 +12780,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -12603,6 +12825,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -12647,6 +12870,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -12730,7 +12954,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Creature/CreatureHellhound"
+    prefab_name: "Seattle:Creature/CreatureHellhound"
     character_sheet_id: "Hellhound (normal)"
     equipment_sheet_id: "Hellhound Critter Powers"
     character_mod {
@@ -12748,8 +12972,10 @@ characters {
         armor: 1
         force: 0
         morale: -1
+        discipline: 0
         awareness: 0
         perception: 0
+        authority: 0
         protect_tether_range: 0
         move_speed: 0
       }
@@ -12786,6 +13012,8 @@ characters {
       }
       archetypeName: "Guard - Hunt And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "Shadowrunners"
     char_name: "Lazarus"
@@ -12794,7 +13022,7 @@ characters {
     pc_spawn_number: -1
     hiring_type: HiringType_None
     portrait {
-      filename: "generic_spirit_fire"
+      filename: "npc_dog_dantecombat"
     }
     karma: 58
     hiring_cost_override: 1000
@@ -12907,7 +13135,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Creature/CreatureHellhound"
+    prefab_name: "Berlin:Creatures/CreatureDogFriendly"
     character_sheet_id: "Hellhound (normal)"
     equipment_sheet_id: "Hellhound Critter Powers"
     character_mod {
@@ -12925,8 +13153,10 @@ characters {
         armor: 1
         force: 0
         morale: -1
+        discipline: 0
         awareness: 0
         perception: 0
+        authority: 0
         protect_tether_range: 0
         move_speed: 0
       }
@@ -12963,6 +13193,8 @@ characters {
       }
       archetypeName: "Guard - Hunt And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "Shadowrunners"
     char_name: "Bummer"
@@ -12971,7 +13203,7 @@ characters {
     pc_spawn_number: -1
     hiring_type: HiringType_None
     portrait {
-      filename: "generic_spirit_fire"
+      filename: "npc_dog_dante"
     }
     karma: 62
     hiring_cost_override: 1000
@@ -15261,5 +15493,8 @@ use_hiring_cost_warning: true
 hiring_average_cost: 99999
 override_hiring_average_cost: true
 show_equip_screen_on_scene_load: false
+is_persistant: false
+is_persistant_has_value: false
 can_move_outside_camera_regions: true
 can_start_before_triggers: true
+can_use_team_advancement: false

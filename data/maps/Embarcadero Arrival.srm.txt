@@ -7349,6 +7349,7 @@ props {
     isEnabled: false
     interactionRadius: 1
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Use Rowboat"
   }
   lod: 0
 }
@@ -77130,6 +77131,7 @@ props {
     isEnabled: false
     interactionRadius: 1
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Search Crate"
   }
   lod: 0
 }
@@ -77822,6 +77824,7 @@ props {
       scene_name: "Eclipse 3"
       confirmation_text: "There\'s no sign of Shavarus in the bay. Do you want to regroup in Eclipse?"
     }
+    interaction_info_text: "Row Boat"
   }
   lod: 0
 }
@@ -111241,6 +111244,7 @@ props {
       scene_name: "Eclipse"
       confirmation_text: "This armored van looks like it could survive the marines\' attack. Do you want to continue to Eclipse?"
     }
+    interaction_info_text: "Escape in Van"
   }
   lod: 0
 }

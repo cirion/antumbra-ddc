@@ -3353,6 +3353,7 @@ props {
       scene_name: "Redding Old City Hall"
       confirmation_text: "Are you ready to make the trip back to Redding?"
     }
+    interaction_info_text: "Climb Stairs"
   }
   lod: 0
 }
@@ -8078,6 +8079,7 @@ props {
     isEnabled: true
     interactionRadius: 1
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Press Statue"
   }
   lod: 0
 }
@@ -8097,6 +8099,7 @@ props {
     isEnabled: true
     interactionRadius: 1
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Press Statue"
   }
   lod: 0
 }
@@ -8116,6 +8119,7 @@ props {
     isEnabled: true
     interactionRadius: 1
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Press Statue"
   }
   lod: 0
 }
@@ -8251,6 +8255,7 @@ props {
     isEnabled: true
     interactionRadius: 1
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Snuff Candle"
   }
   lod: 0
 }
@@ -8290,6 +8295,7 @@ props {
     isEnabled: true
     interactionRadius: 1
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Snuff Candle"
   }
   lod: 0
 }
@@ -8309,6 +8315,7 @@ props {
     isEnabled: true
     interactionRadius: 1
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Snuff Candle"
   }
   lod: 0
 }

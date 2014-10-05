@@ -12270,6 +12270,7 @@ props {
     isEnabled: true
     interactionRadius: 1
     interactionIcon: InteractionIcon_ItemPickup
+    interaction_info_text: "Search Van"
   }
   lod: 0
 }
@@ -12420,6 +12421,7 @@ props {
       }
     }
     interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Move Van"
   }
   lod: 0
 }

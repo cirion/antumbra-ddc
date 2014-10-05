@@ -3489,6 +3489,7 @@ props {
     isEnabled: true
     interactionRadius: 1
     interactionIcon: InteractionIcon_Warp
+    interaction_info_text: "Stairs"
   }
   lod: 0
 }
@@ -4507,6 +4508,7 @@ props {
       itemName: "Spell Flamethrower 1"
       destroyOnPickup: false
     }
+    interaction_info_text: "Loot Scrolls"
   }
   lod: 0
 }
@@ -4607,6 +4609,7 @@ props {
       itemName: "PR Firewall 1"
       destroyOnPickup: false
     }
+    interaction_info_text: "Loot Desk"
   }
   lod: 0
 }
@@ -5052,6 +5055,7 @@ props {
       itemName: "SMG 1 Beretta Model 70"
       destroyOnPickup: false
     }
+    interaction_info_text: "Loot Rack"
   }
   lod: 0
 }
@@ -5106,6 +5110,7 @@ props {
       itemName: "Grenade 1 (Frag)"
       destroyOnPickup: false
     }
+    interaction_info_text: "Loot Cabinet"
   }
   lod: 0
 }
@@ -6227,6 +6232,7 @@ props {
     isEnabled: true
     interactionRadius: 1
     interactionIcon: InteractionIcon_Warp
+    interaction_info_text: "Elevator"
   }
   lod: 0
 }
@@ -6569,6 +6575,7 @@ props {
     isEnabled: true
     interactionRadius: 1
     interactionIcon: InteractionIcon_Warp
+    interaction_info_text: "Stairs"
   }
   lod: 0
 }
@@ -14172,6 +14179,7 @@ props {
     isEnabled: true
     interactionRadius: 1
     interactionIcon: InteractionIcon_Warp
+    interaction_info_text: "Elevator"
   }
   lod: 0
 }
@@ -23713,6 +23721,7 @@ props {
     matrixSpawnPoint {
       dimension: "Matrix"
     }
+    interaction_info_text: "Jack Out"
   }
   lod: 0
 }
@@ -23795,6 +23804,7 @@ props {
       state_change_hacked_sound: ""
       state_change_hacked_sound_volume: 1
     }
+    interaction_info_text: "Hack Node"
   }
   lod: 0
 }
@@ -23877,6 +23887,7 @@ props {
       state_change_hacked_sound: ""
       state_change_hacked_sound_volume: 1
     }
+    interaction_info_text: "Hack Node"
   }
   lod: 0
 }
@@ -23959,6 +23970,7 @@ props {
       state_change_hacked_sound: ""
       state_change_hacked_sound_volume: 1
     }
+    interaction_info_text: "Hack Node"
   }
   lod: 0
 }
@@ -24041,6 +24053,7 @@ props {
       state_change_hacked_sound: ""
       state_change_hacked_sound_volume: 1
     }
+    interaction_info_text: "Hack Node"
   }
   lod: 0
 }
@@ -24637,6 +24650,7 @@ props {
       state_change_hacked_sound: ""
       state_change_hacked_sound_volume: 1
     }
+    interaction_info_text: "Hack Node"
   }
   lod: 0
 }
@@ -24732,6 +24746,7 @@ props {
       state_change_hacked_sound: ""
       state_change_hacked_sound_volume: 1
     }
+    interaction_info_text: "Hack Node"
   }
   lod: 0
 }
