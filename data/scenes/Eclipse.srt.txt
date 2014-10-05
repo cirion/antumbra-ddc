@@ -12955,6 +12955,7 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        is_fearless: 1
       }
       skills {
         ranged_combat: 0
@@ -12987,6 +12988,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
+      archetypeName: "Non-Combatant"
       attitude: AttitudeAggressive
       vulnerabilities {
       }

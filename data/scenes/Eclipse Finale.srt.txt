@@ -6135,9 +6135,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -26
+    x: -28
     y: 0
-    z: 64
+    z: 63
   }
   orientation: ORIENTATION_S
   displayName: "Narrator"

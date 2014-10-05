@@ -13021,6 +13021,7 @@ characters {
     enabled_at_start: true
     pc_spawn_number: -1
     hiring_type: HiringType_None
+    disable_pickups: true
     portrait {
       filename: "npc_dog_dantecombat"
     }
@@ -13202,6 +13203,7 @@ characters {
     enabled_at_start: true
     pc_spawn_number: -1
     hiring_type: HiringType_None
+    disable_pickups: true
     portrait {
       filename: "npc_dog_dante"
     }
@@ -13691,7 +13693,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Story/TirTairngireGuard"
+    prefab_name: "Seattle:Story/TirTairngireGuard"
     character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
@@ -13749,6 +13751,8 @@ characters {
       }
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "Gangers"
     char_name: "Tir Guard"

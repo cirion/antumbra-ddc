@@ -37884,3 +37884,16 @@ props {
     intensity: 8
   }
 }
+props {
+  name: "matrix_tech_1x2cover"
+  gridPoint {
+    x: -193
+    y: 0
+    z: 137
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "5431af84393139dc13002689"
+  }
+  lod: 0
+}

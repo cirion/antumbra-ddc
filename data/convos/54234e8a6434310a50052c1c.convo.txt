@@ -43,7 +43,7 @@ nodes {
     id: "54234c8e6434310a50052b34"
   }
   index: 1
-  text: "{{GM}}Saito\'s already notorious paranoia increases yet further as he begins to see plots and schemes in every gathering of metahumans. Civil war appears inevitable. The only question remaining is which side will strike first.{{/GM}}"
+  text: "{{GM}}Saito\'s already-notorious paranoia increases yet further as he begins to see plots and schemes in every gathering of metahumans. Civil war appears inevitable. The only question remaining is which side will strike first.{{/GM}}"
   branches {
     responseText: ""
     nextNodeIndex: 2
