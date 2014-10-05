@@ -104,7 +104,7 @@ nodes {
     }
   }
   branches {
-    responseText: "Maybe later."
+    responseText: "Later."
     nextNodeIndex: -1
   }
   nodeType: ConversationNodeType_Simple

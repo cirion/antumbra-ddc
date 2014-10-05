@@ -6676,7 +6676,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Standard/TrollFemaleDetective"
+    prefab_name: "Seattle:Standard/TrollFemaleDetective"
     character_sheet_id: "BaseCivilian"
     character_mod {
       stats {
@@ -6695,7 +6695,7 @@ characters {
         awareness: 24
         perception: 0
         authority: 0
-        protect_tether_range: 5
+        protect_tether_range: 0
         move_speed: 0
       }
       skills {
@@ -6709,9 +6709,9 @@ characters {
         shotgun: 3
         edged: 1
       }
-    }
-    equipment {
-      prefab_name: "Sh 2 Mossberg CMDT"
+      archetypeName: "Guard - Hunt And Destroy"
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Kamikaze"
@@ -6723,7 +6723,7 @@ characters {
       prefab_name: "Grenade 2 (Frag)"
     }
     equipment {
-      prefab_name: "Sword 1 Rebar Pipe"
+      prefab_name: "Berlin_Sh 2 Mossberg CMDT"
     }
     team_id: "Civilians"
     char_name: "Turm"
