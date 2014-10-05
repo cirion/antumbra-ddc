@@ -18779,7 +18779,7 @@ props {
     y: 0
     z: -26
   }
-  orientation: ORIENTATION_E
+  orientation: ORIENTATION_S
   lod: 0
 }
 props {

@@ -54,7 +54,7 @@ triggers {
       }
     }
   }
-  isActive: false
+  isActive: true
   idRef {
     id: "51fc8317366236881d00689e"
   }
@@ -2746,7 +2746,7 @@ triggers {
       }
     }
   }
-  isActive: false
+  isActive: true
   idRef {
     id: "54308a033931395809007bcf"
   }
@@ -2810,7 +2810,7 @@ triggers {
       }
     }
   }
-  isActive: false
+  isActive: true
   idRef {
     id: "54308a053931395809007bd0"
   }
@@ -2874,7 +2874,7 @@ triggers {
       }
     }
   }
-  isActive: false
+  isActive: true
   idRef {
     id: "54308a073931395809007bd1"
   }

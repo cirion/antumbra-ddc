@@ -335,7 +335,7 @@ nodes {
     nextNodeIndex: 10
   }
   branches {
-    responseText: "Not for now."
+    responseText: "See you later."
     nextNodeIndex: -1
   }
   branches {

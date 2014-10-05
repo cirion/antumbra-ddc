@@ -10467,7 +10467,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Wealthy/HumanMaleTurquoisePonyJacket"
+    prefab_name: "Seattle:Wealthy/HumanMaleTurquoisePonyJacket"
     character_sheet_id: "Lonestar_Lv2_Captain"
     equipment_sheet_id: "Lonestar_Captain_Low"
     character_mod {
@@ -10491,6 +10491,7 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        is_fearless: 1
       }
       skills {
         ranged_combat: 0
@@ -10525,6 +10526,8 @@ characters {
       }
       archetypeName: "Guard - Hunt And Destroy"
       attitude: AttitudeBoss
+      vulnerabilities {
+      }
     }
     team_id: "LoneStar"
     char_name: "Marine Captain"
@@ -10560,7 +10563,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/ElfMale"
+    prefab_name: "Seattle:Core/ElfMale"
     character_sheet_id: "Lvl2_Elf_Mage"
     equipment_sheet_id: "Lonestar_Mage_Low"
     character_mod {
@@ -10584,6 +10587,7 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        is_fearless: 1
       }
       skills {
         ranged_combat: 0
@@ -10618,6 +10622,8 @@ characters {
       }
       archetypeName: "Guard - Hunt And Destroy"
       attitude: AttitudeBoss
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "RiggerGolden"
@@ -10658,7 +10664,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/HumanMale"
+    prefab_name: "Seattle:Core/HumanMale"
     character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
@@ -10682,6 +10688,7 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        is_fearless: 1
       }
       skills {
         ranged_combat: 0
@@ -10716,6 +10723,8 @@ characters {
       }
       archetypeName: "Guard - Hunt And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -10729,7 +10738,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h3c4b4c4"
-    karma: 39
+    karma: 48
   }
 }
 characters {
@@ -10754,7 +10763,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/HumanMale"
+    prefab_name: "Seattle:Core/HumanMale"
     character_sheet_id: "Lonestar_Lv2_Ork_Shotgun"
     equipment_sheet_id: "Lonestar_Shotgun_Low"
     character_mod {
@@ -10778,6 +10787,7 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        is_fearless: 1
       }
       skills {
         ranged_combat: 0
@@ -10812,6 +10822,8 @@ characters {
       }
       archetypeName: "Guard - Hunt And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -10851,7 +10863,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/HumanMale"
+    prefab_name: "Seattle:Core/HumanMale"
     character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
@@ -10875,6 +10887,7 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        is_fearless: 1
       }
       skills {
         ranged_combat: 0
@@ -10909,6 +10922,8 @@ characters {
       }
       archetypeName: "Guard - Hunt And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -10923,7 +10938,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h6c4b1c4"
-    karma: 39
+    karma: 48
   }
 }
 characters {
@@ -10949,7 +10964,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/HumanFemale"
+    prefab_name: "Seattle:Core/HumanFemale"
     character_sheet_id: "Lonestar_Lv2_Human_Pistol"
     equipment_sheet_id: "Lonestar_Pistol_Low"
     character_mod {
@@ -10973,6 +10988,7 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        is_fearless: 1
       }
       skills {
         ranged_combat: 0
@@ -11007,6 +11023,8 @@ characters {
       }
       archetypeName: "Guard - Hunt And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -11047,7 +11065,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Gangers/DwarfMaleGangerMohawk_Cutter"
+    prefab_name: "Seattle:Gangers/DwarfMaleGangerMohawk_Cutter"
     character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
     equipment_sheet_id: "Lonestar_Shotgun_Low"
     character_mod {
@@ -11071,6 +11089,7 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        is_fearless: 1
       }
       skills {
         ranged_combat: 0
@@ -11105,6 +11124,8 @@ characters {
       }
       archetypeName: "Guard - Hunt And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "Gangers"
     char_name: "Ganger"
@@ -11141,7 +11162,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Gangers/ElfFemaleGangerMohawk"
+    prefab_name: "Seattle:Gangers/ElfFemaleGangerMohawk"
     character_sheet_id: "Lonestar_Lv2_Human_Mage"
     character_mod {
       stats {
@@ -11164,6 +11185,7 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        is_fearless: 1
       }
       skills {
         ranged_combat: 0
@@ -11198,6 +11220,8 @@ characters {
       }
       archetypeName: "Guard - Hunt And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Spell Aim 1"
@@ -11242,7 +11266,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Standard/DwarfMaleBiker"
+    prefab_name: "Seattle:Standard/DwarfMaleBiker"
     character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
@@ -11266,6 +11290,7 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        is_fearless: 1
       }
       skills {
         ranged_combat: 0
@@ -11300,6 +11325,8 @@ characters {
       }
       archetypeName: "Guard - Hunt And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "Gangers"
     char_name: "Ganger"
@@ -11336,7 +11363,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Gangers/OrkMaleGanger"
+    prefab_name: "Seattle:Gangers/OrkMaleGanger"
     character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
@@ -11360,6 +11387,7 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        is_fearless: 1
       }
       skills {
         ranged_combat: 0
@@ -11394,6 +11422,8 @@ characters {
       }
       archetypeName: "Guard - Hunt And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "Gangers"
     char_name: "Ganger"

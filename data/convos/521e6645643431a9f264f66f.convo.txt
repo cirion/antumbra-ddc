@@ -82,7 +82,7 @@ nodes {
     nextNodeIndex: 6
   }
   branches {
-    responseText: "Do you have any cyberwear available?"
+    responseText: "Do you have any cyberware available?"
     actions {
       ops {
         functionName: "Open Cyberware Screen From Actor"

@@ -3420,7 +3420,7 @@ triggers {
         }
       }
       args {
-        int_value: 2
+        int_value: 3
       }
     }
   }
@@ -3511,7 +3511,7 @@ triggers {
         }
       }
       args {
-        int_value: 2
+        int_value: 3
       }
     }
   }

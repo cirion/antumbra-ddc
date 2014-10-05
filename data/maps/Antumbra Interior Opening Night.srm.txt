@@ -8281,8 +8281,9 @@ props {
     }
     transitionPoint {
       scene_name: "Antumbra Office"
-      confirmation_text: "Are you ready to enter the office? Security will likely prevent you from returning to the club."
+      confirmation_text: "Are you ready to leave? Security will likely prevent you from returning to the club."
     }
+    interaction_info_text: "Enter Office"
   }
   lod: 0
 }
