@@ -1,0 +1,31 @@
+unique_id: "as_drones_mid"
+equipment {
+  prefab_name: "DroneSupportC_Smoker"
+}
+equipment {
+  prefab_name: "DroneAttackC_Doberman"
+}
+equipment {
+  prefab_name: "DroneRepairKit"
+}
+equipment {
+  prefab_name: "DroneRepairKit"
+}
+equipment {
+  prefab_name: "DroneRepairKit"
+}
+equipment {
+  prefab_name: "DroneSupportB_RoboDoc"
+}
+equipment {
+  prefab_name: "DroneAttackB_Strato9"
+}
+equipment {
+  prefab_name: "DroneRepairKit_med"
+}
+equipment {
+  prefab_name: "DroneRepairKit_med"
+}
+equipment {
+  prefab_name: "DroneRepairKit_med"
+}

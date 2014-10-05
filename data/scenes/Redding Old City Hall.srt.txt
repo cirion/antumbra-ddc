@@ -10198,8 +10198,8 @@ characters {
   character_instance {
     prefab_name: "Seattle:Story/WeaponsDealer"
     character_sheet_id: "BaseCivilian"
-    equipment_sheet_id: "Merchant_Weapons_Mid"
     equipment_sheet_id: "Merchant_Outfit_Med"
+    equipment_sheet_id: "Berlin_Merchant_Weapons_2"
     character_mod {
       stats {
         body: 0
@@ -10725,6 +10725,7 @@ characters {
     character_sheet_id: "BaseCivilian"
     equipment_sheet_id: "Merchant_Doctor_Mid"
     equipment_sheet_id: "Merchant_Tech_Mid"
+    equipment_sheet_id: "as_drones_mid"
     character_mod {
       stats {
         body: 0
@@ -10789,7 +10790,7 @@ characters {
     prefab_name: "Seattle:Story/WeaponsDealer"
     character_sheet_id: "BaseCivilian"
     equipment_sheet_id: "Merchant_Outfit_High"
-    equipment_sheet_id: "Merchant_Weapons_High"
+    equipment_sheet_id: "Berlin_Merchant_Weapons_3"
     character_mod {
       stats {
         body: 0
@@ -10816,78 +10817,6 @@ characters {
       archetypeName: "Non-Combatant"
       vulnerabilities {
       }
-    }
-    equipment {
-      prefab_name: "Pi 1 Ceska Black Scorpion (Smartlink)"
-    }
-    equipment {
-      prefab_name: "Pi 1 Fichetti Security 500 (Smartlink)"
-    }
-    equipment {
-      prefab_name: "Pi 2 Ares Predator (Smartlink)"
-    }
-    equipment {
-      prefab_name: "Pi 2 Browning Max-Power (Smartlink)"
-    }
-    equipment {
-      prefab_name: "Pi 3 Colt Manhunter (Smartlink)"
-    }
-    equipment {
-      prefab_name: "Pi 3 Ruger Super Warhawk (Smartlink)"
-    }
-    equipment {
-      prefab_name: "Pi 3 Ruger Thunderbolt (Smartlink)"
-    }
-    equipment {
-      prefab_name: "SMG 1 Beretta Model 70 (Smartlink)"
-    }
-    equipment {
-      prefab_name: "SMG 1 Uzi III (Smartlink)"
-    }
-    equipment {
-      prefab_name: "SMG 2 Colt TZ-110 (Smartlink)"
-    }
-    equipment {
-      prefab_name: "SMG 2 Ingram Smartgun (Smartlink)"
-    }
-    equipment {
-      prefab_name: "SMG 3 HK HK227 (Smartlink)"
-    }
-    equipment {
-      prefab_name: "SMG 3 SCK Model 100 (Smartlink)"
-    }
-    equipment {
-      prefab_name: "AR 1 AK98 (Smartlink)"
-    }
-    equipment {
-      prefab_name: "AR 1 Semopal vz88v (Smartlink)"
-    }
-    equipment {
-      prefab_name: "AR 2 FN HAR (Smartlink)"
-    }
-    equipment {
-      prefab_name: "AR 2 HK G12A3z (Smartlink)"
-    }
-    equipment {
-      prefab_name: "AR 3 Ares Alpha (Smartlink)"
-    }
-    equipment {
-      prefab_name: "AR 3 Colt M23 (Smartlink)"
-    }
-    equipment {
-      prefab_name: "Sh 1 Benelli Raffaello (Smartlink)"
-    }
-    equipment {
-      prefab_name: "Sh 2 Mossberg CMDT (Smartlink)"
-    }
-    equipment {
-      prefab_name: "Sh 2 Remington 990 (Smartlink)"
-    }
-    equipment {
-      prefab_name: "Sh 3 Defiance T-250 (Smartlink)"
-    }
-    equipment {
-      prefab_name: "Sh 3 Enfield AS-7 (Smartlink)"
     }
     team_id: "Civilians"
     char_name: "Amelia"
@@ -11001,6 +10930,7 @@ characters {
     character_sheet_id: "BaseCivilian"
     equipment_sheet_id: "Merchant_Tech_High"
     equipment_sheet_id: "Merchant_Doctor_High"
+    equipment_sheet_id: "a3_drones_hi"
     character_mod {
       stats {
         body: 0

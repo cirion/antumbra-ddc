@@ -238,6 +238,19 @@ triggers {
           }
         }
       }
+      args {
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
     }
   }
   isActive: true
@@ -322,6 +335,19 @@ triggers {
           }
         }
       }
+      args {
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
     }
   }
   isActive: true
@@ -403,6 +429,19 @@ triggers {
           }
           args {
             int_value: 3
+          }
+        }
+      }
+      args {
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
           }
         }
       }
@@ -1251,6 +1290,19 @@ triggers {
           }
         }
       }
+      args {
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
     }
   }
   isActive: true
@@ -1872,6 +1924,19 @@ triggers {
           }
         }
       }
+      args {
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
     }
   }
   isActive: true
@@ -1902,6 +1967,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -1946,6 +2012,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_closet: false
   is_teleporter_region: false
   directional_light_dir {
     x: -0.5
@@ -2178,10 +2245,11 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/TrollMale"
+    prefab_name: "Seattle:Core/TrollMale"
     character_sheet_id: "BaseCivilian"
     equipment_sheet_id: "Merchant_Tech_Mid"
     equipment_sheet_id: "Merchant_Doctor_Mid"
+    equipment_sheet_id: "as_drones_mid"
     character_mod {
       stats {
         body: 0
@@ -2194,7 +2262,10 @@ characters {
         hp: 0
         ap: 0
         morale: 24
+        discipline: 0
         awareness: 24
+        perception: 0
+        authority: 0
         protect_tether_range: 5
         move_speed: 6
       }
@@ -2203,6 +2274,8 @@ characters {
       specializations {
       }
       archetypeName: "Non-Combatant"
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "RiggerTrenchcoat"
@@ -2239,10 +2312,10 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Story/WeaponsDealer"
+    prefab_name: "Seattle:Story/WeaponsDealer"
     character_sheet_id: "BaseCivilian"
-    equipment_sheet_id: "Merchant_Weapons_Mid"
     equipment_sheet_id: "Merchant_Outfit_Med"
+    equipment_sheet_id: "Berlin_Merchant_Weapons_2"
     character_mod {
       stats {
         body: 0
@@ -2267,6 +2340,8 @@ characters {
       specializations {
       }
       archetypeName: "Non-Combatant"
+      vulnerabilities {
+      }
     }
     team_id: "Civilians"
     char_name: "Amelia"
@@ -3044,5 +3119,8 @@ use_hiring_cost_warning: true
 hiring_average_cost: 900
 override_hiring_average_cost: true
 show_equip_screen_on_scene_load: false
+is_persistant: false
+is_persistant_has_value: false
 can_move_outside_camera_regions: true
 can_start_before_triggers: true
+can_use_team_advancement: false

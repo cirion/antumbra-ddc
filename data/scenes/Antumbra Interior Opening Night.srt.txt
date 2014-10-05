@@ -3724,11 +3724,12 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Homeless/DwarfMaleHomelessBeard"
+    prefab_name: "Seattle:Homeless/DwarfMaleHomelessBeard"
     character_sheet_id: "BaseCivilian"
-    equipment_sheet_id: "Merchant_Weapons_Low"
     equipment_sheet_id: "Merchant_Magic_Low"
     equipment_sheet_id: "Merchant_Outfit_Low"
+    equipment_sheet_id: "Berlin_Merchant_Weapons_1"
+    equipment_sheet_id: "as_drones_low"
     character_mod {
       stats {
         body: 0
@@ -3741,7 +3742,10 @@ characters {
         hp: 0
         ap: 0
         morale: 24
+        discipline: 0
         awareness: 24
+        perception: 0
+        authority: 0
         protect_tether_range: 5
         move_speed: 6
       }
@@ -3750,6 +3754,8 @@ characters {
       specializations {
       }
       archetypeName: "Non-Combatant"
+      vulnerabilities {
+      }
     }
     team_id: "Civilians"
     char_name: "Bartender"

@@ -1,0 +1,16 @@
+unique_id: "as_drones_low"
+equipment {
+  prefab_name: "DroneSupportC_Smoker"
+}
+equipment {
+  prefab_name: "DroneAttackC_Doberman"
+}
+equipment {
+  prefab_name: "DroneRepairKit"
+}
+equipment {
+  prefab_name: "DroneRepairKit"
+}
+equipment {
+  prefab_name: "DroneRepairKit"
+}
