@@ -4487,6 +4487,7 @@ props {
       scene_name: "Megacorps"
       confirmation_text: "Are you ready to leave for the Pyramid?"
     }
+    interaction_info_text: "Exit"
   }
   lod: 0
 }

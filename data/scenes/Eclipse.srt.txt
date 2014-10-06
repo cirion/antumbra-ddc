@@ -1182,6 +1182,38 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Set Actor AI Script"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "537506f86434316b1333362f"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        string_value: "gumbo_Auto"
+      }
+    }
+    ops {
+      functionName: "Clear Waypoint from Prop"
+      args {
+        call_value {
+          functionName: "Get Map Item (Prop)"
+          args {
+            string_value: "52314bfe366236ac11001a92"
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -3328,6 +3360,28 @@ triggers {
           }
           args {
             int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Waypoint on Prop"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "PrimaryOrSecondary"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Prop)"
+          args {
+            string_value: "52314bfe366236ac11001a92"
           }
         }
       }
@@ -12858,7 +12912,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "Non-Combatant"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -13561,17 +13615,29 @@ characters {
   }
   orientation: ORIENTATION_E
   GeneralTags: "isFloor1Tir"
-  displayName: "Floor 1 Tir SMG Spawner"
+  displayName: "Floor 1 Tir Pistol Spawner"
   idRef {
     id: "53751c8a6434316b1333363c"
   }
   lod: 0
   character_instance {
     prefab_name: "Seattle:Standard/ElfFemaleStreetSamurai"
-    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
-    equipment_sheet_id: "Lonestar_Lv1_SMG_Gear"
+    character_sheet_id: "Lonestar_Lv1_Human_Pistol"
+    equipment_sheet_id: "Lonestar_Lv1_Pistol_Gear"
     character_mod {
       stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
         morale: 0
         discipline: 0
         awareness: 0
@@ -13579,11 +13645,43 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
       }
       specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
       }
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeAggressive
       vulnerabilities {
       }
     }
@@ -13595,7 +13693,7 @@ characters {
     portrait {
       filename: ""
     }
-    karma: 39
+    karma: 30
     scale_character_sheet: true
   }
 }
@@ -16124,6 +16222,7 @@ characters {
     portrait_code_override: "s5h5c6b1c6"
     karma: 4
     hiring_cost_override: 0
+    scale_character_sheet: true
     id: "a3_crew_lv4_norton"
   }
 }
