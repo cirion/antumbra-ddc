@@ -49489,3 +49489,72 @@ props {
   }
   lod: 0
 }
+props {
+  name: "matrix_tech_1x2cover"
+  gridPoint {
+    x: 25
+    y: 0
+    z: 85
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5432002e393139901400312b"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_tech_1x2cover"
+  gridPoint {
+    x: 23
+    y: 0
+    z: 89
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "54320033393139901400312c"
+  }
+  lod: 0
+}
+props {
+  name: "sleekOffice_furniture_desk01"
+  gridPoint {
+    x: -65
+    y: 0
+    z: -12
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "sleekOffice_furniture_polyChair02"
+  gridPoint {
+    x: -69
+    y: 0
+    z: -13
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "sleekOffice_furniture_polyChair02"
+  gridPoint {
+    x: -69
+    y: 0
+    z: -9
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "543200cb393139901400312d"
+  }
+  lod: 0
+}
+props {
+  name: "office_clutter_paperStacks01"
+  gridPoint {
+    x: -65
+    y: 1
+    z: -11
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
