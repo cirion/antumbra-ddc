@@ -581,39 +581,6 @@ triggers {
       }
     }
     ops {
-      functionName: "Enable/Disable Team\'s Turn"
-      args {
-        call_value {
-          functionName: "Get Preset Value (string)"
-          args {
-            string_value: "FactionList"
-          }
-          args {
-            int_value: 2
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "EnableOrDisable"
-          }
-          args {
-            int_value: 1
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (SceneDimension)"
-          args {
-            string_value: "Default"
-          }
-        }
-      }
-    }
-    ops {
       functionName: "Set Variable (int)"
       args {
         call_value {
@@ -1511,39 +1478,6 @@ triggers {
       }
     }
     ops {
-      functionName: "Enable/Disable Team\'s Turn"
-      args {
-        call_value {
-          functionName: "Get Preset Value (string)"
-          args {
-            string_value: "FactionList"
-          }
-          args {
-            int_value: 2
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "EnableOrDisable"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (SceneDimension)"
-          args {
-            string_value: "Default"
-          }
-        }
-      }
-    }
-    ops {
       functionName: "Trigger: Run Alternate Trigger"
       args {
         call_value {
@@ -1663,7 +1597,7 @@ triggers {
             string_value: "FactionList"
           }
           args {
-            int_value: 3
+            int_value: 2
           }
         }
       }
@@ -1785,39 +1719,6 @@ triggers {
           }
           args {
             int_value: 1
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "EnableOrDisable"
-          }
-          args {
-            int_value: 1
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (SceneDimension)"
-          args {
-            string_value: "Default"
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Enable/Disable Team\'s Turn"
-      args {
-        call_value {
-          functionName: "Get Preset Value (string)"
-          args {
-            string_value: "FactionList"
-          }
-          args {
-            int_value: 2
           }
         }
       }
@@ -2107,7 +2008,7 @@ triggers {
                 string_value: "FactionList"
               }
               args {
-                int_value: 3
+                int_value: 2
               }
             }
           }
@@ -3306,7 +3207,7 @@ triggers {
             string_value: "FactionList"
           }
           args {
-            int_value: 2
+            int_value: 0
           }
         }
       }
@@ -3365,6 +3266,35 @@ triggers {
           functionName: "Get Preset Value (int)"
           args {
             string_value: "TeleportMethod"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Change Actor Control"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "536d5ffa6434317b17cbaec5"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "PlayerOrAI"
           }
           args {
             int_value: 0
@@ -4219,68 +4149,6 @@ triggers {
       }
     }
     ops {
-      functionName: "Teleport Actor"
-      args {
-        call_value {
-          functionName: "All Actors With Tag"
-          args {
-            call_value {
-              functionName: "Get Map Item (SenseTagList)"
-              args {
-                string_value: "isWave2"
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "AllOrAny"
-              }
-              args {
-                int_value: 0
-              }
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Center of Region"
-          args {
-            call_value {
-              functionName: "Get Map Item (Region)"
-              args {
-                string_value: "536fbf14366236941d00309e"
-              }
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "FacingDirection"
-          }
-          args {
-            int_value: 5
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "TeleportMethod"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-    }
-    ops {
       functionName: "Order Actor to Move To (Actor)"
       args {
         call_value {
@@ -4387,7 +4255,7 @@ triggers {
             string_value: "FactionList"
           }
           args {
-            int_value: 4
+            int_value: 3
           }
         }
       }
@@ -4424,7 +4292,7 @@ triggers {
             string_value: "FactionList"
           }
           args {
-            int_value: 4
+            int_value: 3
           }
         }
       }
@@ -4433,6 +4301,82 @@ triggers {
           functionName: "Get Map Item (SceneDimension)"
           args {
             string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Trigger: Wait for Rounds"
+      args {
+        int_value: 1
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Teleport Actor"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "isWave2"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Center of Region"
+          args {
+            call_value {
+              functionName: "Get Map Item (Region)"
+              args {
+                string_value: "536fbf14366236941d00309e"
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "FacingDirection"
+          }
+          args {
+            int_value: 5
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeleportMethod"
+          }
+          args {
+            int_value: 0
           }
         }
       }
@@ -4617,7 +4561,7 @@ triggers {
             string_value: "FactionList"
           }
           args {
-            int_value: 4
+            int_value: 3
           }
         }
       }
@@ -5435,7 +5379,7 @@ triggers {
             string_value: "FactionList"
           }
           args {
-            int_value: 3
+            int_value: 2
           }
         }
       }
@@ -6154,7 +6098,7 @@ triggers {
             string_value: "FactionList"
           }
           args {
-            int_value: 3
+            int_value: 2
           }
         }
       }
@@ -6334,7 +6278,7 @@ triggers {
             string_value: "FactionList"
           }
           args {
-            int_value: 2
+            int_value: 0
           }
         }
       }
@@ -6508,63 +6452,6 @@ triggers {
         float_value: 3
       }
     }
-    ops {
-      functionName: "Order Actor to Move To (Region)"
-      args {
-        call_value {
-          functionName: "All Actors on Team"
-          args {
-            call_value {
-              functionName: "Get Preset Value (string)"
-              args {
-                string_value: "FactionList"
-              }
-              args {
-                int_value: 2
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "AllOrAny"
-              }
-              args {
-                int_value: 0
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Map Item (SceneDimension)"
-              args {
-                string_value: "Default"
-              }
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (Region)"
-          args {
-            string_value: "536fa9b9366236941d00306f"
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "FacingDirection"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-    }
   }
   isActive: true
   idRef {
@@ -6610,7 +6497,7 @@ triggers {
             string_value: "FactionList"
           }
           args {
-            int_value: 2
+            int_value: 0
           }
         }
       }
@@ -6738,63 +6625,6 @@ triggers {
         float_value: 3
       }
     }
-    ops {
-      functionName: "Order Actor to Move To (Region)"
-      args {
-        call_value {
-          functionName: "All Actors on Team"
-          args {
-            call_value {
-              functionName: "Get Preset Value (string)"
-              args {
-                string_value: "FactionList"
-              }
-              args {
-                int_value: 2
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "AllOrAny"
-              }
-              args {
-                int_value: 0
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Map Item (SceneDimension)"
-              args {
-                string_value: "Default"
-              }
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (Region)"
-          args {
-            string_value: "536fa9d0366236941d003070"
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "FacingDirection"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-    }
   }
   isActive: true
   idRef {
@@ -6840,7 +6670,7 @@ triggers {
             string_value: "FactionList"
           }
           args {
-            int_value: 2
+            int_value: 0
           }
         }
       }
@@ -6948,63 +6778,6 @@ triggers {
       }
     }
     ops {
-      functionName: "Order Actor to Move To (Region)"
-      args {
-        call_value {
-          functionName: "All Actors on Team"
-          args {
-            call_value {
-              functionName: "Get Preset Value (string)"
-              args {
-                string_value: "FactionList"
-              }
-              args {
-                int_value: 2
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "AllOrAny"
-              }
-              args {
-                int_value: 0
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Map Item (SceneDimension)"
-              args {
-                string_value: "Default"
-              }
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (Region)"
-          args {
-            string_value: "536fa9e0366236941d003071"
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "FacingDirection"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-    }
-    ops {
       functionName: "Add Camera Point of Interest (Actors)"
       args {
         call_value {
@@ -7045,36 +6818,16 @@ triggers {
       functionName: "Change Actor Team"
       args {
         call_value {
-          functionName: "All Actors on Team"
+          functionName: "Specific Actor"
           args {
             call_value {
-              functionName: "Get Preset Value (string)"
+              functionName: "Get Map Item (Actor)"
               args {
-                string_value: "FactionList"
-              }
-              args {
-                int_value: 2
+                string_value: "536d5ffa6434317b17cbaec5"
               }
             }
           }
           args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "AllOrAny"
-              }
-              args {
-                int_value: 0
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Map Item (SceneDimension)"
-              args {
-                string_value: "Default"
-              }
-            }
           }
         }
       }
@@ -7085,7 +6838,7 @@ triggers {
             string_value: "FactionList"
           }
           args {
-            int_value: 3
+            int_value: 2
           }
         }
       }
@@ -7110,7 +6863,7 @@ triggers {
                 string_value: "FactionList"
               }
               args {
-                int_value: 3
+                int_value: 2
               }
             }
           }
@@ -7148,7 +6901,7 @@ triggers {
                 string_value: "FactionList"
               }
               args {
-                int_value: 3
+                int_value: 2
               }
             }
           }
@@ -7186,7 +6939,7 @@ triggers {
                 string_value: "FactionList"
               }
               args {
-                int_value: 3
+                int_value: 2
               }
             }
           }
@@ -7227,7 +6980,7 @@ triggers {
                 string_value: "FactionList"
               }
               args {
-                int_value: 3
+                int_value: 2
               }
             }
           }
@@ -7257,6 +7010,35 @@ triggers {
           functionName: "Get Preset Value (int)"
           args {
             string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Change Actor Control"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "536d5ffa6434317b17cbaec5"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "PlayerOrAI"
           }
           args {
             int_value: 1
@@ -11553,7 +11335,7 @@ triggers {
                 string_value: "FactionList"
               }
               args {
-                int_value: 2
+                int_value: -1
               }
             }
           }
@@ -11615,7 +11397,7 @@ triggers {
       }
     }
   }
-  isActive: true
+  isActive: false
   idRef {
     id: "5377a0a63662364c1b004ffb"
   }
@@ -11680,7 +11462,7 @@ triggers {
                 string_value: "FactionList"
               }
               args {
-                int_value: 2
+                int_value: -1
               }
             }
           }
@@ -11742,7 +11524,7 @@ triggers {
       }
     }
   }
-  isActive: true
+  isActive: false
   idRef {
     id: "5377a18d3662364c1b004ffc"
   }
@@ -11807,7 +11589,7 @@ triggers {
                 string_value: "FactionList"
               }
               args {
-                int_value: 2
+                int_value: -1
               }
             }
           }
@@ -11869,7 +11651,7 @@ triggers {
       }
     }
   }
-  isActive: true
+  isActive: false
   idRef {
     id: "5377a18e3662364c1b004ffd"
   }
@@ -15328,39 +15110,6 @@ triggers {
         }
       }
     }
-    ops {
-      functionName: "Enable/Disable Team\'s Turn"
-      args {
-        call_value {
-          functionName: "Get Preset Value (string)"
-          args {
-            string_value: "FactionList"
-          }
-          args {
-            int_value: 2
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "EnableOrDisable"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (SceneDimension)"
-          args {
-            string_value: "Default"
-          }
-        }
-      }
-    }
   }
   isActive: true
   idRef {
@@ -15515,7 +15264,7 @@ triggers {
             string_value: "FactionList"
           }
           args {
-            int_value: 2
+            int_value: -1
           }
         }
       }
@@ -15542,7 +15291,7 @@ triggers {
                 string_value: "FactionList"
               }
               args {
-                int_value: 2
+                int_value: -1
               }
             }
           }
@@ -15580,7 +15329,7 @@ triggers {
                 string_value: "FactionList"
               }
               args {
-                int_value: 2
+                int_value: -1
               }
             }
           }
@@ -18516,19 +18265,9 @@ team_affiliations {
   affiliation: 1
   affiliation: 0
   affiliation: 0
-  affiliation: 0
 }
 team_affiliations {
   team_name: "Gangers"
-  affiliation: 1
-  affiliation: 0
-  affiliation: 1
-  affiliation: 0
-  affiliation: 0
-}
-team_affiliations {
-  team_name: "Rangers"
-  affiliation: 0
   affiliation: 1
   affiliation: 0
   affiliation: 0
@@ -18540,7 +18279,6 @@ team_affiliations {
   affiliation: 0
   affiliation: 0
   affiliation: 0
-  affiliation: 0
 }
 team_affiliations {
   team_name: "Untargettable"
@@ -18548,12 +18286,9 @@ team_affiliations {
   affiliation: 0
   affiliation: 0
   affiliation: 0
-  affiliation: 0
 }
 scene_dimensions {
   dimension_name: "Default"
-}
-character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {
