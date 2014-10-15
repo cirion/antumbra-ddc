@@ -22,6 +22,9 @@ stats {
   authority: 50
   protect_tether_range: 5
   move_speed: 6
+  vision_peripheral_distance: 0
+  vision_cone_distance: 0
+  vision_cone_angle: 0
   is_fearless: 0
   is_strict: 0
 }

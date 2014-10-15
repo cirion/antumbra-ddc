@@ -22,6 +22,9 @@ stats {
   authority: 50
   protect_tether_range: 5
   move_speed: 6
+  vision_peripheral_distance: 0
+  vision_cone_distance: 0
+  vision_cone_angle: 0
   is_fearless: 0
   is_strict: 0
 }
@@ -83,7 +86,7 @@ specializations {
 }
 prefab_name: "Seattle:Core/DwarfFemale"
 portrait {
-  filename: "pc_elfmale_06_dreads"
+  filename: "pc_dwarffemale_06"
 }
 attackRandom: AttackStyle_AllEqual
 vulnerabilities {
