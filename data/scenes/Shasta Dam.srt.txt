@@ -2588,6 +2588,9 @@ triggers {
     ops {
       functionName: "End Current Team Round"
     }
+    ops {
+      functionName: "End Current Team Round"
+    }
   }
   isActive: true
   idRef {
@@ -13458,7 +13461,7 @@ regions {
   name: "Banter"
   position {
     x: -3
-    y: 6
+    y: 9
     width: 6
     height: 1
   }

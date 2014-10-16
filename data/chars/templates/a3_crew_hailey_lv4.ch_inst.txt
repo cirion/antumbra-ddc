@@ -54,25 +54,25 @@ character_mod {
     esp_control: 0
     drone_combat: 0
   }
-  archetypeName: "Non-Combatant"
+  archetypeName: "Player"
   attitude: AttitudeAggressive
   vulnerabilities {
   }
 }
-team_id: "Civilians"
+team_id: "Shadowrunners"
 char_name: "Hailey"
 GeneralTags: "isHailey"
 pc_spawn_number: -1
 hiring_type: HiringType_Hireable
 cyberware_eyes: "Berlin_Laser Designator"
-cyberware_jack: "Berlin_Encephalon"
+cyberware_jack: "Datajack"
 cyberware_left_arm: "Obvious Cyberarm"
 cyberware_right_leg: "Obvious Cyberleg 2"
 portrait {
   filename: "backer_humanfemale_grahamwilliams_tsilonsiereht"
 }
+description_bio: "That rarest of all breeds: a native San Franciscan. Hailey\342\200\231s natural affinity for technology has made her an increasingly-valued runner in her home city."
 portrait_code_override: "s6h1c11"
-description_bio: "That rarest of all breeds: a native San Franciscan. Hailey’s natural affinity for technology has made her an increasingly-valued runner in her home city."
 karma: 4
 hiring_cost_override: 0
 id: "a3_crew_hailey_lv4"
