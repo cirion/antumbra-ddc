@@ -7618,7 +7618,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/TrollMale"
+    prefab_name: "Seattle:Core/TrollMale"
     character_sheet_id: "Lvl3_Elf_Mage"
     character_mod {
       stats {
@@ -7635,10 +7635,13 @@ characters {
         armor: 0
         force: 0
         morale: 0
+        discipline: 0
         awareness: 0
         perception: 0
+        authority: 0
         protect_tether_range: 0
         move_speed: 0
+        is_fearless: 1
       }
       skills {
         ranged_combat: 0
@@ -7673,6 +7676,8 @@ characters {
       }
       archetypeName: "Guard - Protect"
       attitude: AttitudeBoss
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "ShamanPendant"
@@ -7702,7 +7707,7 @@ characters {
       filename: "pc_trollmale_04a_shaman"
     }
     portrait_code_override: "s3h0c4b10c4t8"
-    karma: 72
+    karma: 73
   }
 }
 characters {
