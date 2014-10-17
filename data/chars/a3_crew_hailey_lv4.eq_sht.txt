@@ -33,7 +33,7 @@ equipment {
   prefab_name: "DroneSupportA_Sundowner"
 }
 equipment {
-  prefab_name: "Berlin_Pi 2 Ares Predator (Smartlink)"
+  prefab_name: "Pi 2 Ares Predator (Smartlink)"
 }
 equipment {
   prefab_name: "PR Killer 3"
