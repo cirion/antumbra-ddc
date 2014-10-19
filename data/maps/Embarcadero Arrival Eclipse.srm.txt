@@ -111201,3 +111201,113 @@ props {
   orientation: ORIENTATION_S
   lod: 0
 }
+props {
+  name: "docks_clutter_roadblock01"
+  gridPoint {
+    x: 35
+    y: 0
+    z: -66
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "docks_clutter_salvageCrate"
+  gridPoint {
+    x: 36
+    y: 0
+    z: -71
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "docks_clutter_salvageCrate02"
+  gridPoint {
+    x: 31
+    y: 0
+    z: -68
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "docks_clutter_salvageCrate03"
+  gridPoint {
+    x: 22
+    y: 0
+    z: -75
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "docks_clutter_shippingCrate02"
+  gridPoint {
+    x: 39
+    y: 0
+    z: -66
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "docks_clutter_shippingCrate03"
+  gridPoint {
+    x: 29
+    y: 0
+    z: -65
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "docks_clutter_shippingCrate03"
+  gridPoint {
+    x: -20
+    y: 0
+    z: -18
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "docks_clutter_shippingCrate02"
+  gridPoint {
+    x: -28
+    y: 0
+    z: -18
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "docks_clutter_shippingCrate01"
+  gridPoint {
+    x: -13
+    y: 0
+    z: -13
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "docks_clutter_salvageCrate02"
+  gridPoint {
+    x: -19
+    y: 0
+    z: -11
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "docks_clutter_shippingCrate01"
+  gridPoint {
+    x: -19
+    y: 0
+    z: -25
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
