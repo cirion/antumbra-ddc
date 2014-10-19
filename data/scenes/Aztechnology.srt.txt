@@ -6897,6 +6897,237 @@ triggers {
   }
   is_oneshot: false
 }
+triggers {
+  name: "Spawn Dalmin"
+  events {
+    ops {
+      functionName: "On Map Start"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "A2_HiredDalmin_Part1"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Activate Actor Spawner"
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor Reference)"
+          args {
+            string_value: "544331cc3931398402005c98"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "5443320e3931398402005c9a"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Spawn Hailey"
+  events {
+    ops {
+      functionName: "On Map Start"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "A2_HiredHailey_Part1"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Activate Actor Spawner"
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor Reference)"
+          args {
+            string_value: "544331cc3931398402005c97"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "5443323f3931398402005c9b"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Spawn Orion"
+  events {
+    ops {
+      functionName: "On Map Start"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "A2_HiredOrion_Part1"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Activate Actor Spawner"
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor Reference)"
+          args {
+            string_value: "544331cc3931398402005c99"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "544332413931398402005c9c"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
 regions {
   name: "Third Floor Elevator"
   position {
@@ -7729,30 +7960,6 @@ characters {
     GeneralTags: "pc"
     enabled_at_start: true
     pc_spawn_number: 0
-  }
-}
-characters {
-  name: "system_spawner_playerSpawner"
-  gridPoint {
-    x: -39
-    y: 0
-    z: 1
-  }
-  orientation: ORIENTATION_N
-  GeneralTags: "pc"
-  idRef {
-    id: "521f76143662361c1b007c99"
-  }
-  lod: 0
-  character_instance {
-    character_mod {
-      archetypeName: "Player"
-    }
-    team_id: "Shadowrunners"
-    char_name: "New Actor"
-    GeneralTags: "pc"
-    enabled_at_start: true
-    pc_spawn_number: 1
   }
 }
 characters {
@@ -9004,6 +9211,288 @@ characters {
       filename: ""
     }
     dimension_name: "Aztechnology Local Network"
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -38
+    y: 0
+    z: 0
+  }
+  orientation: ORIENTATION_N
+  displayName: "Hailey"
+  idRef {
+    id: "544331cc3931398402005c97"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Core/HumanFemale"
+    character_sheet_id: "Lvl2_Human_Decker"
+    character_mod {
+      stats {
+        body: 0
+        quickness: -2
+        strength: -2
+        charisma: -1
+        intelligence: 0
+        willpower: -1
+        essence: -3
+        magic: -3
+        hp: 0
+        ap: 0
+        armor: 2
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: -2
+        close_combat: 0
+        throwing_weapons: 1
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 3
+        biotech: 0
+        dodge: 2
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: -1
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 2
+      }
+      archetypeName: "Player"
+      attitude: AttitudeAggressive
+      vulnerabilities {
+      }
+    }
+    equipment {
+      prefab_name: "DeckerFab"
+    }
+    equipment {
+      prefab_name: "DroneRepairKit_med"
+    }
+    equipment {
+      prefab_name: "DroneRepairKit_med"
+    }
+    equipment {
+      prefab_name: "HealthPack_med"
+    }
+    equipment {
+      prefab_name: "DroneAttackC_Doberman"
+    }
+    equipment {
+      prefab_name: "CyberdeckSony"
+    }
+    equipment {
+      prefab_name: "PR NPC Decker Killer 2"
+    }
+    equipment {
+      prefab_name: "PR NPC Decker Blaster 1"
+    }
+    equipment {
+      prefab_name: "PR NPC Decker Medic 1"
+    }
+    equipment {
+      prefab_name: "ESP Assassin"
+    }
+    equipment {
+      prefab_name: "Grenade (Smoke)"
+    }
+    team_id: "Shadowrunners"
+    char_name: "Hailey"
+    enabled_at_start: false
+    pc_spawn_number: -1
+    cyberware_eyes: "Vision Magnification Eyes"
+    cyberware_jack: "Datajack"
+    portrait {
+      filename: "backer_humanfemale_grahamwilliams_tsilonsiereht"
+    }
+    portrait_code_override: "s6h1c11"
+    karma: 61
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -39
+    y: 0
+    z: 1
+  }
+  orientation: ORIENTATION_N
+  displayName: "Dalmin"
+  idRef {
+    id: "544331cc3931398402005c98"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Core/DwarfMale"
+    character_sheet_id: "BaseCivilian"
+    character_mod {
+      stats {
+        body: 3
+        quickness: 0
+        strength: 1
+        charisma: 3
+        intelligence: 1
+        willpower: 3
+        essence: 0
+        hp: 0
+        ap: 0
+        armor: 2
+        morale: 24
+        discipline: 0
+        awareness: 24
+        perception: 0
+        authority: 0
+        protect_tether_range: 5
+        move_speed: 0
+      }
+      skills {
+        spellcasting: 3
+        conjuring: 3
+        spirit_summoning: 3
+        dodge: 1
+      }
+      specializations {
+        spirit_control: 3
+      }
+      archetypeName: "Player"
+    }
+    equipment {
+      prefab_name: "ShamanTotemCoat"
+    }
+    equipment {
+      prefab_name: "Air Barrier 3"
+    }
+    equipment {
+      prefab_name: "Bound Fire Spirit 2"
+    }
+    equipment {
+      prefab_name: "Bound Earth Spirit 2"
+    }
+    equipment {
+      prefab_name: "Spell Haste 1"
+    }
+    equipment {
+      prefab_name: "Spell Heal 1"
+    }
+    equipment {
+      prefab_name: "Spell Powerbolt 1"
+    }
+    equipment {
+      prefab_name: "TotemCoyote"
+    }
+    equipment {
+      prefab_name: "HealthPack"
+    }
+    team_id: "Shadowrunners"
+    char_name: "Dalmin"
+    enabled_at_start: false
+    pc_spawn_number: -1
+    portrait {
+      filename: "pc_dwarfmale_03c_eastasian"
+    }
+    portrait_code_override: "s5h5c4b8"
+    karma: 62
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -38
+    y: 0
+    z: 1
+  }
+  orientation: ORIENTATION_N
+  displayName: "Orion"
+  idRef {
+    id: "544331cc3931398402005c99"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Core/OrkMale"
+    character_sheet_id: "BaseCivilian"
+    character_mod {
+      stats {
+        body: 4
+        quickness: 3
+        strength: 1
+        charisma: 1
+        intelligence: 1
+        willpower: 1
+        essence: 0
+        hp: 0
+        ap: 0
+        armor: 4
+        morale: 24
+        discipline: 0
+        awareness: 24
+        perception: 0
+        authority: 0
+        protect_tether_range: 5
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 3
+        close_combat: 2
+        throwing_weapons: 2
+        dodge: 3
+        etiquette_gang: 0
+        etiquette_academic: 1
+      }
+      specializations {
+        rifle: 3
+      }
+      archetypeName: "Player"
+      vulnerabilities {
+      }
+    }
+    equipment {
+      prefab_name: "AdeptStreetMonk"
+    }
+    equipment {
+      prefab_name: "HealthPack_med"
+    }
+    equipment {
+      prefab_name: "Grenade 1 (Frag)"
+    }
+    equipment {
+      prefab_name: "Grenade 1 (Flash)"
+    }
+    equipment {
+      prefab_name: "Berlin_AR 1 Semopal vz88v"
+    }
+    team_id: "Shadowrunners"
+    char_name: "Orion"
+    enabled_at_start: false
+    pc_spawn_number: -1
+    portrait {
+      filename: "pc_orkmale_01c_soldier"
+    }
+    portrait_code_override: "s7h5c4b8"
+    karma: 61
   }
 }
 variables {
