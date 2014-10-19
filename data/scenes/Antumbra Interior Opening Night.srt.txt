@@ -3951,6 +3951,7 @@ characters {
     z: 13
   }
   orientation: ORIENTATION_W
+  displayName: "Dalmin"
   idRef {
     id: "51fd55843662367c090072d4"
   }
@@ -4051,6 +4052,7 @@ characters {
     z: 45
   }
   orientation: ORIENTATION_W
+  displayName: "Turm"
   idRef {
     id: "51fdbde4366236181b0072af"
   }

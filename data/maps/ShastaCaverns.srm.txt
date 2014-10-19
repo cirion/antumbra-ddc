@@ -20830,23 +20830,6 @@ props {
 props {
   name: "vfx_fx_poisongasYellowvent"
   gridPoint {
-    x: -35
-    y: 6
-    z: -46
-  }
-  orientation: ORIENTATION_E
-  properties {
-    property_id: "fxScript"
-    string_value: "PoisonGasYellowVentEnvironment"
-  }
-  idRef {
-    id: "5394f74c366236d829003a37"
-  }
-  lod: 0
-}
-props {
-  name: "vfx_fx_poisongasYellowvent"
-  gridPoint {
     x: -33
     y: 6
     z: -30
@@ -20892,23 +20875,6 @@ props {
   }
   idRef {
     id: "5394f74e366236d829003a3a"
-  }
-  lod: 0
-}
-props {
-  name: "vfx_fx_poisongasYellowvent"
-  gridPoint {
-    x: -34
-    y: 6
-    z: -46
-  }
-  orientation: ORIENTATION_E
-  properties {
-    property_id: "fxScript"
-    string_value: "PoisonGasYellowVentEnvironment"
-  }
-  idRef {
-    id: "5394f750366236d829003a3b"
   }
   lod: 0
 }
