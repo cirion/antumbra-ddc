@@ -84,12 +84,15 @@ nodes {
     responseText: "Want to join me on a run?"
     conditions {
       ops {
-        functionName: "Compare Actor Team"
+        functionName: "Comparison (bool)"
         args {
           call_value {
-            functionName: "Get Map Item (Actor)"
+            functionName: "Get Story Variable (bool)"
             args {
-              string_value: "51fd55843662367c090072d4"
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "DalminJoined"
             }
           }
         }
@@ -106,20 +109,12 @@ nodes {
         }
         args {
           call_value {
-            functionName: "Get Preset Value (string)"
+            functionName: "Get Preset Value (int)"
             args {
-              string_value: "FactionList"
+              string_value: "bool"
             }
             args {
-              int_value: 0
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Map Item (SceneDimension)"
-            args {
-              string_value: "Default"
+              int_value: 1
             }
           }
         }
@@ -136,12 +131,15 @@ nodes {
     responseText: "Want to join me on a run?"
     conditions {
       ops {
-        functionName: "Compare Actor Team"
+        functionName: "Comparison (bool)"
         args {
           call_value {
-            functionName: "Get Map Item (Actor)"
+            functionName: "Get Story Variable (bool)"
             args {
-              string_value: "51fd55843662367c090072d4"
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "DalminJoined"
             }
           }
         }
@@ -152,26 +150,18 @@ nodes {
               string_value: "IsOrIsNot"
             }
             args {
-              int_value: 0
+              int_value: 1
             }
           }
         }
         args {
           call_value {
-            functionName: "Get Preset Value (string)"
+            functionName: "Get Preset Value (int)"
             args {
-              string_value: "FactionList"
+              string_value: "bool"
             }
             args {
               int_value: 0
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Map Item (SceneDimension)"
-            args {
-              string_value: "Default"
             }
           }
         }
@@ -336,7 +326,7 @@ nodes {
     id: "5371554d6434319d338e4da5"
   }
   index: 12
-  text: "All right. Lead on, chummer!"
+  text: "All right. Just find a way into the office, and I\'ll meet you inside!"
   nodeType: ConversationNodeType_Simple
   actions {
     ops {

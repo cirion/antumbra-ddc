@@ -92,108 +92,15 @@ nodes {
     responseText: "Are your services for sale?"
     conditions {
       ops {
-        functionName: "Compare Actor Team"
+        functionName: "Comparison (bool)"
         args {
           call_value {
-            functionName: "Get Map Item (Actor)"
+            functionName: "Get Story Variable (bool)"
             args {
-              string_value: "51fdbde4366236181b0072af"
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Preset Value (int)"
-            args {
-              string_value: "IsOrIsNot"
+              string_value: "531d26a736623648180018bf"
             }
             args {
-              int_value: 0
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Preset Value (string)"
-            args {
-              string_value: "FactionList"
-            }
-            args {
-              int_value: 0
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Map Item (SceneDimension)"
-            args {
-              string_value: "Default"
-            }
-          }
-        }
-      }
-    }
-    nextNodeIndex: 13
-    hideIfUnavailable: true
-  }
-  branches {
-    responseText: "I\'ll pay good nuyen for your worthless hide."
-    conditions {
-      ops {
-        functionName: "Compare Actor Team"
-        args {
-          call_value {
-            functionName: "Get Map Item (Actor)"
-            args {
-              string_value: "51fdbde4366236181b0072af"
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Preset Value (int)"
-            args {
-              string_value: "IsOrIsNot"
-            }
-            args {
-              int_value: 0
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Preset Value (string)"
-            args {
-              string_value: "FactionList"
-            }
-            args {
-              int_value: 0
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Map Item (SceneDimension)"
-            args {
-              string_value: "Default"
-            }
-          }
-        }
-      }
-    }
-    nextNodeIndex: 18
-    hideIfUnavailable: true
-  }
-  branches {
-    responseText: "Are your services for sale?"
-    conditions {
-      ops {
-        functionName: "Compare Actor Team"
-        args {
-          call_value {
-            functionName: "Get Map Item (Actor)"
-            args {
-              string_value: "51fdbde4366236181b0072af"
+              string_value: "TurmJoined"
             }
           }
         }
@@ -210,20 +117,98 @@ nodes {
         }
         args {
           call_value {
-            functionName: "Get Preset Value (string)"
+            functionName: "Get Preset Value (int)"
             args {
-              string_value: "FactionList"
+              string_value: "bool"
             }
             args {
               int_value: 0
             }
           }
         }
+      }
+    }
+    nextNodeIndex: 13
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: "I\'ll pay good nuyen for your worthless hide."
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
         args {
           call_value {
-            functionName: "Get Map Item (SceneDimension)"
+            functionName: "Get Story Variable (bool)"
             args {
-              string_value: "Default"
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "TurmJoined"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 18
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: "Are your services for sale?"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "TurmJoined"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
             }
           }
         }
@@ -290,7 +275,7 @@ nodes {
     id: "5371545e6434319d338e4aac"
   }
   index: 6
-  text: "{{GM}}Dalmin stops dancing when you hand him the box.  His eyes grow unfocused and he seems a little less present than he did a few seconds ago.{{/GM}}\n\nI\342\200\231d be happy to consult on your run. Let\342\200\231s take a look at it...\n\nOh.\n\nOh, dear."
+  text: "{{GM}}Dalmin turns serious when you hand him the box.  His eyes grow unfocused and he seems a little less present than he did a few seconds ago.{{/GM}}\n\nI\342\200\231d be happy to consult on your run. Let\342\200\231s take a look at it...\n\nOh.\n\nOh, dear."
   branches {
     responseText: ""
     nextNodeIndex: 7
@@ -483,7 +468,7 @@ nodes {
     id: "537154646434319d338e4af1"
   }
   index: 15
-  text: "Excellent! After you, $(l.sir)."
+  text: "Excellent! I\'m going to finish this drink. I\'ll meet you upstairs once you find a way into the office."
   nodeType: ConversationNodeType_Simple
   actions {
     ops {

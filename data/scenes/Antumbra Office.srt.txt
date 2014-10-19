@@ -3569,6 +3569,160 @@ triggers {
   }
   is_oneshot: true
 }
+triggers {
+  name: "Check Hired Dalmin"
+  events {
+    ops {
+      functionName: "On Map Start"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "DalminJoined"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Activate Actor Spawner"
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor Reference)"
+          args {
+            string_value: "5442ff4c39313984020057f5"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "544300093931398402005890"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Check Hired Turm"
+  events {
+    ops {
+      functionName: "On Map Start"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "TurmJoined"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Activate Actor Spawner"
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor Reference)"
+          args {
+            string_value: "5442ff3e39313984020057f3"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "5443006c3931398402005891"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
 regions {
   name: "Enter Conference Room"
   position {
@@ -4518,7 +4672,6 @@ characters {
   character_instance {
     prefab_name: "Seattle:Security/HumanMaleSecurityNVG"
     character_sheet_id: "Lvl1_Merc_Human_CyberWarrior"
-    equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
       stats {
         body: -1
@@ -4576,6 +4729,9 @@ characters {
       attitude: AttitudeAggressive
       vulnerabilities {
       }
+    }
+    equipment {
+      prefab_name: "Pi 1 Fichetti Security 500"
     }
     team_id: "LoneStar"
     char_name: "Security Guard"
@@ -4706,7 +4862,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "Non-Combatant"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -4787,7 +4943,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "Non-Combatant"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -4872,7 +5028,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "Non-Combatant"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -4954,7 +5110,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Hunt And Destroy"
+      archetypeName: "Non-Combatant"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -5221,29 +5377,6 @@ characters {
   }
 }
 characters {
-  name: "system_spawner_playerSpawner"
-  gridPoint {
-    x: 0
-    y: 0
-    z: -2
-  }
-  orientation: ORIENTATION_S
-  displayName: "Player 1"
-  idRef {
-    id: "5202fc403662365410003af0"
-  }
-  lod: 0
-  character_instance {
-    character_mod {
-      archetypeName: "Player"
-    }
-    team_id: "Shadowrunners"
-    char_name: "Player 1"
-    enabled_at_start: true
-    pc_spawn_number: 1
-  }
-}
-characters {
   name: "chars_icon_playerIcon"
   gridPoint {
     x: -10
@@ -5314,6 +5447,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "Non-Combatant"
       vulnerabilities {
       }
     }
@@ -5358,6 +5492,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "Non-Combatant"
     }
     team_id: "Civilians"
     char_name: "Lonestar Enforcer"
@@ -5367,6 +5502,148 @@ characters {
     portrait {
       filename: ""
     }
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 0
+    y: 0
+    z: -2
+  }
+  orientation: ORIENTATION_S
+  displayName: "Turm"
+  idRef {
+    id: "5442ff3e39313984020057f3"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Standard/TrollFemaleDetective"
+    character_sheet_id: "Lvl1_Merc_Troll_Brute"
+    character_mod {
+      stats {
+        body: 2
+        quickness: 1
+        hp: 0
+        morale: 24
+        discipline: 0
+        awareness: 19
+        perception: 0
+        authority: 0
+        protect_tether_range: 5
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 2
+        throwing_weapons: 1
+      }
+      specializations {
+        shotgun: 2
+        edged: 1
+      }
+      archetypeName: "Player"
+      vulnerabilities {
+      }
+    }
+    equipment {
+      prefab_name: "Sword 1 Rebar Pipe"
+    }
+    equipment {
+      prefab_name: "Kamikaze"
+    }
+    equipment {
+      prefab_name: "HealthPack_med"
+    }
+    equipment {
+      prefab_name: "Grenade 1 (Frag)"
+    }
+    equipment {
+      prefab_name: "Berlin_Sh 1 Benelli Raffaello"
+    }
+    equipment {
+      prefab_name: "Grenade 1 (Flash)"
+    }
+    team_id: "Shadowrunners"
+    char_name: "Turm"
+    enabled_at_start: false
+    pc_spawn_number: -1
+    portrait {
+      filename: "pc_trollfemale_01a_detective"
+    }
+    karma: 52
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 1
+    y: 0
+    z: -2
+  }
+  orientation: ORIENTATION_S
+  displayName: "Dalmin"
+  idRef {
+    id: "5442ff4c39313984020057f5"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Core/DwarfMale"
+    character_sheet_id: "Lvl1_Dwarf_Shaman"
+    character_mod {
+      stats {
+        body: 2
+        hp: 0
+        morale: 24
+        discipline: 0
+        awareness: 19
+        perception: 0
+        authority: 0
+        protect_tether_range: 5
+        move_speed: 0
+      }
+      skills {
+        spellcasting: 3
+        conjuring: 2
+        spirit_summoning: 2
+        dodge: 1
+      }
+      specializations {
+      }
+      archetypeName: "Player"
+    }
+    equipment {
+      prefab_name: "TotemCoyote"
+    }
+    equipment {
+      prefab_name: "Spell Haste 1"
+    }
+    equipment {
+      prefab_name: "ShamanTotemCoat"
+    }
+    equipment {
+      prefab_name: "Spell Powerbolt 1"
+    }
+    equipment {
+      prefab_name: "Bound Fire Spirit 1"
+    }
+    equipment {
+      prefab_name: "Air Barrier 3"
+    }
+    equipment {
+      prefab_name: "Fist"
+    }
+    equipment {
+      prefab_name: "HealthPack_med"
+    }
+    team_id: "Shadowrunners"
+    char_name: "Dalmin"
+    enabled_at_start: false
+    pc_spawn_number: -1
+    portrait {
+      filename: "pc_dwarfmale_03c_eastasian"
+    }
+    portrait_code_override: "s5h5c4b8"
+    karma: 53
   }
 }
 variables {
@@ -5473,6 +5750,6 @@ override_hiring_average_cost: false
 show_equip_screen_on_scene_load: false
 is_persistant: false
 is_persistant_has_value: false
-can_move_outside_camera_regions: true
-can_start_before_triggers: true
+can_move_outside_camera_regions: false
+can_start_before_triggers: false
 can_use_team_advancement: false
