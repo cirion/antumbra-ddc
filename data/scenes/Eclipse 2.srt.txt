@@ -594,35 +594,6 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Set Actor In Passive Mode"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Get Map Item (Actor)"
-              args {
-                string_value: "5223acc0366236680e003b9b"
-              }
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "IsOrIsNot"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-    }
-    ops {
       functionName: "Enable/Disable Interactable Object"
       args {
         call_value {
@@ -640,72 +611,6 @@ triggers {
           functionName: "Get Map Item (InteractableObject)"
           args {
             string_value: "5223acc0366236680e003b9b"
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Change Actor Team"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Get Map Item (Actor)"
-              args {
-                string_value: "5223acc0366236680e003b9b"
-              }
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (string)"
-          args {
-            string_value: "FactionList"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (SceneDimension)"
-          args {
-            string_value: "Default"
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Change Actor Control"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Get Map Item (Actor)"
-              args {
-                string_value: "5223acc0366236680e003b9b"
-              }
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "PlayerOrAI"
-          }
-          args {
-            int_value: 0
           }
         }
       }
@@ -821,35 +726,6 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Set Actor In Passive Mode"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Get Map Item (Actor)"
-              args {
-                string_value: "5223a317366236680e003a02"
-              }
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "IsOrIsNot"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-    }
-    ops {
       functionName: "Enable/Disable Interactable Object"
       args {
         call_value {
@@ -867,72 +743,6 @@ triggers {
           functionName: "Get Map Item (InteractableObject)"
           args {
             string_value: "5223a317366236680e003a02"
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Change Actor Team"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Get Map Item (Actor)"
-              args {
-                string_value: "5223a317366236680e003a02"
-              }
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (string)"
-          args {
-            string_value: "FactionList"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (SceneDimension)"
-          args {
-            string_value: "Default"
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Change Actor Control"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Get Map Item (Actor)"
-              args {
-                string_value: "5223a317366236680e003a02"
-              }
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "PlayerOrAI"
-          }
-          args {
-            int_value: 0
           }
         }
       }
@@ -1048,35 +858,6 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Set Actor In Passive Mode"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Get Map Item (Actor)"
-              args {
-                string_value: "5223acc0366236680e003b9c"
-              }
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "IsOrIsNot"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-    }
-    ops {
       functionName: "Enable/Disable Interactable Object"
       args {
         call_value {
@@ -1094,72 +875,6 @@ triggers {
           functionName: "Get Map Item (InteractableObject)"
           args {
             string_value: "5223acc0366236680e003b9c"
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Change Actor Team"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Get Map Item (Actor)"
-              args {
-                string_value: "5223acc0366236680e003b9c"
-              }
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (string)"
-          args {
-            string_value: "FactionList"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (SceneDimension)"
-          args {
-            string_value: "Default"
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Change Actor Control"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Get Map Item (Actor)"
-              args {
-                string_value: "5223acc0366236680e003b9c"
-              }
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "PlayerOrAI"
-          }
-          args {
-            int_value: 0
           }
         }
       }
