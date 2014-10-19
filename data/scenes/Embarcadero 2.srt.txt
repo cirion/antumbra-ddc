@@ -6258,6 +6258,36 @@ triggers {
   }
   is_oneshot: true
 }
+triggers {
+  name: "Debug"
+  events {
+    ops {
+      functionName: "On Map Start"
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Send Event"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Crossed to Pier"
+          }
+        }
+      }
+    }
+  }
+  isActive: false
+  idRef {
+    id: "5443d5063931398016006bcc"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
 regions {
   name: "Turm Chat"
   position {

@@ -1,144 +1,13 @@
 id: "Antumbra Saga"
 variables {
-  name: "CarverOpinion"
-  typeName: "int"
-  defaultValue {
-    int_value: 0
-    variableref_value {
-      scope: TsVariableScope_Story
-      name: "CarverOpinion"
-    }
-  }
-}
-variables {
-  name: "CarverAdvanced"
+  name: "a1_beatGame"
   typeName: "bool"
   defaultValue {
     bool_value: false
     variableref_value {
       scope: TsVariableScope_Story
-      name: "CarverAdvanced"
-    }
-  }
-}
-variables {
-  name: "DalminJoined"
-  typeName: "bool"
-  defaultValue {
-    bool_value: false
-    variableref_value {
-      scope: TsVariableScope_Story
-      name: "DalminJoined"
-    }
-  }
-}
-variables {
-  name: "RecruitedHelp"
-  typeName: "bool"
-  defaultValue {
-    bool_value: false
-    variableref_value {
-      scope: TsVariableScope_Story
-      name: "RecruitedHelp"
-    }
-  }
-}
-variables {
-  name: "TurmJoined"
-  typeName: "bool"
-  defaultValue {
-    bool_value: false
-    variableref_value {
-      scope: TsVariableScope_Story
-      name: "TurmJoined"
-    }
-  }
-}
-variables {
-  name: "A1_Bool_KnowAboutNanites"
-  typeName: "bool"
-  defaultValue {
-    bool_value: false
-    variableref_value {
-      scope: TsVariableScope_Story
-      name: "A1_Bool_KnowAboutNanites"
-    }
-  }
-}
-variables {
-  name: "A1_Bool_FakeMusician"
-  typeName: "bool"
-  defaultValue {
-    bool_value: false
-    variableref_value {
-      scope: TsVariableScope_Story
-      name: "A1_Bool_FakeMusician"
-    }
-  }
-}
-variables {
-  name: "A1_Bool_FakePopularMusician"
-  typeName: "bool"
-  defaultValue {
-    bool_value: false
-    variableref_value {
-      scope: TsVariableScope_Story
-      name: "A1_Bool_FakePopularMusician"
-    }
-  }
-}
-variables {
-  name: "A1_Bool_ToldCarverAboutNanites"
-  typeName: "bool"
-  defaultValue {
-    bool_value: false
-    variableref_value {
-      scope: TsVariableScope_Story
-      name: "A1_Bool_ToldCarverAboutNanites"
-    }
-  }
-}
-variables {
-  name: "A1_Bool_KilledBoss"
-  typeName: "bool"
-  defaultValue {
-    bool_value: false
-    variableref_value {
-      scope: TsVariableScope_Story
-      name: "A1_Bool_KilledBoss"
-    }
-  }
-}
-variables {
-  name: "A1_Bool_KilledCarver"
-  typeName: "bool"
-  defaultValue {
-    bool_value: false
-    variableref_value {
-      scope: TsVariableScope_Story
-      name: "A1_Bool_KilledCarver"
-    }
-  }
-}
-variables {
-  name: "A1_Bool_SidedWithKali"
-  typeName: "bool"
-  defaultValue {
-    bool_value: false
-    variableref_value {
-      scope: TsVariableScope_Story
-      name: "A1_Bool_SidedWithKali"
-    }
-  }
-}
-variables {
-  name: "A1_Bool_Won"
-  typeName: "bool"
-  defaultValue {
-    bool_value: false
-    variableref_value {
-      scope: TsVariableScope_Story
-      name: "A1_Bool_Won"
+      name: "a1_beatGame"
+      typeName: "bool"
     }
   }
 }
@@ -150,6 +19,91 @@ variables {
     variableref_value {
       scope: TsVariableScope_Story
       name: "A1_Bool_DalminDied"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A1_Bool_FakeMusician"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A1_Bool_FakeMusician"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A1_Bool_FakePopularMusician"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A1_Bool_FakePopularMusician"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A1_Bool_KilledBoss"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A1_Bool_KilledBoss"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A1_Bool_KilledCarver"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A1_Bool_KilledCarver"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A1_Bool_KnowAboutNanites"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A1_Bool_KnowAboutNanites"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A1_Bool_SidedWithKali"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A1_Bool_SidedWithKali"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A1_Bool_ToldCarverAboutNanites"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A1_Bool_ToldCarverAboutNanites"
+      typeName: "bool"
     }
   }
 }
@@ -161,6 +115,31 @@ variables {
     variableref_value {
       scope: TsVariableScope_Story
       name: "A1_Bool_TurmDied"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A1_Bool_Won"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A1_Bool_Won"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "a1_helpedKali"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "a1_helpedKali"
+      typeName: "bool"
     }
   }
 }
@@ -172,6 +151,18 @@ variables {
     variableref_value {
       scope: TsVariableScope_Story
       name: "A2_AztechnologyHostile"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "a2_beatGame"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "a2_beatGame"
       typeName: "bool"
     }
   }
@@ -441,6 +432,18 @@ variables {
   }
 }
 variables {
+  name: "a2_killedShavarus"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "a2_killedShavarus"
+      typeName: "bool"
+    }
+  }
+}
+variables {
   name: "A2_LazarusDead"
   typeName: "bool"
   defaultValue {
@@ -477,6 +480,18 @@ variables {
   }
 }
 variables {
+  name: "a2_musicGenre"
+  typeName: "string"
+  defaultValue {
+    string_value: "thrumming"
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "a2_musicGenre"
+      typeName: "string"
+    }
+  }
+}
+variables {
   name: "A2_OrionDied"
   typeName: "bool"
   defaultValue {
@@ -484,6 +499,18 @@ variables {
     variableref_value {
       scope: TsVariableScope_Story
       name: "A2_OrionDied"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "a2_recordedMusic"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "a2_recordedMusic"
       typeName: "bool"
     }
   }
@@ -497,6 +524,18 @@ variables {
       scope: TsVariableScope_Story
       name: "A2_RecordingGenre"
       typeName: "string"
+    }
+  }
+}
+variables {
+  name: "a2_savedShavarus"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "a2_savedShavarus"
+      typeName: "bool"
     }
   }
 }
@@ -573,86 +612,26 @@ variables {
   }
 }
 variables {
-  name: "a1_beatGame"
+  name: "CarverAdvanced"
   typeName: "bool"
   defaultValue {
     bool_value: false
     variableref_value {
       scope: TsVariableScope_Story
-      name: "a1_beatGame"
+      name: "CarverAdvanced"
       typeName: "bool"
     }
   }
 }
 variables {
-  name: "a1_helpedKali"
-  typeName: "bool"
+  name: "CarverOpinion"
+  typeName: "int"
   defaultValue {
-    bool_value: false
+    int_value: 0
     variableref_value {
       scope: TsVariableScope_Story
-      name: "a1_helpedKali"
-      typeName: "bool"
-    }
-  }
-}
-variables {
-  name: "a2_beatGame"
-  typeName: "bool"
-  defaultValue {
-    bool_value: false
-    variableref_value {
-      scope: TsVariableScope_Story
-      name: "a2_beatGame"
-      typeName: "bool"
-    }
-  }
-}
-variables {
-  name: "a2_killedShavarus"
-  typeName: "bool"
-  defaultValue {
-    bool_value: false
-    variableref_value {
-      scope: TsVariableScope_Story
-      name: "a2_killedShavarus"
-      typeName: "bool"
-    }
-  }
-}
-variables {
-  name: "a2_musicGenre"
-  typeName: "string"
-  defaultValue {
-    string_value: "thrumming"
-    variableref_value {
-      scope: TsVariableScope_Story
-      name: "a2_musicGenre"
-      typeName: "string"
-    }
-  }
-}
-variables {
-  name: "a2_recordedMusic"
-  typeName: "bool"
-  defaultValue {
-    bool_value: false
-    variableref_value {
-      scope: TsVariableScope_Story
-      name: "a2_recordedMusic"
-      typeName: "bool"
-    }
-  }
-}
-variables {
-  name: "a2_savedShavarus"
-  typeName: "bool"
-  defaultValue {
-    bool_value: false
-    variableref_value {
-      scope: TsVariableScope_Story
-      name: "a2_savedShavarus"
-      typeName: "bool"
+      name: "CarverOpinion"
+      typeName: "int"
     }
   }
 }
@@ -677,6 +656,18 @@ variables {
       scope: TsVariableScope_Story
       name: "Const_OddsOfBark"
       typeName: "int"
+    }
+  }
+}
+variables {
+  name: "DalminJoined"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "DalminJoined"
+      typeName: "bool"
     }
   }
 }
@@ -1193,6 +1184,18 @@ variables {
       scope: TsVariableScope_Story
       name: "LordLady"
       typeName: "string"
+    }
+  }
+}
+variables {
+  name: "RecruitedHelp"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "RecruitedHelp"
+      typeName: "bool"
     }
   }
 }
@@ -1928,7 +1931,19 @@ variables {
     }
   }
 }
-description: "War looms over CalFree as the mighty armies of Tir Tairngire poise to invade. The dysfunctional state is unable to protect itself, and it falls to you to rally the defense. You will take on a leadership role, recruiting allies from the Bay Area and Central Valley as you struggle to cobble together some means of resisting the onslaught.\n\nThis is the third entry in the Antumbra campaign trilogy, and continues the story several months after the conclusion of Eclipse. You will need Dragonfall, Antumbra, and Eclipse installed in order to play Corona. You can either import a character from Eclipse or start a new one. If you choose to import a character, the story in Corona will be updated to reflect the choices you made in the first two games."
+variables {
+  name: "TurmJoined"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "TurmJoined"
+      typeName: "bool"
+    }
+  }
+}
+description: "A sprawling campaign set on the American West Coast, in Antumbra Saga you will rise from a lowly shadowrunner to a pivotal player in the struggle between CalFree and Tir Tairngire. Along the way you\342\200\231ll nurture alliances, build up a party, and make decisions that will affect your fate and that of the factions you encounter.\n\nAntumbra Saga collects the three parts of Antumbra originally published for Shadowrun Returns, collecting them in a single continuous campaign that\'s been updated to run in Dragonfall: Director\'s Cut."
 startScene: "Antumbra Exterior Night"
 allowCharacterImport: false
 allowImportedEquipment: true
