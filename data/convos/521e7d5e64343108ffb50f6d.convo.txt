@@ -511,7 +511,7 @@ nodes {
     id: "537244136434311639fc448a"
   }
   index: 9
-  text: "{{GM}}Dalmin bows theatrically.{{/GM}} Where you lead, I shall follow."
+  text: "{{GM}}Dalmin bows theatrically.{{/GM}} Where you lead, I shall follow. Eventually. I\'ll see you on the run."
   nodeType: ConversationNodeType_Simple
   actions {
     ops {

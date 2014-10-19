@@ -159,7 +159,7 @@ nodes {
     id: "53724e916434311639fc535a"
   }
   index: 6
-  text: "Excellent. Shall we be off?"
+  text: "Excellent. I shall accompany you to Colma."
   nodeType: ConversationNodeType_Simple
   actions {
     ops {

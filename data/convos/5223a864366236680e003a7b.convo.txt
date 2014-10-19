@@ -446,7 +446,7 @@ nodes {
     id: "53724d686434311639fc5093"
   }
   index: 12
-  text: "Awesome! Lead on, $(l.name)!"
+  text: "Awesome! I\'ll be there, $(l.name)!"
   nodeType: ConversationNodeType_Simple
   actions {
     ops {

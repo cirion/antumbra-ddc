@@ -388,6 +388,18 @@ nodes {
   }
   branches {
     responseText: "No, thanks."
+    nextNodeIndex: 9
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5443374e3931398402005f39"
+  }
+  index: 9
+  text: "As you wish."
+  branches {
+    responseText: ""
     nextNodeIndex: 1
     auxiliaryLink: true
   }

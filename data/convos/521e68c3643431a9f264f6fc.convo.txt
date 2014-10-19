@@ -1160,7 +1160,7 @@ nodes {
     id: "537244836434311639fc45b7"
   }
   index: 18
-  text: "Wow, we\'re doing it! I\'m really a runner now! I swear you won\'t regret this."
+  text: "Wow, we\'re doing it! I\'m really a runner now! I swear you won\'t regret this. I\'ll meet ya at the site!"
   nodeType: ConversationNodeType_Simple
   actions {
     ops {

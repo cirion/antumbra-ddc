@@ -514,7 +514,7 @@ nodes {
     id: "537245a16434311639fc4835"
   }
   index: 8
-  text: "Thank you. Lead on, good $(l.sir)."
+  text: "Thank you. I shall travel with you once you leave this place, good $(l.sir)."
   nodeType: ConversationNodeType_Simple
   actions {
     ops {
