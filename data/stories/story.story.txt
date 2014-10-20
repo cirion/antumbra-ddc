@@ -1943,7 +1943,7 @@ variables {
     }
   }
 }
-description: "A sprawling campaign set on the American West Coast, in Antumbra Saga you will rise from a lowly shadowrunner to a pivotal player in the struggle between CalFree and Tir Tairngire. Along the way you\342\200\231ll nurture alliances, build up a party, and make decisions that will affect your fate and that of the factions you encounter.\n\nAntumbra Saga collects the three parts of Antumbra originally published for Shadowrun Returns, collecting them in a single continuous campaign that\'s been updated to run in Dragonfall: Director\'s Cut."
+description: "Venture into a sprawling campaign set on the Pacific Coast. In Antumbra Saga you will rise from a lowly shadowrunner to a pivotal player in the struggle between CalFree and Tir Tairngire. Along the way you\342\200\231ll nurture alliances, build up a party, and make decisions that will affect your fate and that of the factions you encounter.\n\nAntumbra Saga collects the three parts of Antumbra originally published for Shadowrun Returns, combining them into a single continuous campaign that\'s been updated to run in Dragonfall: Director\'s Cut. The content has been tested and rebalanced to take advantage of the new abilities, weapons, and combat systems available in the game engine."
 startScene: "Antumbra Exterior Night"
 allowCharacterImport: false
 allowImportedEquipment: true

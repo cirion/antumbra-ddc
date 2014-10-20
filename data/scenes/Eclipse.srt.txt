@@ -53,12 +53,46 @@ triggers {
       }
     }
     ops {
-      functionName: "Activate Actor Spawner"
+      functionName: "Teleport Actor"
       args {
         call_value {
-          functionName: "Get Map Item (Actor Reference)"
+          functionName: "All Actors on Team"
           args {
-            string_value: "5386ad983662368010000496"
+            call_value {
+              functionName: "Player Team"
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Map Item (SceneDimension)"
+              args {
+                string_value: "Default"
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Center of Region"
+          args {
+            call_value {
+              functionName: "Get Map Item (Region)"
+              args {
+                string_value: "53752ef46434316b13333651"
+              }
+            }
           }
         }
       }
@@ -66,7 +100,18 @@ triggers {
         call_value {
           functionName: "Get Preset Value (int)"
           args {
-            string_value: "WithOrWithout"
+            string_value: "FacingDirection"
+          }
+          args {
+            int_value: 5
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeleportMethod"
           }
           args {
             int_value: 0

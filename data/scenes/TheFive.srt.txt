@@ -201,7 +201,7 @@ triggers {
   }
   actions {
   }
-  isActive: true
+  isActive: false
   idRef {
     id: "537794913662364c1b004e93"
   }
@@ -16666,6 +16666,7 @@ characters {
         authority: 0
         protect_tether_range: -3
         move_speed: 0
+        is_fearless: 1
       }
       skills {
         ranged_combat: 0
