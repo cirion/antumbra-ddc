@@ -8314,6 +8314,47 @@ triggers {
   }
   is_oneshot: true
 }
+triggers {
+  name: "Debug"
+  events {
+    ops {
+      functionName: "On Map Start"
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "521a8ee43662367c1d007953"
+          }
+        }
+      }
+    }
+  }
+  isActive: false
+  idRef {
+    id: "54468bb4643431464d4f2551"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
 regions {
   name: "Norton Chat"
   position {
