@@ -17618,9 +17618,9 @@ props {
 props {
   name: "asylum_tech_futuristicESTMachine"
   gridPoint {
-    x: -16
+    x: -80
     y: 0
-    z: -13
+    z: -20
   }
   orientation: ORIENTATION_W
   displayName: "Jack Point Fake"
@@ -37897,9 +37897,9 @@ props {
 props {
   name: "asylum_tech_futuristicESTMachine"
   gridPoint {
-    x: -80
+    x: -16
     y: 0
-    z: -20
+    z: -13
   }
   orientation: ORIENTATION_W
   displayName: "Jack Point Real"
