@@ -2939,25 +2939,6 @@ triggers {
       }
     }
     ops {
-      functionName: "Clear Actor Orders"
-      args {
-        call_value {
-          functionName: "All Actors"
-          args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "AllOrAny"
-              }
-              args {
-                int_value: 0
-              }
-            }
-          }
-        }
-      }
-    }
-    ops {
       functionName: "Set Waypoint on Prop"
       args {
         call_value {
@@ -3070,7 +3051,7 @@ triggers {
       }
     }
     ops {
-      functionName: "Clear Actor Orders"
+      functionName: "Order Actor to Clear ThreatList"
       args {
         call_value {
           functionName: "All Actors on Team"
@@ -3108,21 +3089,10 @@ triggers {
       }
     }
     ops {
-      functionName: "Order Actor to Clear ThreatList"
+      functionName: "Clear Actor Orders"
       args {
         call_value {
-          functionName: "All Actors on Team"
-          args {
-            call_value {
-              functionName: "Get Preset Value (string)"
-              args {
-                string_value: "FactionList"
-              }
-              args {
-                int_value: 3
-              }
-            }
-          }
+          functionName: "All Actors"
           args {
             call_value {
               functionName: "Get Preset Value (int)"
@@ -3134,16 +3104,20 @@ triggers {
               }
             }
           }
-          args {
-            call_value {
-              functionName: "Get Map Item (SceneDimension)"
-              args {
-                string_value: "Default"
-              }
-            }
-          }
         }
       }
+    }
+    ops {
+      functionName: "End Current Team Round"
+    }
+    ops {
+      functionName: "End Current Team Round"
+    }
+    ops {
+      functionName: "End Current Team Round"
+    }
+    ops {
+      functionName: "End Current Team Round"
     }
   }
   isActive: true
@@ -5864,7 +5838,16 @@ triggers {
       }
     }
     ops {
-      functionName: "End Current Actor Turn"
+      functionName: "End Current Team Round"
+    }
+    ops {
+      functionName: "End Current Team Round"
+    }
+    ops {
+      functionName: "End Current Team Round"
+    }
+    ops {
+      functionName: "End Current Team Round"
     }
   }
   isActive: true
@@ -8001,7 +7984,7 @@ triggers {
   is_oneshot: false
 }
 triggers {
-  name: "Kill All Marines"
+  name: "Kill All Enemies"
   events {
     ops {
       functionName: "On Item Interaction"
@@ -8031,6 +8014,62 @@ triggers {
               }
               args {
                 int_value: 2
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DeathMethod"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Kill Actor"
+      args {
+        call_value {
+          functionName: "All Actors on Team"
+          args {
+            call_value {
+              functionName: "Get Preset Value (string)"
+              args {
+                string_value: "FactionList"
+              }
+              args {
+                int_value: 1
               }
             }
           }
@@ -12713,6 +12752,7 @@ characters {
     z: -36
   }
   orientation: ORIENTATION_W
+  GeneralTags: "isHailey"
   displayName: "Hailey"
   idRef {
     id: "544332e73931398402005c9d"
@@ -12815,6 +12855,7 @@ characters {
     }
     team_id: "Shadowrunners"
     char_name: "Hailey"
+    GeneralTags: "isHailey"
     enabled_at_start: false
     pc_spawn_number: -1
     cyberware_eyes: "Vision Magnification Eyes"
@@ -12834,6 +12875,7 @@ characters {
     z: -35
   }
   orientation: ORIENTATION_W
+  GeneralTags: "isOrion"
   displayName: "Orion"
   idRef {
     id: "544332e73931398402005c9e"
@@ -12900,6 +12942,7 @@ characters {
     }
     team_id: "Shadowrunners"
     char_name: "Orion"
+    GeneralTags: "isOrion"
     enabled_at_start: false
     pc_spawn_number: -1
     portrait {
@@ -12917,6 +12960,7 @@ characters {
     z: -35
   }
   orientation: ORIENTATION_W
+  GeneralTags: "isDalmin"
   displayName: "Dalmin"
   idRef {
     id: "544332e73931398402005c9f"
@@ -12989,6 +13033,7 @@ characters {
     }
     team_id: "Shadowrunners"
     char_name: "Dalmin"
+    GeneralTags: "isDalmin"
     enabled_at_start: false
     pc_spawn_number: -1
     portrait {

@@ -13803,6 +13803,9 @@ mapEvents: "Exuent All"
 mapEvents: "Exiting"
 mapEvents: "Can End Map"
 mapEvents: "Stop All Combat"
+senseTags: "isHailey"
+senseTags: "isDalmin"
+senseTags: "isOrion"
 goals {
   name: "You died."
   type: GoalType_Primary
