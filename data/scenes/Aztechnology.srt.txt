@@ -7985,8 +7985,8 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Wealthy/HumanMaleTurquoisePonyJacket"
-    character_sheet_id: "Lonestar_Lv2_Human_Pistol"
+    prefab_name: "Seattle:Wealthy/HumanMaleTurquoisePonyJacket"
+    character_sheet_id: "Errant_Lv2_Human_Pistol"
     character_mod {
       stats {
         body: 0
@@ -8008,6 +8008,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -8040,8 +8043,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Pi 1 Fichetti Security 500"
@@ -8053,7 +8058,7 @@ characters {
     portrait {
       filename: "generic_humanmale_rent-a-cop"
     }
-    karma: 37
+    karma: 56
   }
 }
 characters {
@@ -8071,8 +8076,8 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Security/HumanFemaleSecurity"
-    character_sheet_id: "Lonestar_Lv2_Human_Pistol"
+    prefab_name: "Seattle:Security/HumanFemaleSecurity"
+    character_sheet_id: "Errant_Lv2_Human_Pistol"
     character_mod {
       stats {
         body: 0
@@ -8094,6 +8099,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -8126,8 +8134,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Pi 1 Fichetti Security 500"
@@ -8136,7 +8146,7 @@ characters {
     char_name: "Security Guard"
     GeneralTags: "floor1"
     pc_spawn_number: -1
-    karma: 37
+    karma: 56
   }
 }
 characters {
@@ -8154,8 +8164,8 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Security/HumanMaleSecurityNVG"
-    character_sheet_id: "Lonestar_Lv2_Human_Pistol"
+    prefab_name: "Seattle:Security/HumanMaleSecurityNVG"
+    character_sheet_id: "Errant_Lv2_Human_Pistol"
     character_mod {
       stats {
         body: 0
@@ -8177,6 +8187,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -8209,8 +8222,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Pi 1 Fichetti Security 500"
@@ -8219,7 +8234,7 @@ characters {
     char_name: "Security Guard"
     GeneralTags: "floor1"
     pc_spawn_number: -1
-    karma: 37
+    karma: 56
   }
 }
 characters {
@@ -8237,8 +8252,8 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Security/DwarfMaleSecurity"
-    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
+    prefab_name: "Seattle:Security/DwarfMaleSecurity"
+    character_sheet_id: "Errant_Lv1_Heavy_Explosive"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
       stats {
@@ -8261,6 +8276,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -8293,14 +8311,16 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "LoneStar"
     char_name: "Security Guard"
     GeneralTags: "floor1"
     pc_spawn_number: -1
-    karma: 39
+    karma: 47
   }
 }
 characters {

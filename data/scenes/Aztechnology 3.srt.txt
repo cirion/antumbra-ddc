@@ -9286,9 +9286,9 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Security/OrkFemaleSecurity"
-    character_sheet_id: "Lonestar_Lv2_Ork_Shotgun"
-    equipment_sheet_id: "Lonestar_Shotgun_Low"
+    prefab_name: "Seattle:Security/OrkFemaleSecurity"
+    character_sheet_id: "Errant_Lv2_Ork_Shotgun"
+    equipment_sheet_id: "Errant_Lv2_Shotgun"
     character_mod {
       stats {
         body: 0
@@ -9310,6 +9310,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -9342,15 +9345,17 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "LoneStar"
     char_name: "Security Guard"
     GeneralTags: "squad6"
     GeneralTags: "floor3"
     pc_spawn_number: -1
-    karma: 41
+    karma: 52
   }
 }
 characters {
@@ -9369,9 +9374,9 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Gangers/ElfFemaleGanger"
-    character_sheet_id: "Lonestar_Lv2_Human_Mage"
-    equipment_sheet_id: "Lonestar_Mage_Low"
+    prefab_name: "Seattle:Gangers/ElfFemaleGanger"
+    character_sheet_id: "Errant_Lv2_Human_Mage"
+    equipment_sheet_id: "Errant_Lv2_Spellcasting"
     character_mod {
       stats {
         body: 0
@@ -9393,6 +9398,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -9425,15 +9433,17 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Mage"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "LoneStar"
     char_name: "Security Mage"
     GeneralTags: "squad6"
     GeneralTags: "floor3"
     pc_spawn_number: -1
-    karma: 43
+    karma: 65
   }
 }
 characters {
@@ -9452,8 +9462,8 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Security/TrollMalesSecurityNVG"
-    character_sheet_id: "Lonestar_Lv2_Captain"
+    prefab_name: "Seattle:Security/TrollMalesSecurityNVG"
+    character_sheet_id: "Errant_Lv2_Captain"
     character_mod {
       stats {
         body: 0
@@ -9475,6 +9485,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -9507,8 +9520,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Grenade 1 (Frag)"
@@ -9524,7 +9539,7 @@ characters {
     GeneralTags: "squad6"
     GeneralTags: "floor3"
     pc_spawn_number: -1
-    karma: 52
+    karma: 68
   }
 }
 characters {
@@ -9594,8 +9609,8 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Security/HumanMaleExecSecurity"
-    character_sheet_id: "Lonestar_Lv2_Captain"
+    prefab_name: "Seattle:Security/HumanMaleExecSecurity"
+    character_sheet_id: "Errant_Lv2_Captain"
     character_mod {
       stats {
         body: 0
@@ -9617,6 +9632,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -9649,8 +9667,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "HealthPack"
@@ -9667,7 +9687,7 @@ characters {
     GeneralTags: "floor3"
     enabled_at_start: false
     pc_spawn_number: -1
-    karma: 52
+    karma: 68
   }
 }
 characters {
@@ -9686,8 +9706,8 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Security/OrkMaleSecurity"
-    character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
+    prefab_name: "Seattle:Security/OrkMaleSecurity"
+    character_sheet_id: "Errant_Lv1_Ork_Shotgun"
     equipment_sheet_id: "Lonestar_Shotgun_Low"
     character_mod {
       stats {
@@ -9710,6 +9730,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -9742,15 +9765,17 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "LoneStar"
     char_name: "Security Guard"
     GeneralTags: "squad5"
     GeneralTags: "floor3"
     pc_spawn_number: -1
-    karma: 33
+    karma: 41
   }
 }
 characters {
@@ -9769,8 +9794,8 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Standard/HumanFemaleMage"
-    character_sheet_id: "Lonestar_Lv1_Human_Mage"
+    prefab_name: "Seattle:Standard/HumanFemaleMage"
+    character_sheet_id: "Errant_Lv1_Human_Mage"
     equipment_sheet_id: "Lonestar_Mage_Low"
     character_mod {
       stats {
@@ -9793,6 +9818,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -9825,15 +9853,17 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Mage"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "LoneStar"
     char_name: "Security Mage"
     GeneralTags: "squad5"
     GeneralTags: "floor3"
     pc_spawn_number: -1
-    karma: 40
+    karma: 43
   }
 }
 characters {
@@ -9852,8 +9882,8 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Security/ElfFemaleSecurity"
-    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
+    prefab_name: "Seattle:Security/ElfFemaleSecurity"
+    character_sheet_id: "Errant_Lv1_Heavy_Explosive"
     character_mod {
       stats {
         body: 0
@@ -9875,6 +9905,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -9907,8 +9940,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "SMG 1 Uzi III"
@@ -9921,7 +9956,7 @@ characters {
     portrait {
       filename: "generic_humanmale_lonestarguard01"
     }
-    karma: 39
+    karma: 47
   }
 }
 characters {
@@ -10695,6 +10730,8 @@ scene_dimensions {
   dimension_name: "Aztechnology Secure Network"
   initial_alarm_state: 15
   turns_per_round: 3
+}
+character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {

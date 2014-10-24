@@ -2845,12 +2845,12 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Spirit/SpiritNature"
+    prefab_name: "Seattle:Spirit/SpiritNature"
     character_sheet_id: "Spirit Nature"
     equipment_sheet_id: "Spirit Nature F3 Gear"
     character_mod {
       stats {
-        body: -1
+        body: 0
         quickness: -4
         strength: -3
         charisma: -3
@@ -2904,6 +2904,8 @@ characters {
       }
       archetypeName: "Guard - Hunt And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "Civilians"
     char_name: "Spirit"
@@ -2911,7 +2913,7 @@ characters {
     portrait {
       filename: "Generic_Spirit_Nature"
     }
-    karma: 64
+    karma: 70
   }
 }
 characters {
@@ -2928,8 +2930,8 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Homeless/HumanMaleHomelessJacket"
-    character_sheet_id: "Lonestar_Lv2_Captain"
+    prefab_name: "Seattle:Homeless/HumanMaleHomelessJacket"
+    character_sheet_id: "Errant_Lv2_Captain"
     equipment_sheet_id: "Lonestar_Captain_Low"
     character_mod {
       stats {
@@ -2952,6 +2954,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -2984,8 +2989,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Hunt And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "Civilians"
     char_name: "Mr. Johnson"
@@ -2993,7 +3000,7 @@ characters {
     portrait {
       filename: "backer_humanmale_levieranburks"
     }
-    karma: 52
+    karma: 68
   }
 }
 characters {
