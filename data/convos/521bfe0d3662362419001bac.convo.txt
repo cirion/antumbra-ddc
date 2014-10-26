@@ -184,7 +184,7 @@ nodes {
     id: "53723fb36434311639fc4182"
   }
   index: 12
-  text: "I\342\200\231ve got a little surprise for you. Do you know Kali? The disgraced Seattleite who built Antumbra? Well, she\342\200\231s here in the city. She\342\200\231s trying to scrape together a second life, far from the hordes of angry lenders.\n\nWe uncovered some juicy blackmail material when we took over the Antumbra site, and have convinced her to open up her new site for you. She isn\342\200\231t happy about it, but it will keep you safe from Saito\342\200\231s goons."
+  text: "I\342\200\231ve got a little surprise for you. Do you know Kali? The disgraced Seattleite who built Antumbra? Well, she\342\200\231s here in the city. She\342\200\231s trying to scrape together a second life, far from the hordes of angry lenders.\n\nWe uncovered some juicy blackmail material when we took over the Antumbra site, and have convinced her to open up her new club for you as a safehouse. She isn\342\200\231t happy about it, but it will keep you secure from Saito\342\200\231s goons."
   branches {
     responseText: ""
     nextNodeIndex: 13
