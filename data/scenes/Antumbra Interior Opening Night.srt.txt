@@ -5660,7 +5660,7 @@ mapName: "Antumbra Interior Opening Night"
 parentStory: ""
 scene_title: "Antumbra"
 scene_subtitle: "Opening Night in Everett\'s Newest Nightclub"
-scene_synopsis: "A wave of sound hits you as you step through the door. Everything inside is so... shiny. Plenty of money went into making this place, and it\'s designed to extract as much nuyen as possible from each person walking through its doors. \n\nDespite the tempting distractions, you\'ll need to find a way into the adjoining offices in order to deliver Johnson\'s box..."
+scene_synopsis: "A wave of sound hits you as you step through the door. Everything inside is so... shiny. Kali spent plenty of money constructing this place, and it\'s designed to extract as much nuyen as possible from each person walking through its doors. \n\nDespite the tempting distractions, you\'ll need to find a way into the adjoining offices in order to deliver Johnson\'s box..."
 scene_image: "loadingimage_a1_02"
 scene_continue_button_skip: false
 scene_restore_runner_health: false
@@ -5710,8 +5710,6 @@ team_affiliations {
 }
 scene_dimensions {
   dimension_name: "Default"
-}
-character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {

@@ -9200,7 +9200,7 @@ props {
 props {
   name: "telestrianEstate_decor_sculpture01"
   gridPoint {
-    x: 42
+    x: 41
     y: 0
     z: 49
   }
@@ -9212,7 +9212,7 @@ props {
   gridPoint {
     x: 36
     y: 0
-    z: 44
+    z: 45
   }
   orientation: ORIENTATION_S
   lod: 0

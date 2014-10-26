@@ -1206,21 +1206,6 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Order Actor to Call for help"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Triggering Target Actor"
-            }
-          }
-          args {
-          }
-        }
-      }
-    }
-    ops {
       functionName: "Set Alarm State"
       args {
         call_value {
@@ -1321,36 +1306,6 @@ triggers {
             string_value: "Default"
           }
         }
-      }
-    }
-    ops {
-      functionName: "Set Actor AI Script"
-      args {
-        call_value {
-          functionName: "All Actors With Tag"
-          args {
-            call_value {
-              functionName: "Get Map Item (SenseTagList)"
-              args {
-                string_value: "squad2"
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "AllOrAny"
-              }
-              args {
-                int_value: 0
-              }
-            }
-          }
-        }
-      }
-      args {
-        string_value: "gumbo_Soldier"
       }
     }
   }
@@ -2492,9 +2447,9 @@ triggers {
       }
       args {
         call_value {
-          functionName: "Get Map Item (Player)"
+          functionName: "Get Map Item (Actor)"
           args {
-            int_value: 1
+            string_value: "5442ff4c39313984020057f5"
           }
         }
       }
@@ -2615,7 +2570,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: false
+  is_oneshot: true
 }
 triggers {
   name: "DalminChatter2"
@@ -2645,9 +2600,9 @@ triggers {
       }
       args {
         call_value {
-          functionName: "Get Map Item (Player)"
+          functionName: "Get Map Item (Actor)"
           args {
-            int_value: 1
+            string_value: "5442ff4c39313984020057f5"
           }
         }
       }
@@ -2768,7 +2723,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: false
+  is_oneshot: true
 }
 triggers {
   name: "TurmChatter1"
@@ -2798,9 +2753,9 @@ triggers {
       }
       args {
         call_value {
-          functionName: "Get Map Item (Player)"
+          functionName: "Get Map Item (Actor)"
           args {
-            int_value: 1
+            string_value: "5442ff3e39313984020057f3"
           }
         }
       }
@@ -2921,7 +2876,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: false
+  is_oneshot: true
 }
 triggers {
   name: "TurmChatter2"
@@ -2951,9 +2906,9 @@ triggers {
       }
       args {
         call_value {
-          functionName: "Get Map Item (Player)"
+          functionName: "Get Map Item (Actor)"
           args {
-            int_value: 1
+            string_value: "5442ff3e39313984020057f3"
           }
         }
       }
@@ -3074,7 +3029,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: false
+  is_oneshot: true
 }
 triggers {
   name: "DalminDies"
@@ -3140,9 +3095,9 @@ triggers {
       }
       args {
         call_value {
-          functionName: "Get Map Item (Player)"
+          functionName: "Get Map Item (Actor)"
           args {
-            int_value: 1
+            string_value: "5442ff4c39313984020057f5"
           }
         }
       }
@@ -3247,9 +3202,9 @@ triggers {
       }
       args {
         call_value {
-          functionName: "Get Map Item (Player)"
+          functionName: "Get Map Item (Actor)"
           args {
-            int_value: 1
+            string_value: "5442ff3e39313984020057f3"
           }
         }
       }
@@ -3347,98 +3302,6 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Change Actor Team"
-      args {
-        call_value {
-          functionName: "All Actors With Tag"
-          args {
-            call_value {
-              functionName: "Get Map Item (SenseTagList)"
-              args {
-                string_value: "squad1a"
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "AllOrAny"
-              }
-              args {
-                int_value: 0
-              }
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (string)"
-          args {
-            string_value: "FactionList"
-          }
-          args {
-            int_value: 2
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (SceneDimension)"
-          args {
-            string_value: "Default"
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Order Actor to Hunt And Destroy (Team)"
-      args {
-        call_value {
-          functionName: "All Actors With Tag"
-          args {
-            call_value {
-              functionName: "Get Map Item (SenseTagList)"
-              args {
-                string_value: "squad1a"
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "AllOrAny"
-              }
-              args {
-                int_value: 0
-              }
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (string)"
-          args {
-            string_value: "FactionList"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (SceneDimension)"
-          args {
-            string_value: "Default"
-          }
-        }
-      }
-    }
-    ops {
       functionName: "Display Text over Actor"
       args {
         call_value {
@@ -3482,7 +3345,7 @@ triggers {
       }
     }
     ops {
-      functionName: "Suspend Team\'s Turn"
+      functionName: "Set Team Alliance"
       args {
         call_value {
           functionName: "Get Preset Value (string)"
@@ -3490,12 +3353,31 @@ triggers {
             string_value: "FactionList"
           }
           args {
-            int_value: 2
+            int_value: 0
           }
         }
       }
       args {
-        int_value: 1
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeamAlliance"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 4
+          }
+        }
       }
       args {
         call_value {
@@ -3507,15 +3389,164 @@ triggers {
       }
     }
     ops {
-      functionName: "Change Actor Team"
+      functionName: "Set Team Alliance"
       args {
         call_value {
-          functionName: "All Actors With Tag"
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 4
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeamAlliance"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Team Alliance"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeamAlliance"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 5
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Team Alliance"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 5
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeamAlliance"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Trigger: Wait for Rounds"
+      args {
+        int_value: 2
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Order Actor to Hunt And Destroy (Team)"
+      args {
+        call_value {
+          functionName: "All Actors on Team"
           args {
             call_value {
-              functionName: "Get Map Item (SenseTagList)"
+              functionName: "Get Preset Value (string)"
               args {
-                string_value: "squad2"
+                string_value: "FactionList"
+              }
+              args {
+                int_value: 4
               }
             }
           }
@@ -3530,6 +3561,14 @@ triggers {
               }
             }
           }
+          args {
+            call_value {
+              functionName: "Get Map Item (SceneDimension)"
+              args {
+                string_value: "Default"
+              }
+            }
+          }
         }
       }
       args {
@@ -3539,7 +3578,7 @@ triggers {
             string_value: "FactionList"
           }
           args {
-            int_value: 2
+            int_value: 0
           }
         }
       }
@@ -3550,36 +3589,6 @@ triggers {
             string_value: "Default"
           }
         }
-      }
-    }
-    ops {
-      functionName: "Set Actor AI Script"
-      args {
-        call_value {
-          functionName: "All Actors With Tag"
-          args {
-            call_value {
-              functionName: "Get Map Item (SenseTagList)"
-              args {
-                string_value: "squad1a"
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "AllOrAny"
-              }
-              args {
-                int_value: 0
-              }
-            }
-          }
-        }
-      }
-      args {
-        string_value: "gumbo_Soldier"
       }
     }
   }
@@ -4684,7 +4693,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "gumbo_Soldier"
+      archetypeName: "Guard - Hunt And Destroy"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -4785,7 +4794,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "gumbo_Soldier"
+      archetypeName: "Guard - Hunt And Destroy"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -4866,9 +4875,8 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Lonestar/TrollMaleLonestarSecurityGuard"
+    prefab_name: "Seattle:Lonestar/TrollMaleLonestarSecurityGuard"
     character_sheet_id: "Lonestar_Lv2_Captain"
-    equipment_sheet_id: "Lonestar_Captain_Low"
     character_mod {
       stats {
         body: 0
@@ -4927,7 +4935,16 @@ characters {
       vulnerabilities {
       }
     }
-    team_id: "Civilians"
+    equipment {
+      prefab_name: "AR 1 AK98"
+    }
+    equipment {
+      prefab_name: "Grenade 1 (Flash)"
+    }
+    equipment {
+      prefab_name: "HealthPack"
+    }
+    team_id: "Squad 2"
     char_name: "Security Guard Captain"
     GeneralTags: "squad2"
     pc_spawn_number: -1
@@ -5011,7 +5028,7 @@ characters {
     equipment {
       prefab_name: "Sh 1 Benelli Raffaello"
     }
-    team_id: "Civilians"
+    team_id: "Squad 2"
     char_name: "Security Guard"
     GeneralTags: "squad2"
     pc_spawn_number: -1
@@ -5093,8 +5110,8 @@ characters {
       vulnerabilities {
       }
     }
-    team_id: "Civilians"
-    char_name: "Security Guard"
+    team_id: "Squad 2"
+    char_name: "Security Mage"
     GeneralTags: "squad2"
     pc_spawn_number: -1
     karma: 40
@@ -5115,7 +5132,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Lonestar/HumanMaleLonestarSecurityGuard"
+    prefab_name: "Seattle:Lonestar/HumanMaleLonestarSecurityGuard"
     character_sheet_id: "Lonestar_Lv1_Human_Pistol"
     character_mod {
       stats {
@@ -5170,7 +5187,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Non-Combatant"
+      archetypeName: "Guard - Protect"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -5178,7 +5195,7 @@ characters {
     equipment {
       prefab_name: "Pi 1 Fichetti Security 500"
     }
-    team_id: "Civilians"
+    team_id: "Squad 2"
     char_name: "Security Guard"
     GeneralTags: "squad2"
     pc_spawn_number: -1
@@ -5342,7 +5359,7 @@ characters {
       attitude: AttitudeAggressive
     }
     team_id: "Civilians"
-    char_name: "Security Guard"
+    char_name: "Security Mage"
     GeneralTags: "squad3"
     enabled_at_start: false
     pc_spawn_number: -1
@@ -5364,7 +5381,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Lonestar/TrollMaleLoneStarHeavyGuard"
+    prefab_name: "Seattle:Lonestar/TrollMaleLoneStarHeavyGuard"
     character_sheet_id: "Lonestar_Lv1_Captain"
     character_mod {
       stats {
@@ -5421,12 +5438,14 @@ characters {
       }
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
-    }
-    equipment {
-      prefab_name: "AR 1 Semopal vz88v"
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "HealthPack"
+    }
+    equipment {
+      prefab_name: "AR 1 AK98"
     }
     team_id: "Civilians"
     char_name: "Security Guard Captain"
@@ -5490,7 +5509,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Lonestar/HumanMaleLonestarGuard"
+    prefab_name: "Seattle:Lonestar/HumanMaleLonestarGuard"
     character_sheet_id: "Lonestar_Lv1_Human_Pistol"
     equipment_sheet_id: "Lonestar_Lv1_Pistol_Gear"
     character_mod {
@@ -5507,11 +5526,11 @@ characters {
       }
       specializations {
       }
-      archetypeName: "Non-Combatant"
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
-    team_id: "Civilians"
+    team_id: "Squad 1a"
     char_name: "Lonestar Guard"
     GeneralTags: "squad1a"
     enabled_at_start: true
@@ -5519,6 +5538,7 @@ characters {
     portrait {
       filename: ""
     }
+    karma: 30
   }
 }
 characters {
@@ -5535,7 +5555,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Lonestar/OrkLoneStarCaptain"
+    prefab_name: "Seattle:Lonestar/OrkLoneStarCaptain"
     character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
     equipment_sheet_id: "Lonestar_Lv1_Shotgun_Gear"
     character_mod {
@@ -5552,9 +5572,11 @@ characters {
       }
       specializations {
       }
-      archetypeName: "Non-Combatant"
+      archetypeName: "gumbo_Soldier"
+      vulnerabilities {
+      }
     }
-    team_id: "Civilians"
+    team_id: "Squad 1a"
     char_name: "Lonestar Enforcer"
     GeneralTags: "squad1a"
     enabled_at_start: true
@@ -5562,6 +5584,7 @@ characters {
     portrait {
       filename: ""
     }
+    karma: 33
   }
 }
 characters {
@@ -5766,12 +5789,16 @@ team_affiliations {
   affiliation: 1
   affiliation: 0
   affiliation: 0
+  affiliation: 0
+  affiliation: 0
 }
 team_affiliations {
   team_name: "Gangers"
   affiliation: 1
   affiliation: 0
   affiliation: 1
+  affiliation: 0
+  affiliation: 0
   affiliation: 0
 }
 team_affiliations {
@@ -5780,9 +5807,31 @@ team_affiliations {
   affiliation: 1
   affiliation: 0
   affiliation: 0
+  affiliation: 0
+  affiliation: 0
 }
 team_affiliations {
   team_name: "Civilians"
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+}
+team_affiliations {
+  team_name: "Squad 1a"
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+}
+team_affiliations {
+  team_name: "Squad 2"
+  affiliation: 0
+  affiliation: 0
   affiliation: 0
   affiliation: 0
   affiliation: 0
