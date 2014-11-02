@@ -7986,7 +7986,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Wealthy/HumanMaleTurquoisePonyJacket"
-    character_sheet_id: "Errant_Lv2_Human_Pistol"
+    character_sheet_id: "Lonestar_Lv2_Human_Pistol"
     character_mod {
       stats {
         body: 0
@@ -8058,7 +8058,7 @@ characters {
     portrait {
       filename: "generic_humanmale_rent-a-cop"
     }
-    karma: 56
+    karma: 37
   }
 }
 characters {
@@ -8077,7 +8077,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Security/HumanFemaleSecurity"
-    character_sheet_id: "Errant_Lv2_Human_Pistol"
+    character_sheet_id: "Lonestar_Lv2_Human_Pistol"
     character_mod {
       stats {
         body: 0
@@ -8146,7 +8146,7 @@ characters {
     char_name: "Security Guard"
     GeneralTags: "floor1"
     pc_spawn_number: -1
-    karma: 56
+    karma: 37
   }
 }
 characters {
@@ -8165,7 +8165,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Security/HumanMaleSecurityNVG"
-    character_sheet_id: "Errant_Lv2_Human_Pistol"
+    character_sheet_id: "Lonestar_Lv2_Human_Pistol"
     character_mod {
       stats {
         body: 0
@@ -8234,7 +8234,7 @@ characters {
     char_name: "Security Guard"
     GeneralTags: "floor1"
     pc_spawn_number: -1
-    karma: 56
+    karma: 37
   }
 }
 characters {
@@ -8253,7 +8253,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Security/DwarfMaleSecurity"
-    character_sheet_id: "Errant_Lv1_Heavy_Explosive"
+    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
       stats {
@@ -8320,7 +8320,7 @@ characters {
     char_name: "Security Guard"
     GeneralTags: "floor1"
     pc_spawn_number: -1
-    karma: 47
+    karma: 39
   }
 }
 characters {

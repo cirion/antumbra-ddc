@@ -3186,7 +3186,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Security/HumanMaleSecurity"
-    character_sheet_id: "Errant_Lv1_Captain"
+    character_sheet_id: "Lonestar_Lv1_Captain"
     equipment_sheet_id: "Lonestar_Captain_Low"
     character_mod {
       stats {
@@ -3257,7 +3257,7 @@ characters {
     portrait {
       filename: "generic_humanmale_courier"
     }
-    karma: 52
+    karma: 44
   }
 }
 characters {
@@ -3277,7 +3277,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Security/DwarfFemaleSecurity"
-    character_sheet_id: "Errant_Lv1_Heavy_Explosive"
+    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
       stats {
@@ -3345,7 +3345,7 @@ characters {
     GeneralTags: "squad3"
     GeneralTags: "floor2"
     pc_spawn_number: -1
-    karma: 47
+    karma: 39
   }
 }
 characters {
@@ -3365,7 +3365,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Security/ElfMaleExecSecurity"
-    character_sheet_id: "Errant_Lv2_Captain"
+    character_sheet_id: "Lonestar_Lv2_Captain"
     character_mod {
       stats {
         body: 0
@@ -3441,7 +3441,7 @@ characters {
     GeneralTags: "squad4"
     GeneralTags: "floor2"
     pc_spawn_number: -1
-    karma: 68
+    karma: 52
   }
 }
 characters {
@@ -3461,7 +3461,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Security/ElfMaleSecurity"
-    character_sheet_id: "Errant_Lv1_Heavy_Explosive"
+    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
       stats {
@@ -3529,7 +3529,7 @@ characters {
     GeneralTags: "squad4"
     GeneralTags: "floor2"
     pc_spawn_number: -1
-    karma: 47
+    karma: 39
   }
 }
 characters {
@@ -3549,7 +3549,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Security/DwarfMaleExecSecurity"
-    character_sheet_id: "Errant_Lv2_Human_Pistol"
+    character_sheet_id: "Lonestar_Lv2_Human_Pistol"
     equipment_sheet_id: "Errant_Lv1_Pistol"
     character_mod {
       stats {
@@ -3617,7 +3617,7 @@ characters {
     GeneralTags: "squad4"
     GeneralTags: "floor2"
     pc_spawn_number: -1
-    karma: 56
+    karma: 37
   }
 }
 characters {

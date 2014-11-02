@@ -9241,7 +9241,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Security/OrkFemaleSecurity"
-    character_sheet_id: "Errant_Lv2_Ork_Shotgun"
+    character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
     equipment_sheet_id: "Errant_Lv2_Shotgun"
     character_mod {
       stats {
@@ -9309,7 +9309,7 @@ characters {
     GeneralTags: "squad6"
     GeneralTags: "floor3"
     pc_spawn_number: -1
-    karma: 52
+    karma: 33
   }
 }
 characters {
@@ -9329,7 +9329,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Gangers/ElfFemaleGanger"
-    character_sheet_id: "Errant_Lv2_Human_Mage"
+    character_sheet_id: "Lonestar_Lv2_Human_Mage"
     equipment_sheet_id: "Errant_Lv2_Spellcasting"
     character_mod {
       stats {
@@ -9397,7 +9397,7 @@ characters {
     GeneralTags: "squad6"
     GeneralTags: "floor3"
     pc_spawn_number: -1
-    karma: 65
+    karma: 43
   }
 }
 characters {
@@ -9417,7 +9417,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Security/TrollMalesSecurityNVG"
-    character_sheet_id: "Errant_Lv2_Captain"
+    character_sheet_id: "Lonestar_Lv2_Captain"
     character_mod {
       stats {
         body: 0
@@ -9493,7 +9493,7 @@ characters {
     GeneralTags: "squad6"
     GeneralTags: "floor3"
     pc_spawn_number: -1
-    karma: 68
+    karma: 52
   }
 }
 characters {
@@ -9564,7 +9564,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Security/HumanMaleExecSecurity"
-    character_sheet_id: "Errant_Lv2_Captain"
+    character_sheet_id: "Lonestar_Lv2_Captain"
     character_mod {
       stats {
         body: 0
@@ -9641,7 +9641,7 @@ characters {
     GeneralTags: "floor3"
     enabled_at_start: false
     pc_spawn_number: -1
-    karma: 68
+    karma: 52
   }
 }
 characters {
@@ -9661,7 +9661,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Security/OrkMaleSecurity"
-    character_sheet_id: "Errant_Lv1_Ork_Shotgun"
+    character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
     equipment_sheet_id: "Lonestar_Shotgun_Low"
     character_mod {
       stats {
@@ -9729,7 +9729,7 @@ characters {
     GeneralTags: "squad5"
     GeneralTags: "floor3"
     pc_spawn_number: -1
-    karma: 41
+    karma: 33
   }
 }
 characters {
@@ -9749,7 +9749,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Standard/HumanFemaleMage"
-    character_sheet_id: "Errant_Lv1_Human_Mage"
+    character_sheet_id: "Lonestar_Lv1_Human_Mage"
     equipment_sheet_id: "Lonestar_Mage_Low"
     character_mod {
       stats {
@@ -9817,7 +9817,7 @@ characters {
     GeneralTags: "squad5"
     GeneralTags: "floor3"
     pc_spawn_number: -1
-    karma: 43
+    karma: 40
   }
 }
 characters {
@@ -9837,7 +9837,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Security/ElfFemaleSecurity"
-    character_sheet_id: "Errant_Lv1_Heavy_Explosive"
+    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
     character_mod {
       stats {
         body: 0
@@ -9910,7 +9910,7 @@ characters {
     portrait {
       filename: "generic_humanmale_lonestarguard01"
     }
-    karma: 47
+    karma: 39
   }
 }
 characters {
