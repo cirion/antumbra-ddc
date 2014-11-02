@@ -1117,52 +1117,6 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Change Actor Team"
-      args {
-        call_value {
-          functionName: "All Actors With Tag"
-          args {
-            call_value {
-              functionName: "Get Map Item (SenseTagList)"
-              args {
-                string_value: "squad1a"
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "AllOrAny"
-              }
-              args {
-                int_value: 0
-              }
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (string)"
-          args {
-            string_value: "FactionList"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (SceneDimension)"
-          args {
-            string_value: "Default"
-          }
-        }
-      }
-    }
-    ops {
       functionName: "Set Team Alliance"
       args {
         call_value {
@@ -1582,7 +1536,7 @@ triggers {
                 string_value: "FactionList"
               }
               args {
-                int_value: 0
+                int_value: 2
               }
             }
           }
@@ -1682,28 +1636,6 @@ triggers {
         }
       }
     }
-  }
-  isActive: true
-  idRef {
-    id: "5221ff823662365013000f46"
-  }
-  elseActions {
-  }
-  is_oneshot: true
-}
-triggers {
-  name: "Sided with Gangers"
-  events {
-    ops {
-      functionName: "Get Map Item (Event)"
-      args {
-        string_value: "Sided with Gangers"
-      }
-    }
-  }
-  conditions {
-  }
-  actions {
     ops {
       functionName: "Change Actor Team"
       args {
@@ -1713,7 +1645,7 @@ triggers {
             call_value {
               functionName: "Get Map Item (SenseTagList)"
               args {
-                string_value: "squad1b"
+                string_value: "squad1a"
               }
             }
           }
@@ -1750,6 +1682,28 @@ triggers {
         }
       }
     }
+  }
+  isActive: true
+  idRef {
+    id: "5221ff823662365013000f46"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Sided with Gangers"
+  events {
+    ops {
+      functionName: "Get Map Item (Event)"
+      args {
+        string_value: "Sided with Gangers"
+      }
+    }
+  }
+  conditions {
+  }
+  actions {
     ops {
       functionName: "Set Team Alliance"
       args {
@@ -2198,7 +2152,7 @@ triggers {
                 string_value: "FactionList"
               }
               args {
-                int_value: 0
+                int_value: 1
               }
             }
           }
@@ -2286,6 +2240,52 @@ triggers {
           }
           args {
             int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Change Actor Team"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "squad1b"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
           }
         }
       }
@@ -2631,52 +2631,6 @@ triggers {
       }
     }
     ops {
-      functionName: "Change Actor Team"
-      args {
-        call_value {
-          functionName: "All Actors With Tag"
-          args {
-            call_value {
-              functionName: "Get Map Item (SenseTagList)"
-              args {
-                string_value: "latemarine"
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "AllOrAny"
-              }
-              args {
-                int_value: 0
-              }
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (string)"
-          args {
-            string_value: "FactionList"
-          }
-          args {
-            int_value: 2
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (SceneDimension)"
-          args {
-            string_value: "Default"
-          }
-        }
-      }
-    }
-    ops {
       functionName: "Enable/Disable Trigger"
       args {
         call_value {
@@ -2727,6 +2681,63 @@ triggers {
           }
           args {
             int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Order Actor to Hunt And Destroy (Team)"
+      args {
+        call_value {
+          functionName: "All Actors on Team"
+          args {
+            call_value {
+              functionName: "Get Preset Value (string)"
+              args {
+                string_value: "FactionList"
+              }
+              args {
+                int_value: 1
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Map Item (SceneDimension)"
+              args {
+                string_value: "Default"
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 2
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
           }
         }
       }
@@ -2805,15 +2816,40 @@ triggers {
       }
     }
     ops {
-      functionName: "Change Actor Team"
+      functionName: "Enable/Disable Trigger"
       args {
         call_value {
-          functionName: "All Actors With Tag"
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Trigger)"
+          args {
+            string_value: "522260f53662365807003ad7"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Order Actor to Hunt And Destroy (Team)"
+      args {
+        call_value {
+          functionName: "All Actors on Team"
           args {
             call_value {
-              functionName: "Get Map Item (SenseTagList)"
+              functionName: "Get Preset Value (string)"
               args {
-                string_value: "lateganger"
+                string_value: "FactionList"
+              }
+              args {
+                int_value: 2
               }
             }
           }
@@ -2825,6 +2861,14 @@ triggers {
               }
               args {
                 int_value: 0
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Map Item (SceneDimension)"
+              args {
+                string_value: "Default"
               }
             }
           }
@@ -2846,28 +2890,6 @@ triggers {
           functionName: "Get Map Item (SceneDimension)"
           args {
             string_value: "Default"
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Enable/Disable Trigger"
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "EnableOrDisable"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (Trigger)"
-          args {
-            string_value: "522260f53662365807003ad7"
           }
         }
       }
@@ -4350,6 +4372,43 @@ triggers {
       }
     }
     ops {
+      functionName: "Change Actor Team"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "522126b9643431523837ee73"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 3
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
       functionName: "Enable/Disable Team\'s Turn"
       args {
         call_value {
@@ -4515,6 +4574,9 @@ triggers {
       args {
         float_value: 3
       }
+    }
+    ops {
+      functionName: "End Current Team Round"
     }
   }
   isActive: true
@@ -5296,7 +5358,7 @@ triggers {
             string_value: "FactionList"
           }
           args {
-            int_value: 2
+            int_value: 9
           }
         }
       }
@@ -5524,7 +5586,7 @@ triggers {
             string_value: "FactionList"
           }
           args {
-            int_value: 1
+            int_value: 8
           }
         }
       }
@@ -10086,6 +10148,615 @@ triggers {
   }
   is_oneshot: true
 }
+triggers {
+  name: "Squad 2 Hostile"
+  events {
+    ops {
+      functionName: "On Region Enter"
+      args {
+        call_value {
+          functionName: "Get Map Item (Region)"
+          args {
+            string_value: "54566ce4393139b420000f94"
+          }
+        }
+      }
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Set Team Alliance"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 4
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeamAlliance"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Team Alliance"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 5
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeamAlliance"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Team Alliance"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeamAlliance"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 4
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Team Alliance"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeamAlliance"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 5
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "54566cf8393139b420000f95"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Squad 3 Hostile"
+  events {
+    ops {
+      functionName: "On Region Enter"
+      args {
+        call_value {
+          functionName: "Get Map Item (Region)"
+          args {
+            string_value: "5456714e393139d806002214"
+          }
+        }
+      }
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Set Team Alliance"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 6
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeamAlliance"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Team Alliance"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 7
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeamAlliance"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Team Alliance"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeamAlliance"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 6
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Team Alliance"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeamAlliance"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 7
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "54567190393139d806002216"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Squad 4Hostile"
+  events {
+    ops {
+      functionName: "On Region Enter"
+      args {
+        call_value {
+          functionName: "Get Map Item (Region)"
+          args {
+            string_value: "54567178393139d806002215"
+          }
+        }
+      }
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Set Team Alliance"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 8
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeamAlliance"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Team Alliance"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 9
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeamAlliance"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Team Alliance"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeamAlliance"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 8
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Team Alliance"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeamAlliance"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 9
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "54567192393139d806002217"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
 regions {
   name: "Camera"
   position {
@@ -10269,8 +10940,8 @@ regions {
 regions {
   name: "Companion Banter"
   position {
-    x: 51
-    y: -27
+    x: 50
+    y: -42
     width: 18
     height: 1
   }
@@ -10368,6 +11039,141 @@ regions {
   is_camera_region: false
   idRef {
     id: "5222339a366236501300116c"
+  }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_closet: false
+  is_teleporter_region: false
+  directional_light_dir {
+    x: -0.5
+    y: -1
+    z: -0.75
+  }
+  directional_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambient_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambience_template: ""
+  combat_music: ""
+  default_music: ""
+  loop_combat_music: true
+  loop_default_music: false
+}
+regions {
+  name: "Squad 2 Hostile"
+  position {
+    x: 35
+    y: -75
+    width: 1
+    height: 9
+  }
+  enabledAtStart: true
+  is_camera_region: false
+  idRef {
+    id: "54566ce4393139b420000f94"
+  }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_closet: false
+  is_teleporter_region: false
+  directional_light_dir {
+    x: -0.5
+    y: -1
+    z: -0.75
+  }
+  directional_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambient_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambience_template: ""
+  combat_music: ""
+  default_music: ""
+  loop_combat_music: true
+  loop_default_music: false
+}
+regions {
+  name: "Squad 3 Aggro"
+  position {
+    x: 63
+    y: -24
+    width: 13
+    height: 17
+  }
+  enabledAtStart: true
+  is_camera_region: false
+  idRef {
+    id: "5456714e393139d806002214"
+  }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_closet: false
+  is_teleporter_region: false
+  directional_light_dir {
+    x: -0.5
+    y: -1
+    z: -0.75
+  }
+  directional_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambient_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambience_template: ""
+  combat_music: ""
+  default_music: ""
+  loop_combat_music: true
+  loop_default_music: false
+}
+regions {
+  name: "Squad 4 Aggro"
+  position {
+    x: 94
+    y: -25
+    width: 9
+    height: 1
+  }
+  enabledAtStart: true
+  is_camera_region: false
+  idRef {
+    id: "54567178393139d806002215"
   }
   highlight_color {
     r: 0
@@ -11549,7 +12355,7 @@ characters {
     equipment {
       prefab_name: "Outfit_Security"
     }
-    team_id: "Civilians"
+    team_id: "Squad 2 Marines"
     char_name: "Marine"
     GeneralTags: "squad2a"
     GeneralTags: "spawner"
@@ -11647,7 +12453,7 @@ characters {
     equipment {
       prefab_name: "Outfit_Security"
     }
-    team_id: "Civilians"
+    team_id: "Squad 2 Marines"
     char_name: "Marine"
     GeneralTags: "squad2a"
     GeneralTags: "spawner"
@@ -11745,7 +12551,7 @@ characters {
     equipment {
       prefab_name: "Outfit_Security"
     }
-    team_id: "Civilians"
+    team_id: "Squad 2 Marines"
     char_name: "Marine"
     GeneralTags: "squad2a"
     GeneralTags: "spawner"
@@ -11843,7 +12649,7 @@ characters {
     equipment {
       prefab_name: "Outfit_Security"
     }
-    team_id: "Civilians"
+    team_id: "Squad 2 Gangers"
     char_name: "Ganger"
     GeneralTags: "squad2b"
     GeneralTags: "spawner"
@@ -11943,7 +12749,7 @@ characters {
     equipment {
       prefab_name: "AR 1 Semopal vz88v"
     }
-    team_id: "Civilians"
+    team_id: "Squad 2 Gangers"
     char_name: "Ganger"
     GeneralTags: "squad2b"
     GeneralTags: "spawner"
@@ -12049,7 +12855,7 @@ characters {
     equipment {
       prefab_name: "Spell Lightning Bolt 1"
     }
-    team_id: "Civilians"
+    team_id: "Squad 2 Gangers"
     char_name: "Ganger Mage"
     GeneralTags: "squad2b"
     GeneralTags: "spawner"
@@ -12244,7 +13050,7 @@ characters {
     equipment {
       prefab_name: "Outfit_Security"
     }
-    team_id: "Civilians"
+    team_id: "Squad 3 Marines"
     char_name: "Marine"
     GeneralTags: "squad3a"
     GeneralTags: "spawner"
@@ -12342,7 +13148,7 @@ characters {
     equipment {
       prefab_name: "Outfit_Security"
     }
-    team_id: "Civilians"
+    team_id: "Squad 3 Marines"
     char_name: "Marine"
     GeneralTags: "squad3a"
     GeneralTags: "spawner"
@@ -12440,7 +13246,7 @@ characters {
     equipment {
       prefab_name: "Outfit_Security"
     }
-    team_id: "Civilians"
+    team_id: "Squad 3 Marines"
     char_name: "Marine"
     GeneralTags: "squad3a"
     GeneralTags: "spawner"
@@ -12538,7 +13344,7 @@ characters {
     equipment {
       prefab_name: "Outfit_Security"
     }
-    team_id: "Civilians"
+    team_id: "Squad 3 Gangers"
     char_name: "Ganger"
     GeneralTags: "squad3b"
     GeneralTags: "spawner"
@@ -12644,7 +13450,7 @@ characters {
     equipment {
       prefab_name: "Spell Lightning Bolt 1"
     }
-    team_id: "Civilians"
+    team_id: "Squad 3 Gangers"
     char_name: "Ganger Mage"
     GeneralTags: "squad3b"
     GeneralTags: "spawner"
@@ -12742,7 +13548,7 @@ characters {
     equipment {
       prefab_name: "Outfit_Security"
     }
-    team_id: "Civilians"
+    team_id: "Squad 3 Gangers"
     char_name: "Ganger"
     GeneralTags: "squad3b"
     GeneralTags: "spawner"
@@ -13017,7 +13823,7 @@ characters {
     equipment {
       prefab_name: "Outfit_Security"
     }
-    team_id: "Civilians"
+    team_id: "Squad 4 Marines"
     char_name: "Marine"
     GeneralTags: "squad4a"
     GeneralTags: "spawner"
@@ -13115,7 +13921,7 @@ characters {
     equipment {
       prefab_name: "Outfit_Security"
     }
-    team_id: "Civilians"
+    team_id: "Squad 4 Gangers"
     char_name: "Ganger Leader"
     GeneralTags: "squad4b"
     GeneralTags: "spawner"
@@ -13213,7 +14019,7 @@ characters {
     equipment {
       prefab_name: "Outfit_Security"
     }
-    team_id: "Civilians"
+    team_id: "Squad 4 Marines"
     char_name: "Marine Mage"
     GeneralTags: "squad4a"
     GeneralTags: "spawner"
@@ -13311,7 +14117,7 @@ characters {
     equipment {
       prefab_name: "Outfit_Security"
     }
-    team_id: "Civilians"
+    team_id: "Squad 4 Marines"
     char_name: "Marine"
     GeneralTags: "squad4a"
     GeneralTags: "spawner"
@@ -13409,7 +14215,7 @@ characters {
     equipment {
       prefab_name: "Outfit_Security"
     }
-    team_id: "Civilians"
+    team_id: "Squad 4 Marines"
     char_name: "Marine"
     GeneralTags: "squad4a"
     GeneralTags: "spawner"
@@ -13507,7 +14313,7 @@ characters {
     equipment {
       prefab_name: "Outfit_Security"
     }
-    team_id: "Civilians"
+    team_id: "Squad 4 Gangers"
     char_name: "Ganger"
     GeneralTags: "squad4b"
     GeneralTags: "spawner"
@@ -13605,7 +14411,7 @@ characters {
     equipment {
       prefab_name: "Outfit_Security"
     }
-    team_id: "Civilians"
+    team_id: "Squad 4 Gangers"
     char_name: "Ganger"
     GeneralTags: "squad4b"
     GeneralTags: "spawner"
@@ -13703,7 +14509,7 @@ characters {
     equipment {
       prefab_name: "Outfit_Security"
     }
-    team_id: "Civilians"
+    team_id: "Squad 4 Gangers"
     char_name: "Ganger Mage"
     GeneralTags: "squad4b"
     GeneralTags: "spawner"
@@ -14005,9 +14811,21 @@ team_affiliations {
   affiliation: 0
   affiliation: 0
   affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
 }
 team_affiliations {
   team_name: "Gangers"
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
   affiliation: 0
   affiliation: 0
   affiliation: 0
@@ -14019,9 +14837,99 @@ team_affiliations {
   affiliation: 0
   affiliation: 0
   affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
 }
 team_affiliations {
   team_name: "Civilians"
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+}
+team_affiliations {
+  team_name: "Squad 2 Gangers"
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+}
+team_affiliations {
+  team_name: "Squad 2 Marines"
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+}
+team_affiliations {
+  team_name: "Squad 3 Gangers"
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+}
+team_affiliations {
+  team_name: "Squad 3 Marines"
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+}
+team_affiliations {
+  team_name: "Squad 4 Gangers"
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+}
+team_affiliations {
+  team_name: "Squad 4 Marines"
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
   affiliation: 0
   affiliation: 0
   affiliation: 0

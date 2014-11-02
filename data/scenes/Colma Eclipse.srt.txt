@@ -3882,6 +3882,9 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "No Effect"
+    }
   }
   isActive: true
   idRef {
@@ -8394,6 +8397,94 @@ triggers {
   }
   is_oneshot: true
 }
+triggers {
+  name: "Make Norton\'s Soldiers Smart"
+  events {
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Set Actor AI Script"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "squad1b"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        string_value: "gumbo_Soldier"
+      }
+    }
+    ops {
+      functionName: "Set Actor AI Script"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "52249fba366236a409007e88"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        string_value: "gumbo_Mage"
+      }
+    }
+    ops {
+      functionName: "Set Actor AI Script"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "5224a598366236a409007eb1"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        string_value: "gumbo_Mage"
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "545680eb393139d806002327"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
 regions {
   name: "Norton Chat"
   position {
@@ -8899,7 +8990,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Gangers/TrollMaleGanger_Halloweener"
-    character_sheet_id: "Errant_Lv1_Ork_Shotgun"
+    character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
     equipment_sheet_id: "Lonestar_Shotgun_Low"
     character_mod {
       stats {
@@ -8957,7 +9048,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "gumbo_Soldier"
+      archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -8966,7 +9057,7 @@ characters {
     char_name: "Norton\'s Soldier"
     GeneralTags: "squad1b"
     pc_spawn_number: -1
-    karma: 41
+    karma: 33
   }
 }
 characters {
@@ -9227,6 +9318,7 @@ characters {
   }
   orientation: ORIENTATION_E
   GeneralTags: "norton"
+  displayName: "Lazarus"
   idRef {
     id: "52240a803662366c10007f09"
   }
@@ -9319,7 +9411,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/TrollMale"
+    prefab_name: "Seattle:Core/TrollMale"
     character_sheet_id: "Lvl3_Elf_Mage"
     character_mod {
       stats {
@@ -9336,10 +9428,13 @@ characters {
         armor: 0
         force: 0
         morale: 0
+        discipline: 0
         awareness: 0
         perception: 0
+        authority: 0
         protect_tether_range: 0
         move_speed: 0
+        is_fearless: 1
       }
       skills {
         ranged_combat: 0
@@ -9374,6 +9469,8 @@ characters {
       }
       archetypeName: "Guard - Protect"
       attitude: AttitudeBoss
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "ShamanPendant"
@@ -9393,7 +9490,7 @@ characters {
       filename: "pc_trollmale_04a_shaman"
     }
     portrait_code_override: "s3h0c4b10c4t8"
-    karma: 72
+    karma: 73
   }
 }
 characters {
@@ -9412,7 +9509,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Gangers/ElfFemaleGangerMohawk"
-    character_sheet_id: "Errant_Lv2_Human_Mage"
+    character_sheet_id: "Lonestar_Lv2_Human_Mage"
     equipment_sheet_id: "Lonestar_Mage_Low"
     character_mod {
       stats {
@@ -9470,7 +9567,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "gumbo_Mage"
+      archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -9479,7 +9576,7 @@ characters {
     char_name: "Norton\'s Mage"
     GeneralTags: "squad1b"
     pc_spawn_number: -1
-    karma: 65
+    karma: 43
   }
 }
 characters {
@@ -9500,7 +9597,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Gangers/ElfFemaleGangerMohawk"
-    character_sheet_id: "Errant_Lv1_Heavy_Explosive"
+    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
       stats {
@@ -9577,7 +9674,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h6c4b1"
-    karma: 47
+    karma: 39
   }
 }
 characters {
@@ -9598,7 +9695,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Core/HumanMale"
-    character_sheet_id: "Errant_Lv1_Ork_Shotgun"
+    character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
     equipment_sheet_id: "Lonestar_Shotgun_Low"
     character_mod {
       stats {
@@ -9675,7 +9772,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h7c4b2c4"
-    karma: 41
+    karma: 33
   }
 }
 characters {
@@ -9696,7 +9793,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Core/HumanMale"
-    character_sheet_id: "Errant_Lv1_Heavy_Explosive"
+    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
       stats {
@@ -9773,7 +9870,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h6c4b1c4"
-    karma: 47
+    karma: 39
   }
 }
 characters {
@@ -9794,7 +9891,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Standard/ElfFemaleStreetSamurai"
-    character_sheet_id: "Errant_Lv1_Human_Mage"
+    character_sheet_id: "Lonestar_Lv1_Human_Mage"
     character_mod {
       stats {
         body: 0
@@ -9879,7 +9976,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h6c4b1"
-    karma: 43
+    karma: 40
   }
 }
 characters {
@@ -9900,7 +9997,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Gangers/OrkMaleGanger_Cutter"
-    character_sheet_id: "Errant_Lv1_Ork_Shotgun"
+    character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
     equipment_sheet_id: "Lonestar_Shotgun_Low"
     character_mod {
       stats {
@@ -9977,7 +10074,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h6c4b1"
-    karma: 41
+    karma: 33
   }
 }
 characters {
@@ -9998,7 +10095,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Core/HumanMale"
-    character_sheet_id: "Errant_Lv2_Human_Pistol"
+    character_sheet_id: "Lonestar_Lv2_Human_Pistol"
     equipment_sheet_id: "Lonestar_Pistol_Low"
     character_mod {
       stats {
@@ -10075,7 +10172,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h1c4b3c4"
-    karma: 56
+    karma: 37
   }
 }
 characters {
@@ -10096,7 +10193,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Core/HumanMale"
-    character_sheet_id: "Errant_Lv1_Captain"
+    character_sheet_id: "Lonestar_Lv1_Captain"
     equipment_sheet_id: "Lonestar_Captain_Low"
     character_mod {
       stats {
@@ -10173,7 +10270,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h5c4b6c4"
-    karma: 52
+    karma: 44
   }
 }
 characters {
@@ -10194,7 +10291,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Gangers/ElfFemaleGangerMohawk"
-    character_sheet_id: "Errant_Lv1_Human_Mage"
+    character_sheet_id: "Lonestar_Lv1_Human_Mage"
     equipment_sheet_id: "Lonestar_Mage_Low"
     character_mod {
       stats {
@@ -10271,7 +10368,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h6c4b1"
-    karma: 43
+    karma: 40
   }
 }
 characters {
@@ -10292,7 +10389,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Gangers/ElfMaleGangerEyepatch"
-    character_sheet_id: "Errant_Lv2_Human_Pistol"
+    character_sheet_id: "Lonestar_Lv2_Human_Pistol"
     equipment_sheet_id: "Lonestar_Pistol_Low"
     character_mod {
       stats {
@@ -10369,7 +10466,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h6c4b1"
-    karma: 56
+    karma: 37
   }
 }
 characters {
@@ -10390,7 +10487,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Core/HumanMale"
-    character_sheet_id: "Errant_Lv2_Human_Pistol"
+    character_sheet_id: "Lonestar_Lv2_Human_Pistol"
     equipment_sheet_id: "Lonestar_Pistol_Low"
     character_mod {
       stats {
@@ -10467,7 +10564,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h2c4b9c4"
-    karma: 56
+    karma: 37
   }
 }
 characters {
@@ -10488,7 +10585,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Gangers/OrkMaleGanger_Halloweener"
-    character_sheet_id: "Errant_Lv1_Heavy_Explosive"
+    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
       stats {
@@ -10565,7 +10662,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h6c4b1"
-    karma: 47
+    karma: 39
   }
 }
 characters {
@@ -10586,7 +10683,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Core/HumanMale"
-    character_sheet_id: "Errant_Lv1_Ork_Shotgun"
+    character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
     equipment_sheet_id: "Lonestar_Shotgun_Low"
     character_mod {
       stats {
@@ -10663,7 +10760,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h5c4b6c4"
-    karma: 41
+    karma: 33
   }
 }
 characters {
@@ -10684,7 +10781,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Core/ElfFemale"
-    character_sheet_id: "Errant_Lv1_Human_Mage"
+    character_sheet_id: "Lonestar_Lv1_Human_Mage"
     equipment_sheet_id: "Lonestar_Mage_Low"
     character_mod {
       stats {
@@ -10761,7 +10858,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h1c4"
-    karma: 43
+    karma: 40
   }
 }
 characters {
@@ -10782,7 +10879,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Gangers/TrollMaleGanger_Halloweener"
-    character_sheet_id: "Errant_Lv1_Ork_Shotgun"
+    character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
     equipment_sheet_id: "Lonestar_Shotgun_Low"
     character_mod {
       stats {
@@ -10859,7 +10956,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h6c4b1"
-    karma: 41
+    karma: 33
   }
 }
 characters {
@@ -10886,7 +10983,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Core/HumanMale"
-    character_sheet_id: "Errant_Lv1_Heavy_Explosive"
+    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
       stats {
@@ -10962,7 +11059,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h6c4b1c4"
-    karma: 47
+    karma: 39
   }
 }
 characters {
@@ -10989,7 +11086,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Core/HumanFemale"
-    character_sheet_id: "Errant_Lv2_Human_Pistol"
+    character_sheet_id: "Lonestar_Lv2_Human_Pistol"
     equipment_sheet_id: "Lonestar_Pistol_Low"
     character_mod {
       stats {
@@ -11065,7 +11162,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h3c7"
-    karma: 56
+    karma: 37
   }
 }
 characters {
@@ -11091,7 +11188,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Core/HumanMale"
-    character_sheet_id: "Errant_Lv1_Heavy_Explosive"
+    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
       stats {
@@ -11166,7 +11263,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h3c4b4c4"
-    karma: 47
+    karma: 39
   }
 }
 characters {
@@ -11192,7 +11289,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Core/HumanMale"
-    character_sheet_id: "Errant_Lv2_Ork_Shotgun"
+    character_sheet_id: "Lonestar_Lv2_Ork_Shotgun"
     equipment_sheet_id: "Lonestar_Shotgun_Low"
     character_mod {
       stats {
@@ -11267,7 +11364,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s5h7c4b5c4"
-    karma: 52
+    karma: 41
   }
 }
 characters {
@@ -11291,7 +11388,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Gangers/OrkMaleGanger_Halloweener"
-    character_sheet_id: "Errant_Lv1_Human_Pistol"
+    character_sheet_id: "Lonestar_Lv1_Human_Pistol"
     equipment_sheet_id: "Lonestar_Pistol_Low"
     character_mod {
       stats {
@@ -11362,7 +11459,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h5c2"
-    karma: 41
+    karma: 30
   }
 }
 characters {
@@ -11388,7 +11485,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Wealthy/HumanMaleTurquoisePonyJacket"
-    character_sheet_id: "Errant_Lv2_Captain"
+    character_sheet_id: "Lonestar_Lv2_Captain"
     equipment_sheet_id: "Lonestar_Captain_Low"
     character_mod {
       stats {
@@ -11460,7 +11557,7 @@ characters {
     portrait {
       filename: "backer_humanmale_rc_greymitigator"
     }
-    karma: 68
+    karma: 52
   }
 }
 characters {
@@ -11484,7 +11581,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Standard/DwarfMaleBiker"
-    character_sheet_id: "Errant_Lv1_Heavy_Explosive"
+    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
       stats {
@@ -11554,7 +11651,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h5c2"
-    karma: 47
+    karma: 39
   }
 }
 characters {
@@ -11578,7 +11675,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Gangers/DwarfMaleGangerMohawk_Cutter"
-    character_sheet_id: "Errant_Lv1_Ork_Shotgun"
+    character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
     equipment_sheet_id: "Lonestar_Shotgun_Low"
     character_mod {
       stats {
@@ -11648,7 +11745,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h5c2"
-    karma: 41
+    karma: 33
   }
 }
 characters {
@@ -11672,7 +11769,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Gangers/ElfFemaleGangerMohawk"
-    character_sheet_id: "Errant_Lv2_Human_Mage"
+    character_sheet_id: "Lonestar_Lv2_Human_Mage"
     character_mod {
       stats {
         body: 0
@@ -11750,7 +11847,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h5c2"
-    karma: 65
+    karma: 43
   }
 }
 characters {
@@ -11771,7 +11868,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Core/HumanMale"
-    character_sheet_id: "Errant_Lv1_Ork_Shotgun"
+    character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
     equipment_sheet_id: "Lonestar_Shotgun_Low"
     character_mod {
       stats {
@@ -11848,7 +11945,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h1c4b2c4"
-    karma: 41
+    karma: 33
   }
 }
 characters {
@@ -11872,7 +11969,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Gangers/OrkMaleGanger"
-    character_sheet_id: "Errant_Lv1_Heavy_Explosive"
+    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
       stats {
@@ -11942,7 +12039,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h5c2"
-    karma: 47
+    karma: 39
   }
 }
 characters {
@@ -11963,7 +12060,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Standard/DwarfFemaleAdept"
-    character_sheet_id: "Errant_Lv2_Human_Mage"
+    character_sheet_id: "Lonestar_Lv2_Human_Mage"
     character_mod {
       stats {
         body: 0
@@ -12048,7 +12145,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h6c4b1"
-    karma: 65
+    karma: 43
   }
 }
 characters {
@@ -12069,7 +12166,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Gangers/ElfMaleGangerEyepatch"
-    character_sheet_id: "Errant_Lv1_Captain"
+    character_sheet_id: "Lonestar_Lv1_Captain"
     character_mod {
       stats {
         body: 0
@@ -12148,7 +12245,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h6c4b1"
-    karma: 52
+    karma: 44
   }
 }
 characters {
@@ -12169,7 +12266,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Core/HumanMale"
-    character_sheet_id: "Errant_Lv1_Heavy_Explosive"
+    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
       stats {
@@ -12246,7 +12343,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s5h7c4b2c4"
-    karma: 47
+    karma: 39
   }
 }
 characters {
@@ -12267,7 +12364,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Gangers/ElfMaleGangerDreads"
-    character_sheet_id: "Errant_Lv1_Heavy_Explosive"
+    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
       stats {
@@ -12344,7 +12441,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h6c4b1"
-    karma: 47
+    karma: 39
   }
 }
 characters {
@@ -12365,7 +12462,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Core/HumanMale"
-    character_sheet_id: "Errant_Lv1_Heavy_Explosive"
+    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
       stats {
@@ -12442,7 +12539,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h6c4b1c4"
-    karma: 47
+    karma: 39
   }
 }
 characters {
@@ -12461,7 +12558,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Story/TechDealer"
-    character_sheet_id: "Errant_Lv1_Heavy_Explosive"
+    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
     equipment_sheet_id: "Lonestar_Shotgun_Low"
     character_mod {
       stats {
@@ -12519,7 +12616,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "gumbo_Soldier"
+      archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -12528,7 +12625,7 @@ characters {
     char_name: "Norton\'s Soldier"
     GeneralTags: "squad1b"
     pc_spawn_number: -1
-    karma: 47
+    karma: 39
   }
 }
 characters {
@@ -12547,7 +12644,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Story/Gruberman"
-    character_sheet_id: "Errant_Lv2_Human_Pistol"
+    character_sheet_id: "Lonestar_Lv2_Human_Pistol"
     equipment_sheet_id: "Lonestar_Pistol_Low"
     character_mod {
       stats {
@@ -12605,7 +12702,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "gumbo_Soldier"
+      archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -12614,7 +12711,7 @@ characters {
     char_name: "Norton\'s Soldier"
     GeneralTags: "squad1b"
     pc_spawn_number: -1
-    karma: 56
+    karma: 37
   }
 }
 characters {
@@ -12633,7 +12730,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Standard/OrkFemaleShaman"
-    character_sheet_id: "Errant_Lv2_Human_Mage"
+    character_sheet_id: "Lonestar_Lv2_Human_Mage"
     character_mod {
       stats {
         body: 0
@@ -12690,7 +12787,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "gumbo_Mage"
+      archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -12705,10 +12802,10 @@ characters {
       prefab_name: "Spell Lightning Bolt 1"
     }
     team_id: "Gangers"
-    char_name: "Norton\'s Soldier"
+    char_name: "Norton\'s Mage"
     GeneralTags: "squad1b"
     pc_spawn_number: -1
-    karma: 65
+    karma: 43
   }
 }
 characters {
@@ -12729,7 +12826,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Gangers/OrkMaleGanger_Halloweener"
-    character_sheet_id: "Errant_Lv1_Heavy_Explosive"
+    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
       stats {
@@ -12787,7 +12884,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "gumbo_Soldier"
+      archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -12806,7 +12903,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h6c4b1"
-    karma: 47
+    karma: 39
   }
 }
 characters {
@@ -12827,7 +12924,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Core/ElfFemale"
-    character_sheet_id: "Errant_Lv1_Human_Mage"
+    character_sheet_id: "Lonestar_Lv1_Human_Mage"
     equipment_sheet_id: "Lonestar_Mage_Low"
     character_mod {
       stats {
@@ -12904,7 +13001,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h2c4"
-    karma: 43
+    karma: 40
   }
 }
 characters {

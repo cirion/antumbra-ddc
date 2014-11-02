@@ -2278,7 +2278,7 @@ props {
 props {
   name: "barrens_ground_sidewalkdarkgrey10"
   gridPoint {
-    x: 19
+    x: 18
     y: 0
     z: -36
   }
@@ -13277,7 +13277,7 @@ props {
   name: "pikePlace_sign_StufferShackLarge"
   gridPoint {
     x: 114
-    y: 8
+    y: 7
     z: -52
   }
   orientation: ORIENTATION_S
@@ -13326,7 +13326,7 @@ props {
   name: "pikePlace_building_05StufferRoofEdge02"
   gridPoint {
     x: 111
-    y: 6
+    y: 5
     z: -55
   }
   orientation: ORIENTATION_S
@@ -13339,7 +13339,7 @@ props {
   name: "pikePlace_building_05StufferRoofEdge01"
   gridPoint {
     x: 111
-    y: 6
+    y: 5
     z: -52
   }
   orientation: ORIENTATION_S
@@ -13352,7 +13352,7 @@ props {
   name: "pikePlace_building_04StufferRoof01"
   gridPoint {
     x: 111
-    y: 6
+    y: 5
     z: -49
   }
   orientation: ORIENTATION_S
@@ -13391,7 +13391,7 @@ props {
   name: "pikePlace_building_04StufferRoof01"
   gridPoint {
     x: 108
-    y: 6
+    y: 5
     z: -49
   }
   orientation: ORIENTATION_E
