@@ -557,6 +557,28 @@ triggers {
     ops {
       functionName: "End Current Actor Turn"
     }
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "WaitingForPC0"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -3144,7 +3166,7 @@ triggers {
             string_value: "FactionList"
           }
           args {
-            int_value: 1
+            int_value: 4
           }
         }
       }
@@ -3159,6 +3181,28 @@ triggers {
     }
     ops {
       functionName: "End Current Actor Turn"
+    }
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "WaitingForPC0"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
     }
   }
   isActive: true
@@ -3400,6 +3444,189 @@ triggers {
   }
   is_oneshot: true
 }
+triggers {
+  name: "Waiting for PC0"
+  events {
+    ops {
+      functionName: "On Actor Start Turn"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "WaitingForPC0"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Comparison (Actor)"
+      args {
+        call_value {
+          functionName: "Triggering Actor"
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Player)"
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "End Current Actor Turn"
+    }
+  }
+  isActive: true
+  idRef {
+    id: "5456aea1393139f827001218"
+  }
+  elseActions {
+  }
+  is_oneshot: false
+}
+triggers {
+  name: "Done Waiting for PC0"
+  events {
+    ops {
+      functionName: "On Actor Start Turn"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "WaitingForPC0"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Comparison (Actor)"
+      args {
+        call_value {
+          functionName: "Triggering Actor"
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Player)"
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "WaitingForPC0"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "5456afdd393139f827001219"
+  }
+  elseActions {
+  }
+  is_oneshot: false
+}
 regions {
   name: "Curfew Shout"
   position {
@@ -3623,7 +3850,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/HumanMale"
+    prefab_name: "Seattle:Core/HumanMale"
     character_sheet_id: "Lonestar_Lv2_Ork_Shotgun"
     equipment_sheet_id: "Lonestar_Shotgun_Low"
     character_mod {
@@ -3679,8 +3906,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Hunt And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -3717,7 +3946,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/HumanFemale"
+    prefab_name: "Seattle:Core/HumanFemale"
     character_sheet_id: "Lonestar_Lv2_Human_Pistol"
     equipment_sheet_id: "Lonestar_Pistol_Low"
     character_mod {
@@ -3773,8 +4002,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Hunt And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -3806,7 +4037,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/HumanFemale"
+    prefab_name: "Seattle:Core/HumanFemale"
     character_sheet_id: "Lonestar_Lv2_Human_Mage"
     equipment_sheet_id: "Lonestar_Mage_Low"
     character_mod {
@@ -3862,8 +4093,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Mage"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -3902,7 +4135,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/HumanMale"
+    prefab_name: "Seattle:Core/HumanMale"
     character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
@@ -3958,8 +4191,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Hunt And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -3972,7 +4207,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h6c4b1c4"
-    karma: 39
+    karma: 48
   }
 }
 characters {
@@ -3996,7 +4231,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/HumanMale"
+    prefab_name: "Seattle:Core/HumanMale"
     character_sheet_id: "Lonestar_Lv2_Heavy_SMG"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
@@ -4052,8 +4287,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -4090,7 +4327,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Gangers/OrkMaleGanger"
+    prefab_name: "Seattle:Gangers/OrkMaleGanger"
     character_sheet_id: "Lonestar_Lv2_Heavy_SMG"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
@@ -4146,8 +4383,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "Gangers"
     char_name: "Ganger"
@@ -4182,7 +4421,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Gangers/ElfFemaleGangerMohawk"
+    prefab_name: "Seattle:Gangers/ElfFemaleGangerMohawk"
     character_sheet_id: "Lonestar_Lv2_Human_Mage"
     character_mod {
       stats {
@@ -4237,8 +4476,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Hunt And Destroy"
+      archetypeName: "gumbo_Mage"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Spell Aim 1"
@@ -4282,7 +4523,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Standard/DwarfMaleBiker"
+    prefab_name: "Seattle:Standard/DwarfMaleBiker"
     character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
@@ -4338,8 +4579,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Hunt And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "Gangers"
     char_name: "Ganger"
@@ -4374,7 +4617,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Gangers/DwarfMaleGangerMohawk_Cutter"
+    prefab_name: "Seattle:Gangers/DwarfMaleGangerMohawk_Cutter"
     character_sheet_id: "Lonestar_Lv2_Ork_Shotgun"
     equipment_sheet_id: "Lonestar_Shotgun_Low"
     character_mod {
@@ -4430,8 +4673,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "Gangers"
     char_name: "Ganger"
@@ -4460,7 +4705,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Story/TirTairngireGuard"
+    prefab_name: "Seattle:Story/TirTairngireGuard"
     character_sheet_id: "Lonestar_Lv2_Ork_Shotgun"
     equipment_sheet_id: "Lonestar_Shotgun_Low"
     character_mod {
@@ -4516,8 +4761,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "Civilians"
     char_name: "Tir Guard"
@@ -4541,7 +4788,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Gangers/ElfMaleGangerEyepatch"
+    prefab_name: "Seattle:Gangers/ElfMaleGangerEyepatch"
     character_sheet_id: "Lonestar_Lv2_Human_Mage"
     equipment_sheet_id: "Lonestar_Mage_Low"
     character_mod {
@@ -4597,8 +4844,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Mage"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "Civilians"
     char_name: "Tir Mage"
@@ -4622,7 +4871,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Gangers/ElfFemaleGangerMohawk"
+    prefab_name: "Seattle:Gangers/ElfFemaleGangerMohawk"
     character_sheet_id: "Lonestar_Lv3_Human_Mage"
     character_mod {
       stats {
@@ -4677,8 +4926,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Mage"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Spell Weaken Armor 1"
@@ -4711,7 +4962,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Story/TirTairngireGuard"
+    prefab_name: "Seattle:Story/TirTairngireGuard"
     character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
@@ -4767,8 +5018,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "Civilians"
     char_name: "Tir Guard"
@@ -4792,7 +5045,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Gangers/ElfMaleGangerDreads"
+    prefab_name: "Seattle:Gangers/ElfMaleGangerDreads"
     character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
@@ -4848,8 +5101,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -4863,7 +5118,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h6c4b1"
-    karma: 39
+    karma: 48
   }
 }
 characters {
@@ -4881,7 +5136,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Gangers/ElfMaleGangerEyepatch"
+    prefab_name: "Seattle:Gangers/ElfMaleGangerEyepatch"
     character_sheet_id: "Lonestar_Lv2_Captain"
     character_mod {
       stats {
@@ -4936,8 +5191,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -4975,7 +5232,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Standard/DwarfFemaleAdept"
+    prefab_name: "Seattle:Standard/DwarfFemaleAdept"
     character_sheet_id: "Lonestar_Lv3_Human_Mage"
     character_mod {
       stats {
@@ -5030,8 +5287,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Mage"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -5072,7 +5331,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Gangers/ElfFemaleGangerMohawk"
+    prefab_name: "Seattle:Gangers/ElfFemaleGangerMohawk"
     character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
@@ -5128,8 +5387,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -5161,7 +5422,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Standard/ElfFemaleStreetSamurai"
+    prefab_name: "Seattle:Standard/ElfFemaleStreetSamurai"
     character_sheet_id: "Lonestar_Lv1_Human_Mage"
     character_mod {
       stats {
@@ -5216,8 +5477,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Mage"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -5551,6 +5814,14 @@ characters {
     karma: 80
   }
 }
+variables {
+  bool_value: false
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "WaitingForPC0"
+    typeName: "bool"
+  }
+}
 goals {
   name: "You died."
   type: GoalType_Primary
@@ -5598,12 +5869,14 @@ team_affiliations {
   affiliation: 1
   affiliation: 1
   affiliation: 0
+  affiliation: 1
 }
 team_affiliations {
   team_name: "Gangers"
   affiliation: 1
   affiliation: 0
   affiliation: 1
+  affiliation: 0
   affiliation: 0
 }
 team_affiliations {
@@ -5612,9 +5885,19 @@ team_affiliations {
   affiliation: 1
   affiliation: 0
   affiliation: 0
+  affiliation: 0
 }
 team_affiliations {
   team_name: "Civilians"
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+}
+team_affiliations {
+  team_name: "Squad 4"
+  affiliation: 1
   affiliation: 0
   affiliation: 0
   affiliation: 0
