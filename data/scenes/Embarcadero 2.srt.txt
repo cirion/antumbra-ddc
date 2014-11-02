@@ -6729,7 +6729,7 @@ characters {
         move_speed: 0
       }
       skills {
-        ranged_combat: 3
+        ranged_combat: 4
         close_combat: 2
         throwing_weapons: 2
         biotech: 1
@@ -6762,7 +6762,7 @@ characters {
     portrait {
       filename: "pc_trollfemale_01a_detective"
     }
-    karma: 68
+    karma: 72
   }
 }
 characters {
