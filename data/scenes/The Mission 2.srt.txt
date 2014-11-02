@@ -3832,11 +3832,11 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 103
+    x: 101
     y: 0
-    z: -48
+    z: -26
   }
-  orientation: ORIENTATION_S
+  orientation: ORIENTATION_W
   GeneralTags: "squad1a"
   displayName: "Marine Squad 1 Guard 1 Hollerer"
   idRef {
@@ -3928,9 +3928,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 95
+    x: 94
     y: 0
-    z: -49
+    z: -38
   }
   orientation: ORIENTATION_S
   GeneralTags: "squad1a"
@@ -4024,11 +4024,11 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 100
+    x: 101
     y: 0
-    z: -49
+    z: -32
   }
-  orientation: ORIENTATION_S
+  orientation: ORIENTATION_W
   GeneralTags: "squad1a"
   GeneralTags: ""
   displayName: "Marine Squad 1 Guard 6"
@@ -4117,9 +4117,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 101
+    x: 94
     y: 0
-    z: -52
+    z: -34
   }
   orientation: ORIENTATION_S
   GeneralTags: "squad1a"
@@ -4213,11 +4213,11 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 97
+    x: 99
     y: 0
-    z: -54
+    z: -29
   }
-  orientation: ORIENTATION_S
+  orientation: ORIENTATION_W
   GeneralTags: "squad1a"
   displayName: "Marine Squad 1 Guard 1"
   idRef {
