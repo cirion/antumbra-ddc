@@ -4982,7 +4982,7 @@ triggers {
         }
       }
       args {
-        int_value: 2
+        int_value: 3
       }
     }
   }
@@ -5073,7 +5073,7 @@ triggers {
         }
       }
       args {
-        int_value: 2
+        int_value: 3
       }
     }
   }
@@ -6954,41 +6954,15 @@ triggers {
     }
   }
   actions {
-  }
-  isActive: true
-  idRef {
-    id: "5233f556366236e81a002620"
-  }
-  elseActions {
     ops {
-      functionName: "Kill Actor"
+      functionName: "Activate Actor Spawner"
       args {
         call_value {
-          functionName: "Specific Actor"
+          functionName: "Get Map Item (Actor Reference)"
           args {
-            call_value {
-              functionName: "Get Map Item (Actor)"
-              args {
-                string_value: "5233f47c366236e81a00260e"
-              }
-            }
-          }
-          args {
+            string_value: "5233f47c366236e81a00260e"
           }
         }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "DeathMethod"
-          }
-          args {
-            int_value: 3
-          }
-        }
-      }
-      args {
       }
       args {
         call_value {
@@ -7011,7 +6985,7 @@ triggers {
             string_value: "EnableOrDisable"
           }
           args {
-            int_value: 1
+            int_value: 0
           }
         }
       }
@@ -7024,6 +6998,12 @@ triggers {
         }
       }
     }
+  }
+  isActive: true
+  idRef {
+    id: "5233f556366236e81a002620"
+  }
+  elseActions {
   }
   is_oneshot: true
 }
@@ -10513,7 +10493,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Homeless/HumanMaleHomelessJacket"
+    prefab_name: "Seattle:Homeless/HumanMaleHomelessJacket"
     character_sheet_id: "Lonestar_Lv2_Captain"
     equipment_sheet_id: "Lonestar_Captain_Low"
     character_mod {
@@ -10531,8 +10511,10 @@ characters {
         armor: 0
         force: 0
         morale: 0
+        discipline: 0
         awareness: 0
         perception: 0
+        authority: 0
         protect_tether_range: 0
         move_speed: 0
       }
@@ -10567,11 +10549,14 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "Non-Combatant"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "Civilians"
     char_name: "Mr. Johnson"
+    enabled_at_start: false
     pc_spawn_number: -1
     portrait {
       filename: "backer_humanmale_levieranburks"
