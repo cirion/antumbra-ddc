@@ -42,7 +42,7 @@ triggers {
             string_value: "FactionList"
           }
           args {
-            int_value: 2
+            int_value: 1
           }
         }
       }
@@ -64,7 +64,7 @@ triggers {
             string_value: "FactionList"
           }
           args {
-            int_value: 2
+            int_value: 1
           }
         }
       }
@@ -356,7 +356,7 @@ triggers {
             string_value: "FactionList"
           }
           args {
-            int_value: 2
+            int_value: 1
           }
         }
       }
@@ -2830,6 +2830,157 @@ triggers {
   }
   is_oneshot: true
 }
+triggers {
+  name: "Squad 4 Hostile"
+  events {
+    ops {
+      functionName: "On Region Enter"
+      args {
+        call_value {
+          functionName: "Get Map Item (Region)"
+          args {
+            string_value: "545532cc3931391c22000c2b"
+          }
+        }
+      }
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "A2_AztechnologyHostile"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Set Team Alliance"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeamAlliance"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 2
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Team Alliance"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 2
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeamAlliance"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "545532e83931391c22000c2c"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
 regions {
   name: "Second Security Checkpoint"
   position {
@@ -2964,6 +3115,51 @@ regions {
   default_music: "Seattle-Set5-Legwork"
   loop_combat_music: true
   loop_default_music: true
+}
+regions {
+  name: "Squad 4 Hostile"
+  position {
+    x: -99
+    y: 41
+    width: 1
+    height: 4
+  }
+  enabledAtStart: true
+  is_camera_region: false
+  idRef {
+    id: "545532cc3931391c22000c2b"
+  }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_closet: false
+  is_teleporter_region: false
+  directional_light_dir {
+    x: -0.5
+    y: -1
+    z: -0.75
+  }
+  directional_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambient_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambience_template: ""
+  combat_music: ""
+  default_music: ""
+  loop_combat_music: true
+  loop_default_music: false
 }
 characters {
   name: "chars_icon_playerIcon"
@@ -3240,7 +3436,7 @@ characters {
     equipment {
       prefab_name: "HealthPack"
     }
-    team_id: "LoneStar"
+    team_id: "Squad 4"
     char_name: "Security Guard"
     GeneralTags: "squad4"
     GeneralTags: "floor2"
@@ -3328,7 +3524,7 @@ characters {
       vulnerabilities {
       }
     }
-    team_id: "LoneStar"
+    team_id: "Squad 4"
     char_name: "Security Guard"
     GeneralTags: "squad4"
     GeneralTags: "floor2"
@@ -3416,7 +3612,7 @@ characters {
       vulnerabilities {
       }
     }
-    team_id: "LoneStar"
+    team_id: "Squad 4"
     char_name: "Security Guard"
     GeneralTags: "squad4"
     GeneralTags: "floor2"
@@ -3521,35 +3717,23 @@ allow_drawn_weapons: false
 team_affiliations {
   team_name: "Shadowrunners"
   affiliation: 0
-  affiliation: 1
   affiliation: 0
-  affiliation: 0
-}
-team_affiliations {
-  team_name: "Gangers"
-  affiliation: 1
-  affiliation: 0
-  affiliation: 1
   affiliation: 0
 }
 team_affiliations {
   team_name: "LoneStar"
   affiliation: 0
-  affiliation: 1
   affiliation: 0
   affiliation: 0
 }
 team_affiliations {
-  team_name: "Civilians"
-  affiliation: 0
+  team_name: "Squad 4"
   affiliation: 0
   affiliation: 0
   affiliation: 0
 }
 scene_dimensions {
   dimension_name: "Default"
-}
-character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {

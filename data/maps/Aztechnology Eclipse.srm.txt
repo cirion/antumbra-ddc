@@ -19303,7 +19303,7 @@ props {
   gridPoint {
     x: -32.9
     y: 0
-    z: 74.3
+    z: 75.3
   }
   orientation: ORIENTATION_S
   lod: 0
@@ -45222,7 +45222,7 @@ props {
   gridPoint {
     x: -32.9
     y: 1.1
-    z: 74.2
+    z: 75.2
   }
   orientation: ORIENTATION_S
   lod: 0
@@ -45232,7 +45232,7 @@ props {
   gridPoint {
     x: -32.7
     y: 1
-    z: 74.3
+    z: 75.3
   }
   orientation: ORIENTATION_S
   lod: 0
@@ -48449,5 +48449,106 @@ props {
   idRef {
     id: "52e54d23366236b00d002364"
   }
+  lod: 0
+}
+props {
+  name: "office_furniture_rectangleDesk01"
+  gridPoint {
+    x: -117
+    y: 0
+    z: 42
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "5455353c3931391c22000c2d"
+  }
+  lod: 0
+}
+props {
+  name: "office_furniture_execChair02"
+  gridPoint {
+    x: -116
+    y: 0
+    z: 43
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "545535493931391c22000c2e"
+  }
+  lod: 0
+}
+props {
+  name: "office_furniture_rectangleDesk01"
+  gridPoint {
+    x: -118
+    y: 0
+    z: 42
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "5455354d3931391c22000c2f"
+  }
+  lod: 0
+}
+props {
+  name: "office_furniture_execChair02"
+  gridPoint {
+    x: -119
+    y: 0
+    z: 42
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "545535523931391c22000c30"
+  }
+  lod: 0
+}
+props {
+  name: "office_clutter_paperStacks01"
+  gridPoint {
+    x: -118
+    y: 1
+    z: 43
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5455355e3931391c22000c31"
+  }
+  lod: 0
+}
+props {
+  name: "office_tech_computer01"
+  gridPoint {
+    x: -117
+    y: 1
+    z: 42.4
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "545535703931391c22000c33"
+  }
+  lod: 0
+}
+props {
+  name: "tenements_tech_cyberTerminal01"
+  gridPoint {
+    x: -118
+    y: 0
+    z: 43
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "545535793931391c22000c34"
+  }
+  lod: 0
+}
+props {
+  name: "sleekOffice_furniture_overturnedTable01"
+  gridPoint {
+    x: -32
+    y: 0
+    z: 78
+  }
+  orientation: ORIENTATION_N
   lod: 0
 }
