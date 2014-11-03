@@ -6438,24 +6438,6 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Add Camera Point of Interest (Actors)"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Triggering Actor"
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        float_value: 0
-      }
-    }
-    ops {
       functionName: "Teleport Actor"
       args {
         call_value {
@@ -6503,6 +6485,24 @@ triggers {
             int_value: 0
           }
         }
+      }
+    }
+    ops {
+      functionName: "Add Camera Point of Interest (Actors)"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        float_value: 0
       }
     }
     ops {
@@ -6665,24 +6665,6 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Add Camera Point of Interest (Actors)"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Triggering Actor"
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        float_value: 0
-      }
-    }
-    ops {
       functionName: "Teleport Actor"
       args {
         call_value {
@@ -6730,6 +6712,24 @@ triggers {
             int_value: 0
           }
         }
+      }
+    }
+    ops {
+      functionName: "Add Camera Point of Interest (Actors)"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        float_value: 0
       }
     }
     ops {
@@ -6881,24 +6881,6 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Add Camera Point of Interest (Actors)"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Triggering Actor"
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        float_value: 0
-      }
-    }
-    ops {
       functionName: "Teleport Actor"
       args {
         call_value {
@@ -6946,6 +6928,24 @@ triggers {
             int_value: 0
           }
         }
+      }
+    }
+    ops {
+      functionName: "Add Camera Point of Interest (Actors)"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        float_value: 0
       }
     }
     ops {
@@ -7108,24 +7108,6 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Add Camera Point of Interest (Actors)"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Triggering Actor"
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        float_value: 0
-      }
-    }
-    ops {
       functionName: "Teleport Actor"
       args {
         call_value {
@@ -7173,6 +7155,24 @@ triggers {
             int_value: 0
           }
         }
+      }
+    }
+    ops {
+      functionName: "Add Camera Point of Interest (Actors)"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        float_value: 0
       }
     }
     ops {
@@ -7324,24 +7324,6 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Add Camera Point of Interest (Actors)"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Triggering Actor"
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        float_value: 0
-      }
-    }
-    ops {
       functionName: "Teleport Actor"
       args {
         call_value {
@@ -7389,6 +7371,24 @@ triggers {
             int_value: 0
           }
         }
+      }
+    }
+    ops {
+      functionName: "Add Camera Point of Interest (Actors)"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        float_value: 0
       }
     }
     ops {
@@ -7551,24 +7551,6 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Add Camera Point of Interest (Actors)"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Triggering Actor"
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        float_value: 0
-      }
-    }
-    ops {
       functionName: "Teleport Actor"
       args {
         call_value {
@@ -7616,6 +7598,24 @@ triggers {
             int_value: 0
           }
         }
+      }
+    }
+    ops {
+      functionName: "Add Camera Point of Interest (Actors)"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        float_value: 0
       }
     }
     ops {
@@ -7767,24 +7767,6 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Add Camera Point of Interest (Actors)"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Triggering Actor"
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        float_value: 0
-      }
-    }
-    ops {
       functionName: "Teleport Actor"
       args {
         call_value {
@@ -7832,6 +7814,24 @@ triggers {
             int_value: 0
           }
         }
+      }
+    }
+    ops {
+      functionName: "Add Camera Point of Interest (Actors)"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        float_value: 0
       }
     }
     ops {
@@ -7994,24 +7994,6 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Add Camera Point of Interest (Actors)"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Triggering Actor"
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        float_value: 0
-      }
-    }
-    ops {
       functionName: "Teleport Actor"
       args {
         call_value {
@@ -8059,6 +8041,24 @@ triggers {
             int_value: 0
           }
         }
+      }
+    }
+    ops {
+      functionName: "Add Camera Point of Interest (Actors)"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        float_value: 0
       }
     }
     ops {
@@ -8210,24 +8210,6 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Add Camera Point of Interest (Actors)"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Triggering Actor"
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        float_value: 0
-      }
-    }
-    ops {
       functionName: "Teleport Actor"
       args {
         call_value {
@@ -8275,6 +8257,24 @@ triggers {
             int_value: 0
           }
         }
+      }
+    }
+    ops {
+      functionName: "Add Camera Point of Interest (Actors)"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        float_value: 0
       }
     }
     ops {
@@ -8437,24 +8437,6 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Add Camera Point of Interest (Actors)"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Triggering Actor"
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        float_value: 0
-      }
-    }
-    ops {
       functionName: "Teleport Actor"
       args {
         call_value {
@@ -8502,6 +8484,24 @@ triggers {
             int_value: 0
           }
         }
+      }
+    }
+    ops {
+      functionName: "Add Camera Point of Interest (Actors)"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        float_value: 0
       }
     }
     ops {
@@ -8653,24 +8653,6 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Add Camera Point of Interest (Actors)"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Triggering Actor"
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        float_value: 0
-      }
-    }
-    ops {
       functionName: "Teleport Actor"
       args {
         call_value {
@@ -8718,6 +8700,24 @@ triggers {
             int_value: 0
           }
         }
+      }
+    }
+    ops {
+      functionName: "Add Camera Point of Interest (Actors)"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        float_value: 0
       }
     }
     ops {
@@ -8880,24 +8880,6 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Add Camera Point of Interest (Actors)"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Triggering Actor"
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        float_value: 0
-      }
-    }
-    ops {
       functionName: "Teleport Actor"
       args {
         call_value {
@@ -8945,6 +8927,24 @@ triggers {
             int_value: 0
           }
         }
+      }
+    }
+    ops {
+      functionName: "Add Camera Point of Interest (Actors)"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        float_value: 0
       }
     }
     ops {
@@ -9096,24 +9096,6 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Add Camera Point of Interest (Actors)"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Triggering Actor"
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        float_value: 0
-      }
-    }
-    ops {
       functionName: "Teleport Actor"
       args {
         call_value {
@@ -9161,6 +9143,24 @@ triggers {
             int_value: 0
           }
         }
+      }
+    }
+    ops {
+      functionName: "Add Camera Point of Interest (Actors)"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        float_value: 0
       }
     }
     ops {
@@ -9323,24 +9323,6 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Add Camera Point of Interest (Actors)"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Triggering Actor"
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        float_value: 0
-      }
-    }
-    ops {
       functionName: "Teleport Actor"
       args {
         call_value {
@@ -9388,6 +9370,24 @@ triggers {
             int_value: 0
           }
         }
+      }
+    }
+    ops {
+      functionName: "Add Camera Point of Interest (Actors)"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        float_value: 0
       }
     }
     ops {
@@ -12705,96 +12705,6 @@ triggers {
   is_oneshot: false
 }
 triggers {
-  name: "Debug"
-  events {
-    ops {
-      functionName: "On Map Start"
-    }
-  }
-  conditions {
-  }
-  actions {
-    ops {
-      functionName: "Kill Actor"
-      args {
-        call_value {
-          functionName: "All Actors on Team"
-          args {
-            call_value {
-              functionName: "Get Preset Value (string)"
-              args {
-                string_value: "FactionList"
-              }
-              args {
-                int_value: 1
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "AllOrAny"
-              }
-              args {
-                int_value: 0
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Map Item (SceneDimension)"
-              args {
-                string_value: "Default"
-              }
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "DeathMethod"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "FacingDirection"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "WithOrWithout"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-    }
-  }
-  isActive: false
-  idRef {
-    id: "54431d6d3931398402005b4a"
-  }
-  elseActions {
-  }
-  is_oneshot: true
-}
-triggers {
   name: "Jack Point Dummy Interaction"
   events {
     ops {
@@ -13347,6 +13257,121 @@ triggers {
           }
           args {
             int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Activate Actor Spawner"
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor Reference)"
+          args {
+            string_value: "5456c92a393139f82700121d"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Kill Actor"
+      args {
+        call_value {
+          functionName: "All Actors on Team"
+          args {
+            call_value {
+              functionName: "Get Preset Value (string)"
+              args {
+                string_value: "FactionList"
+              }
+              args {
+                int_value: 2
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Map Item (SceneDimension)"
+              args {
+                string_value: "Shavarus Covert Network"
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DeathMethod"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "FacingDirection"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Activate Actor Spawner"
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor Reference)"
+          args {
+            string_value: "5456cd0e3931390826002778"
           }
         }
       }
@@ -16785,6 +16810,185 @@ characters {
     karma: 69
   }
 }
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -4
+    y: 0
+    z: 1
+  }
+  orientation: ORIENTATION_E
+  displayName: "Hailey"
+  idRef {
+    id: "5456c92a393139f82700121d"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Core/HumanFemale"
+    character_sheet_id: "Lvl2_Human_Decker"
+    character_mod {
+      stats {
+        body: 0
+        quickness: -1
+        strength: -2
+        charisma: -1
+        intelligence: 0
+        willpower: -1
+        essence: -3
+        magic: -3
+        hp: 6
+        ap: 0
+        armor: 2
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 1
+        close_combat: 0
+        throwing_weapons: 1
+        spellcasting: 0
+        decking: 1
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 4
+        biotech: 1
+        dodge: 2
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: -1
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 3
+      }
+      archetypeName: "Player"
+      attitude: AttitudeAggressive
+    }
+    equipment {
+      prefab_name: "DeckerFab"
+    }
+    equipment {
+      prefab_name: "DroneRepairKit_med"
+    }
+    equipment {
+      prefab_name: "DroneRepairKit_med"
+    }
+    equipment {
+      prefab_name: "HealthPack_med"
+    }
+    equipment {
+      prefab_name: "CyberdeckKraftwerk1"
+    }
+    equipment {
+      prefab_name: "ESP Assassin"
+    }
+    equipment {
+      prefab_name: "PR NPC Decker Medic 2"
+    }
+    equipment {
+      prefab_name: "PR NPC Decker Killer 2"
+    }
+    equipment {
+      prefab_name: "PR NPC Decker Blaster 2"
+    }
+    equipment {
+      prefab_name: "DroneAttackB_Strato9"
+    }
+    equipment {
+      prefab_name: "HealthPack_med"
+    }
+    equipment {
+      prefab_name: "Grenade (Smoke)"
+    }
+    equipment {
+      prefab_name: "DroneSupportB_RoboDoc"
+    }
+    equipment {
+      prefab_name: "PR NPC Decker Erosion 2"
+    }
+    equipment {
+      prefab_name: "ESP Shield"
+    }
+    team_id: "Shadowrunners"
+    char_name: "Hailey"
+    enabled_at_start: false
+    pc_spawn_number: -1
+    cyberware_eyes: "Vision Magnification Eyes"
+    cyberware_jack: "Datajack"
+    cyberware_left_arm: "Obvious Cyberarm"
+    portrait {
+      filename: "backer_humanfemale_grahamwilliams_tsilonsiereht"
+    }
+    portrait_code_override: "s6h1c11"
+    karma: 83
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -211
+    y: 0
+    z: 152
+  }
+  orientation: ORIENTATION_S
+  displayName: "Dummy IC - Force Hostile Matrix"
+  idRef {
+    id: "5456cd0e3931390826002778"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Matrix/MatrixICE_black_melee"
+    character_sheet_id: "IC_Lv3_Black_Ranged"
+    equipment_sheet_id: "IC Black Melee Mid"
+    character_mod {
+      stats {
+        hp: 0
+        morale: 24
+        discipline: 24
+        awareness: 24
+        perception: 0
+        authority: 0
+        protect_tether_range: 5
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeAggressive
+      vulnerabilities {
+      }
+    }
+    team_id: "IC"
+    char_name: "Black IC"
+    pc_spawn_number: -1
+    spawn_type: SpawnType_Matrix
+    portrait {
+      filename: ""
+    }
+    dimension_name: "Shavarus Covert Network"
+    karma: 39
+  }
+}
 variables {
   bool_value: false
   variableref_value {
@@ -16961,6 +17165,8 @@ scene_dimensions {
   dimension_name: "Shavarus Covert Network"
   initial_alarm_state: 20
   turns_per_round: 3
+}
+character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {
