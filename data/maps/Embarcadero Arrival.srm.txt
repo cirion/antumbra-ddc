@@ -111352,3 +111352,118 @@ props {
   }
   lod: 0
 }
+props {
+  name: "docks_clutter_palletPile"
+  gridPoint {
+    x: -27
+    y: 0
+    z: 49
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "545700f9393139f01900542d"
+  }
+  lod: 0
+}
+props {
+  name: "warehouse_clutter_pipes01"
+  gridPoint {
+    x: -34
+    y: 0
+    z: 43
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "5457010d393139f01900542e"
+  }
+  lod: 0
+}
+props {
+  name: "docks_clutter_largeTrafficCone"
+  gridPoint {
+    x: -34
+    y: 0
+    z: 47
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "docks_clutter_largeTrafficCone"
+  gridPoint {
+    x: -34
+    y: 0
+    z: 40
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "54570139393139f01900542f"
+  }
+  lod: 0
+}
+props {
+  name: "haven_street_trafficCone01"
+  gridPoint {
+    x: 13
+    y: 0
+    z: -2
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "docks_clutter_largeTrafficCone"
+  gridPoint {
+    x: 10
+    y: 0
+    z: -3
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "office_ground_humanChalk"
+  gridPoint {
+    x: 11
+    y: 0
+    z: -2
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "pikePlace_street_temporaryPoliceRail02"
+  gridPoint {
+    x: 12
+    y: 0
+    z: -1
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "pikePlace_street_temporaryPoliceRail02"
+  gridPoint {
+    x: 11
+    y: 0
+    z: -1
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "545702b0393139f019005431"
+  }
+  lod: 0
+}
+props {
+  name: "pikePlace_street_temporaryPoliceRail02"
+  gridPoint {
+    x: 13
+    y: 0
+    z: -1
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "545702b2393139f019005432"
+  }
+  lod: 0
+}
