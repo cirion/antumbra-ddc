@@ -2826,7 +2826,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "gumbo_Mage"
+      archetypeName: "Guard - Hunt And Destroy"
       attitude: AttitudeAggressive
       vulnerabilities {
         heal: VulnerabilityLevel_Immune
@@ -2923,7 +2923,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "gumbo_Mage"
+      archetypeName: "Guard - Hunt And Destroy"
       attitude: AttitudeAggressive
       vulnerabilities {
         heal: VulnerabilityLevel_Immune
@@ -3020,7 +3020,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "gumbo_Mage"
+      archetypeName: "Guard - Hunt And Destroy"
       attitude: AttitudeAggressive
       vulnerabilities {
         heal: VulnerabilityLevel_Immune
