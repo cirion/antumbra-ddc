@@ -33046,3 +33046,29 @@ props {
   }
   lod: 0
 }
+props {
+  name: "docks_clutter_largeTrafficCone"
+  gridPoint {
+    x: 0
+    y: 0
+    z: -10
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5458ed67393139d418001263"
+  }
+  lod: 0
+}
+props {
+  name: "docks_clutter_largeTrafficCone"
+  gridPoint {
+    x: -1
+    y: 0
+    z: -9
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5458ed7b393139d418001264"
+  }
+  lod: 0
+}
