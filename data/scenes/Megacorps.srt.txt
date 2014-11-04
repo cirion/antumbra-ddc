@@ -21132,6 +21132,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -21180,6 +21181,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -21227,6 +21229,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -21275,6 +21278,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Mage"
       vulnerabilities {
       }
     }
@@ -21323,6 +21327,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -21374,6 +21379,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -21422,6 +21428,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Mage"
       vulnerabilities {
       }
     }
@@ -21517,6 +21524,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -21565,6 +21573,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "Guard - Hunt And Destroy"
       vulnerabilities {
       }
     }
@@ -21613,6 +21622,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -21661,6 +21671,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -21713,6 +21724,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Mage"
       vulnerabilities {
       }
     }
@@ -21760,6 +21772,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -21807,6 +21820,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -21855,6 +21869,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -21903,6 +21918,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -21955,6 +21971,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "Guard - Hunt And Destroy"
       vulnerabilities {
       }
     }
@@ -22003,6 +22020,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Mage"
       vulnerabilities {
       }
     }
