@@ -316,192 +316,6 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Teleport Actor"
-      args {
-        call_value {
-          functionName: "All Actors With Tag"
-          args {
-            call_value {
-              functionName: "Get Map Item (SenseTagList)"
-              args {
-                string_value: "isWave3"
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "AllOrAny"
-              }
-              args {
-                int_value: 0
-              }
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Center of Region"
-          args {
-            call_value {
-              functionName: "Get Map Item (Region)"
-              args {
-                string_value: "536fa9b9366236941d00306f"
-              }
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "FacingDirection"
-          }
-          args {
-            int_value: 5
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "TeleportMethod"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Teleport Actor"
-      args {
-        call_value {
-          functionName: "All Actors With Tag"
-          args {
-            call_value {
-              functionName: "Get Map Item (SenseTagList)"
-              args {
-                string_value: "isWave4"
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "AllOrAny"
-              }
-              args {
-                int_value: 0
-              }
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Center of Region"
-          args {
-            call_value {
-              functionName: "Get Map Item (Region)"
-              args {
-                string_value: "536fa9d0366236941d003070"
-              }
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "FacingDirection"
-          }
-          args {
-            int_value: 5
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "TeleportMethod"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Teleport Actor"
-      args {
-        call_value {
-          functionName: "All Actors With Tag"
-          args {
-            call_value {
-              functionName: "Get Map Item (SenseTagList)"
-              args {
-                string_value: "isWave5"
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "AllOrAny"
-              }
-              args {
-                int_value: 0
-              }
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Center of Region"
-          args {
-            call_value {
-              functionName: "Get Map Item (Region)"
-              args {
-                string_value: "536fa9e0366236941d003071"
-              }
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "FacingDirection"
-          }
-          args {
-            int_value: 5
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "TeleportMethod"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-    }
-    ops {
       functionName: "Change Actor Team"
       args {
         call_value {
@@ -4300,20 +4114,6 @@ triggers {
       }
     }
     ops {
-      functionName: "Trigger: Wait for Rounds"
-      args {
-        int_value: 1
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (SceneDimension)"
-          args {
-            string_value: "Default"
-          }
-        }
-      }
-    }
-    ops {
       functionName: "Teleport Actor"
       args {
         call_value {
@@ -4341,12 +4141,12 @@ triggers {
       }
       args {
         call_value {
-          functionName: "Center of Region"
+          functionName: "Get Random Point Within Region"
           args {
             call_value {
               functionName: "Get Map Item (Region)"
               args {
-                string_value: "536fbf14366236941d00309e"
+                string_value: "5458e8f8393139d418001262"
               }
             }
           }
@@ -4417,44 +4217,6 @@ triggers {
           functionName: "Get Map Item (SceneDimension)"
           args {
             string_value: "Default"
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Order Actor to Hunt And Destroy (ThreatType)"
-      args {
-        call_value {
-          functionName: "All Actors With Tag"
-          args {
-            call_value {
-              functionName: "Get Map Item (SenseTagList)"
-              args {
-                string_value: "isWave2"
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "AllOrAny"
-              }
-              args {
-                int_value: 0
-              }
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "ThreatType"
-          }
-          args {
-            int_value: 0
           }
         }
       }
@@ -16520,6 +16282,51 @@ regions {
   loop_combat_music: true
   loop_default_music: false
 }
+regions {
+  name: "Wave 2 Spawn"
+  position {
+    x: -16
+    y: -9
+    width: 3
+    height: 3
+  }
+  enabledAtStart: true
+  is_camera_region: false
+  idRef {
+    id: "5458e8f8393139d418001262"
+  }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_closet: false
+  is_teleporter_region: false
+  directional_light_dir {
+    x: -0.5
+    y: -1
+    z: -0.75
+  }
+  directional_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambient_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambience_template: ""
+  combat_music: ""
+  default_music: ""
+  loop_combat_music: true
+  loop_default_music: false
+}
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
@@ -17514,9 +17321,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 3
+    x: -21
     y: 0
-    z: -37
+    z: -15
   }
   orientation: ORIENTATION_S
   GeneralTags: "isWave3"
@@ -17563,11 +17370,11 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 3
+    x: -20
     y: 0
-    z: -36
+    z: -18
   }
-  orientation: ORIENTATION_S
+  orientation: ORIENTATION_E
   GeneralTags: "isWave3"
   GeneralTags: "isGanger"
   displayName: "Wave 3 Add 3"
@@ -17612,9 +17419,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 3
+    x: -23
     y: 0
-    z: -38
+    z: -18
   }
   orientation: ORIENTATION_S
   GeneralTags: "isWave3"
@@ -17661,9 +17468,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -2
+    x: -60
     y: 0
-    z: -37
+    z: 9
   }
   orientation: ORIENTATION_S
   GeneralTags: "isWave5"
@@ -17710,9 +17517,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -2
+    x: -59
     y: 0
-    z: -36
+    z: 12
   }
   orientation: ORIENTATION_S
   GeneralTags: "isWave5"
@@ -17759,9 +17566,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -2
+    x: -64
     y: 0
-    z: -35
+    z: 11
   }
   orientation: ORIENTATION_S
   GeneralTags: "isWave5"
@@ -17811,9 +17618,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 0
+    x: -53
     y: 0
-    z: -38
+    z: -19
   }
   orientation: ORIENTATION_S
   GeneralTags: "isWave4"
@@ -17860,9 +17667,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 0
+    x: -49
     y: 0
-    z: -37
+    z: -16
   }
   orientation: ORIENTATION_S
   GeneralTags: "isWave4"
@@ -17909,9 +17716,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 0
+    x: -53
     y: 0
-    z: -36
+    z: -13
   }
   orientation: ORIENTATION_S
   GeneralTags: "isWave4"
