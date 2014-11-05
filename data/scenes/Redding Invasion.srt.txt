@@ -18115,8 +18115,8 @@ regions {
 regions {
   name: "Banter"
   position {
-    x: -56
-    y: -9
+    x: -41
+    y: -4
     width: 1
     height: 25
   }
@@ -18191,6 +18191,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -18293,6 +18294,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -18344,6 +18346,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -18395,6 +18398,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -18446,6 +18450,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Mage"
       vulnerabilities {
       }
     }
@@ -18541,6 +18546,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -18588,6 +18594,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Mage"
       vulnerabilities {
       }
     }
@@ -18636,6 +18643,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -18684,6 +18692,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -18732,6 +18741,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -18750,9 +18760,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -39
+    x: -43
     y: 0
-    z: 1
+    z: 0
   }
   orientation: ORIENTATION_S
   GeneralTags: "isNCThug"
@@ -18780,6 +18790,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Mage"
       vulnerabilities {
       }
     }
@@ -18828,6 +18839,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -18846,9 +18858,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -39
+    x: -43
     y: 0
-    z: 4
+    z: 6
   }
   orientation: ORIENTATION_S
   GeneralTags: "isNCThug"
@@ -18876,6 +18888,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -18894,9 +18907,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -35
+    x: -38
     y: 0
-    z: 3
+    z: 4
   }
   orientation: ORIENTATION_S
   GeneralTags: "isNCThug"
@@ -18924,6 +18937,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -18972,6 +18986,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -19020,6 +19035,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -19119,6 +19135,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -19169,6 +19186,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -19219,6 +19237,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -21284,6 +21303,8 @@ scene_dimensions {
   dimension_name: "Matrix"
   initial_alarm_state: 10
   turns_per_round: 3
+}
+character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {
