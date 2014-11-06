@@ -14009,7 +14009,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Story/TirTairngireGuard"
-    character_sheet_id: "Errant_Lv1_Captain"
+    character_sheet_id: "Lonestar_Lv1_Captain"
     equipment_sheet_id: "Errant_Lv1_Captain"
     character_mod {
       stats {
@@ -14081,7 +14081,7 @@ characters {
     portrait {
       filename: ""
     }
-    karma: 52
+    karma: 44
     scale_character_sheet: true
   }
 }
@@ -14102,7 +14102,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Story/TirTairngireGuard"
-    character_sheet_id: "Errant_Lv1_Captain"
+    character_sheet_id: "Lonestar_Lv1_Captain"
     equipment_sheet_id: "Lonestar_Lv1_Captain_Gear"
     character_mod {
       stats {
@@ -14174,7 +14174,7 @@ characters {
     portrait {
       filename: ""
     }
-    karma: 52
+    karma: 44
     scale_character_sheet: true
   }
 }
@@ -14195,7 +14195,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Story/TirTairngireGuard"
-    character_sheet_id: "Errant_Lv1_Captain"
+    character_sheet_id: "Lonestar_Lv1_Captain"
     equipment_sheet_id: "Lonestar_Lv1_Captain_Gear"
     character_mod {
       stats {
@@ -14267,7 +14267,7 @@ characters {
     portrait {
       filename: ""
     }
-    karma: 52
+    karma: 44
     scale_character_sheet: true
   }
 }
@@ -14288,7 +14288,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Berlin:HavenCivilians/ElfFemaleHavenHooded_1"
-    character_sheet_id: "Errant_Lv1_Human_Mage"
+    character_sheet_id: "Lonestar_Lv1_Human_Mage"
     equipment_sheet_id: "Errant_Lv1_Spellcasting"
     character_mod {
       stats {
@@ -14360,7 +14360,7 @@ characters {
     portrait {
       filename: ""
     }
-    karma: 43
+    karma: 40
     scale_character_sheet: true
   }
 }

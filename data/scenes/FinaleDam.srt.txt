@@ -20464,6 +20464,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -20515,6 +20516,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -20566,6 +20568,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Mage"
       vulnerabilities {
       }
     }
@@ -20656,7 +20659,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -20748,7 +20751,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -20799,6 +20802,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -20846,6 +20850,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Mage"
       vulnerabilities {
       }
     }
@@ -20893,6 +20898,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -21030,6 +21036,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -21080,6 +21087,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -21130,6 +21138,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -21180,6 +21189,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Mage"
       vulnerabilities {
       }
     }
@@ -21230,6 +21240,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -22027,7 +22038,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Hunt And Destroy"
+      archetypeName: "gumbo_Mage"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -22079,18 +22090,19 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Core/TrollMale"
-    character_sheet_id: "Lvl3_Elf_Mage"
+    character_sheet_id: "Lonestar_Lv3_Heavy_SMG"
+    equipment_sheet_id: "Lonestar_Lv3_SMG_Gear"
     character_mod {
       stats {
-        body: 1
-        quickness: 1
-        strength: 1
-        charisma: -2
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
         intelligence: 0
-        willpower: -3
+        willpower: 0
         essence: 0
         magic: 0
-        hp: 10
+        hp: 0
         ap: 0
         armor: 0
         force: 0
@@ -22101,18 +22113,21 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
-        ranged_combat: 1
+        ranged_combat: 0
         close_combat: 0
         throwing_weapons: 0
-        spellcasting: -4
+        spellcasting: 0
         decking: 0
         conjuring: 0
         spirit_summoning: 0
         drone_control: 0
-        biotech: -1
-        dodge: -1
+        biotech: 0
+        dodge: 0
         etiquette_corporate: 0
         etiquette_security: 0
         etiquette_gang: 0
@@ -22126,14 +22141,14 @@ characters {
         pistol: 0
         rifle: 0
         shotgun: 0
-        smg: 2
+        smg: 0
         edged: 0
         unarmed: 0
         spirit_control: 0
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Hunt And Destroy"
+      archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -22143,9 +22158,6 @@ characters {
     }
     equipment {
       prefab_name: "SamuraiBunnyMaskless"
-    }
-    equipment {
-      prefab_name: "SMG 2 Ingram Smartgun"
     }
     team_id: "Civilians"
     char_name: "Troll Soldier"
@@ -22159,7 +22171,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h4b5t6"
-    karma: 58
+    karma: 61
   }
 }
 characters {
@@ -22179,18 +22191,19 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Core/TrollMale"
-    character_sheet_id: "Lvl3_Elf_Mage"
+    character_sheet_id: "Lonestar_Lv3_Captain"
+    equipment_sheet_id: "Lonestar_Lv3_Captain_Gear"
     character_mod {
       stats {
-        body: 1
-        quickness: 1
-        strength: 1
-        charisma: -2
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
         intelligence: 0
-        willpower: -3
+        willpower: 0
         essence: 0
         magic: 0
-        hp: 10
+        hp: 0
         ap: 0
         armor: 0
         force: 0
@@ -22201,18 +22214,21 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
-        ranged_combat: 1
+        ranged_combat: 0
         close_combat: 0
         throwing_weapons: 0
-        spellcasting: -4
+        spellcasting: 0
         decking: 0
         conjuring: 0
         spirit_summoning: 0
         drone_control: 0
-        biotech: -1
-        dodge: -1
+        biotech: 0
+        dodge: 0
         etiquette_corporate: 0
         etiquette_security: 0
         etiquette_gang: 0
@@ -22224,7 +22240,7 @@ characters {
       }
       specializations {
         pistol: 0
-        rifle: 2
+        rifle: 0
         shotgun: 0
         smg: 0
         edged: 0
@@ -22233,19 +22249,13 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Hunt And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
     }
     equipment {
-      prefab_name: "Grenade 1 (Frag)"
-    }
-    equipment {
       prefab_name: "SamuraiPunk"
-    }
-    equipment {
-      prefab_name: "AR 2 HK G12A3z"
     }
     team_id: "Civilians"
     char_name: "Troll Soldier"
@@ -22259,7 +22269,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h1b2t5"
-    karma: 58
+    karma: 68
   }
 }
 characters {
@@ -22536,7 +22546,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -22631,7 +22641,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Mage"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -22736,7 +22746,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -22828,7 +22838,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -23198,7 +23208,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -23290,7 +23300,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -23382,7 +23392,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -23474,7 +23484,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -23566,7 +23576,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
       vulnerabilities {
       }

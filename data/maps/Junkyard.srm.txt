@@ -32838,3 +32838,16 @@ props {
   orientation: ORIENTATION_S
   lod: 0
 }
+props {
+  name: "asylum_trash_biohazardousBin"
+  gridPoint {
+    x: -39
+    y: 0
+    z: 46
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "545ab43b64343134025e41ee"
+  }
+  lod: 0
+}

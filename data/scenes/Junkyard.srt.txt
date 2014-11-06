@@ -16702,8 +16702,8 @@ regions {
 regions {
   name: "NC Reinforcements"
   position {
-    x: -34
-    y: 50
+    x: -27
+    y: 51
     width: 2
     height: 2
   }
@@ -17102,7 +17102,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Mage"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -17149,6 +17149,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -17168,7 +17169,7 @@ characters {
   gridPoint {
     x: -24
     y: 0
-    z: 25
+    z: 26
   }
   orientation: ORIENTATION_N
   GeneralTags: "squad2"
@@ -17194,6 +17195,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -17943,7 +17945,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -23
+    x: -28
     y: 0
     z: 27
   }
@@ -18164,7 +18166,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -22
+    x: -20
     y: 0
     z: 27
   }
@@ -18192,6 +18194,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -18237,6 +18240,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Mage"
       vulnerabilities {
       }
     }
@@ -18254,9 +18258,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -41
+    x: -43
     y: 0
-    z: 43
+    z: 42
   }
   orientation: ORIENTATION_W
   GeneralTags: "squad3"
@@ -18282,6 +18286,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -18299,7 +18304,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -37
+    x: -35
     y: 0
     z: 47
   }
@@ -18327,6 +18332,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -18346,7 +18352,7 @@ characters {
   gridPoint {
     x: -39
     y: 0
-    z: 48
+    z: 50
   }
   orientation: ORIENTATION_S
   GeneralTags: "squad3"
@@ -18372,6 +18378,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -18417,6 +18424,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -18434,9 +18442,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -39
+    x: -38
     y: 0
-    z: 44
+    z: 42
   }
   orientation: ORIENTATION_W
   GeneralTags: "squad3"
@@ -18462,6 +18470,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -18507,6 +18516,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -18552,6 +18562,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Mage"
       vulnerabilities {
       }
     }
@@ -18597,6 +18608,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -18642,6 +18654,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -18687,6 +18700,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -18771,7 +18785,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
