@@ -3161,7 +3161,7 @@ nodes {
     id: "536c0395643431b502b6a3b7"
   }
   index: 38
-  text: "You\342\200\231ve really gone above and beyond. I think your forces could even give Colonel Saito\342\200\231s troops a run for their money if it ever came to that. I think you should be able to hold on for quite a while after the invasion starts, and even have a decent chance of surviving the first battle."
+  text: "You\342\200\231ve really gone above and beyond. Your forces could even give Colonel Saito\342\200\231s troops a run for their money if it ever came to that. I think you should be able to hold on for quite a while after the invasion starts, and even have a decent chance of surviving the first battle."
   branches {
     responseText: ""
     nextNodeIndex: 39
