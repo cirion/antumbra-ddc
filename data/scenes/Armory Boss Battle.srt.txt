@@ -4943,9 +4943,9 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Story/GreenLucifer"
-    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
-    equipment_sheet_id: "Lonestar_SMG_Low"
+    prefab_name: "Seattle:Story/GreenLucifer"
+    character_sheet_id: "Errant_Lv1_Heavy_Explosive"
+    equipment_sheet_id: "Errant_Lv1_Explosive"
     character_mod {
       stats {
         body: 0
@@ -4967,6 +4967,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -4999,15 +5002,17 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "Civilians"
     char_name: "Tir Soldier"
     GeneralTags: "squad2"
     GeneralTags: "minion"
     pc_spawn_number: -1
-    karma: 39
+    karma: 47
   }
 }
 characters {
@@ -5026,8 +5031,8 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Gangers/ElfFemaleGangerMohawk_Halloweener"
-    character_sheet_id: "Lonestar_Lv2_Human_Mage"
+    prefab_name: "Seattle:Gangers/ElfFemaleGangerMohawk_Halloweener"
+    character_sheet_id: "Errant_Lv2_Human_Mage"
     character_mod {
       stats {
         body: 0
@@ -5049,6 +5054,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -5083,6 +5091,8 @@ characters {
       }
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Spell Heal 1"
@@ -5105,7 +5115,7 @@ characters {
     portrait {
       filename: ""
     }
-    karma: 43
+    karma: 65
   }
 }
 characters {
@@ -5139,8 +5149,10 @@ characters {
         armor: 1
         force: 0
         morale: 0
+        discipline: 0
         awareness: 0
         perception: 0
+        authority: 0
         protect_tether_range: 0
         move_speed: 0
       }
@@ -5177,6 +5189,8 @@ characters {
       }
       archetypeName: "Guard - Protect"
       attitude: AttitudeBoss
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "ShamanPendant"
@@ -5228,9 +5242,9 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Story/TirTairngireGuard"
-    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
-    equipment_sheet_id: "Lonestar_SMG_Low"
+    prefab_name: "Seattle:Story/TirTairngireGuard"
+    character_sheet_id: "Errant_Lv1_Heavy_Explosive"
+    equipment_sheet_id: "Errant_Lv1_Explosive"
     character_mod {
       stats {
         body: 0
@@ -5252,6 +5266,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -5284,8 +5301,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "Civilians"
     char_name: "Tir Lookout"
@@ -5295,7 +5314,7 @@ characters {
     portrait {
       filename: "generic_elfmale_tirghost"
     }
-    karma: 39
+    karma: 47
   }
 }
 characters {
@@ -5314,9 +5333,9 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Story/TirTairngireGuard"
-    character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
-    equipment_sheet_id: "Lonestar_Shotgun_Low"
+    prefab_name: "Seattle:Story/TirTairngireGuard"
+    character_sheet_id: "Errant_Lv1_Ork_Shotgun"
+    equipment_sheet_id: "Errant_Lv1_Shotgun"
     character_mod {
       stats {
         body: 0
@@ -5338,6 +5357,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -5370,8 +5392,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "Civilians"
     char_name: "Tir Soldier"
@@ -5381,7 +5405,7 @@ characters {
     portrait {
       filename: ""
     }
-    karma: 33
+    karma: 41
   }
 }
 characters {
@@ -5400,9 +5424,9 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Story/GreenLucifer"
-    character_sheet_id: "Lonestar_Lv2_Captain"
-    equipment_sheet_id: "Lonestar_Captain_Low"
+    prefab_name: "Seattle:Story/GreenLucifer"
+    character_sheet_id: "Errant_Lv2_Captain"
+    equipment_sheet_id: "Errant_Lv2_Captain"
     character_mod {
       stats {
         body: 0
@@ -5424,6 +5448,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -5456,8 +5483,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "Civilians"
     char_name: "Tir Captain"
@@ -5467,7 +5496,7 @@ characters {
     portrait {
       filename: ""
     }
-    karma: 52
+    karma: 68
   }
 }
 characters {
@@ -5486,8 +5515,8 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Gangers/ElfMaleGangerEyepatch"
-    character_sheet_id: "Lonestar_Lv2_Human_Mage"
+    prefab_name: "Seattle:Gangers/ElfMaleGangerEyepatch"
+    character_sheet_id: "Errant_Lv2_Human_Mage"
     character_mod {
       stats {
         body: 0
@@ -5509,6 +5538,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -5567,7 +5599,7 @@ characters {
     portrait {
       filename: ""
     }
-    karma: 43
+    karma: 65
   }
 }
 variables {

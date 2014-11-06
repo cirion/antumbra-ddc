@@ -3882,6 +3882,9 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "No Effect"
+    }
   }
   isActive: true
   idRef {
@@ -8394,6 +8397,94 @@ triggers {
   }
   is_oneshot: true
 }
+triggers {
+  name: "Make Norton\'s Soldiers Smart"
+  events {
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Set Actor AI Script"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "squad1b"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        string_value: "gumbo_Soldier"
+      }
+    }
+    ops {
+      functionName: "Set Actor AI Script"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "52249fba366236a409007e88"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        string_value: "gumbo_Mage"
+      }
+    }
+    ops {
+      functionName: "Set Actor AI Script"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "5224a598366236a409007eb1"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        string_value: "gumbo_Mage"
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "545680eb393139d806002327"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
 regions {
   name: "Norton Chat"
   position {
@@ -8898,7 +8989,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Gangers/TrollMaleGanger_Halloweener"
+    prefab_name: "Seattle:Gangers/TrollMaleGanger_Halloweener"
     character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
     equipment_sheet_id: "Lonestar_Shotgun_Low"
     character_mod {
@@ -8922,6 +9013,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -8956,6 +9050,8 @@ characters {
       }
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "Gangers"
     char_name: "Norton\'s Soldier"
@@ -9222,6 +9318,7 @@ characters {
   }
   orientation: ORIENTATION_E
   GeneralTags: "norton"
+  displayName: "Lazarus"
   idRef {
     id: "52240a803662366c10007f09"
   }
@@ -9314,7 +9411,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/TrollMale"
+    prefab_name: "Seattle:Core/TrollMale"
     character_sheet_id: "Lvl3_Elf_Mage"
     character_mod {
       stats {
@@ -9331,10 +9428,13 @@ characters {
         armor: 0
         force: 0
         morale: 0
+        discipline: 0
         awareness: 0
         perception: 0
+        authority: 0
         protect_tether_range: 0
         move_speed: 0
+        is_fearless: 1
       }
       skills {
         ranged_combat: 0
@@ -9369,6 +9469,8 @@ characters {
       }
       archetypeName: "Guard - Protect"
       attitude: AttitudeBoss
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "ShamanPendant"
@@ -9388,7 +9490,7 @@ characters {
       filename: "pc_trollmale_04a_shaman"
     }
     portrait_code_override: "s3h0c4b10c4t8"
-    karma: 72
+    karma: 73
   }
 }
 characters {
@@ -9406,7 +9508,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Gangers/ElfFemaleGangerMohawk"
+    prefab_name: "Seattle:Gangers/ElfFemaleGangerMohawk"
     character_sheet_id: "Lonestar_Lv2_Human_Mage"
     equipment_sheet_id: "Lonestar_Mage_Low"
     character_mod {
@@ -9430,6 +9532,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -9464,6 +9569,8 @@ characters {
       }
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "Gangers"
     char_name: "Norton\'s Mage"
@@ -9489,7 +9596,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Gangers/ElfFemaleGangerMohawk"
+    prefab_name: "Seattle:Gangers/ElfFemaleGangerMohawk"
     character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
@@ -9513,6 +9620,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -9545,8 +9655,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -9582,7 +9694,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/HumanMale"
+    prefab_name: "Seattle:Core/HumanMale"
     character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
     equipment_sheet_id: "Lonestar_Shotgun_Low"
     character_mod {
@@ -9606,6 +9718,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -9638,8 +9753,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Hunt And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -9675,7 +9792,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/HumanMale"
+    prefab_name: "Seattle:Core/HumanMale"
     character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
@@ -9699,11 +9816,14 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
         close_combat: 0
-        throwing_weapons: 3
+        throwing_weapons: 0
         spellcasting: 0
         decking: 0
         conjuring: 0
@@ -9731,8 +9851,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Hunt And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -9768,7 +9890,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Standard/ElfFemaleStreetSamurai"
+    prefab_name: "Seattle:Standard/ElfFemaleStreetSamurai"
     character_sheet_id: "Lonestar_Lv1_Human_Mage"
     character_mod {
       stats {
@@ -9791,6 +9913,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -9823,8 +9948,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Mage"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -9869,7 +9996,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Gangers/OrkMaleGanger_Cutter"
+    prefab_name: "Seattle:Gangers/OrkMaleGanger_Cutter"
     character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
     equipment_sheet_id: "Lonestar_Shotgun_Low"
     character_mod {
@@ -9893,6 +10020,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -9925,8 +10055,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -9962,7 +10094,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/HumanMale"
+    prefab_name: "Seattle:Core/HumanMale"
     character_sheet_id: "Lonestar_Lv2_Human_Pistol"
     equipment_sheet_id: "Lonestar_Pistol_Low"
     character_mod {
@@ -9986,6 +10118,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -10018,8 +10153,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Hunt And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -10055,7 +10192,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/HumanMale"
+    prefab_name: "Seattle:Core/HumanMale"
     character_sheet_id: "Lonestar_Lv1_Captain"
     equipment_sheet_id: "Lonestar_Captain_Low"
     character_mod {
@@ -10079,6 +10216,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -10111,8 +10251,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Hunt And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -10148,12 +10290,12 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Gangers/ElfFemaleGangerMohawk"
+    prefab_name: "Seattle:Gangers/ElfFemaleGangerMohawk"
     character_sheet_id: "Lonestar_Lv1_Human_Mage"
     equipment_sheet_id: "Lonestar_Mage_Low"
     character_mod {
       stats {
-        body: 1
+        body: 0
         quickness: 0
         strength: 0
         charisma: 0
@@ -10172,6 +10314,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -10204,8 +10349,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Mage"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -10221,7 +10368,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h6c4b1"
-    karma: 42
+    karma: 40
   }
 }
 characters {
@@ -10241,7 +10388,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Gangers/ElfMaleGangerEyepatch"
+    prefab_name: "Seattle:Gangers/ElfMaleGangerEyepatch"
     character_sheet_id: "Lonestar_Lv2_Human_Pistol"
     equipment_sheet_id: "Lonestar_Pistol_Low"
     character_mod {
@@ -10265,6 +10412,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -10297,8 +10447,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -10334,7 +10486,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/HumanMale"
+    prefab_name: "Seattle:Core/HumanMale"
     character_sheet_id: "Lonestar_Lv2_Human_Pistol"
     equipment_sheet_id: "Lonestar_Pistol_Low"
     character_mod {
@@ -10358,6 +10510,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -10390,8 +10545,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Hunt And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -10427,7 +10584,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Gangers/OrkMaleGanger_Halloweener"
+    prefab_name: "Seattle:Gangers/OrkMaleGanger_Halloweener"
     character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
@@ -10451,6 +10608,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -10483,8 +10643,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -10520,7 +10682,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/HumanMale"
+    prefab_name: "Seattle:Core/HumanMale"
     character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
     equipment_sheet_id: "Lonestar_Shotgun_Low"
     character_mod {
@@ -10544,6 +10706,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -10576,8 +10741,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Hunt And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -10613,12 +10780,12 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/ElfFemale"
+    prefab_name: "Seattle:Core/ElfFemale"
     character_sheet_id: "Lonestar_Lv1_Human_Mage"
     equipment_sheet_id: "Lonestar_Mage_Low"
     character_mod {
       stats {
-        body: 1
+        body: 0
         quickness: 0
         strength: 0
         charisma: 0
@@ -10637,6 +10804,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -10669,8 +10839,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Hunt And Destroy"
+      archetypeName: "gumbo_Mage"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -10686,7 +10858,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h1c4"
-    karma: 42
+    karma: 40
   }
 }
 characters {
@@ -10706,7 +10878,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Gangers/TrollMaleGanger_Halloweener"
+    prefab_name: "Seattle:Gangers/TrollMaleGanger_Halloweener"
     character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
     equipment_sheet_id: "Lonestar_Shotgun_Low"
     character_mod {
@@ -10730,6 +10902,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -10762,8 +10937,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -10805,7 +10982,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/HumanMale"
+    prefab_name: "Seattle:Core/HumanMale"
     character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
@@ -10829,11 +11006,14 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
         close_combat: 0
-        throwing_weapons: 3
+        throwing_weapons: 0
         spellcasting: 0
         decking: 0
         conjuring: 0
@@ -10861,8 +11041,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Hunt And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -10903,7 +11085,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/HumanFemale"
+    prefab_name: "Seattle:Core/HumanFemale"
     character_sheet_id: "Lonestar_Lv2_Human_Pistol"
     equipment_sheet_id: "Lonestar_Pistol_Low"
     character_mod {
@@ -10927,6 +11109,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -10959,8 +11144,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Hunt And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -11000,7 +11187,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/HumanMale"
+    prefab_name: "Seattle:Core/HumanMale"
     character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
@@ -11024,11 +11211,14 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
         close_combat: 0
-        throwing_weapons: 3
+        throwing_weapons: 0
         spellcasting: 0
         decking: 0
         conjuring: 0
@@ -11056,8 +11246,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Hunt And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -11096,7 +11288,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/HumanMale"
+    prefab_name: "Seattle:Core/HumanMale"
     character_sheet_id: "Lonestar_Lv2_Ork_Shotgun"
     equipment_sheet_id: "Lonestar_Shotgun_Low"
     character_mod {
@@ -11120,6 +11312,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -11152,8 +11347,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Hunt And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -11190,8 +11387,8 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Gangers/OrkMaleGanger_Halloweener"
-    character_sheet_id: "Lonestar_Lv2_Human_Pistol"
+    prefab_name: "Seattle:Gangers/OrkMaleGanger_Halloweener"
+    character_sheet_id: "Lonestar_Lv1_Human_Pistol"
     equipment_sheet_id: "Lonestar_Pistol_Low"
     character_mod {
       stats {
@@ -11214,6 +11411,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -11246,8 +11446,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "Civilians"
     char_name: "Norton\'s Soldier"
@@ -11257,7 +11459,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h5c2"
-    karma: 37
+    karma: 30
   }
 }
 characters {
@@ -11282,7 +11484,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Wealthy/HumanMaleTurquoisePonyJacket"
+    prefab_name: "Seattle:Wealthy/HumanMaleTurquoisePonyJacket"
     character_sheet_id: "Lonestar_Lv2_Captain"
     equipment_sheet_id: "Lonestar_Captain_Low"
     character_mod {
@@ -11306,6 +11508,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -11338,8 +11543,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Hunt And Destroy"
-      attitude: AttitudeBoss
+      archetypeName: "gumbo_Soldier"
+      attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "Civilians"
     char_name: "Lieutenant Mushi"
@@ -11373,7 +11580,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Standard/DwarfMaleBiker"
+    prefab_name: "Seattle:Standard/DwarfMaleBiker"
     character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
@@ -11397,6 +11604,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -11429,8 +11639,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Hunt And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "Civilians"
     char_name: "Norton\'s Soldier"
@@ -11462,7 +11674,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Gangers/DwarfMaleGangerMohawk_Cutter"
+    prefab_name: "Seattle:Gangers/DwarfMaleGangerMohawk_Cutter"
     character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
     equipment_sheet_id: "Lonestar_Shotgun_Low"
     character_mod {
@@ -11486,6 +11698,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -11518,8 +11733,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Hunt And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "Civilians"
     char_name: "Norton\'s Soldier"
@@ -11551,7 +11768,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Gangers/ElfFemaleGangerMohawk"
+    prefab_name: "Seattle:Gangers/ElfFemaleGangerMohawk"
     character_sheet_id: "Lonestar_Lv2_Human_Mage"
     character_mod {
       stats {
@@ -11574,6 +11791,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -11606,8 +11826,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Hunt And Destroy"
+      archetypeName: "gumbo_Mage"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Spell Aim 1"
@@ -11645,12 +11867,12 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/HumanMale"
+    prefab_name: "Seattle:Core/HumanMale"
     character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
     equipment_sheet_id: "Lonestar_Shotgun_Low"
     character_mod {
       stats {
-        body: 1
+        body: 0
         quickness: 0
         strength: 0
         charisma: 0
@@ -11669,6 +11891,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -11701,8 +11926,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Hunt And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -11718,7 +11945,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h1c4b2c4"
-    karma: 36
+    karma: 33
   }
 }
 characters {
@@ -11741,7 +11968,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Gangers/OrkMaleGanger"
+    prefab_name: "Seattle:Gangers/OrkMaleGanger"
     character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
@@ -11765,6 +11992,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -11797,8 +12027,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Hunt And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "Civilians"
     char_name: "Norton\'s Soldier"
@@ -11827,7 +12059,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Standard/DwarfFemaleAdept"
+    prefab_name: "Seattle:Standard/DwarfFemaleAdept"
     character_sheet_id: "Lonestar_Lv2_Human_Mage"
     character_mod {
       stats {
@@ -11850,6 +12082,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -11882,8 +12117,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Mage"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -11928,7 +12165,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Gangers/ElfMaleGangerEyepatch"
+    prefab_name: "Seattle:Gangers/ElfMaleGangerEyepatch"
     character_sheet_id: "Lonestar_Lv1_Captain"
     character_mod {
       stats {
@@ -11951,6 +12188,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -11983,8 +12223,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -12023,7 +12265,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/HumanMale"
+    prefab_name: "Seattle:Core/HumanMale"
     character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
@@ -12047,11 +12289,14 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
         close_combat: 0
-        throwing_weapons: 3
+        throwing_weapons: 0
         spellcasting: 0
         decking: 0
         conjuring: 0
@@ -12079,8 +12324,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Hunt And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -12116,7 +12363,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Gangers/ElfMaleGangerDreads"
+    prefab_name: "Seattle:Gangers/ElfMaleGangerDreads"
     character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
@@ -12140,11 +12387,14 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
         close_combat: 0
-        throwing_weapons: 3
+        throwing_weapons: 0
         spellcasting: 0
         decking: 0
         conjuring: 0
@@ -12172,8 +12422,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -12209,7 +12461,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/HumanMale"
+    prefab_name: "Seattle:Core/HumanMale"
     character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
@@ -12233,11 +12485,14 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
         close_combat: 0
-        throwing_weapons: 3
+        throwing_weapons: 0
         spellcasting: 0
         decking: 0
         conjuring: 0
@@ -12265,8 +12520,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Hunt And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -12300,7 +12557,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Story/TechDealer"
+    prefab_name: "Seattle:Story/TechDealer"
     character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
     equipment_sheet_id: "Lonestar_Shotgun_Low"
     character_mod {
@@ -12324,6 +12581,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -12358,6 +12618,8 @@ characters {
       }
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "Gangers"
     char_name: "Norton\'s Soldier"
@@ -12381,7 +12643,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Story/Gruberman"
+    prefab_name: "Seattle:Story/Gruberman"
     character_sheet_id: "Lonestar_Lv2_Human_Pistol"
     equipment_sheet_id: "Lonestar_Pistol_Low"
     character_mod {
@@ -12405,6 +12667,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -12439,6 +12704,8 @@ characters {
       }
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "Gangers"
     char_name: "Norton\'s Soldier"
@@ -12462,7 +12729,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Standard/OrkFemaleShaman"
+    prefab_name: "Seattle:Standard/OrkFemaleShaman"
     character_sheet_id: "Lonestar_Lv2_Human_Mage"
     character_mod {
       stats {
@@ -12485,6 +12752,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -12519,6 +12789,8 @@ characters {
       }
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Spell Powerbolt 1"
@@ -12530,7 +12802,7 @@ characters {
       prefab_name: "Spell Lightning Bolt 1"
     }
     team_id: "Gangers"
-    char_name: "Norton\'s Soldier"
+    char_name: "Norton\'s Mage"
     GeneralTags: "squad1b"
     pc_spawn_number: -1
     karma: 43
@@ -12553,7 +12825,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Gangers/OrkMaleGanger_Halloweener"
+    prefab_name: "Seattle:Gangers/OrkMaleGanger_Halloweener"
     character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
@@ -12577,6 +12849,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -12611,6 +12886,8 @@ characters {
       }
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -12646,12 +12923,12 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/ElfFemale"
+    prefab_name: "Seattle:Core/ElfFemale"
     character_sheet_id: "Lonestar_Lv1_Human_Mage"
     equipment_sheet_id: "Lonestar_Mage_Low"
     character_mod {
       stats {
-        body: 1
+        body: 0
         quickness: 0
         strength: 0
         charisma: 0
@@ -12670,6 +12947,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -12702,8 +12982,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Mage"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -12719,7 +13001,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h2c4"
-    karma: 42
+    karma: 40
   }
 }
 characters {

@@ -15944,7 +15944,7 @@ props {
 props {
   name: "secretLab_wall_4x4fill"
   gridPoint {
-    x: 1.66893e-06
+    x: 1.66893e-006
     y: 0
     z: 22.099998
   }

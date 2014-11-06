@@ -7985,7 +7985,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Wealthy/HumanMaleTurquoisePonyJacket"
+    prefab_name: "Seattle:Wealthy/HumanMaleTurquoisePonyJacket"
     character_sheet_id: "Lonestar_Lv2_Human_Pistol"
     character_mod {
       stats {
@@ -8008,6 +8008,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -8040,8 +8043,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Pi 1 Fichetti Security 500"
@@ -8071,7 +8076,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Security/HumanFemaleSecurity"
+    prefab_name: "Seattle:Security/HumanFemaleSecurity"
     character_sheet_id: "Lonestar_Lv2_Human_Pistol"
     character_mod {
       stats {
@@ -8094,6 +8099,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -8126,8 +8134,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Pi 1 Fichetti Security 500"
@@ -8154,7 +8164,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Security/HumanMaleSecurityNVG"
+    prefab_name: "Seattle:Security/HumanMaleSecurityNVG"
     character_sheet_id: "Lonestar_Lv2_Human_Pistol"
     character_mod {
       stats {
@@ -8177,6 +8187,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -8209,8 +8222,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Pi 1 Fichetti Security 500"
@@ -8237,7 +8252,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Security/DwarfMaleSecurity"
+    prefab_name: "Seattle:Security/DwarfMaleSecurity"
     character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
@@ -8261,6 +8276,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -8293,8 +8311,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "LoneStar"
     char_name: "Security Guard"

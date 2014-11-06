@@ -12831,7 +12831,7 @@ regions {
   name: "Camera"
   position {
     x: -27
-    y: -44
+    y: -45
     width: 45
     height: 103
   }
@@ -13100,8 +13100,8 @@ regions {
 regions {
   name: "Wave 2a spawn point"
   position {
-    x: -21
-    y: -38
+    x: -26
+    y: -52
     width: 6
     height: 6
   }
@@ -14206,6 +14206,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Mage"
       vulnerabilities {
       }
     }
@@ -14253,6 +14254,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "Guard - Hunt And Destroy"
       vulnerabilities {
       }
     }
@@ -14300,6 +14302,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -14347,6 +14350,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "Guard - Hunt And Destroy"
       vulnerabilities {
       }
     }
@@ -14394,6 +14398,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -14441,6 +14446,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Mage"
       vulnerabilities {
       }
     }
@@ -14488,6 +14494,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -14535,6 +14542,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -14582,6 +14590,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -14628,6 +14637,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -14673,6 +14683,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "Guard - Hunt And Destroy"
       vulnerabilities {
       }
     }
@@ -14718,6 +14729,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "Guard - Hunt And Destroy"
       vulnerabilities {
       }
     }
@@ -14763,6 +14775,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -14847,7 +14860,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Mage"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -14897,6 +14910,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -14947,6 +14961,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -14995,6 +15010,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "Guard - Hunt And Destroy"
       vulnerabilities {
       }
     }
@@ -15044,6 +15060,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Mage"
       vulnerabilities {
       }
     }
@@ -15094,6 +15111,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }

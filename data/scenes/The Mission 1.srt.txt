@@ -1117,52 +1117,6 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Change Actor Team"
-      args {
-        call_value {
-          functionName: "All Actors With Tag"
-          args {
-            call_value {
-              functionName: "Get Map Item (SenseTagList)"
-              args {
-                string_value: "squad1a"
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "AllOrAny"
-              }
-              args {
-                int_value: 0
-              }
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (string)"
-          args {
-            string_value: "FactionList"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (SceneDimension)"
-          args {
-            string_value: "Default"
-          }
-        }
-      }
-    }
-    ops {
       functionName: "Set Team Alliance"
       args {
         call_value {
@@ -1582,7 +1536,7 @@ triggers {
                 string_value: "FactionList"
               }
               args {
-                int_value: 0
+                int_value: 2
               }
             }
           }
@@ -1682,28 +1636,6 @@ triggers {
         }
       }
     }
-  }
-  isActive: true
-  idRef {
-    id: "5221ff823662365013000f46"
-  }
-  elseActions {
-  }
-  is_oneshot: true
-}
-triggers {
-  name: "Sided with Gangers"
-  events {
-    ops {
-      functionName: "Get Map Item (Event)"
-      args {
-        string_value: "Sided with Gangers"
-      }
-    }
-  }
-  conditions {
-  }
-  actions {
     ops {
       functionName: "Change Actor Team"
       args {
@@ -1713,7 +1645,7 @@ triggers {
             call_value {
               functionName: "Get Map Item (SenseTagList)"
               args {
-                string_value: "squad1b"
+                string_value: "squad1a"
               }
             }
           }
@@ -1750,6 +1682,28 @@ triggers {
         }
       }
     }
+  }
+  isActive: true
+  idRef {
+    id: "5221ff823662365013000f46"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Sided with Gangers"
+  events {
+    ops {
+      functionName: "Get Map Item (Event)"
+      args {
+        string_value: "Sided with Gangers"
+      }
+    }
+  }
+  conditions {
+  }
+  actions {
     ops {
       functionName: "Set Team Alliance"
       args {
@@ -2198,7 +2152,7 @@ triggers {
                 string_value: "FactionList"
               }
               args {
-                int_value: 0
+                int_value: 1
               }
             }
           }
@@ -2286,6 +2240,52 @@ triggers {
           }
           args {
             int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Change Actor Team"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "squad1b"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
           }
         }
       }
@@ -2631,52 +2631,6 @@ triggers {
       }
     }
     ops {
-      functionName: "Change Actor Team"
-      args {
-        call_value {
-          functionName: "All Actors With Tag"
-          args {
-            call_value {
-              functionName: "Get Map Item (SenseTagList)"
-              args {
-                string_value: "latemarine"
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "AllOrAny"
-              }
-              args {
-                int_value: 0
-              }
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (string)"
-          args {
-            string_value: "FactionList"
-          }
-          args {
-            int_value: 2
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (SceneDimension)"
-          args {
-            string_value: "Default"
-          }
-        }
-      }
-    }
-    ops {
       functionName: "Enable/Disable Trigger"
       args {
         call_value {
@@ -2727,6 +2681,63 @@ triggers {
           }
           args {
             int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Order Actor to Hunt And Destroy (Team)"
+      args {
+        call_value {
+          functionName: "All Actors on Team"
+          args {
+            call_value {
+              functionName: "Get Preset Value (string)"
+              args {
+                string_value: "FactionList"
+              }
+              args {
+                int_value: 1
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Map Item (SceneDimension)"
+              args {
+                string_value: "Default"
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 2
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
           }
         }
       }
@@ -2805,15 +2816,40 @@ triggers {
       }
     }
     ops {
-      functionName: "Change Actor Team"
+      functionName: "Enable/Disable Trigger"
       args {
         call_value {
-          functionName: "All Actors With Tag"
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Trigger)"
+          args {
+            string_value: "522260f53662365807003ad7"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Order Actor to Hunt And Destroy (Team)"
+      args {
+        call_value {
+          functionName: "All Actors on Team"
           args {
             call_value {
-              functionName: "Get Map Item (SenseTagList)"
+              functionName: "Get Preset Value (string)"
               args {
-                string_value: "lateganger"
+                string_value: "FactionList"
+              }
+              args {
+                int_value: 2
               }
             }
           }
@@ -2825,6 +2861,14 @@ triggers {
               }
               args {
                 int_value: 0
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Map Item (SceneDimension)"
+              args {
+                string_value: "Default"
               }
             }
           }
@@ -2846,28 +2890,6 @@ triggers {
           functionName: "Get Map Item (SceneDimension)"
           args {
             string_value: "Default"
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Enable/Disable Trigger"
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "EnableOrDisable"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (Trigger)"
-          args {
-            string_value: "522260f53662365807003ad7"
           }
         }
       }
@@ -4350,6 +4372,43 @@ triggers {
       }
     }
     ops {
+      functionName: "Change Actor Team"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "522126b9643431523837ee73"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 3
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
       functionName: "Enable/Disable Team\'s Turn"
       args {
         call_value {
@@ -4515,6 +4574,9 @@ triggers {
       args {
         float_value: 3
       }
+    }
+    ops {
+      functionName: "End Current Team Round"
     }
   }
   isActive: true
@@ -5296,7 +5358,7 @@ triggers {
             string_value: "FactionList"
           }
           args {
-            int_value: 2
+            int_value: 9
           }
         }
       }
@@ -5524,7 +5586,7 @@ triggers {
             string_value: "FactionList"
           }
           args {
-            int_value: 1
+            int_value: 8
           }
         }
       }
@@ -10086,6 +10148,615 @@ triggers {
   }
   is_oneshot: true
 }
+triggers {
+  name: "Squad 2 Hostile"
+  events {
+    ops {
+      functionName: "On Region Enter"
+      args {
+        call_value {
+          functionName: "Get Map Item (Region)"
+          args {
+            string_value: "54566ce4393139b420000f94"
+          }
+        }
+      }
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Set Team Alliance"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 4
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeamAlliance"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Team Alliance"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 5
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeamAlliance"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Team Alliance"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeamAlliance"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 4
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Team Alliance"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeamAlliance"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 5
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "54566cf8393139b420000f95"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Squad 3 Hostile"
+  events {
+    ops {
+      functionName: "On Region Enter"
+      args {
+        call_value {
+          functionName: "Get Map Item (Region)"
+          args {
+            string_value: "5456714e393139d806002214"
+          }
+        }
+      }
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Set Team Alliance"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 6
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeamAlliance"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Team Alliance"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 7
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeamAlliance"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Team Alliance"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeamAlliance"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 6
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Team Alliance"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeamAlliance"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 7
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "54567190393139d806002216"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Squad 4Hostile"
+  events {
+    ops {
+      functionName: "On Region Enter"
+      args {
+        call_value {
+          functionName: "Get Map Item (Region)"
+          args {
+            string_value: "54567178393139d806002215"
+          }
+        }
+      }
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Set Team Alliance"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 8
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeamAlliance"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Team Alliance"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 9
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeamAlliance"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Team Alliance"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeamAlliance"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 8
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Team Alliance"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeamAlliance"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 9
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "54567192393139d806002217"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
 regions {
   name: "Camera"
   position {
@@ -10269,8 +10940,8 @@ regions {
 regions {
   name: "Companion Banter"
   position {
-    x: 51
-    y: -27
+    x: 50
+    y: -42
     width: 18
     height: 1
   }
@@ -10401,6 +11072,141 @@ regions {
   loop_combat_music: true
   loop_default_music: false
 }
+regions {
+  name: "Squad 2 Hostile"
+  position {
+    x: 35
+    y: -75
+    width: 1
+    height: 9
+  }
+  enabledAtStart: true
+  is_camera_region: false
+  idRef {
+    id: "54566ce4393139b420000f94"
+  }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_closet: false
+  is_teleporter_region: false
+  directional_light_dir {
+    x: -0.5
+    y: -1
+    z: -0.75
+  }
+  directional_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambient_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambience_template: ""
+  combat_music: ""
+  default_music: ""
+  loop_combat_music: true
+  loop_default_music: false
+}
+regions {
+  name: "Squad 3 Aggro"
+  position {
+    x: 63
+    y: -24
+    width: 13
+    height: 17
+  }
+  enabledAtStart: true
+  is_camera_region: false
+  idRef {
+    id: "5456714e393139d806002214"
+  }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_closet: false
+  is_teleporter_region: false
+  directional_light_dir {
+    x: -0.5
+    y: -1
+    z: -0.75
+  }
+  directional_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambient_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambience_template: ""
+  combat_music: ""
+  default_music: ""
+  loop_combat_music: true
+  loop_default_music: false
+}
+regions {
+  name: "Squad 4 Aggro"
+  position {
+    x: 94
+    y: -25
+    width: 9
+    height: 1
+  }
+  enabledAtStart: true
+  is_camera_region: false
+  idRef {
+    id: "54567178393139d806002215"
+  }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_closet: false
+  is_teleporter_region: false
+  directional_light_dir {
+    x: -0.5
+    y: -1
+    z: -0.75
+  }
+  directional_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambient_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambience_template: ""
+  combat_music: ""
+  default_music: ""
+  loop_combat_music: true
+  loop_default_music: false
+}
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
@@ -10468,7 +11274,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Wealthy/HumanMaleTurquoisePonyJacket"
-    character_sheet_id: "Lonestar_Lv2_Captain"
+    character_sheet_id: "Errant_Lv2_Captain"
     equipment_sheet_id: "Lonestar_Captain_Low"
     character_mod {
       stats {
@@ -10491,7 +11297,10 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
-        is_fearless: 1
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
+        is_fearless: 0
       }
       skills {
         ranged_combat: 0
@@ -10524,8 +11333,8 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Hunt And Destroy"
-      attitude: AttitudeBoss
+      archetypeName: "gumbo_Soldier"
+      attitude: AttitudeAggressive
       vulnerabilities {
       }
     }
@@ -10538,7 +11347,7 @@ characters {
     portrait {
       filename: "pc_humanmale_02_topknot"
     }
-    karma: 52
+    karma: 68
   }
 }
 characters {
@@ -10620,7 +11429,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Hunt And Destroy"
+      archetypeName: "gumbo_Mage"
       attitude: AttitudeBoss
       vulnerabilities {
       }
@@ -10665,7 +11474,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Core/HumanMale"
-    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
+    character_sheet_id: "Errant_Lv1_Heavy_Explosive"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
       stats {
@@ -10688,106 +11497,10 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
-        is_fearless: 1
-      }
-      skills {
-        ranged_combat: 0
-        close_combat: 0
-        throwing_weapons: 3
-        spellcasting: 0
-        decking: 0
-        conjuring: 0
-        spirit_summoning: 0
-        drone_control: 0
-        biotech: 0
-        dodge: 0
-        etiquette_corporate: 0
-        etiquette_security: 0
-        etiquette_gang: 0
-        etiquette_socialite: 0
-        chi_casting: 0
-        etiquette_shadowrunner: 0
-        etiquette_street: 0
-        etiquette_academic: 0
-      }
-      specializations {
-        pistol: 0
-        rifle: 0
-        shotgun: 0
-        smg: 0
-        edged: 0
-        unarmed: 0
-        spirit_control: 0
-        esp_control: 0
-        drone_combat: 0
-      }
-      archetypeName: "Guard - Hunt And Destroy"
-      attitude: AttitudeAggressive
-      vulnerabilities {
-      }
-    }
-    equipment {
-      prefab_name: "Outfit_Security"
-    }
-    team_id: "LoneStar"
-    char_name: "Marine"
-    GeneralTags: "squad1a"
-    GeneralTags: "exiter"
-    pc_spawn_number: -1
-    portrait {
-      filename: ""
-    }
-    portrait_code_override: "s6h3c4b4c4"
-    karma: 48
-  }
-}
-characters {
-  name: "chars_icon_playerIcon"
-  gridPoint {
-    x: 22
-    y: 0
-    z: -18
-  }
-  orientation: ORIENTATION_W
-  GeneralTags: "squad1a"
-  GeneralTags: "exiter"
-  displayName: "Marine Squad 1 Guard 1"
-  idRef {
-    id: "52212b5d643431523837ef57"
-  }
-  interactionRoot {
-    isEnabled: true
-    interactionRadius: 1
-    dummyInteraciton {
-    }
-  }
-  lod: 0
-  character_instance {
-    prefab_name: "Seattle:Core/HumanMale"
-    character_sheet_id: "Lonestar_Lv2_Ork_Shotgun"
-    equipment_sheet_id: "Lonestar_Shotgun_Low"
-    character_mod {
-      stats {
-        body: 0
-        quickness: 0
-        strength: 0
-        charisma: 0
-        intelligence: 0
-        willpower: 0
-        essence: 0
-        magic: 0
-        hp: 0
-        ap: 0
-        armor: 0
-        force: 0
-        morale: 0
-        discipline: 0
-        awareness: 0
-        perception: 0
-        authority: 0
-        protect_tether_range: 0
-        move_speed: 0
-        is_fearless: 1
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
+        is_fearless: 0
       }
       skills {
         ranged_combat: 0
@@ -10820,7 +11533,109 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Hunt And Destroy"
+      archetypeName: "gumbo_Soldier"
+      attitude: AttitudeAggressive
+      vulnerabilities {
+      }
+    }
+    equipment {
+      prefab_name: "Outfit_Security"
+    }
+    team_id: "LoneStar"
+    char_name: "Marine"
+    GeneralTags: "squad1a"
+    GeneralTags: "exiter"
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    portrait_code_override: "s6h3c4b4c4"
+    karma: 47
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 22
+    y: 0
+    z: -18
+  }
+  orientation: ORIENTATION_W
+  GeneralTags: "squad1a"
+  GeneralTags: "exiter"
+  displayName: "Marine Squad 1 Guard 1"
+  idRef {
+    id: "52212b5d643431523837ef57"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Core/HumanMale"
+    character_sheet_id: "Errant_Lv2_Ork_Shotgun"
+    equipment_sheet_id: "Lonestar_Shotgun_Low"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
+        is_fearless: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -10837,7 +11652,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s5h7c4b5c4"
-    karma: 41
+    karma: 52
   }
 }
 characters {
@@ -10864,7 +11679,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Core/HumanMale"
-    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
+    character_sheet_id: "Errant_Lv1_Heavy_Explosive"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
       stats {
@@ -10887,12 +11702,15 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
-        is_fearless: 1
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
+        is_fearless: 0
       }
       skills {
         ranged_combat: 0
         close_combat: 0
-        throwing_weapons: 3
+        throwing_weapons: 0
         spellcasting: 0
         decking: 0
         conjuring: 0
@@ -10920,7 +11738,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Hunt And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -10938,7 +11756,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h6c4b1c4"
-    karma: 48
+    karma: 47
   }
 }
 characters {
@@ -10965,7 +11783,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Core/HumanFemale"
-    character_sheet_id: "Lonestar_Lv2_Human_Pistol"
+    character_sheet_id: "Errant_Lv2_Human_Pistol"
     equipment_sheet_id: "Lonestar_Pistol_Low"
     character_mod {
       stats {
@@ -10988,7 +11806,10 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
-        is_fearless: 1
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
+        is_fearless: 0
       }
       skills {
         ranged_combat: 0
@@ -11021,7 +11842,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Hunt And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -11039,7 +11860,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h3c7"
-    karma: 37
+    karma: 56
   }
 }
 characters {
@@ -11066,7 +11887,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Gangers/DwarfMaleGangerMohawk_Cutter"
-    character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
+    character_sheet_id: "Errant_Lv1_Ork_Shotgun"
     equipment_sheet_id: "Lonestar_Shotgun_Low"
     character_mod {
       stats {
@@ -11089,7 +11910,10 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
-        is_fearless: 1
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
+        is_fearless: 0
       }
       skills {
         ranged_combat: 0
@@ -11122,7 +11946,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Hunt And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -11137,7 +11961,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h5c2"
-    karma: 33
+    karma: 41
   }
 }
 characters {
@@ -11163,7 +11987,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Gangers/ElfFemaleGangerMohawk"
-    character_sheet_id: "Lonestar_Lv2_Human_Mage"
+    character_sheet_id: "Errant_Lv2_Human_Mage"
     character_mod {
       stats {
         body: 0
@@ -11185,7 +12009,10 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
-        is_fearless: 1
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
+        is_fearless: 0
       }
       skills {
         ranged_combat: 0
@@ -11218,7 +12045,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Hunt And Destroy"
+      archetypeName: "gumbo_Mage"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -11241,7 +12068,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h5c2"
-    karma: 43
+    karma: 65
   }
 }
 characters {
@@ -11267,7 +12094,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Standard/DwarfMaleBiker"
-    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
+    character_sheet_id: "Errant_Lv1_Heavy_Explosive"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
       stats {
@@ -11290,7 +12117,10 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
-        is_fearless: 1
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
+        is_fearless: 0
       }
       skills {
         ranged_combat: 0
@@ -11323,7 +12153,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Hunt And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -11337,7 +12167,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h5c2"
-    karma: 39
+    karma: 47
   }
 }
 characters {
@@ -11364,7 +12194,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Gangers/OrkMaleGanger"
-    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
+    character_sheet_id: "Errant_Lv1_Heavy_Explosive"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
       stats {
@@ -11387,7 +12217,10 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
-        is_fearless: 1
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
+        is_fearless: 0
       }
       skills {
         ranged_combat: 0
@@ -11420,7 +12253,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Hunt And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -11435,7 +12268,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h5c2"
-    karma: 39
+    karma: 47
   }
 }
 characters {
@@ -11455,8 +12288,8 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/HumanMale"
-    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
+    prefab_name: "Seattle:Core/HumanMale"
+    character_sheet_id: "Errant_Lv1_Heavy_Explosive"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
       stats {
@@ -11479,11 +12312,14 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
         close_combat: 0
-        throwing_weapons: 3
+        throwing_weapons: 0
         spellcasting: 0
         decking: 0
         conjuring: 0
@@ -11511,13 +12347,15 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
     }
-    team_id: "Civilians"
+    team_id: "Squad 2 Marines"
     char_name: "Marine"
     GeneralTags: "squad2a"
     GeneralTags: "spawner"
@@ -11528,7 +12366,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h6c4b1c4"
-    karma: 39
+    karma: 47
   }
 }
 characters {
@@ -11548,8 +12386,8 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/HumanMale"
-    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
+    prefab_name: "Seattle:Core/HumanMale"
+    character_sheet_id: "Errant_Lv1_Heavy_Explosive"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
       stats {
@@ -11572,11 +12410,14 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
         close_combat: 0
-        throwing_weapons: 3
+        throwing_weapons: 0
         spellcasting: 0
         decking: 0
         conjuring: 0
@@ -11604,13 +12445,15 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
     }
-    team_id: "Civilians"
+    team_id: "Squad 2 Marines"
     char_name: "Marine"
     GeneralTags: "squad2a"
     GeneralTags: "spawner"
@@ -11621,7 +12464,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s5h7c4b2c4"
-    karma: 39
+    karma: 47
   }
 }
 characters {
@@ -11641,12 +12484,12 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/HumanMale"
-    character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
+    prefab_name: "Seattle:Core/HumanMale"
+    character_sheet_id: "Errant_Lv1_Ork_Shotgun"
     equipment_sheet_id: "Lonestar_Shotgun_Low"
     character_mod {
       stats {
-        body: 1
+        body: 0
         quickness: 0
         strength: 0
         charisma: 0
@@ -11665,6 +12508,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -11697,13 +12543,15 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
     }
-    team_id: "Civilians"
+    team_id: "Squad 2 Marines"
     char_name: "Marine"
     GeneralTags: "squad2a"
     GeneralTags: "spawner"
@@ -11714,7 +12562,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h1c4b2c4"
-    karma: 36
+    karma: 41
   }
 }
 characters {
@@ -11734,8 +12582,8 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Gangers/ElfMaleGangerDreads"
-    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
+    prefab_name: "Seattle:Gangers/ElfMaleGangerDreads"
+    character_sheet_id: "Errant_Lv1_Heavy_Explosive"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
       stats {
@@ -11758,11 +12606,14 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
         close_combat: 0
-        throwing_weapons: 3
+        throwing_weapons: 0
         spellcasting: 0
         decking: 0
         conjuring: 0
@@ -11790,13 +12641,15 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
     }
-    team_id: "Civilians"
+    team_id: "Squad 2 Gangers"
     char_name: "Ganger"
     GeneralTags: "squad2b"
     GeneralTags: "spawner"
@@ -11807,7 +12660,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h6c4b1"
-    karma: 39
+    karma: 47
   }
 }
 characters {
@@ -11827,8 +12680,8 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Gangers/ElfMaleGangerEyepatch"
-    character_sheet_id: "Lonestar_Lv1_Captain"
+    prefab_name: "Seattle:Gangers/ElfMaleGangerEyepatch"
+    character_sheet_id: "Errant_Lv1_Captain"
     character_mod {
       stats {
         body: 0
@@ -11850,6 +12703,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -11882,8 +12738,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -11891,7 +12749,7 @@ characters {
     equipment {
       prefab_name: "AR 1 Semopal vz88v"
     }
-    team_id: "Civilians"
+    team_id: "Squad 2 Gangers"
     char_name: "Ganger"
     GeneralTags: "squad2b"
     GeneralTags: "spawner"
@@ -11902,7 +12760,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h6c4b1"
-    karma: 44
+    karma: 52
   }
 }
 characters {
@@ -11922,8 +12780,8 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Standard/DwarfFemaleAdept"
-    character_sheet_id: "Lonestar_Lv2_Human_Mage"
+    prefab_name: "Seattle:Standard/DwarfFemaleAdept"
+    character_sheet_id: "Errant_Lv2_Human_Mage"
     character_mod {
       stats {
         body: 0
@@ -11945,6 +12803,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -11977,8 +12838,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Mage"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -11992,7 +12855,7 @@ characters {
     equipment {
       prefab_name: "Spell Lightning Bolt 1"
     }
-    team_id: "Civilians"
+    team_id: "Squad 2 Gangers"
     char_name: "Ganger Mage"
     GeneralTags: "squad2b"
     GeneralTags: "spawner"
@@ -12003,7 +12866,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h6c4b1"
-    karma: 43
+    karma: 65
   }
 }
 characters {
@@ -12027,8 +12890,8 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Gangers/OrkMaleGanger_Halloweener"
-    character_sheet_id: "Lonestar_Lv2_Human_Pistol"
+    prefab_name: "Seattle:Gangers/OrkMaleGanger_Halloweener"
+    character_sheet_id: "Errant_Lv2_Human_Pistol"
     equipment_sheet_id: "Lonestar_Pistol_Low"
     character_mod {
       stats {
@@ -12051,6 +12914,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -12083,8 +12949,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "Gangers"
     char_name: "Ganger"
@@ -12095,7 +12963,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h5c2"
-    karma: 37
+    karma: 56
   }
 }
 characters {
@@ -12115,8 +12983,8 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/HumanMale"
-    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
+    prefab_name: "Seattle:Core/HumanMale"
+    character_sheet_id: "Errant_Lv1_Heavy_Explosive"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
       stats {
@@ -12139,99 +13007,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
-      }
-      skills {
-        ranged_combat: 0
-        close_combat: 0
-        throwing_weapons: 3
-        spellcasting: 0
-        decking: 0
-        conjuring: 0
-        spirit_summoning: 0
-        drone_control: 0
-        biotech: 0
-        dodge: 0
-        etiquette_corporate: 0
-        etiquette_security: 0
-        etiquette_gang: 0
-        etiquette_socialite: 0
-        chi_casting: 0
-        etiquette_shadowrunner: 0
-        etiquette_street: 0
-        etiquette_academic: 0
-      }
-      specializations {
-        pistol: 0
-        rifle: 0
-        shotgun: 0
-        smg: 0
-        edged: 0
-        unarmed: 0
-        spirit_control: 0
-        esp_control: 0
-        drone_combat: 0
-      }
-      archetypeName: "Guard - Seek And Destroy"
-      attitude: AttitudeAggressive
-    }
-    equipment {
-      prefab_name: "Outfit_Security"
-    }
-    team_id: "Civilians"
-    char_name: "Marine"
-    GeneralTags: "squad3a"
-    GeneralTags: "spawner"
-    GeneralTags: "latemarine"
-    enabled_at_start: true
-    pc_spawn_number: -1
-    portrait {
-      filename: ""
-    }
-    portrait_code_override: "s6h6c4b1c4"
-    karma: 39
-  }
-}
-characters {
-  name: "chars_icon_playerIcon"
-  gridPoint {
-    x: 90
-    y: 0
-    z: -16
-  }
-  orientation: ORIENTATION_N
-  GeneralTags: "squad3a"
-  GeneralTags: "spawner"
-  GeneralTags: "latemarine"
-  displayName: "Marine Squad 3 Guard 2"
-  idRef {
-    id: "52221fe036623650130010d0"
-  }
-  lod: 0
-  character_instance {
-    prefab_name: "Core/HumanMale"
-    character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
-    equipment_sheet_id: "Lonestar_Shotgun_Low"
-    character_mod {
-      stats {
-        body: 0
-        quickness: 0
-        strength: 0
-        charisma: 0
-        intelligence: 0
-        willpower: 0
-        essence: 0
-        magic: 0
-        hp: 0
-        ap: 0
-        armor: 0
-        force: 0
-        morale: 0
-        discipline: 0
-        awareness: 0
-        perception: 0
-        authority: 0
-        protect_tether_range: 0
-        move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -12264,13 +13042,113 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
     }
-    team_id: "Civilians"
+    team_id: "Squad 3 Marines"
+    char_name: "Marine"
+    GeneralTags: "squad3a"
+    GeneralTags: "spawner"
+    GeneralTags: "latemarine"
+    enabled_at_start: true
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    portrait_code_override: "s6h6c4b1c4"
+    karma: 47
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 90
+    y: 0
+    z: -16
+  }
+  orientation: ORIENTATION_N
+  GeneralTags: "squad3a"
+  GeneralTags: "spawner"
+  GeneralTags: "latemarine"
+  displayName: "Marine Squad 3 Guard 2"
+  idRef {
+    id: "52221fe036623650130010d0"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Core/HumanMale"
+    character_sheet_id: "Errant_Lv1_Ork_Shotgun"
+    equipment_sheet_id: "Lonestar_Shotgun_Low"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "gumbo_Soldier"
+      attitude: AttitudeAggressive
+      vulnerabilities {
+      }
+    }
+    equipment {
+      prefab_name: "Outfit_Security"
+    }
+    team_id: "Squad 3 Marines"
     char_name: "Marine"
     GeneralTags: "squad3a"
     GeneralTags: "spawner"
@@ -12281,7 +13159,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h7c4b2c4"
-    karma: 33
+    karma: 41
   }
 }
 characters {
@@ -12301,8 +13179,8 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/HumanMale"
-    character_sheet_id: "Lonestar_Lv2_Human_Pistol"
+    prefab_name: "Seattle:Core/HumanMale"
+    character_sheet_id: "Errant_Lv2_Human_Pistol"
     equipment_sheet_id: "Lonestar_Pistol_Low"
     character_mod {
       stats {
@@ -12325,6 +13203,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -12357,13 +13238,15 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
     }
-    team_id: "Civilians"
+    team_id: "Squad 3 Marines"
     char_name: "Marine"
     GeneralTags: "squad3a"
     GeneralTags: "spawner"
@@ -12374,7 +13257,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h1c4b3c4"
-    karma: 37
+    karma: 56
   }
 }
 characters {
@@ -12394,8 +13277,8 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Gangers/ElfFemaleGangerMohawk"
-    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
+    prefab_name: "Seattle:Gangers/ElfFemaleGangerMohawk"
+    character_sheet_id: "Errant_Lv1_Heavy_Explosive"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
       stats {
@@ -12418,6 +13301,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -12450,13 +13336,15 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
     }
-    team_id: "Civilians"
+    team_id: "Squad 3 Gangers"
     char_name: "Ganger"
     GeneralTags: "squad3b"
     GeneralTags: "spawner"
@@ -12467,7 +13355,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h6c4b1"
-    karma: 39
+    karma: 47
   }
 }
 characters {
@@ -12487,8 +13375,8 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Standard/ElfFemaleStreetSamurai"
-    character_sheet_id: "Lonestar_Lv1_Human_Mage"
+    prefab_name: "Seattle:Standard/ElfFemaleStreetSamurai"
+    character_sheet_id: "Errant_Lv1_Human_Mage"
     character_mod {
       stats {
         body: 0
@@ -12510,6 +13398,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -12542,8 +13433,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Mage"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -12557,7 +13450,7 @@ characters {
     equipment {
       prefab_name: "Spell Lightning Bolt 1"
     }
-    team_id: "Civilians"
+    team_id: "Squad 3 Gangers"
     char_name: "Ganger Mage"
     GeneralTags: "squad3b"
     GeneralTags: "spawner"
@@ -12568,7 +13461,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h6c4b1"
-    karma: 40
+    karma: 43
   }
 }
 characters {
@@ -12588,8 +13481,8 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Gangers/OrkMaleGanger_Cutter"
-    character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
+    prefab_name: "Seattle:Gangers/OrkMaleGanger_Cutter"
+    character_sheet_id: "Errant_Lv1_Ork_Shotgun"
     equipment_sheet_id: "Lonestar_Shotgun_Low"
     character_mod {
       stats {
@@ -12612,6 +13505,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -12644,13 +13540,15 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
     }
-    team_id: "Civilians"
+    team_id: "Squad 3 Gangers"
     char_name: "Ganger"
     GeneralTags: "squad3b"
     GeneralTags: "spawner"
@@ -12661,7 +13559,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h6c4b1"
-    karma: 33
+    karma: 41
   }
 }
 characters {
@@ -12858,8 +13756,8 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/HumanMale"
-    character_sheet_id: "Lonestar_Lv2_Human_Pistol"
+    prefab_name: "Seattle:Core/HumanMale"
+    character_sheet_id: "Errant_Lv2_Human_Pistol"
     equipment_sheet_id: "Lonestar_Pistol_Low"
     character_mod {
       stats {
@@ -12882,6 +13780,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -12914,13 +13815,15 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
     }
-    team_id: "Civilians"
+    team_id: "Squad 4 Marines"
     char_name: "Marine"
     GeneralTags: "squad4a"
     GeneralTags: "spawner"
@@ -12931,7 +13834,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h2c4b9c4"
-    karma: 37
+    karma: 56
   }
 }
 characters {
@@ -12951,8 +13854,8 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Gangers/TrollMaleGanger_Halloweener"
-    character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
+    prefab_name: "Seattle:Gangers/TrollMaleGanger_Halloweener"
+    character_sheet_id: "Errant_Lv1_Ork_Shotgun"
     equipment_sheet_id: "Lonestar_Shotgun_Low"
     character_mod {
       stats {
@@ -12975,6 +13878,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -13007,13 +13913,15 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
     }
-    team_id: "Civilians"
+    team_id: "Squad 4 Gangers"
     char_name: "Ganger Leader"
     GeneralTags: "squad4b"
     GeneralTags: "spawner"
@@ -13024,7 +13932,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h6c4b1"
-    karma: 33
+    karma: 41
   }
 }
 characters {
@@ -13044,12 +13952,12 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/ElfFemale"
-    character_sheet_id: "Lonestar_Lv1_Human_Mage"
+    prefab_name: "Seattle:Core/ElfFemale"
+    character_sheet_id: "Errant_Lv1_Human_Mage"
     equipment_sheet_id: "Lonestar_Mage_Low"
     character_mod {
       stats {
-        body: 1
+        body: 0
         quickness: 0
         strength: 0
         charisma: 0
@@ -13068,6 +13976,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -13100,13 +14011,15 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Mage"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
     }
-    team_id: "Civilians"
+    team_id: "Squad 4 Marines"
     char_name: "Marine Mage"
     GeneralTags: "squad4a"
     GeneralTags: "spawner"
@@ -13117,7 +14030,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h1c4"
-    karma: 42
+    karma: 43
   }
 }
 characters {
@@ -13137,8 +14050,8 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/HumanMale"
-    character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
+    prefab_name: "Seattle:Core/HumanMale"
+    character_sheet_id: "Errant_Lv1_Ork_Shotgun"
     equipment_sheet_id: "Lonestar_Shotgun_Low"
     character_mod {
       stats {
@@ -13161,6 +14074,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -13193,13 +14109,15 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
     }
-    team_id: "Civilians"
+    team_id: "Squad 4 Marines"
     char_name: "Marine"
     GeneralTags: "squad4a"
     GeneralTags: "spawner"
@@ -13210,7 +14128,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h5c4b6c4"
-    karma: 33
+    karma: 41
   }
 }
 characters {
@@ -13230,8 +14148,8 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/HumanMale"
-    character_sheet_id: "Lonestar_Lv1_Captain"
+    prefab_name: "Seattle:Core/HumanMale"
+    character_sheet_id: "Errant_Lv1_Captain"
     equipment_sheet_id: "Lonestar_Captain_Low"
     character_mod {
       stats {
@@ -13254,6 +14172,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -13286,13 +14207,15 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
     }
-    team_id: "Civilians"
+    team_id: "Squad 4 Marines"
     char_name: "Marine"
     GeneralTags: "squad4a"
     GeneralTags: "spawner"
@@ -13303,7 +14226,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h5c4b6c4"
-    karma: 44
+    karma: 52
   }
 }
 characters {
@@ -13323,8 +14246,8 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Gangers/OrkMaleGanger_Halloweener"
-    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
+    prefab_name: "Seattle:Gangers/OrkMaleGanger_Halloweener"
+    character_sheet_id: "Errant_Lv1_Heavy_Explosive"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
       stats {
@@ -13347,6 +14270,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -13379,13 +14305,15 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
     }
-    team_id: "Civilians"
+    team_id: "Squad 4 Gangers"
     char_name: "Ganger"
     GeneralTags: "squad4b"
     GeneralTags: "spawner"
@@ -13396,7 +14324,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h6c4b1"
-    karma: 39
+    karma: 47
   }
 }
 characters {
@@ -13416,8 +14344,8 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Gangers/ElfMaleGangerEyepatch"
-    character_sheet_id: "Lonestar_Lv2_Human_Pistol"
+    prefab_name: "Seattle:Gangers/ElfMaleGangerEyepatch"
+    character_sheet_id: "Errant_Lv2_Human_Pistol"
     equipment_sheet_id: "Lonestar_Pistol_Low"
     character_mod {
       stats {
@@ -13440,6 +14368,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -13472,13 +14403,15 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
     }
-    team_id: "Civilians"
+    team_id: "Squad 4 Gangers"
     char_name: "Ganger"
     GeneralTags: "squad4b"
     GeneralTags: "spawner"
@@ -13489,7 +14422,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h6c4b1"
-    karma: 37
+    karma: 56
   }
 }
 characters {
@@ -13509,12 +14442,12 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Gangers/ElfFemaleGangerMohawk"
-    character_sheet_id: "Lonestar_Lv1_Human_Mage"
+    prefab_name: "Seattle:Gangers/ElfFemaleGangerMohawk"
+    character_sheet_id: "Errant_Lv1_Human_Mage"
     equipment_sheet_id: "Lonestar_Mage_Low"
     character_mod {
       stats {
-        body: 1
+        body: 0
         quickness: 0
         strength: 0
         charisma: 0
@@ -13533,6 +14466,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -13565,13 +14501,15 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Mage"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
     }
-    team_id: "Civilians"
+    team_id: "Squad 4 Gangers"
     char_name: "Ganger Mage"
     GeneralTags: "squad4b"
     GeneralTags: "spawner"
@@ -13582,7 +14520,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h6c4b1"
-    karma: 42
+    karma: 43
   }
 }
 characters {
@@ -13873,9 +14811,21 @@ team_affiliations {
   affiliation: 0
   affiliation: 0
   affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
 }
 team_affiliations {
   team_name: "Gangers"
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
   affiliation: 0
   affiliation: 0
   affiliation: 0
@@ -13887,9 +14837,99 @@ team_affiliations {
   affiliation: 0
   affiliation: 0
   affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
 }
 team_affiliations {
   team_name: "Civilians"
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+}
+team_affiliations {
+  team_name: "Squad 2 Gangers"
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+}
+team_affiliations {
+  team_name: "Squad 2 Marines"
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+}
+team_affiliations {
+  team_name: "Squad 3 Gangers"
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+}
+team_affiliations {
+  team_name: "Squad 3 Marines"
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+}
+team_affiliations {
+  team_name: "Squad 4 Gangers"
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+}
+team_affiliations {
+  team_name: "Squad 4 Marines"
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
   affiliation: 0
   affiliation: 0
   affiliation: 0

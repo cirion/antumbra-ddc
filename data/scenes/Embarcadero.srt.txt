@@ -10592,6 +10592,7 @@ characters {
     }
     portrait_code_override: "s5h2c2"
     karma: 6
+    persistent_body: true
   }
 }
 characters {
@@ -10615,6 +10616,18 @@ characters {
     equipment_sheet_id: "Lonestar_Lv1_Captain_Gear"
     character_mod {
       stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
         morale: 0
         discipline: 0
         awareness: 0
@@ -10622,12 +10635,43 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
       }
       specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
       }
-      attitude: AttitudeCautious
+      archetypeName: "gumbo_Soldier"
+      attitude: AttitudeAggressive
       vulnerabilities {
       }
     }
@@ -10685,11 +10729,14 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
         close_combat: 0
-        throwing_weapons: 3
+        throwing_weapons: 0
         spellcasting: 0
         decking: 0
         conjuring: 0
@@ -10717,7 +10764,8 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      attitude: AttitudeCautious
+      archetypeName: "gumbo_Soldier"
+      attitude: AttitudeAggressive
       vulnerabilities {
       }
     }
@@ -10734,7 +10782,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h3c4b4c4"
-    karma: 48
+    karma: 39
     scale_character_sheet: true
   }
 }
@@ -10779,6 +10827,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -10811,7 +10862,8 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      attitude: AttitudeCautious
+      archetypeName: "gumbo_Soldier"
+      attitude: AttitudeAggressive
       vulnerabilities {
       }
     }
@@ -10851,7 +10903,7 @@ characters {
     equipment_sheet_id: "Lonestar_Mage_Low"
     character_mod {
       stats {
-        body: 1
+        body: 0
         quickness: 0
         strength: 0
         charisma: 0
@@ -10870,6 +10922,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -10902,8 +10957,8 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
-      attitude: AttitudeCautious
+      archetypeName: "gumbo_Mage"
+      attitude: AttitudeAggressive
       vulnerabilities {
       }
     }
@@ -10921,7 +10976,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h1c4"
-    karma: 42
+    karma: 40
     scale_character_sheet: true
   }
 }
@@ -10942,7 +10997,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/HumanMale"
+    prefab_name: "Seattle:Core/HumanMale"
     character_sheet_id: "Lonestar_Lv2_Human_Pistol"
     equipment_sheet_id: "Lonestar_Pistol_Low"
     character_mod {
@@ -10966,6 +11021,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -10998,7 +11056,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -11062,6 +11120,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -11094,6 +11155,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -11157,6 +11219,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -11189,7 +11254,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -11253,6 +11318,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -11285,7 +11353,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -11325,7 +11393,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/HumanMale"
+    prefab_name: "Seattle:Core/HumanMale"
     character_sheet_id: "Lonestar_Lv2_Human_Pistol"
     equipment_sheet_id: "Lonestar_Pistol_Low"
     character_mod {
@@ -11349,6 +11417,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -11381,8 +11452,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -11443,11 +11516,14 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
         close_combat: 0
-        throwing_weapons: 3
+        throwing_weapons: 0
         spellcasting: 0
         decking: 0
         conjuring: 0
@@ -11475,6 +11551,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -11492,7 +11569,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h6c4b1c4"
-    karma: 48
+    karma: 39
     scale_character_sheet: true
   }
 }
@@ -11537,6 +11614,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -11569,6 +11649,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -11607,7 +11688,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/HumanMale"
+    prefab_name: "Seattle:Core/HumanMale"
     character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
@@ -11631,100 +11712,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
-      }
-      skills {
-        ranged_combat: 0
-        close_combat: 0
-        throwing_weapons: 3
-        spellcasting: 0
-        decking: 0
-        conjuring: 0
-        spirit_summoning: 0
-        drone_control: 0
-        biotech: 0
-        dodge: 0
-        etiquette_corporate: 0
-        etiquette_security: 0
-        etiquette_gang: 0
-        etiquette_socialite: 0
-        chi_casting: 0
-        etiquette_shadowrunner: 0
-        etiquette_street: 0
-        etiquette_academic: 0
-      }
-      specializations {
-        pistol: 0
-        rifle: 0
-        shotgun: 0
-        smg: 0
-        edged: 0
-        unarmed: 0
-        spirit_control: 0
-        esp_control: 0
-        drone_combat: 0
-      }
-      archetypeName: "Guard - Seek And Destroy"
-      attitude: AttitudeAggressive
-    }
-    equipment {
-      prefab_name: "Outfit_Security"
-    }
-    team_id: "Civilians"
-    char_name: "Marine"
-    GeneralTags: "isMarine"
-    GeneralTags: "isWave4"
-    GeneralTags: ""
-    enabled_at_start: true
-    pc_spawn_number: -1
-    portrait {
-      filename: ""
-    }
-    portrait_code_override: "s6h6c4b1c4"
-    karma: 39
-    scale_character_sheet: true
-  }
-}
-characters {
-  name: "chars_icon_playerIcon"
-  gridPoint {
-    x: -32
-    y: 0
-    z: 52
-  }
-  orientation: ORIENTATION_N
-  GeneralTags: "isMarine"
-  GeneralTags: "isWave4"
-  GeneralTags: ""
-  displayName: "Marine Squad 2 Guard 3"
-  idRef {
-    id: "537bac8464343129595f823a"
-  }
-  lod: 0
-  character_instance {
-    prefab_name: "Core/HumanMale"
-    character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
-    equipment_sheet_id: "Lonestar_Shotgun_Low"
-    character_mod {
-      stats {
-        body: 1
-        quickness: 0
-        strength: 0
-        charisma: 0
-        intelligence: 0
-        willpower: 0
-        essence: 0
-        magic: 0
-        hp: 0
-        ap: 0
-        armor: 0
-        force: 0
-        morale: 0
-        discipline: 0
-        awareness: 0
-        perception: 0
-        authority: 0
-        protect_tether_range: 0
-        move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -11757,8 +11747,109 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
+    }
+    equipment {
+      prefab_name: "Outfit_Security"
+    }
+    team_id: "Civilians"
+    char_name: "Marine"
+    GeneralTags: "isMarine"
+    GeneralTags: "isWave4"
+    GeneralTags: ""
+    enabled_at_start: true
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    portrait_code_override: "s6h6c4b1c4"
+    karma: 39
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -32
+    y: 0
+    z: 52
+  }
+  orientation: ORIENTATION_W
+  GeneralTags: "isMarine"
+  GeneralTags: "isWave4"
+  GeneralTags: ""
+  displayName: "Marine Squad 2 Guard 3"
+  idRef {
+    id: "537bac8464343129595f823a"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Core/HumanMale"
+    character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
+    equipment_sheet_id: "Lonestar_Shotgun_Low"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "gumbo_Soldier"
+      attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -11774,7 +11865,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h1c4b2c4"
-    karma: 36
+    karma: 33
     scale_character_sheet: true
   }
 }
@@ -11819,6 +11910,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -11851,7 +11945,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -11891,12 +11985,12 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/ElfFemale"
+    prefab_name: "Seattle:Core/ElfFemale"
     character_sheet_id: "Lonestar_Lv1_Human_Mage"
     equipment_sheet_id: "Lonestar_Mage_Low"
     character_mod {
       stats {
-        body: 1
+        body: 0
         quickness: 0
         strength: 0
         charisma: 0
@@ -11915,6 +12009,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -11947,8 +12044,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Mage"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -11964,7 +12063,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h1c4"
-    karma: 42
+    karma: 40
     scale_character_sheet: true
   }
 }
@@ -11985,7 +12084,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/HumanMale"
+    prefab_name: "Seattle:Core/HumanMale"
     character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
     equipment_sheet_id: "Lonestar_Shotgun_Low"
     character_mod {
@@ -12009,6 +12108,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -12041,7 +12143,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
       vulnerabilities {
       }

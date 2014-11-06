@@ -2614,6 +2614,39 @@ triggers {
         float_value: 1
       }
     }
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "isTirArrived"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
   }
   actions {
     ops {
@@ -2740,6 +2773,39 @@ triggers {
       }
       args {
         float_value: 1
+      }
+    }
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "isTirArrived"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
       }
     }
   }
@@ -2870,6 +2936,39 @@ triggers {
         float_value: 1
       }
     }
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "isTirArrived"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
   }
   actions {
     ops {
@@ -2996,6 +3095,39 @@ triggers {
       }
       args {
         float_value: 1
+      }
+    }
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "isTirArrived"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
       }
     }
   }
@@ -11316,7 +11448,7 @@ triggers {
         }
       }
       args {
-        string_value: "We should head upstairs as soon as possible! The longer we wait, the more marines will arrive."
+        string_value: "We need to get upstairs!"
       }
       args {
         float_value: 0
@@ -11840,7 +11972,7 @@ triggers {
         }
       }
       args {
-        string_value: "They won\'t stop coming! We have to get upstairs!"
+        string_value: "We have to get upstairs!"
       }
       args {
         float_value: 0
@@ -13167,6 +13299,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -13259,7 +13392,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -13314,6 +13447,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Mage"
       vulnerabilities {
       }
     }
@@ -13367,6 +13501,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -13420,6 +13555,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -13472,6 +13608,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Mage"
       vulnerabilities {
       }
     }
@@ -13618,6 +13755,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Mage"
       vulnerabilities {
       }
     }
@@ -13665,6 +13803,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -13754,7 +13893,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -13842,7 +13981,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -14802,7 +14941,7 @@ characters {
       }
       specializations {
       }
-      archetypeName: "Guard - Hunt And Destroy"
+      archetypeName: "gumbo_Mage"
       vulnerabilities {
       }
     }
@@ -14856,7 +14995,7 @@ characters {
       }
       specializations {
       }
-      archetypeName: "Guard - Hunt And Destroy"
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -14910,6 +15049,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -14962,6 +15102,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -15054,7 +15195,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -15109,6 +15250,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -15162,6 +15304,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -15254,7 +15397,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -15309,7 +15452,7 @@ characters {
       }
       specializations {
       }
-      archetypeName: "Guard - Hunt And Destroy"
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -15363,7 +15506,7 @@ characters {
       }
       specializations {
       }
-      archetypeName: "Guard - Hunt And Destroy"
+      archetypeName: "gumbo_Mage"
       vulnerabilities {
       }
     }
@@ -15417,6 +15560,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -15469,6 +15613,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }

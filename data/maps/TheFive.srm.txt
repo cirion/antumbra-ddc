@@ -18538,3 +18538,13 @@ props {
   }
   lod: 0
 }
+props {
+  name: "barrens_vehicle_headTurnerMotorcycle01"
+  gridPoint {
+    x: -47
+    y: 0
+    z: -17
+  }
+  orientation: ORIENTATION_W
+  lod: 0
+}

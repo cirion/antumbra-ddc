@@ -316,192 +316,6 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Teleport Actor"
-      args {
-        call_value {
-          functionName: "All Actors With Tag"
-          args {
-            call_value {
-              functionName: "Get Map Item (SenseTagList)"
-              args {
-                string_value: "isWave3"
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "AllOrAny"
-              }
-              args {
-                int_value: 0
-              }
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Center of Region"
-          args {
-            call_value {
-              functionName: "Get Map Item (Region)"
-              args {
-                string_value: "536fa9b9366236941d00306f"
-              }
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "FacingDirection"
-          }
-          args {
-            int_value: 5
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "TeleportMethod"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Teleport Actor"
-      args {
-        call_value {
-          functionName: "All Actors With Tag"
-          args {
-            call_value {
-              functionName: "Get Map Item (SenseTagList)"
-              args {
-                string_value: "isWave4"
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "AllOrAny"
-              }
-              args {
-                int_value: 0
-              }
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Center of Region"
-          args {
-            call_value {
-              functionName: "Get Map Item (Region)"
-              args {
-                string_value: "536fa9d0366236941d003070"
-              }
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "FacingDirection"
-          }
-          args {
-            int_value: 5
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "TeleportMethod"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Teleport Actor"
-      args {
-        call_value {
-          functionName: "All Actors With Tag"
-          args {
-            call_value {
-              functionName: "Get Map Item (SenseTagList)"
-              args {
-                string_value: "isWave5"
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "AllOrAny"
-              }
-              args {
-                int_value: 0
-              }
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Center of Region"
-          args {
-            call_value {
-              functionName: "Get Map Item (Region)"
-              args {
-                string_value: "536fa9e0366236941d003071"
-              }
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "FacingDirection"
-          }
-          args {
-            int_value: 5
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "TeleportMethod"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-    }
-    ops {
       functionName: "Change Actor Team"
       args {
         call_value {
@@ -4300,20 +4114,6 @@ triggers {
       }
     }
     ops {
-      functionName: "Trigger: Wait for Rounds"
-      args {
-        int_value: 1
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (SceneDimension)"
-          args {
-            string_value: "Default"
-          }
-        }
-      }
-    }
-    ops {
       functionName: "Teleport Actor"
       args {
         call_value {
@@ -4341,12 +4141,12 @@ triggers {
       }
       args {
         call_value {
-          functionName: "Center of Region"
+          functionName: "Get Random Point Within Region"
           args {
             call_value {
               functionName: "Get Map Item (Region)"
               args {
-                string_value: "536fbf14366236941d00309e"
+                string_value: "5458e8f8393139d418001262"
               }
             }
           }
@@ -4417,44 +4217,6 @@ triggers {
           functionName: "Get Map Item (SceneDimension)"
           args {
             string_value: "Default"
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Order Actor to Hunt And Destroy (ThreatType)"
-      args {
-        call_value {
-          functionName: "All Actors With Tag"
-          args {
-            call_value {
-              functionName: "Get Map Item (SenseTagList)"
-              args {
-                string_value: "isWave2"
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "AllOrAny"
-              }
-              args {
-                int_value: 0
-              }
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "ThreatType"
-          }
-          args {
-            int_value: 0
           }
         }
       }
@@ -5578,57 +5340,6 @@ triggers {
     }
   }
   actions {
-    ops {
-      functionName: "Teleport Actor near Actor"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Get Map Item (Actor)"
-              args {
-                string_value: "536d60fe6434317b17cbaec8"
-              }
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        int_value: 2
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (Player)"
-          args {
-            int_value: 0
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "FacingDirection"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "TeleportMethod"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-    }
     ops {
       functionName: "Teleport Actor near Actor"
       args {
@@ -7254,6 +6965,49 @@ triggers {
           functionName: "Get Map Item (SceneDimension)"
           args {
             string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Heal Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "536d60af6434317b17cbaec7"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        int_value: 100
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "HPOrAP"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
           }
         }
       }
@@ -16520,6 +16274,51 @@ regions {
   loop_combat_music: true
   loop_default_music: false
 }
+regions {
+  name: "Wave 2 Spawn"
+  position {
+    x: -16
+    y: -9
+    width: 3
+    height: 3
+  }
+  enabledAtStart: true
+  is_camera_region: false
+  idRef {
+    id: "5458e8f8393139d418001262"
+  }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_closet: false
+  is_teleporter_region: false
+  directional_light_dir {
+    x: -0.5
+    y: -1
+    z: -0.75
+  }
+  directional_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambient_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambience_template: ""
+  combat_music: ""
+  default_music: ""
+  loop_combat_music: true
+  loop_default_music: false
+}
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
@@ -16686,6 +16485,10 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
+        is_fearless: 1
       }
       skills {
         ranged_combat: 0
@@ -16697,6 +16500,7 @@ characters {
         edged: 0
         unarmed: 0
       }
+      archetypeName: "Non-Combatant"
       vulnerabilities {
       }
     }
@@ -16712,7 +16516,7 @@ characters {
       filename: "backer_humanmale_randynickel_snick"
     }
     portrait_code_override: "s5h0c6b4c4t0"
-    karma: 177
+    karma: 174
   }
 }
 characters {
@@ -16786,7 +16590,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Hunt And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeBoss
       vulnerabilities {
       }
@@ -16881,7 +16685,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Hunt And Destroy"
+      archetypeName: "gumbo_Mage"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -17075,7 +16879,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -17253,7 +17057,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Mage"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -17303,6 +17107,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -17390,7 +17195,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "Guard - Hunt And Destroy"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -17440,6 +17245,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Mage"
       vulnerabilities {
       }
     }
@@ -17488,6 +17294,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -17506,9 +17313,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 3
+    x: -21
     y: 0
-    z: -37
+    z: -15
   }
   orientation: ORIENTATION_S
   GeneralTags: "isWave3"
@@ -17555,11 +17362,11 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 3
+    x: -20
     y: 0
-    z: -36
+    z: -18
   }
-  orientation: ORIENTATION_S
+  orientation: ORIENTATION_E
   GeneralTags: "isWave3"
   GeneralTags: "isGanger"
   displayName: "Wave 3 Add 3"
@@ -17604,9 +17411,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 3
+    x: -23
     y: 0
-    z: -38
+    z: -18
   }
   orientation: ORIENTATION_S
   GeneralTags: "isWave3"
@@ -17653,9 +17460,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -2
+    x: -60
     y: 0
-    z: -37
+    z: 9
   }
   orientation: ORIENTATION_S
   GeneralTags: "isWave5"
@@ -17683,6 +17490,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "Guard - Hunt And Destroy"
       vulnerabilities {
       }
     }
@@ -17701,9 +17509,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -2
+    x: -59
     y: 0
-    z: -36
+    z: 12
   }
   orientation: ORIENTATION_S
   GeneralTags: "isWave5"
@@ -17731,6 +17539,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "Guard - Hunt And Destroy"
       vulnerabilities {
       }
     }
@@ -17749,9 +17558,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -2
+    x: -64
     y: 0
-    z: -35
+    z: 11
   }
   orientation: ORIENTATION_S
   GeneralTags: "isWave5"
@@ -17779,6 +17588,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Mage"
       vulnerabilities {
       }
     }
@@ -17800,9 +17610,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 0
+    x: -53
     y: 0
-    z: -38
+    z: -19
   }
   orientation: ORIENTATION_S
   GeneralTags: "isWave4"
@@ -17830,6 +17640,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -17848,9 +17659,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 0
+    x: -49
     y: 0
-    z: -37
+    z: -16
   }
   orientation: ORIENTATION_S
   GeneralTags: "isWave4"
@@ -17878,6 +17689,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }
@@ -17896,9 +17708,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 0
+    x: -53
     y: 0
-    z: -36
+    z: -13
   }
   orientation: ORIENTATION_S
   GeneralTags: "isWave4"
@@ -17926,6 +17738,7 @@ characters {
       }
       specializations {
       }
+      archetypeName: "gumbo_Soldier"
       vulnerabilities {
       }
     }

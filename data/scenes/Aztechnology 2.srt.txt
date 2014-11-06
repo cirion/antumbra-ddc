@@ -42,7 +42,7 @@ triggers {
             string_value: "FactionList"
           }
           args {
-            int_value: 2
+            int_value: 1
           }
         }
       }
@@ -64,7 +64,7 @@ triggers {
             string_value: "FactionList"
           }
           args {
-            int_value: 2
+            int_value: 1
           }
         }
       }
@@ -356,7 +356,7 @@ triggers {
             string_value: "FactionList"
           }
           args {
-            int_value: 2
+            int_value: 1
           }
         }
       }
@@ -2830,6 +2830,157 @@ triggers {
   }
   is_oneshot: true
 }
+triggers {
+  name: "Squad 4 Hostile"
+  events {
+    ops {
+      functionName: "On Region Enter"
+      args {
+        call_value {
+          functionName: "Get Map Item (Region)"
+          args {
+            string_value: "545532cc3931391c22000c2b"
+          }
+        }
+      }
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "A2_AztechnologyHostile"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Set Team Alliance"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeamAlliance"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 2
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Team Alliance"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 2
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeamAlliance"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "545532e83931391c22000c2c"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
 regions {
   name: "Second Security Checkpoint"
   position {
@@ -2965,6 +3116,51 @@ regions {
   loop_combat_music: true
   loop_default_music: true
 }
+regions {
+  name: "Squad 4 Hostile"
+  position {
+    x: -99
+    y: 41
+    width: 1
+    height: 4
+  }
+  enabledAtStart: true
+  is_camera_region: false
+  idRef {
+    id: "545532cc3931391c22000c2b"
+  }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_closet: false
+  is_teleporter_region: false
+  directional_light_dir {
+    x: -0.5
+    y: -1
+    z: -0.75
+  }
+  directional_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambient_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambience_template: ""
+  combat_music: ""
+  default_music: ""
+  loop_combat_music: true
+  loop_default_music: false
+}
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
@@ -2989,24 +3185,69 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Security/HumanMaleSecurity"
+    prefab_name: "Seattle:Security/HumanMaleSecurity"
     character_sheet_id: "Lonestar_Lv1_Captain"
     equipment_sheet_id: "Lonestar_Captain_Low"
     character_mod {
       stats {
-        morale: 24
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
         discipline: 0
-        awareness: 24
+        awareness: 0
         perception: 0
         authority: 0
-        protect_tether_range: 5
+        protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
       }
       specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
       }
-      archetypeName: "Guard - Hunt And Destroy"
+      archetypeName: "gumbo_Soldier"
+      attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "LoneStar"
     char_name: "Security Screener"
@@ -3035,7 +3276,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Security/DwarfFemaleSecurity"
+    prefab_name: "Seattle:Security/DwarfFemaleSecurity"
     character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
@@ -3059,6 +3300,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -3091,8 +3335,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "LoneStar"
     char_name: "Security Guard"
@@ -3118,7 +3364,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Security/ElfMaleExecSecurity"
+    prefab_name: "Seattle:Security/ElfMaleExecSecurity"
     character_sheet_id: "Lonestar_Lv2_Captain"
     character_mod {
       stats {
@@ -3141,6 +3387,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -3173,8 +3422,10 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "AR 1 Semopal vz88v"
@@ -3185,7 +3436,7 @@ characters {
     equipment {
       prefab_name: "HealthPack"
     }
-    team_id: "LoneStar"
+    team_id: "Squad 4"
     char_name: "Security Guard"
     GeneralTags: "squad4"
     GeneralTags: "floor2"
@@ -3209,7 +3460,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Security/ElfMaleSecurity"
+    prefab_name: "Seattle:Security/ElfMaleSecurity"
     character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
     equipment_sheet_id: "Lonestar_SMG_Low"
     character_mod {
@@ -3233,6 +3484,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -3265,10 +3519,12 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
-    team_id: "LoneStar"
+    team_id: "Squad 4"
     char_name: "Security Guard"
     GeneralTags: "squad4"
     GeneralTags: "floor2"
@@ -3292,9 +3548,9 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Security/DwarfMaleExecSecurity"
+    prefab_name: "Seattle:Security/DwarfMaleExecSecurity"
     character_sheet_id: "Lonestar_Lv2_Human_Pistol"
-    equipment_sheet_id: "Lonestar_Pistol_Low"
+    equipment_sheet_id: "Errant_Lv1_Pistol"
     character_mod {
       stats {
         body: 0
@@ -3316,6 +3572,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -3348,10 +3607,12 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "gumbo_Soldier"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
-    team_id: "LoneStar"
+    team_id: "Squad 4"
     char_name: "Security Guard"
     GeneralTags: "squad4"
     GeneralTags: "floor2"
@@ -3456,35 +3717,23 @@ allow_drawn_weapons: false
 team_affiliations {
   team_name: "Shadowrunners"
   affiliation: 0
-  affiliation: 1
   affiliation: 0
-  affiliation: 0
-}
-team_affiliations {
-  team_name: "Gangers"
-  affiliation: 1
-  affiliation: 0
-  affiliation: 1
   affiliation: 0
 }
 team_affiliations {
   team_name: "LoneStar"
   affiliation: 0
-  affiliation: 1
   affiliation: 0
   affiliation: 0
 }
 team_affiliations {
-  team_name: "Civilians"
-  affiliation: 0
+  team_name: "Squad 4"
   affiliation: 0
   affiliation: 0
   affiliation: 0
 }
 scene_dimensions {
   dimension_name: "Default"
-}
-character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {

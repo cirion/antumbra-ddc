@@ -20232,7 +20232,7 @@ props {
   gridPoint {
     x: -72.1
     y: 0
-    z: -2.7755576e-17
+    z: -2.7755576e-017
   }
   orientation: ORIENTATION_S
   properties {
