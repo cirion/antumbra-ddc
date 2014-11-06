@@ -7553,7 +7553,7 @@ triggers {
     ops {
       functionName: "Trigger: Wait for Rounds"
       args {
-        int_value: 2
+        int_value: 1
       }
       args {
         call_value {
@@ -16702,7 +16702,7 @@ regions {
 regions {
   name: "NC Reinforcements"
   position {
-    x: -27
+    x: -30
     y: 51
     width: 2
     height: 2
