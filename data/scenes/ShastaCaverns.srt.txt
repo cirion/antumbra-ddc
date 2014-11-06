@@ -9598,6 +9598,10 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
+        is_fearless: 1
       }
       skills {
         ranged_combat: 0
@@ -9609,6 +9613,7 @@ characters {
         edged: 0
         unarmed: 0
       }
+      archetypeName: "Non-Combatant"
       vulnerabilities {
       }
     }
@@ -9618,7 +9623,7 @@ characters {
     portrait {
       filename: "backer_humanfemale_wren"
     }
-    karma: 177
+    karma: 174
   }
 }
 characters {
