@@ -18760,6 +18760,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Matrix Hub to Entrance"
@@ -18805,6 +18806,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Matrix Entrance to Heli"
@@ -18850,6 +18852,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Matrix Heli to Entrance"
@@ -18895,6 +18898,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Matrix Hub to Decker"
@@ -18940,6 +18944,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Matrix Decker to Hub"
@@ -18985,6 +18990,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Matrix Decker to Lock"
@@ -19030,6 +19036,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Matrix Lock to Decker"
@@ -19075,6 +19082,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Matrix Camera"
@@ -19120,6 +19128,7 @@ regions {
   default_music: "Seattle-Set8-MatrixLoop"
   loop_combat_music: false
   loop_default_music: true
+  no_fow_in_region: false
 }
 regions {
   name: "Camera"
@@ -19165,6 +19174,7 @@ regions {
   default_music: "Berlin-TitleTheme"
   loop_combat_music: true
   loop_default_music: true
+  no_fow_in_region: false
 }
 regions {
   name: "Tabitha Healing Mark"
@@ -19210,6 +19220,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Tabitha Banishing Mark"
@@ -19255,6 +19266,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Hans Mark"
@@ -19300,6 +19312,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Cavern Entrance"
@@ -19345,6 +19358,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Redding Soldiers Mark"
@@ -19390,6 +19404,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Holding Pen"
@@ -19435,6 +19450,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Tabitha Arrival"
@@ -19480,6 +19496,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Shavarus Arrival Region"
@@ -19525,6 +19542,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Open Stash"
@@ -19570,6 +19588,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 characters {
   name: "chars_icon_playerIcon"
@@ -23756,7 +23775,7 @@ variables {
   }
 }
 variables {
-  int_value: 25
+  int_value: 18
   variableref_value {
     scope: TsVariableScope_Scene
     name: "tophetRageTime"
