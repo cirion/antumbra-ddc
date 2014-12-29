@@ -1,6 +1,6 @@
-minX: -94
+minX: -97
 minZ: -22
-numX: 81
+numX: 84
 numZ: 148
 props {
   name: "museum_ground_largeMarble01"
@@ -3243,16 +3243,12 @@ props {
         }
       }
       ops {
-        functionName: "Evaluate If Actor Has Item"
+        functionName: "Comparison (bool)"
         args {
           call_value {
-            functionName: "Specific Actor"
+            functionName: "Get Variable (bool)"
             args {
-              call_value {
-                functionName: "Triggering Actor"
-              }
-            }
-            args {
+              string_value: "BarrierDestroyed"
             }
           }
         }
@@ -3260,7 +3256,7 @@ props {
           call_value {
             functionName: "Get Preset Value (int)"
             args {
-              string_value: "HasOrHasNot"
+              string_value: "IsOrIsNot"
             }
             args {
               int_value: 1
@@ -3269,9 +3265,12 @@ props {
         }
         args {
           call_value {
-            functionName: "Get Map Item (Item)"
+            functionName: "Get Preset Value (int)"
             args {
-              string_value: "a3-redding_office_key"
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
             }
           }
         }
@@ -3283,6 +3282,7 @@ props {
       doorSound: "DoorSwing"
       doorSoundBundle: "props"
     }
+    interaction_info_text: ""
   }
   lod: 0
 }
@@ -6250,6 +6250,7 @@ props {
       inspectText: "The Native Californian leaders entered your communications room, adding a lock of their own to the door. You\'ll need to find the key or somehow override the door\'s electronic security."
       disableAfterInteracting: false
     }
+    interaction_info_text: ""
   }
   lod: 0
 }
@@ -9554,16 +9555,12 @@ props {
         }
       }
       ops {
-        functionName: "Evaluate If Actor Has Item"
+        functionName: "Comparison (bool)"
         args {
           call_value {
-            functionName: "Specific Actor"
+            functionName: "Get Variable (bool)"
             args {
-              call_value {
-                functionName: "Triggering Actor"
-              }
-            }
-            args {
+              string_value: "BarrierDestroyed"
             }
           }
         }
@@ -9571,18 +9568,21 @@ props {
           call_value {
             functionName: "Get Preset Value (int)"
             args {
-              string_value: "HasOrHasNot"
+              string_value: "IsOrIsNot"
             }
             args {
-              int_value: 0
+              int_value: 1
             }
           }
         }
         args {
           call_value {
-            functionName: "Get Map Item (Item)"
+            functionName: "Get Preset Value (int)"
             args {
-              string_value: "a3-redding_office_key"
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
             }
           }
         }
@@ -9591,18 +9591,19 @@ props {
     inspectInteraction {
       dispalyTime: 10
       fadeTime: 0
-      inspectText: "You never lock your office door, but it looks like the Native Californians have. You\'ll need to find the key to get inside."
+      inspectText: "A magical force holds the door shut. A nearby talisman must be powering this spell."
       disableAfterInteracting: false
     }
+    interaction_info_text: ""
   }
   lod: 0
 }
 props {
   name: "office_tech_keycardLanyard"
   gridPoint {
-    x: -82
+    x: -97
     y: 0
-    z: 10
+    z: -6
   }
   orientation: ORIENTATION_S
   displayName: "Office Key"
@@ -20232,7 +20233,7 @@ props {
   gridPoint {
     x: -72.1
     y: 0
-    z: -2.7755576e-017
+    z: -2.7755576e-17
   }
   orientation: ORIENTATION_S
   properties {
@@ -20549,5 +20550,75 @@ props {
     z: 6
   }
   orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "secretLab_magic_skullPile"
+  gridPoint {
+    x: -82
+    y: 0
+    z: 9
+  }
+  orientation: ORIENTATION_S
+  displayName: "Skulls"
+  idRef {
+    id: "54a1d392643431c5494e2e41"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Destroy Talisman"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_ambientMagic"
+  gridPoint {
+    x: -82
+    y: 0
+    z: 9
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "LeyLineMedium"
+  }
+  displayName: "Skull FX"
+  idRef {
+    id: "54a1d4f2643431194bc43536"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+    interaction_info_text: ""
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_ambientMagic"
+  gridPoint {
+    x: -48
+    y: 0
+    z: 11
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "LeyLineMedium"
+  }
+  displayName: "Door Magic"
+  idRef {
+    id: "54a1d8fc6434310c4cdae62f"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+    interaction_info_text: ""
+  }
   lod: 0
 }
