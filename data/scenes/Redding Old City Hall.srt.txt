@@ -63,7 +63,7 @@ triggers {
         call_value {
           functionName: "Get Map Item (Scene)"
           args {
-            string_value: "Colma"
+            string_value: "Embarcadero"
           }
         }
       }
@@ -9126,6 +9126,7 @@ regions {
   default_music: "Seattle-Bar03"
   loop_combat_music: true
   loop_default_music: true
+  no_fow_in_region: false
 }
 regions {
   name: "Hear Explosion"
@@ -9171,6 +9172,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Normal Music Resumes"
@@ -9216,6 +9218,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Hear Omphalos"
@@ -9261,6 +9264,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 characters {
   name: "system_spawner_playerSpawner"

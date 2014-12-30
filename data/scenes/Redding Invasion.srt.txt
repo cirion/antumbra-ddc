@@ -540,7 +540,7 @@ triggers {
             string_value: "bool"
           }
           args {
-            int_value: 1
+            int_value: 0
           }
         }
       }
@@ -17476,6 +17476,7 @@ triggers {
         }
       }
       args {
+        string_value: "Magic drains from this place, releasing its grip on your office door."
       }
       args {
         float_value: 0
