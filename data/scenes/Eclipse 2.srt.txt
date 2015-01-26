@@ -9483,6 +9483,55 @@ triggers {
   }
   is_oneshot: false
 }
+triggers {
+  name: "THANKS HBS"
+  events {
+    ops {
+      functionName: "On Map Start"
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Set Actor AI Script"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "wanderer"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        string_value: "Guard - Protect"
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "54c3ed80346435ac11007914"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
 regions {
   name: "Second Floor Stairs"
   position {
@@ -9527,6 +9576,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Second Floor Elevator"
@@ -9572,6 +9622,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "First Floor Stairs"
@@ -9617,6 +9668,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Third Floor Elevator"
@@ -9662,6 +9714,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Outside Bedroom"
@@ -9707,6 +9760,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Camera First Floor"
@@ -9752,6 +9806,7 @@ regions {
   default_music: "Seattle-Set6-Combat"
   loop_combat_music: true
   loop_default_music: true
+  no_fow_in_region: false
 }
 regions {
   name: "Camera Second Floor"
@@ -9797,6 +9852,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Camera Third Floor"
@@ -9842,6 +9898,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 characters {
   name: "chars_icon_playerIcon"

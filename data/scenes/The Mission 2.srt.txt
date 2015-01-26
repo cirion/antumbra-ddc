@@ -3671,6 +3671,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Spawn Gangers"
@@ -3716,6 +3717,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Camera"
@@ -3745,15 +3747,15 @@ regions {
     z: -0.75
   }
   directional_light_color {
-    r: 0.05882353
-    g: 0.05882353
-    b: 0.3137255
+    r: 0.11764706
+    g: 0.11764706
+    b: 0.63137257
     a: 1
   }
   ambient_light_color {
     r: 0
     g: 0
-    b: 0.13725491
+    b: 0.27450982
     a: 1
   }
   ambience_template: "barrens-night"
@@ -3761,6 +3763,7 @@ regions {
   default_music: "Seattle-Bar19"
   loop_combat_music: true
   loop_default_music: true
+  no_fow_in_region: false
 }
 regions {
   name: "Ambush 2"
@@ -3806,6 +3809,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 characters {
   name: "system_spawner_playerSpawner"
@@ -5905,6 +5909,8 @@ team_affiliations {
 }
 scene_dimensions {
   dimension_name: "Default"
+}
+character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {

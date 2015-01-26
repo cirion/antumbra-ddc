@@ -1552,13 +1552,62 @@ triggers {
   }
   is_oneshot: true
 }
+triggers {
+  name: "THANKS HBS"
+  events {
+    ops {
+      functionName: "On Map Start"
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Set Actor AI Script"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "wanderer"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        string_value: "Guard - Protect"
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "54c3ed80346435ac11007914"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
 regions {
   name: "Camera"
   position {
     x: 2
     y: -60
-    width: 15
-    height: 71
+    width: 21
+    height: 72
   }
   enabledAtStart: true
   is_camera_region: true
@@ -1596,6 +1645,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: true
+  no_fow_in_region: false
 }
 regions {
   name: "Carver Hiss"
@@ -1641,6 +1691,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Sewer Entrance"
@@ -1686,6 +1737,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Outside Entrance"
@@ -1731,6 +1783,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 characters {
   name: "system_spawner_playerSpawner"
@@ -2700,8 +2753,6 @@ team_affiliations {
 scene_dimensions {
   dimension_name: "Default"
 }
-character_roster {
-}
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {
   prereq_description: ""
@@ -2719,6 +2770,6 @@ override_hiring_average_cost: false
 show_equip_screen_on_scene_load: false
 is_persistant: false
 is_persistant_has_value: false
-can_move_outside_camera_regions: true
-can_start_before_triggers: true
+can_move_outside_camera_regions: false
+can_start_before_triggers: false
 can_use_team_advancement: false

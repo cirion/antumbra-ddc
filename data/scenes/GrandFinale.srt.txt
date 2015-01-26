@@ -76,6 +76,64 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Set Actor Run Speed"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "537686d56434316a34fc469e"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "RunSpeedMethod"
+          }
+          args {
+            int_value: 3
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Actor In Passive Mode"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "537686d56434316a34fc469e"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -274,7 +332,7 @@ triggers {
             string_value: "FacingDirection"
           }
           args {
-            int_value: 1
+            int_value: 7
           }
         }
       }
@@ -326,6 +384,15 @@ triggers {
           }
         }
       }
+    }
+    ops {
+      functionName: "End Current Team Round"
+    }
+    ops {
+      functionName: "End Current Team Round"
+    }
+    ops {
+      functionName: "End Current Team Round"
     }
   }
   isActive: true
@@ -1751,8 +1818,8 @@ triggers {
 regions {
   name: "Kali Arrival"
   position {
-    x: -20
-    y: -15
+    x: -22
+    y: -18
     width: 1
     height: 1
   }
@@ -1792,6 +1859,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Kali Destination"
@@ -1837,6 +1905,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Camera"
@@ -1882,6 +1951,7 @@ regions {
   default_music: "Berlin-Haven"
   loop_combat_music: false
   loop_default_music: true
+  no_fow_in_region: false
 }
 characters {
   name: "chars_icon_playerIcon"
