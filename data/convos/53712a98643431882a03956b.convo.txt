@@ -27,7 +27,7 @@ nodes {
     id: "53712b40643431882a039589"
   }
   index: 1
-  text: "\342\200\246 and we welcome all allies to join us. \n\nYes, we\342\200\231ll be fighting the elves of Tir Tairngire, but ALL elves will be accepted here in Redding. Along with all dwarves, orcs, trolls, and humans. \n\nIt\342\200\231s people like you who will make this movement succeed, and we need your help.\n"
+  text: "\342\200\246 and we welcome all allies to join us. \n\nYes, we\342\200\231ll be fighting the elves of Tir Tairngire, but ALL elves will be accepted here in Redding. Along with all dwarves, orks, trolls, and humans. \n\nIt\342\200\231s people like you who will make this movement succeed, and we need your help.\n"
   branches {
     responseText: ""
     nextNodeIndex: 4

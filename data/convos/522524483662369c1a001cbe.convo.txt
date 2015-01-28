@@ -237,7 +237,7 @@ nodes {
     id: "5372521b6434311639fc5d1d"
   }
   index: 5
-  text: "Yes, we have made quite a team, have we not? I offer the brute strength of a trained orc, and you have... your own special talents. I have grown to value your companionship. I will gladly join you once more for \302\245750."
+  text: "Yes, we have made quite a team, have we not? I offer the brute strength of a trained ork, and you have... your own special talents. I have grown to value your companionship. I will gladly join you once more for \302\245750."
   branches {
     responseText: "{{CC}}\302\245750{{/CC}} You are worth it."
     conditions {

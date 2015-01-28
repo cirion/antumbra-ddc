@@ -243,7 +243,7 @@ nodes {
     id: "5388fae8643431654a5d135d"
   }
   index: 4
-  text: "Yes, that last run was\342\200\246 rather painful. Fortunately, a kind orc came across my corpse, and had the strength of will to drag it to safety. It\342\200\231s been a long recuperation, but I feel well enough to walk again."
+  text: "Yes, that last run was\342\200\246 rather painful. Fortunately, a kind ork came across my corpse, and had the strength of will to drag it to safety. It\342\200\231s been a long recuperation, but I feel well enough to walk again."
   branches {
     responseText: ""
     nextNodeIndex: 3
@@ -371,7 +371,7 @@ nodes {
     id: "5388fae8643431654a5d1366"
   }
   index: 11
-  text: "I am not a praying orc, but I could almost be one now. I thought for certain that they were doomed, as were we all. \n\nAnd then, you arrived just in time to save them. You are directly responsible for the continued lives of two dozen young metahumans, who will surely hold you in esteem for the remainder of their days.\n"
+  text: "I am not a praying ork, but I could almost be one now. I thought for certain that they were doomed, as were we all. \n\nAnd then, you arrived just in time to save them. You are directly responsible for the continued lives of two dozen young metahumans, who will surely hold you in esteem for the remainder of their days.\n"
   branches {
     responseText: ""
     nextNodeIndex: 3

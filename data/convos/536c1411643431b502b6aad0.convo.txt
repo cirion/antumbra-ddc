@@ -445,7 +445,7 @@ nodes {
     id: "536c165c643431b502b6ab40"
   }
   index: 11
-  text: "Hm\342\200\246 not a job, exactly, but there\'s a problem that could use your attention.\n\nYou\342\200\231ll be shocked to learn this, but I\342\200\231m an orc. Lots of folks in Redding are metas: trogs, dwarves, even a lot of elves, oddly enough. Everyone tends to get along pretty well. We keep our heads down and mind our own business."
+  text: "Hm\342\200\246 not a job, exactly, but there\'s a problem that could use your attention.\n\nYou\342\200\231ll be shocked to learn this, but I\342\200\231m an ork. Lots of folks in Redding are metas: trogs, dwarves, even a lot of elves, oddly enough. Everyone tends to get along pretty well. We keep our heads down and mind our own business."
   branches {
     responseText: ""
     nextNodeIndex: 12
