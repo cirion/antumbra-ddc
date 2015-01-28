@@ -36256,3 +36256,16 @@ props {
   }
   lod: 0
 }
+props {
+  name: "secretLab_wall_4x4fill"
+  gridPoint {
+    x: 10.299999
+    y: 0
+    z: 82.3
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "54c85e643464356406003de7"
+  }
+  lod: 0
+}

@@ -119,6 +119,28 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Enable/Disable Trigger"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Trigger)"
+          args {
+            string_value: "52340201366236e81a00268b"
+          }
+        }
+      }
+    }
   }
   isActive: false
   idRef {
@@ -1245,7 +1267,7 @@ triggers {
         }
       }
       args {
-        string_value: "gumbo_Auto"
+        string_value: "Guard - Protect"
       }
     }
     ops {
@@ -1260,7 +1282,7 @@ triggers {
       }
     }
     ops {
-      functionName: "Order Actor to Hunt And Destroy (ThreatType)"
+      functionName: "Order Actor to Hunt And Destroy (Team)"
       args {
         call_value {
           functionName: "Specific Actor"
@@ -1278,12 +1300,20 @@ triggers {
       }
       args {
         call_value {
-          functionName: "Get Preset Value (int)"
+          functionName: "Get Preset Value (string)"
           args {
-            string_value: "ThreatType"
+            string_value: "FactionList"
           }
           args {
-            int_value: 0
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
           }
         }
       }
@@ -12418,6 +12448,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Camera 2nd Floor"
@@ -12463,6 +12494,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Camera 3rd Floor"
@@ -12508,6 +12540,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Stairs Floor 1 to 2"
@@ -12553,6 +12586,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Stairs Floor 2 to 1"
@@ -12598,6 +12632,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Elevator Floor 2 to 3"
@@ -12643,6 +12678,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Elevator Floor 3 to 2"
@@ -12688,6 +12724,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Kali Proximity"
@@ -12733,6 +12770,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Matrix Camera"
@@ -12778,6 +12816,7 @@ regions {
   default_music: "Seattle-Set8-MatrixLoop"
   loop_combat_music: false
   loop_default_music: true
+  no_fow_in_region: false
 }
 regions {
   name: "Teleport Entrance to Puzzle"
@@ -12823,6 +12862,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Teleport Puzzle to Entrance"
@@ -12868,6 +12908,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Teleport Puzzle to Data"
@@ -12913,6 +12954,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Teleport Data to Puzzle"
@@ -12958,6 +13000,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Teleport Entance Returned"
@@ -13003,6 +13046,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Teleport Emergency Return"
@@ -13048,6 +13092,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 characters {
   name: "chars_icon_playerIcon"
@@ -16355,11 +16400,11 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 52
+    x: 53
     y: 0
-    z: 80
+    z: 81
   }
-  orientation: ORIENTATION_S
+  orientation: ORIENTATION_E
   idRef {
     id: "5386ad983662368010000496"
   }
