@@ -8410,14 +8410,15 @@ props {
     id: "5373de4c643431b8017c3c9d"
   }
   interactionRoot {
-    isEnabled: true
+    isEnabled: false
     interactionRadius: 1
     doorPoint {
       doorState: false
-      aiOnlyDoor: true
+      aiOnlyDoor: false
       doorSound: "DoorStone"
       doorSoundBundle: "props"
     }
+    interaction_info_text: ""
   }
   lod: 0
 }
