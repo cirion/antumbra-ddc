@@ -1509,7 +1509,7 @@ nodes {
       }
     }
     ops {
-      functionName: "Order Actor to Hunt And Destroy (ThreatType)"
+      functionName: "Order Actor to Hunt And Destroy (Team)"
       args {
         call_value {
           functionName: "All Actors With Tag"
@@ -1536,12 +1536,20 @@ nodes {
       }
       args {
         call_value {
-          functionName: "Get Preset Value (int)"
+          functionName: "Get Preset Value (string)"
           args {
-            string_value: "ThreatType"
+            string_value: "FactionList"
           }
           args {
             int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
           }
         }
       }

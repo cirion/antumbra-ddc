@@ -126,52 +126,6 @@ triggers {
       }
     }
     ops {
-      functionName: "Order Actor to Hunt And Destroy (Team)"
-      args {
-        call_value {
-          functionName: "All Actors With Tag"
-          args {
-            call_value {
-              functionName: "Get Map Item (SenseTagList)"
-              args {
-                string_value: "squad1"
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "AllOrAny"
-              }
-              args {
-                int_value: 0
-              }
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (string)"
-          args {
-            string_value: "FactionList"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (SceneDimension)"
-          args {
-            string_value: "Default"
-          }
-        }
-      }
-    }
-    ops {
       functionName: "Enable/Disable Interactable Object"
       args {
         call_value {
@@ -282,6 +236,52 @@ triggers {
       }
     }
     ops {
+      functionName: "Order Actor to Hunt And Destroy (Team)"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "squad1"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
       functionName: "Move Prop"
       args {
         call_value {
@@ -337,7 +337,7 @@ triggers {
             string_value: "WithOrWithout"
           }
           args {
-            int_value: 1
+            int_value: 0
           }
         }
       }
@@ -3836,6 +3836,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Guard Marshaling Area"
@@ -3881,6 +3882,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Kali Conversation Start"
@@ -3926,6 +3928,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Elevator"
@@ -3971,6 +3974,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Ring Phone 1"
@@ -4016,6 +4020,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Alarm 1"
@@ -4061,6 +4066,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Cabinet"
@@ -4106,6 +4112,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Offscreen"
@@ -4151,6 +4158,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Conference Vent Outside"
@@ -4196,6 +4204,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Conference Vent Inside"
@@ -4241,6 +4250,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Studio Vent Inside"
@@ -4286,6 +4296,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Producing Vent Inside"
@@ -4331,6 +4342,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Producing Vent Outside"
@@ -4376,6 +4388,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Studio Vent Outside"
@@ -4421,6 +4434,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Camera Region"
@@ -4466,6 +4480,7 @@ regions {
   default_music: "Seattle-Set8-Legwork"
   loop_combat_music: true
   loop_default_music: true
+  no_fow_in_region: false
 }
 regions {
   name: "Squad 1A Triggers"
@@ -4511,6 +4526,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 characters {
   name: "system_spawner_playerSpawner"
@@ -4544,6 +4560,7 @@ characters {
   }
   orientation: ORIENTATION_E
   GeneralTags: "squad1"
+  displayName: "Squad 1 Machete"
   idRef {
     id: "51ff1478366236f8030072ef"
   }
@@ -4633,6 +4650,7 @@ characters {
   }
   orientation: ORIENTATION_N
   GeneralTags: "squad1"
+  displayName: "Squad 1 Pistol Dwarf"
   idRef {
     id: "51ff1496366236f8030072f0"
   }
@@ -4734,6 +4752,7 @@ characters {
   }
   orientation: ORIENTATION_W
   GeneralTags: "squad1"
+  displayName: "Squad 1 Pistol Human"
   idRef {
     id: "51ff1903366236f8030072fb"
   }
@@ -4930,7 +4949,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Non-Combatant"
+      archetypeName: "Guard - Protect"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -5020,7 +5039,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Non-Combatant"
+      archetypeName: "Guard - Protect"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -5105,7 +5124,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Non-Combatant"
+      archetypeName: "Guard - Protect"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -5120,7 +5139,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 38
+    x: 40
     y: 0
     z: 26
   }

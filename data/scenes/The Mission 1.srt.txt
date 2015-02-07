@@ -1497,7 +1497,7 @@ triggers {
         call_value {
           functionName: "Get Map Item (Goal)"
           args {
-            string_value: "Defeat the gangers"
+            string_value: "Defend the marines"
           }
         }
       }
@@ -2113,7 +2113,7 @@ triggers {
         call_value {
           functionName: "Get Map Item (Goal)"
           args {
-            string_value: "Defeat the marines"
+            string_value: "Defend the gangers"
           }
         }
       }
@@ -2742,6 +2742,72 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Set Goal Status"
+      args {
+        call_value {
+          functionName: "Get Map Item (Goal)"
+          args {
+            string_value: "Defend the gangers"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "GoalStatus"
+          }
+          args {
+            int_value: 2
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Goal Status"
+      args {
+        call_value {
+          functionName: "Get Map Item (Goal)"
+          args {
+            string_value: "Find and defeat the remaining marines"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "GoalStatus"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -2890,6 +2956,72 @@ triggers {
           functionName: "Get Map Item (SceneDimension)"
           args {
             string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Goal Status"
+      args {
+        call_value {
+          functionName: "Get Map Item (Goal)"
+          args {
+            string_value: "Defend the marines"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "GoalStatus"
+          }
+          args {
+            int_value: 2
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Goal Status"
+      args {
+        call_value {
+          functionName: "Get Map Item (Goal)"
+          args {
+            string_value: "Find and defeat the remaining gangers"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "GoalStatus"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
           }
         }
       }
@@ -5483,7 +5615,7 @@ triggers {
         call_value {
           functionName: "Get Map Item (Goal)"
           args {
-            string_value: "Defeat the marines"
+            string_value: "Find and defeat the remaining marines"
           }
         }
       }
@@ -5711,7 +5843,7 @@ triggers {
         call_value {
           functionName: "Get Map Item (Goal)"
           args {
-            string_value: "Defeat the gangers"
+            string_value: "Find and defeat the remaining gangers"
           }
         }
       }
@@ -10801,6 +10933,7 @@ regions {
   default_music: "Seattle-Bar13"
   loop_combat_music: true
   loop_default_music: true
+  no_fow_in_region: false
 }
 regions {
   name: "Lonestar Flee"
@@ -10846,6 +10979,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Gangers Flee"
@@ -10891,6 +11025,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Confrontation Starts"
@@ -10936,6 +11071,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Companion Banter"
@@ -10981,6 +11117,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Final Convo"
@@ -11026,6 +11163,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Voire and Guards Disappear"
@@ -11071,6 +11209,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Squad 2 Hostile"
@@ -11116,6 +11255,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Squad 3 Aggro"
@@ -11161,6 +11301,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Squad 4 Aggro"
@@ -11206,6 +11347,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 characters {
   name: "system_spawner_playerSpawner"
@@ -14750,12 +14892,12 @@ goals {
   status: GoalStatus_Hidden
 }
 goals {
-  name: "Defeat the marines"
+  name: "Defend the gangers"
   type: GoalType_Primary
   status: GoalStatus_Hidden
 }
 goals {
-  name: "Defeat the gangers"
+  name: "Defend the marines"
   type: GoalType_Primary
   status: GoalStatus_Hidden
 }
@@ -14771,6 +14913,16 @@ goals {
 }
 goals {
   name: "Return to Eclipse"
+  type: GoalType_Primary
+  status: GoalStatus_Hidden
+}
+goals {
+  name: "Find and defeat the remaining gangers"
+  type: GoalType_Primary
+  status: GoalStatus_Hidden
+}
+goals {
+  name: "Find and defeat the remaining marines"
   type: GoalType_Primary
   status: GoalStatus_Hidden
 }
