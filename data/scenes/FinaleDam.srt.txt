@@ -487,7 +487,7 @@ triggers {
         call_value {
           functionName: "Get Map Item (Actor Reference)"
           args {
-            string_value: "539504de366236d829003b9b"
+            string_value: "54fb8742346435a81b00405b"
           }
         }
       }
@@ -562,12 +562,20 @@ triggers {
       }
     }
     ops {
-      functionName: "Enable/Disable Trigger"
+      functionName: "Trigger: Run Alternate Trigger"
+      args {
+        call_value {
+          functionName: "Get Map Item (Trigger)"
+          args {
+            string_value: "537a2cd76434313b4381ea5a"
+          }
+        }
+      }
       args {
         call_value {
           functionName: "Get Preset Value (int)"
           args {
-            string_value: "EnableOrDisable"
+            string_value: "WithOrWithout"
           }
           args {
             int_value: 1
@@ -576,9 +584,23 @@ triggers {
       }
       args {
         call_value {
-          functionName: "Get Map Item (Trigger)"
+          functionName: "Get Preset Value (int)"
           args {
-            string_value: "537a619e6434313b4381eb33"
+            string_value: "WaitOrNot"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
           }
         }
       }
@@ -6615,7 +6637,7 @@ triggers {
         }
       }
       args {
-        float_value: 0
+        float_value: -1
       }
     }
     ops {
@@ -7957,6 +7979,25 @@ triggers {
       }
     }
     ops {
+      functionName: "Play FX at Point"
+      args {
+        string_value: "EnvironmentExplosion"
+      }
+      args {
+        call_value {
+          functionName: "Current Location of Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "536c5c82366236d41e0027ac"
+              }
+            }
+          }
+        }
+      }
+    }
+    ops {
       functionName: "Play Animation From Manifest"
       args {
         call_value {
@@ -8724,6 +8765,27 @@ triggers {
             string_value: "Default"
           }
         }
+      }
+    }
+    ops {
+      functionName: "Set Actor AI Script"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "536c5c82366236d41e0027ac"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        string_value: "Guard - Protect"
       }
     }
     ops {
@@ -9749,93 +9811,6 @@ triggers {
       }
     }
     ops {
-      functionName: "Order Actor to Seek And Destroy (ThreatType)"
-      args {
-        call_value {
-          functionName: "All Actors With Tag"
-          args {
-            call_value {
-              functionName: "Get Map Item (SenseTagList)"
-              args {
-                string_value: "isTirGrunt"
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "AllOrAny"
-              }
-              args {
-                int_value: 0
-              }
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "ThreatType"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Order Actor to Hunt And Destroy (ThreatType)"
-      args {
-        call_value {
-          functionName: "All Actors on Team"
-          args {
-            call_value {
-              functionName: "Get Preset Value (string)"
-              args {
-                string_value: "FactionList"
-              }
-              args {
-                int_value: 5
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "AllOrAny"
-              }
-              args {
-                int_value: 0
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Map Item (SceneDimension)"
-              args {
-                string_value: "Default"
-              }
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "ThreatType"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-    }
-    ops {
       functionName: "Set Team Alliance"
       args {
         call_value {
@@ -10343,35 +10318,6 @@ triggers {
         }
       }
     }
-    ops {
-      functionName: "Order Actor to Hunt And Destroy (ThreatType)"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Get Map Item (Actor)"
-              args {
-                string_value: "536c5c82366236d41e0027ad"
-              }
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "ThreatType"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-    }
   }
   isActive: true
   idRef {
@@ -10571,44 +10517,6 @@ triggers {
       }
       args {
         float_value: 0
-      }
-    }
-    ops {
-      functionName: "Order Actor to Seek And Destroy (ThreatType)"
-      args {
-        call_value {
-          functionName: "All Actors With Tag"
-          args {
-            call_value {
-              functionName: "Get Map Item (SenseTagList)"
-              args {
-                string_value: "isTirGrunt"
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "AllOrAny"
-              }
-              args {
-                int_value: 0
-              }
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "ThreatType"
-          }
-          args {
-            int_value: 0
-          }
-        }
       }
     }
   }
@@ -11172,43 +11080,6 @@ triggers {
       }
     }
     ops {
-      functionName: "Order Actor to Hunt And Destroy (Team)"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Get Map Item (Actor)"
-              args {
-                string_value: "537a49276434313b4381eb1f"
-              }
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (string)"
-          args {
-            string_value: "FactionList"
-          }
-          args {
-            int_value: 1
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (SceneDimension)"
-          args {
-            string_value: "Default"
-          }
-        }
-      }
-    }
-    ops {
       functionName: "Set Actor Run Speed"
       args {
         call_value {
@@ -11233,6 +11104,43 @@ triggers {
           }
           args {
             int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Order Actor to Hunt And Destroy (Team)"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "537a49346434313b4381eb20"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
           }
         }
       }
@@ -18609,44 +18517,6 @@ triggers {
         float_value: 0
       }
     }
-    ops {
-      functionName: "Order Actor to Seek And Destroy (ThreatType)"
-      args {
-        call_value {
-          functionName: "All Actors With Tag"
-          args {
-            call_value {
-              functionName: "Get Map Item (SenseTagList)"
-              args {
-                string_value: "isTirGrunt"
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "AllOrAny"
-              }
-              args {
-                int_value: 0
-              }
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "ThreatType"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-    }
   }
   isActive: true
   idRef {
@@ -20073,7 +19943,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Protect"
+      archetypeName: "Non-Combatant"
       attitude: AttitudeCautious
       vulnerabilities {
       }
@@ -20214,9 +20084,26 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Matrix/MatrixICE_black_melee"
+    prefab_name: "Seattle:Matrix/MatrixICE_black_melee"
     character_sheet_id: "IC_Lv1_Black_Ranged"
     equipment_sheet_id: "IC Black Melee Lv1 Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
     team_id: "IC"
     char_name: "Black IC"
     GeneralTags: "isHeatBaddy"
@@ -20226,6 +20113,7 @@ characters {
       filename: ""
     }
     dimension_name: "Matrix"
+    karma: 33
   }
 }
 characters {
@@ -20242,7 +20130,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Matrix/MatrixICE_black_range"
+    prefab_name: "Seattle:Matrix/MatrixICE_black_range"
     character_sheet_id: "IC_Lv1_Black_Ranged"
     equipment_sheet_id: "IC Black Ranged Lv1 Gear"
     character_mod {
@@ -20250,7 +20138,10 @@ characters {
         morale: 24
         discipline: 24
         awareness: 24
+        perception: 0
+        authority: 0
         protect_tether_range: 5
+        move_speed: 0
       }
       skills {
       }
@@ -20258,6 +20149,8 @@ characters {
       }
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "IC"
     char_name: "Black IC"
@@ -20268,6 +20161,7 @@ characters {
       filename: ""
     }
     dimension_name: "Matrix"
+    karma: 33
   }
 }
 characters {
@@ -20284,12 +20178,27 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Matrix/MatrixICE_white_range"
+    prefab_name: "Seattle:Matrix/MatrixICE_white_range"
     character_sheet_id: "IC_Lv1_White_Ranged"
     equipment_sheet_id: "IC White Ranged Lv1 Gear"
     character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "IC"
     char_name: "White IC"
@@ -20301,6 +20210,7 @@ characters {
       filename: ""
     }
     dimension_name: "Matrix"
+    karma: 29
     scale_character_sheet: true
   }
 }
@@ -20318,7 +20228,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Matrix/SpiritESPAssassin"
+    prefab_name: "Seattle:Matrix/SpiritESPAssassin"
     character_sheet_id: "IC_Lv1_White_ChargeLaser"
     equipment_sheet_id: "IC White ChargeLaser Lv1 Gear"
     character_mod {
@@ -20350,6 +20260,7 @@ characters {
       filename: ""
     }
     dimension_name: "Matrix"
+    karma: 29
     scale_character_sheet: true
   }
 }
@@ -20367,12 +20278,27 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Matrix/SpiritESPShield"
+    prefab_name: "Seattle:Matrix/SpiritESPShield"
     character_sheet_id: "IC_Lv1_White_Ranged"
     equipment_sheet_id: "IC White Support Lv1 Gear"
     character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "IC"
     char_name: "White Sentry IC"
@@ -20384,6 +20310,7 @@ characters {
       filename: ""
     }
     dimension_name: "Matrix"
+    karma: 29
     scale_character_sheet: true
   }
 }
@@ -20401,7 +20328,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Matrix/SpiritESPAssassin"
+    prefab_name: "Seattle:Matrix/SpiritESPAssassin"
     character_sheet_id: "IC_Lv1_White_ChargeLaser"
     equipment_sheet_id: "IC White ChargeLaser Lv1 Gear"
     character_mod {
@@ -20433,6 +20360,7 @@ characters {
       filename: ""
     }
     dimension_name: "Matrix"
+    karma: 29
     scale_character_sheet: true
   }
 }
@@ -20450,12 +20378,27 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Matrix/SpiritESPShield"
+    prefab_name: "Seattle:Matrix/SpiritESPShield"
     character_sheet_id: "IC_Lv1_White_Ranged"
     equipment_sheet_id: "IC White Support Lv1 Gear"
     character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "IC"
     char_name: "White Sentry IC"
@@ -20467,6 +20410,7 @@ characters {
       filename: ""
     }
     dimension_name: "Matrix"
+    karma: 29
     scale_character_sheet: true
   }
 }
@@ -20484,12 +20428,27 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Matrix/MatrixICE_white_range"
+    prefab_name: "Seattle:Matrix/MatrixICE_white_range"
     character_sheet_id: "IC_Lv1_White_Ranged"
     equipment_sheet_id: "IC White Ranged Lv1 Gear"
     character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "IC"
     char_name: "White IC"
@@ -20501,6 +20460,7 @@ characters {
       filename: ""
     }
     dimension_name: "Matrix"
+    karma: 29
     scale_character_sheet: true
   }
 }
@@ -20518,12 +20478,27 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Matrix/SpiritESPShield"
+    prefab_name: "Seattle:Matrix/SpiritESPShield"
     character_sheet_id: "IC_Lv1_White_Ranged"
     equipment_sheet_id: "IC White Support Lv1 Gear"
     character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "IC"
     char_name: "White Sentry IC"
@@ -20535,6 +20510,7 @@ characters {
       filename: ""
     }
     dimension_name: "Matrix"
+    karma: 29
     scale_character_sheet: true
   }
 }
@@ -20552,7 +20528,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Matrix/MatrixICE_black_melee"
+    prefab_name: "Seattle:Matrix/MatrixICE_black_melee"
     character_sheet_id: "IC_Lv1_Black_Ranged"
     equipment_sheet_id: "IC Black Ranged Lv1 Gear"
     character_mod {
@@ -20600,12 +20576,27 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Matrix/MatrixICE_white_range"
+    prefab_name: "Seattle:Matrix/MatrixICE_white_range"
     character_sheet_id: "IC_Lv1_White_Ranged"
     equipment_sheet_id: "IC White Ranged Lv1 Gear"
     character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "IC"
     char_name: "White IC"
@@ -20617,6 +20608,7 @@ characters {
       filename: ""
     }
     dimension_name: "Matrix"
+    karma: 29
     scale_character_sheet: true
   }
 }
@@ -20634,7 +20626,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Matrix/SpiritESPAssassin"
+    prefab_name: "Seattle:Matrix/SpiritESPAssassin"
     character_sheet_id: "IC_Lv1_White_ChargeLaser"
     equipment_sheet_id: "IC White ChargeLaser Lv1 Gear"
     character_mod {
@@ -20666,6 +20658,7 @@ characters {
       filename: ""
     }
     dimension_name: "Matrix"
+    karma: 29
     scale_character_sheet: true
   }
 }
@@ -20683,12 +20676,27 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Matrix/SpiritESPShield"
+    prefab_name: "Seattle:Matrix/SpiritESPShield"
     character_sheet_id: "IC_Lv1_White_Ranged"
     equipment_sheet_id: "IC White Support Lv1 Gear"
     character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "IC"
     char_name: "White Sentry IC"
@@ -20700,6 +20708,7 @@ characters {
       filename: ""
     }
     dimension_name: "Matrix"
+    karma: 29
     scale_character_sheet: true
   }
 }
@@ -20717,7 +20726,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Matrix/SpiritESPAssassin"
+    prefab_name: "Seattle:Matrix/SpiritESPAssassin"
     character_sheet_id: "IC_Lv1_White_ChargeLaser"
     equipment_sheet_id: "IC White ChargeLaser Lv1 Gear"
     character_mod {
@@ -20749,6 +20758,7 @@ characters {
       filename: ""
     }
     dimension_name: "Matrix"
+    karma: 29
     scale_character_sheet: true
   }
 }
@@ -20766,7 +20776,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Matrix/MatrixICE_black_melee"
+    prefab_name: "Seattle:Matrix/MatrixICE_black_melee"
     character_sheet_id: "IC_Lv1_Black_Ranged"
     equipment_sheet_id: "IC Black Melee Lv1 Gear"
     character_mod {
@@ -20796,6 +20806,7 @@ characters {
       filename: ""
     }
     dimension_name: "Matrix"
+    karma: 33
     scale_character_sheet: true
   }
 }
@@ -22739,9 +22750,26 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Matrix/MatrixICE_white_melee"
+    prefab_name: "Seattle:Matrix/MatrixICE_white_melee"
     character_sheet_id: "IC_Lv1_White_Ranged"
     equipment_sheet_id: "IC White Melee Lv1 Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
     team_id: "IC"
     char_name: "White IC"
     GeneralTags: "squad1"
@@ -22752,6 +22780,7 @@ characters {
       filename: ""
     }
     dimension_name: "Matrix"
+    karma: 29
     scale_character_sheet: true
   }
 }
@@ -22769,9 +22798,26 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Matrix/MatrixICE_white_melee"
+    prefab_name: "Seattle:Matrix/MatrixICE_white_melee"
     character_sheet_id: "IC_Lv1_White_Ranged"
     equipment_sheet_id: "IC White Melee Lv1 Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
     team_id: "IC"
     char_name: "White IC"
     GeneralTags: "squad3"
@@ -22782,6 +22828,7 @@ characters {
       filename: ""
     }
     dimension_name: "Matrix"
+    karma: 29
     scale_character_sheet: true
   }
 }
@@ -22799,9 +22846,26 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Matrix/MatrixICE_white_melee"
+    prefab_name: "Seattle:Matrix/MatrixICE_white_melee"
     character_sheet_id: "IC_Lv1_White_Ranged"
     equipment_sheet_id: "IC White Melee Lv1 Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
     team_id: "IC"
     char_name: "White IC"
     GeneralTags: "squad5"
@@ -22812,6 +22876,7 @@ characters {
       filename: ""
     }
     dimension_name: "Matrix"
+    karma: 29
     scale_character_sheet: true
   }
 }
@@ -22829,9 +22894,26 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Matrix/MatrixICE_white_melee"
+    prefab_name: "Seattle:Matrix/MatrixICE_white_melee"
     character_sheet_id: "IC_Lv1_White_Ranged"
     equipment_sheet_id: "IC White Melee Lv1 Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
     team_id: "IC"
     char_name: "White IC"
     GeneralTags: "squad5"
@@ -22842,6 +22924,7 @@ characters {
       filename: ""
     }
     dimension_name: "Matrix"
+    karma: 29
     scale_character_sheet: true
   }
 }
@@ -23226,100 +23309,6 @@ characters {
     portrait_code_override: "s5h7c4b5c4"
     karma: 52
     scale_character_sheet: true
-  }
-}
-characters {
-  name: "chars_icon_playerIcon"
-  gridPoint {
-    x: -2
-    y: 0
-    z: 30
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "539504de366236d829003b9b"
-  }
-  lod: 0
-  character_instance {
-    prefab_name: "Seattle:Core/HumanFemale"
-    character_sheet_id: "a3_crew_hailey_Lv4"
-    equipment_sheet_id: "a3_crew_hailey_Lv4"
-    character_mod {
-      stats {
-        body: 0
-        quickness: 0
-        strength: 0
-        charisma: 0
-        intelligence: 0
-        willpower: 0
-        essence: 0
-        magic: 0
-        hp: 0
-        ap: 0
-        armor: 0
-        force: 0
-        morale: 0
-        discipline: 0
-        awareness: 0
-        perception: 0
-        authority: 0
-        protect_tether_range: 0
-        move_speed: 0
-      }
-      skills {
-        ranged_combat: 0
-        close_combat: 0
-        throwing_weapons: 0
-        spellcasting: 0
-        decking: 0
-        conjuring: 0
-        spirit_summoning: 0
-        drone_control: 0
-        biotech: 0
-        dodge: 0
-        etiquette_corporate: 0
-        etiquette_security: 0
-        etiquette_gang: 0
-        etiquette_socialite: 0
-        chi_casting: 0
-        etiquette_shadowrunner: 0
-        etiquette_street: 0
-        etiquette_academic: 0
-      }
-      specializations {
-        pistol: 0
-        rifle: 0
-        shotgun: 0
-        smg: 0
-        edged: 0
-        unarmed: 0
-        spirit_control: 0
-        esp_control: 0
-        drone_combat: 0
-      }
-      archetypeName: "Player"
-      attitude: AttitudeAggressive
-      vulnerabilities {
-      }
-    }
-    team_id: "Shadowrunners"
-    char_name: "Hailey"
-    GeneralTags: "isHailey"
-    enabled_at_start: false
-    pc_spawn_number: -1
-    hiring_type: HiringType_Hireable
-    cyberware_eyes: "Berlin_Laser Designator"
-    cyberware_jack: "Berlin_Encephalon"
-    cyberware_left_arm: "Obvious Cyberarm"
-    cyberware_right_leg: "Obvious Cyberleg 2"
-    portrait {
-      filename: "backer_humanfemale_grahamwilliams_tsilonsiereht"
-    }
-    description_bio: "That rarest of all breeds: a native San Franciscan. Hailey\342\200\231s natural affinity for technology has made her an increasingly-valued runner in her home city."
-    portrait_code_override: "s6h1c11"
-    karma: 4
-    hiring_cost_override: 0
-    id: "a3_crew_hailey_lv4"
   }
 }
 characters {
@@ -23962,6 +23951,104 @@ characters {
     }
     karma: 47
     scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -2
+    y: 0
+    z: 22
+  }
+  orientation: ORIENTATION_S
+  displayName: "Hailey"
+  idRef {
+    id: "54fb8742346435a81b00405b"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Core/HumanFemale"
+    character_sheet_id: "a3_crew_hailey_Lv4"
+    equipment_sheet_id: "a3_crew_hailey_Lv4"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+        vision_peripheral_distance: 2
+        vision_cone_distance: 18
+        vision_cone_angle: 90
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Player"
+      attitude: AttitudeAggressive
+      vulnerabilities {
+      }
+    }
+    team_id: "Shadowrunners"
+    char_name: "Hailey"
+    GeneralTags: "isHailey"
+    enabled_at_start: false
+    pc_spawn_number: -1
+    hiring_type: HiringType_Hireable
+    cyberware_eyes: "Berlin_Laser Designator"
+    cyberware_jack: "Datajack"
+    cyberware_left_arm: "Obvious Cyberarm"
+    cyberware_right_leg: "Obvious Cyberleg 2"
+    portrait {
+      filename: "backer_humanfemale_grahamwilliams_tsilonsiereht"
+    }
+    description_bio: "That rarest of all breeds: a native San Franciscan. Hailey\342\200\231s natural affinity for technology has made her an increasingly-valued runner in her home city."
+    portrait_code_override: "s6h1c11"
+    karma: 4
+    hiring_cost_override: 0
+    id: "a3_crew_hailey_lv4"
   }
 }
 variables {
