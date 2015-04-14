@@ -18237,6 +18237,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Camera Floor 2"
@@ -18282,6 +18283,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Camera Floor 3"
@@ -18327,6 +18329,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Enter Boardroom"
@@ -18372,6 +18375,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Kali arrival spot"
@@ -18417,6 +18421,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Hailey Camera Chat"
@@ -18462,6 +18467,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Elevator Floor 1 to 2"
@@ -18507,6 +18513,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Elevator Floor 2 to 1"
@@ -18552,6 +18559,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Elevator Floor 2 to 3"
@@ -18597,6 +18605,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Elevator Floor 3 to 2"
@@ -18642,6 +18651,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Entry1ToPaydata"
@@ -18687,6 +18697,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "PaydataToEntry1"
@@ -18732,6 +18743,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Entry1ToCameras"
@@ -18777,6 +18789,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "CamerasToEntry1"
@@ -18822,6 +18835,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Entry2ToTurrets"
@@ -18867,6 +18881,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "TurretsToEntry2"
@@ -18912,6 +18927,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "TurretsToSafe"
@@ -18957,6 +18973,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "SafeToTurrets"
@@ -19002,6 +19019,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Holding Pen"
@@ -19047,6 +19065,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Jack Point 2 Destination"
@@ -19092,6 +19111,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Jack Point 1 Destination"
@@ -19137,6 +19157,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Matrix Camera 1"
@@ -19182,6 +19203,7 @@ regions {
   default_music: "Seattle-Set8-MatrixLoop"
   loop_combat_music: false
   loop_default_music: true
+  no_fow_in_region: false
 }
 regions {
   name: "Matrix Camera 2"
@@ -19227,6 +19249,7 @@ regions {
   default_music: "Seattle-Set8-MatrixLoop"
   loop_combat_music: false
   loop_default_music: true
+  no_fow_in_region: false
 }
 regions {
   name: "Banter"
@@ -19272,6 +19295,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 characters {
   name: "chars_icon_playerIcon"
