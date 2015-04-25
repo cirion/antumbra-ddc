@@ -6414,6 +6414,28 @@ triggers {
   }
   actions {
     ops {
+      functionName: "Enable/Disable Trigger"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Trigger)"
+          args {
+            string_value: "5394d31c366236d8290039e4"
+          }
+        }
+      }
+    }
+    ops {
       functionName: "Teleport Actor"
       args {
         call_value {
@@ -17838,7 +17860,7 @@ triggers {
         }
       }
       args {
-        string_value: "The very air seems to solidify around you. You and your teammates watch helplessly as Tophet, waxing in power, unleashes even greater devestation."
+        string_value: "The very air seems to solidify around you. You and your teammates watch helplessly as Tophet, waxing in power, unleashes even greater devastation."
       }
       args {
         float_value: 0
