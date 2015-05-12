@@ -15623,3 +15623,17 @@ props {
   }
   lod: 0
 }
+props {
+  name: "vfx_fx_steam"
+  gridPoint {
+    x: 9.4
+    y: 0
+    z: 15.2
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "SteamEnvironment"
+  }
+  lod: 0
+}
