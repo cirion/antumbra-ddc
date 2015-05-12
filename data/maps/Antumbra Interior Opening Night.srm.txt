@@ -351,7 +351,7 @@ props {
 props {
   name: "office_furniture_execDesk"
   gridPoint {
-    x: 6
+    x: 7
     y: 0
     z: 27
   }
