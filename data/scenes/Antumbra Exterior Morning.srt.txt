@@ -1047,6 +1047,7 @@ regions {
   default_music: "Seattle-Set10-Legwork"
   loop_combat_music: true
   loop_default_music: true
+  no_fow_in_region: false
 }
 regions {
   name: "Epilogue Region"
@@ -1092,6 +1093,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 characters {
   name: "chars_icon_playerIcon"
@@ -1240,7 +1242,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/TrollFemale"
+    prefab_name: "Seattle:Core/TrollFemale"
     character_sheet_id: "BaseCivilian"
     character_mod {
       stats {
@@ -1266,6 +1268,8 @@ characters {
       specializations {
       }
       archetypeName: "Non-Combatant"
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Security"
@@ -1277,7 +1281,7 @@ characters {
     pc_spawn_number: -1
     portrait_code_override: "s3h5c12b0t4"
     karma: 6
-    is_prop_character: true
+    is_prop_character: false
   }
 }
 characters {
