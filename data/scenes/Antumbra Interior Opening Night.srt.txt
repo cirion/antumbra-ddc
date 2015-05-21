@@ -3458,6 +3458,15 @@ characters {
       vulnerabilities {
       }
     }
+    equipment {
+      prefab_name: "HealthPack"
+    }
+    equipment {
+      prefab_name: "HealthPack"
+    }
+    equipment {
+      prefab_name: "HealthPack"
+    }
     team_id: "Civilians"
     char_name: "Bartender"
     GeneralTags: "bystander"
@@ -5860,6 +5869,8 @@ team_affiliations {
 }
 scene_dimensions {
   dimension_name: "Default"
+}
+character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {

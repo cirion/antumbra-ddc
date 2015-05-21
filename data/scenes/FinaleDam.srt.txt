@@ -548,20 +548,6 @@ triggers {
       }
     }
     ops {
-      functionName: "Set Variable (int)"
-      args {
-        call_value {
-          functionName: "Get Variable (int)"
-          args {
-            string_value: "tophetRageTime"
-          }
-        }
-      }
-      args {
-        int_value: 2
-      }
-    }
-    ops {
       functionName: "Trigger: Run Alternate Trigger"
       args {
         call_value {
@@ -20260,14 +20246,14 @@ characters {
         awareness: 0
         perception: 0
         authority: 0
-        protect_tether_range: 0
+        protect_tether_range: -5
         move_speed: 0
       }
       skills {
       }
       specializations {
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "Guard - Protect"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -20310,8 +20296,8 @@ characters {
         awareness: 0
         perception: 0
         authority: 0
-        protect_tether_range: 0
-        move_speed: 0
+        protect_tether_range: -5
+        move_speed: -4
       }
       skills {
       }
@@ -20691,7 +20677,7 @@ characters {
     y: 0
     z: -80
   }
-  orientation: ORIENTATION_W
+  orientation: ORIENTATION_E
   GeneralTags: "squad5"
   idRef {
     id: "537a22466434318b3f5d12de"
