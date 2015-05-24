@@ -3311,7 +3311,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/OrkMale"
+    prefab_name: "Seattle:Core/OrkMale"
     character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
     equipment_sheet_id: "Lonestar_Shotgun_High"
     character_mod {
@@ -3327,6 +3327,8 @@ characters {
       skills {
       }
       specializations {
+      }
+      vulnerabilities {
       }
     }
     equipment {
@@ -3507,6 +3509,8 @@ characters {
       }
       specializations {
       }
+      vulnerabilities {
+      }
     }
     team_id: "LoneStar"
     char_name: "Door Guard"
@@ -3527,7 +3531,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Security/TrollMalesSecurity"
+    prefab_name: "Seattle:Security/TrollMalesSecurity"
     character_sheet_id: "Lvl1_Merc_Troll_TechMage"
     equipment_sheet_id: "Lonestar_Mage_Low"
     character_mod {
@@ -3543,6 +3547,8 @@ characters {
       skills {
       }
       specializations {
+      }
+      vulnerabilities {
       }
     }
     equipment {
@@ -3849,19 +3855,24 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Lonestar/HumanFemaleLonestarCaptain"
+    prefab_name: "Seattle:Lonestar/HumanFemaleLonestarCaptain"
     character_sheet_id: "Lonestar_Lv1_Captain"
     equipment_sheet_id: "Lonestar_Captain_Low"
     character_mod {
       stats {
         morale: 24
+        discipline: 0
         awareness: 24
+        perception: 0
+        authority: 0
         protect_tether_range: 5
         move_speed: 0
       }
       skills {
       }
       specializations {
+      }
+      vulnerabilities {
       }
     }
     team_id: "LoneStar"
@@ -5174,13 +5185,14 @@ characters {
     z: 46
   }
   orientation: ORIENTATION_W
+  GeneralTags: "bystander"
   displayName: "Waitress"
   idRef {
     id: "52071163366236541200172b"
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/ElfFemale"
+    prefab_name: "Seattle:Core/ElfFemale"
     character_sheet_id: "BaseCivilian"
     character_mod {
       stats {
@@ -5194,17 +5206,27 @@ characters {
         hp: 0
         ap: 0
         morale: 24
+        discipline: 0
         awareness: 24
+        perception: 0
+        authority: 0
         protect_tether_range: 5
         move_speed: 6
       }
+      skills {
+      }
+      specializations {
+      }
       archetypeName: "Non-Combatant"
+      vulnerabilities {
+      }
     }
     equipment {
       prefab_name: "Outfit_Cult Follower"
     }
     team_id: "Civilians"
     char_name: "Waitress"
+    GeneralTags: "bystander"
     patrolRoute: "Waitress Route"
     pc_spawn_number: -1
     portrait_code_override: "s5h6"
