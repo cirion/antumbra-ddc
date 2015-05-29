@@ -4848,7 +4848,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Story/TrollMaleHawaiianShirt"
+    prefab_name: "Berlin:HavenCivilians/TrollMaleHavenCivilian_2"
     character_sheet_id: "BaseCivilian"
     character_mod {
       stats {
@@ -4862,7 +4862,10 @@ characters {
         hp: 0
         ap: 0
         morale: 24
+        discipline: 0
         awareness: 24
+        perception: 0
+        authority: 0
         protect_tether_range: 5
         move_speed: 6
       }
@@ -4871,6 +4874,8 @@ characters {
       specializations {
       }
       archetypeName: "Non-Combatant"
+      vulnerabilities {
+      }
     }
     team_id: "Civilians"
     char_name: "Dancer"

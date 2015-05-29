@@ -2597,7 +2597,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Story/TrollMaleHawaiianShirt"
+    prefab_name: "Berlin:HavenCivilians/TrollMaleHavenCivilian_1"
     character_sheet_id: "BaseCivilian"
     character_mod {
       stats {
@@ -2621,6 +2621,8 @@ characters {
       skills {
       }
       specializations {
+      }
+      vulnerabilities {
       }
     }
     team_id: "Civilians"
