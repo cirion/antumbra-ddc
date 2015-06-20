@@ -567,6 +567,50 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Activate Actor Spawner"
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor Reference)"
+          args {
+            string_value: "537a8822643431b04e37ee67"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Activate Actor Spawner"
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor Reference)"
+          args {
+            string_value: "537a882b643431b04e37ee69"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
   }
   isActive: false
   idRef {
@@ -18911,7 +18955,7 @@ characters {
   gridPoint {
     x: -69
     y: 0
-    z: -8
+    z: -6
   }
   orientation: ORIENTATION_E
   GeneralTags: "isNCThug"
@@ -18961,9 +19005,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -83
+    x: -81
     y: 0
-    z: 0
+    z: 1
   }
   orientation: ORIENTATION_S
   GeneralTags: "isNCThug"
@@ -19015,7 +19059,7 @@ characters {
   gridPoint {
     x: -70
     y: 0
-    z: -8
+    z: -6
   }
   orientation: ORIENTATION_E
   GeneralTags: "isNCThug"
@@ -19065,7 +19109,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -83
+    x: -81
     y: 0
     z: -1
   }
@@ -21116,28 +21160,6 @@ characters {
   gridPoint {
     x: -26
     y: 0
-    z: 5
-  }
-  orientation: ORIENTATION_N
-  idRef {
-    id: "537c144536623648170074dd"
-  }
-  lod: 0
-  character_instance {
-    character_mod {
-      archetypeName: "Player"
-    }
-    team_id: "Shadowrunners"
-    char_name: "New Actor"
-    enabled_at_start: true
-    pc_spawn_number: 0
-  }
-}
-characters {
-  name: "system_spawner_playerSpawner"
-  gridPoint {
-    x: -26
-    y: 0
     z: 4
   }
   orientation: ORIENTATION_N
@@ -21731,6 +21753,28 @@ characters {
     karma: 4
     hiring_cost_override: 0
     id: "a3_crew_elorn_lv4"
+  }
+}
+characters {
+  name: "system_spawner_playerSpawner"
+  gridPoint {
+    x: -26
+    y: 0
+    z: 5
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "55858acc3464358c170019cc"
+  }
+  lod: 0
+  character_instance {
+    character_mod {
+      archetypeName: "Player"
+    }
+    team_id: "Shadowrunners"
+    char_name: "New Actor"
+    enabled_at_start: true
+    pc_spawn_number: 0
   }
 }
 variables {

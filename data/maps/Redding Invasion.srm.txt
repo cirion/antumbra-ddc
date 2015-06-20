@@ -20493,28 +20493,11 @@ props {
   lod: 0
 }
 props {
-  name: "vfx_fx_policeSiren"
-  gridPoint {
-    x: -65.6
-    y: 2.3
-    z: -8.1
-  }
-  orientation: ORIENTATION_E
-  properties {
-    property_id: "fxScript"
-    string_value: "SirenLightsEnvironment"
-  }
-  idRef {
-    id: "538d54e7366236ec200002b7"
-  }
-  lod: 0
-}
-props {
   name: "office_tech_alarmOn"
   gridPoint {
-    x: -66.4
+    x: -66.6
     y: 1.8
-    z: -8.6
+    z: -8.7000008
   }
   orientation: ORIENTATION_W
   idRef {
@@ -20619,6 +20602,20 @@ props {
     dummyInteraciton {
     }
     interaction_info_text: ""
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_policeSiren"
+  gridPoint {
+    x: -66.5
+    y: 1.7
+    z: -8.6
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "SirenLightsEnvironment"
   }
   lod: 0
 }
