@@ -24635,3 +24635,13 @@ props {
   }
   lod: 0
 }
+props {
+  name: "secretLab_wall_4x4fill"
+  gridPoint {
+    x: -38
+    y: 0
+    z: 69
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
