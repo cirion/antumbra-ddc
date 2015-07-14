@@ -23,9 +23,24 @@ nodes {
   }
   index: 1
   text: "Not for long, babe. I just radioed for reinforcements. Hang tight."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
   nodeType: ConversationNodeType_Simple
   sourceInSceneRef {
     id: "536d60af6434317b17cbaec7"
+  }
+}
+nodes {
+  idRef {
+    id: "55a48146346435900d005c10"
+  }
+  index: 2
+  text: "Sounds like we have more company coming! Let\'s make sure we\'re ready for them."
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536d5ffa6434317b17cbaec5"
   }
 }
 roots {

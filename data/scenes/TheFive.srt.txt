@@ -1924,7 +1924,7 @@ triggers {
       }
       args {
         call_value {
-          functionName: "Center of Region"
+          functionName: "Get Random Point Within Region"
           args {
             call_value {
               functionName: "Get Map Item (Region)"
@@ -1982,7 +1982,7 @@ triggers {
             call_value {
               functionName: "Get Map Item (Region)"
               args {
-                string_value: "536fbf14366236941d00309e"
+                string_value: "55a486e8346435900d005c1d"
               }
             }
           }
@@ -2079,6 +2079,117 @@ triggers {
           functionName: "Get Map Item (Region)"
           args {
             string_value: "536fbf72366236941d00309f"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "FacingDirection"
+          }
+          args {
+            int_value: 5
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Order Actor to Move To (Region)"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "536fa131366236941d00301e"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Region)"
+          args {
+            string_value: "55a48338346435900d005c1a"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "FacingDirection"
+          }
+          args {
+            int_value: 5
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Order Actor to Move To (Region)"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "536fa1c2366236941d00301f"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Region)"
+          args {
+            string_value: "55a48345346435900d005c1b"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "FacingDirection"
+          }
+          args {
+            int_value: 5
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Order Actor to Move To (Region)"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "536fa321366236941d003020"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Region)"
+          args {
+            string_value: "55a4834f346435900d005c1c"
           }
         }
       }
@@ -3035,43 +3146,6 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Change Actor Team"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Get Map Item (Actor)"
-              args {
-                string_value: "536d5ffa6434317b17cbaec5"
-              }
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (string)"
-          args {
-            string_value: "FactionList"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (SceneDimension)"
-          args {
-            string_value: "Default"
-          }
-        }
-      }
-    }
-    ops {
       functionName: "Teleport Actor"
       args {
         call_value {
@@ -3120,6 +3194,43 @@ triggers {
           }
           args {
             int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Change Actor Team"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "536d5ffa6434317b17cbaec5"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
           }
         }
       }
@@ -4322,31 +4433,38 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Start Conversation"
+      functionName: "Change Actor Team"
       args {
         call_value {
-          functionName: "Get Map Item (Conversation)"
+          functionName: "Specific Actor"
           args {
-            string_value: "536d67f76434317b17cbaff9"
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "536d60fe6434317b17cbaec8"
+              }
+            }
+          }
+          args {
           }
         }
       }
       args {
         call_value {
-          functionName: "Get Map Item (Actor)"
+          functionName: "Get Preset Value (string)"
           args {
-            string_value: "536d60af6434317b17cbaec7"
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
           }
         }
       }
       args {
         call_value {
-          functionName: "Get Preset Value (int)"
+          functionName: "Get Map Item (SceneDimension)"
           args {
-            string_value: "WithOrWithout"
-          }
-          args {
-            int_value: 1
+            string_value: "Default"
           }
         }
       }
@@ -4380,6 +4498,36 @@ triggers {
           functionName: "Get Map Item (SceneDimension)"
           args {
             string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Start Conversation"
+      args {
+        call_value {
+          functionName: "Get Map Item (Conversation)"
+          args {
+            string_value: "536d67f76434317b17cbaff9"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "536d60af6434317b17cbaec7"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
           }
         }
       }
@@ -4433,6 +4581,35 @@ triggers {
           functionName: "Get Map Item (SceneDimension)"
           args {
             string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Change Actor Control"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "536d60fe6434317b17cbaec8"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "PlayerOrAI"
+          }
+          args {
+            int_value: 0
           }
         }
       }
@@ -4708,35 +4885,6 @@ triggers {
       }
     }
     ops {
-      functionName: "Change Actor Control"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Get Map Item (Actor)"
-              args {
-                string_value: "536d60fe6434317b17cbaec8"
-              }
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "PlayerOrAI"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-    }
-    ops {
       functionName: "Order Actor to Hunt And Destroy (Team)"
       args {
         call_value {
@@ -4843,6 +4991,52 @@ triggers {
             int_value: 1
           }
         }
+      }
+    }
+    ops {
+      functionName: "Display Text over Actor"
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "536d60fe6434317b17cbaec8"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TextPopupStyle"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        string_value: "Give me a minute to collect myself..."
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 0
       }
     }
   }
@@ -15731,6 +15925,7 @@ regions {
   default_music: "Berlin-Set9-Stealth"
   loop_combat_music: true
   loop_default_music: true
+  no_fow_in_region: false
 }
 regions {
   name: "Banter"
@@ -15776,6 +15971,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Near Water Truck"
@@ -15821,6 +16017,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Wave 3"
@@ -15866,6 +16063,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Wave 4"
@@ -15911,6 +16109,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Wave 5"
@@ -15956,6 +16155,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Flee Spot"
@@ -16001,14 +16201,15 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Dorbi Spawn Point"
   position {
-    x: -5
+    x: 4
     y: -5
-    width: 4
-    height: 4
+    width: 2
+    height: 2
   }
   enabledAtStart: true
   is_camera_region: false
@@ -16046,14 +16247,15 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Dorbi\'s Mark"
   position {
-    x: 11
-    y: -18
-    width: 3
-    height: 3
+    x: 12
+    y: -17
+    width: 1
+    height: 1
   }
   enabledAtStart: true
   is_camera_region: false
@@ -16091,6 +16293,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Rick Arrival Spot"
@@ -16136,6 +16339,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Go To Scrapyard"
@@ -16181,6 +16385,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Van Ambush"
@@ -16226,12 +16431,13 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Water Ganger Leader\'s Mark"
   position {
     x: 12
-    y: -14
+    y: -16
     width: 1
     height: 1
   }
@@ -16271,6 +16477,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Dummy Region"
@@ -16316,6 +16523,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Wave 2 Spawn"
@@ -16361,6 +16569,191 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
+}
+regions {
+  name: "Ganger Mark 1"
+  position {
+    x: 11
+    y: -15
+    width: 1
+    height: 1
+  }
+  enabledAtStart: true
+  is_camera_region: false
+  idRef {
+    id: "55a48338346435900d005c1a"
+  }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_closet: false
+  is_teleporter_region: false
+  directional_light_dir {
+    x: -0.5
+    y: -1
+    z: -0.75
+  }
+  directional_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambient_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambience_template: ""
+  combat_music: ""
+  default_music: ""
+  loop_combat_music: true
+  loop_default_music: false
+  no_fow_in_region: false
+}
+regions {
+  name: "Ganger Mark 2"
+  position {
+    x: 12
+    y: -19
+    width: 1
+    height: 1
+  }
+  enabledAtStart: true
+  is_camera_region: false
+  idRef {
+    id: "55a48345346435900d005c1b"
+  }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_closet: false
+  is_teleporter_region: false
+  directional_light_dir {
+    x: -0.5
+    y: -1
+    z: -0.75
+  }
+  directional_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambient_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambience_template: ""
+  combat_music: ""
+  default_music: ""
+  loop_combat_music: true
+  loop_default_music: false
+  no_fow_in_region: false
+}
+regions {
+  name: "Ganger Mark 3"
+  position {
+    x: 11
+    y: -18
+    width: 1
+    height: 1
+  }
+  enabledAtStart: true
+  is_camera_region: false
+  idRef {
+    id: "55a4834f346435900d005c1c"
+  }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_closet: false
+  is_teleporter_region: false
+  directional_light_dir {
+    x: -0.5
+    y: -1
+    z: -0.75
+  }
+  directional_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambient_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambience_template: ""
+  combat_music: ""
+  default_music: ""
+  loop_combat_music: true
+  loop_default_music: false
+  no_fow_in_region: false
+}
+regions {
+  name: "The Real Dorbi Spawn Point"
+  position {
+    x: 3
+    y: -4
+    width: 1
+    height: 1
+  }
+  enabledAtStart: true
+  is_camera_region: false
+  idRef {
+    id: "55a486e8346435900d005c1d"
+  }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_closet: false
+  is_teleporter_region: false
+  directional_light_dir {
+    x: -0.5
+    y: -1
+    z: -0.75
+  }
+  directional_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambient_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambience_template: ""
+  combat_music: ""
+  default_music: ""
+  loop_combat_music: true
+  loop_default_music: false
+  no_fow_in_region: false
 }
 characters {
   name: "system_spawner_playerSpawner"
@@ -16956,7 +17349,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Berlin:Gangers/HumanMaleBerlinGangerBanditMask"
-    character_sheet_id: "Thug_Lv1_Melee"
+    character_sheet_id: "Thug_Lv2_Melee"
     equipment_sheet_id: "Thug_Lv1_Melee_Gear"
     character_mod {
       stats {
@@ -16979,6 +17372,9 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        vision_peripheral_distance: 0
+        vision_cone_distance: 0
+        vision_cone_angle: 0
       }
       skills {
         ranged_combat: 0
@@ -17024,7 +17420,7 @@ characters {
     portrait {
       filename: ""
     }
-    karma: 56
+    karma: 65
     scale_character_sheet: true
   }
 }

@@ -52,7 +52,7 @@ nodes {
     id: "536d676a6434317b17cbafd2"
   }
   index: 3
-  text: "Surprise, surprise! You\342\200\231re on candid camera!"
+  text: "Smile! You\342\200\231re on candid camera!"
   branches {
     responseText: ""
     nextNodeIndex: 4
