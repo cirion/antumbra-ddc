@@ -63,7 +63,7 @@ triggers {
         call_value {
           functionName: "Get Map Item (Scene)"
           args {
-            string_value: "Embarcadero"
+            string_value: "TheFive"
           }
         }
       }
@@ -10279,51 +10279,6 @@ characters {
       archetypeName: "Non-Combatant"
       vulnerabilities {
       }
-    }
-    equipment {
-      prefab_name: "Pi 1 Ceska Black Scorpion (Smartlink)"
-    }
-    equipment {
-      prefab_name: "Pi 1 Fichetti Security 500 (Smartlink)"
-    }
-    equipment {
-      prefab_name: "Pi 2 Ares Predator (Smartlink)"
-    }
-    equipment {
-      prefab_name: "Pi 2 Browning Max-Power (Smartlink)"
-    }
-    equipment {
-      prefab_name: "SMG 1 Beretta Model 70 (Smartlink)"
-    }
-    equipment {
-      prefab_name: "SMG 1 Uzi III (Smartlink)"
-    }
-    equipment {
-      prefab_name: "SMG 2 Colt TZ-110 (Smartlink)"
-    }
-    equipment {
-      prefab_name: "SMG 2 Ingram Smartgun (Smartlink)"
-    }
-    equipment {
-      prefab_name: "Sh 1 Benelli Raffaello (Smartlink)"
-    }
-    equipment {
-      prefab_name: "Sh 2 Mossberg CMDT (Smartlink)"
-    }
-    equipment {
-      prefab_name: "Sh 2 Remington 990 (Smartlink)"
-    }
-    equipment {
-      prefab_name: "AR 1 AK98 (Smartlink)"
-    }
-    equipment {
-      prefab_name: "AR 1 Semopal vz88v (Smartlink)"
-    }
-    equipment {
-      prefab_name: "AR 2 FN HAR (Smartlink)"
-    }
-    equipment {
-      prefab_name: "AR 2 HK G12A3z (Smartlink)"
     }
     team_id: "Civilians"
     char_name: "Amelia"
