@@ -130,6 +130,39 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Set Goal Status"
+      args {
+        call_value {
+          functionName: "Get Map Item (Goal)"
+          args {
+            string_value: "Hire another runner"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "GoalStatus"
+          }
+          args {
+            int_value: 2
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -206,6 +239,42 @@ triggers {
           }
         }
       }
+    }
+    ops {
+      functionName: "Set Goal Status"
+      args {
+        call_value {
+          functionName: "Get Map Item (Goal)"
+          args {
+            string_value: "Hire another runner"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "GoalStatus"
+          }
+          args {
+            int_value: 2
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "No Effect"
     }
   }
   isActive: true
@@ -5835,6 +5904,11 @@ goals {
   type: GoalType_Primary
   status: GoalStatus_Hidden
 }
+goals {
+  name: "Hire another runner"
+  type: GoalType_Secondary
+  status: GoalStatus_Started
+}
 worldMapLocation {
   filename: ""
   location {
@@ -5897,8 +5971,6 @@ team_affiliations {
 scene_dimensions {
   dimension_name: "Default"
 }
-character_roster {
-}
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {
   prereq_description: ""
@@ -5911,8 +5983,8 @@ hiring_maximum_karma: 0
 roster_overrides {
 }
 use_hiring_cost_warning: false
-hiring_average_cost: 0
-override_hiring_average_cost: false
+hiring_average_cost: 500
+override_hiring_average_cost: true
 show_equip_screen_on_scene_load: false
 is_persistant: false
 is_persistant_has_value: false
