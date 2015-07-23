@@ -6623,6 +6623,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Trigger Marine Hostility"
@@ -6668,6 +6669,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Tir Hostility"
@@ -6713,6 +6715,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Shavarus Flee"
@@ -6758,6 +6761,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Rowed Over"
@@ -6803,6 +6807,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Passed Gate"
@@ -6848,6 +6853,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Shavarus Chat"
@@ -6893,6 +6899,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "New Region"
@@ -6938,6 +6945,7 @@ regions {
   default_music: "Seattle-Bar22"
   loop_combat_music: true
   loop_default_music: true
+  no_fow_in_region: false
 }
 characters {
   name: "system_spawner_playerSpawner"
@@ -8018,6 +8026,12 @@ characters {
       archetypeName: "Guard - Protect"
       attitude: AttitudeBoss
       vulnerabilities {
+        debuff: VulnerabilityLevel_Immune
+        stun: VulnerabilityLevel_Immune
+        actionpoints: VulnerabilityLevel_Immune
+        moverange: VulnerabilityLevel_Immune
+        shock: VulnerabilityLevel_Immune
+        mental: VulnerabilityLevel_Immune
       }
     }
     equipment {
@@ -8049,6 +8063,7 @@ characters {
     }
     portrait_code_override: "s3h0c4b10c4t8"
     karma: 73
+    ai_never_use_draining_abilities: true
   }
 }
 characters {

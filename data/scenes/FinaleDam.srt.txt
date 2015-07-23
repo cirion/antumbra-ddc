@@ -20471,6 +20471,12 @@ characters {
       vulnerabilities {
         heal: VulnerabilityLevel_Immune
         fire: VulnerabilityLevel_Immune
+        debuff: VulnerabilityLevel_Immune
+        stun: VulnerabilityLevel_Immune
+        actionpoints: VulnerabilityLevel_Immune
+        moverange: VulnerabilityLevel_Immune
+        shock: VulnerabilityLevel_Immune
+        mental: VulnerabilityLevel_Immune
       }
     }
     team_id: "Tophet"

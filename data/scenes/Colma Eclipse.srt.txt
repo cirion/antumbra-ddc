@@ -8529,6 +8529,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Exit"
@@ -8574,6 +8575,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Wave 2"
@@ -8619,6 +8621,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Wave 1"
@@ -8664,6 +8667,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Wave 3"
@@ -8709,6 +8713,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Wave 4"
@@ -8754,6 +8759,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Wave 5"
@@ -8799,6 +8805,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Taxi Region"
@@ -8844,6 +8851,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Camera"
@@ -8889,6 +8897,7 @@ regions {
   default_music: "Seattle-Set3-Legwork"
   loop_combat_music: true
   loop_default_music: true
+  no_fow_in_region: false
 }
 characters {
   name: "chars_icon_playerIcon"
@@ -9470,6 +9479,11 @@ characters {
       archetypeName: "Guard - Protect"
       attitude: AttitudeBoss
       vulnerabilities {
+        debuff: VulnerabilityLevel_Immune
+        actionpoints: VulnerabilityLevel_Immune
+        moverange: VulnerabilityLevel_Immune
+        shock: VulnerabilityLevel_Immune
+        mental: VulnerabilityLevel_Immune
       }
     }
     equipment {
