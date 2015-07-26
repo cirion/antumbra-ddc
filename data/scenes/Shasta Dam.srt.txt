@@ -12831,9 +12831,9 @@ regions {
   name: "Camera"
   position {
     x: -27
-    y: -45
-    width: 45
-    height: 103
+    y: -52
+    width: 46
+    height: 109
   }
   enabledAtStart: true
   is_camera_region: true
@@ -12871,6 +12871,7 @@ regions {
   default_music: "Berlin-Set18-Legwork"
   loop_combat_music: true
   loop_default_music: true
+  no_fow_in_region: false
 }
 regions {
   name: "Witness Elorn"
@@ -12916,6 +12917,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Bullion Exits"
@@ -12961,6 +12963,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Initial Bomb"
@@ -13006,6 +13009,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Return to Redding"
@@ -13051,6 +13055,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Ambush Trigger Wave 3"
@@ -13096,6 +13101,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Wave 2a spawn point"
@@ -13141,6 +13147,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Wave 2b spawn point"
@@ -13186,6 +13193,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Tabitha Spawn Point"
@@ -13231,6 +13239,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Block Movement 1"
@@ -13276,6 +13285,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Block Movement 2"
@@ -13321,6 +13331,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Block Movement 3"
@@ -13366,6 +13377,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Block Movement 4"
@@ -13411,6 +13423,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Ambush Destination 3"
@@ -13456,6 +13469,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Banter"
@@ -13501,6 +13515,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Elorn Chat 2"
@@ -13546,6 +13561,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 characters {
   name: "system_spawner_playerSpawner"
