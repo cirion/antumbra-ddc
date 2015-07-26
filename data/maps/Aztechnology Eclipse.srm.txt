@@ -18197,9 +18197,9 @@ props {
 props {
   name: "office_tech_keycardLanyard"
   gridPoint {
-    x: -13
+    x: -11
     y: 0
-    z: 21
+    z: 18
   }
   orientation: ORIENTATION_S
   displayName: "Keycard"
@@ -27196,9 +27196,9 @@ props {
 props {
   name: "medicalLab_floor_2x2panel01"
   gridPoint {
-    x: -13
+    x: -12
     y: 0
-    z: 21
+    z: 18
   }
   orientation: ORIENTATION_S
   idRef {
@@ -46030,9 +46030,9 @@ props {
 props {
   name: "system_invisible_solidProp"
   gridPoint {
-    x: -13
+    x: -11
     y: 0
-    z: 22
+    z: 20
   }
   orientation: ORIENTATION_S
   lod: 0
@@ -46040,9 +46040,9 @@ props {
 props {
   name: "system_invisible_solidProp"
   gridPoint {
-    x: -12
+    x: -10
     y: 0
-    z: 22
+    z: 20
   }
   orientation: ORIENTATION_S
   idRef {
@@ -48550,5 +48550,135 @@ props {
     z: 78
   }
   orientation: ORIENTATION_N
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -10
+    y: 0
+    z: 19
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "55b5624934643578170012e2"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -10
+    y: 0
+    z: 18
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "55b5624a34643578170012e3"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -10
+    y: 0
+    z: 17
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "55b5624b34643578170012e4"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -11
+    y: 0
+    z: 17
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "55b5624c34643578170012e5"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -12
+    y: 0
+    z: 17
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "55b5624c34643578170012e6"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -13
+    y: 0
+    z: 17
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "55b5624d34643578170012e7"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -13
+    y: 0
+    z: 18
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "55b5624d34643578170012e8"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -13
+    y: 0
+    z: 19
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "55b5624e34643578170012e9"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -13
+    y: 0
+    z: 20
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "55b5624f34643578170012ea"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -12
+    y: 0
+    z: 20
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "55b5624f34643578170012eb"
+  }
   lod: 0
 }
