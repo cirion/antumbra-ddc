@@ -1,6 +1,6 @@
 project_id: "531d26a736623648180018bf"
 project_name: "Antumbra Saga"
-project_version: "0.7.6"
+project_version: "0.7.7"
 author_name: "Cirion"
 synopsis: "Antumbra Saga"
 has_story: true
