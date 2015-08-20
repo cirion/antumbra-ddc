@@ -1461,9 +1461,9 @@ props {
 props {
   name: "haven_decor_victoryColumn"
   gridPoint {
-    x: -1
+    x: -1.4
     y: 0
-    z: 37
+    z: 36.7
   }
   orientation: ORIENTATION_S
   lod: 0
@@ -33846,6 +33846,32 @@ props {
   orientation: ORIENTATION_S
   idRef {
     id: "54bf2ee7346435d40c003297"
+  }
+  lod: 0
+}
+props {
+  name: "docks_floor_3x3panel"
+  gridPoint {
+    x: 41
+    y: 0
+    z: -37
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "55d53ea4346435e408001e20"
+  }
+  lod: 0
+}
+props {
+  name: "docks_floor_3x3panel"
+  gridPoint {
+    x: 41
+    y: 0
+    z: -34
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "55d53ea6346435e408001e21"
   }
   lod: 0
 }
