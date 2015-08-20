@@ -5968,9 +5968,9 @@ triggers {
       }
       args {
         call_value {
-          functionName: "Get Map Item (Player)"
+          functionName: "Get Map Item (Actor)"
           args {
-            int_value: 1
+            string_value: "544332e73931398402005c9f"
           }
         }
       }
@@ -6157,9 +6157,9 @@ triggers {
       }
       args {
         call_value {
-          functionName: "Get Map Item (Player)"
+          functionName: "Get Map Item (Actor)"
           args {
-            int_value: 1
+            string_value: "544332e73931398402005c9f"
           }
         }
       }
@@ -6650,9 +6650,9 @@ triggers {
       }
       args {
         call_value {
-          functionName: "Get Map Item (Player)"
+          functionName: "Get Map Item (Actor)"
           args {
-            int_value: 1
+            string_value: "544332e73931398402005c9d"
           }
         }
       }
@@ -6839,9 +6839,9 @@ triggers {
       }
       args {
         call_value {
-          functionName: "Get Map Item (Player)"
+          functionName: "Get Map Item (Actor)"
           args {
-            int_value: 1
+            string_value: "544332e73931398402005c9d"
           }
         }
       }
@@ -7332,9 +7332,9 @@ triggers {
       }
       args {
         call_value {
-          functionName: "Get Map Item (Player)"
+          functionName: "Get Map Item (Actor)"
           args {
-            int_value: 1
+            string_value: "544332e73931398402005c9e"
           }
         }
       }
@@ -7521,9 +7521,9 @@ triggers {
       }
       args {
         call_value {
-          functionName: "Get Map Item (Player)"
+          functionName: "Get Map Item (Actor)"
           args {
-            int_value: 1
+            string_value: "544332e73931398402005c9e"
           }
         }
       }
