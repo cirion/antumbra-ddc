@@ -279,7 +279,7 @@ nodes {
     id: "536d3d18643431740d169d96"
   }
   index: 16
-  text: "And so the very fates of the universe conspired against you, thrusting you into a position where you could fulfil your destiny! How intriguing."
+  text: "And so the very fates of the universe conspired against you, thrusting you into a position where you could fulfill your destiny! How intriguing."
   branches {
     responseText: ""
     nextNodeIndex: 17

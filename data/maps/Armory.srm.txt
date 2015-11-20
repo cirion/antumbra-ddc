@@ -20907,6 +20907,7 @@ props {
       scene_name: "Eclipse Finale"
       confirmation_text: "Are you ready to leave the Armory and return to Eclipse?"
     }
+    interaction_info_text: "Escape"
   }
   lod: 0
 }

@@ -1035,7 +1035,7 @@ triggers {
             string_value: "WithOrWithout"
           }
           args {
-            int_value: 0
+            int_value: 1
           }
         }
       }
@@ -1345,6 +1345,42 @@ triggers {
           functionName: "Get Map Item (Actor)"
           args {
             string_value: "5226b935366236d016001390"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "A2_Finale_ShavarusLives"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
           }
         }
       }
@@ -4748,6 +4784,7 @@ regions {
   default_music: "Seattle-TitleTheme"
   loop_combat_music: true
   loop_default_music: true
+  no_fow_in_region: false
 }
 regions {
   name: "Shavarus Exit"
@@ -4793,6 +4830,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 regions {
   name: "Shavarus Chat"
@@ -4838,6 +4876,7 @@ regions {
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
+  no_fow_in_region: false
 }
 characters {
   name: "system_spawner_playerSpawner"
@@ -5132,7 +5171,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/TrollMale"
+    prefab_name: "Seattle:Core/TrollMale"
     character_sheet_id: "Lvl3_Elf_Mage"
     character_mod {
       stats {
@@ -5155,6 +5194,7 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        is_fearless: 1
       }
       skills {
         ranged_combat: -1
@@ -5190,6 +5230,7 @@ characters {
       archetypeName: "Guard - Protect"
       attitude: AttitudeBoss
       vulnerabilities {
+        mental: VulnerabilityLevel_Immune
       }
     }
     equipment {

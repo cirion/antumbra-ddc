@@ -3456,6 +3456,86 @@ triggers {
   }
   is_oneshot: true
 }
+triggers {
+  name: "Init Lord Lady"
+  events {
+    ops {
+      functionName: "On Map Start"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Compare Actor Gender"
+      args {
+        call_value {
+          functionName: "Get Map Item (Player)"
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "Gender"
+          }
+          args {
+            int_value: 2
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Set Variable (string)"
+      args {
+        call_value {
+          functionName: "Get Variable (string)"
+          args {
+            string_value: "Lord_Lady"
+          }
+        }
+      }
+      args {
+        string_value: "Lady"
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "564ca9646434316d8d9e2f96"
+  }
+  elseActions {
+    ops {
+      functionName: "Set Variable (string)"
+      args {
+        call_value {
+          functionName: "Get Variable (string)"
+          args {
+            string_value: "Lord_Lady"
+          }
+        }
+      }
+      args {
+        string_value: "Lord"
+      }
+    }
+  }
+  is_oneshot: true
+}
 regions {
   name: "Camera"
   position {
@@ -6451,6 +6531,14 @@ variables {
     scope: TsVariableScope_Scene
     name: "NextScene"
     typeName: "bool"
+  }
+}
+variables {
+  string_value: ""
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "Lord_Lady"
+    typeName: "string"
   }
 }
 mapEvents: "End Game"

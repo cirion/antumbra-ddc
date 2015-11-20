@@ -19,7 +19,7 @@ nodes {
     id: "5225651a366236d4190039fd"
   }
   index: 1
-  text: "Not everyone in the Mission is under Shavarus\342\200\231s thumb, you know. Plenty of us remain loyal to Emperor Norton.\n\nShavarus has it all wrong. We metas need to show the breeders that we\342\200\231ve better than them, not that we\342\200\231ll stoop to their level. We\342\200\231re building a better society, in Orkland and in Halferville and all around their privileged little city. "
+  text: "Not everyone in the Mission is under Shavarus\342\200\231s thumb, you know. Plenty of us remain loyal to Emperor Norton.\n\nShavarus has it all wrong. We metas need to show the breeders that we\342\200\231re better than them, not that we\342\200\231ll stoop to their level. We\342\200\231re building a better society, in Orkland and in Halferville and all around their privileged little city. "
   branches {
     responseText: ""
     nextNodeIndex: 2
