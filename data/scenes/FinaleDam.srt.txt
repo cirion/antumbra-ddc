@@ -7631,7 +7631,26 @@ triggers {
       }
     }
     ops {
-      functionName: "Order Actor to Move To (Actor)"
+      functionName: "Attach Region to Actor"
+      args {
+        call_value {
+          functionName: "Get Map Item (Region)"
+          args {
+            string_value: "537a391a6434313b4381eaab"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "536c5c82366236d41e0027ad"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Order Actor to Move To (Region)"
       args {
         call_value {
           functionName: "Specific Actor"
@@ -7649,9 +7668,9 @@ triggers {
       }
       args {
         call_value {
-          functionName: "Get Map Item (Actor)"
+          functionName: "Get Map Item (Region)"
           args {
-            string_value: "536c5c82366236d41e0027ad"
+            string_value: "537a391a6434313b4381eaab"
           }
         }
       }
@@ -7663,25 +7682,6 @@ triggers {
           }
           args {
             int_value: 0
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Attach Region to Actor"
-      args {
-        call_value {
-          functionName: "Get Map Item (Region)"
-          args {
-            string_value: "537a391a6434313b4381eaab"
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (Actor)"
-          args {
-            string_value: "536c5c82366236d41e0027ad"
           }
         }
       }
@@ -18317,7 +18317,12 @@ triggers {
     ops {
       functionName: "Trigger: Wait for Rounds"
       args {
-        int_value: 10
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "tophetTeleportDelay"
+          }
+        }
       }
       args {
         call_value {
@@ -24766,6 +24771,14 @@ variables {
   variableref_value {
     scope: TsVariableScope_Scene
     name: "tophetRageTime"
+    typeName: "int"
+  }
+}
+variables {
+  int_value: 10
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "tophetTeleportDelay"
     typeName: "int"
   }
 }
