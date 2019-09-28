@@ -7,7 +7,7 @@ nodes {
     id: "5224ee02366236701000226e"
   }
   index: 0
-  text: "Gah! I have been thwarted by my own arrogance. I should have killed you the moment I saw you in the Aztechnology pyramid."
+  text: "My protection is gone! I have been thwarted by my own arrogance. I should have killed you the moment I saw you in the Aztechnology pyramid."
   branches {
     responseText: ""
     nextNodeIndex: 1
@@ -19,7 +19,7 @@ nodes {
     id: "5224ee113662367010002271"
   }
   index: 1
-  text: "Defend my exit, elves! We will rendezvous in the Mission when this is done!"
+  text: "{{GM}}Shavarus grasps a talisman hanging by his waist. A sneer reappears on his face as a nimbus spreads around his body.{{/GM}}\n\nYes. This will suffice.\n\nWatch my exit, elves! We will rendezvous in the Mission when this is done!"
   actions {
     ops {
       functionName: "Send Event"
