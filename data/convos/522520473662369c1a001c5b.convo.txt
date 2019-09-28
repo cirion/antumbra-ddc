@@ -68,7 +68,7 @@ nodes {
     id: "522521d23662369c1a001c6d"
   }
   index: 3
-  text: "I\'m shutting down Antumbra until this all blows over. Our mission is to provide distractions, and I won\'t want to distract anyone from fighting the threat this city faces."
+  text: "I\'m shutting down Eclipse until this all blows over. Our mission is to provide distractions, and I won\'t want to distract anyone from fighting the threat this city faces."
   branches {
     responseText: ""
     nextNodeIndex: 4

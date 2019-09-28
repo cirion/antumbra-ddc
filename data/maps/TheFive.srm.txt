@@ -9263,6 +9263,7 @@ props {
       scene_name: "Redding Old City Hall"
       confirmation_text: "Are you ready to return to Redding?"
     }
+    interaction_info_text: "Return to Redding"
   }
   lod: 0
 }
