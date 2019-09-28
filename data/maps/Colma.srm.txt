@@ -8942,19 +8942,6 @@ props {
 props {
   name: "cemetery_decor_headstone06"
   gridPoint {
-    x: -33
-    y: 0
-    z: -106
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "521a84233662367c1d0073f8"
-  }
-  lod: 0
-}
-props {
-  name: "cemetery_decor_headstone06"
-  gridPoint {
     x: -35
     y: 0
     z: -104

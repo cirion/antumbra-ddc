@@ -9068,9 +9068,9 @@ props {
 props {
   name: "docks_clutter_shippingCrate01"
   gridPoint {
-    x: -93
+    x: -97
     y: 0
-    z: -9
+    z: -4
   }
   orientation: ORIENTATION_S
   displayName: "Jack Point Fake"
