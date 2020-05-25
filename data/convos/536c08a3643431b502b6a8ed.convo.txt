@@ -357,7 +357,7 @@ nodes {
     id: "536c0ae8643431b502b6a923"
   }
   index: 3
-  text: "It\342\200\231s not easy, I can tell you that. My San Francisco locations receive supplies from Seattle that are smuggled onto the coast. This far inland, we need to either hire runners to escort them over the Coast Range, or else cut deals with the local water gangs to bring in materiel from Pueblo."
+  text: "It\342\200\231s not easy, I can tell you that. My San Francisco locations receive supplies from Seattle that are smuggled onto the coast. This far inland, we need to either hire runners to escort them over the Coast Range, or else cut deals with the local water gangs to bring in mat\303\251riel from Pueblo."
   branches {
     responseText: ""
     nextNodeIndex: 1

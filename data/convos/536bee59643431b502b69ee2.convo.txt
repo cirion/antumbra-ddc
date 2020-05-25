@@ -3135,7 +3135,7 @@ nodes {
     id: "536c0360643431b502b6a3b1"
   }
   index: 36
-  text: "I think it\342\200\231s coming together pretty well. You have enough troops and supplies at your location to at least put up a bit of a fight after Tir crosses over. Honestly, though, you might not be able to last until reinforcements arrive. I\342\200\231d recommend continuing to search for additional recruits and materiel to increase your odds."
+  text: "I think it\342\200\231s coming together pretty well. You have enough troops and supplies at your location to at least put up a bit of a fight after Tir crosses over. Honestly, though, you might not be able to last until reinforcements arrive. I\342\200\231d recommend continuing to search for additional recruits and mat\303\251riel to increase your odds."
   branches {
     responseText: ""
     nextNodeIndex: 39
