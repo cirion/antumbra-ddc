@@ -635,3 +635,23 @@ props {
   }
   lod: 0
 }
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: 4
+    y: 0
+    z: 3
+  }
+  orientation: ORIENTATION_S
+  displayName: "damage"
+  idRef {
+    id: "5ecc0575356564dc46004b3a"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    interactionIcon: InteractionIcon_Generic
+    interaction_info_text: "Damage"
+  }
+  lod: 0
+}

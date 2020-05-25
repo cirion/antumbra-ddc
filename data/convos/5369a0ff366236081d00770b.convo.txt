@@ -663,7 +663,7 @@ nodes {
     id: "5369a99f366236081d0077af"
   }
   index: 27
-  text: "We do not mean to imply that this will be easy. It is a dangerous task, and will require many resources. Kali will provide you with a foundation: a hideout in Redding, some starting funds, equipment and contacts. From there, you will be responsible for charting the course of your group. You must decide who to recruit, what allies to accept, where to acquire additional armaments, how aggressively to act."
+  text: "We do not mean to imply that this will be easy. It is a dangerous task, and will require many resources. Kali\'s corporate resources will provide you with a foundation: a hideout in Redding, some starting funds, equipment and contacts. From there, you will be responsible for charting the course of your group. You must decide who to recruit, what allies to accept, where to acquire additional armaments, how aggressively to act."
   branches {
     responseText: ""
     nextNodeIndex: 28
@@ -759,11 +759,11 @@ nodes {
     }
   }
   branches {
-    responseText: "Tell Kali I\342\200\231ll be glad to work by her side."
+    responseText: "Tell Kali I\342\200\231ll be glad to support her and her corporate allies in this battle."
     nextNodeIndex: 34
   }
   branches {
-    responseText: "Tell Kali I\342\200\231ll help oppose Tir, but I\342\200\231m doing it for the entire state, not just her."
+    responseText: "Tell Kali I\342\200\231ll help oppose Tir, but I\342\200\231m doing it for the people of CalFree, not the megacorps in San Francisco."
     nextNodeIndex: 35
   }
   branches {
