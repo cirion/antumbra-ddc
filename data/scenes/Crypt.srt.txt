@@ -18289,7 +18289,7 @@ mapName: "Crypt"
 parentStory: ""
 scene_title: "The Crypt"
 scene_subtitle: ""
-scene_synopsis: "The deceptively small entrance provides entrance to a grand crypt. You walk down, and down, and down. While this was certainly built as a crypt to house the dead, it appears that Norton\'s Army has converted it into a refuge of last resort, a place to hide if all hope has been lost.\n\nThe hairs on the back of your neck begin to stiffen as you hear faint sobs come from far down the corridors. While this structure was constructed as a place of safety, it is still a house for the dead, and living among the dead is particularly dangerous in the Sixth World."
+scene_synopsis: "The deceptively small entrance leads to a grand crypt. You walk down, and down, and down. While this was certainly built as a crypt to house the dead, it appears that Norton\'s Army has converted it into a refuge of last resort, a place to hide if all hope has been lost.\n\nThe hairs on the back of your neck begin to stiffen as you hear faint sobs come from far down the corridors. While this structure was constructed as a place of safety, it is still a house for the dead, and living among the dead is particularly dangerous in the Sixth World."
 scene_image: "crypt1"
 scene_continue_button_skip: false
 scene_restore_runner_health: false
@@ -18339,8 +18339,6 @@ team_affiliations {
 }
 scene_dimensions {
   dimension_name: "Default"
-}
-character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {

@@ -91,7 +91,7 @@ nodes {
     id: "537cf8da643431520477f8d2"
   }
   index: 5
-  text: "I hope she can do... that trick on herself. She seemed like she... was in awful pain herself. \n\nBut she somehow managed to... go down that pit. I\'m not... sure how, that fall would kill anyone..."
+  text: "I hope she can do... that trick on herself. She seemed like she... was in awful pain. \n\nBut she somehow managed to... go down that pit. I\'m not... sure how, that fall would kill anyone..."
   branches {
     responseText: ""
     nextNodeIndex: 2

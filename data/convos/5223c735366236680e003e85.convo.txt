@@ -124,7 +124,7 @@ nodes {
     id: "53724e916434311639fc5357"
   }
   index: 5
-  text: "I gladly make my resources available to anyone in need who is willing to pay. More specifically, I requite a sum of \302\245750."
+  text: "I gladly make my resources available to anyone in need who is willing to pay. More specifically, I require a sum of \302\245750."
   branches {
     responseText: "{{CC}}\302\245750{{/CC}} Here you are."
     conditions {

@@ -260,7 +260,7 @@ nodes {
     id: "53724f706434311639fc5569"
   }
   index: 11
-  text: "We have held that honor for over a decade. At the peremtory request of a large majority of citizens, we did declare and proclaim ourself Emperor of the California Free State. Since that time, we have labored ceaselessly to ameliorate the evils under which the country is laboring."
+  text: "We have held that honor for over a decade. At the peremptory request of a large majority of citizens, we did declare and proclaim ourself Emperor of the California Free State. Since that time, we have labored ceaselessly to ameliorate the evils under which the country is laboring."
   branches {
     responseText: ""
     nextNodeIndex: 12

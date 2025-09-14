@@ -953,15 +953,39 @@ nodes {
   nodeType: ConversationNodeType_Simple
   actions {
     ops {
-      functionName: "Set Team Alliance"
+      functionName: "Kill Actor"
       args {
         call_value {
-          functionName: "Get Preset Value (string)"
+          functionName: "All Actors on Team"
           args {
-            string_value: "FactionList"
+            call_value {
+              functionName: "Get Preset Value (string)"
+              args {
+                string_value: "FactionList"
+              }
+              args {
+                int_value: 2
+              }
+            }
           }
           args {
-            int_value: 2
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Map Item (SceneDimension)"
+              args {
+                string_value: "Default"
+              }
+            }
           }
         }
       }
@@ -969,7 +993,18 @@ nodes {
         call_value {
           functionName: "Get Preset Value (int)"
           args {
-            string_value: "TeamAlliance"
+            string_value: "DeathMethod"
+          }
+          args {
+            int_value: 3
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "FacingDirection"
           }
           args {
             int_value: 0
@@ -978,31 +1013,69 @@ nodes {
       }
       args {
         call_value {
-          functionName: "Get Preset Value (string)"
+          functionName: "Get Preset Value (int)"
           args {
-            string_value: "FactionList"
+            string_value: "WithOrWithout"
           }
           args {
             int_value: 0
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (SceneDimension)"
-          args {
-            string_value: "Default"
           }
         }
       }
     }
     ops {
-      functionName: "Set Team Alliance"
+      functionName: "Kill Actor"
       args {
         call_value {
-          functionName: "Get Preset Value (string)"
+          functionName: "All Actors on Team"
           args {
-            string_value: "FactionList"
+            call_value {
+              functionName: "Get Preset Value (string)"
+              args {
+                string_value: "FactionList"
+              }
+              args {
+                int_value: 5
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Map Item (SceneDimension)"
+              args {
+                string_value: "Default"
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DeathMethod"
+          }
+          args {
+            int_value: 3
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "FacingDirection"
           }
           args {
             int_value: 0
@@ -1013,7 +1086,67 @@ nodes {
         call_value {
           functionName: "Get Preset Value (int)"
           args {
-            string_value: "TeamAlliance"
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Kill Actor"
+      args {
+        call_value {
+          functionName: "All Actors on Team"
+          args {
+            call_value {
+              functionName: "Get Preset Value (string)"
+              args {
+                string_value: "FactionList"
+              }
+              args {
+                int_value: 4
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Map Item (SceneDimension)"
+              args {
+                string_value: "Default"
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DeathMethod"
+          }
+          args {
+            int_value: 3
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "FacingDirection"
           }
           args {
             int_value: 0
@@ -1022,20 +1155,12 @@ nodes {
       }
       args {
         call_value {
-          functionName: "Get Preset Value (string)"
+          functionName: "Get Preset Value (int)"
           args {
-            string_value: "FactionList"
+            string_value: "WithOrWithout"
           }
           args {
-            int_value: 2
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (SceneDimension)"
-          args {
-            string_value: "Default"
+            int_value: 0
           }
         }
       }
